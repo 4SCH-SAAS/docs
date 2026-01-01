@@ -4,8 +4,8 @@
 const config = {
   title: '4SCH SAAS  Documentation',
   tagline: '4SCH School Management System',
-  url: 'https://4sch-saas.github.io',
-  baseUrl: '/docs/',
+  url: 'https://docs.4sch.com',
+  baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: '4SCH-SAAS',
   projectName: 'docs',
