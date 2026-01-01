@@ -4,11 +4,11 @@
 const config = {
   title: '4SCH SAAS  Documentation',
   tagline: '4SCH School Management System',
-  url: 'https://4sch-saas.github.com',
+  url: 'https://4sch-saas.github.io',
   baseUrl: '/docs/',
   favicon: 'img/favicon.ico',
-  organizationName: '4SCH',
-  projectName: '4sch-docs',
+  organizationName: '4SCH-SAAS',
+  projectName: 'docs',
   onBrokenLinks: 'throw',
   i18n: {
     defaultLocale: 'en',
@@ -48,7 +48,7 @@ const config = {
       items: [
         {to: '/', label: 'Docs', position: 'left'},
         {href: 'https://wrteam-in.github.io/eSchool-SaaS-Doc/', label: 'eSchools (reference)', position: 'right'},
-        {href: 'https://github.com', label: 'GitHub', position: 'right'},
+        {href: 'https://github.com/4SCH-SAAS/docs', label: 'GitHub', position: 'right'},
       ],
     },
     footer: {
