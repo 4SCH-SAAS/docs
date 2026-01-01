@@ -1,0 +1,20 @@
+{
+  "name": "4sch-docs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Docusaurus documentation site for 4SCH School Management System",
+  "scripts": {
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "serve": "docusaurus serve",
+    "clean": "docusaurus clear && docusaurus build --no-minify"
+  },
+  "engines": {"node": ">=18.17"},
+  "dependencies": {
+    "@docusaurus/core": "^3.3.2",
+    "@docusaurus/preset-classic": "^3.3.2",
+    "@docusaurus/theme-mermaid": "^3.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
