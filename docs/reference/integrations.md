@@ -41,7 +41,7 @@ sequenceDiagram
 :::tip Screenshot
 ### Payment gateway configuration {#payment-gateway-configuration}
 
-![Payment gateway settings page showing API key inputs and webhook URL](../../static/img/payment-gateway-config.svg)
+![Payment gateway settings page showing API key inputs and webhook URL](/img/payment-gateway-config.svg)
 
 _Add provider keys and verify webhooks to activate online payments._
 :::

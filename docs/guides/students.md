@@ -50,7 +50,7 @@ _Start your day with a quick overview of classes and tasks._
 :::note Screenshot
 Assignments list
 
-![Assignments list with titles, due dates, and submission status](../../static/img/assignments-list.svg)
+![Assignments list with titles, due dates, and submission status](/img/assignments-list.svg)
 
 _Check what’s due and track submissions and feedback._
 :::

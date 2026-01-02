@@ -15,6 +15,18 @@ const config = {
     locales: ['en'],
   },
   themes: ['@docusaurus/theme-mermaid'],
+  plugins: [
+    [
+      '@docusaurus/plugin-ideal-image',
+      {
+        quality: 70,
+        max: 1400,
+        min: 400,
+        steps: 4,
+        disableInDev: false,
+      },
+    ],
+  ],
   markdown: {
     mermaid: true,
     hooks: {
@@ -33,7 +45,10 @@ const config = {
             showLastUpdateTime: false,
           },
           blog: false,
-          pages: false
+          pages: false,
+          theme: {
+            customCss: require.resolve('./src/css/custom.css'),
+          }
         }
       ),
     ],
@@ -47,7 +62,6 @@ const config = {
       },
       items: [
         {to: '/', label: 'Docs', position: 'left'},
-        {href: 'https://wrteam-in.github.io/eSchool-SaaS-Doc/', label: 'eSchools (reference)', position: 'right'},
         {href: 'https://github.com/4SCH-SAAS/docs', label: 'GitHub', position: 'right'},
       ],
     },

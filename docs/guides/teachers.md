@@ -36,7 +36,7 @@ import DashboardIcon from '@site/src/components/icons/Dashboard';
 :::tip Screenshot
 Teacher Dashboard
 
-![Teacher dashboard showing today’s classes, quick actions, and inbox](../../static/img/teacher-dashboard.svg)
+![Teacher dashboard showing today’s classes, quick actions, and inbox](/img/teacher-dashboard.svg)
 
 _Get an at-a-glance view of your schedule and pending tasks._
 :::
@@ -50,7 +50,7 @@ _Get an at-a-glance view of your schedule and pending tasks._
 :::note Screenshot
 Attendance entry screen
 
-![Attendance entry table with student list and status toggles](../../static/img/attendance-entry.svg)
+![Attendance entry table with student list and status toggles](/img/attendance-entry.svg)
 
 _Mark daily or period-based attendance and add notes._
 :::

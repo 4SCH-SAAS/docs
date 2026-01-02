@@ -63,7 +63,7 @@ _The Admin Console dashboard shows attendance rate, fee collection, and quick ac
 :::note Screenshot
 Academic Structure configuration
 
-![Academic structure page listing sessions, classes, sections, and subjects](../../static/img/academic-structure.svg)
+![Academic structure page listing sessions, classes, sections, and subjects](/img/academic-structure.svg)
 
 _Configure sessions, classes, sections, and subjects before assigning teachers and students._
 :::
@@ -71,7 +71,7 @@ _Configure sessions, classes, sections, and subjects before assigning teachers a
 :::tip Screenshot
 Timetable builder
 
-![Timetable builder showing periods, rooms, and teacher assignments](../../static/img/timetable-builder.svg)
+![Timetable builder showing periods, rooms, and teacher assignments](/img/timetable-builder.svg)
 
 _Create and publish weekly schedules; manage rooms and teacher allocations._
 :::
@@ -84,7 +84,7 @@ _Create and publish weekly schedules; manage rooms and teacher allocations._
 :::note Screenshot
 Attendance policy settings
 
-![Attendance policy settings with late grace minutes and approval workflow toggles](../../static/img/attendance-policy.svg)
+![Attendance policy settings with late grace minutes and approval workflow toggles](/img/attendance-policy.svg)
 
 _Define how and when attendance can be taken or corrected, and who approves changes._
 :::
@@ -98,7 +98,7 @@ _Define how and when attendance can be taken or corrected, and who approves chan
 :::tip Screenshot
 Exam types and setup
 
-![Exam setup screen for defining exam types, weightages, and term mapping](../../static/img/exam-setup.svg)
+![Exam setup screen for defining exam types, weightages, and term mapping](/img/exam-setup.svg)
 
 _Set exam types (Midterm, Final), weightages, and term mappings for transcripts._
 :::
@@ -118,7 +118,7 @@ Student information:
 :::note Screenshot
 User management — staff and invitations
 
-![User management list with roles, status, and invitation controls](../../static/img/user-management.svg)
+![User management list with roles, status, and invitation controls](/img/user-management.svg)
 
 _Invite staff, assign roles, and deactivate accounts when necessary._
 :::
@@ -126,7 +126,7 @@ _Invite staff, assign roles, and deactivate accounts when necessary._
 :::tip Screenshot
 Permissions matrix
 
-![Permissions matrix grid by role and module with granular actions](../../static/img/permissions-matrix.svg)
+![Permissions matrix grid by role and module with granular actions](/img/permissions-matrix.svg)
 
 _Tailor access by module and action to enforce least-privilege._
 :::
@@ -148,7 +148,7 @@ Keep student, staff, class, and fee data synchronized in one place. This reduces
 :::tip Screenshot
 Finance — Invoices overview
 
-![Invoices list showing status, due dates, balances, and actions](../../static/img/finance-invoices.svg)
+![Invoices list showing status, due dates, balances, and actions](/img/finance-invoices.svg)
 
 _Monitor invoice statuses, send reminders, and record payments._
 :::
@@ -156,7 +156,7 @@ _Monitor invoice statuses, send reminders, and record payments._
 :::note Screenshot
 Payment gateway configuration
 
-![Payment gateway settings with API keys and webhooks configuration](../../static/img/payment-gateway-config.svg)
+![Payment gateway settings with API keys and webhooks configuration](/img/payment-gateway-config.svg)
 
 _Connect your payment provider and verify webhook callbacks for reconciliation._
 :::
@@ -168,7 +168,7 @@ _Connect your payment provider and verify webhook callbacks for reconciliation._
 :::note Screenshot
 Bulk data import
 
-![Data import wizard with file upload, field mapping, and validation preview](../../static/img/data-import.svg)
+![Data import wizard with file upload, field mapping, and validation preview](/img/data-import.svg)
 
 _Preview detected columns and errors before committing large imports._
 :::
@@ -180,7 +180,7 @@ _Preview detected columns and errors before committing large imports._
 :::tip Screenshot
 Audit logs view
 
-![Audit logs timeline showing user actions, timestamps, and IP addresses](../../static/img/audit-logs.svg)
+![Audit logs timeline showing user actions, timestamps, and IP addresses](/img/audit-logs.svg)
 
 _Track configuration changes and access events for compliance._
 :::

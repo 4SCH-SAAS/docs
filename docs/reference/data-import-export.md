@@ -27,7 +27,7 @@ import ReportsIcon from '@site/src/components/icons/Reports';
 :::note Screenshot
 Bulk data import
 
-![Data import wizard showing column mapping and validation preview](../../static/img/data-import.svg)
+![Data import wizard with file upload, field mapping, and validation preview](/img/data-import.svg)
 
 _Map CSV columns and resolve validation errors before import._
 :::
