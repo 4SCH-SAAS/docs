@@ -1,12 +1,47 @@
 ---
 id: admin-guide
 title: School Admin Guide
+slug: /guides/admin
 sidebar_position: 1
 ---
 
+import Screenshot from '@site/src/components/Screenshot';
+
+import TOCInline from '@theme/TOCInline';
+import CardGrid from '@site/src/components/CardGrid';
+import DashboardIcon from '@site/src/components/icons/Dashboard';
+import AcademicIcon from '@site/src/components/icons/Academic';
+import AttendanceIcon from '@site/src/components/icons/Attendance';
+import GradesIcon from '@site/src/components/icons/Grades';
+import UsersIcon from '@site/src/components/icons/Users';
+import FinanceIcon from '@site/src/components/icons/Finance';
+import DataIcon from '@site/src/components/icons/Data';
+import SecurityIcon from '@site/src/components/icons/Security';
+import MessagingIcon from '@site/src/components/icons/Messaging';
+import ReportsIcon from '@site/src/components/icons/Reports';
+
 # School Admin Guide
 
-Admin Console overview:
+<TOCInline toc={[]} minHeadingLevel={2} maxHeadingLevel={3} />
+
+<CardGrid
+  cards={[
+    { to: '#admin-console-overview', title: 'Dashboard', description: 'KPIs, quick actions, navigation', icon: <DashboardIcon /> },
+    { to: '#admin-console-overview', title: 'Dashboard', description: 'KPIs, quick actions, navigation' },
+    { to: '#academic-setup', title: 'Academic setup', description: 'Sessions, classes, subjects, timetable', icon: <AcademicIcon /> },
+    { to: '#attendance-configuration', title: 'Attendance', description: 'Modes, policies, notifications', icon: <AttendanceIcon /> },
+    { to: '#grades-assessments', title: 'Grades & assessments', description: 'Types, weights, templates', icon: <GradesIcon /> },
+    { to: '#users-permissions', title: 'Users & permissions', description: 'Roles, invites, MFA', icon: <UsersIcon /> },
+    { to: '#finance', title: 'Finance', description: 'Invoices, payments, gateway', icon: <FinanceIcon /> },
+    { to: '#data-import-export', title: 'Data import/export', description: 'Templates, validations', icon: <DataIcon /> },
+    { to: '#security-compliance', title: 'Security & compliance', description: 'Audit logs, retention', icon: <SecurityIcon /> },
+    { to: '#messaging', title: 'Messaging', description: 'Channels, templates', icon: <MessagingIcon /> },
+    { to: '#reports-analytics', title: 'Reports & analytics', description: 'KPIs, trends, exports', icon: <ReportsIcon /> },
+  ]}
+/>
+
+
+## <span className="heading-icon"><DashboardIcon size={18} /></span> Admin Console overview {#admin-console-overview}
 - Dashboard: High-level metrics (attendance, dues, messages)
 - Quick actions: Add student, schedule exam, create invoice
 - Navigation: Academic, Users, Finance, Messaging, Reports, Settings
@@ -14,12 +49,12 @@ Admin Console overview:
 :::tip Screenshot
 Admin Console — Dashboard
 
-![4SCH Admin Console dashboard with KPIs, quick actions, and navigation](../../static/img/admin-dashboard.svg)
+<Screenshot src="/img/screens/admin/admin-dashboard.svg" alt="4SCH Admin Console dashboard with KPIs, quick actions, and navigation" caption="The Admin Console dashboard shows attendance rate, fee collection, and quick actions for common tasks." width={960} />
 
 _The Admin Console dashboard shows attendance rate, fee collection, and quick actions for common tasks._
 :::
 
-Academic setup:
+## <span className="heading-icon"><AcademicIcon size={18} /></span> Academic Setup {#academic-setup}
 - Sessions & Terms: Define academic calendar
 - Classes & Sections: Structure by grade and cohorts
 - Subjects: Create, categorize (core/elective), and assign to classes
@@ -41,7 +76,7 @@ Timetable builder
 _Create and publish weekly schedules; manage rooms and teacher allocations._
 :::
 
-Attendance configuration:
+## <span className="heading-icon"><AttendanceIcon size={18} /></span> Attendance Configuration {#attendance-configuration}
 - Mode: Daily (AM/PM) or Period-based per subject
 - Policies: Late grace, absence reasons, approval workflow
 - Parent notifications: Enable/disable instant alerts
@@ -54,7 +89,7 @@ Attendance policy settings
 _Define how and when attendance can be taken or corrected, and who approves changes._
 :::
 
-Grades & assessments:
+## Grades & assessments {#grades-assessments}
 - Exam types and weightages
 - Rubrics and grading scales (numeric/letter)
 - Gradebook templates and auto-calculation rules
@@ -74,7 +109,7 @@ Student information:
 - Documents: Upload and manage attachments
 - Health and emergency contacts
 
-Users & permissions:
+## Users & permissions {#users-permissions}
 - Roles: Admin, Teacher, Parent, Student, Finance, Registrar
 - Custom roles for fine-grained access
 - Bulk invite and deactivation
@@ -96,7 +131,15 @@ Permissions matrix
 _Tailor access by module and action to enforce least-privilege._
 :::
 
-Finance:
+## <span className="heading-icon"><DataIcon size={18} /></span> Unified records {#unified-records}
+Keep student, staff, class, and fee data synchronized in one place. This reduces reconciliation work and ensures every module reads a consistent, up‑to‑date profile.
+
+- One profile feeds attendance, grading, billing, and messaging
+- Fewer mismatches across modules and exports
+- Cleaner permissions: rules apply consistently across data
+- Better reporting accuracy end‑to‑end
+
+## Finance {#finance}
 - Fee heads and structures
 - Scholarships, concessions, and transport fees
 - Invoices, due dates, penalties
@@ -118,7 +161,7 @@ Payment gateway configuration
 _Connect your payment provider and verify webhook callbacks for reconciliation._
 :::
 
-Data import/export:
+## Data import/export {#data-import-export}
 - CSV templates and validation previews
 - Partial pilots before full import
 
@@ -130,7 +173,7 @@ Bulk data import
 _Preview detected columns and errors before committing large imports._
 :::
 
-Security & compliance:
+## Security & compliance {#security-compliance}
 - Audit logs and incident response
 - Data retention and export policies
 
@@ -142,13 +185,13 @@ Audit logs view
 _Track configuration changes and access events for compliance._
 :::
 
-Messaging:
+## Messaging {#messaging}
 - Channels: In-app, email, push, SMS (if configured)
 - Audiences: All users, specific roles, classes, or custom lists
 - Templates and schedule
 - Policy: Quiet hours and escalation rules
 
-Reports & analytics:
+## Reports & analytics {#reports-analytics}
 - Operational reports: Attendance, fee collection, overdue
 - Academic reports: Performance by class/subject
 - Compliance reports: Audit, access logs, data exports

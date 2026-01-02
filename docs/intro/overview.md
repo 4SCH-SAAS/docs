@@ -7,6 +7,18 @@ sidebar_position: 1
 
 # 4SCH School Management System
 
+import Link from '@docusaurus/Link';
+import DataIcon from '@site/src/components/icons/Data';
+
+- Quick links:
+  - <Link to="/guides/admin#admin-console-overview">Admin — Dashboard</Link>
+  - <Link to="/guides/teachers#teacher-dashboard">Teacher — Dashboard</Link>
+  - <Link to="/guides/students#student-dashboard">Student — Dashboard</Link>
+  - <Link to="/guides/parents#parent-dashboard">Parent — Dashboard</Link>
+  - <Link to="/guides/billing-finance#finance-setup">Finance — Setup</Link>
+  - <Link to="/guides/reports-analytics#dashboards">Reports — Dashboards</Link>
+
+
 4SCH is an all-in-one platform for schools to manage daily operations and engagement across the entire community—administrators, teachers, parents, and students. It centralizes academic records, attendance, grading, timetables, messaging, billing, and reporting in one secure, cloud-hosted system.
 
 Key benefits:
@@ -15,6 +27,16 @@ Key benefits:
 - Clear communication: Role-aware messaging, announcements, and alerts
 - Actionable insights: Real-time dashboards and comprehensive reports
 - Multi-school support: Manage multiple schools or branches with consistent controls
+
+## <span className="heading-icon"><DataIcon size={18} /></span> Unified records
+
+Manage students, staff, classes, and fees in one system of record. Eliminate double entry, reduce errors, and unlock accurate reporting across the school.
+
+- Single source of truth across modules
+- Fewer manual updates and fewer errors
+- Faster reporting and simpler audits
+- Consistent permissions and access control
+- Easier integrations (finance, messaging, SIS/LMS)
 
 Primary user roles:
 - School Admin: Configure the institution, academic structure, fees, permissions, and compliance

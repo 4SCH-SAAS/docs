@@ -6,6 +6,14 @@ sidebar_position: 3
 
 # Onboarding
 
+import Link from '@docusaurus/Link';
+
+- Helpful deep links:
+  - <Link to="/guides/admin#data-import-export">Admin — Data import</Link>
+  - <Link to="/guides/admin#users-permissions">Admin — Users & permissions</Link>
+  - <Link to="/guides/teachers#exams-and-assessments">Teacher — Exams & assessments</Link>
+  - <Link to="/guides/messaging#composing-a-message">Messaging — Compose</Link>
+
 Onboarding stages:
 - Setup: Establish academic and finance structure
 - Data import: Staff, students, and historical data

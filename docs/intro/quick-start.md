@@ -6,6 +6,15 @@ sidebar_position: 2
 
 # Quick Start
 
+import Link from '@docusaurus/Link';
+
+- Jump to detailed guides:
+  - <Link to="/guides/admin#academic-setup">Admin — Academic setup</Link>
+  - <Link to="/guides/admin#finance">Admin — Finance</Link>
+  - <Link to="/guides/teachers#daily-workflows">Teacher — Daily workflows</Link>
+  - <Link to="/guides/billing-finance#invoices">Billing — Invoices</Link>
+  - <Link to="/guides/reports-analytics#dashboards">Reports — Dashboards</Link>
+
 This guide sets up a school in under an hour.
 
 Prerequisites:
