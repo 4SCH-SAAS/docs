@@ -46,7 +46,10 @@ _Track key indicators across attendance, finance, and academics._
 :::note Screenshot
 Report filters and drilldown
 
-![Report filter panel with class/section selectors and drilldown link](/img/reports-filters.svg)
+<figure>
+  <img src="/img/reports-filters.svg" alt="Report filter panel with class/section selectors and drilldown link" style={{maxWidth: 960, width:'100%', height:'auto'}} />
+  <figcaption>Report filter panel with class/section selectors and drilldown link</figcaption>
+</figure>
 
 _Use filters to focus and drill into detailed records._
 :::

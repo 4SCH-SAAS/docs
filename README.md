@@ -111,8 +111,10 @@ This will be published to the root of the built site so GitHub Pages knows the c
   - Cross-link to sections using full paths and stable IDs, e.g., /guides/admin#attendance-configuration
   - Prefer absolute image paths under /img/...; store images in static/img
 - Images
+  - Alt text: be specific and action-oriented (what the user sees or does). Avoid "image of"; include key UI elements.
   - Use the Screenshot component for consistent captions and responsive width
   - Prefer PNG/WebP for screenshots; SVG for UI diagrams; consider plugin-ideal-image for large sets
+  - Filenames stable: keep names consistent even when content updates to avoid churn
 - Components
   - Use CardGrid for quick links at the top of long pages
   - Use TOCInline at the top of guides for mobile-friendly navigation

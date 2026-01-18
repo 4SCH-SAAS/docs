@@ -51,7 +51,10 @@ _See each child’s latest updates and outstanding actions._
 :::note Screenshot
 Student Profile view
 
-![Student Profile showing attendance chart, grades list, and timetable](/img/student-profile.svg)
+<figure>
+  <img src="/img/student-profile.svg" alt="Student Profile showing attendance chart, grades list, and timetable" style={{maxWidth: 960, width:'100%', height:'auto'}} />
+  <figcaption>Student Profile showing attendance chart, grades list, and timetable</figcaption>
+</figure>
 
 _View academic progress, attendance, and documents for your child._
 :::

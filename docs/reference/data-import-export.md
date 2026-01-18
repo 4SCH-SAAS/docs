@@ -27,7 +27,10 @@ import ReportsIcon from '@site/src/components/icons/Reports';
 :::note Screenshot
 Bulk data import
 
-![Data import wizard with file upload, field mapping, and validation preview](/img/data-import.svg)
+<figure>
+  <img src="/img/data-import.svg" alt="Data import wizard with file upload, field mapping, and validation preview" style={{maxWidth: 960, width:'100%', height:'auto'}} />
+  <figcaption>Data import wizard with file upload, field mapping, and validation preview</figcaption>
+</figure>
 
 _Map CSV columns and resolve validation errors before import._
 :::

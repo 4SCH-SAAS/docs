@@ -35,7 +35,10 @@ import SecurityIcon from '@site/src/components/icons/Security';
 :::tip Screenshot
 Permissions matrix
 
-![Permissions matrix showing modules as rows and actions as columns by role](/img/permissions-matrix.svg)
+<figure>
+  <img src="/img/permissions-matrix.svg" alt="Permissions matrix showing modules as rows and actions as columns by role" style={{maxWidth: 960, width:'100%', height:'auto'}} />
+  <figcaption>Permissions matrix showing modules as rows and actions as columns by role</figcaption>
+</figure>
 
 _Configure exact capabilities for each role across modules._
 :::

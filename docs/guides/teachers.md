@@ -36,7 +36,10 @@ import DashboardIcon from '@site/src/components/icons/Dashboard';
 :::tip Screenshot
 Teacher Dashboard
 
-![Teacher dashboard showing today’s classes, quick actions, and inbox](/img/teacher-dashboard.svg)
+<figure>
+  <img src="/img/teacher-dashboard.svg" alt="Teacher dashboard showing today’s classes, quick actions, and inbox" style={{maxWidth: 960, width:'100%', height:'auto'}} />
+  <figcaption>Teacher dashboard showing today’s classes, quick actions, and inbox</figcaption>
+</figure>
 
 _Get an at-a-glance view of your schedule and pending tasks._
 :::
@@ -50,7 +53,10 @@ _Get an at-a-glance view of your schedule and pending tasks._
 :::note Screenshot
 Attendance entry screen
 
-![Attendance entry table with student list and status toggles](/img/attendance-entry.svg)
+<figure>
+  <img src="/img/attendance-entry.svg" alt="Attendance entry table with student list and status toggles" style={{maxWidth: 960, width:'100%', height:'auto'}} />
+  <figcaption>Attendance entry table with student list and status toggles</figcaption>
+</figure>
 
 _Mark daily or period-based attendance and add notes._
 :::

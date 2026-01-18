@@ -58,7 +58,10 @@ _Draft and schedule messages to the right audience._
 :::note Screenshot
 Messaging approvals queue
 
-![Approvals queue showing pending messages and approver actions](/img/messaging-approvals.svg)
+<figure>
+  <img src="/img/messaging-approvals.svg" alt="Approvals queue showing pending messages and approver actions" style={{maxWidth: 960, width:'100%', height:'auto'}} />
+  <figcaption>Approvals queue showing pending messages and approver actions</figcaption>
+</figure>
 
 _Review and approve school-wide announcements before sending._
 :::

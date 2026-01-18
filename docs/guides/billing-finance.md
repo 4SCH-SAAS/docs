@@ -53,7 +53,10 @@ _Get a snapshot of collections and overdue balances._
 :::tip Screenshot
 Finance — Invoices list
 
-![Invoices table with status filters, due amounts, and action menu](/img/finance-invoices.svg)
+<figure>
+  <img src="/img/finance-invoices.svg" alt="Invoices table with status filters, due amounts, and action menu" style={{maxWidth: 960, width:'100%', height:'auto'}} />
+  <figcaption>Invoices table with status filters, due amounts, and action menu</figcaption>
+</figure>
 
 _Filter, send reminders, and record payments in one place._
 :::
