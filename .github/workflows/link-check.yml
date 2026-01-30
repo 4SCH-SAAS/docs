@@ -28,12 +28,23 @@ jobs:
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-      - name: Build site (to check built HTML links)
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup pnpm
         run: |
           corepack enable
           corepack prepare pnpm@latest --activate
-          pnpm install --frozen-lockfile
-          pnpm build
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+        env:
+          SHARP_IGNORE_GLOBAL_LIBVIPS: 1
+
+      - name: Build site
+        run: pnpm build
 
       - name: Check links in built HTML
         uses: lycheeverse/lychee-action@v1
