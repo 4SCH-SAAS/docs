@@ -39,7 +39,9 @@ jobs:
           corepack prepare pnpm@latest --activate
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile --ignore-scripts=false
+        run: |
+          pnpm install --frozen-lockfile
+          pnpm rebuild sharp
         env:
           SHARP_IGNORE_GLOBAL_LIBVIPS: 1
 
