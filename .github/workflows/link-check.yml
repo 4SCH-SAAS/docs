@@ -40,7 +40,7 @@ jobs:
           pnpm config set ignore-scripts false
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --frozen-lockfile --config.ignore-scripts=false
         env:
           SHARP_IGNORE_GLOBAL_LIBVIPS: 1
 
