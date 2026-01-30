@@ -23,15 +23,17 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: '20'
 
-      - name: Enable Corepack and pnpm
+      - name: Setup pnpm
         run: |
           corepack enable
           corepack prepare pnpm@latest --activate
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+        env:
+          SHARP_IGNORE_GLOBAL_LIBVIPS: 1
 
       - name: Build site
         run: pnpm build

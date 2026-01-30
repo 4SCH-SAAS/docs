@@ -17,6 +17,7 @@ jobs:
         uses: lycheeverse/lychee-action@v1
         with:
           args: |
+            --exclude "localhost"
             --verbose
             --no-progress
             --exclude-mail
