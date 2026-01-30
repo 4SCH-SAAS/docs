@@ -40,7 +40,12 @@ jobs:
           pnpm config set ignore-scripts false
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile --config.ignore-scripts=false
+        run: pnpm install --frozen-lockfile
+        env:
+          SHARP_IGNORE_GLOBAL_LIBVIPS: 1
+
+      - name: Manually install sharp
+        run: npm install --no-save sharp@0.32.6
         env:
           SHARP_IGNORE_GLOBAL_LIBVIPS: 1
 
