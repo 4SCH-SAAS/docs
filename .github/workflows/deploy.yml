@@ -35,6 +35,13 @@ jobs:
         env:
           SHARP_IGNORE_GLOBAL_LIBVIPS: 1
 
+      - name: Rebuild sharp manually
+        run: |
+          cd node_modules/.pnpm/sharp@0.32.6/node_modules/sharp
+          npm run install
+        env:
+          SHARP_IGNORE_GLOBAL_LIBVIPS: 1
+
       - name: Build site
         run: pnpm build
 
