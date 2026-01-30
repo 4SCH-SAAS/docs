@@ -43,8 +43,24 @@ const config = {
             sidebarPath: require.resolve('./sidebars.js'),
             editCurrentVersion: false,
             showLastUpdateTime: false,
+            // Versioning configuration
+            includeCurrentVersion: true,
+            lastVersion: 'current',
+            versions: {
+              current: {
+                label: 'Latest',
+                path: '',
+              },
+            },
           },
-          blog: false,
+          blog: {
+            showReadingTime: true,
+            blogTitle: 'Release Notes & Updates',
+            blogDescription: 'Stay updated with the latest features, improvements, and fixes in 4SCH.',
+            postsPerPage: 10,
+            blogSidebarTitle: 'Recent Updates',
+            blogSidebarCount: 'ALL',
+          },
           pages: false,
           theme: {
             customCss: require.resolve('./src/css/custom.css'),
@@ -54,6 +70,19 @@ const config = {
     ],
   ],
   themeConfig: /** @type {import('@docusaurus/preset-classic').ThemeConfig} */ ({
+    algolia: {
+      // The application ID provided by Algolia
+      appId: 'YOUR_APP_ID',
+      // Public API key: it is safe to commit it
+      apiKey: 'YOUR_SEARCH_API_KEY',
+      indexName: '4sch-docs',
+      // Optional: see doc section below
+      contextualSearch: true,
+      // Optional: Algolia search parameters
+      searchParameters: {},
+      // Optional: path for search page that enabled by default (`false` to disable it)
+      searchPagePath: 'search',
+    },
     navbar: {
       title: '4SCH Docs',
       logo: {
@@ -62,6 +91,11 @@ const config = {
       },
       items: [
         {to: '/', label: 'Docs', position: 'left'},
+        {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          type: 'docsVersionDropdown',
+          position: 'right',
+        },
         {href: 'https://github.com/4SCH-SAAS/docs', label: 'GitHub', position: 'right'},
       ],
     },
