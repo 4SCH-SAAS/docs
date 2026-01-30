@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install lychee
+      - name: Check links in markdown files
         uses: lycheeverse/lychee-action@v1
         with:
           args: |
@@ -24,7 +24,7 @@ jobs:
             --max-concurrency 4
             --retry-wait-time 2
             --timeout 20
-            **/*.md **/*.mdx build/**/*.html
+            **/*.md **/*.mdx
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
@@ -35,17 +35,17 @@ jobs:
           pnpm install --frozen-lockfile
           pnpm build
 
-      - name: Run lychee on built site
+      - name: Check links in built HTML
         uses: lycheeverse/lychee-action@v1
         with:
           args: |
+            --exclude "localhost"
             --verbose
             --no-progress
             --exclude-mail
             --max-concurrency 4
             --retry-wait-time 2
             --timeout 20
-            --exclude "localhost"
             build/**/*.html
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
