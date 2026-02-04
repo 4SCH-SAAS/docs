@@ -1,0 +1,49 @@
+4sch Documentation
+│
+├── Getting Started
+│   ├── What is 4sch?
+│   ├── How 4sch uses eSchool SaaS
+│   ├── User Roles Overview
+│   └── System Requirements
+│
+├── School Administrator
+│   └── (Improve & reorganize existing content)
+│
+├── Teachers
+│   ├── Getting Started for Teachers
+│   ├── Class & Subject Management
+│   ├── Attendance
+│   ├── Assignments & Exams
+│   ├── Grading & Reports
+│   └── Communication with Parents & Students
+│
+├── Parents
+│   ├── Parent Account Overview
+│   ├── Monitoring Student Progress
+│   ├── Fees & Payments
+│   ├── Attendance Tracking
+│   └── Messaging the School
+│
+├── Students
+│   ├── Student Dashboard
+│   ├── Viewing Results
+│   ├── Assignments & Exams
+│   ├── Timetable & Calendar
+│   └── Communication Rules
+│
+├── Non-Teaching Staff
+│   ├── Office Staff
+│   ├── Payroll / Finance Staff
+│   └── Transportation 
+│
+├── Common Workflows
+│   ├── Term Setup (End-to-End)
+│   ├── Result Publishing Flow
+│   ├── Fee Collection Lifecycle
+│   └── Parent-Teacher Communication Flow
+│
+├── Troubleshooting & FAQs
+│
+└── Release Notes & Updates
+
+The structure is not exhaustive. Be mindful of the placeholder structure. Consider adding or reorganizing based on the latest version of eSchools documentation here: https://wrteam-in.github.io/eSchool-SaaS-Doc/schooladmin/intro/

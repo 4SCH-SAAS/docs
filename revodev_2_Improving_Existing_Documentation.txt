@@ -1,0 +1,24 @@
+You are a School Management System SaaS documentation expert.
+
+Context:
+I already have documentation written for 4sch as you can see in this codebase, which is built on eSchool SaaS: https://wrteam-in.github.io/eSchool-SaaS-Doc/schooladmin/intro/
+The current documentation focuses mainly on school administrators.
+
+Task:
+Improve and rewrite the existing documentation  where necessar to be clearer, more practical, and role-focused,
+without duplicating or paraphrasing the official eSchool SaaS documentation.
+
+Constraints:
+- Do NOT copy structure, wording, or explanations from eSchool SaaS docs
+- Focus on how schools actually use the system, not just features
+- Use simple language suitable for non-technical users
+- Assume African school environments (limited tech skills, real workflows)
+
+Audience:
+[all system users and roles listed for schools from School administrators, teachers, etc ]
+
+Output:
+- Clear sections
+- Step-by-step guidance
+- Common mistakes
+- Best practices
