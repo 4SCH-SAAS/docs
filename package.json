@@ -9,12 +9,15 @@
     "serve": "docusaurus serve",
     "clean": "docusaurus clear && docusaurus build --no-minify"
   },
-  "engines": {"node": ">=18.17"},
+  "engines": {
+    "node": ">=18.17"
+  },
   "dependencies": {
     "@docusaurus/core": "^3.3.2",
+    "@docusaurus/plugin-ideal-image": "^3.3.2",
     "@docusaurus/preset-classic": "^3.3.2",
     "@docusaurus/theme-mermaid": "^3.3.2",
-    "@docusaurus/plugin-ideal-image": "^3.3.2",
+    "@easyops-cn/docusaurus-search-local": "^0.52.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }

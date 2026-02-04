@@ -26,6 +26,15 @@ const config = {
         disableInDev: false,
       },
     ],
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: true,
+        language: ['en'],
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+      },
+    ],
   ],
   markdown: {
     mermaid: true,
@@ -70,19 +79,6 @@ const config = {
     ],
   ],
   themeConfig: /** @type {import('@docusaurus/preset-classic').ThemeConfig} */ ({
-    algolia: {
-      // The application ID provided by Algolia
-      appId: 'YOUR_APP_ID',
-      // Public API key: it is safe to commit it
-      apiKey: 'YOUR_SEARCH_API_KEY',
-      indexName: '4sch-docs',
-      // Optional: see doc section below
-      contextualSearch: true,
-      // Optional: Algolia search parameters
-      searchParameters: {},
-      // Optional: path for search page that enabled by default (`false` to disable it)
-      searchPagePath: 'search',
-    },
     navbar: {
       title: '4SCH Docs',
       logo: {
