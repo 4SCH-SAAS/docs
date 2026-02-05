@@ -23,7 +23,6 @@ const sidebars = {
         'guides/student-guide',
         'guides/non-teaching-staff-guide',
         'guides/accountant-guide',
-        'guides/librarian-guide',
       ],
     },
     {

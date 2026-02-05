@@ -600,7 +600,7 @@ After setting up the academic structure, you need to add your staff and teachers
    - **First Name** and **Last Name**
    - **Email Address** (they'll use this to log in)
    - **Phone Number**
-   - **Role:** Select Teacher, Admin, Accountant, Librarian, etc.
+   - **Role:** Select Teacher, Admin, Accountant, etc.
    - **Employee ID:** Your internal staff ID (optional)
    - **Date of Joining**
 3. Click **Save**
@@ -654,7 +654,7 @@ Different roles have different access levels:
 | **School Admin** | School management | Manage staff, students, fees, reports |
 | **Teacher** | Classroom management | Attendance, grading, messaging |
 | **Accountant** | Finance only | Fee management, invoices, payments |
-| **Librarian** | Library only | Book management, checkouts |
+| **Non-Teaching Staff** | Operational access | Admissions, front desk tasks (as configured) |
 | **Non-Teaching Staff** | Limited access | Specific assigned functions |
 
 ### Deactivating Staff Accounts
@@ -852,7 +852,7 @@ First, define all the types of fees your school charges.
 **Common Fee Categories:**
 - Tuition Fee
 - Development Levy
-- Library Fee
+- Resource/Activity Fee (if used)
 - Laboratory Fee
 - Sports Fee
 - Examination Fee
@@ -882,7 +882,7 @@ Different classes often have different fee amounts. Create fee structures for ea
 |--------------|-------------|-------------|---------|---------|
 | Tuition | ₦50,000 | ₦60,000 | ₦75,000 | ₦85,000 |
 | Development | ₦10,000 | ₦10,000 | ₦15,000 | ₦15,000 |
-| Library | ₦3,000 | ₦3,000 | ₦5,000 | ₦5,000 |
+| Resource/Activities | ₦3,000 | ₦3,000 | ₦5,000 | ₦5,000 |
 | **Total per Term** | **₦63,000** | **₦73,000** | **₦95,000** | **₦105,000** |
 
 **How to Create a Fee Structure:**

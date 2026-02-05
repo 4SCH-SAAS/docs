@@ -409,7 +409,7 @@ Some teachers share learning materials through 4SCH.
 
 ### Accessing Study Materials
 
-1. Go to **Library** or **Resources** (if your school has this feature)
+1. Go to **Resources** (if your school has this feature)
 2. Browse by:
    - Subject
    - Class/grade level

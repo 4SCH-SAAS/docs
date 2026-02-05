@@ -28,7 +28,7 @@ import ReportsIcon from '@site/src/components/icons/Reports';
 
 
 ## <span className="heading-icon"><FinanceIcon size={18} /></span> Finance Setup {#finance-setup}
-- Fee heads: Tuition, Lab, Transport, Library
+- Fee heads: Tuition, Lab, Transport, and other school-defined fee items
 - Structures: Per-class or per-student customization
 - Cycles: Monthly, termly, annual
 

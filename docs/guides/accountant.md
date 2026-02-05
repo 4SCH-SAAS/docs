@@ -57,7 +57,7 @@ Fee categories are the different types of fees your school charges.
 **Common Fee Categories:**
 - **Tuition Fee** — Main academic fee
 - **Development Levy** — Infrastructure and facilities
-- **Library Fee** — Library access and books
+- **Resource/Activities Fee** — Optional school-defined charge
 - **Laboratory Fee** — Science lab materials
 - **Sports Fee** — Athletic programs
 - **Examination Fee** — Internal and external exams
@@ -97,7 +97,7 @@ Different classes often have different fees. You need to set up fee structures f
 |--------------|--------|------|
 | Tuition | ₦75,000 | Mandatory |
 | Development Levy | ₦15,000 | Mandatory |
-| Library Fee | ₦5,000 | Mandatory |
+| Resource/Activities Fee | ₦5,000 | Optional |
 | Laboratory Fee | ₦8,000 | Mandatory |
 | Sports Fee | ₦3,000 | Mandatory |
 | Computer Fee | ₦5,000 | Mandatory |

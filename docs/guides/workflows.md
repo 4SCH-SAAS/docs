@@ -555,7 +555,7 @@ When a student transfers to another school, follow this workflow.
    - If outstanding, request payment before processing
 
 3. ✅ **Check for school property**
-   - Library books
+   - School-issued items (as applicable)
    - Textbooks
    - Sports equipment
    - Lab equipment

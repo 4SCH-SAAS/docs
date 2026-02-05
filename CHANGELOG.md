@@ -51,7 +51,6 @@ Complete rewrite of documentation following user-centric, practical, and African
   - Daily/weekly/monthly/term-end reports
   - Professional ethics and best practices
 
-- **`guides/librarian-guide.md`** (18,656 bytes)
   - Book collection management (adding, cataloging, organizing)
   - Checkout and check-in procedures
   - Handling late returns and fines
