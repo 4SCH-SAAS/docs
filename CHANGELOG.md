@@ -51,17 +51,6 @@ Complete rewrite of documentation following user-centric, practical, and African
   - Daily/weekly/monthly/term-end reports
   - Professional ethics and best practices
 
-  - Book collection management (adding, cataloging, organizing)
-  - Checkout and check-in procedures
-  - Handling late returns and fines
-  - Lost and damaged book procedures
-  - Reservation system management
-  - Library rules and policies
-  - Inventory management (stock take procedures)
-  - Library displays and reading promotion
-  - Working with students and library prefects
-  - Daily routines and best practices
-
 #### Workflows & Processes
 - **`guides/workflows.md`** (25,865 bytes)
   - Starting a New Academic Term (2-week detailed timeline)
@@ -414,7 +403,6 @@ Added:
 docs/intro/user-roles.md
 docs/guides/non-teaching-staff-guide.md
 docs/guides/accountant-guide.md
-docs/guides/librarian-guide.md
 docs/guides/workflows.md
 DOCUMENTATION_MAINTENANCE_GUIDE.md
 CHANGELOG.md
