@@ -67,12 +67,11 @@ Different people in your school need access to different features. 4SCH organize
 ---
 
 ### Non-Teaching Staff
-**Who they are:** Office clerks, accountants, librarians, transport coordinators  
+**Who they are:** Office clerks, accountants, admission officers, transport coordinators  
 **What they do:** Handle specific administrative functions  
 **Key responsibilities vary by position:**
 - **Admission Officer:** Enroll new students, manage applications
 - **Accountant:** Process fee payments, manage financial records
-- **Librarian:** Manage book inventory and student checkouts
 - **Transport Coordinator:** Manage bus routes and student transport
 
 <Link to="/guides/non-teaching-staff">→ Read the full Non-Teaching Staff Guide</Link>

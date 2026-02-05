@@ -147,7 +147,6 @@ Every major school role now has comprehensive documentation:
 │   │   ├── student-guide.md                  ← Enhanced (15.7 KB)
 │   │   ├── non-teaching-staff-guide.md       ← NEW (18.9 KB)
 │   │   ├── accountant-guide.md               ← NEW (24.6 KB)
-│   │   ├── librarian-guide.md                ← NEW (18.7 KB)
 │   │   ├── workflows.md                      ← NEW (25.9 KB)
 │   │   ├── messaging.md
 │   │   ├── billing-finance.md
@@ -270,8 +269,6 @@ The 4SCH Team
 - [Student Guide](docs/guides/student-guide.md)
 - [Non-Teaching Staff Guide](docs/guides/non-teaching-staff-guide.md)
 - [Accountant Guide](docs/guides/accountant-guide.md)
-- [Librarian Guide](docs/guides/librarian-guide.md)
-
 **Common Tasks:**
 - [Common Workflows](docs/guides/workflows.md)
 - [Messaging Guide](docs/guides/messaging.md)

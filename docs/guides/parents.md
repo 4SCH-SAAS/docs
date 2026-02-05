@@ -219,7 +219,7 @@ Some schools require a printed report card to be signed and returned.
 Typical fee breakdown:
 - **Tuition Fee** — Main academic fee
 - **Development Levy** — School infrastructure
-- **Library Fee** — Access to library resources
+- **Resource/Activities Fee** — School-defined charge (if applicable)
 - **Sports Fee** — Athletics and sports programs
 - **Exam Fee** — External exam registration
 - **Transport Fee** — School bus (if applicable)

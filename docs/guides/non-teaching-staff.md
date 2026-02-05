@@ -15,7 +15,6 @@ Welcome! This guide is for non-teaching staff members who support school operati
 :::tip Who is this for?
 This guide covers general non-teaching staff roles. For specialized roles, see:
 - <Link to="/guides/accountant">Accountant/Bursar Guide</Link>
-- <Link to="/guides/librarian">Librarian Guide</Link>
 :::
 
 <TOCInline toc={[]} minHeadingLevel={2} maxHeadingLevel={3} />
@@ -705,7 +704,6 @@ Use this checklist to stay on top of your responsibilities:
 ## Related Guides
 
 - <Link to="/guides/accountant">Accountant/Bursar Guide</Link> — Financial management
-- <Link to="/guides/librarian">Librarian Guide</Link> — Library operations
 - <Link to="/guides/admin">Administrator Guide</Link> — System setup and management
 - <Link to="/support/faq">Frequently Asked Questions</Link>
 

@@ -124,7 +124,6 @@ docs/
 │   ├── student-guide.md
 │   ├── non-teaching-staff-guide.md
 │   ├── accountant-guide.md
-│   ├── librarian-guide.md
 │   ├── workflows.md
 │   ├── messaging.md
 │   ├── billing-finance.md

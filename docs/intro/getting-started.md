@@ -48,7 +48,7 @@ Your main job is to set up the school structure so everyone else can use the sys
 1. ✅ Add all teachers and assign them roles
 2. ✅ Add subjects taught at each level
 3. ✅ Assign teachers to their subjects and classes
-4. ✅ Add non-teaching staff (bursar, librarian, secretary)
+4. ✅ Add non-teaching staff (bursar, secretary, front desk staff)
 
 **Week 3: Students and Parents**
 1. ✅ Add students (manually or by importing from Excel)

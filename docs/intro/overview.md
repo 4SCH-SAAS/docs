@@ -17,7 +17,6 @@ import FinanceIcon from '@site/src/components/icons/Finance';
 import MessagingIcon from '@site/src/components/icons/Messaging';
 import ReportsIcon from '@site/src/components/icons/Reports';
 import SecurityIcon from '@site/src/components/icons/Security';
-import LibraryIcon from '@site/src/components/icons/Library';
 import StaffIcon from '@site/src/components/icons/Staff';
 
 # 4SCH Documentation
@@ -65,12 +64,6 @@ Use these docs to set up 4SCH and run day-to-day school operations. Start with t
       title: 'Accountant/Bursar',
       description: 'Invoicing, payments, and finance reporting',
       icon: <FinanceIcon />,
-    },
-    {
-      to: '/guides/librarian',
-      title: 'Librarian',
-      description: 'Catalog, lending, and library records',
-      icon: <LibraryIcon />,
     },
     {
       to: '/guides/non-teaching-staff',
