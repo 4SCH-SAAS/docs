@@ -17,10 +17,14 @@ import FinanceIcon from '@site/src/components/icons/Finance';
 import MessagingIcon from '@site/src/components/icons/Messaging';
 import ReportsIcon from '@site/src/components/icons/Reports';
 import SecurityIcon from '@site/src/components/icons/Security';
+import LibraryIcon from '@site/src/components/icons/Library';
+import StaffIcon from '@site/src/components/icons/Staff';
 
 # 4SCH Documentation
 
-Use these docs to set up 4SCH and run day-to-day school operations. Start with the guide that matches your role, or use search to find a feature quickly.
+Use these docs to set up 4SCH and run day-to-day school operations. Start with the guide that matches your role.
+
+**Search tip:** use short keywords such as `attendance`, `invoice`, `timetable`, or `grades`.
 
 <div style={{display: 'flex', gap: '0.75rem', flexWrap: 'wrap', margin: '1rem 0 1.25rem'}}>
   <Link className="button button--primary" to="/intro/quick-start">Quick Start</Link>
@@ -45,16 +49,16 @@ Use these docs to set up 4SCH and run day-to-day school operations. Start with t
       icon: <GradesIcon />,
     },
     {
-      to: '/guides/parents',
-      title: 'Parent/Guardian',
-      description: 'Attendance, results, fee payments, and messages',
-      icon: <UsersIcon />,
-    },
-    {
       to: '/guides/students',
       title: 'Student',
       description: 'Timetable, assignments, grades, and attendance',
       icon: <AcademicIcon />,
+    },
+    {
+      to: '/guides/parents',
+      title: 'Parent/Guardian',
+      description: 'Attendance, results, fee payments, and messages',
+      icon: <UsersIcon />,
     },
     {
       to: '/guides/accountant',
@@ -66,13 +70,13 @@ Use these docs to set up 4SCH and run day-to-day school operations. Start with t
       to: '/guides/librarian',
       title: 'Librarian',
       description: 'Catalog, lending, and library records',
-      icon: <UsersIcon />,
+      icon: <LibraryIcon />,
     },
     {
       to: '/guides/non-teaching-staff',
       title: 'Non-Teaching Staff',
       description: 'Admissions and operational workflows',
-      icon: <SecurityIcon />,
+      icon: <StaffIcon />,
     },
   ]}
 />
