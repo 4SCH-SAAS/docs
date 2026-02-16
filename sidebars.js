@@ -91,6 +91,46 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: '🚀 Advanced Workflows',
+      collapsed: true,
+      items: [
+        'advanced-workflows/README',
+        'advanced-workflows/teacher-bulk-operations',
+        'advanced-workflows/admin-bulk-data-management',
+        'advanced-workflows/accountant-advanced-reconciliation',
+        'advanced-workflows/parent-multi-child-management',
+        'advanced-workflows/admin-system-optimization',
+      ],
+    },
+    {
+      type: 'category',
+      label: '🎬 Animated Diagrams',
+      collapsed: true,
+      items: [
+        'animated-diagrams/README',
+        'animated-diagrams/diagram-specifications',
+        'animated-diagrams/teacher-assignment-workflow-diagram',
+        'animated-diagrams/parent-fee-payment-diagram',
+        'animated-diagrams/student-assignment-submission-diagram',
+        'animated-diagrams/admin-school-setup-diagram',
+        'animated-diagrams/accountant-payment-processing-diagram',
+        'animated-diagrams/driver-trip-management-diagram',
+      ],
+    },
+    {
+      type: 'category',
+      label: '📚 Training & Rollout',
+      collapsed: true,
+      items: [
+        'training/README',
+        'training/training-rollout-plan',
+        'training/trainer-guide',
+        'training/assessment-templates',
+        'training/training-materials-checklist',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Support',
       collapsed: false,
       items: [
