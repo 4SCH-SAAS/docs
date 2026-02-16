@@ -869,7 +869,7 @@ Critical tasks at term end to close books properly.
 
 ---
 
-## Getting Help
+Tool call argument 'replace' pruned from message history.
 
 **Need Training on 4SCH Finance Module?**
 - Ask your admin to arrange training

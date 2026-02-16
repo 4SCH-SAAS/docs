@@ -676,7 +676,7 @@ Share school photos and videos:
 
 ---
 
-## Troubleshooting Common Issues
+Tool call argument 'replace' pruned from message history.
 
 ### Can't Log In
 
