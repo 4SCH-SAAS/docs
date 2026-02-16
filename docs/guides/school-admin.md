@@ -1,6 +1,8 @@
 ---
 id: school-admin
-title: School Admin Guide
+title: School Administrator Guide | 4SCH School Management System
+description: Complete guide for school administrators managing 4SCH. Learn how to set up classes, manage fees, create timetables, enroll students, and configure your Nigerian school management system.
+keywords: [school administration, school management system, Nigerian schools, student enrollment, fee management, timetable creation, academic sessions, 4SCH admin guide, school software Nigeria]
 sidebar_position: 1
 ---
 

@@ -1,6 +1,8 @@
 ---
 id: driver-guide
-title: Driver Guide
+title: School Driver Guide | 4SCH Transportation Management
+description: Complete guide for school drivers using 4SCH. Manage routes, track student attendance on buses, report trips, handle transportation schedules, and ensure student safety in Nigerian schools.
+keywords: [school driver, bus routes, student transportation, attendance tracking, school bus Nigeria, transportation management, 4SCH driver, route management, student safety]
 sidebar_position: 8
 ---
 
