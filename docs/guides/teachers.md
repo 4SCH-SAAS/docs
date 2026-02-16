@@ -191,6 +191,232 @@ Write comments to help the student improve:
 Grade all submissions for one question/section at a time rather than grading each student's entire work. This helps you stay consistent in your grading and saves time.
 :::
 
+### Complete Workflow: Creating and Grading an Assignment
+
+This workflow shows you the entire process from creating an assignment to publishing grades.
+
+#### Phase 1: Planning Your Assignment (5-10 minutes)
+
+**Before you create the assignment in 4SCH, plan:**
+
+1. **Learning Objective:** What should students learn or demonstrate?
+   - Example: "Students will solve quadratic equations using the formula"
+   - Example: "Students will write a persuasive essay with introduction, body, and conclusion"
+
+2. **Assessment Criteria:** How will you grade it?
+   - Create a simple rubric or point breakdown
+   - Example: "5 points per correct answer (4 questions = 20 points)"
+   - Example: "Structure (5), Content (10), Grammar (5) = 20 points total"
+
+3. **Due Date:** When should students submit?
+   - Give at least 3-7 days for homework
+   - Allow 1-2 weeks for projects or essays
+   - Consider: Do students need weekends? Any upcoming exams?
+
+4. **Resources Needed:** What will students need?
+   - Worksheet to download?
+   - Reference materials?
+   - Rubric or marking scheme?
+
+#### Phase 2: Creating in 4SCH (5 minutes)
+
+**Step-by-step creation:**
+
+1. **Navigate:** Dashboard → Assignments → Create New Assignment
+
+2. **Fill Basic Info:**
+   ```
+   Title: Chapter 5: Quadratic Equations Practice
+   Subject: Mathematics
+   Class: Form 3A
+   Due Date: March 25, 2026 at 11:59 PM
+   Total Points: 20
+   ```
+
+3. **Write Clear Instructions:**
+   ```
+   Instructions:
+   Solve all 4 quadratic equations using the quadratic formula.
+   Show all your working. Answers without working will receive 
+   half marks only.
+   
+   Submit your solutions as:
+   - Handwritten work (scan or photo - must be clear)
+   - Typed document (Word or PDF)
+   
+   Formula: x = [-b ± √(b²-4ac)] / 2a
+   ```
+
+4. **Attach Resources:**
+   - Click "Attach Files"
+   - Upload: `quadratic_equations_worksheet.pdf`
+   - Upload: `worked_example.pdf` (optional)
+
+5. **Configure Settings:**
+   - ✅ Allow late submissions (but note them)
+   - ✅ Email notifications to students
+   - ❌ Group assignment (individual work)
+   - ✅ Show points to students
+
+6. **Review and Create:**
+   - Preview how students will see it
+   - Check: Title clear? Instructions complete? Due date correct?
+   - Click **Create Assignment**
+
+**✅ Assignment is now live! Students receive notification.**
+
+#### Phase 3: Monitoring Submissions (Ongoing)
+
+**Daily checks (2-3 minutes):**
+
+1. Open **Assignments** → Select your assignment
+2. Check the submission counter:
+   - "15 of 30 submitted" means 15 students have submitted
+   - Click "View Submissions"
+
+3. **Identify who hasn't submitted:**
+   - Sort by "Not Submitted"
+   - 3 days before deadline: Send a reminder
+   - 1 day before deadline: Follow up with students in class
+
+**Sending a reminder:**
+1. Click "Not Submitted" tab
+2. Select all students (or specific ones)
+3. Click "Send Reminder"
+4. Message auto-sends: "Reminder: Quadratic Equations assignment due in 3 days"
+
+#### Phase 4: Grading Submissions (15-30 minutes for 30 students)
+
+**Efficient grading process:**
+
+1. **Set aside focused time:**
+   - Don't grade during teaching breaks
+   - Allocate 30-60 minutes without interruptions
+   - Grade all submissions at once for consistency
+
+2. **Start grading:**
+   - Assignments → Select assignment → View Submissions
+   - Sort by "Submitted" (start with on-time submissions)
+
+3. **For each submission:**
+   
+   **Click student name → Review work → Grade**
+   
+   **Question 1: (5 points)**
+   - Correct answer with working: 5/5
+   - Correct answer, no working: 2.5/5
+   - Wrong answer with attempt: 1/5
+   - No attempt: 0/5
+   
+   Repeat for Questions 2, 3, 4
+
+4. **Calculate total:**
+   - System auto-sums: Q1(5) + Q2(5) + Q3(4) + Q4(5) = 19/20
+
+5. **Add feedback:**
+   ```
+   Excellent work, Sarah! You showed all working clearly.
+   Small mistake in Q3: You used wrong sign in the formula.
+   Review the example and try Q3 again.
+   Overall: 95% - Outstanding!
+   ```
+
+6. **Save grade:**
+   - Click "Save" (grade saved, not visible to student yet)
+   - Move to next student
+
+7. **Batch actions:**
+   - Grade all Question 1s for all students first
+   - Then all Question 2s, etc.
+   - This ensures consistent marking
+
+#### Phase 5: Publishing Grades (2 minutes)
+
+**After grading all submissions:**
+
+1. Return to assignment overview
+2. Review grade distribution:
+   - How many A's, B's, C's?
+   - Anyone scoring unusually low? (Investigate)
+   - Anyone scoring unusually high? (Verify)
+
+3. **Publish grades:**
+   - Click "Publish All Grades"
+   - Confirm: "Publish 27 grades?" → Yes
+   - Students and parents receive notification
+
+**Alternative: Publish individually**
+- Useful if you want to discuss low grades with students first
+- Select specific students → Publish Selected
+
+#### Phase 6: Follow-up (Ongoing)
+
+**After publishing:**
+
+1. **Check for patterns:**
+   - Did most students struggle with Q3? Re-teach that concept
+   - Everyone got Q1 perfect? Maybe too easy next time
+   - Use "View Statistics" to see class average
+
+2. **Handle late submissions:**
+   - Set a policy: "Late = -10% per day" or "No marks after deadline"
+   - Grade late submissions separately
+   - Add note: "Late submission: -2 points"
+
+3. **Parent inquiries:**
+   - Parent asks: "Why did John get 12/20?"
+   - You can show them the graded work with your feedback
+   - Explain: "Missing working in 3 questions = lost points"
+
+4. **Use results for planning:**
+   - Low class average? Review the topic before moving on
+   - High average? Students ready for more challenging work
+
+#### Complete Timeline Example
+
+**Monday (Week 1):**
+- 9:00 AM: Create assignment in 4SCH
+- 9:05 AM: Explain assignment to students in class
+- Students have until Monday (Week 2)
+
+**Thursday (Week 1):**
+- Quick check: 8 of 30 submitted already ✓
+
+**Friday (Week 2) - 2 days before deadline:**
+- Send reminder to 22 students who haven't submitted
+
+**Monday (Week 2) - Due date:**
+- 27 of 30 submitted by 11:59 PM ✓
+- 3 students didn't submit
+
+**Tuesday (Week 2):**
+- 2:00 PM - 3:00 PM: Grade all 27 submissions
+- 3:00 PM: Publish grades
+- 3:05 PM: Students and parents receive grades
+
+**Wednesday (Week 2):**
+- Follow up with 3 students who didn't submit
+- Answer parent questions about grades
+- Note: Need to re-teach quadratic formula applications
+
+#### Time Investment Summary
+
+| Activity | Time Required |
+|----------|--------------|
+| Planning the assignment | 5-10 minutes |
+| Creating in 4SCH | 5 minutes |
+| Monitoring submissions | 2 min/day × 7 days = 14 minutes |
+| Grading 30 submissions | 30-60 minutes (1-2 min each) |
+| Publishing and review | 5 minutes |
+| Follow-up | 10-15 minutes |
+| **TOTAL** | **~90 minutes for entire process** |
+
+**Efficiency tips:**
+- Create assignment templates for recurring tasks
+- Use rubrics to speed up grading
+- Grade during free periods, not after school
+- Set clear expectations to reduce re-grading
+
 ### Common Assignment Mistakes to Avoid
 
 ❌ **Don't:** Create assignments with unclear instructions  

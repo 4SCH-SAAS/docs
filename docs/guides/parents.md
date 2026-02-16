@@ -227,7 +227,420 @@ Typical fee breakdown:
 
 **Your school may have different fee categories.** Click on any invoice to see the detailed breakdown.
 
-### How to Pay Fees Online
+### Complete Workflow: Paying School Fees End-to-End
+
+This comprehensive workflow guides you through the entire fee payment process, from receiving an invoice to getting your receipt.
+
+#### Phase 1: Understanding Your Fee Invoice (2-3 minutes)
+
+**When you receive a fee notification:**
+
+You'll get notified via:
+- 📱 Push notification: "New fee invoice for Sarah - Term 2 fees"
+- 📧 Email: "School Fee Invoice - Due March 31, 2026"
+- 💬 SMS: "Fee reminder for Sarah Wilson"
+
+**Step 1: Access the invoice**
+1. Open 4SCH app or log in to the web portal
+2. Go to **Fees** section from dashboard
+3. Or click the notification to go directly to fees
+
+**Step 2: Review invoice details**
+
+Click on the pending invoice to see:
+
+```
+Invoice #: INV-2026-0234
+Student: Sarah Wilson - Grade 5A
+Term: Second Term 2026
+Issue Date: February 1, 2026
+Due Date: March 31, 2026
+Status: PENDING
+```
+
+**Fee breakdown:**
+| Fee Type | Amount |
+|----------|--------|
+| Tuition Fee | KSh 25,000 |
+| Development Levy | KSh 3,000 |
+| Sports Fee | KSh 1,500 |
+| Resource Fee | KSh 2,000 |
+| **Total Amount Due** | **KSh 31,500** |
+
+**Step 3: Check payment options**
+
+Look for:
+- **Full Payment:** Pay entire amount (KSh 31,500)
+- **Installment Payment:** Pay in parts (if allowed by school)
+  - Example: 3 installments of KSh 10,500 each
+  - Installment 1 due: March 10
+  - Installment 2 due: March 20
+  - Installment 3 due: March 31
+
+**Step 4: Check for discounts**
+- Early payment discount: "Pay before Feb 28 - Get 5% off"
+- Sibling discount: "Second child: 10% off"
+- Financial aid: "Scholarship applied: -KSh 5,000"
+
+**Updated total after discounts: KSh 28,000**
+
+:::tip Understanding Your Invoice
+- **Due Date:** Pay before this date to avoid late fees
+- **Overdue:** Late fee may apply (e.g., 5% penalty)
+- **Partial Payment:** Some schools allow partial payment
+- **Previous Balance:** Check if you have any outstanding fees from previous terms
+:::
+
+#### Phase 2: Choosing Your Payment Method (1 minute)
+
+**Available payment methods (varies by school):**
+
+**Option 1: Online Payment (Recommended - Instant confirmation)**
+- ✅ Credit/Debit Card (Visa, Mastercard)
+- ✅ Mobile Money (M-Pesa, MTN, Airtel)
+- ✅ Bank Transfer (instant or 24-hour processing)
+- ✅ PayPal or other e-wallets
+
+**Option 2: Offline Payment (Manual confirmation needed)**
+- 💰 Cash at school office
+- 🏦 Cheque deposit
+- 🏧 Bank branch deposit
+
+**Recommendation:**
+- **Online payment:** Instant receipt, no school visit needed
+- **Cash payment:** Use if you don't have cards/mobile money
+
+**Cost comparison:**
+
+| Method | Transaction Fee | Processing Time |
+|--------|----------------|-----------------|
+| Card Payment | 2.5% (KSh 700) | Instant |
+| M-Pesa | 1% (KSh 280) | Instant |
+| Bank Transfer | KSh 0-100 | 1-24 hours |
+| Cash at office | KSh 0 | Instant (but requires visit) |
+
+**Best choice for KSh 28,000 invoice:**
+- **M-Pesa:** Lower fee (KSh 280), instant confirmation
+- **Bank Transfer:** No fee if same-day, but may take hours
+
+#### Phase 3: Making Online Payment (3-5 minutes)
+
+**Let's use M-Pesa as an example:**
+
+**Step 1: Initiate payment**
+1. Click **Pay Now** on the invoice
+2. Select amount: **Full Payment (KSh 28,000)** or **Partial Payment**
+3. Choose payment method: **M-Pesa**
+4. Click **Proceed to Payment**
+
+**Step 2: Enter payment details**
+```
+M-Pesa Phone Number: 0712 345 678
+Amount: KSh 28,000
+Paying for: Sarah Wilson - Term 2 Fees
+```
+
+**Step 3: Confirm details**
+Review summary:
+- Student: Sarah Wilson
+- Invoice: INV-2026-0234
+- Amount: KSh 28,000
+- Fee: KSh 280
+- **Total to pay: KSh 28,280**
+
+Click **Confirm Payment**
+
+**Step 4: Complete M-Pesa transaction**
+
+On your phone:
+1. M-Pesa prompt appears: "Enter M-Pesa PIN to pay KSh 28,280 to SCHOOL NAME"
+2. Enter your M-Pesa PIN
+3. Confirm transaction
+
+**Step 5: Wait for confirmation**
+- Processing: "Please wait..." (10-30 seconds)
+- Success message: "Payment successful! ✓"
+- M-Pesa SMS: "You have paid KSh 28,280 to SCHOOL NAME. New balance: KSh XXXX"
+
+**✅ Payment complete! Receipt generated automatically.**
+
+#### Phase 4: Verifying Payment & Downloading Receipt (2 minutes)
+
+**Immediate verification:**
+
+1. **Check payment status in 4SCH:**
+   - Invoice status changes: PENDING → PAID ✓
+   - Payment date: February 15, 2026
+   - Payment method: M-Pesa
+   - Transaction ID: MPE2026021567890
+
+2. **View receipt:**
+   - Click **View Receipt** or **Download Receipt**
+   - Receipt shows:
+     ```
+     OFFICIAL RECEIPT
+     Receipt #: REC-2026-0456
+     Date: February 15, 2026
+     
+     Received from: Mr. John Wilson (Parent)
+     For student: Sarah Wilson - Grade 5A
+     
+     Payment Details:
+     - Tuition Fee: KSh 25,000
+     - Development Levy: KSh 3,000
+     - Sports Fee: KSh 1,500
+     - Resource Fee: KSh 2,000
+     Subtotal: KSh 31,500
+     Early Payment Discount (5%): -KSh 1,575
+     Total Paid: KSh 28,000
+     
+     Payment Method: M-Pesa
+     Transaction ID: MPE2026021567890
+     Balance: KSh 0.00
+     
+     Thank you for your payment!
+     ```
+
+3. **Download and save receipt:**
+   - Click **Download PDF**
+   - Save to: Phone/Computer downloads
+   - Rename: "Sarah_Term2_2026_Receipt.pdf"
+   - Optional: Print for your records
+
+**Receipt uses:**
+- ✓ Proof of payment
+- ✓ Tax deduction (if applicable)
+- ✓ School may request physical copy
+- ✓ Financial record keeping
+
+#### Phase 5: What If Payment Fails? (Troubleshooting)
+
+**Common issues and solutions:**
+
+**Issue 1: "Insufficient funds"**
+- Check M-Pesa balance: Dial *234# or check app
+- Top up your M-Pesa account
+- Try again
+
+**Issue 2: "Transaction timeout"**
+- Network issue - wait 2 minutes
+- Check if money was deducted from M-Pesa
+- If deducted but payment not reflected:
+  - Wait 30 minutes for processing
+  - Contact school if still pending after 1 hour
+  - Keep M-Pesa SMS as proof
+
+**Issue 3: "Payment gateway error"**
+- Try different payment method
+- Clear browser cache (web) or restart app
+- Try again in 10 minutes
+- Contact school IT support if persistent
+
+**Issue 4: Money deducted but payment shows "pending"**
+- **Don't pay again!**
+- Take screenshot of:
+  - M-Pesa confirmation SMS
+  - 4SCH payment status
+- Message school accountant with:
+  ```
+  Subject: Payment Verification Needed
+  
+  Hi, I paid KSh 28,000 for Sarah Wilson (Grade 5A)
+  via M-Pesa on Feb 15, 2026 at 10:30 AM.
+  
+  M-Pesa Transaction Code: MPE2026021567890
+  
+  Payment shows as "pending" in 4SCH.
+  Please verify and confirm.
+  
+  Thank you.
+  ```
+- School will reconcile within 24 hours
+
+#### Phase 6: Paying in Installments (Alternative Flow)
+
+**If school allows installment payments:**
+
+**Step 1: Choose installment plan**
+- Invoice: KSh 31,500
+- Choose: **3 installments**
+- System calculates:
+  - Installment 1 (Due March 10): KSh 10,500
+  - Installment 2 (Due March 20): KSh 10,500
+  - Installment 3 (Due March 31): KSh 10,500
+
+**Step 2: Pay first installment**
+- Select "Installment 1"
+- Pay KSh 10,500 using M-Pesa
+- Get receipt for partial payment
+
+**Step 3: Track remaining balance**
+- Dashboard shows:
+  ```
+  Total Fee: KSh 31,500
+  Paid: KSh 10,500
+  Balance: KSh 21,000
+  Next installment due: March 20
+  ```
+
+**Step 4: Get reminders**
+- 5 days before due date: "Reminder: Installment 2 (KSh 10,500) due in 5 days"
+- 1 day before: "Final reminder: Pay KSh 10,500 by tomorrow"
+
+**Step 5: Complete remaining payments**
+- Repeat payment process for each installment
+- Final installment clears the balance
+
+**Benefits of installments:**
+- ✓ Easier budgeting
+- ✓ No lump sum needed
+- ✓ Still meet school deadlines
+
+**Important:**
+- ⚠️ Miss an installment = late fees may apply
+- ⚠️ Child may not sit exams until full payment
+
+#### Phase 7: Cash Payment at School (Alternative Method)
+
+**For parents who prefer cash:**
+
+**Step 1: Prepare**
+1. Note the invoice number: INV-2026-0234
+2. Note the amount: KSh 28,000
+3. Visit school during office hours:
+   - Monday-Friday: 8:00 AM - 4:00 PM
+   - Saturday: 9:00 AM - 12:00 PM (if open)
+
+**Step 2: At the accounts office**
+1. Provide:
+   - Student name: Sarah Wilson
+   - Class: Grade 5A
+   - Invoice number: INV-2026-0234
+   - Cash: KSh 28,000
+
+2. Accountant will:
+   - Verify invoice
+   - Count cash
+   - Issue official receipt
+   - Update 4SCH system
+
+**Step 3: Mark payment in 4SCH**
+- Accountant marks invoice as "Paid - Cash"
+- You see status update within 1 hour
+
+**Step 4: Receive receipt**
+- Get physical receipt immediately
+- PDF receipt available in 4SCH within 24 hours
+
+#### Complete Timeline Example
+
+**Scenario: Paying KSh 28,000 via M-Pesa**
+
+**Monday, Feb 1, 8:00 AM:**
+- School sends invoice
+- You receive notification
+
+**Monday, Feb 1, 9:00 AM:**
+- Log in to 4SCH
+- Review invoice (2 minutes)
+- See early payment discount available until Feb 28
+
+**Saturday, Feb 15, 10:00 AM:**
+- Decide to pay and get discount
+- Select M-Pesa payment (1 minute)
+- Enter phone number and amount (1 minute)
+- Complete M-Pesa PIN entry (30 seconds)
+- Payment processes (20 seconds)
+- **Payment successful! ✓**
+
+**Saturday, Feb 15, 10:02 AM:**
+- Download receipt PDF
+- Save to phone
+- Invoice marked as PAID
+- You receive confirmation email
+
+**Total time: 5 minutes**
+**Money saved: KSh 1,575 (early payment discount)**
+
+#### Payment Tips & Best Practices
+
+**💡 Money-Saving Tips:**
+1. **Pay early:** Get early payment discounts (typically 5-10%)
+2. **Use bank transfer:** Often no transaction fees
+3. **Check for sibling discounts:** Pay for multiple children together
+4. **Ask about payment plans:** Spread cost over term
+
+**📅 Timing Strategies:**
+1. **Pay immediately after salary:** Avoid spending it elsewhere
+2. **Set reminders:** 5 days before due date
+3. **Use auto-debit:** Some schools offer this option
+4. **Pay in person on payroll days:** Avoid weekend bank closures
+
+**🔒 Security Practices:**
+1. **Always download receipt:** Proof of payment
+2. **Keep M-Pesa SMS:** Additional proof
+3. **Screenshot confirmation:** Just in case
+4. **Check invoice status:** Verify it shows "PAID"
+5. **Never share PIN:** School will never ask for M-Pesa PIN
+
+**🚨 Avoid These Mistakes:**
+1. ❌ Paying to wrong account
+2. ❌ Not keeping receipts
+3. ❌ Paying twice when first payment pending
+4. ❌ Missing due date and paying late fees
+5. ❌ Not verifying student name on invoice
+
+#### What Happens After Payment?
+
+**Immediate effects:**
+- ✅ Invoice status: PENDING → PAID
+- ✅ Receipt generated
+- ✅ Email confirmation sent
+- ✅ Child's fee balance updated
+
+**Within 24 hours:**
+- ✅ School accountant verifies payment
+- ✅ Child cleared to sit for exams (if applicable)
+- ✅ Payment reflected in school records
+
+**If there are issues:**
+- School contacts you within 48 hours
+- You provide payment proof (M-Pesa SMS, screenshot)
+- School reconciles and updates status
+
+**Your child's teacher:**
+- Does NOT see payment amounts (privacy)
+- Only sees: "Fees paid ✓" or "Fees pending"
+
+#### Summary Checklist
+
+**Before paying:**
+- [ ] Review invoice details carefully
+- [ ] Check for discounts available
+- [ ] Verify due date
+- [ ] Choose best payment method (lowest fees)
+
+**During payment:**
+- [ ] Double-check student name
+- [ ] Verify amount is correct
+- [ ] Complete transaction securely
+- [ ] Wait for confirmation (don't close app)
+
+**After payment:**
+- [ ] Download receipt immediately
+- [ ] Save M-Pesa/bank confirmation
+- [ ] Verify invoice shows "PAID"
+- [ ] Keep records for tax/audit purposes
+
+**If problems occur:**
+- [ ] Screenshot everything
+- [ ] Keep all SMS confirmations
+- [ ] Contact school within 24 hours
+- [ ] Don't pay again until resolved
+
+---
+
+### How to Pay Fees Online (Quick Reference)
 
 **If your school has enabled online payments:**
 

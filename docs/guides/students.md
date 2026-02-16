@@ -169,7 +169,509 @@ When you click on an assignment, you'll see:
   caption="Assignment Details - Instructions and requirements"
 />
 
-### Submitting Your Assignment
+### Complete Workflow: Completing and Submitting an Assignment
+
+This step-by-step workflow shows you exactly how to complete an assignment from start to finish, ensuring you get the best grade possible.
+
+#### Phase 1: When You Receive the Assignment (Day 1)
+
+**How you'll know there's a new assignment:**
+
+You'll receive a notification:
+- 📱 Push notification: "New assignment: Chapter 5 Math Problems - Due March 25"
+- 📧 Email notification to your parent (they'll remind you!)
+- 🔔 In-app notification badge
+
+**Step 1: Check the assignment immediately (2 minutes)**
+
+Even if you're not ready to start, review it right away!
+
+1. Open 4SCH app or log in to website
+2. Go to **Assignments** → **Pending**
+3. Click on the new assignment
+
+**Step 2: Read ALL the instructions carefully**
+
+Don't just skim! Read everything:
+
+```
+Assignment: Chapter 5: Quadratic Equations Practice
+Subject: Mathematics
+Teacher: Mrs. Johnson
+Due Date: March 25, 2026 at 11:59 PM
+Total Points: 20 points
+
+Instructions:
+Solve all 4 quadratic equations using the quadratic formula.
+Show all your working. Answers without working will receive 
+half marks only.
+
+Submit your solutions as:
+- Handwritten work (scan or photo - must be clear)
+- Typed document (Word or PDF)
+
+Formula: x = [-b ± √(b²-4ac)] / 2a
+```
+
+**Step 3: Download any attached files**
+
+Teachers often attach:
+- ✓ Worksheet with questions
+- ✓ Worked examples
+- ✓ Rubric (how you'll be graded)
+- ✓ Reference materials
+
+**Action:** Click "Download All" and save to a folder on your device.
+
+**Step 4: Plan your time (1 minute)**
+
+Calculate how much time you have:
+- Assignment posted: March 18 (Monday)
+- Due date: March 25 (Monday) = 7 days
+- Don't wait until the last day!
+
+**Smart planning:**
+- Start: March 19 (Tuesday after school)
+- Finish: March 23 (Saturday)
+- Review & Submit: March 24 (Sunday)
+- Buffer day: March 25 (in case of problems)
+
+**Add to your calendar or planner:**
+- "Start Math Assignment - Tuesday 3pm"
+- "Finish Math Assignment - Saturday"
+- "Submit Math Assignment - Sunday by 8pm"
+
+:::tip Success Strategy
+**Never submit on the due date!** Always aim to submit 1-2 days early. This gives you time if:
+- Your internet goes down
+- File won't upload
+- You realize you made mistakes
+- You have questions for the teacher
+:::
+
+#### Phase 2: Doing the Work (Days 2-5)
+
+**Creating the right environment:**
+
+1. **Find a quiet place:**
+   - No TV or loud music
+   - Good lighting
+   - All materials ready (calculator, pen, paper, textbook)
+
+2. **Eliminate distractions:**
+   - Put phone on silent (except for timer)
+   - Close social media tabs
+   - Tell family you're studying
+
+3. **Set up your workspace:**
+   - Have the downloaded worksheet printed or on another device
+   - Keep 4SCH open to check instructions
+   - Have scrap paper for rough work
+
+**Working through the assignment:**
+
+**For our Math example:**
+
+**Question 1: 2x² + 5x - 3 = 0**
+
+1. **Identify values:**
+   - a = 2
+   - b = 5
+   - c = -3
+
+2. **Write the formula:**
+   - x = [-b ± √(b²-4ac)] / 2a
+
+3. **Show your working:**
+   ```
+   x = [-5 ± √(5²-4(2)(-3))] / 2(2)
+   x = [-5 ± √(25+24)] / 4
+   x = [-5 ± √49] / 4
+   x = [-5 ± 7] / 4
+   
+   x₁ = (-5+7)/4 = 2/4 = 0.5
+   x₂ = (-5-7)/4 = -12/4 = -3
+   
+   Answer: x = 0.5 or x = -3
+   ```
+
+4. **Check your answer:**
+   - Substitute x = 0.5 into original equation
+   - 2(0.5)² + 5(0.5) - 3 = 0.5 + 2.5 - 3 = 0 ✓
+   - Correct!
+
+**Repeat for Questions 2, 3, and 4**
+
+**Quality checklist for each question:**
+- [ ] Read question carefully
+- [ ] Show ALL working (don't skip steps!)
+- [ ] Circle or highlight final answer
+- [ ] Check answer by substituting back
+- [ ] Write neatly (if handwritten)
+
+#### Phase 3: Preparing Your Submission (Day 6)
+
+**Option A: Handwritten work**
+
+If you did the work on paper:
+
+**Step 1: Review your work**
+- Did you answer all 4 questions?
+- Is your working visible and clear?
+- Are final answers clearly marked?
+
+**Step 2: Scan or photograph**
+
+**Best practices for photos:**
+- ✓ Use good lighting (natural light is best)
+- ✓ Place paper flat on a surface
+- ✓ Take photo from directly above (not at an angle)
+- ✓ Make sure ALL work is visible
+- ✓ Check photo is clear and readable
+
+**Bad photo example:**
+- ❌ Blurry text
+- ❌ Shadow covering some work
+- ❌ Cropped so question 4 is cut off
+- ❌ Too dark to read
+
+**Good photo example:**
+- ✓ All 4 pages clearly visible
+- ✓ Sharp text that's easy to read
+- ✓ Proper lighting
+- ✓ Nothing cut off
+
+**Step 3: Combine into one PDF (recommended)**
+
+Use a free app like:
+- CamScanner
+- Adobe Scan
+- Microsoft Lens
+- iPhone Notes app
+
+This creates: **JohnOjo_Math_Chapter5.pdf** (one file with all 4 questions)
+
+**Option B: Typed work**
+
+If you typed your solutions:
+
+**Step 1: Format properly**
+- Use proper mathematical symbols (±, ², √)
+- Number each question clearly
+- Include the question before your answer
+- Use consistent formatting
+
+**Step 2: Include diagrams if needed**
+- Insert images or hand-draw and scan
+- Make sure they're clear
+
+**Step 3: Save as PDF**
+- File → Save As → PDF
+- Name: **JohnOjo_Math_Chapter5.pdf**
+
+**Why PDF and not Word?**
+- ✓ Looks the same on all devices
+- ✓ Can't be accidentally edited
+- ✓ Usually smaller file size
+- ✓ More professional
+
+#### Phase 4: Submitting Your Work (Day 7 - Submit Day!)
+
+**Timeline for submission day:**
+
+**Saturday Evening (1 day early):**
+
+**8:00 PM - Final review (10 minutes)**
+1. Open your PDF: JohnOjo_Math_Chapter5.pdf
+2. Check EVERY page:
+   - Page 1: Question 1 ✓
+   - Page 2: Question 2 ✓
+   - Page 3: Question 3 ✓
+   - Page 4: Question 4 ✓
+3. All pages clear and readable? ✓
+4. File size reasonable? (Under 10 MB) ✓
+
+**8:10 PM - Upload to 4SCH (3 minutes)**
+
+1. Open 4SCH app or website
+2. Go to **Assignments** → **Pending**
+3. Click on "Chapter 5: Quadratic Equations"
+4. Click **Submit Assignment** button
+
+**8:11 PM - File selection**
+- Click "Choose File" or "Upload"
+- Navigate to your Downloads or Documents
+- Select: **JohnOjo_Math_Chapter5.pdf**
+- Click "Open"
+
+**8:12 PM - Preview before submitting**
+
+**CRITICAL: Review the upload preview!**
+
+You'll see a preview of what your teacher will see:
+- ✓ File name correct?
+- ✓ All 4 pages showing in preview?
+- ✓ Pages in the right order?
+- ✓ Text is readable in the preview?
+
+**If preview looks wrong:**
+- Click "Cancel"
+- Check your PDF file
+- Re-upload
+
+**If preview looks good:**
+- Proceed to next step
+
+**8:13 PM - Add optional message to teacher**
+
+Good messages:
+```
+"All 4 questions completed with full working shown. 
+Please let me know if you have any questions."
+```
+
+```
+"I found Question 3 challenging but I showed my attempt. 
+Could you please provide feedback on my approach?"
+```
+
+Don't write:
+- ❌ "Here" (too brief)
+- ❌ "Done" (unprofessional)
+- ❌ Nothing (missed opportunity to communicate)
+
+**8:14 PM - Final submission**
+
+1. Click **Submit Assignment**
+2. Confirmation dialog: "Are you sure you want to submit?"
+3. Click **Yes, Submit**
+
+**8:15 PM - Confirmation!**
+
+**Success screen shows:**
+```
+✓ Assignment Submitted Successfully!
+
+Assignment: Chapter 5: Quadratic Equations
+Submitted: March 24, 2026 at 8:15 PM
+Status: Submitted (On Time)
+File: JohnOjo_Math_Chapter5.pdf (2.3 MB)
+
+Your teacher has been notified.
+You will receive a notification when it's graded.
+```
+
+**Important actions after submitting:**
+
+1. **Take a screenshot**
+   - Proof you submitted on time
+   - Shows submission time and file name
+
+2. **Check your email**
+   - You should receive confirmation email
+   - Save this email
+
+3. **Verify in 4SCH**
+   - Go to **Assignments** → **Submitted**
+   - Your assignment should be there
+   - Status: "Submitted ✓"
+
+4. **Keep your original file**
+   - Don't delete JohnOjo_Math_Chapter5.pdf
+   - Keep until you get your grade back
+   - In case teacher says they didn't receive it
+
+**8:30 PM - Celebrate!**
+- You submitted 1 day early! ✓
+- Time to relax - you earned it!
+
+#### Phase 5: What Happens Next? (Waiting for Grade)
+
+**Day after submission:**
+
+Check 4SCH to confirm:
+- Assignment shows as "Submitted"
+- Submission date is correct
+- File is attached
+
+**During grading period (3-7 days typically):**
+
+**You'll receive a notification when graded:**
+- 📱 "Your Math assignment has been graded: 18/20"
+
+**View your grade:**
+1. Go to **Assignments** → **Graded**
+2. Click on the assignment
+3. See:
+   - Your score: 18/20 (90%)
+   - Teacher's comments:
+     ```
+     Excellent work, John! You showed clear working for all questions.
+     
+     Q1: Perfect! (5/5)
+     Q2: Perfect! (5/5)
+     Q3: Good attempt but small error in arithmetic. 
+         You wrote √49 = 8 instead of 7. (4/5)
+     Q4: Perfect! (4/4)
+     
+     Overall: Great job! Review your basic square roots 
+     to avoid simple errors like in Q3.
+     
+     Keep up the good work!
+     ```
+
+**Learning from feedback:**
+- ✓ Read ALL teacher comments
+- ✓ Understand where you lost marks
+- ✓ Learn from mistakes
+- ✓ Apply lessons to next assignment
+
+**If you disagree with grade:**
+- Don't panic or get angry
+- Review the rubric
+- Check if you actually did what was asked
+- If you still think it's wrong, message teacher politely:
+  ```
+  "Dear Mrs. Johnson,
+  
+  Thank you for grading my assignment. I wanted to respectfully 
+  ask about Question 3. I believe √49 = 7, and I have that in 
+  my work. Could you please review?
+  
+  Thank you.
+  John"
+  ```
+
+#### Common Problems & Solutions
+
+**Problem 1: "I forgot the deadline!"**
+
+**It's 11:30 PM on due date, assignment due at 11:59 PM:**
+- Don't panic!
+- Submit immediately - even if not perfect
+- Better to submit something than nothing
+- Partial credit > zero credit
+
+**If past deadline:**
+- Submit anyway (some teachers accept late work with penalty)
+- Message teacher immediately:
+  ```
+  "Dear Mrs. Johnson, I apologize for submitting late.
+  [Brief reason - sick, emergency, etc.]
+  I've now submitted my work. Please let me know if 
+  you can still accept it.
+  Thank you for your understanding."
+  ```
+
+**Problem 2: "File won't upload"**
+
+**Error: "File too large"**
+- Compress your PDF using online tools
+- Or split into multiple smaller files
+- Or take new photos at lower resolution
+
+**Error: "File type not supported"**
+- Check assignment requirements
+- Convert to PDF (most universally accepted)
+- Don't submit .pages or .numbers files (Mac-specific)
+
+**Error: "Upload failed - network error"**
+- Check internet connection
+- Try again in 5 minutes
+- Try different network (WiFi vs mobile data)
+- Use different device if available
+- Screenshot the error and message teacher
+
+**Problem 3: "I submitted the wrong file!"**
+
+**Realized immediately after submitting:**
+- Some systems allow you to "undo" or "withdraw" submission
+- Look for "Withdraw Submission" or "Resubmit" button
+- If available, withdraw and resubmit correct file
+
+**If can't withdraw:**
+- Message teacher immediately:
+  ```
+  "Dear Mrs. Johnson, I accidentally submitted the wrong file.
+  The correct file is attached to this message.
+  I'm sorry for the confusion.
+  [Attach correct file]
+  Thank you."
+  ```
+
+**Problem 4: "I don't understand the assignment"**
+
+**Ask for help EARLY (not the night before!):**
+
+**Day 1-2 after receiving assignment:**
+- Message your teacher:
+  ```
+  "Dear Mrs. Johnson, I have a question about the assignment.
+  I don't understand what you mean by 'show all working.'
+  Does this mean I should write every step, even simple ones?
+  Thank you."
+  ```
+
+**Or ask in class:**
+- "Could you please explain Question 3? I'm not sure what's being asked."
+
+**Don't wait until the last day!**
+
+#### Time Management Summary
+
+**For a 7-day assignment:**
+
+| Day | Task | Time Needed |
+|-----|------|-------------|
+| **Day 1** | Read assignment, download files, plan | 15 minutes |
+| **Day 2** | Start work - complete Questions 1-2 | 45 minutes |
+| **Day 3** | Continue work - complete Questions 3-4 | 45 minutes |
+| **Day 4** | Review all work, check answers | 30 minutes |
+| **Day 5** | Prepare submission (scan/type) | 20 minutes |
+| **Day 6** | Final review, upload & submit | 15 minutes |
+| **Day 7** | Buffer day (in case of problems) | - |
+
+**Total actual work time: ~3 hours**
+**Spread over 6 days: ~30 minutes per day**
+
+**Much better than:** Rushing for 3 hours the night before!
+
+#### Success Checklist
+
+**Before starting:**
+- [ ] Read ALL instructions carefully
+- [ ] Downloaded all attached files
+- [ ] Understand what's being asked
+- [ ] Planned when you'll do the work
+- [ ] Have all materials needed
+
+**While working:**
+- [ ] Following instructions exactly
+- [ ] Showing all working (if required)
+- [ ] Checking answers as you go
+- [ ] Writing/typing neatly
+- [ ] Taking breaks to stay focused
+
+**Before submitting:**
+- [ ] Answered ALL questions
+- [ ] Reviewed all work for errors
+- [ ] File properly named
+- [ ] File is clear and readable
+- [ ] File size is acceptable
+- [ ] Submitting 1-2 days early
+
+**After submitting:**
+- [ ] Took screenshot of confirmation
+- [ ] Received confirmation email
+- [ ] Verified submission in 4SCH
+- [ ] Kept original file safe
+- [ ] Waiting patiently for grade
+
+---
+
+### Quick Submission Guide (For Reference)
+
+**If you just need the basic steps:**
 
 **Step 1: Do the Work**
 Complete the assignment according to the instructions.
