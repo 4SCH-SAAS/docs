@@ -422,7 +422,7 @@ Depending on your role, you may need to generate various reports.
 Create a simple tracking system:
 | Inquiry Date | Parent Name | Child Name | Class | Status | Next Step |
 |--------------|-------------|------------|-------|--------|-----------|
-| Jan 5 | Mr. Ojo | David | JSS 1 | Scheduled Tour | Tour on Jan 12 |
+| Jan 5 | Mr. Ojo | Oluwaseun | JSS 1 | Scheduled Tour | Tour on Jan 12 |
 | Jan 6 | Mrs. Adeyemi | Tunde | Primary 5 | Test Passed | Awaiting Documents |
 | Jan 8 | Mr. Ibrahim | Fatima | SSS 2 | Documents Received | Process Enrollment |
 

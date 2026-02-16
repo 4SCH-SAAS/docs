@@ -576,7 +576,7 @@ If you want to message just a few parents:
 > If you have questions, reply to this message.
 >
 > Thank you,
-> Mr. Johnson
+> Mr. Adebayo
 
 **Why This Works:**
 - Clear subject line
