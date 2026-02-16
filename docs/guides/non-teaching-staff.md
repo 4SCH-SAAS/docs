@@ -14,7 +14,7 @@ Welcome! This guide is for non-teaching staff members who support school operati
 
 :::tip Who is this for?
 This guide covers general non-teaching staff roles. For specialized roles, see:
-- <Link to="/guides/accountant">Accountant/Bursar Guide</Link>
+- <Link to="/guides/accountant-guide">Accountant/Bursar Guide</Link>
 :::
 
 <TOCInline toc={[]} minHeadingLevel={2} maxHeadingLevel={3} />
