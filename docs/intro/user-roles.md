@@ -12,15 +12,19 @@ Different people in your school need access to different features. 4SCH organize
 
 ### School Administrator
 **Who they are:** School principals, directors, or office managers  
-**What they do:** Set up and manage the entire school system  
+**What they do:** Set up and manage the entire school system via the web admin panel  
 **Key responsibilities:**
 - Create academic sessions and terms
-- Add and manage staff accounts
-- Configure fee structures
-- Generate school-wide reports
+- Add and manage staff, teacher, and student accounts
+- Configure fee structures and payment gateways
+- Generate school-wide reports and analytics
 - Control system settings and permissions
+- Manage transportation, gallery, and announcements
+- Approve leave requests and monitor attendance
 
-<Link to="/guides/admin">→ Read the full Administrator Guide</Link>
+**Access:** Web-based admin panel only
+
+<Link to="/guides/school-admin">→ Read the full School Administrator Guide</Link>
 
 ---
 
@@ -30,9 +34,13 @@ Different people in your school need access to different features. 4SCH organize
 **Key responsibilities:**
 - Mark attendance for their classes
 - Create and grade assignments
-- Enter exam marks
+- Enter exam marks and generate report cards
+- Post announcements to classes
 - Communicate with parents about student progress
 - View class performance reports
+- Manage lessons and study materials
+
+**Access:** Web portal and mobile app (Android/iOS)
 
 <Link to="/guides/teachers">→ Read the full Teacher Guide</Link>
 
@@ -40,13 +48,18 @@ Different people in your school need access to different features. 4SCH organize
 
 ### Parent/Guardian
 **Who they are:** Parents, guardians, or sponsors of students  
-**What they do:** Monitor their child's progress and handle school fees  
+**What they do:** Monitor their children's progress and handle school fees  
 **Key responsibilities:**
-- Check child's attendance and grades
-- View and pay school fees
-- Receive school announcements
+- Check children's attendance and grades
+- View and pay school fees online or via cash
+- View timetables, assignments, and exam schedules
+- Receive school announcements and notifications
 - Message teachers with questions
-- Download report cards and receipts
+- Download report cards, fee receipts, and transaction history
+- Track transportation (if enrolled)
+- Manage multiple children from one account
+
+**Access:** Mobile app (Android/iOS) and web portal
 
 <Link to="/guides/parents">→ Read the full Parent Guide</Link>
 
@@ -56,25 +69,69 @@ Different people in your school need access to different features. 4SCH organize
 **Who they are:** Enrolled students in the school  
 **What they do:** Access learning materials and track their own progress  
 **Key responsibilities:**
-- View class timetable
-- Submit assignments online
-- Check grades and attendance
-- Read school announcements
-- Access study materials
+- View class timetable and exam schedule
+- Submit assignments online with file uploads
+- Check grades, attendance, and exam results
+- Read school announcements and notices
+- Access study materials and lesson content
+- Take online exams (if enabled)
+- View subject-wise performance reports
+- Communicate with teachers
+- Check fee payment status
+
+**Access:** Mobile app (Android/iOS) and web portal
 
 <Link to="/guides/students">→ Read the full Student Guide</Link>
 
 ---
 
 ### Non-Teaching Staff
-**Who they are:** Office clerks, accountants, admission officers, transport coordinators  
+**Who they are:** Office clerks, admission officers, librarians  
 **What they do:** Handle specific administrative functions  
 **Key responsibilities vary by position:**
-- **Admission Officer:** Enroll new students, manage applications
-- **Accountant:** Process fee payments, manage financial records
-- **Transport Coordinator:** Manage bus routes and student transport
+- **Admission Officer:** Enroll new students, manage applications, verify documents
+- **Office Clerk:** General administrative support and record keeping
+- **Librarian:** Manage library resources and student borrowing (if applicable)
+
+**Access:** Web portal with role-based permissions
 
 <Link to="/guides/non-teaching-staff">→ Read the full Non-Teaching Staff Guide</Link>
+
+---
+
+### Accountant/Finance Officer
+**Who they are:** Finance managers, bursars, accountants  
+**What they do:** Manage all financial operations of the school  
+**Key responsibilities:**
+- Process fee payments (cash, online, cheque)
+- Generate invoices and receipts
+- Track fee collection and defaulters
+- Manage expenses and income
+- Generate financial reports
+- Reconcile payment gateway transactions
+- Monitor payment deadlines
+
+**Access:** Web portal with finance module access
+
+<Link to="/guides/accountant">→ Read the full Accountant Guide</Link>
+
+---
+
+### Driver
+**Who they are:** School transportation drivers managing student routes  
+**What they do:** Transport students safely and manage route attendance  
+**Key responsibilities:**
+- Execute daily pickup and drop-off routes
+- Mark student attendance during trips
+- Track real-time locations for parent visibility
+- Report route issues and delays
+- Maintain vehicle information
+- Apply for leave when needed
+- Communicate with parents and coordinators
+
+**Access:** Mobile app (Android/iOS) only
+
+<Link to="/guides/driver">→ Read the full Driver Guide</Link>
 
 ---
 

@@ -37,6 +37,12 @@ Welcome! 4SCH gives you easy access to everything you need for school—your tim
 
 When you log into 4SCH, you'll see your **Student Dashboard**. This is your home page for everything school-related.
 
+<Screenshot 
+  src="/img/screens/students/student-dashboard.svg" 
+  alt="Student Dashboard"
+  caption="Student Dashboard - Your daily overview"
+/>
+
 ### What's on Your Dashboard
 
 **Today's Schedule:**
@@ -82,6 +88,12 @@ Your timetable shows all your classes for the week.
    - Time (e.g., 9:00 AM - 10:00 AM)
    - Room/venue (if applicable)
 
+<Screenshot 
+  src="/img/screens/students/student-timetable.svg" 
+  alt="Student Timetable"
+  caption="Weekly Timetable - See all your classes"
+/>
+
 ### Understanding Your Timetable
 
 **Different views:**
@@ -124,10 +136,15 @@ Your teachers will post assignments for you to complete and submit online.
 **From Assignments Page:**
 1. Go to **Assignments** from the main menu
 2. You'll see all your assignments organized by:
-   - **Upcoming** — Due soon
-   - **Overdue** — You missed the deadline
+   - **Pending** — Not yet submitted
    - **Submitted** — You've already turned them in
    - **Graded** — Teacher has graded your work
+
+<Screenshot 
+  src="/img/screens/students/assignments-list.svg" 
+  alt="Assignments List"
+  caption="Assignments - Track pending, submitted, and graded work"
+/>
 
 ### Understanding an Assignment
 
@@ -145,6 +162,12 @@ When you click on an assignment, you'll see:
 - Worksheets to download
 - Reference materials
 - Rubrics (grading criteria)
+
+<Screenshot 
+  src="/img/screens/students/assignment-details.svg" 
+  alt="Assignment Details"
+  caption="Assignment Details - Instructions and requirements"
+/>
 
 ### Submitting Your Assignment
 
@@ -166,6 +189,12 @@ If it's a **text entry**:
 2. Choose your file (if file upload) or type your answer
 3. Review what you're submitting
 4. Click **Submit** to send it to your teacher
+
+<Screenshot 
+  src="/img/screens/students/assignment-submission.svg" 
+  alt="Assignment Submission"
+  caption="Submit Assignment - Upload your completed work"
+/>
 
 **Step 4: Confirmation**
 You'll see a confirmation that your assignment was submitted successfully.

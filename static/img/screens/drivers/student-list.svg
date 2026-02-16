@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  <rect x="0" y="0" width="800" height="60" fill="#0d6efd"/>
+  <text x="60" y="38" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">← Assigned Students</text>
+  <circle cx="750" cy="30" r="8" fill="#ffffff"/>
+  <rect x="20" y="80" width="760" height="45" rx="6" fill="#ffffff" stroke="#ced4da" stroke-width="1"/>
+  <text x="40" y="110" font-family="Arial, sans-serif" font-size="14" fill="#6c757d">🔍 Search students...</text>
+  <rect x="20" y="145" width="180" height="35" rx="4" fill="#e7f1ff" stroke="#0d6efd" stroke-width="1"/>
+  <text x="110" y="168" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#0d6efd" font-weight="bold">All (24)</text>
+  <rect x="210" y="145" width="180" height="35" rx="4" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+  <text x="300" y="168" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#6c757d">Morning (24)</text>
+  <rect x="400" y="145" width="180" height="35" rx="4" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+  <text x="490" y="168" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#6c757d">Afternoon (24)</text>
+  <rect x="20" y="200" width="760" height="70" rx="6" fill="#ffffff" stroke="#dee2e6" stroke-width="2"/>
+  <circle cx="50" cy="235" r="22" fill="#e9ecef"/>
+  <text x="50" y="243" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#495057">JD</text>
+  <text x="90" y="227" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#212529">John Doe</text>
+  <text x="90" y="245" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">Class 5A • Roll #12</text>
+  <text x="90" y="260" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">📍 Green Valley Junction • 7:25 AM</text>
+  <circle cx="750" cy="235" r="5" fill="#198754"/>
+  <rect x="20" y="285" width="760" height="70" rx="6" fill="#ffffff" stroke="#dee2e6" stroke-width="2"/>
+  <circle cx="50" cy="320" r="22" fill="#e9ecef"/>
+  <text x="50" y="328" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#495057">SM</text>
+  <text x="90" y="312" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#212529">Sarah Miller</text>
+  <text x="90" y="330" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">Class 5A • Roll #15</text>
+  <text x="90" y="345" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">📍 Green Valley Junction • 7:25 AM</text>
+  <circle cx="750" cy="320" r="5" fill="#198754"/>
+  <rect x="20" y="370" width="760" height="70" rx="6" fill="#ffffff" stroke="#dee2e6" stroke-width="2"/>
+  <circle cx="50" cy="405" r="22" fill="#e9ecef"/>
+  <text x="50" y="413" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#495057">EW</text>
+  <text x="90" y="397" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#212529">Emily Wilson</text>
+  <text x="90" y="415" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">Class 6B • Roll #9</text>
+  <text x="90" y="430" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">📍 Riverside Plaza • 7:10 AM</text>
+  <circle cx="750" cy="405" r="5" fill="#198754"/>
+  <rect x="20" y="455" width="760" height="70" rx="6" fill="#ffffff" stroke="#dee2e6" stroke-width="2"/>
+  <circle cx="50" cy="490" r="22" fill="#e9ecef"/>
+  <text x="50" y="498" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#495057">MB</text>
+  <text x="90" y="482" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#212529">Michael Brown</text>
+  <text x="90" y="500" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">Class 7A • Roll #5</text>
+  <text x="90" y="515" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">📍 Oak Park Center • 7:30 AM</text>
+  <circle cx="750" cy="490" r="5" fill="#198754"/>
+  <text x="400" y="575" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#6c757d">Showing 4 of 24 students</text>
+</svg>

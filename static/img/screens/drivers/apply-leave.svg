@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  <rect x="0" y="0" width="800" height="60" fill="#0d6efd"/>
+  <text x="60" y="38" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">← Apply for Leave</text>
+  <rect x="100" y="90" width="600" height="450" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="2"/>
+  <text x="130" y="130" font-family="Arial, sans-serif" font-size="14" fill="#6c757d">Leave Type</text>
+  <rect x="130" y="140" width="540" height="45" rx="4" fill="#f8f9fa" stroke="#ced4da" stroke-width="1"/>
+  <text x="145" y="168" font-family="Arial, sans-serif" font-size="14" fill="#212529">Sick Leave ▼</text>
+  <text x="130" y="210" font-family="Arial, sans-serif" font-size="14" fill="#6c757d">Start Date</text>
+  <rect x="130" y="220" width="260" height="45" rx="4" fill="#f8f9fa" stroke="#ced4da" stroke-width="1"/>
+  <text x="145" y="248" font-family="Arial, sans-serif" font-size="14" fill="#212529">Feb 20, 2026 📅</text>
+  <text x="410" y="210" font-family="Arial, sans-serif" font-size="14" fill="#6c757d">End Date</text>
+  <rect x="410" y="220" width="260" height="45" rx="4" fill="#f8f9fa" stroke="#ced4da" stroke-width="1"/>
+  <text x="425" y="248" font-family="Arial, sans-serif" font-size="14" fill="#212529">Feb 21, 2026 📅</text>
+  <text x="130" y="290" font-family="Arial, sans-serif" font-size="14" fill="#6c757d">Reason</text>
+  <rect x="130" y="300" width="540" height="120" rx="4" fill="#f8f9fa" stroke="#ced4da" stroke-width="1"/>
+  <text x="145" y="325" font-family="Arial, sans-serif" font-size="13" fill="#6c757d">Provide details about your leave...</text>
+  <rect x="130" y="440" width="540" height="60" rx="6" fill="#fff3cd" stroke="#ffc107" stroke-width="1"/>
+  <text x="145" y="465" font-family="Arial, sans-serif" font-size="13" fill="#664d03">💡 Your request will be sent to the administrator for approval.</text>
+  <text x="145" y="485" font-family="Arial, sans-serif" font-size="12" fill="#997404">Replacement driver will be arranged upon approval.</text>
+  <rect x="130" y="515" width="540" height="50" rx="6" fill="#0d6efd"/>
+  <text x="400" y="546" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">Submit Leave Request</text>
+</svg>

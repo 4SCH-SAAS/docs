@@ -33,42 +33,71 @@ Use these docs to set up 4SCH and run day-to-day school operations. Start with t
 
 ## Choose Your Role
 
+### School Leadership & Administration
+
 <CardGrid
   cards={[
     {
-      to: '/guides/admin',
-      title: 'School Admin',
-      description: 'Setup, users, fees, settings, and reports',
+      to: '/guides/school-admin',
+      title: 'School Administrator',
+      description: 'Complete system setup, management, and oversight',
       icon: <DashboardIcon />,
     },
+  ]}
+/>
+
+### Teaching & Academic Staff
+
+<CardGrid
+  cards={[
     {
       to: '/guides/teachers',
       title: 'Teacher',
       description: 'Attendance, assignments, grades, and messaging',
       icon: <GradesIcon />,
     },
-    {
-      to: '/guides/students',
-      title: 'Student',
-      description: 'Timetable, assignments, grades, and attendance',
-      icon: <AcademicIcon />,
-    },
+  ]}
+/>
+
+### Parents & Students
+
+<CardGrid
+  cards={[
     {
       to: '/guides/parents',
       title: 'Parent/Guardian',
-      description: 'Attendance, results, fee payments, and messages',
+      description: 'Monitor children, pay fees, and communicate with school',
       icon: <UsersIcon />,
     },
     {
+      to: '/guides/students',
+      title: 'Student',
+      description: 'Access timetable, submit assignments, view grades',
+      icon: <AcademicIcon />,
+    },
+  ]}
+/>
+
+### Support & Finance Staff
+
+<CardGrid
+  cards={[
+    {
       to: '/guides/accountant',
       title: 'Accountant/Bursar',
-      description: 'Invoicing, payments, and finance reporting',
+      description: 'Fee management, invoicing, and financial reports',
       icon: <FinanceIcon />,
     },
     {
       to: '/guides/non-teaching-staff',
       title: 'Non-Teaching Staff',
-      description: 'Admissions and operational workflows',
+      description: 'Admissions, office support, and operational workflows',
+      icon: <StaffIcon />,
+    },
+    {
+      to: '/guides/driver',
+      title: 'Driver',
+      description: 'Route management, student attendance, and trip tracking',
       icon: <StaffIcon />,
     },
   ]}

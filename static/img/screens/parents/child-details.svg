@@ -1,0 +1,43 @@
+<svg width="375" height="667" xmlns="http://www.w3.org/2000/svg">
+  <rect width="375" height="667" fill="#f5f7fa"/>
+  <!-- Header with Child Info -->
+  <rect width="375" height="140" fill="#805ad5"/>
+  <circle cx="187.5" cy="65" r="30" fill="white"/>
+  <text x="187.5" y="75" font-family="Arial, sans-serif" font-size="24" fill="#805ad5" text-anchor="middle">AO</text>
+  <text x="187.5" y="115" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Amina Ojo</text>
+  <text x="187.5" y="132" font-family="Arial, sans-serif" font-size="12" fill="white" opacity="0.9" text-anchor="middle">Class 10-A • Roll No: 15</text>
+  <!-- Menu Grid -->
+  <rect x="15" y="160" width="165" height="100" rx="8" fill="white" stroke="#e1e8ed" stroke-width="1"/>
+  <circle cx="97.5" cy="195" r="20" fill="#e6fffa"/>
+  <text x="97.5" y="203" font-family="Arial, sans-serif" font-size="18" fill="#38b2ac" text-anchor="middle">📊</text>
+  <text x="97.5" y="230" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1a202c" text-anchor="middle">Attendance</text>
+  <text x="97.5" y="246" font-family="Arial, sans-serif" font-size="10" fill="#48bb78" text-anchor="middle">95% Present</text>
+  
+  <rect x="195" y="160" width="165" height="100" rx="8" fill="white" stroke="#e1e8ed" stroke-width="1"/>
+  <circle cx="277.5" cy="195" r="20" fill="#fef5e7"/>
+  <text x="277.5" y="203" font-family="Arial, sans-serif" font-size="18" fill="#d69e2e" text-anchor="middle">📝</text>
+  <text x="277.5" y="230" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1a202c" text-anchor="middle">Assignments</text>
+  <text x="277.5" y="246" font-family="Arial, sans-serif" font-size="10" fill="#fc8181" text-anchor="middle">2 Pending</text>
+  
+  <rect x="15" y="275" width="165" height="100" rx="8" fill="white" stroke="#e1e8ed" stroke-width="1"/>
+  <circle cx="97.5" cy="310" r="20" fill="#e6f7ff"/>
+  <text x="97.5" y="318" font-family="Arial, sans-serif" font-size="18" fill="#3182ce" text-anchor="middle">⭐</text>
+  <text x="97.5" y="345" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1a202c" text-anchor="middle">Results</text>
+  <text x="97.5" y="361" font-family="Arial, sans-serif" font-size="10" fill="#48bb78" text-anchor="middle">85% Average</text>
+  
+  <rect x="195" y="275" width="165" height="100" rx="8" fill="white" stroke="#e1e8ed" stroke-width="1"/>
+  <circle cx="277.5" cy="310" r="20" fill="#fff5f5"/>
+  <text x="277.5" y="318" font-family="Arial, sans-serif" font-size="18" fill="#e53e3e" text-anchor="middle">💰</text>
+  <text x="277.5" y="345" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1a202c" text-anchor="middle">Fees</text>
+  <text x="277.5" y="361" font-family="Arial, sans-serif" font-size="10" fill="#fc8181" text-anchor="middle">₦45,000 Due</text>
+  
+  <rect x="15" y="390" width="165" height="100" rx="8" fill="white" stroke="#e1e8ed" stroke-width="1"/>
+  <circle cx="97.5" cy="425" r="20" fill="#f0fff4"/>
+  <text x="97.5" y="433" font-family="Arial, sans-serif" font-size="18" fill="#38a169" text-anchor="middle">🕒</text>
+  <text x="97.5" y="460" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1a202c" text-anchor="middle">Timetable</text>
+  
+  <rect x="195" y="390" width="165" height="100" rx="8" fill="white" stroke="#e1e8ed" stroke-width="1"/>
+  <circle cx="277.5" cy="425" r="20" fill="#faf5ff"/>
+  <text x="277.5" y="433" font-family="Arial, sans-serif" font-size="18" fill="#805ad5" text-anchor="middle">👥</text>
+  <text x="277.5" y="460" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1a202c" text-anchor="middle">Teachers</text>
+</svg>

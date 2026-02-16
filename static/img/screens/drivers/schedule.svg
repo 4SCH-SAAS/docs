@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  <rect x="0" y="0" width="800" height="60" fill="#0d6efd"/>
+  <text x="60" y="38" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">← My Schedule</text>
+  <rect x="20" y="80" width="760" height="50" rx="6" fill="#e7f1ff" stroke="#0d6efd" stroke-width="1"/>
+  <text x="40" y="110" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0d6efd">📅 Week of February 16 - 22, 2026</text>
+  <text x="740" y="110" font-family="Arial, sans-serif" font-size="13" text-anchor="end" fill="#055160">This Week</text>
+  <rect x="20" y="150" width="760" height="80" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="2"/>
+  <text x="35" y="175" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#212529">Monday, Feb 16</text>
+  <rect x="35" y="185" width="350" height="35" rx="4" fill="#d1ecf1" stroke="#0dcaf0" stroke-width="1"/>
+  <text x="50" y="208" font-family="Arial, sans-serif" font-size="13" fill="#055160">🌅 Morning Pickup • 7:00 AM - 8:30 AM</text>
+  <rect x="405" y="185" width="350" height="35" rx="4" fill="#fff3cd" stroke="#ffc107" stroke-width="1"/>
+  <text x="420" y="208" font-family="Arial, sans-serif" font-size="13" fill="#664d03">🌇 Afternoon Drop • 2:00 PM - 3:30 PM</text>
+  <rect x="20" y="245" width="760" height="80" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="2"/>
+  <text x="35" y="270" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#212529">Tuesday, Feb 17</text>
+  <rect x="35" y="280" width="350" height="35" rx="4" fill="#d1ecf1" stroke="#0dcaf0" stroke-width="1"/>
+  <text x="50" y="303" font-family="Arial, sans-serif" font-size="13" fill="#055160">🌅 Morning Pickup • 7:00 AM - 8:30 AM</text>
+  <rect x="405" y="280" width="350" height="35" rx="4" fill="#fff3cd" stroke="#ffc107" stroke-width="1"/>
+  <text x="420" y="303" font-family="Arial, sans-serif" font-size="13" fill="#664d03">🌇 Afternoon Drop • 2:00 PM - 3:30 PM</text>
+  <rect x="20" y="340" width="760" height="80" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="2"/>
+  <text x="35" y="365" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#212529">Wednesday, Feb 18</text>
+  <rect x="35" y="375" width="350" height="35" rx="4" fill="#d1ecf1" stroke="#0dcaf0" stroke-width="1"/>
+  <text x="50" y="398" font-family="Arial, sans-serif" font-size="13" fill="#055160">🌅 Morning Pickup • 7:00 AM - 8:30 AM</text>
+  <rect x="405" y="375" width="350" height="35" rx="4" fill="#fff3cd" stroke="#ffc107" stroke-width="1"/>
+  <text x="420" y="398" font-family="Arial, sans-serif" font-size="13" fill="#664d03">🌇 Afternoon Drop • 2:00 PM - 3:30 PM</text>
+  <rect x="20" y="435" width="760" height="80" rx="8" fill="#d1e7dd" stroke="#198754" stroke-width="2"/>
+  <text x="35" y="460" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0a3622">Thursday, Feb 19 • TODAY</text>
+  <rect x="35" y="470" width="350" height="35" rx="4" fill="#d1f4dd" stroke="#198754" stroke-width="1"/>
+  <text x="50" y="493" font-family="Arial, sans-serif" font-size="13" fill="#0a3622">🌅 Morning Pickup • 7:00 AM - 8:30 AM</text>
+  <rect x="405" y="470" width="350" height="35" rx="4" fill="#d1f4dd" stroke="#198754" stroke-width="1"/>
+  <text x="420" y="493" font-family="Arial, sans-serif" font-size="13" fill="#0a3622">🌇 Afternoon Drop • 2:00 PM - 3:30 PM</text>
+  <text x="400" y="570" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#6c757d">2 more days this week</text>
+</svg>

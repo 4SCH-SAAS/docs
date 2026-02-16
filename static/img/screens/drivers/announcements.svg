@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  <rect x="0" y="0" width="800" height="60" fill="#0d6efd"/>
+  <text x="60" y="38" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">← Announcements</text>
+  <rect x="20" y="90" width="760" height="110" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="2"/>
+  <rect x="30" y="100" width="60" height="25" rx="4" fill="#dc3545"/>
+  <text x="60" y="118" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#ffffff">URGENT</text>
+  <text x="30" y="140" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#212529">Road Closure - Route Diversion</text>
+  <text x="30" y="163" font-family="Arial, sans-serif" font-size="13" fill="#6c757d">Main Street is closed for construction. Please use Oak Avenue</text>
+  <text x="30" y="180" font-family="Arial, sans-serif" font-size="13" fill="#6c757d">as alternate route for stops 3-5.</text>
+  <text x="750" y="190" font-family="Arial, sans-serif" font-size="11" text-anchor="end" fill="#6c757d">2 hours ago</text>
+  <rect x="20" y="220" width="760" height="100" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="2"/>
+  <text x="30" y="250" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#212529">Safety Training Session - This Saturday</text>
+  <text x="30" y="273" font-family="Arial, sans-serif" font-size="13" fill="#6c757d">Mandatory driver safety training on Feb 21, 9:00 AM at school</text>
+  <text x="30" y="290" font-family="Arial, sans-serif" font-size="13" fill="#6c757d">auditorium. Attendance is required.</text>
+  <text x="750" y="305" font-family="Arial, sans-serif" font-size="11" text-anchor="end" fill="#6c757d">Yesterday</text>
+  <rect x="20" y="340" width="760" height="100" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="2"/>
+  <text x="30" y="370" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#212529">School Holiday - No Trips Feb 28</text>
+  <text x="30" y="393" font-family="Arial, sans-serif" font-size="13" fill="#6c757d">National holiday on February 28. No transportation service</text>
+  <text x="30" y="410" font-family="Arial, sans-serif" font-size="13" fill="#6c757d">required. Regular schedule resumes March 1.</text>
+  <text x="750" y="425" font-family="Arial, sans-serif" font-size="11" text-anchor="end" fill="#6c757d">3 days ago</text>
+  <rect x="20" y="460" width="760" height="100" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="2"/>
+  <text x="30" y="490" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#212529">Vehicle Maintenance Schedule Updated</text>
+  <text x="30" y="513" font-family="Arial, sans-serif" font-size="13" fill="#6c757d">BUS-001 scheduled for routine maintenance on Feb 25.</text>
+  <text x="30" y="530" font-family="Arial, sans-serif" font-size="13" fill="#6c757d">Alternate vehicle will be assigned.</text>
+  <text x="750" y="545" font-family="Arial, sans-serif" font-size="11" text-anchor="end" fill="#6c757d">1 week ago</text>
+</svg>

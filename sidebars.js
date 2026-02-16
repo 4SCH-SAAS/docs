@@ -17,12 +17,41 @@ const sidebars = {
       label: 'User Guides',
       collapsed: false,
       items: [
-        'guides/admin-guide',
-        'guides/teacher-guide',
-        'guides/parent-guide',
-        'guides/student-guide',
-        'guides/non-teaching-staff-guide',
-        'guides/accountant-guide',
+        {
+          type: 'category',
+          label: '🎓 School Leadership',
+          collapsed: false,
+          items: [
+            'guides/school-admin',
+          ],
+        },
+        {
+          type: 'category',
+          label: '👥 Teaching Staff',
+          collapsed: false,
+          items: [
+            'guides/teachers',
+          ],
+        },
+        {
+          type: 'category',
+          label: '👨‍👩‍👧‍👦 Parents & Students',
+          collapsed: false,
+          items: [
+            'guides/parents',
+            'guides/students',
+          ],
+        },
+        {
+          type: 'category',
+          label: '💼 Support Staff',
+          collapsed: false,
+          items: [
+            'guides/non-teaching-staff',
+            'guides/accountant',
+            'guides/driver',
+          ],
+        },
       ],
     },
     {

@@ -1,0 +1,33 @@
+<svg width="375" height="667" xmlns="http://www.w3.org/2000/svg">
+  <rect width="375" height="667" fill="#f5f7fa"/>
+  <!-- Header -->
+  <rect width="375" height="60" fill="#4299e1"/>
+  <text x="20" y="40" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">Submit Assignment</text>
+  <!-- Content -->
+  <rect x="15" y="80" width="345" height="520" rx="8" fill="white"/>
+  <!-- Assignment Info -->
+  <text x="25" y="110" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1a202c">Mathematics Homework</text>
+  <text x="25" y="130" font-family="Arial, sans-serif" font-size="11" fill="#718096">Due: Tomorrow, 11:59 PM</text>
+  <!-- Upload Area -->
+  <text x="25" y="165" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1a202c">Upload Your Work:</text>
+  <rect x="25" y="175" width="325" height="120" rx="6" fill="#f7fafc" stroke="#cbd5e0" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="187.5" y="225" font-family="Arial, sans-serif" font-size="40" fill="#cbd5e0" text-anchor="middle">📁</text>
+  <text x="187.5" y="250" font-family="Arial, sans-serif" font-size="12" fill="#4a5568" text-anchor="middle">Click to upload file</text>
+  <text x="187.5" y="270" font-family="Arial, sans-serif" font-size="10" fill="#718096" text-anchor="middle">or drag and drop here</text>
+  <text x="187.5" y="285" font-family="Arial, sans-serif" font-size="9" fill="#a0aec0" text-anchor="middle">PDF, DOC, JPG, PNG (Max 10 MB)</text>
+  <!-- Uploaded File (example) -->
+  <text x="25" y="325" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1a202c">Uploaded Files:</text>
+  <rect x="25" y="335" width="325" height="50" rx="4" fill="#e6fffa" stroke="#38b2ac" stroke-width="1"/>
+  <text x="35" y="360" font-family="Arial, sans-serif" font-size="11" fill="#234e52">✓ Math_Homework_John.pdf (1.2 MB)</text>
+  <text x="335" y="360" font-family="Arial, sans-serif" font-size="11" fill="#c53030" text-anchor="end">🗑</text>
+  <!-- Comments -->
+  <text x="25" y="410" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1a202c">Add Comments (Optional):</text>
+  <rect x="25" y="420" width="325" height="80" rx="4" fill="#f7fafc" stroke="#cbd5e0" stroke-width="1"/>
+  <text x="35" y="440" font-family="Arial, sans-serif" font-size="11" fill="#a0aec0">I've completed all questions...</text>
+  <!-- Warning -->
+  <rect x="25" y="520" width="325" height="40" rx="4" fill="#fef5e7"/>
+  <text x="35" y="544" font-family="Arial, sans-serif" font-size="10" fill="#975a16">⚠ Once submitted, you cannot edit your work</text>
+  <!-- Submit Button -->
+  <rect x="25" y="575" width="325" height="50" rx="6" fill="#48bb78"/>
+  <text x="187.5" y="605" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Submit Now</text>
+</svg>

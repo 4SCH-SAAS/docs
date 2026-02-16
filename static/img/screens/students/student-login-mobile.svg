@@ -1,0 +1,15 @@
+<svg width="375" height="667" xmlns="http://www.w3.org/2000/svg">
+  <rect width="375" height="667" fill="#4299e1"/>
+  <circle cx="187.5" cy="150" r="50" fill="white" opacity="0.9"/>
+  <text x="187.5" y="160" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#4299e1" text-anchor="middle">4SCH</text>
+  <rect x="30" y="250" width="315" height="350" rx="12" fill="white"/>
+  <text x="187.5" y="290" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1a202c" text-anchor="middle">Student Login</text>
+  <rect x="50" y="320" width="275" height="45" rx="6" fill="#f7fafc" stroke="#cbd5e0" stroke-width="1"/>
+  <text x="60" y="348" font-family="Arial, sans-serif" font-size="14" fill="#718096">School Code</text>
+  <rect x="50" y="380" width="275" height="45" rx="6" fill="#f7fafc" stroke="#cbd5e0" stroke-width="1"/>
+  <text x="60" y="408" font-family="Arial, sans-serif" font-size="14" fill="#718096">Student ID</text>
+  <rect x="50" y="440" width="275" height="45" rx="6" fill="#f7fafc" stroke="#cbd5e0" stroke-width="1"/>
+  <text x="60" y="468" font-family="Arial, sans-serif" font-size="14" fill="#718096">Password</text>
+  <rect x="50" y="510" width="275" height="50" rx="6" fill="#4299e1"/>
+  <text x="187.5" y="540" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Sign In</text>
+</svg>
