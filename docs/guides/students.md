@@ -196,7 +196,7 @@ Don't just skim! Read everything:
 ```
 Assignment: Chapter 5: Quadratic Equations Practice
 Subject: Mathematics
-Teacher: Mrs. Johnson
+Teacher: Mrs. Adeyemi
 Due Date: March 25, 2026 at 11:59 PM
 Total Points: 20 points
 
@@ -348,7 +348,7 @@ Use a free app like:
 - Microsoft Lens
 - iPhone Notes app
 
-This creates: **JohnOjo_Math_Chapter5.pdf** (one file with all 4 questions)
+This creates: **ChineduOjo_Math_Chapter5.pdf** (one file with all 4 questions)
 
 **Option B: Typed work**
 
@@ -366,7 +366,7 @@ If you typed your solutions:
 
 **Step 3: Save as PDF**
 - File → Save As → PDF
-- Name: **JohnOjo_Math_Chapter5.pdf**
+- Name: **ChineduOjo_Math_Chapter5.pdf**
 
 **Why PDF and not Word?**
 - ✓ Looks the same on all devices
@@ -381,7 +381,7 @@ If you typed your solutions:
 **Saturday Evening (1 day early):**
 
 **8:00 PM - Final review (10 minutes)**
-1. Open your PDF: JohnOjo_Math_Chapter5.pdf
+1. Open your PDF: ChineduOjo_Math_Chapter5.pdf
 2. Check EVERY page:
    - Page 1: Question 1 ✓
    - Page 2: Question 2 ✓
@@ -400,7 +400,7 @@ If you typed your solutions:
 **8:11 PM - File selection**
 - Click "Choose File" or "Upload"
 - Navigate to your Downloads or Documents
-- Select: **JohnOjo_Math_Chapter5.pdf**
+- Select: **ChineduOjo_Math_Chapter5.pdf**
 - Click "Open"
 
 **8:12 PM - Preview before submitting**
@@ -454,7 +454,7 @@ Don't write:
 Assignment: Chapter 5: Quadratic Equations
 Submitted: March 24, 2026 at 8:15 PM
 Status: Submitted (On Time)
-File: JohnOjo_Math_Chapter5.pdf (2.3 MB)
+File: ChineduOjo_Math_Chapter5.pdf (2.3 MB)
 
 Your teacher has been notified.
 You will receive a notification when it's graded.
@@ -476,7 +476,7 @@ You will receive a notification when it's graded.
    - Status: "Submitted ✓"
 
 4. **Keep your original file**
-   - Don't delete JohnOjo_Math_Chapter5.pdf
+   - Don't delete ChineduOjo_Math_Chapter5.pdf
    - Keep until you get your grade back
    - In case teacher says they didn't receive it
 
@@ -505,7 +505,7 @@ Check 4SCH to confirm:
    - Your score: 18/20 (90%)
    - Teacher's comments:
      ```
-     Excellent work, John! You showed clear working for all questions.
+     Excellent work, Chinedu! You showed clear working for all questions.
 
      Q1: Perfect! (5/5)
      Q2: Perfect! (5/5)
@@ -555,7 +555,7 @@ Check 4SCH to confirm:
 - Submit anyway (some teachers accept late work with penalty)
 - Message teacher immediately:
   ```
-  "Dear Mrs. Johnson, I apologize for submitting late.
+  "Dear Mrs. Adeyemi, I apologize for submitting late.
   [Brief reason - sick, emergency, etc.]
   I've now submitted my work. Please let me know if
   you can still accept it.
@@ -591,7 +591,7 @@ Check 4SCH to confirm:
 **If can't withdraw:**
 - Message teacher immediately:
   ```
-  "Dear Mrs. Johnson, I accidentally submitted the wrong file.
+  "Dear Mrs. Adeyemi, I accidentally submitted the wrong file.
   The correct file is attached to this message.
   I'm sorry for the confusion.
   [Attach correct file]
@@ -605,7 +605,7 @@ Check 4SCH to confirm:
 **Day 1-2 after receiving assignment:**
 - Message your teacher:
   ```
-  "Dear Mrs. Johnson, I have a question about the assignment.
+  "Dear Mrs. Adeyemi, I have a question about the assignment.
   I don't understand what you mean by 'show all working.'
   Does this mean I should write every step, even simple ones?
   Thank you."
@@ -680,7 +680,7 @@ Complete the assignment according to the instructions.
 If it's a **file upload**:
 - Save your work as a PDF, Word document, or image
 - Name it properly: "YourName_Subject_Assignment.pdf"
-- Example: "JohnOjo_Math_Chapter5.pdf"
+- Example: "ChineduOjo_Math_Chapter5.pdf"
 
 If it's a **text entry**:
 - Type your answer directly into the submission box

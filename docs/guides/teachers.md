@@ -314,7 +314,7 @@ This workflow shows you the entire process from creating an assignment to publis
 
 5. **Add feedback:**
    ```
-   Excellent work, Sarah! You showed all working clearly.
+   Excellent work, Zainab! You showed all working clearly.
    Small mistake in Q3: You used wrong sign in the formula.
    Review the example and try Q3 again.
    Overall: 95% - Outstanding!
@@ -363,7 +363,7 @@ This workflow shows you the entire process from creating an assignment to publis
    - Add note: "Late submission: -2 points"
 
 3. **Parent inquiries:**
-   - Parent asks: "Why did John get 12/20?"
+   - Parent asks: "Why did Tunde get 12/20?"
    - You can show them the graded work with your feedback
    - Explain: "Missing working in 3 questions = lost points"
 
