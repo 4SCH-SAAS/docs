@@ -1,7 +1,6 @@
 ---
 id: teacher-guide
 title: Teacher Guide
-slug: /guides/teachers
 sidebar_position: 2
 ---
 
