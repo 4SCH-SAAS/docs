@@ -1,7 +1,6 @@
 ---
 id: student-guide
 title: Student Guide
-slug: /guides/students
 sidebar_position: 4
 ---
 

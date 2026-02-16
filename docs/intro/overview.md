@@ -108,7 +108,7 @@ Use these docs to set up 4SCH and run day-to-day school operations. Start with t
 <CardGrid
   cards={[
     {
-      to: '/guides/admin#academic-setup',
+      to: '/guides/school-admin#academic-setup',
       title: 'Set up academic session & classes',
       description: 'Sessions, terms, classes, subjects',
       icon: <AcademicIcon />,
@@ -120,7 +120,7 @@ Use these docs to set up 4SCH and run day-to-day school operations. Start with t
       icon: <UsersIcon />,
     },
     {
-      to: '/guides/admin#fee-management',
+      to: '/guides/school-admin#fee-management',
       title: 'Create fees and invoices',
       description: 'Fee heads, structures, and payments',
       icon: <FinanceIcon />,

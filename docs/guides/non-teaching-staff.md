@@ -1,7 +1,6 @@
 ---
 id: non-teaching-staff-guide
 title: Non-Teaching Staff Guide
-slug: /guides/non-teaching-staff
 sidebar_position: 5
 ---
 

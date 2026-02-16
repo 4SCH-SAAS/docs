@@ -1,7 +1,6 @@
 ---
 id: accountant-guide
 title: Accountant/Bursar Guide
-slug: /guides/accountant
 sidebar_position: 6
 ---
 
