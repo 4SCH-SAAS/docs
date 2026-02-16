@@ -12,7 +12,39 @@ const config = {
   onBrokenLinks: 'throw',
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'fr', 'es', 'sw', 'ar', 'hi'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en-US',
+      },
+      fr: {
+        label: 'Français',
+        direction: 'ltr',
+        htmlLang: 'fr-FR',
+      },
+      es: {
+        label: 'Español',
+        direction: 'ltr',
+        htmlLang: 'es-ES',
+      },
+      sw: {
+        label: 'Kiswahili',
+        direction: 'ltr',
+        htmlLang: 'sw-KE',
+      },
+      ar: {
+        label: 'العربية',
+        direction: 'rtl',
+        htmlLang: 'ar-SA',
+      },
+      hi: {
+        label: 'हिन्दी',
+        direction: 'ltr',
+        htmlLang: 'hi-IN',
+      },
+    },
   },
   themes: ['@docusaurus/theme-mermaid'],
   plugins: [
@@ -30,9 +62,10 @@ const config = {
       '@easyops-cn/docusaurus-search-local',
       {
         hashed: true,
-        language: ['en'],
+        language: ['en', 'fr', 'es', 'sw', 'ar', 'hi'],
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
+        docsRouteBasePath: '/',
       },
     ],
   ],
@@ -88,6 +121,10 @@ const config = {
       items: [
         {to: '/', label: 'Docs', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
         {
           type: 'docsVersionDropdown',
           position: 'right',
