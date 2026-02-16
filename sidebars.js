@@ -77,6 +77,20 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: '📋 Quick Reference Cards',
+      collapsed: true,
+      items: [
+        'quick-reference/README',
+        'quick-reference/teacher-assignment-workflow',
+        'quick-reference/parent-fee-payment-workflow',
+        'quick-reference/student-assignment-submission-workflow',
+        'quick-reference/admin-school-setup-workflow',
+        'quick-reference/accountant-payment-processing-workflow',
+        'quick-reference/driver-trip-management-workflow',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Support',
       collapsed: false,
       items: [
