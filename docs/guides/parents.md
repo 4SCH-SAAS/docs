@@ -1,7 +1,6 @@
 ---
 id: parent-guide
 title: Parent/Guardian Guide
-slug: /guides/parents
 sidebar_position: 3
 ---
 
