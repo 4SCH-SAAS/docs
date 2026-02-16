@@ -37,8 +37,8 @@ Welcome! 4SCH gives you easy access to everything you need for school—your tim
 
 When you log into 4SCH, you'll see your **Student Dashboard**. This is your home page for everything school-related.
 
-<Screenshot 
-  src="/img/screens/students/student-dashboard.svg" 
+<Screenshot
+  src="/img/screens/students/student-dashboard.svg"
   alt="Student Dashboard"
   caption="Student Dashboard - Your daily overview"
 />
@@ -88,8 +88,8 @@ Your timetable shows all your classes for the week.
    - Time (e.g., 9:00 AM - 10:00 AM)
    - Room/venue (if applicable)
 
-<Screenshot 
-  src="/img/screens/students/student-timetable.svg" 
+<Screenshot
+  src="/img/screens/students/student-timetable.svg"
   alt="Student Timetable"
   caption="Weekly Timetable - See all your classes"
 />
@@ -140,8 +140,8 @@ Your teachers will post assignments for you to complete and submit online.
    - **Submitted** — You've already turned them in
    - **Graded** — Teacher has graded your work
 
-<Screenshot 
-  src="/img/screens/students/assignments-list.svg" 
+<Screenshot
+  src="/img/screens/students/assignments-list.svg"
   alt="Assignments List"
   caption="Assignments - Track pending, submitted, and graded work"
 />
@@ -163,8 +163,8 @@ When you click on an assignment, you'll see:
 - Reference materials
 - Rubrics (grading criteria)
 
-<Screenshot 
-  src="/img/screens/students/assignment-details.svg" 
+<Screenshot
+  src="/img/screens/students/assignment-details.svg"
   alt="Assignment Details"
   caption="Assignment Details - Instructions and requirements"
 />
@@ -203,7 +203,7 @@ Total Points: 20 points
 
 Instructions:
 Solve all 4 quadratic equations using the quadratic formula.
-Show all your working. Answers without working will receive 
+Show all your working. Answers without working will receive
 half marks only.
 
 Submit your solutions as:
@@ -288,10 +288,10 @@ Calculate how much time you have:
    x = [-5 ± √(25+24)] / 4
    x = [-5 ± √49] / 4
    x = [-5 ± 7] / 4
-   
+
    x₁ = (-5+7)/4 = 2/4 = 0.5
    x₂ = (-5-7)/4 = -12/4 = -3
-   
+
    Answer: x = 0.5 or x = -3
    ```
 
@@ -426,12 +426,12 @@ You'll see a preview of what your teacher will see:
 
 Good messages:
 ```
-"All 4 questions completed with full working shown. 
+"All 4 questions completed with full working shown.
 Please let me know if you have any questions."
 ```
 
 ```
-"I found Question 3 challenging but I showed my attempt. 
+"I found Question 3 challenging but I showed my attempt.
 Could you please provide feedback on my approach?"
 ```
 
@@ -507,16 +507,16 @@ Check 4SCH to confirm:
    - Teacher's comments:
      ```
      Excellent work, John! You showed clear working for all questions.
-     
+
      Q1: Perfect! (5/5)
      Q2: Perfect! (5/5)
-     Q3: Good attempt but small error in arithmetic. 
+     Q3: Good attempt but small error in arithmetic.
          You wrote √49 = 8 instead of 7. (4/5)
      Q4: Perfect! (4/4)
-     
-     Overall: Great job! Review your basic square roots 
+
+     Overall: Great job! Review your basic square roots
      to avoid simple errors like in Q3.
-     
+
      Keep up the good work!
      ```
 
@@ -533,11 +533,11 @@ Check 4SCH to confirm:
 - If you still think it's wrong, message teacher politely:
   ```
   "Dear Mrs. Johnson,
-  
-  Thank you for grading my assignment. I wanted to respectfully 
-  ask about Question 3. I believe √49 = 7, and I have that in 
+
+  Thank you for grading my assignment. I wanted to respectfully
+  ask about Question 3. I believe √49 = 7, and I have that in
   my work. Could you please review?
-  
+
   Thank you.
   John"
   ```
@@ -558,7 +558,7 @@ Check 4SCH to confirm:
   ```
   "Dear Mrs. Johnson, I apologize for submitting late.
   [Brief reason - sick, emergency, etc.]
-  I've now submitted my work. Please let me know if 
+  I've now submitted my work. Please let me know if
   you can still accept it.
   Thank you for your understanding."
   ```
@@ -692,8 +692,8 @@ If it's a **text entry**:
 3. Review what you're submitting
 4. Click **Submit** to send it to your teacher
 
-<Screenshot 
-  src="/img/screens/students/assignment-submission.svg" 
+<Screenshot
+  src="/img/screens/students/assignment-submission.svg"
   alt="Assignment Submission"
   caption="Submit Assignment - Upload your completed work"
 />

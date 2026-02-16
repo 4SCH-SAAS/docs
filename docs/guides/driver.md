@@ -25,8 +25,8 @@ This guide is for **school transportation drivers** who use the 4SCH Staff Mobil
 4. Enter your registered email/mobile and password
 5. Tap **Login**
 
-<Screenshot 
-  src="/img/screens/drivers/driver-login.svg" 
+<Screenshot
+  src="/img/screens/drivers/driver-login.svg"
   alt="Driver Login Screen"
   caption="Driver App Login - Sign in to start your day"
 />
@@ -44,8 +44,8 @@ After logging in, you'll see your **Driver Dashboard** with:
 - **Alerts & Notices** - Important announcements
 - **Quick Actions** - Start trip, report issue, view schedule
 
-<Screenshot 
-  src="/img/screens/drivers/driver-dashboard.svg" 
+<Screenshot
+  src="/img/screens/drivers/driver-dashboard.svg"
   alt="Driver Dashboard"
   caption="Driver Dashboard - Your daily overview"
 />
@@ -70,8 +70,8 @@ After logging in, you'll see your **Driver Dashboard** with:
 3. Review the route and student list
 4. Tap **Start** to begin
 
-<Screenshot 
-  src="/img/screens/drivers/start-trip.svg" 
+<Screenshot
+  src="/img/screens/drivers/start-trip.svg"
   alt="Start Trip Screen"
   caption="Start Trip - Begin your route"
 />
@@ -107,8 +107,8 @@ At each stop, you need to mark attendance:
    - 🏥 **On Leave** - Pre-informed leave
 4. Tap **Continue** to next stop
 
-<Screenshot 
-  src="/img/screens/drivers/student-attendance.svg" 
+<Screenshot
+  src="/img/screens/drivers/student-attendance.svg"
   alt="Student Attendance Marking"
   caption="Mark Attendance - Track who's on board"
 />
@@ -134,8 +134,8 @@ Always confirm student identity before marking them present. Safety is priority!
    - Pickup/drop times
    - Stop addresses with map view
 
-<Screenshot 
-  src="/img/screens/drivers/route-details.svg" 
+<Screenshot
+  src="/img/screens/drivers/route-details.svg"
   alt="Route Details"
   caption="Route Details - All stops and students"
 />
@@ -171,8 +171,8 @@ The trip will be marked as completed and logged in the system.
    - Morning/afternoon route
    - Active/inactive status
 
-<Screenshot 
-  src="/img/screens/drivers/student-list.svg" 
+<Screenshot
+  src="/img/screens/drivers/student-list.svg"
   alt="Student List"
   caption="Assigned Students - Know who's on your route"
 />
@@ -192,8 +192,8 @@ When new students are assigned to your route:
 - Review their pickup point and details
 - Contact coordinator if you have questions
 
-<Screenshot 
-  src="/img/screens/drivers/new-student-alert.svg" 
+<Screenshot
+  src="/img/screens/drivers/new-student-alert.svg"
   alt="New Student Alert"
   caption="New Student - Added to your route"
 />
@@ -219,8 +219,8 @@ If route or stops change:
    - Transportation coordinator
    - System alerts
 
-<Screenshot 
-  src="/img/screens/drivers/announcements.svg" 
+<Screenshot
+  src="/img/screens/drivers/announcements.svg"
   alt="Announcements"
   caption="Announcements - Stay informed"
 />
@@ -245,8 +245,8 @@ If route or stops change:
 4. Attach photos if relevant (optional)
 5. Tap **Submit**
 
-<Screenshot 
-  src="/img/screens/drivers/report-issue.svg" 
+<Screenshot
+  src="/img/screens/drivers/report-issue.svg"
   alt="Report Issue"
   caption="Report Issue - Alert the coordinator"
 />
@@ -286,8 +286,8 @@ In case you need to contact a parent:
    - Upcoming holidays
    - Special event days
 
-<Screenshot 
-  src="/img/screens/drivers/schedule.svg" 
+<Screenshot
+  src="/img/screens/drivers/schedule.svg"
   alt="Driver Schedule"
   caption="Schedule - Plan your day"
 />
@@ -299,8 +299,8 @@ In case you need to contact a parent:
 2. See all school holidays and breaks
 3. No trips scheduled on these days
 
-<Screenshot 
-  src="/img/screens/drivers/holidays.svg" 
+<Screenshot
+  src="/img/screens/drivers/holidays.svg"
   alt="Holiday Calendar"
   caption="Holidays - Days with no trips"
 />
@@ -330,8 +330,8 @@ In case you need to contact a parent:
    - Reason
 3. Tap **Submit**
 
-<Screenshot 
-  src="/img/screens/drivers/apply-leave.svg" 
+<Screenshot
+  src="/img/screens/drivers/apply-leave.svg"
   alt="Apply Leave"
   caption="Apply Leave - Request time off"
 />
@@ -366,8 +366,8 @@ Your leave request will be sent to the administrator for approval.
    - Total distance traveled
    - Any incidents reported
 
-<Screenshot 
-  src="/img/screens/drivers/trip-history.svg" 
+<Screenshot
+  src="/img/screens/drivers/trip-history.svg"
   alt="Trip History"
   caption="Trip History - Review past trips"
 />
@@ -418,8 +418,8 @@ If your vehicle has problems:
    - Address
 3. Tap **Save**
 
-<Screenshot 
-  src="/img/screens/drivers/driver-profile.svg" 
+<Screenshot
+  src="/img/screens/drivers/driver-profile.svg"
   alt="Driver Profile"
   caption="Driver Profile - Keep your info updated"
 />

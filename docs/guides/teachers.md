@@ -98,16 +98,16 @@ Click **Submit** or **Save**. The attendance is now recorded and parents are not
 
 ### Common Attendance Questions
 
-**Q: What if I forgot to mark attendance?**  
+**Q: What if I forgot to mark attendance?**
 A: You can mark attendance for previous days. Go to Classes → Attendance History → Select the date → Mark attendance.
 
-**Q: What if I made a mistake?**  
+**Q: What if I made a mistake?**
 A: Click on the student again and change their status. As long as you haven't submitted, you can edit freely. After submission, contact your admin to make changes.
 
-**Q: Do I need to mark attendance for every period?**  
+**Q: Do I need to mark attendance for every period?**
 A: It depends on your school's policy. Some schools mark once per day, others mark every period. Check with your admin.
 
-**Q: What if a student arrives after I've submitted attendance?**  
+**Q: What if a student arrives after I've submitted attendance?**
 A: Update their status from "Absent" to "Late" and add a note about when they arrived.
 
 :::caution Common Mistake
@@ -237,13 +237,13 @@ This workflow shows you the entire process from creating an assignment to publis
    ```
    Instructions:
    Solve all 4 quadratic equations using the quadratic formula.
-   Show all your working. Answers without working will receive 
+   Show all your working. Answers without working will receive
    half marks only.
-   
+
    Submit your solutions as:
    - Handwritten work (scan or photo - must be clear)
    - Typed document (Word or PDF)
-   
+
    Formula: x = [-b ± √(b²-4ac)] / 2a
    ```
 
@@ -299,15 +299,15 @@ This workflow shows you the entire process from creating an assignment to publis
    - Sort by "Submitted" (start with on-time submissions)
 
 3. **For each submission:**
-   
+
    **Click student name → Review work → Grade**
-   
+
    **Question 1: (5 points)**
    - Correct answer with working: 5/5
    - Correct answer, no working: 2.5/5
    - Wrong answer with attempt: 1/5
    - No attempt: 0/5
-   
+
    Repeat for Questions 2, 3, 4
 
 4. **Calculate total:**
@@ -419,16 +419,16 @@ This workflow shows you the entire process from creating an assignment to publis
 
 ### Common Assignment Mistakes to Avoid
 
-❌ **Don't:** Create assignments with unclear instructions  
+❌ **Don't:** Create assignments with unclear instructions
 ✅ **Do:** Write step-by-step instructions and include examples
 
-❌ **Don't:** Set due dates that are too soon (students need time)  
+❌ **Don't:** Set due dates that are too soon (students need time)
 ✅ **Do:** Give at least 3-5 days for homework, 1-2 weeks for projects
 
-❌ **Don't:** Forget to attach necessary files  
+❌ **Don't:** Forget to attach necessary files
 ✅ **Do:** Double-check that worksheets or reference materials are attached
 
-❌ **Don't:** Grade without feedback  
+❌ **Don't:** Grade without feedback
 ✅ **Do:** Always add at least one helpful comment per student
 
 ---
@@ -499,10 +499,10 @@ This is much faster than clicking on each student individually!
 
 ### What If I Make a Mistake?
 
-**Before Publishing:**  
+**Before Publishing:**
 Just change the score and save again. Easy!
 
-**After Publishing:**  
+**After Publishing:**
 Contact your school administrator. They can either:
 - Give you permission to edit published grades
 - Make the correction for you
@@ -576,7 +576,7 @@ If you want to message just a few parents:
 >
 > If you have questions, reply to this message.
 >
-> Thank you,  
+> Thank you,
 > Mr. Johnson
 
 **Why This Works:**
@@ -681,10 +681,10 @@ Reports help you understand how your class is performing and identify students w
 
 ### Your First Week Checklist
 
-✅ **Day 1:** Log in and explore your dashboard  
-✅ **Day 2:** Review your assigned classes and subjects  
-✅ **Day 3:** Mark attendance for the first time  
-✅ **Day 4:** Create your first assignment  
+✅ **Day 1:** Log in and explore your dashboard
+✅ **Day 2:** Review your assigned classes and subjects
+✅ **Day 3:** Mark attendance for the first time
+✅ **Day 4:** Create your first assignment
 ✅ **Day 5:** Send a welcome message to all parents
 
 ### Time-Saving Habits
@@ -706,19 +706,19 @@ Spend 5 minutes reviewing your day before classes start.
 
 ### Common Teacher Questions
 
-**Q: Can students see my personal contact information?**  
+**Q: Can students see my personal contact information?**
 A: No. All communication happens through 4SCH. Your email and phone number remain private.
 
-**Q: What if I'm teaching multiple subjects to the same class?**  
+**Q: What if I'm teaching multiple subjects to the same class?**
 A: You'll see separate gradebooks for each subject. Keep them organized by subject name.
 
-**Q: Can I edit attendance after the term ends?**  
+**Q: Can I edit attendance after the term ends?**
 A: Usually no. Schools lock historical data. Mark attendance accurately from the start!
 
-**Q: What if the internet is down at school?**  
+**Q: What if the internet is down at school?**
 A: Mark attendance on paper, then enter it into 4SCH when internet returns. Some schools have backup mobile data hotspots.
 
-**Q: How do I handle parent complaints about grades?**  
+**Q: How do I handle parent complaints about grades?**
 A: Stay professional. Show them the gradebook and explain your grading criteria. If needed, involve your head of department or admin.
 
 ---
@@ -731,7 +731,7 @@ A: Stay professional. Show them the gradebook and explain your grading criteria.
 - **Third:** Contact your school's 4SCH administrator
 - **Last Resort:** Your admin can contact 4SCH support
 
-**Found a bug or issue?**  
+**Found a bug or issue?**
 Report it to your school admin with:
 - What you were trying to do
 - What happened instead

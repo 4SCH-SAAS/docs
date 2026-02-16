@@ -23,8 +23,8 @@ Welcome! As a school administrator, you have complete control over your school's
 This guide is specifically for **School Administrators** who manage the school system through the **web-based admin panel**. If you're a teacher or staff member, see the <Link to="/guides/teachers">Teacher Guide</Link> or <Link to="/guides/non-teaching-staff">Staff Guide</Link>.
 :::
 
-<Screenshot 
-  src="/img/screens/admin/admin-dashboard.svg" 
+<Screenshot
+  src="/img/screens/admin/admin-dashboard.svg"
   alt="School Admin Dashboard"
   caption="School Admin Dashboard - Your command center"
 />
