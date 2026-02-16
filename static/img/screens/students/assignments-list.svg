@@ -1,0 +1,42 @@
+<svg width="375" height="667" xmlns="http://www.w3.org/2000/svg">
+  <rect width="375" height="667" fill="#f5f7fa"/>
+  <!-- Header -->
+  <rect width="375" height="60" fill="#4299e1"/>
+  <text x="20" y="40" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">Assignments</text>
+  <!-- Tabs -->
+  <rect y="60" width="375" height="50" fill="white"/>
+  <rect x="10" y="70" width="110" height="35" rx="4" fill="#4299e1"/>
+  <text x="65" y="92" font-family="Arial, sans-serif" font-size="13" fill="white" text-anchor="middle">Pending (3)</text>
+  <text x="188" y="92" font-family="Arial, sans-serif" font-size="13" fill="#718096" text-anchor="middle">Submitted (2)</text>
+  <text x="310" y="92" font-family="Arial, sans-serif" font-size="13" fill="#718096" text-anchor="middle">Graded (5)</text>
+  <!-- Assignment Card 1 - Urgent -->
+  <rect x="15" y="130" width="345" height="110" rx="8" fill="white" stroke="#fc8181" stroke-width="2"/>
+  <rect x="25" y="140" width="60" height="20" rx="4" fill="#fc8181"/>
+  <text x="55" y="154" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">URGENT</text>
+  <text x="25" y="178" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1a202c">Mathematics Homework</text>
+  <text x="25" y="198" font-family="Arial, sans-serif" font-size="12" fill="#718096">Chapter 5: Algebra Problems</text>
+  <text x="25" y="218" font-family="Arial, sans-serif" font-size="11" fill="#e53e3e">⏰ Due: Tomorrow, 11:59 PM</text>
+  <text x="320" y="218" font-family="Arial, sans-serif" font-size="11" fill="#718096" text-anchor="end">20 pts</text>
+  <!-- Assignment Card 2 -->
+  <rect x="15" y="255" width="345" height="110" rx="8" fill="white" stroke="#e1e8ed" stroke-width="1"/>
+  <rect x="25" y="265" width="80" height="20" rx="4" fill="#fef5e7"/>
+  <text x="65" y="279" font-family="Arial, sans-serif" font-size="11" fill="#d69e2e" text-anchor="middle">This Week</text>
+  <text x="25" y="303" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1a202c">English Essay</text>
+  <text x="25" y="323" font-family="Arial, sans-serif" font-size="12" fill="#718096">Write about Environmental Protection</text>
+  <text x="25" y="343" font-family="Arial, sans-serif" font-size="11" fill="#718096">⏰ Due: Friday, 5:00 PM</text>
+  <text x="320" y="343" font-family="Arial, sans-serif" font-size="11" fill="#718096" text-anchor="end">30 pts</text>
+  <!-- Assignment Card 3 -->
+  <rect x="15" y="380" width="345" height="110" rx="8" fill="white" stroke="#e1e8ed" stroke-width="1"/>
+  <rect x="25" y="390" width="70" height="20" rx="4" fill="#e6fffa"/>
+  <text x="60" y="404" font-family="Arial, sans-serif" font-size="11" fill="#38b2ac" text-anchor="middle">Next Week</text>
+  <text x="25" y="428" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1a202c">Science Project</text>
+  <text x="25" y="448" font-family="Arial, sans-serif" font-size="12" fill="#718096">Solar System Model</text>
+  <text x="25" y="468" font-family="Arial, sans-serif" font-size="11" fill="#718096">⏰ Due: Next Monday, 9:00 AM</text>
+  <text x="320" y="468" font-family="Arial, sans-serif" font-size="11" fill="#718096" text-anchor="end">50 pts</text>
+  <!-- Bottom Navigation -->
+  <rect y="617" width="375" height="50" fill="white" stroke="#e1e8ed" stroke-width="1"/>
+  <text x="50" y="645" font-family="Arial, sans-serif" font-size="10" fill="#718096" text-anchor="middle">🏠 Home</text>
+  <text x="137" y="645" font-family="Arial, sans-serif" font-size="10" fill="#4299e1" text-anchor="middle">📝 Assignments</text>
+  <text x="237" y="645" font-family="Arial, sans-serif" font-size="10" fill="#718096" text-anchor="middle">📊 Results</text>
+  <text x="325" y="645" font-family="Arial, sans-serif" font-size="10" fill="#718096" text-anchor="middle">⚙️ More</text>
+</svg>

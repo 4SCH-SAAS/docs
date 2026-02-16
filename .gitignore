@@ -1,4 +1,7 @@
 node_modules/
 build/
+.saas-staff/
+.student-parent/
+.php_code/
 .docusaurus/
 .env

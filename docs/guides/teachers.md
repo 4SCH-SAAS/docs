@@ -1,7 +1,6 @@
 ---
 id: teacher-guide
 title: Teacher Guide
-slug: /guides/teachers
 sidebar_position: 2
 ---
 
@@ -98,16 +97,16 @@ Click **Submit** or **Save**. The attendance is now recorded and parents are not
 
 ### Common Attendance Questions
 
-**Q: What if I forgot to mark attendance?**  
+**Q: What if I forgot to mark attendance?**
 A: You can mark attendance for previous days. Go to Classes → Attendance History → Select the date → Mark attendance.
 
-**Q: What if I made a mistake?**  
+**Q: What if I made a mistake?**
 A: Click on the student again and change their status. As long as you haven't submitted, you can edit freely. After submission, contact your admin to make changes.
 
-**Q: Do I need to mark attendance for every period?**  
+**Q: Do I need to mark attendance for every period?**
 A: It depends on your school's policy. Some schools mark once per day, others mark every period. Check with your admin.
 
-**Q: What if a student arrives after I've submitted attendance?**  
+**Q: What if a student arrives after I've submitted attendance?**
 A: Update their status from "Absent" to "Late" and add a note about when they arrived.
 
 :::caution Common Mistake
@@ -191,18 +190,244 @@ Write comments to help the student improve:
 Grade all submissions for one question/section at a time rather than grading each student's entire work. This helps you stay consistent in your grading and saves time.
 :::
 
+### Complete Workflow: Creating and Grading an Assignment
+
+This workflow shows you the entire process from creating an assignment to publishing grades.
+
+#### Phase 1: Planning Your Assignment (5-10 minutes)
+
+**Before you create the assignment in 4SCH, plan:**
+
+1. **Learning Objective:** What should students learn or demonstrate?
+   - Example: "Students will solve quadratic equations using the formula"
+   - Example: "Students will write a persuasive essay with introduction, body, and conclusion"
+
+2. **Assessment Criteria:** How will you grade it?
+   - Create a simple rubric or point breakdown
+   - Example: "5 points per correct answer (4 questions = 20 points)"
+   - Example: "Structure (5), Content (10), Grammar (5) = 20 points total"
+
+3. **Due Date:** When should students submit?
+   - Give at least 3-7 days for homework
+   - Allow 1-2 weeks for projects or essays
+   - Consider: Do students need weekends? Any upcoming exams?
+
+4. **Resources Needed:** What will students need?
+   - Worksheet to download?
+   - Reference materials?
+   - Rubric or marking scheme?
+
+#### Phase 2: Creating in 4SCH (5 minutes)
+
+**Step-by-step creation:**
+
+1. **Navigate:** Dashboard → Assignments → Create New Assignment
+
+2. **Fill Basic Info:**
+   ```
+   Title: Chapter 5: Quadratic Equations Practice
+   Subject: Mathematics
+   Class: Form 3A
+   Due Date: March 25, 2026 at 11:59 PM
+   Total Points: 20
+   ```
+
+3. **Write Clear Instructions:**
+   ```
+   Instructions:
+   Solve all 4 quadratic equations using the quadratic formula.
+   Show all your working. Answers without working will receive
+   half marks only.
+
+   Submit your solutions as:
+   - Handwritten work (scan or photo - must be clear)
+   - Typed document (Word or PDF)
+
+   Formula: x = [-b ± √(b²-4ac)] / 2a
+   ```
+
+4. **Attach Resources:**
+   - Click "Attach Files"
+   - Upload: `quadratic_equations_worksheet.pdf`
+   - Upload: `worked_example.pdf` (optional)
+
+5. **Configure Settings:**
+   - ✅ Allow late submissions (but note them)
+   - ✅ Email notifications to students
+   - ❌ Group assignment (individual work)
+   - ✅ Show points to students
+
+6. **Review and Create:**
+   - Preview how students will see it
+   - Check: Title clear? Instructions complete? Due date correct?
+   - Click **Create Assignment**
+
+**✅ Assignment is now live! Students receive notification.**
+
+#### Phase 3: Monitoring Submissions (Ongoing)
+
+**Daily checks (2-3 minutes):**
+
+1. Open **Assignments** → Select your assignment
+2. Check the submission counter:
+   - "15 of 30 submitted" means 15 students have submitted
+   - Click "View Submissions"
+
+3. **Identify who hasn't submitted:**
+   - Sort by "Not Submitted"
+   - 3 days before deadline: Send a reminder
+   - 1 day before deadline: Follow up with students in class
+
+**Sending a reminder:**
+1. Click "Not Submitted" tab
+2. Select all students (or specific ones)
+3. Click "Send Reminder"
+4. Message auto-sends: "Reminder: Quadratic Equations assignment due in 3 days"
+
+#### Phase 4: Grading Submissions (15-30 minutes for 30 students)
+
+**Efficient grading process:**
+
+1. **Set aside focused time:**
+   - Don't grade during teaching breaks
+   - Allocate 30-60 minutes without interruptions
+   - Grade all submissions at once for consistency
+
+2. **Start grading:**
+   - Assignments → Select assignment → View Submissions
+   - Sort by "Submitted" (start with on-time submissions)
+
+3. **For each submission:**
+
+   **Click student name → Review work → Grade**
+
+   **Question 1: (5 points)**
+   - Correct answer with working: 5/5
+   - Correct answer, no working: 2.5/5
+   - Wrong answer with attempt: 1/5
+   - No attempt: 0/5
+
+   Repeat for Questions 2, 3, 4
+
+4. **Calculate total:**
+   - System auto-sums: Q1(5) + Q2(5) + Q3(4) + Q4(5) = 19/20
+
+5. **Add feedback:**
+   ```
+   Excellent work, Sarah! You showed all working clearly.
+   Small mistake in Q3: You used wrong sign in the formula.
+   Review the example and try Q3 again.
+   Overall: 95% - Outstanding!
+   ```
+
+6. **Save grade:**
+   - Click "Save" (grade saved, not visible to student yet)
+   - Move to next student
+
+7. **Batch actions:**
+   - Grade all Question 1s for all students first
+   - Then all Question 2s, etc.
+   - This ensures consistent marking
+
+#### Phase 5: Publishing Grades (2 minutes)
+
+**After grading all submissions:**
+
+1. Return to assignment overview
+2. Review grade distribution:
+   - How many A's, B's, C's?
+   - Anyone scoring unusually low? (Investigate)
+   - Anyone scoring unusually high? (Verify)
+
+3. **Publish grades:**
+   - Click "Publish All Grades"
+   - Confirm: "Publish 27 grades?" → Yes
+   - Students and parents receive notification
+
+**Alternative: Publish individually**
+- Useful if you want to discuss low grades with students first
+- Select specific students → Publish Selected
+
+#### Phase 6: Follow-up (Ongoing)
+
+**After publishing:**
+
+1. **Check for patterns:**
+   - Did most students struggle with Q3? Re-teach that concept
+   - Everyone got Q1 perfect? Maybe too easy next time
+   - Use "View Statistics" to see class average
+
+2. **Handle late submissions:**
+   - Set a policy: "Late = -10% per day" or "No marks after deadline"
+   - Grade late submissions separately
+   - Add note: "Late submission: -2 points"
+
+3. **Parent inquiries:**
+   - Parent asks: "Why did John get 12/20?"
+   - You can show them the graded work with your feedback
+   - Explain: "Missing working in 3 questions = lost points"
+
+4. **Use results for planning:**
+   - Low class average? Review the topic before moving on
+   - High average? Students ready for more challenging work
+
+#### Complete Timeline Example
+
+**Monday (Week 1):**
+- 9:00 AM: Create assignment in 4SCH
+- 9:05 AM: Explain assignment to students in class
+- Students have until Monday (Week 2)
+
+**Thursday (Week 1):**
+- Quick check: 8 of 30 submitted already ✓
+
+**Friday (Week 2) - 2 days before deadline:**
+- Send reminder to 22 students who haven't submitted
+
+**Monday (Week 2) - Due date:**
+- 27 of 30 submitted by 11:59 PM ✓
+- 3 students didn't submit
+
+**Tuesday (Week 2):**
+- 2:00 PM - 3:00 PM: Grade all 27 submissions
+- 3:00 PM: Publish grades
+- 3:05 PM: Students and parents receive grades
+
+**Wednesday (Week 2):**
+- Follow up with 3 students who didn't submit
+- Answer parent questions about grades
+- Note: Need to re-teach quadratic formula applications
+
+#### Time Investment Summary
+
+| Activity | Time Required |
+|----------|--------------|
+| Planning the assignment | 5-10 minutes |
+| Creating in 4SCH | 5 minutes |
+| Monitoring submissions | 2 min/day × 7 days = 14 minutes |
+| Grading 30 submissions | 30-60 minutes (1-2 min each) |
+| Publishing and review | 5 minutes |
+| Follow-up | 10-15 minutes |
+| **TOTAL** | **~90 minutes for entire process** |
+
+**Efficiency tips:**
+- Create assignment templates for recurring tasks
+- Use rubrics to speed up grading
+- Grade during free periods, not after school
+- Set clear expectations to reduce re-grading
+
 ### Common Assignment Mistakes to Avoid
 
-❌ **Don't:** Create assignments with unclear instructions  
+❌ **Don't:** Create assignments with unclear instructions
 ✅ **Do:** Write step-by-step instructions and include examples
 
-❌ **Don't:** Set due dates that are too soon (students need time)  
+❌ **Don't:** Set due dates that are too soon (students need time)
 ✅ **Do:** Give at least 3-5 days for homework, 1-2 weeks for projects
 
-❌ **Don't:** Forget to attach necessary files  
+❌ **Don't:** Forget to attach necessary files
 ✅ **Do:** Double-check that worksheets or reference materials are attached
 
-❌ **Don't:** Grade without feedback  
+❌ **Don't:** Grade without feedback
 ✅ **Do:** Always add at least one helpful comment per student
 
 ---
@@ -273,10 +498,10 @@ This is much faster than clicking on each student individually!
 
 ### What If I Make a Mistake?
 
-**Before Publishing:**  
+**Before Publishing:**
 Just change the score and save again. Easy!
 
-**After Publishing:**  
+**After Publishing:**
 Contact your school administrator. They can either:
 - Give you permission to edit published grades
 - Make the correction for you
@@ -350,7 +575,7 @@ If you want to message just a few parents:
 >
 > If you have questions, reply to this message.
 >
-> Thank you,  
+> Thank you,
 > Mr. Johnson
 
 **Why This Works:**
@@ -455,10 +680,10 @@ Reports help you understand how your class is performing and identify students w
 
 ### Your First Week Checklist
 
-✅ **Day 1:** Log in and explore your dashboard  
-✅ **Day 2:** Review your assigned classes and subjects  
-✅ **Day 3:** Mark attendance for the first time  
-✅ **Day 4:** Create your first assignment  
+✅ **Day 1:** Log in and explore your dashboard
+✅ **Day 2:** Review your assigned classes and subjects
+✅ **Day 3:** Mark attendance for the first time
+✅ **Day 4:** Create your first assignment
 ✅ **Day 5:** Send a welcome message to all parents
 
 ### Time-Saving Habits
@@ -480,19 +705,19 @@ Spend 5 minutes reviewing your day before classes start.
 
 ### Common Teacher Questions
 
-**Q: Can students see my personal contact information?**  
+**Q: Can students see my personal contact information?**
 A: No. All communication happens through 4SCH. Your email and phone number remain private.
 
-**Q: What if I'm teaching multiple subjects to the same class?**  
+**Q: What if I'm teaching multiple subjects to the same class?**
 A: You'll see separate gradebooks for each subject. Keep them organized by subject name.
 
-**Q: Can I edit attendance after the term ends?**  
+**Q: Can I edit attendance after the term ends?**
 A: Usually no. Schools lock historical data. Mark attendance accurately from the start!
 
-**Q: What if the internet is down at school?**  
+**Q: What if the internet is down at school?**
 A: Mark attendance on paper, then enter it into 4SCH when internet returns. Some schools have backup mobile data hotspots.
 
-**Q: How do I handle parent complaints about grades?**  
+**Q: How do I handle parent complaints about grades?**
 A: Stay professional. Show them the gradebook and explain your grading criteria. If needed, involve your head of department or admin.
 
 ---
@@ -505,7 +730,7 @@ A: Stay professional. Show them the gradebook and explain your grading criteria.
 - **Third:** Contact your school's 4SCH administrator
 - **Last Resort:** Your admin can contact 4SCH support
 
-**Found a bug or issue?**  
+**Found a bug or issue?**
 Report it to your school admin with:
 - What you were trying to do
 - What happened instead
@@ -517,8 +742,6 @@ Report it to your school admin with:
 
 Now that you know the basics, explore these advanced features:
 
-- <Link to="/guides/reports-analytics">Advanced Reports & Analytics</Link>
-- <Link to="/guides/messaging">Messaging System Deep Dive</Link>
 - <Link to="/reference/roles-permissions">Understanding Permissions</Link>
 
 Happy teaching! 📚

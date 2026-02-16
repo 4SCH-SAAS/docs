@@ -1,7 +1,6 @@
 ---
 id: non-teaching-staff-guide
 title: Non-Teaching Staff Guide
-slug: /guides/non-teaching-staff
 sidebar_position: 5
 ---
 
@@ -14,7 +13,7 @@ Welcome! This guide is for non-teaching staff members who support school operati
 
 :::tip Who is this for?
 This guide covers general non-teaching staff roles. For specialized roles, see:
-- <Link to="/guides/accountant">Accountant/Bursar Guide</Link>
+- <Link to="/guides/accountant-guide">Accountant/Bursar Guide</Link>
 :::
 
 <TOCInline toc={[]} minHeadingLevel={2} maxHeadingLevel={3} />
@@ -703,8 +702,8 @@ Use this checklist to stay on top of your responsibilities:
 
 ## Related Guides
 
-- <Link to="/guides/accountant">Accountant/Bursar Guide</Link> — Financial management
-- <Link to="/guides/admin">Administrator Guide</Link> — System setup and management
+- <Link to="/guides/accountant-guide">Accountant/Bursar Guide</Link> — Financial management
+- <Link to="/guides/school-admin">School Administrator Guide</Link> — System setup and management
 - <Link to="/support/faq">Frequently Asked Questions</Link>
 
 Keep up the great work! Your contributions matter! 🌟

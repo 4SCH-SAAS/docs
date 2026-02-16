@@ -9,11 +9,9 @@ sidebar_position: 2
 import Link from '@docusaurus/Link';
 
 - Jump to detailed guides:
-  - <Link to="/guides/admin#academic-setup">Admin — Academic setup</Link>
-  - <Link to="/guides/admin#fee-management">Admin — Fees & finance</Link>
-  - <Link to="/guides/teachers#teacher-dashboard">Teacher — Dashboard</Link>
-  - <Link to="/guides/billing-finance#invoices">Billing — Invoices</Link>
-  - <Link to="/guides/reports-analytics#dashboards">Reports — Dashboards</Link>
+  - <Link to="/guides/school-admin#academic-setup">Admin — Academic setup</Link>
+  - <Link to="/guides/school-admin#fee-management">Admin — Fees & finance</Link>
+  - <Link to="/guides/teacher-guide#teacher-dashboard">Teacher — Dashboard</Link>
 
 This guide sets up a school in under an hour.
 

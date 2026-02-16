@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  <rect x="200" y="100" width="400" height="400" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="2"/>
+  <circle cx="400" cy="180" r="40" fill="#0d6efd"/>
+  <path d="M 400 160 L 400 180 M 380 180 L 420 180" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="388" cy="188" r="12" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="412" cy="188" r="12" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="400" y="260" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#212529">Driver Login</text>
+  <rect x="240" y="290" width="320" height="45" rx="4" fill="#f8f9fa" stroke="#ced4da" stroke-width="1"/>
+  <text x="250" y="318" font-family="Arial, sans-serif" font-size="14" fill="#6c757d">School Code</text>
+  <rect x="240" y="350" width="320" height="45" rx="4" fill="#f8f9fa" stroke="#ced4da" stroke-width="1"/>
+  <text x="250" y="378" font-family="Arial, sans-serif" font-size="14" fill="#6c757d">Email or Mobile</text>
+  <rect x="240" y="410" width="320" height="45" rx="4" fill="#f8f9fa" stroke="#ced4da" stroke-width="1"/>
+  <text x="250" y="438" font-family="Arial, sans-serif" font-size="14" fill="#6c757d">Password</text>
+  <rect x="240" y="475" width="320" height="45" rx="6" fill="#0d6efd"/>
+  <text x="400" y="504" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">Sign In</text>
+  <text x="400" y="555" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#6c757d">Contact your school if you need login credentials</text>
+</svg>

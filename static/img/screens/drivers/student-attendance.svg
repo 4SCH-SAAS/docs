@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  <rect x="0" y="0" width="800" height="60" fill="#0d6efd"/>
+  <text x="60" y="38" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">← Mark Attendance</text>
+  <rect x="20" y="80" width="760" height="60" rx="6" fill="#e7f1ff" stroke="#0d6efd" stroke-width="1"/>
+  <text x="40" y="105" font-family="Arial, sans-serif" font-size="14" fill="#055160">Stop 3 of 8</text>
+  <text x="40" y="128" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0d6efd">Green Valley Junction</text>
+  <text x="700" y="118" font-family="Arial, sans-serif" font-size="14" text-anchor="end" fill="#6c757d">7:25 AM</text>
+  <rect x="20" y="160" width="760" height="70" rx="6" fill="#ffffff" stroke="#dee2e6" stroke-width="2"/>
+  <circle cx="50" cy="195" r="20" fill="#e9ecef"/>
+  <text x="50" y="202" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#495057">JD</text>
+  <text x="85" y="192" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#212529">John Doe</text>
+  <text x="85" y="210" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">Class 5A • Roll #12</text>
+  <circle cx="680" cy="195" r="25" fill="#198754"/>
+  <text x="680" y="203" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#ffffff">✓</text>
+  <text x="630" y="200" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#198754" font-weight="bold">Present</text>
+  <rect x="20" y="245" width="760" height="70" rx="6" fill="#ffffff" stroke="#dee2e6" stroke-width="2"/>
+  <circle cx="50" cy="280" r="20" fill="#e9ecef"/>
+  <text x="50" y="287" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#495057">SM</text>
+  <text x="85" y="277" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#212529">Sarah Miller</text>
+  <text x="85" y="295" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">Class 5A • Roll #15</text>
+  <rect x="580" y="265" width="80" height="30" rx="4" fill="#198754"/>
+  <text x="620" y="286" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#ffffff" font-weight="bold">Present</text>
+  <rect x="675" y="265" width="80" height="30" rx="4" fill="#dc3545"/>
+  <text x="715" y="286" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#ffffff" font-weight="bold">Absent</text>
+  <rect x="20" y="330" width="760" height="70" rx="6" fill="#ffffff" stroke="#dee2e6" stroke-width="2"/>
+  <circle cx="50" cy="365" r="20" fill="#e9ecef"/>
+  <text x="50" y="372" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#495057">TJ</text>
+  <text x="85" y="362" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#212529">Tom Johnson</text>
+  <text x="85" y="380" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">Class 5B • Roll #8</text>
+  <rect x="580" y="350" width="80" height="30" rx="4" fill="#198754"/>
+  <text x="620" y="371" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#ffffff" font-weight="bold">Present</text>
+  <rect x="675" y="350" width="80" height="30" rx="4" fill="#dc3545"/>
+  <text x="715" y="371" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#ffffff" font-weight="bold">Absent</text>
+  <rect x="20" y="420" width="760" height="50" rx="6" fill="#d1ecf1" stroke="#0dcaf0" stroke-width="1"/>
+  <text x="40" y="452" font-family="Arial, sans-serif" font-size="14" fill="#055160">Students marked: 1 of 3 • Waiting time: 2 min 15 sec</text>
+  <rect x="20" y="490" width="360" height="50" rx="6" fill="#6c757d"/>
+  <text x="200" y="521" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">Skip Stop</text>
+  <rect x="400" y="490" width="380" height="50" rx="6" fill="#0d6efd"/>
+  <text x="590" y="521" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">Continue to Next Stop →</text>
+</svg>

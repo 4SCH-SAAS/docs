@@ -61,7 +61,7 @@ Your main job is to set up the school structure so everyone else can use the sys
 3. ✅ Send welcome messages to all users
 4. ✅ Train teachers on basic features
 
-<Link to="/guides/admin">→ Full Administrator Guide</Link>
+<Link to="/guides/school-admin">→ Full School Administrator Guide</Link>
 
 ---
 
@@ -86,7 +86,7 @@ Your administrator has already set up the system. You just need to learn how to 
 - *Where do I enter grades?* Go to Gradebook → Select subject → Enter marks
 - *Can I message all parents at once?* Yes! Use Messaging → Select class group
 
-<Link to="/guides/teachers">→ Full Teacher Guide</Link>
+<Link to="/guides/teacher-guide">→ Full Teacher Guide</Link>
 
 ---
 
@@ -107,7 +107,7 @@ Your school has invited you to track your child's progress on 4SCH.
 2. Explore the tabs: Attendance, Grades, Timetable, Fees
 3. Enable notifications so you get alerts when grades are posted or fees are due
 
-<Link to="/guides/parents">→ Full Parent Guide</Link>
+<Link to="/guides/parent-guide">→ Full Parent Guide</Link>
 
 ---
 
@@ -128,7 +128,7 @@ You can now access your school information online.
 3. Look at upcoming assignments and their due dates
 4. Explore your grades to see how you're doing
 
-<Link to="/guides/students">→ Full Student Guide</Link>
+<Link to="/guides/student-guide">→ Full Student Guide</Link>
 
 ---
 
@@ -187,7 +187,7 @@ Report it to your school admin. They can contact 4SCH support on your behalf.
 
 Now that you understand the basics, dive deeper into the guide for your role:
 
-- <Link to="/guides/admin">Administrator Guide</Link> — Complete school setup and management
-- <Link to="/guides/teachers">Teacher Guide</Link> — Daily classroom activities
-- <Link to="/guides/parents">Parent Guide</Link> — Monitoring your child's progress
-- <Link to="/guides/students">Student Guide</Link> — Accessing your school information
+- <Link to="/guides/school-admin">School Administrator Guide</Link> — Complete school setup and management
+- <Link to="/guides/teacher-guide">Teacher Guide</Link> — Daily classroom activities
+- <Link to="/guides/parent-guide">Parent Guide</Link> — Monitoring your child's progress
+- <Link to="/guides/student-guide">Student Guide</Link> — Accessing your school information

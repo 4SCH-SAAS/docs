@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  <rect x="0" y="0" width="800" height="60" fill="#0d6efd"/>
+  <text x="60" y="38" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">← Start Trip</text>
+  <rect x="100" y="90" width="600" height="450" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="2"/>
+  <text x="400" y="130" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#212529">Morning Pickup Route</text>
+  <text x="400" y="160" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#6c757d">Ready to start your route?</text>
+  <rect x="130" y="190" width="540" height="60" rx="6" fill="#e7f1ff" stroke="#0d6efd" stroke-width="1"/>
+  <text x="150" y="215" font-family="Arial, sans-serif" font-size="14" fill="#212529">Scheduled Time:</text>
+  <text x="150" y="235" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0d6efd">7:00 AM - 8:30 AM</text>
+  <rect x="130" y="270" width="540" height="80" rx="6" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+  <text x="150" y="295" font-family="Arial, sans-serif" font-size="14" fill="#212529">Route Details:</text>
+  <text x="150" y="318" font-family="Arial, sans-serif" font-size="13" fill="#6c757d">• 8 pickup stops</text>
+  <text x="150" y="338" font-family="Arial, sans-serif" font-size="13" fill="#6c757d">• 24 students assigned</text>
+  <rect x="400" y="295" width="250" height="50" rx="6" fill="#d1ecf1" stroke="#0dcaf0" stroke-width="1"/>
+  <text x="525" y="318" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#055160">Vehicle: BUS-001</text>
+  <text x="525" y="335" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0c5460">Capacity: 40 students</text>
+  <rect x="130" y="370" width="540" height="80" rx="6" fill="#fff3cd" stroke="#ffc107" stroke-width="1"/>
+  <text x="150" y="395" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#664d03">⚠️ Important Reminders</text>
+  <text x="150" y="418" font-family="Arial, sans-serif" font-size="12" fill="#664d03">• Check vehicle condition before starting</text>
+  <text x="150" y="438" font-family="Arial, sans-serif" font-size="12" fill="#664d03">• Parents will receive real-time location updates</text>
+  <rect x="130" y="475" width="540" height="50" rx="6" fill="#198754"/>
+  <text x="400" y="506" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#ffffff">Start Trip Now</text>
+</svg>

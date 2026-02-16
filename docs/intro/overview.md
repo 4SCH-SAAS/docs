@@ -33,42 +33,71 @@ Use these docs to set up 4SCH and run day-to-day school operations. Start with t
 
 ## Choose Your Role
 
+### School Leadership & Administration
+
 <CardGrid
   cards={[
     {
-      to: '/guides/admin',
-      title: 'School Admin',
-      description: 'Setup, users, fees, settings, and reports',
+      to: '/guides/school-admin',
+      title: 'School Administrator',
+      description: 'Complete system setup, management, and oversight',
       icon: <DashboardIcon />,
     },
+  ]}
+/>
+
+### Teaching & Academic Staff
+
+<CardGrid
+  cards={[
     {
-      to: '/guides/teachers',
+      to: '/guides/teacher-guide',
       title: 'Teacher',
       description: 'Attendance, assignments, grades, and messaging',
       icon: <GradesIcon />,
     },
+  ]}
+/>
+
+### Parents & Students
+
+<CardGrid
+  cards={[
     {
-      to: '/guides/students',
-      title: 'Student',
-      description: 'Timetable, assignments, grades, and attendance',
-      icon: <AcademicIcon />,
-    },
-    {
-      to: '/guides/parents',
+      to: '/guides/parent-guide',
       title: 'Parent/Guardian',
-      description: 'Attendance, results, fee payments, and messages',
+      description: 'Monitor children, pay fees, and communicate with school',
       icon: <UsersIcon />,
     },
     {
-      to: '/guides/accountant',
+      to: '/guides/student-guide',
+      title: 'Student',
+      description: 'Access timetable, submit assignments, view grades',
+      icon: <AcademicIcon />,
+    },
+  ]}
+/>
+
+### Support & Finance Staff
+
+<CardGrid
+  cards={[
+    {
+      to: '/guides/accountant-guide',
       title: 'Accountant/Bursar',
-      description: 'Invoicing, payments, and finance reporting',
+      description: 'Fee management, invoicing, and financial reports',
       icon: <FinanceIcon />,
     },
     {
-      to: '/guides/non-teaching-staff',
+      to: '/guides/non-teaching-staff-guide',
       title: 'Non-Teaching Staff',
-      description: 'Admissions and operational workflows',
+      description: 'Admissions, office support, and operational workflows',
+      icon: <StaffIcon />,
+    },
+    {
+      to: '/guides/driver-guide',
+      title: 'Driver',
+      description: 'Route management, student attendance, and trip tracking',
       icon: <StaffIcon />,
     },
   ]}
@@ -79,7 +108,7 @@ Use these docs to set up 4SCH and run day-to-day school operations. Start with t
 <CardGrid
   cards={[
     {
-      to: '/guides/admin#academic-setup',
+      to: '/guides/school-admin#academic-setup',
       title: 'Set up academic session & classes',
       description: 'Sessions, terms, classes, subjects',
       icon: <AcademicIcon />,
@@ -91,34 +120,22 @@ Use these docs to set up 4SCH and run day-to-day school operations. Start with t
       icon: <UsersIcon />,
     },
     {
-      to: '/guides/admin#fee-management',
+      to: '/guides/school-admin#fee-management',
       title: 'Create fees and invoices',
       description: 'Fee heads, structures, and payments',
       icon: <FinanceIcon />,
     },
     {
-      to: '/guides/teachers#marking-attendance',
+      to: '/guides/teacher-guide#marking-attendance',
       title: 'Mark attendance',
       description: 'Daily presence and absence tracking',
       icon: <AttendanceIcon />,
     },
     {
-      to: '/guides/teachers#entering-grades',
+      to: '/guides/teacher-guide#entering-grades',
       title: 'Enter grades and exam scores',
       description: 'Assessments, marks, and results',
       icon: <GradesIcon />,
-    },
-    {
-      to: '/guides/messaging',
-      title: 'Send announcements and messages',
-      description: 'Broadcasts, approvals, and inbox',
-      icon: <MessagingIcon />,
-    },
-    {
-      to: '/guides/reports-analytics',
-      title: 'Run reports',
-      description: 'Dashboards, filters, and exports',
-      icon: <ReportsIcon />,
     },
   ]}
 />
