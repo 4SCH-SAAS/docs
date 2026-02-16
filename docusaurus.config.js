@@ -62,7 +62,7 @@ const config = {
       '@easyops-cn/docusaurus-search-local',
       {
         hashed: true,
-        language: ['en', 'fr', 'es', 'sw', 'ar', 'hi'],
+        language: ['en', 'fr', 'es', 'ar', 'hi'],
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
         docsRouteBasePath: '/',
