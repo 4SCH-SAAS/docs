@@ -137,18 +137,6 @@ Use these docs to set up 4SCH and run day-to-day school operations. Start with t
       description: 'Assessments, marks, and results',
       icon: <GradesIcon />,
     },
-    {
-      to: '/guides/messaging',
-      title: 'Send announcements and messages',
-      description: 'Broadcasts, approvals, and inbox',
-      icon: <MessagingIcon />,
-    },
-    {
-      to: '/guides/reports-analytics',
-      title: 'Run reports',
-      description: 'Dashboards, filters, and exports',
-      icon: <ReportsIcon />,
-    },
   ]}
 />
 
