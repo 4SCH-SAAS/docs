@@ -47,9 +47,9 @@ const sidebars = {
           label: '💼 Support Staff',
           collapsed: false,
           items: [
-            'guides/non-teaching-staff',
+            'guides/non-teaching-staff-guide',
             'guides/accountant-guide',
-            'guides/driver',
+            'guides/driver-guide',
           ],
         },
       ],
