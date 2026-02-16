@@ -30,7 +30,7 @@ const sidebars = {
           label: '👥 Teaching Staff',
           collapsed: false,
           items: [
-            'guides/teachers',
+            'guides/teacher-guide',
           ],
         },
         {
@@ -38,8 +38,8 @@ const sidebars = {
           label: '👨‍👩‍👧‍👦 Parents & Students',
           collapsed: false,
           items: [
-            'guides/parents',
-            'guides/students',
+            'guides/parent-guide',
+            'guides/student-guide',
           ],
         },
         {
