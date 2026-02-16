@@ -48,7 +48,7 @@ const sidebars = {
           collapsed: false,
           items: [
             'guides/non-teaching-staff',
-            'guides/accountant',
+            'guides/accountant-guide',
             'guides/driver',
           ],
         },
