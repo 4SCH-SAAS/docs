@@ -42,7 +42,7 @@ Different people in your school need access to different features. 4SCH organize
 
 **Access:** Web portal and mobile app (Android/iOS)
 
-<Link to="/guides/teachers">→ Read the full Teacher Guide</Link>
+<Link to="/guides/teacher-guide">→ Read the full Teacher Guide</Link>
 
 ---
 
@@ -61,7 +61,7 @@ Different people in your school need access to different features. 4SCH organize
 
 **Access:** Mobile app (Android/iOS) and web portal
 
-<Link to="/guides/parents">→ Read the full Parent Guide</Link>
+<Link to="/guides/parent-guide">→ Read the full Parent Guide</Link>
 
 ---
 
@@ -81,7 +81,7 @@ Different people in your school need access to different features. 4SCH organize
 
 **Access:** Mobile app (Android/iOS) and web portal
 
-<Link to="/guides/students">→ Read the full Student Guide</Link>
+<Link to="/guides/student-guide">→ Read the full Student Guide</Link>
 
 ---
 
@@ -95,7 +95,7 @@ Different people in your school need access to different features. 4SCH organize
 
 **Access:** Web portal with role-based permissions
 
-<Link to="/guides/non-teaching-staff">→ Read the full Non-Teaching Staff Guide</Link>
+<Link to="/guides/non-teaching-staff-guide">→ Read the full Non-Teaching Staff Guide</Link>
 
 ---
 
@@ -113,7 +113,7 @@ Different people in your school need access to different features. 4SCH organize
 
 **Access:** Web portal with finance module access
 
-<Link to="/guides/accountant">→ Read the full Accountant Guide</Link>
+<Link to="/guides/accountant-guide">→ Read the full Accountant Guide</Link>
 
 ---
 
@@ -131,7 +131,7 @@ Different people in your school need access to different features. 4SCH organize
 
 **Access:** Mobile app (Android/iOS) only
 
-<Link to="/guides/driver">→ Read the full Driver Guide</Link>
+<Link to="/guides/driver-guide">→ Read the full Driver Guide</Link>
 
 ---
 

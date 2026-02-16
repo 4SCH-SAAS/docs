@@ -703,8 +703,8 @@ Use this checklist to stay on top of your responsibilities:
 
 ## Related Guides
 
-- <Link to="/guides/accountant">Accountant/Bursar Guide</Link> — Financial management
-- <Link to="/guides/admin">Administrator Guide</Link> — System setup and management
+- <Link to="/guides/accountant-guide">Accountant/Bursar Guide</Link> — Financial management
+- <Link to="/guides/school-admin">School Administrator Guide</Link> — System setup and management
 - <Link to="/support/faq">Frequently Asked Questions</Link>
 
 Keep up the great work! Your contributions matter! 🌟

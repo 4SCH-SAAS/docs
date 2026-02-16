@@ -998,6 +998,5 @@ Call the school directly rather than sending a message.
 Explore more features:
 - <Link to="/support/faq">Frequently Asked Questions</Link>
 - <Link to="/support/troubleshooting">Troubleshooting Guide</Link>
-- <Link to="/guides/messaging">Messaging Guide</Link>
 
 Stay connected with your child's education! 🎓

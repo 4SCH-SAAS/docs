@@ -51,7 +51,7 @@ Use these docs to set up 4SCH and run day-to-day school operations. Start with t
 <CardGrid
   cards={[
     {
-      to: '/guides/teachers',
+      to: '/guides/teacher-guide',
       title: 'Teacher',
       description: 'Attendance, assignments, grades, and messaging',
       icon: <GradesIcon />,
@@ -64,13 +64,13 @@ Use these docs to set up 4SCH and run day-to-day school operations. Start with t
 <CardGrid
   cards={[
     {
-      to: '/guides/parents',
+      to: '/guides/parent-guide',
       title: 'Parent/Guardian',
       description: 'Monitor children, pay fees, and communicate with school',
       icon: <UsersIcon />,
     },
     {
-      to: '/guides/students',
+      to: '/guides/student-guide',
       title: 'Student',
       description: 'Access timetable, submit assignments, view grades',
       icon: <AcademicIcon />,
@@ -83,19 +83,19 @@ Use these docs to set up 4SCH and run day-to-day school operations. Start with t
 <CardGrid
   cards={[
     {
-      to: '/guides/accountant',
+      to: '/guides/accountant-guide',
       title: 'Accountant/Bursar',
       description: 'Fee management, invoicing, and financial reports',
       icon: <FinanceIcon />,
     },
     {
-      to: '/guides/non-teaching-staff',
+      to: '/guides/non-teaching-staff-guide',
       title: 'Non-Teaching Staff',
       description: 'Admissions, office support, and operational workflows',
       icon: <StaffIcon />,
     },
     {
-      to: '/guides/driver',
+      to: '/guides/driver-guide',
       title: 'Driver',
       description: 'Route management, student attendance, and trip tracking',
       icon: <StaffIcon />,
@@ -126,13 +126,13 @@ Use these docs to set up 4SCH and run day-to-day school operations. Start with t
       icon: <FinanceIcon />,
     },
     {
-      to: '/guides/teachers#marking-attendance',
+      to: '/guides/teacher-guide#marking-attendance',
       title: 'Mark attendance',
       description: 'Daily presence and absence tracking',
       icon: <AttendanceIcon />,
     },
     {
-      to: '/guides/teachers#entering-grades',
+      to: '/guides/teacher-guide#entering-grades',
       title: 'Enter grades and exam scores',
       description: 'Assessments, marks, and results',
       icon: <GradesIcon />,

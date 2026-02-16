@@ -20,7 +20,7 @@ import SecurityIcon from '@site/src/components/icons/Security';
 Welcome! As a school administrator, you have complete control over your school's 4SCH system. This comprehensive guide will walk you through setting up and managing all aspects of your school management system.
 
 :::info Who is this guide for?
-This guide is specifically for **School Administrators** who manage the school system through the **web-based admin panel**. If you're a teacher or staff member, see the <Link to="/guides/teachers">Teacher Guide</Link> or <Link to="/guides/non-teaching-staff">Staff Guide</Link>.
+This guide is specifically for **School Administrators** who manage the school system through the **web-based admin panel**. If you're a teacher or staff member, see the <Link to="/guides/teacher-guide">Teacher Guide</Link> or <Link to="/guides/non-teaching-staff-guide">Staff Guide</Link>.
 :::
 
 <Screenshot
@@ -738,9 +738,9 @@ Consider scheduling training sessions for:
 
 Now that you've set up your system:
 
-1. <Link to="/guides/teachers">Train your teachers</Link> on using their features
-2. <Link to="/guides/parents">Guide parents</Link> on accessing the parent portal
-3. <Link to="/guides/students">Help students</Link> understand the student app
+1. <Link to="/guides/teacher-guide">Train your teachers</Link> on using their features
+2. <Link to="/guides/parent-guide">Guide parents</Link> on accessing the parent portal
+3. <Link to="/guides/student-guide">Help students</Link> understand the student app
 4. <Link to="/reference/data-import-export">Import existing data</Link> if migrating from another system
 
 :::tip

@@ -892,7 +892,7 @@ Critical tasks at term end to close books properly.
 ## Related Guides
 
 - <Link to="/guides/school-admin">School Administrator Guide</Link> — Overall system management
-- <Link to="/guides/non-teaching-staff">Non-Teaching Staff Guide</Link> — General support tasks
+- <Link to="/guides/non-teaching-staff-guide">Non-Teaching Staff Guide</Link> — General support tasks
 - <Link to="/support/faq">Frequently Asked Questions</Link>
 
 Your role is vital to the school's operations. Accurate financial management enables the school to plan, grow, and serve students better. Keep up the excellent work! 💰📊

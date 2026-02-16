@@ -743,8 +743,6 @@ Report it to your school admin with:
 
 Now that you know the basics, explore these advanced features:
 
-- <Link to="/guides/reports-analytics">Advanced Reports & Analytics</Link>
-- <Link to="/guides/messaging">Messaging System Deep Dive</Link>
 - <Link to="/reference/roles-permissions">Understanding Permissions</Link>
 
 Happy teaching! 📚
