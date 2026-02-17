@@ -92,7 +92,7 @@ const config = {
           type: 'docsVersionDropdown',
           position: 'right',
         },
-        {href: 'https://github.com/4SCH-SAAS/docs', label: 'GitHub', position: 'right'},
+        {href: 'https://ng.4sch.com', label: '4SCH Home', position: 'right'},
       ],
     },
     footer: {
