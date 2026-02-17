@@ -87,9 +87,7 @@ class _VideoControlsContainerState extends State<VideoControlsContainer> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(
-        bottom: 15,
-      ),
+      padding: const EdgeInsets.only(bottom: 15),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -113,25 +111,28 @@ class _VideoControlsContainerState extends State<VideoControlsContainer> {
                           Orientation.portrait) {
                         SystemChrome.setPreferredOrientations([
                           DeviceOrientation.landscapeRight,
-                          DeviceOrientation.landscapeLeft
+                          DeviceOrientation.landscapeLeft,
                         ]);
                         // Hide system UI for landscape mode
                         SystemChrome.setEnabledSystemUIMode(
-                            SystemUiMode.immersiveSticky);
-                      } else {
-                        SystemChrome.setPreferredOrientations(
-                          [DeviceOrientation.portraitUp],
+                          SystemUiMode.immersiveSticky,
                         );
+                      } else {
+                        SystemChrome.setPreferredOrientations([
+                          DeviceOrientation.portraitUp,
+                        ]);
                         // Show system UI for portrait mode
                         SystemChrome.setEnabledSystemUIMode(
-                            SystemUiMode.edgeToEdge);
+                          SystemUiMode.edgeToEdge,
+                        );
                         SystemChrome.setSystemUIOverlayStyle(
-                            const SystemUiOverlayStyle(
-                          statusBarColor: Colors.transparent,
-                          statusBarIconBrightness: Brightness.dark,
-                          systemNavigationBarColor: Colors.transparent,
-                          systemNavigationBarIconBrightness: Brightness.dark,
-                        ));
+                          const SystemUiOverlayStyle(
+                            statusBarColor: Colors.transparent,
+                            statusBarIconBrightness: Brightness.dark,
+                            systemNavigationBarColor: Colors.transparent,
+                            systemNavigationBarIconBrightness: Brightness.dark,
+                          ),
+                        );
                       }
                     } else {
                       //if control menu is not open then open here
@@ -139,7 +140,7 @@ class _VideoControlsContainerState extends State<VideoControlsContainer> {
                     }
                   },
                   icon: const Icon(Icons.fullscreen),
-                )
+                ),
               ],
             ),
           ),
@@ -148,21 +149,22 @@ class _VideoControlsContainerState extends State<VideoControlsContainer> {
             width: MediaQuery.of(context).size.width,
             child: SliderTheme(
               data: Theme.of(context).sliderTheme.copyWith(
-                    overlayShape:
-                        const RoundSliderOverlayShape(overlayRadius: 0.0),
-                    trackHeight: sliderHeight,
-                    trackShape: CustomTrackShape(),
-                    thumbShape: const RoundSliderThumbShape(
-                      enabledThumbRadius: 7,
-                    ),
-                  ),
+                overlayShape: const RoundSliderOverlayShape(overlayRadius: 0.0),
+                trackHeight: sliderHeight,
+                tracNGNape: CustomTracNGNape(),
+                thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 7),
+              ),
               child: Slider(
                 max: widget.isYoutubeVideo
-                    ? widget.youtubePlayerController!.value.metaData.duration
-                        .inSeconds
-                        .toDouble()
+                    ? widget
+                          .youtubePlayerController!
+                          .value
+                          .metaData
+                          .duration
+                          .inSeconds
+                          .toDouble()
                     : widget.videoPlayerController!.value.duration.inSeconds
-                        .toDouble(),
+                          .toDouble(),
                 activeColor: Colors.white,
                 inactiveColor: Colors.white38,
                 value: currentVideoDuration.inSeconds.toDouble(),
@@ -170,15 +172,15 @@ class _VideoControlsContainerState extends State<VideoControlsContainer> {
                 onChanged: (value) {
                   if (_allowGesture()) {
                     setState(() {
-                      currentVideoDuration = Duration(
-                        seconds: value.toInt(),
-                      );
+                      currentVideoDuration = Duration(seconds: value.toInt());
                     });
                     widget.isYoutubeVideo
-                        ? widget.youtubePlayerController!
-                            .seekTo(currentVideoDuration)
-                        : widget.videoPlayerController!
-                            .seekTo(currentVideoDuration);
+                        ? widget.youtubePlayerController!.seekTo(
+                            currentVideoDuration,
+                          )
+                        : widget.videoPlayerController!.seekTo(
+                            currentVideoDuration,
+                          );
                   } else {
                     //if control menu is not open then open here
                     widget.controlsAnimationController.forward();
@@ -193,7 +195,7 @@ class _VideoControlsContainerState extends State<VideoControlsContainer> {
   }
 }
 
-class CustomTrackShape extends RectangularSliderTrackShape {
+class CustomTracNGNape extends RectangularSliderTracNGNape {
   @override
   Rect getPreferredRect({
     required RenderBox parentBox,
