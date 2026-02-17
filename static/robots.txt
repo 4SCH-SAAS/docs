@@ -1,0 +1,13 @@
+# robots.txt for 4SCH Documentation
+# Allow all search engines to crawl the documentation
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://docs.4sch.com/sitemap.xml
+
+# Crawl-delay for politeness
+Crawl-delay: 1
+
+# Disallow nothing - we want full indexing

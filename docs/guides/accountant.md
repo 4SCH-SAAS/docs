@@ -1,6 +1,8 @@
 ---
 id: accountant-guide
-title: Accountant/Bursar Guide
+title: Accountant Guide | 4SCH School Management System
+description: Complete accountant and bursar guide for 4SCH. Manage school fees, process payments in Naira, generate financial reports, track transactions, and handle school finances in Nigeria.
+keywords: [school accountant, bursar guide, fee management, payment processing Nigeria, financial reports, Naira transactions, school finance, 4SCH accounting, Nigerian school fees]
 sidebar_position: 6
 ---
 

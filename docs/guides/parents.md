@@ -1,6 +1,8 @@
 ---
 id: parent-guide
-title: Parent/Guardian Guide
+title: Parent Guide | 4SCH School Management System
+description: Parent guide for monitoring your child's education on 4SCH. Check attendance, view grades, pay school fees online with Naira, communicate with teachers, and track academic progress in Nigeria.
+keywords: [parent portal, school fees payment Nigeria, check child attendance, student grades, pay fees online, Naira payment, parent-teacher communication, 4SCH parents, Nigerian school fees]
 sidebar_position: 3
 ---
 
@@ -235,9 +237,9 @@ This comprehensive workflow guides you through the entire fee payment process, f
 **When you receive a fee notification:**
 
 You'll get notified via:
-- 📱 Push notification: "New fee invoice for Sarah - Term 2 fees"
+- 📱 Push notification: "New fee invoice for Amara - Term 2 fees"
 - 📧 Email: "School Fee Invoice - Due March 31, 2026"
-- 💬 SMS: "Fee reminder for Sarah Wilson"
+- 💬 SMS: "Fee reminder for Amara Okafor"
 
 **Step 1: Access the invoice**
 1. Open 4SCH app or log in to the web portal
@@ -250,7 +252,7 @@ Click on the pending invoice to see:
 
 ```
 Invoice #: INV-2026-0234
-Student: Sarah Wilson - Grade 5A
+Student: Amara Okafor - Grade 5A
 Term: Second Term 2026
 Issue Date: February 1, 2026
 Due Date: March 31, 2026
@@ -341,7 +343,7 @@ Paying for: Sarah Wilson - Term 2 Fees
 
 **Step 3: Confirm details**
 Review summary:
-- Student: Sarah Wilson
+- Student: Amara Okafor
 - Invoice: INV-2026-0234
 - Amount: NGN 28,000
 - Fee: NGN 280
@@ -381,8 +383,8 @@ On your phone:
      Receipt #: REC-2026-0456
      Date: February 15, 2026
      
-     Received from: Mr. John Wilson (Parent)
-     For student: Sarah Wilson - Grade 5A
+     Received from: Mr. Chukwudi Okafor (Parent)
+     For student: Amara Okafor - Grade 5A
      
      Payment Details:
      - Tuition Fee: NGN 25,000
@@ -403,7 +405,7 @@ On your phone:
 3. **Download and save receipt:**
    - Click **Download PDF**
    - Save to: Phone/Computer downloads
-   - Rename: "Sarah_Term2_2026_Receipt.pdf"
+   - Rename: "Amara_Term2_2026_Receipt.pdf"
    - Optional: Print for your records
 
 **Receipt uses:**
@@ -444,7 +446,7 @@ On your phone:
   ```
   Subject: Payment Verification Needed
   
-  Hi, I paid NGN 28,000 for Sarah Wilson (Grade 5A)
+  Hi, I paid ₦28,000 for Amara Okafor (Grade 5A)
   via M-Pesa on Feb 15, 2026 at 10:30 AM.
   
   M-Pesa Transaction Code: MPE2026021567890
@@ -512,7 +514,7 @@ On your phone:
 
 **Step 2: At the accounts office**
 1. Provide:
-   - Student name: Sarah Wilson
+   - Student name: Amara Okafor
    - Class: Grade 5A
    - Invoice number: INV-2026-0234
    - Cash: NGN 28,000

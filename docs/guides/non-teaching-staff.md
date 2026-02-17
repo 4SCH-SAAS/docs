@@ -1,6 +1,8 @@
 ---
 id: non-teaching-staff-guide
-title: Non-Teaching Staff Guide
+title: Non-Teaching Staff Guide | 4SCH School Management System
+description: Guide for non-teaching staff using 4SCH. Learn admission processes, student enrollment, document management, and administrative workflows for Nigerian schools.
+keywords: [school staff, admission officer, student enrollment Nigeria, document management, school administration, non-teaching staff, 4SCH staff guide, school operations]
 sidebar_position: 5
 ---
 
@@ -422,7 +424,7 @@ Depending on your role, you may need to generate various reports.
 Create a simple tracking system:
 | Inquiry Date | Parent Name | Child Name | Class | Status | Next Step |
 |--------------|-------------|------------|-------|--------|-----------|
-| Jan 5 | Mr. Ojo | David | JSS 1 | Scheduled Tour | Tour on Jan 12 |
+| Jan 5 | Mr. Ojo | Oluwaseun | JSS 1 | Scheduled Tour | Tour on Jan 12 |
 | Jan 6 | Mrs. Adeyemi | Tunde | Primary 5 | Test Passed | Awaiting Documents |
 | Jan 8 | Mr. Ibrahim | Fatima | SSS 2 | Documents Received | Process Enrollment |
 
