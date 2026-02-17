@@ -298,7 +298,7 @@ Look for:
 
 **Option 1: Online Payment (Recommended - Instant confirmation)**
 - ✅ Credit/Debit Card (Visa, Mastercard)
-- ✅ Mobile Money (M-Pesa, MTN, Airtel)
+- ✅ Mobile Money (Paystack, MTN, Airtel)
 - ✅ Bank Transfer (instant or 24-hour processing)
 - ✅ PayPal or other e-wallets
 
@@ -316,27 +316,27 @@ Look for:
 | Method | Transaction Fee | Processing Time |
 |--------|----------------|-----------------|
 | Card Payment | 2.5% (NGN 700) | Instant |
-| M-Pesa | 1% (NGN 280) | Instant |
+| Paystack | 1% (NGN 280) | Instant |
 | Bank Transfer | NGN 0-100 | 1-24 hours |
 | Cash at office | NGN 0 | Instant (but requires visit) |
 
 **Best choice for NGN 28,000 invoice:**
-- **M-Pesa:** Lower fee (NGN 280), instant confirmation
+- **Paystack:** Lower fee (NGN 280), instant confirmation
 - **Bank Transfer:** No fee if same-day, but may take hours
 
 #### Phase 3: Making Online Payment (3-5 minutes)
 
-**Let's use M-Pesa as an example:**
+**Let's use Paystack as an example:**
 
 **Step 1: Initiate payment**
 1. Click **Pay Now** on the invoice
 2. Select amount: **Full Payment (NGN 28,000)** or **Partial Payment**
-3. Choose payment method: **M-Pesa**
+3. Choose payment method: **Paystack**
 4. Click **Proceed to Payment**
 
 **Step 2: Enter payment details**
 ```
-M-Pesa Phone Number: 0712 345 678
+Paystack Phone Number: 0712 345 678
 Amount: NGN 28,000
 Paying for: Sarah Wilson - Term 2 Fees
 ```
@@ -351,17 +351,17 @@ Review summary:
 
 Click **Confirm Payment**
 
-**Step 4: Complete M-Pesa transaction**
+**Step 4: Complete Paystack transaction**
 
 On your phone:
-1. M-Pesa prompt appears: "Enter M-Pesa PIN to pay NGN 28,280 to SCHOOL NAME"
-2. Enter your M-Pesa PIN
+1. Paystack prompt appears: "Enter Paystack PIN to pay NGN 28,280 to SCHOOL NAME"
+2. Enter your Paystack PIN
 3. Confirm transaction
 
 **Step 5: Wait for confirmation**
 - Processing: "Please wait..." (10-30 seconds)
 - Success message: "Payment successful! ✓"
-- M-Pesa SMS: "You have paid NGN 28,280 to SCHOOL NAME. New balance: NGN XXXX"
+- Paystack SMS: "You have paid NGN 28,280 to SCHOOL NAME. New balance: NGN XXXX"
 
 **✅ Payment complete! Receipt generated automatically.**
 
@@ -372,7 +372,7 @@ On your phone:
 1. **Check payment status in 4SCH:**
    - Invoice status changes: PENDING → PAID ✓
    - Payment date: February 15, 2026
-   - Payment method: M-Pesa
+   - Payment method: Paystack
    - Transaction ID: MPE2026021567890
 
 2. **View receipt:**
@@ -395,7 +395,7 @@ On your phone:
      Early Payment Discount (5%): -NGN 1,575
      Total Paid: NGN 28,000
      
-     Payment Method: M-Pesa
+     Payment Method: Paystack
      Transaction ID: MPE2026021567890
      Balance: NGN 0.00
      
@@ -419,17 +419,17 @@ On your phone:
 **Common issues and solutions:**
 
 **Issue 1: "Insufficient funds"**
-- Check M-Pesa balance: Dial *234# or check app
-- Top up your M-Pesa account
+- Check Paystack balance: Dial *234# or check app
+- Top up your Paystack account
 - Try again
 
 **Issue 2: "Transaction timeout"**
 - Network issue - wait 2 minutes
-- Check if money was deducted from M-Pesa
+- Check if money was deducted from Paystack
 - If deducted but payment not reflected:
   - Wait 30 minutes for processing
   - Contact school if still pending after 1 hour
-  - Keep M-Pesa SMS as proof
+  - Keep Paystack SMS as proof
 
 **Issue 3: "Payment gateway error"**
 - Try different payment method
@@ -440,16 +440,16 @@ On your phone:
 **Issue 4: Money deducted but payment shows "pending"**
 - **Don't pay again!**
 - Take screenshot of:
-  - M-Pesa confirmation SMS
+  - Paystack confirmation SMS
   - 4SCH payment status
 - Message school accountant with:
   ```
   Subject: Payment Verification Needed
   
   Hi, I paid ₦28,000 for Amara Okafor (Grade 5A)
-  via M-Pesa on Feb 15, 2026 at 10:30 AM.
+  via Paystack on Feb 15, 2026 at 10:30 AM.
   
-  M-Pesa Transaction Code: MPE2026021567890
+  Paystack Transaction Code: MPE2026021567890
   
   Payment shows as "pending" in 4SCH.
   Please verify and confirm.
@@ -472,7 +472,7 @@ On your phone:
 
 **Step 2: Pay first installment**
 - Select "Installment 1"
-- Pay NGN 10,500 using M-Pesa
+- Pay NGN 10,500 using Paystack
 - Get receipt for partial payment
 
 **Step 3: Track remaining balance**
@@ -535,7 +535,7 @@ On your phone:
 
 #### Complete Timeline Example
 
-**Scenario: Paying NGN 28,000 via M-Pesa**
+**Scenario: Paying NGN 28,000 via Paystack**
 
 **Monday, Feb 1, 8:00 AM:**
 - School sends invoice
@@ -548,9 +548,9 @@ On your phone:
 
 **Saturday, Feb 15, 10:00 AM:**
 - Decide to pay and get discount
-- Select M-Pesa payment (1 minute)
+- Select Paystack payment (1 minute)
 - Enter phone number and amount (1 minute)
-- Complete M-Pesa PIN entry (30 seconds)
+- Complete Paystack PIN entry (30 seconds)
 - Payment processes (20 seconds)
 - **Payment successful! ✓**
 
@@ -579,10 +579,10 @@ On your phone:
 
 **🔒 Security Practices:**
 1. **Always download receipt:** Proof of payment
-2. **Keep M-Pesa SMS:** Additional proof
+2. **Keep Paystack SMS:** Additional proof
 3. **Screenshot confirmation:** Just in case
 4. **Check invoice status:** Verify it shows "PAID"
-5. **Never share PIN:** School will never ask for M-Pesa PIN
+5. **Never share PIN:** School will never ask for Paystack PIN
 
 **🚨 Avoid These Mistakes:**
 1. ❌ Paying to wrong account
@@ -606,7 +606,7 @@ On your phone:
 
 **If there are issues:**
 - School contacts you within 48 hours
-- You provide payment proof (M-Pesa SMS, screenshot)
+- You provide payment proof (Paystack SMS, screenshot)
 - School reconciles and updates status
 
 **Your child's teacher:**
@@ -629,7 +629,7 @@ On your phone:
 
 **After payment:**
 - [ ] Download receipt immediately
-- [ ] Save M-Pesa/bank confirmation
+- [ ] Save Paystack/bank confirmation
 - [ ] Verify invoice shows "PAID"
 - [ ] Keep records for tax/audit purposes
 
@@ -652,7 +652,7 @@ Click on the pending invoice you want to pay.
 Options may include:
 - **Card Payment** — Debit/Credit card
 - **Bank Transfer** — Direct bank transfer
-- **Mobile Money** — M-Pesa, MTN Mobile Money, Airtel Money, etc.
+- **Mobile Money** — Paystack, MTN Mobile Money, Airtel Money, etc.
 - **USSD** — Dial a code to complete payment
 
 **Step 3: Enter Payment Details**

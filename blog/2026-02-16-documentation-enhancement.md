@@ -100,7 +100,7 @@ All guide URLs are now consistent and predictable:
 ### Content Enhancements
 - **Detailed Workflows**: 6 end-to-end workflows with time estimates and phase breakdowns
 - **40+ Screenshots**: Placeholder images showing key screens and processes
-- **Real-World Examples**: Practical scenarios like M-Pesa payments, class scheduling
+- **Real-World Examples**: Practical scenarios like Paystack payments, class scheduling
 - **Troubleshooting**: Common problems with clear solutions for each role
 - **Best Practices**: Pro tips from experienced users throughout guides
 
