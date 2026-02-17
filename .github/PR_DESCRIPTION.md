@@ -95,7 +95,7 @@ This PR delivers a complete overhaul of the 4SCH documentation system, adding co
 
 ### Parent: Paying School Fees
 - Complete payment flow (online & cash)
-- M-Pesa integration example
+- Paystack integration example
 - Receipt downloading
 - Troubleshooting common issues
 

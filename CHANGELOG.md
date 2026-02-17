@@ -232,7 +232,7 @@ Complete rewrite of documentation following user-centric, practical, and African
 - Added "Enabling Notifications" section
 - Added "Troubleshooting Common Issues"
 - Added "Tips for Engaged Parents" with weekly routine
-- Added mobile money payment options (M-Pesa, MTN, Airtel)
+- Added mobile money payment options (Paystack, MTN, Airtel)
 - Changed tone to welcoming and empowering
 
 **`guides/students.md`** (15,653 bytes - 422% increase)
