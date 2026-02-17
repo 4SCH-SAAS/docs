@@ -39,6 +39,22 @@ jobs:
           corepack prepare pnpm@latest --activate
           pnpm config set ignore-scripts false
 
+      - name: Get pnpm store directory
+        id: pnpm-store
+        shell: bash
+        run: echo "STORE_PATH=$(pnpm store path --silent)" >> "$GITHUB_OUTPUT"
+
+      - name: Cache pnpm store
+        uses: actions/cache@v4
+        with:
+          path: ${{ steps.pnpm-store.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-v2-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-v2-
+
+      - name: Prune PNPM store
+        run: pnpm store prune
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
         env:
