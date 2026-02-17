@@ -1,1 +1,24 @@
-<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'><rect width='120' height='120' fill='#1b5e20'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='36' fill='#fff'>4SCH</text></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fb943b;
+      }
+
+      .cls-2 {
+        fill: #5561c0;
+      }
+    </style>
+  </defs>
+  <circle cx="100.25" cy="40.07" r="19.05"/>
+  <g>
+    <polygon class="cls-1" points="67.51 145.61 30.01 125.52 30.14 54.47 67.64 74.55 67.51 145.61"/>
+    <polygon class="cls-1" points="67.33 131.79 175 102.29 174.28 116.52 67.33 145.67 67.33 131.79"/>
+    <polygon class="cls-2" points="30 54.28 52.1 49.36 51.43 65.95 46.93 63.75 30 54.28"/>
+  </g>
+  <g>
+    <polyline class="cls-2" points="140.06 105.21 88.88 117.14 87.71 71.21 139.87 65.83"/>
+    <polyline class="cls-2" points="141.2 175.61 89.19 181.11 88.88 148.97 141.06 134.34"/>
+  </g>
+</svg>
