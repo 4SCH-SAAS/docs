@@ -158,7 +158,7 @@ When you click on an assignment, you'll see:
 - **Total Points** — How many marks it's worth
 
 **Attached Files:**
-- Worksheets to download
+- WorNGNeets to download
 - Reference materials
 - Rubrics (grading criteria)
 
@@ -215,7 +215,7 @@ Formula: x = [-b ± √(b²-4ac)] / 2a
 **Step 3: Download any attached files**
 
 Teachers often attach:
-- ✓ Worksheet with questions
+- ✓ WorNGNeet with questions
 - ✓ Worked examples
 - ✓ Rubric (how you'll be graded)
 - ✓ Reference materials
@@ -263,7 +263,7 @@ Calculate how much time you have:
    - Tell family you're studying
 
 3. **Set up your workspace:**
-   - Have the downloaded worksheet printed or on another device
+   - Have the downloaded worNGNeet printed or on another device
    - Keep 4SCH open to check instructions
    - Have scrap paper for rough work
 
@@ -948,7 +948,7 @@ Some teachers share learning materials through 4SCH.
    - Past papers
    - Notes and summaries
    - Video lessons
-   - Practice worksheets
+   - Practice worNGNeets
 
 ### Organizing Your Downloads
 

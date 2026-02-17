@@ -260,18 +260,18 @@ Status: PENDING
 **Fee breakdown:**
 | Fee Type | Amount |
 |----------|--------|
-| Tuition Fee | KSh 25,000 |
-| Development Levy | KSh 3,000 |
-| Sports Fee | KSh 1,500 |
-| Resource Fee | KSh 2,000 |
-| **Total Amount Due** | **KSh 31,500** |
+| Tuition Fee | NGN 25,000 |
+| Development Levy | NGN 3,000 |
+| Sports Fee | NGN 1,500 |
+| Resource Fee | NGN 2,000 |
+| **Total Amount Due** | **NGN 31,500** |
 
 **Step 3: Check payment options**
 
 Look for:
-- **Full Payment:** Pay entire amount (KSh 31,500)
+- **Full Payment:** Pay entire amount (NGN 31,500)
 - **Installment Payment:** Pay in parts (if allowed by school)
-  - Example: 3 installments of KSh 10,500 each
+  - Example: 3 installments of NGN 10,500 each
   - Installment 1 due: March 10
   - Installment 2 due: March 20
   - Installment 3 due: March 31
@@ -279,9 +279,9 @@ Look for:
 **Step 4: Check for discounts**
 - Early payment discount: "Pay before Feb 28 - Get 5% off"
 - Sibling discount: "Second child: 10% off"
-- Financial aid: "Scholarship applied: -KSh 5,000"
+- Financial aid: "Scholarship applied: -NGN 5,000"
 
-**Updated total after discounts: KSh 28,000**
+**Updated total after discounts: NGN 28,000**
 
 :::tip Understanding Your Invoice
 - **Due Date:** Pay before this date to avoid late fees
@@ -313,13 +313,13 @@ Look for:
 
 | Method | Transaction Fee | Processing Time |
 |--------|----------------|-----------------|
-| Card Payment | 2.5% (KSh 700) | Instant |
-| M-Pesa | 1% (KSh 280) | Instant |
-| Bank Transfer | KSh 0-100 | 1-24 hours |
-| Cash at office | KSh 0 | Instant (but requires visit) |
+| Card Payment | 2.5% (NGN 700) | Instant |
+| M-Pesa | 1% (NGN 280) | Instant |
+| Bank Transfer | NGN 0-100 | 1-24 hours |
+| Cash at office | NGN 0 | Instant (but requires visit) |
 
-**Best choice for KSh 28,000 invoice:**
-- **M-Pesa:** Lower fee (KSh 280), instant confirmation
+**Best choice for NGN 28,000 invoice:**
+- **M-Pesa:** Lower fee (NGN 280), instant confirmation
 - **Bank Transfer:** No fee if same-day, but may take hours
 
 #### Phase 3: Making Online Payment (3-5 minutes)
@@ -328,14 +328,14 @@ Look for:
 
 **Step 1: Initiate payment**
 1. Click **Pay Now** on the invoice
-2. Select amount: **Full Payment (KSh 28,000)** or **Partial Payment**
+2. Select amount: **Full Payment (NGN 28,000)** or **Partial Payment**
 3. Choose payment method: **M-Pesa**
 4. Click **Proceed to Payment**
 
 **Step 2: Enter payment details**
 ```
 M-Pesa Phone Number: 0712 345 678
-Amount: KSh 28,000
+Amount: NGN 28,000
 Paying for: Sarah Wilson - Term 2 Fees
 ```
 
@@ -343,23 +343,23 @@ Paying for: Sarah Wilson - Term 2 Fees
 Review summary:
 - Student: Sarah Wilson
 - Invoice: INV-2026-0234
-- Amount: KSh 28,000
-- Fee: KSh 280
-- **Total to pay: KSh 28,280**
+- Amount: NGN 28,000
+- Fee: NGN 280
+- **Total to pay: NGN 28,280**
 
 Click **Confirm Payment**
 
 **Step 4: Complete M-Pesa transaction**
 
 On your phone:
-1. M-Pesa prompt appears: "Enter M-Pesa PIN to pay KSh 28,280 to SCHOOL NAME"
+1. M-Pesa prompt appears: "Enter M-Pesa PIN to pay NGN 28,280 to SCHOOL NAME"
 2. Enter your M-Pesa PIN
 3. Confirm transaction
 
 **Step 5: Wait for confirmation**
 - Processing: "Please wait..." (10-30 seconds)
 - Success message: "Payment successful! ✓"
-- M-Pesa SMS: "You have paid KSh 28,280 to SCHOOL NAME. New balance: KSh XXXX"
+- M-Pesa SMS: "You have paid NGN 28,280 to SCHOOL NAME. New balance: NGN XXXX"
 
 **✅ Payment complete! Receipt generated automatically.**
 
@@ -385,17 +385,17 @@ On your phone:
      For student: Sarah Wilson - Grade 5A
      
      Payment Details:
-     - Tuition Fee: KSh 25,000
-     - Development Levy: KSh 3,000
-     - Sports Fee: KSh 1,500
-     - Resource Fee: KSh 2,000
-     Subtotal: KSh 31,500
-     Early Payment Discount (5%): -KSh 1,575
-     Total Paid: KSh 28,000
+     - Tuition Fee: NGN 25,000
+     - Development Levy: NGN 3,000
+     - Sports Fee: NGN 1,500
+     - Resource Fee: NGN 2,000
+     Subtotal: NGN 31,500
+     Early Payment Discount (5%): -NGN 1,575
+     Total Paid: NGN 28,000
      
      Payment Method: M-Pesa
      Transaction ID: MPE2026021567890
-     Balance: KSh 0.00
+     Balance: NGN 0.00
      
      Thank you for your payment!
      ```
@@ -444,7 +444,7 @@ On your phone:
   ```
   Subject: Payment Verification Needed
   
-  Hi, I paid KSh 28,000 for Sarah Wilson (Grade 5A)
+  Hi, I paid NGN 28,000 for Sarah Wilson (Grade 5A)
   via M-Pesa on Feb 15, 2026 at 10:30 AM.
   
   M-Pesa Transaction Code: MPE2026021567890
@@ -461,30 +461,30 @@ On your phone:
 **If school allows installment payments:**
 
 **Step 1: Choose installment plan**
-- Invoice: KSh 31,500
+- Invoice: NGN 31,500
 - Choose: **3 installments**
 - System calculates:
-  - Installment 1 (Due March 10): KSh 10,500
-  - Installment 2 (Due March 20): KSh 10,500
-  - Installment 3 (Due March 31): KSh 10,500
+  - Installment 1 (Due March 10): NGN 10,500
+  - Installment 2 (Due March 20): NGN 10,500
+  - Installment 3 (Due March 31): NGN 10,500
 
 **Step 2: Pay first installment**
 - Select "Installment 1"
-- Pay KSh 10,500 using M-Pesa
+- Pay NGN 10,500 using M-Pesa
 - Get receipt for partial payment
 
 **Step 3: Track remaining balance**
 - Dashboard shows:
   ```
-  Total Fee: KSh 31,500
-  Paid: KSh 10,500
-  Balance: KSh 21,000
+  Total Fee: NGN 31,500
+  Paid: NGN 10,500
+  Balance: NGN 21,000
   Next installment due: March 20
   ```
 
 **Step 4: Get reminders**
-- 5 days before due date: "Reminder: Installment 2 (KSh 10,500) due in 5 days"
-- 1 day before: "Final reminder: Pay KSh 10,500 by tomorrow"
+- 5 days before due date: "Reminder: Installment 2 (NGN 10,500) due in 5 days"
+- 1 day before: "Final reminder: Pay NGN 10,500 by tomorrow"
 
 **Step 5: Complete remaining payments**
 - Repeat payment process for each installment
@@ -505,7 +505,7 @@ On your phone:
 
 **Step 1: Prepare**
 1. Note the invoice number: INV-2026-0234
-2. Note the amount: KSh 28,000
+2. Note the amount: NGN 28,000
 3. Visit school during office hours:
    - Monday-Friday: 8:00 AM - 4:00 PM
    - Saturday: 9:00 AM - 12:00 PM (if open)
@@ -515,7 +515,7 @@ On your phone:
    - Student name: Sarah Wilson
    - Class: Grade 5A
    - Invoice number: INV-2026-0234
-   - Cash: KSh 28,000
+   - Cash: NGN 28,000
 
 2. Accountant will:
    - Verify invoice
@@ -533,7 +533,7 @@ On your phone:
 
 #### Complete Timeline Example
 
-**Scenario: Paying KSh 28,000 via M-Pesa**
+**Scenario: Paying NGN 28,000 via M-Pesa**
 
 **Monday, Feb 1, 8:00 AM:**
 - School sends invoice
@@ -559,7 +559,7 @@ On your phone:
 - You receive confirmation email
 
 **Total time: 5 minutes**
-**Money saved: KSh 1,575 (early payment discount)**
+**Money saved: NGN 1,575 (early payment discount)**
 
 #### Payment Tips & Best Practices
 

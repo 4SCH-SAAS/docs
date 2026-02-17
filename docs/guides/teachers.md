@@ -140,7 +140,7 @@ Assignments help you track student progress between major exams. Here's how to c
    - **Submission Type:** File upload, text entry, or both
 
 3. **Optional Settings:**
-   - **Attach files:** Add worksheets, rubrics, or reference materials
+   - **Attach files:** Add worNGNeets, rubrics, or reference materials
    - **Late submission:** Allow or block late submissions
    - **Group assignment:** Let students work in groups
 
@@ -213,7 +213,7 @@ This workflow shows you the entire process from creating an assignment to publis
    - Consider: Do students need weekends? Any upcoming exams?
 
 4. **Resources Needed:** What will students need?
-   - Worksheet to download?
+   - WorNGNeet to download?
    - Reference materials?
    - Rubric or marking scheme?
 
@@ -248,7 +248,7 @@ This workflow shows you the entire process from creating an assignment to publis
 
 4. **Attach Resources:**
    - Click "Attach Files"
-   - Upload: `quadratic_equations_worksheet.pdf`
+   - Upload: `quadratic_equations_worNGNeet.pdf`
    - Upload: `worked_example.pdf` (optional)
 
 5. **Configure Settings:**
@@ -425,7 +425,7 @@ This workflow shows you the entire process from creating an assignment to publis
 ✅ **Do:** Give at least 3-5 days for homework, 1-2 weeks for projects
 
 ❌ **Don't:** Forget to attach necessary files
-✅ **Do:** Double-check that worksheets or reference materials are attached
+✅ **Do:** Double-check that worNGNeets or reference materials are attached
 
 ❌ **Don't:** Grade without feedback
 ✅ **Do:** Always add at least one helpful comment per student
