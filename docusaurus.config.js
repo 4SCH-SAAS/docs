@@ -311,11 +311,29 @@ const config = {
       },
       items: [
         {to: '/', label: 'Docs', position: 'left'},
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          type: 'dropdown',
+          label: 'Guides',
+          position: 'left',
+          items: [
+            {label: '🎓 For School Admins', to: '/guides/school-admin'},
+            {label: '👥 For Teachers', to: '/guides/teacher-guide'},
+            {label: '👨‍👩‍👧‍👦 For Parents', to: '/guides/parent-guide'},
+            {label: '📚 For Students', to: '/guides/student-guide'},
+            {label: '💼 For Support Staff', to: '/guides/non-teaching-staff-guide'},
+            {label: '🚌 For Drivers', to: '/guides/driver-guide'},
+            {label: '💰 For Accountants', to: '/guides/accountant-guide'},
+            {type: 'html', value: '<hr style="margin: 0.3rem 0;">'},
+            {label: '📖 All Documentation', to: '/'},
+          ],
+        },
+        {to: '/blog', label: "What's New", position: 'left'},
+        {to: '/support/faq', label: 'Support', position: 'left'},
         {
           type: 'docsVersionDropdown',
           position: 'right',
         },
+        {href: 'https://www.4sch.com', label: 'Register School', position: 'right'},
         {href: 'https://ng.4sch.com', label: '4SCH Home', position: 'right'},
       ],
     },
@@ -323,20 +341,41 @@ const config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Documentation',
           items: [
             {label: 'Overview', to: '/'},
             {label: 'Quick Start', to: '/intro/quick-start'},
+            {label: 'Getting Started', to: '/intro/getting-started'},
+            {label: 'User Roles', to: '/intro/user-roles'},
           ],
         },
         {
-          title: 'Community',
+          title: 'Support',
           items: [
+            {label: 'FAQ', to: '/support/faq'},
+            {label: 'Troubleshooting', to: '/support/troubleshooting'},
             {label: 'Contact Support', to: '/support/contact-support'},
           ],
         },
+        {
+          title: 'Connect',
+          items: [
+            {label: 'Register Your School', href: 'https://www.4sch.com'},
+            {label: '4SCH Home', href: 'https://ng.4sch.com'},
+            {label: 'WhatsApp: +234 704 151 8843', href: 'https://wa.me/2347041518843'},
+          ],
+        },
+        {
+          title: 'Follow Us',
+          items: [
+            {label: 'Facebook: @ng4sch', href: 'https://facebook.com/ng4sch'},
+            {label: 'Twitter/X: @ng4sch', href: 'https://twitter.com/ng4sch'},
+            {label: 'Instagram: @ng4sch', href: 'https://instagram.com/ng4sch'},
+            {label: 'YouTube: @ng4sch', href: 'https://youtube.com/@ng4sch'},
+          ],
+        },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} 4SCH.`,
+      copyright: `Copyright © ${new Date().getFullYear()} 4SCH. Built with Docusaurus.`,
     },
     prism: {
       additionalLanguages: ['bash', 'json']

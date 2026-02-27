@@ -12,6 +12,29 @@ import Link from '@docusaurus/Link';
 
 Whether you're new to 4SCH or helping your school transition from paper records or another system, this guide will walk you through the first steps.
 
+## New to 4SCH? Register Your School
+
+**4SCH** is a modern enterprise School Management System designed to elevate service delivery for schools, enabling schools to much more effectively orchestrate a very productive teaching and learning process using modern technology.
+
+### Registration Process
+
+**Step 1:** Go to the website: [www.4sch.com](https://www.4sch.com)
+
+**Step 2:** Register Your School if you and your school are new to 4SCH SMS
+
+**Step 3:** Check your email inbox (check spam folder if you didn't see an email from 4SCH). If no mail is found, you may have entered your email incorrectly—contact us.
+
+**Step 4:** If you receive an email acknowledging receipt of your registration, it means we have received and are reviewing your school application. If our team requires more info from your school, you will be contacted.
+
+:::tip Need Help with Registration?
+Contact our support team:
+- **Email:** info@ng.4sch.com
+- **Phone/WhatsApp:** +234 704 151 8843
+- **Follow us:** @ng4sch on social media
+:::
+
+---
+
 ## Your First Login
 
 After your school subscribes to 4SCH, you'll receive login credentials via email or SMS.
