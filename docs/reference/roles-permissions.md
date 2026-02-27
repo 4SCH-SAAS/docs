@@ -2,6 +2,8 @@
 id: roles-permissions
 title: Roles & Permissions
 sidebar_position: 1
+description: Comprehensive guide to roles and permissions in 4SCH. Default roles, custom permissions, security best practices, and access control for Nigerian schools.
+keywords: [roles permissions, access control, user permissions, custom roles, security settings, permission matrix, role-based access, school security, admin permissions]
 ---
 
 import CardGrid from '@site/src/components/CardGrid';

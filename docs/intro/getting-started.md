@@ -2,6 +2,8 @@
 id: getting-started
 title: Getting Started with 4SCH
 sidebar_position: 3
+description: Step-by-step guide to get started with 4SCH School Management System. First login instructions, role-specific setup guides, and migration from paper to digital records.
+keywords: [getting started 4SCH, first login, school setup, digital migration, paper to digital, Nigerian school software, onboarding guide, school system setup]
 ---
 
 # Getting Started with 4SCH

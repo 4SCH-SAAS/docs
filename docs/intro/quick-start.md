@@ -2,6 +2,8 @@
 id: quick-start
 title: Quick Start Guide
 sidebar_position: 2
+description: Quick start guide to set up your Nigerian school on 4SCH in under an hour. Configure classes, add teachers and students, create timetables, and go live.
+keywords: [4SCH setup, school setup guide, configure school system, add students, create timetable, school administration, Nigerian school setup, academic session setup]
 ---
 
 # Quick Start

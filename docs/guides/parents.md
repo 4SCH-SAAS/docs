@@ -1,6 +1,6 @@
 ---
 id: parent-guide
-title: Parent Guide | 4SCH School Management System
+title: Parent Guide
 description: Parent guide for monitoring your child's education on 4SCH. Check attendance, view grades, pay school fees online with Naira, communicate with teachers, and track academic progress in Nigeria.
 keywords: [parent portal, school fees payment Nigeria, check child attendance, student grades, pay fees online, Naira payment, parent-teacher communication, 4SCH parents, Nigerian school fees]
 sidebar_position: 3

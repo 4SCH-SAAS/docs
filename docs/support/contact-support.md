@@ -2,6 +2,8 @@
 id: contact-support
 title: Contact & Support
 sidebar_position: 3
+description: Contact 4SCH support team. Get help with technical issues, submit tickets, emergency contact information, and escalation procedures.
+keywords: [contact support, help desk, technical support, submit ticket, customer service, emergency contact, 4SCH support team]
 ---
 
 # Contact & Support
