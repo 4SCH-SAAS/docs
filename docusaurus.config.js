@@ -245,15 +245,6 @@ const config = {
         docsRouteBasePath: '/',
       },
     ],
-    [
-      '@docusaurus/plugin-sitemap',
-      {
-        changefreq: 'weekly',
-        priority: 0.5,
-        ignorePatterns: ['/tags/**'],
-        filename: 'sitemap.xml',
-      },
-    ],
   ],
   markdown: {
     mermaid: true,
@@ -300,7 +291,13 @@ const config = {
           pages: false,
           theme: {
             customCss: require.resolve('./src/css/custom.css'),
-          }
+          },
+          sitemap: {
+            changefreq: 'weekly',
+            priority: 0.5,
+            ignorePatterns: ['/tags/**'],
+            filename: 'sitemap.xml',
+          },
         }
       ),
     ],
