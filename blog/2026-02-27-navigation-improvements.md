@@ -1,7 +1,7 @@
 ---
 slug: navigation-improvements
 title: Enhanced Navigation & Contact Information
-authors: [admin]
+authors: [4sch-team]
 tags: [enhancement, navigation, ux, contact]
 ---
 
