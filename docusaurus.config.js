@@ -323,7 +323,7 @@ const config = {
             {label: '💼 For Support Staff', to: '/guides/non-teaching-staff'},
             {label: '🚌 For Drivers', to: '/guides/driver'},
             {label: '💰 For Accountants', to: '/guides/accountant'},
-            {type: 'separator'},
+            {type: 'html', value: '<hr style="margin: 0.3rem 0;">'},
             {label: '📖 All Documentation', to: '/'},
           ],
         },
