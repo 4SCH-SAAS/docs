@@ -366,12 +366,12 @@ const config = {
           ],
         },
         {
-          title: 'Follow Us',
+          title: 'Follow Us @ng4sch',
           items: [
-            {label: 'Facebook: @ng4sch', href: 'https://facebook.com/ng4sch'},
-            {label: 'Twitter/X: @ng4sch', href: 'https://twitter.com/ng4sch'},
-            {label: 'Instagram: @ng4sch', href: 'https://instagram.com/ng4sch'},
-            {label: 'YouTube: @ng4sch', href: 'https://youtube.com/@ng4sch'},
+            {label: '📘 Facebook', href: 'https://facebook.com/ng4sch'},
+            {label: '🐦 Twitter/X', href: 'https://twitter.com/ng4sch'},
+            {label: '📸 Instagram', href: 'https://instagram.com/ng4sch'},
+            {label: '📹 YouTube', href: 'https://youtube.com/@ng4sch'},
           ],
         },
       ],
