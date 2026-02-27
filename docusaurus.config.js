@@ -2,7 +2,7 @@
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '4SCH SAAS  Documentation',
+  title: '4SCH SAAS Documentation',
   tagline: '4SCH School Management System',
   url: 'https://docs.4sch.com',
   baseUrl: '/',
@@ -10,6 +10,212 @@ const config = {
   organizationName: '4SCH-SAAS',
   projectName: 'docs',
   onBrokenLinks: 'throw',
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'description',
+        content: 'Complete documentation for 4SCH School Management System - Nigeria\'s leading school management platform for teachers, students, parents, and administrators.',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        property: 'og:type',
+        content: 'website',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        property: 'og:title',
+        content: '4SCH Documentation - School Management System',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        property: 'og:description',
+        content: 'Comprehensive guides for teachers, students, parents, and administrators using 4SCH School Management System in Nigeria.',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        property: 'og:image',
+        content: 'https://docs.4sch.com/img/logo.svg',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        property: 'og:url',
+        content: 'https://docs.4sch.com',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        property: 'og:site_name',
+        content: '4SCH Documentation',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'twitter:title',
+        content: '4SCH Documentation - School Management System',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'twitter:description',
+        content: 'Comprehensive guides for teachers, students, parents, and administrators using 4SCH in Nigeria.',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'twitter:image',
+        content: 'https://docs.4sch.com/img/logo.svg',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'theme-color',
+        content: '#2e8555',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'apple-mobile-web-app-capable',
+        content: 'yes',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'apple-mobile-web-app-status-bar-style',
+        content: 'black-translucent',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'canonical',
+        href: 'https://docs.4sch.com',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'alternate',
+        hreflang: 'en',
+        href: 'https://docs.4sch.com',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'manifest',
+        href: '/manifest.json',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'alternate',
+        type: 'application/rss+xml',
+        title: '4SCH Documentation RSS',
+        href: 'https://docs.4sch.com/blog/rss.xml',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'alternate',
+        type: 'application/atom+xml',
+        title: '4SCH Documentation Atom',
+        href: 'https://docs.4sch.com/blog/atom.xml',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preconnect',
+        href: 'https://fonts.googleapis.com',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'search',
+        type: 'application/opensearchdescription+xml',
+        title: 'Search 4SCH Docs',
+        href: '/opensearch.xml',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'format-detection',
+        content: 'telephone=no',
+      },
+    },
+    {
+      tagName: 'script',
+      attributes: {
+        type: 'application/ld+json',
+      },
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'SoftwareApplication',
+        name: '4SCH School Management System',
+        applicationCategory: 'EducationalApplication',
+        operatingSystem: 'Web, Android, iOS',
+        offers: {
+          '@type': 'Offer',
+          price: '0',
+          priceCurrency: 'NGN',
+        },
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: '4.5',
+          ratingCount: '100',
+        },
+        description: 'Comprehensive school management system for Nigerian schools including attendance tracking, fee management, gradebook, and parent communication.',
+      }),
+    },
+    {
+      tagName: 'script',
+      attributes: {
+        type: 'application/ld+json',
+      },
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: '4SCH',
+        url: 'https://ng.4sch.com',
+        logo: 'https://docs.4sch.com/img/logo.svg',
+        sameAs: [],
+        contactPoint: {
+          '@type': 'ContactPoint',
+          contactType: 'Customer Support',
+          url: 'https://docs.4sch.com/support/contact-support',
+        },
+      }),
+    },
+  ],
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -33,6 +239,19 @@ const config = {
         language: ['en'],
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
+        indexDocs: true,
+        indexBlog: true,
+        indexPages: false,
+        docsRouteBasePath: '/',
+      },
+    ],
+    [
+      '@docusaurus/plugin-sitemap',
+      {
+        changefreq: 'weekly',
+        priority: 0.5,
+        ignorePatterns: ['/tags/**'],
+        filename: 'sitemap.xml',
       },
     ],
   ],
@@ -51,7 +270,8 @@ const config = {
             routeBasePath: '/',
             sidebarPath: require.resolve('./sidebars.js'),
             editCurrentVersion: false,
-            showLastUpdateTime: false,
+            showLastUpdateTime: true,
+            showLastUpdateAuthor: false,
             // Versioning configuration
             includeCurrentVersion: true,
             lastVersion: 'current',
@@ -69,6 +289,13 @@ const config = {
             postsPerPage: 10,
             blogSidebarTitle: 'Recent Updates',
             blogSidebarCount: 'ALL',
+            feedOptions: {
+              type: 'all',
+              title: '4SCH Documentation Updates',
+              description: 'Latest updates and release notes for 4SCH School Management System',
+              copyright: `Copyright © ${new Date().getFullYear()} 4SCH`,
+              language: 'en',
+            },
           },
           pages: false,
           theme: {
@@ -116,8 +343,54 @@ const config = {
     },
     prism: {
       additionalLanguages: ['bash', 'json']
-    }
+    },
+    metadata: [
+      {name: 'keywords', content: 'school management system, Nigeria schools, student management, teacher portal, parent portal, school administration, educational software, 4SCH, school ERP, attendance system, gradebook, fee management, Nigerian education, SAAS school software'},
+      {name: 'author', content: '4SCH'},
+      {name: 'robots', content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1'},
+      {name: 'googlebot', content: 'index, follow'},
+      {name: 'google', content: 'nositelinkssearchbox'},
+      {name: 'geo.region', content: 'NG'},
+      {name: 'geo.placename', content: 'Nigeria'},
+      {name: 'language', content: 'English'},
+      {name: 'coverage', content: 'Worldwide'},
+      {name: 'distribution', content: 'Global'},
+      {name: 'rating', content: 'General'},
+      {name: 'revisit-after', content: '7 days'},
+      {httpEquiv: 'x-ua-compatible', content: 'IE=edge'},
+      {name: 'mobile-web-app-capable', content: 'yes'},
+    ],
+    image: 'img/logo.svg',
+    algolia: false,
+    announcementBar: {
+      id: 'support_us',
+      content: '📚 New to 4SCH? Start with our <a target="_blank" rel="noopener noreferrer" href="/intro/quick-start">Quick Start Guide</a>',
+      backgroundColor: '#fafbfc',
+      textColor: '#091E42',
+      isCloseable: true,
+    },
   }),
 };
 
 module.exports = config;
+
+// SEO: Generate additional meta tags per page
+module.exports.plugins = module.exports.plugins || [];
+module.exports.plugins.push(function(context, options) {
+  return {
+    name: 'docusaurus-plugin-seo',
+    injectHtmlTags() {
+      return {
+        headTags: [
+          {
+            tagName: 'link',
+            attributes: {
+              rel: 'dns-prefetch',
+              href: '//fonts.googleapis.com',
+            },
+          },
+        ],
+      };
+    },
+  };
+});

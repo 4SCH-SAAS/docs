@@ -2,6 +2,8 @@
 id: user-roles
 title: Understanding User Roles
 sidebar_position: 2
+description: Complete guide to user roles in 4SCH - Administrator, Teacher, Parent, Student, Accountant, Driver. Learn permissions, responsibilities, and access levels.
+keywords: [user roles, school permissions, administrator role, teacher access, parent portal access, student account, role-based access, 4SCH permissions, school user management]
 ---
 
 # Understanding User Roles in 4SCH

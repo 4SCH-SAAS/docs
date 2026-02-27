@@ -1,6 +1,6 @@
 ---
 id: teacher-guide
-title: Teacher Guide | 4SCH School Management System
+title: Teacher Guide
 description: Essential guide for teachers using 4SCH. Learn how to mark attendance, create assignments, grade students, communicate with parents, and manage your classroom in Nigerian schools.
 keywords: [teacher guide, mark attendance, create assignments, grade students, classroom management, parent communication, 4SCH teachers, online grading Nigeria, digital classroom]
 sidebar_position: 2

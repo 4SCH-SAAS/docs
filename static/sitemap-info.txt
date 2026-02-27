@@ -1,0 +1,6 @@
+# 4SCH Documentation Sitemap
+Sitemap URL: https://docs.4sch.com/sitemap.xml
+Updated: Weekly
+Submit to:
+- Google Search Console
+- Bing Webmaster Tools

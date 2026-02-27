@@ -2,6 +2,8 @@
 id: data-import-export
 title: Data Import & Export
 sidebar_position: 2
+description: Import and export data in 4SCH using CSV templates. Bulk upload students, staff, subjects. Best practices for data migration in Nigerian schools.
+keywords: [data import, CSV upload, bulk student import, export data, data migration, staff import, student enrollment, CSV templates, data transfer]
 ---
 
 import CardGrid from '@site/src/components/CardGrid';

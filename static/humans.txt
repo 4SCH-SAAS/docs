@@ -1,0 +1,10 @@
+/* TEAM */
+Documentation: 4SCH Documentation Team
+Site: https://docs.4sch.com
+Location: Nigeria
+
+/* SITE */
+Last update: 2026/02/27
+Standards: HTML5, CSS3, JavaScript
+Components: React, Docusaurus
+Software: Docusaurus v2

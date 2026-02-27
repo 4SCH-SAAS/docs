@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>4SCH Docs</ShortName>
+  <Description>Search 4SCH School Management System Documentation</Description>
+  <Tags>school management documentation nigeria 4sch</Tags>
+  <Url type="text/html" template="https://docs.4sch.com/?q={searchTerms}"/>
+  <Image height="16" width="16" type="image/x-icon">https://docs.4sch.com/img/favicon.ico</Image>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Language>en</Language>
+</OpenSearchDescription>

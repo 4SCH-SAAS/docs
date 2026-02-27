@@ -2,6 +2,8 @@
 id: troubleshooting
 title: Troubleshooting
 sidebar_position: 2
+description: Troubleshooting guide for 4SCH. Fix login issues, data import errors, attendance problems, payment failures, and messaging delivery issues.
+keywords: [troubleshooting, fix errors, login problems, CSV import errors, payment failed, attendance issues, technical support, error solutions]
 ---
 
 # Troubleshooting

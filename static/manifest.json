@@ -1,0 +1,16 @@
+{
+  "name": "4SCH Documentation",
+  "short_name": "4SCH Docs",
+  "description": "Complete documentation for 4SCH School Management System",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2e8555",
+  "icons": [
+    {
+      "src": "/img/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

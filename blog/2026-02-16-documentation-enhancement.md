@@ -3,6 +3,9 @@ slug: documentation-enhancement-feb-2026
 title: Major Documentation Enhancement & Modernization
 authors: [4sch-team]
 tags: [documentation, enhancement, user-guides, improvement]
+description: Comprehensive 4SCH documentation overhaul with new user guides, interactive diagrams, role-based navigation, and detailed screenshots for Nigerian schools.
+keywords: [documentation enhancement, user guides, interactive diagrams, documentation update, 4SCH improvements, role-based guides]
+image: /img/logo.svg
 ---
 
 # Major Documentation Enhancement & Modernization

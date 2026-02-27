@@ -3,6 +3,8 @@ id: overview
 title: 4SCH Documentation
 slug: /
 sidebar_position: 1
+description: Complete documentation for 4SCH School Management System. Guides for teachers, students, parents, administrators, and staff in Nigerian schools.
+keywords: [4SCH documentation, school management system Nigeria, teacher guide, student portal, parent portal, school admin, Nigerian schools, educational software, school ERP, attendance system]
 ---
 
 import Link from '@docusaurus/Link';
