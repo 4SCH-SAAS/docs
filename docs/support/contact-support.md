@@ -93,9 +93,9 @@ Help us help you faster by having this information ready:
 
 Before reaching out, check if these resources can help:
 
-- <Link to="/support/faq">Frequently Asked Questions</Link>
-- <Link to="/support/troubleshooting">Troubleshooting Guide</Link>
-- <Link to="/">Complete Documentation</Link>
+- [Frequently Asked Questions](/support/faq)
+- [Troubleshooting Guide](/support/troubleshooting)
+- [Complete Documentation](/)
 - User guides for your specific role
 
 ## Submit Feedback
