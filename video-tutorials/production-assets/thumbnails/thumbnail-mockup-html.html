@@ -82,6 +82,10 @@
             color: white;
             opacity: 0.9;
         }
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
         .main-icon {
             position: absolute;
             top: 50%;
@@ -237,7 +241,13 @@
 
         <div class="thumbnail-preview" id="thumbnail">
             <div class="thumbnail-bg"></div>
-            <div class="logo">4SCH</div>
+            <div class="logo" id="logoContainer">
+                <!-- Will use actual logo when available, fallback to text -->
+                <img id="logoImg" src="../branding/logos/4sch-logo-white.png" 
+                     alt="4SCH Logo" 
+                     onerror="this.style.display='none'; document.getElementById('logoText').style.display='block';">
+                <span id="logoText" style="display:none;">4SCH</span>
+            </div>
             <div class="main-icon" id="mainIcon">🎓</div>
             <div class="content">
                 <div class="title" id="titleText">System Overview</div>
