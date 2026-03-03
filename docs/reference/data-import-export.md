@@ -1,6 +1,8 @@
 ---
 id: data-import-export
-title: Data Import & Export
+title: Data Import & Export | 4SCH School Management System
+description: Import and export data in 4SCH. Use CSV templates to bulk import students, staff, subjects, and enrollments. Export reports and school data.
+keywords: [data import, CSV import, bulk upload, export data, student import, staff import, data templates, 4SCH import, bulk enrollment]
 sidebar_position: 2
 ---
 

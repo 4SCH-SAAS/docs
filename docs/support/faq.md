@@ -1,6 +1,8 @@
 ---
 id: faq
-title: FAQ
+title: Frequently Asked Questions | 4SCH School Management System
+description: Common questions and answers about 4SCH. Find solutions for login issues, attendance, grades, billing, messaging, and data management.
+keywords: [FAQ, common questions, troubleshooting, 4SCH help, school management questions, password reset, attendance issues, grade access]
 sidebar_position: 1
 ---
 

@@ -1,6 +1,8 @@
 ---
 id: troubleshooting
-title: Troubleshooting
+title: Troubleshooting Guide | 4SCH School Management System
+description: Troubleshooting guide for common 4SCH issues. Fix login problems, data import errors, attendance submission issues, billing failures, and messaging problems.
+keywords: [troubleshooting, fix problems, login issues, import errors, payment failures, 4SCH errors, technical problems, solutions]
 sidebar_position: 2
 ---
 

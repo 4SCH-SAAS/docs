@@ -1,6 +1,8 @@
 ---
 id: integrations
-title: Integrations
+title: Integrations Reference | 4SCH School Management System
+description: Configure integrations with 4SCH. Set up payment gateways, email/SMS providers, SSO authentication, and LMS connections for your school.
+keywords: [integrations, payment gateway, SSO, email provider, SMS, API integration, webhooks, authentication, third-party services]
 sidebar_position: 3
 ---
 

@@ -1,6 +1,8 @@
 ---
 id: roles-permissions
-title: Roles & Permissions
+title: Roles & Permissions Reference | 4SCH School Management System
+description: Complete reference for roles and permissions in 4SCH. Learn about default roles, create custom roles, and configure granular permissions for security and access control.
+keywords: [roles, permissions, access control, user roles, custom roles, security, role-based access, admin permissions, teacher permissions]
 sidebar_position: 1
 ---
 

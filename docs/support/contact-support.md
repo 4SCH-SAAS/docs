@@ -1,6 +1,8 @@
 ---
 id: contact-support
-title: Contact & Support
+title: Contact & Support | 4SCH School Management System
+description: Get help with 4SCH. Contact support, submit tickets, and find emergency assistance for school administrators, teachers, parents, and students.
+keywords: [contact support, 4SCH help, technical support, emergency contact, submit ticket, customer service, school support]
 sidebar_position: 3
 ---
 

@@ -1,6 +1,8 @@
 ---
 id: overview
-title: 4SCH Documentation
+title: 4SCH Documentation | Complete School Management System Guide
+description: Complete documentation for 4SCH School Management System. Role-based guides for administrators, teachers, parents, students, and staff. Learn to manage attendance, grades, fees, and more in Nigerian schools.
+keywords: [4SCH documentation, school management system, Nigerian schools, student management, attendance tracking, grade management, fee management, school administration, education software]
 slug: /
 sidebar_position: 1
 ---

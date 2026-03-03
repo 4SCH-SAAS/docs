@@ -1,6 +1,8 @@
 ---
 id: quick-start
-title: Quick Start Guide
+title: Quick Start Guide | 4SCH School Management System
+description: Get started with 4SCH quickly. Step-by-step guide to login, navigate the dashboard, and complete your first tasks as administrator, teacher, parent, or student.
+keywords: [quick start, getting started, 4SCH login, first steps, school management tutorial, setup guide, Nigerian schools, admin setup]
 sidebar_position: 2
 ---
 
