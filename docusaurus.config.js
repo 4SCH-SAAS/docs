@@ -274,6 +274,7 @@ const config = {
             },
           },
           blog: {
+            routeBasePath: 'changelog',
             showReadingTime: true,
             blogTitle: 'Release Notes & Updates',
             blogDescription: 'Stay updated with the latest features, improvements, and fixes in 4SCH.',
@@ -327,7 +328,7 @@ const config = {
             {label: '📖 All Documentation', to: '/'},
           ],
         },
-        {to: '/blog', label: "What's New", position: 'left'},
+        {to: '/changelog', label: "What's New", position: 'left'},
         {to: '/support/faq', label: 'Support', position: 'left'},
         {
           type: 'docsVersionDropdown',
