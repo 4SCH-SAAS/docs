@@ -1,0 +1,21 @@
+📂 Drop Your Logo Files Here
+
+Required Files:
+--------------
+1. 4sch-logo.svg          (Vector logo - main)
+2. 4sch-logo.png          (High-res PNG, 2000px+ width)
+3. 4sch-logo-white.svg    (White version for dark backgrounds)
+4. 4sch-logo-white.png    (White PNG version)
+
+Optional:
+---------
+5. 4sch-icon.svg          (Icon/mark only, if available)
+6. 4sch-icon.png          (Icon PNG)
+
+After Adding Logos:
+-------------------
+1. Delete this PLACE_LOGOS_HERE.txt file
+2. Update the HTML mockup (see ../README.md for instructions)
+3. Test the mockup by opening thumbnail-mockup-html.html in browser
+
+Questions? support@4sch.com
