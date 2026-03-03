@@ -414,20 +414,39 @@ const config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Documentation',
           items: [
             {label: 'Overview', to: '/'},
             {label: 'Quick Start', to: '/intro/quick-start'},
+            {label: 'User Roles', to: '/intro/user-roles'},
           ],
         },
         {
-          title: 'Community',
+          title: 'Guides',
           items: [
+            {label: 'School Admin', to: '/guides/school-admin'},
+            {label: 'Teachers', to: '/guides/teachers'},
+            {label: 'Parents', to: '/guides/parents'},
+            {label: 'Students', to: '/guides/students'},
+          ],
+        },
+        {
+          title: 'Support',
+          items: [
+            {label: 'FAQ', to: '/support/faq'},
+            {label: 'Troubleshooting', to: '/support/troubleshooting'},
             {label: 'Contact Support', to: '/support/contact-support'},
           ],
         },
+        {
+          title: 'More',
+          items: [
+            {label: 'Changelog', to: '/changelog'},
+            {label: '4SCH Home', href: 'https://ng.4sch.com'},
+          ],
+        },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} 4SCH.`,
+      copyright: `Copyright © ${new Date().getFullYear()} 4SCH. All rights reserved.`,
     },
     prism: {
       additionalLanguages: ['bash', 'json']
