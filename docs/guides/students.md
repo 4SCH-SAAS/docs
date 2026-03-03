@@ -1,6 +1,6 @@
 ---
 id: student-guide
-title: Student Guide | 4SCH School Management System
+title: Student Guide
 description: Student guide for using 4SCH. View your timetable, submit assignments online, check grades, track attendance, and access study materials. Learn how to succeed with digital learning in Nigeria.
 keywords: [student portal, submit assignments online, check grades, view timetable, online learning Nigeria, student dashboard, homework submission, 4SCH students, digital education]
 sidebar_position: 4

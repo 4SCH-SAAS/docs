@@ -4,6 +4,8 @@ title: Roles & Permissions Reference | 4SCH School Management System
 description: Complete reference for roles and permissions in 4SCH. Learn about default roles, create custom roles, and configure granular permissions for security and access control.
 keywords: [roles, permissions, access control, user roles, custom roles, security, role-based access, admin permissions, teacher permissions]
 sidebar_position: 1
+description: Comprehensive guide to roles and permissions in 4SCH. Default roles, custom permissions, security best practices, and access control for Nigerian schools.
+keywords: [roles permissions, access control, user permissions, custom roles, security settings, permission matrix, role-based access, school security, admin permissions]
 ---
 
 import CardGrid from '@site/src/components/CardGrid';

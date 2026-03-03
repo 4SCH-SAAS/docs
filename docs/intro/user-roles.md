@@ -4,6 +4,8 @@ title: Understanding User Roles | 4SCH School Management System
 description: Complete guide to user roles and permissions in 4SCH. Understand what administrators, teachers, parents, students, and staff can do in the school management system.
 keywords: [user roles, permissions, access control, administrator, teacher, parent, student, staff roles, 4SCH permissions, role-based access]
 sidebar_position: 2
+description: Complete guide to user roles in 4SCH - Administrator, Teacher, Parent, Student, Accountant, Driver. Learn permissions, responsibilities, and access levels.
+keywords: [user roles, school permissions, administrator role, teacher access, parent portal access, student account, role-based access, 4SCH permissions, school user management]
 ---
 
 # Understanding User Roles in 4SCH

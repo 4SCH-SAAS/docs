@@ -4,6 +4,8 @@ title: Integrations Reference | 4SCH School Management System
 description: Configure integrations with 4SCH. Set up payment gateways, email/SMS providers, SSO authentication, and LMS connections for your school.
 keywords: [integrations, payment gateway, SSO, email provider, SMS, API integration, webhooks, authentication, third-party services]
 sidebar_position: 3
+description: Integrate 4SCH with payment gateways, SMS providers, SSO, and LMS. Configure online payments, notifications, and third-party services for Nigerian schools.
+keywords: [payment gateway integration, SMS integration, SSO setup, payment processing Nigeria, Paystack integration, Flutterwave, online payments, API integration]
 ---
 
 import CardGrid from '@site/src/components/CardGrid';

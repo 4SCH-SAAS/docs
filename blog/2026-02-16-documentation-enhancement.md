@@ -4,6 +4,8 @@ title: Major Documentation Enhancement & Modernization
 description: Comprehensive overhaul of 4SCH documentation with enhanced user guides, improved navigation, role-based content, and real-world scenarios for Nigerian schools.
 authors: [4sch-team]
 tags: [documentation, enhancement, user-guides, improvement]
+description: Comprehensive 4SCH documentation overhaul with new user guides, interactive diagrams, role-based navigation, and detailed screenshots for Nigerian schools.
+keywords: [documentation enhancement, user guides, interactive diagrams, documentation update, 4SCH improvements, role-based guides]
 image: /img/logo.svg
 ---
 
