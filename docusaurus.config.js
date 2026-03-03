@@ -43,7 +43,28 @@ const config = {
       tagName: 'meta',
       attributes: {
         property: 'og:image',
-        content: 'https://docs.4sch.com/img/logo.svg',
+        content: 'https://docs.4sch.com/img/og-image.png',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        property: 'og:image:secure_url',
+        content: 'https://docs.4sch.com/img/og-image.png',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        property: 'og:image:type',
+        content: 'image/png',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        property: 'og:image:alt',
+        content: '4SCH School Management System Documentation',
       },
     },
     {
@@ -85,7 +106,14 @@ const config = {
       tagName: 'meta',
       attributes: {
         name: 'twitter:image',
-        content: 'https://docs.4sch.com/img/logo.svg',
+        content: 'https://docs.4sch.com/img/og-image-twitter.png',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'twitter:image:alt',
+        content: '4SCH School Management System Documentation',
       },
     },
     {
@@ -409,7 +437,7 @@ const config = {
       {httpEquiv: 'x-ua-compatible', content: 'IE=edge'},
       {name: 'mobile-web-app-capable', content: 'yes'},
     ],
-    image: 'img/logo.svg',
+    image: 'img/og-image.png',
     algolia: false,
     announcementBar: {
       id: 'support_us',
