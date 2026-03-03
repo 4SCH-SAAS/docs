@@ -245,6 +245,18 @@ const config = {
         docsRouteBasePath: '/',
       },
     ],
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [{from: '/blog', to: '/changelog'}],
+        createRedirects(existingPath) {
+          if (existingPath.includes('/changelog')) {
+            return [existingPath.replace('/changelog', '/blog')];
+          }
+          return undefined;
+        },
+      },
+    ],
   ],
   markdown: {
     mermaid: true,
