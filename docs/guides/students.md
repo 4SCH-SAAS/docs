@@ -1,8 +1,8 @@
 ---
 id: student-guide
 title: Student Guide
-description: Student guide for using 4SCH. View your timetable, submit assignments online, check grades, track attendance, and access study materials. Learn how to succeed with digital learning in Nigeria.
-keywords: [student portal, submit assignments online, check grades, view timetable, online learning Nigeria, student dashboard, homework submission, 4SCH students, digital education]
+description: Student guide for using 4SCH web portal and mobile app. View your timetable, submit assignments online, check grades, track attendance, and access study materials. Learn how to succeed with digital learning in Nigeria.
+keywords: [student portal, student web portal, ngs.4sch.com, submit assignments online, check grades, view timetable, online learning Nigeria, student dashboard, homework submission, 4SCH students, digital education, student mobile app, student login]
 sidebar_position: 4
 ---
 
@@ -21,10 +21,84 @@ import MessagingIcon from '@site/src/components/icons/Messaging';
 
 Welcome! 4SCH gives you easy access to everything you need for school—your timetable, assignments, grades, and more. This guide will show you how to use it.
 
+## Accessing 4SCH as a Student
+
+You can now access 4SCH in two ways:
+
+**Web Portal (New!):** [https://ngs.4sch.com](https://ngs.4sch.com)
+- Access from any computer or laptop browser
+- Full-featured experience with enhanced capabilities
+- Perfect for working on assignments, detailed study, and exploring materials
+- Works on tablets and mobile browsers too
+
+**Mobile App:** Available on Android and iOS
+- Quick access on the go
+- Push notifications for new assignments and announcements
+- Convenient for checking schedules and grades
+- Download from Google Play Store or Apple App Store
+
+:::tip Which Should I Use?
+**Use the web portal** when you need to work on assignments, download study materials, or prefer a larger screen.  
+**Use the mobile app** for quick checks during the day and to receive instant notifications.
+
+Both platforms sync automatically—submit an assignment on the web, and your teacher sees it immediately. Check grades on your phone, and they're the same on the web.
+:::
+
+### How to Log In
+
+**Web Portal:**
+1. Go to [https://ngs.4sch.com](https://ngs.4sch.com) in your browser
+2. Enter your student ID or username
+3. Enter your password (provided by your school)
+4. Click **Sign In**
+
+**Mobile App:**
+1. Download the 4SCH Student App from your app store
+2. Open the app
+3. Enter your school code (if prompted)
+4. Enter your student credentials
+5. Tap **Sign In**
+
+:::note First Time Login?
+Your school will provide your username and password. You should change your password after your first login for security.
+:::
+
+### Forgot Your Password?
+
+**New!** You can now reset your password yourself without contacting the school admin.
+
+**On the Web Portal ([ngs.4sch.com](https://ngs.4sch.com)):**
+
+1. Click **"Forgot Password?"** on the login page
+2. You'll need to provide:
+   - **School Code** (provided by your school)
+   - **GR Number** (General Roll Number - your student registration number)
+   - **Date of Birth** (in dd-mm-yyyy format, e.g., 15-08-2010)
+3. Click **Submit**
+4. Follow the instructions to create your new password
+5. Log in with your new password
+
+:::tip Keep This Information Handy
+Make sure you know your:
+- **School Code** (ask your class teacher if you don't know it)
+- **GR Number** (shown on your student ID card)
+- **Date of Birth** (in the correct format: dd-mm-yyyy)
+
+You'll need these details to reset your password anytime.
+:::
+
+:::caution Password Security
+- Choose a strong password (mix of letters, numbers, and symbols)
+- Don't share your password with friends or classmates
+- Change your password regularly for security
+- If you can't reset your password using the self-service option, contact your school admin
+:::
+
 <TOCInline toc={[]} minHeadingLevel={2} maxHeadingLevel={3} />
 
 <CardGrid
   cards={[
+    { to: '#accessing-4sch-as-a-student', title: 'Access 4SCH', description: 'Web portal & mobile app', icon: <DashboardIcon /> },
     { to: '#student-dashboard', title: 'Dashboard', description: 'Your daily overview', icon: <DashboardIcon /> },
     { to: '#viewing-your-timetable', title: 'Timetable', description: 'Check your class schedule', icon: <DashboardIcon /> },
     { to: '#assignments', title: 'Assignments', description: 'Submit homework online', icon: <GradesIcon /> },
@@ -36,7 +110,7 @@ Welcome! 4SCH gives you easy access to everything you need for school—your tim
 
 ## <span className="heading-icon"><DashboardIcon size={18} /></span> Your Student Dashboard {#student-dashboard}
 
-When you log into 4SCH, you'll see your **Student Dashboard**. This is your home page for everything school-related.
+When you log into 4SCH (via web portal or mobile app), you'll see your **Student Dashboard**. This is your home page for everything school-related.
 
 <Screenshot
   src="/img/screens/students/student-dashboard.svg"
@@ -1033,13 +1107,20 @@ Successful students check 4SCH daily, submit assignments on time, and communicat
 ### Keeping Your Account Secure
 
 **Password Safety:**
-- Don't share your password with friends
-- Use a password you can remember but others can't guess
-- Change it if you think someone knows it
+- Don't share your password with friends or classmates
+- Choose a strong password (mix of letters, numbers, and symbols)
+- Change it regularly using the self-service password reset
+- If you think someone knows your password, reset it immediately
 
 **Log Out:**
 - Always log out if using a shared computer
-- Don't stay logged in on friends' phones
+- Don't stay logged in on friends' phones or devices
+- The web portal will auto-logout after inactivity for security
+
+**Protect Your Information:**
+- Keep your GR Number and Date of Birth private
+- Don't share your School Code publicly
+- These details are needed for password reset, so keep them safe
 
 ---
 
@@ -1050,13 +1131,34 @@ Successful students check 4SCH daily, submit assignments on time, and communicat
 **If you can't access something:**
 1. Make sure you're logged in
 2. Check your internet connection
-3. Try refreshing the page
-4. Ask a teacher or parent for help
+3. Try refreshing the page (or restart the app)
+4. Clear your browser cache (web portal)
+5. Ask a teacher or parent for help
+
+**Common Issues:**
+- **Can't log in?** 
+  - Make sure you're using the correct username and password
+  - Use the <Link to="#forgot-your-password">self-service password reset</Link> if you forgot your password
+  - Verify you're entering the correct School Code
+- **Password reset not working?**
+  - Double-check your GR Number is correct
+  - Ensure Date of Birth is in dd-mm-yyyy format (e.g., 15-08-2010)
+  - Verify School Code with your teacher
+  - Contact school admin if self-service reset fails
+- **Assignments won't upload?** 
+  - Check file size (usually max 10 MB per file)
+  - Ensure you have a stable internet connection
+  - Try a different file format if allowed
+- **Can't see your grades?** 
+  - They might not be published yet—ask your teacher
+  - Check that you're viewing the correct term/session
 
 **If something looks wrong:**
 - Wrong grade showing? Tell your teacher
 - Attendance marked incorrectly? Message your teacher
 - Can't submit assignment? Contact your teacher before deadline
+
+<Link to="/support/troubleshooting">→ Full Troubleshooting Guide</Link>
 
 ### Academic Help
 

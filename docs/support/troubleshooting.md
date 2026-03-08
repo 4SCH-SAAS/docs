@@ -3,13 +3,25 @@ id: troubleshooting
 title: Troubleshooting
 sidebar_position: 2
 description: Troubleshooting guide for 4SCH. Fix login issues, data import errors, attendance problems, payment failures, and messaging delivery issues.
-keywords: [troubleshooting, fix errors, login problems, CSV import errors, payment failed, attendance issues, technical support, error solutions]
+keywords: [troubleshooting, fix errors, login problems, student password reset, GR number, CSV import errors, payment failed, attendance issues, technical support, error solutions, student login issues]
 ---
 
 # Troubleshooting
 
 Sign-in issues:
-- Password reset doesn’t arrive:
+- Can't log in as a student:
+  - Verify username and password (case-sensitive)
+  - Try the self-service password reset at [ngs.4sch.com](https://ngs.4sch.com)
+  - Ensure you're using the correct School Code
+  - Clear browser cache and cookies (web portal)
+  - Try the mobile app if web portal isn't working (or vice versa)
+- Student password reset not working:
+  - **Verify GR Number:** Must match exactly as registered (check student ID card)
+  - **Check Date of Birth format:** Must be dd-mm-yyyy (e.g., 15-08-2010, not 15/08/2010)
+  - **Confirm School Code:** Ask your class teacher if unsure
+  - **Common mistakes:** Wrong date format, incorrect GR Number, typing School Code incorrectly
+  - **If still failing:** Contact school admin for manual reset
+- Password reset doesn't arrive (Teachers/Parents/Staff):
   - Check spam folder; confirm email on file; ask admin to resend or verify SMTP
 - SSO loop or error:
   - Confirm time sync (NTP), client IDs, redirect URIs, and user mapping
