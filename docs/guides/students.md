@@ -1136,7 +1136,7 @@ Successful students check 4SCH daily, submit assignments on time, and communicat
 5. Ask a teacher or parent for help
 
 **Common Issues:**
-- **Can't log in?** 
+- **Can't log in?**
   - Make sure you're using the correct username and password
   - Use the <Link to="#forgot-your-password">self-service password reset</Link> if you forgot your password
   - Verify you're entering the correct School Code
@@ -1145,11 +1145,11 @@ Successful students check 4SCH daily, submit assignments on time, and communicat
   - Ensure Date of Birth is in dd-mm-yyyy format (e.g., 15-08-2010)
   - Verify School Code with your teacher
   - Contact school admin if self-service reset fails
-- **Assignments won't upload?** 
+- **Assignments won't upload?**
   - Check file size (usually max 10 MB per file)
   - Ensure you have a stable internet connection
   - Try a different file format if allowed
-- **Can't see your grades?** 
+- **Can't see your grades?**
   - They might not be published yet—ask your teacher
   - Check that you're viewing the correct term/session
 
