@@ -138,20 +138,28 @@ Your school has invited you to track your child's progress on 4SCH.
 
 ### If You're a Student
 
-You can now access your school information online.
+You can now access your school information online—both on the web and via mobile app!
+
+**Access 4SCH:**
+- **Web Portal:** [https://ngs.4sch.com](https://ngs.4sch.com) (perfect for assignments and study)
+- **Mobile App:** Download from Google Play or App Store (great for quick checks)
 
 **What You Can Do**
 - ✅ View your class timetable
 - ✅ See your grades and attendance
 - ✅ Submit assignments online
 - ✅ Check announcements from school
-- ✅ Access study materials
+- ✅ Access and download study materials
+- ✅ Communicate with teachers
+- ✅ View fee payment information
+- ✅ Receive real-time push notifications (mobile app)
 
 **Getting Started**
-1. Log in with the credentials your school gave you
-2. Check your dashboard for today's classes
-3. Look at upcoming assignments and their due dates
-4. Explore your grades to see how you're doing
+1. Go to [ngs.4sch.com](https://ngs.4sch.com) or open the mobile app
+2. Log in with the credentials your school gave you
+3. Check your dashboard for today's classes
+4. Look at upcoming assignments and their due dates
+5. Explore your grades to see how you're doing
 
 <Link to="/guides/student-guide">→ Full Student Guide</Link>
 

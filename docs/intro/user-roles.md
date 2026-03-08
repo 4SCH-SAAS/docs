@@ -81,7 +81,9 @@ Different people in your school need access to different features. 4SCH organize
 - Communicate with teachers
 - Check fee payment status
 
-**Access:** Mobile app (Android/iOS) and web portal
+**Access:** Web portal ([https://ngs.4sch.com](https://ngs.4sch.com)) and mobile app (Android/iOS)
+
+**New!** Students can now access the full 4SCH experience via the web portal at [ngs.4sch.com](https://ngs.4sch.com), offering enhanced features and a better experience for working on assignments, downloading study materials, and accessing all student features from any computer or laptop.
 
 <Link to="/guides/student-guide">→ Read the full Student Guide</Link>
 

@@ -71,7 +71,7 @@ Steps:
 9) Invite users
 - Admin Console → Users & Permissions
 - Send invitations to teachers and guardians
-- Students log in via credentials or SSO (if enabled)
+- Students log in via web portal ([https://ngs.4sch.com](https://ngs.4sch.com)) or mobile app using their credentials or SSO (if enabled)
 
 10) Announce and go live
 - Admin Console → Messaging → Announcements

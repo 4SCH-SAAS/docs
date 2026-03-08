@@ -74,7 +74,7 @@ Use these docs to set up 4SCH and run day-to-day school operations. Start with t
     {
       to: '/guides/student-guide',
       title: 'Student',
-      description: 'Access timetable, submit assignments, view grades',
+      description: 'Web portal & mobile app access to timetable, assignments, grades',
       icon: <AcademicIcon />,
     },
   ]}

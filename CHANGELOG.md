@@ -6,6 +6,86 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [2.1.0] - 2026-03-08
+
+### Added
+
+#### Student Web Portal Access
+- **Student web portal URL**: [https://ngs.4sch.com](https://ngs.4sch.com)
+  - New dedicated web access for students (previously mobile-only)
+  - Full-featured experience with enhanced capabilities
+  - Documentation of all web portal features
+
+**Files Updated:**
+- `docs/guides/students.md`
+  - Added "Accessing 4SCH as a Student" section
+  - Detailed comparison of web portal vs mobile app
+  - Login instructions for both platforms
+  - When to use each platform (web vs mobile)
+  - Updated keywords: `student web portal`, `ngs.4sch.com`, `student mobile app`, `student login`
+  
+- `docs/intro/user-roles.md`
+  - Updated Student role section with web portal URL
+  - Added "New!" callout highlighting web portal features
+  
+- `docs/intro/getting-started.md`
+  - Added web portal access to student onboarding
+  - Enhanced student capabilities list
+  
+- `docs/intro/overview.md`
+  - Updated Student card to mention both web portal and mobile app
+  
+- `docs/support/faq.md`
+  - Added FAQ: "How do students access 4SCH?"
+  
+- `docs/intro/quick-start.md`
+  - Updated step 9 with web portal URL for student login
+
+#### Self-Service Password Reset for Students
+- **New Feature**: Students can now reset passwords without admin assistance
+- **Reset Requirements**:
+  - School Code (provided by school)
+  - GR Number (General Roll Number)
+  - Date of Birth (dd-mm-yyyy format)
+
+**Files Updated:**
+- `docs/guides/students.md`
+  - Added "Forgot Your Password?" section with step-by-step reset instructions
+  - Added tips for keeping reset information handy
+  - Added password security best practices
+  - Updated "Getting Help" section with password reset troubleshooting
+  - Enhanced "Keeping Your Account Secure" section
+  - Added internal cross-reference links
+  
+- `docs/support/faq.md`
+  - Split password reset FAQ into student-specific vs staff/teachers
+  - Added new FAQ: "What information do students need to reset their password?"
+  - Added cross-reference link to Student Guide password reset section
+  - Updated keywords: `student password reset`, `GR number`
+  
+- `docs/support/troubleshooting.md`
+  - Added "Can't log in as a student" troubleshooting section
+  - Added detailed "Student password reset not working" guide
+  - Listed common mistakes (date format, GR Number, School Code)
+  - Added verification tips and escalation path
+  - Updated keywords: `student password reset`, `GR number`, `student login issues`
+
+### Improved
+
+#### Search Optimization
+- Added comprehensive keywords across student documentation
+- New searchable terms: `ngs.4sch.com`, `student web portal`, `student login`, `student password reset`, `GR number`
+- Enhanced cross-referencing between FAQ, Student Guide, and Troubleshooting
+
+#### Documentation Quality
+- Maintained consistent documentation patterns
+- Used proper Docusaurus components (`<Link>`, admonitions)
+- Added practical examples (date format: dd-mm-yyyy)
+- Included security guidance for students
+- Created logical navigation paths between related topics
+
+---
+
 ## [2.0.0] - 2026-02-01
 
 ### 🎉 Major Documentation Overhaul
