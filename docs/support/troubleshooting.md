@@ -10,9 +10,12 @@ keywords: [troubleshooting, fix errors, login problems, student password reset, 
 
 Sign-in issues:
 - Can't log in as a student:
-  - Verify username and password (case-sensitive)
+  - Verify all three login credentials (case-sensitive):
+    - **School Code** (provided by your school)
+    - **GR Number** (General Roll Number - check your student ID card)
+    - **Password** (initial password from school)
   - Try the self-service password reset at [ngs.4sch.com](https://ngs.4sch.com)
-  - Ensure you're using the correct School Code
+  - Ensure you're entering the School Code exactly as provided
   - Clear browser cache and cookies (web portal)
   - Try the mobile app if web portal isn't working (or vice versa)
 - Student password reset not working:

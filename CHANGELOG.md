@@ -16,11 +16,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - Full-featured experience with enhanced capabilities
   - Documentation of all web portal features
 
+**Student Login Credentials:**
+- **School Code** - Unique identifier for the school (provided by school)
+- **GR Number** - General Roll Number (student registration number)
+- **Password** - Initial password provided by school
+
 **Files Updated:**
 - `docs/guides/students.md`
   - Added "Accessing 4SCH as a Student" section
   - Detailed comparison of web portal vs mobile app
-  - Login instructions for both platforms
+  - Login instructions for both platforms with required credentials (School Code, GR Number, Password)
   - When to use each platform (web vs mobile)
   - Updated keywords: `student web portal`, `ngs.4sch.com`, `student mobile app`, `student login`
   
@@ -31,6 +36,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - `docs/intro/getting-started.md`
   - Added web portal access to student onboarding
   - Enhanced student capabilities list
+  - Added login credentials list (School Code, GR Number, Password)
   
 - `docs/intro/overview.md`
   - Updated Student card to mention both web portal and mobile app
@@ -59,12 +65,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   
 - `docs/support/faq.md`
   - Split password reset FAQ into student-specific vs staff/teachers
+  - Added new FAQ: "What login credentials do students need?"
   - Added new FAQ: "What information do students need to reset their password?"
   - Added cross-reference link to Student Guide password reset section
   - Updated keywords: `student password reset`, `GR number`
   
 - `docs/support/troubleshooting.md`
   - Added "Can't log in as a student" troubleshooting section
+  - Clarified all three required login credentials (School Code, GR Number, Password)
   - Added detailed "Student password reset not working" guide
   - Listed common mistakes (date format, GR Number, School Code)
   - Added verification tips and escalation path
