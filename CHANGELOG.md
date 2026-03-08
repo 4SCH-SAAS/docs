@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [Unreleased]
+
+### Fixed
+- Corrected student login credentials documentation across all files
+  - Login requires: School Code, GR Number (General Roll Number), and Password
+  - Updated login instructions in student guide, FAQ, troubleshooting, and getting started docs
+  - Clarified that all three credentials are required for both web portal and mobile app
+
+---
+
 ## [2.1.0] - 2026-03-08
 
 ### Added
@@ -16,11 +26,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - Full-featured experience with enhanced capabilities
   - Documentation of all web portal features
 
+**Student Login Credentials:**
+- **School Code** - Unique identifier for the school (provided by school)
+- **GR Number** - General Roll Number (student registration number)
+- **Password** - Initial password provided by school
+
 **Files Updated:**
 - `docs/guides/students.md`
   - Added "Accessing 4SCH as a Student" section
   - Detailed comparison of web portal vs mobile app
-  - Login instructions for both platforms
+  - Login instructions for both platforms with required credentials (School Code, GR Number, Password)
   - When to use each platform (web vs mobile)
   - Updated keywords: `student web portal`, `ngs.4sch.com`, `student mobile app`, `student login`
   

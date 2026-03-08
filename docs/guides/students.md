@@ -48,19 +48,26 @@ Both platforms sync automatically—submit an assignment on the web, and your te
 
 **Web Portal:**
 1. Go to [https://ngs.4sch.com](https://ngs.4sch.com) in your browser
-2. Enter your student ID or username
-3. Enter your password (provided by your school)
-4. Click **Sign In**
+2. Enter your **School Code** (provided by your school)
+3. Enter your **GR Number** (General Roll Number - your student registration number)
+4. Enter your **Password** (provided by your school)
+5. Click **Sign In**
 
 **Mobile App:**
 1. Download the 4SCH Student App from your app store
 2. Open the app
-3. Enter your school code (if prompted)
-4. Enter your student credentials
-5. Tap **Sign In**
+3. Enter your **School Code**
+4. Enter your **GR Number**
+5. Enter your **Password**
+6. Tap **Sign In**
 
 :::note First Time Login?
-Your school will provide your username and password. You should change your password after your first login for security.
+Your school will provide three credentials:
+- **School Code** - Unique identifier for your school
+- **GR Number** - Your General Roll Number (student registration number)
+- **Password** - Your initial password (you should change this after first login for security)
+
+Keep these details safe as you'll need them to log in and reset your password if needed.
 :::
 
 ### Forgot Your Password?
@@ -80,11 +87,11 @@ Your school will provide your username and password. You should change your pass
 
 :::tip Keep This Information Handy
 Make sure you know your:
-- **School Code** (ask your class teacher if you don't know it)
-- **GR Number** (shown on your student ID card)
+- **School Code** (provided by your school - same code used for login)
+- **GR Number** (your General Roll Number - shown on your student ID card and used for login)
 - **Date of Birth** (in the correct format: dd-mm-yyyy)
 
-You'll need these details to reset your password anytime.
+You'll need all three details to reset your password anytime. These are the same credentials your school provided for login.
 :::
 
 :::caution Password Security
@@ -1137,9 +1144,10 @@ Successful students check 4SCH daily, submit assignments on time, and communicat
 
 **Common Issues:**
 - **Can't log in?**
-  - Make sure you're using the correct username and password
+  - Verify all three login credentials (School Code, GR Number, Password)
+  - Make sure you're entering them correctly (case-sensitive)
   - Use the <Link to="#forgot-your-password">self-service password reset</Link> if you forgot your password
-  - Verify you're entering the correct School Code
+  - Ensure you're entering the School Code exactly as provided
 - **Password reset not working?**
   - Double-check your GR Number is correct
   - Ensure Date of Birth is in dd-mm-yyyy format (e.g., 15-08-2010)

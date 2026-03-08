@@ -156,7 +156,10 @@ You can now access your school information online—both on the web and via mobi
 
 **Getting Started**
 1. Go to [ngs.4sch.com](https://ngs.4sch.com) or open the mobile app
-2. Log in with the credentials your school gave you
+2. Log in with the credentials your school gave you:
+   - School Code
+   - GR Number (General Roll Number)
+   - Password
 3. Check your dashboard for today's classes
 4. Look at upcoming assignments and their due dates
 5. Explore your grades to see how you're doing
