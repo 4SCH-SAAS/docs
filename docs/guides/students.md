@@ -72,7 +72,18 @@ Keep these details safe as you'll need them to log in and reset your password if
 
 ### Forgot Your Password?
 
-**New!** You can now reset your password yourself without contacting the school admin.
+**New!** You can now reset your password yourself without contacting the school admin - available on both mobile app and web portal!
+
+**On the Mobile App:**
+
+1. Tap **"Forgot Password?"** on the login screen
+2. You'll need to provide:
+   - **School Code** (provided by your school)
+   - **GR Number** (General Roll Number - your student registration number)
+   - **Date of Birth** (in dd-mm-yyyy format, e.g., 15-08-2010)
+3. Tap **Submit**
+4. Follow the instructions to create your new password
+5. Log in with your new password
 
 **On the Web Portal ([ngs.4sch.com](https://ngs.4sch.com)):**
 
@@ -159,6 +170,12 @@ Check your dashboard every morning before school to see:
 ## <span className="heading-icon"><DashboardIcon size={18} /></span> Viewing Your Timetable {#viewing-your-timetable}
 
 Your timetable shows all your classes for the week.
+
+:::tip Exam Schedules
+For information about viewing exam timetables and results:
+- **<Link to="/guides/online-exams#for-students">Online Exams (Students)</Link>** - Digital exam schedules and instant results
+- **<Link to="/guides/offline-exams#for-students">Offline Exams (Students)</Link>** - Traditional exam timetables and results
+:::
 
 ### How to Check Your Timetable
 

@@ -14,11 +14,12 @@ Sign-in issues:
     - **School Code** (provided by your school)
     - **GR Number** (General Roll Number - check your student ID card)
     - **Password** (initial password from school)
-  - Try the self-service password reset at [ngs.4sch.com](https://ngs.4sch.com)
+  - Try the self-service password reset on mobile app or web portal at [ngs.4sch.com](https://ngs.4sch.com)
   - Ensure you're entering the School Code exactly as provided
   - Clear browser cache and cookies (web portal)
   - Try the mobile app if web portal isn't working (or vice versa)
 - Student password reset not working:
+  - **Available on both platforms:** Password reset works on mobile app and web portal
   - **Verify GR Number:** Must match exactly as registered (check student ID card)
   - **Check Date of Birth format:** Must be dd-mm-yyyy (e.g., 15-08-2010, not 15/08/2010)
   - **Confirm School Code:** Ask your class teacher if unsure
