@@ -169,6 +169,15 @@ Subjects are the courses taught in your school.
 Use the **Copy Timetable** feature to duplicate a similar class's schedule and modify it.
 :::
 
+**Timetable Validation & Conflicts:**
+
+The system checks for:
+- **Teacher double-booking**: A teacher can't be scheduled for two classes at the same time
+- **Classroom conflicts**: If room assignments are used, same room can't be used simultaneously
+- **Time slot overlaps**: Ensure start/end times don't conflict
+
+If you encounter conflicts, review teacher assignments or adjust time slots.
+
 ### Managing Exams
 
 **Creating Exam Schedules:**
