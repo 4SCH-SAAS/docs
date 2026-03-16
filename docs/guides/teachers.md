@@ -601,7 +601,7 @@ You can attach files to the lesson itself OR to individual topics within the les
 
 ---
 
-## <span className="heading-icon"><UsersIcon size={18} /></span> Leave Management {#leave-management}
+## <span className="heading-icon"><StaffIcon size={18} /></span> Leave Management {#leave-management}
 
 Apply for leave (sick days, personal time, etc.) directly through the system.
 
