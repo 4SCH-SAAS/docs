@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Exam Workflows - 4SCH Interactive Diagrams</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f7fa;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 40px;
+            padding: 10px;
+            background: #ecf0f1;
+            border-left: 4px solid #3498db;
+        }
+        .diagram-container {
+            margin: 30px 0;
+            padding: 20px;
+            background: #fafafa;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+            border-bottom: 2px solid #ecf0f1;
+        }
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            background: #ecf0f1;
+            border: none;
+            border-radius: 8px 8px 0 0;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        .tab:hover {
+            background: #d5dbdf;
+        }
+        .tab.active {
+            background: #3498db;
+            color: white;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .note {
+            background: #fff9e6;
+            border-left: 4px solid #f39c12;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .note-title {
+            font-weight: bold;
+            color: #d68910;
+            margin-bottom: 5px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        .back-link:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Online Exam Workflows - Interactive Diagrams</h1>
+        <p>Visual representations of online exam processes in the 4SCH School Management System.</p>
+
+        <div class="tabs">
+            <button class="tab active" onclick="showTab('teacher')">👨‍🏫 Teacher Workflow</button>
+            <button class="tab" onclick="showTab('student')">👨‍🎓 Student Workflow</button>
+            <button class="tab" onclick="showTab('admin')">👔 Admin Workflow</button>
+            <button class="tab" onclick="showTab('grading')">📝 Grading Logic</button>
+        </div>
+
+        <!-- Teacher Workflow -->
+        <div id="teacher" class="tab-content active">
+            <h2>Teacher: Creating an Online Exam</h2>
+            <div class="diagram-container">
+                <div class="mermaid">
+graph TD
+    Start([Teacher Starts]) --> Navigate[Navigate to<br/>Exams → Online Exams]
+    Navigate --> Create[Click Create<br/>Online Exam]
+    Create --> Form[Fill Exam Details:<br/>• Title<br/>• Class & Section<br/>• Subject<br/>• Start/End Date<br/>• Duration<br/>• Exam Key]
+    Form --> Submit[Submit Exam]
+    Submit --> ExamCreated{Exam Created<br/>Successfully?}
+    
+    ExamCreated -->|No| Error1[Fix Validation<br/>Errors]
+    Error1 --> Form
+    
+    ExamCreated -->|Yes| AddQ[Add Questions]
+    AddQ --> QMethod{Question<br/>Method?}
+    
+    QMethod -->|From Bank| SelectQ[Select Existing<br/>Questions]
+    QMethod -->|Create New| NewQ[Create New<br/>Questions]
+    QMethod -->|Random| RandomQ[Configure Random<br/>Selection]
+    
+    SelectQ --> AssignMarks[Assign Marks to<br/>Each Question]
+    NewQ --> AssignMarks
+    RandomQ --> AutoMarks[Marks Auto-<br/>Distributed]
+    
+    AssignMarks --> Review[Review Exam<br/>Configuration]
+    AutoMarks --> Review
+    
+    Review --> Publish{Ready to<br/>Publish?}
+    Publish -->|No| Edit[Edit Questions<br/>or Details]
+    Edit --> Review
+    
+    Publish -->|Yes| Announce[Announce to<br/>Students]
+    Announce --> Monitor[Monitor Student<br/>Participation]
+    Monitor --> Results[View Results After<br/>Exam Ends]
+    Results --> End([Complete])
+    
+    style Start fill:#e8f5e9
+    style End fill:#e8f5e9
+    style ExamCreated fill:#fff3e0
+    style Publish fill:#fff3e0
+    style QMethod fill:#e3f2fd
+    style Results fill:#f3e5f5
+                </div>
+            </div>
+
+            <div class="note">
+                <div class="note-title">💡 Key Points for Teachers:</div>
+                <ul>
+                    <li>Questions cannot be edited after students start attempting</li>
+                    <li>Random selection creates unique exams automatically</li>
+                    <li>Share exam key only when exam time arrives</li>
+                    <li>Monitor participation in real-time</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Student Workflow -->
+        <div id="student" class="tab-content">
+            <h2>Student: Taking an Online Exam</h2>
+            <div class="diagram-container">
+                <div class="mermaid">
+graph TD
+    Start([Student Starts]) --> Access[Access 4SCH App/Web]
+    Access --> Navigate[Go to Exams →<br/>Online Exams]
+    Navigate --> ViewList[View Available<br/>Exams]
+    ViewList --> CheckStatus{Exam<br/>Status?}
+    
+    CheckStatus -->|Upcoming| Wait[Wait Until<br/>Start Time]
+    CheckStatus -->|Completed| ViewResult[View Results]
+    CheckStatus -->|Ongoing| Select[Select Exam to<br/>Attempt]
+    
+    Select --> ReadInfo[Read Exam Info:<br/>• Duration<br/>• Total Questions<br/>• Total Marks]
+    ReadInfo --> Ready{Ready to<br/>Start?}
+    
+    Ready -->|No| Wait
+    Ready -->|Yes| ClickStart[Click Start Exam]
+    
+    ClickStart --> EnterKey[Enter 6-Digit<br/>Exam Key]
+    EnterKey --> ValidateKey{Key<br/>Valid?}
+    
+    ValidateKey -->|No| InvalidKey[Show Error:<br/>Invalid Exam Key]
+    InvalidKey --> EnterKey
+    
+    ValidateKey -->|Yes| CheckAttempt{Already<br/>Attempted?}
+    CheckAttempt -->|Yes| AlreadyDone[Error: Already<br/>Submitted]
+    CheckAttempt -->|No| StartTimer[Timer Starts<br/>Status: In Progress]
+    
+    StartTimer --> LoadQ[Load First<br/>Question]
+    LoadQ --> AnswerQ[Answer Question:<br/>• Single Choice<br/>• Multiple Choice]
+    
+    AnswerQ --> Navigate2{Navigation?}
+    Navigate2 -->|Next| NextQ[Go to Next<br/>Question]
+    Navigate2 -->|Previous| PrevQ[Go to Previous<br/>Question]
+    Navigate2 -->|Submit| ReviewAns[Review All<br/>Answers]
+    
+    NextQ --> MoreQ{More<br/>Questions?}
+    PrevQ --> AnswerQ
+    MoreQ -->|Yes| AnswerQ
+    MoreQ -->|No| ReviewAns
+    
+    ReviewAns --> SubmitDecision{Submit<br/>Exam?}
+    SubmitDecision -->|No| AnswerQ
+    SubmitDecision -->|Yes| ConfirmSubmit[Confirm<br/>Submission]
+    
+    ConfirmSubmit --> SaveAnswers[Save All Answers<br/>to Database]
+    SaveAnswers --> UpdateStatus[Update Status:<br/>Completed]
+    UpdateStatus --> CalcMarks[Auto-Calculate<br/>Marks]
+    CalcMarks --> ShowResult[Display Result:<br/>• Marks Obtained<br/>• Total Marks<br/>• Percentage]
+    
+    ShowResult --> End([Complete])
+    
+    Wait --> TimeCheck{Start Time<br/>Reached?}
+    TimeCheck -->|No| Wait
+    TimeCheck -->|Yes| Select
+    
+    StartTimer --> TimeMonitor{Time<br/>Expired?}
+    TimeMonitor -->|Yes| AutoSubmit[Auto-Submit<br/>with Current Answers]
+    AutoSubmit --> SaveAnswers
+    TimeMonitor -->|No| AnswerQ
+    
+    style Start fill:#e8f5e9
+    style End fill:#e8f5e9
+    style ValidateKey fill:#fff3e0
+    style CheckAttempt fill:#fff3e0
+    style SubmitDecision fill:#fff3e0
+    style ShowResult fill:#f3e5f5
+    style InvalidKey fill:#ffebee
+    style AlreadyDone fill:#ffebee
+                </div>
+            </div>
+
+            <div class="note">
+                <div class="note-title">⚠️ Important for Students:</div>
+                <ul>
+                    <li>Only ONE attempt allowed per exam</li>
+                    <li>Timer continues even if you lose connection</li>
+                    <li>Auto-submit happens when time expires</li>
+                    <li>All correct answers must be selected for multiple-choice questions</li>
+                    <li>Results are displayed immediately after submission</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Admin Workflow -->
+        <div id="admin" class="tab-content">
+            <h2>Administrator: Managing Online Exam System</h2>
+            <div class="diagram-container">
+                <div class="mermaid">
+graph TD
+    Start([Admin Starts]) --> Setup[Initial Setup:<br/>• Classes<br/>• Subjects<br/>• Teachers<br/>• Students]
+    Setup --> QBank[Build Question Bank]
+    QBank --> QMethod{Question<br/>Entry Method?}
+    
+    QMethod -->|Manual| CreateQ[Create Questions<br/>One by One]
+    QMethod -->|Bulk Import| ImportQ[Import from<br/>Excel Template]
+    
+    CreateQ --> Organize[Organize by:<br/>• Class<br/>• Subject<br/>• Difficulty]
+    ImportQ --> Organize
+    
+    Organize --> CreateExam{Create<br/>Exam?}
+    CreateExam -->|Teacher Creates| Monitor[Monitor Teacher<br/>Activities]
+    CreateExam -->|Admin Creates| AdminCreate[Create Exam<br/>as Admin]
+    
+    AdminCreate --> ConfigExam[Configure Exam:<br/>• Multiple Classes<br/>• Multiple Sections<br/>• Link Questions]
+    ConfigExam --> Monitor
+    
+    Monitor --> Track[Track System:<br/>• Exam Schedules<br/>• Participation Rates<br/>• Technical Issues]
+    
+    Track --> During[During Exam:<br/>Monitor Real-time]
+    During --> CheckIssues{Issues<br/>Reported?}
+    
+    CheckIssues -->|Yes| Resolve[Resolve:<br/>• Extend Time<br/>• Fix Access<br/>• Support Students]
+    CheckIssues -->|No| Continue[Continue<br/>Monitoring]
+    
+    Resolve --> Continue
+    Continue --> ExamEnds{Exam<br/>Ended?}
+    
+    ExamEnds -->|No| During
+    ExamEnds -->|Yes| Analytics[View Analytics:<br/>• Completion Rates<br/>• Score Distribution<br/>• Performance Trends]
+    
+    Analytics --> Reports[Generate Reports:<br/>• Class-wise<br/>• Subject-wise<br/>• Individual Students]
+    
+    Reports --> Review[Review System<br/>Performance]
+    Review --> Improve[Implement<br/>Improvements]
+    Improve --> End([Complete])
+    
+    style Start fill:#e8f5e9
+    style End fill:#e8f5e9
+    style QMethod fill:#e3f2fd
+    style CheckIssues fill:#fff3e0
+    style Analytics fill:#f3e5f5
+                </div>
+            </div>
+
+            <div class="note">
+                <div class="note-title">🎯 Admin Responsibilities:</div>
+                <ul>
+                    <li>Ensure question bank is well-organized and quality-checked</li>
+                    <li>Monitor system during high-traffic exam periods</li>
+                    <li>Provide technical support to teachers and students</li>
+                    <li>Analyze exam data for insights and improvements</li>
+                    <li>Maintain backup of question banks and exam results</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Grading Logic -->
+        <div id="grading" class="tab-content">
+            <h2>Auto-Grading Logic</h2>
+            <div class="diagram-container">
+                <div class="mermaid">
+graph TD
+    Start([Student Submits<br/>Exam]) --> Retrieve[Retrieve All<br/>Student Answers]
+    Retrieve --> GroupQ[Group Answers<br/>by Question ID]
+    GroupQ --> Loop[For Each Question]
+    
+    Loop --> QType{Question<br/>Type?}
+    
+    QType -->|Single Answer| GetCorrect1[Get Correct<br/>Option ID]
+    QType -->|Multiple Answer| GetCorrectM[Get All Correct<br/>Option IDs]
+    
+    GetCorrect1 --> CheckS[Check Student's<br/>Selected Option]
+    GetCorrectM --> CheckM[Check Student's<br/>Selected Options]
+    
+    CheckS --> MatchS{Student Option<br/>== Correct?}
+    CheckM --> MatchM{All Correct Options<br/>Selected AND<br/>No Wrong Options?}
+    
+    MatchS -->|Yes| AddMarks1[Add Question<br/>Marks to Total]
+    MatchS -->|No| AddZero1[Add 0 to Total]
+    
+    MatchM -->|Yes| AddMarksM[Add Question<br/>Marks to Total]
+    MatchM -->|No| AddZeroM[Add 0 to Total]
+    
+    AddMarks1 --> NextQ{More<br/>Questions?}
+    AddZero1 --> NextQ
+    AddMarksM --> NextQ
+    AddZeroM --> NextQ
+    
+    NextQ -->|Yes| Loop
+    NextQ -->|No| CalcTotal[Calculate Total:<br/>Sum All Marks]
+    
+    CalcTotal --> CalcPercent[Calculate Percentage:<br/>Obtained/Total × 100]
+    CalcPercent --> DetermineGrade{Grading<br/>Enabled?}
+    
+    DetermineGrade -->|Yes| AssignGrade[Assign Grade:<br/>Based on Percentage]
+    DetermineGrade -->|No| SaveResult[Save Result to<br/>Database]
+    
+    AssignGrade --> SaveResult
+    SaveResult --> DisplayResult[Display to Student:<br/>• Marks Obtained<br/>• Total Marks<br/>• Percentage<br/>• Grade optional]
+    
+    DisplayResult --> End([Complete])
+    
+    style Start fill:#e8f5e9
+    style End fill:#e8f5e9
+    style MatchS fill:#fff3e0
+    style MatchM fill:#fff3e0
+    style AddMarks1 fill:#c8e6c9
+    style AddMarksM fill:#c8e6c9
+    style AddZero1 fill:#ffcdd2
+    style AddZeroM fill:#ffcdd2
+                </div>
+            </div>
+
+            <h2>Grading Examples</h2>
+            <div class="diagram-container">
+                <div class="mermaid">
+graph LR
+    subgraph "Example 1: Single Answer Question"
+        Q1[Question: What is 2+2?<br/>Marks: 5] --> O1[Options:<br/>A: 3<br/>B: 4 ✓<br/>C: 5<br/>D: 6]
+        O1 --> S1A[Student selects: B]
+        O1 --> S1B[Student selects: A]
+        S1A --> R1A[Result: 5 marks ✓]
+        S1B --> R1B[Result: 0 marks ✗]
+    end
+    
+    subgraph "Example 2: Multiple Answer Question"
+        Q2[Question: Select prime numbers<br/>Marks: 10] --> O2[Options:<br/>A: 2 ✓<br/>B: 4<br/>C: 5 ✓<br/>D: 6]
+        O2 --> S2A[Student selects: A, C]
+        O2 --> S2B[Student selects: A only]
+        O2 --> S2C[Student selects: A, C, D]
+        S2A --> R2A[Result: 10 marks ✓<br/>All correct, no wrong]
+        S2B --> R2B[Result: 0 marks ✗<br/>Missing correct answer C]
+        S2C --> R2C[Result: 0 marks ✗<br/>Included wrong answer D]
+    end
+    
+    style Q1 fill:#e3f2fd
+    style Q2 fill:#e3f2fd
+    style R1A fill:#c8e6c9
+    style R1B fill:#ffcdd2
+    style R2A fill:#c8e6c9
+    style R2B fill:#ffcdd2
+    style R2C fill:#ffcdd2
+                </div>
+            </div>
+
+            <div class="note">
+                <div class="note-title">📐 Grading Rules:</div>
+                <ul>
+                    <li><strong>Single Answer:</strong> Must select the ONE correct option to get marks</li>
+                    <li><strong>Multiple Answer:</strong> Must select ALL correct options AND no wrong options</li>
+                    <li><strong>Partial Credit:</strong> NOT awarded - it's all or nothing per question</li>
+                    <li><strong>Unanswered:</strong> Questions not answered receive 0 marks</li>
+                    <li><strong>Instant Calculation:</strong> Results are available immediately after submission</li>
+                </ul>
+            </div>
+        </div>
+
+        <a href="../guides/online-exams" class="back-link">← Back to Online Exams Guide</a>
+    </div>
+
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            }
+        });
+
+        function showTab(tabName) {
+            // Hide all tab contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+            
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

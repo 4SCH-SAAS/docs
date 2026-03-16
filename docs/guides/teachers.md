@@ -438,6 +438,12 @@ This workflow shows you the entire process from creating an assignment to publis
 
 For formal assessments like class tests, midterms, and final exams, you'll enter grades in the **Gradebook**.
 
+:::tip Exam Management
+For detailed guidance on creating and managing exams:
+- **<Link to="/guides/online-exams">Online Exams</Link>** - Digital MCQ exams with auto-grading
+- **<Link to="/guides/offline-exams">Offline Exams</Link>** - Traditional paper-based exams with manual mark entry
+:::
+
 ### Understanding Your Gradebook
 
 The gradebook is organized by:

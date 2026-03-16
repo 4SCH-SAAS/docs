@@ -10,14 +10,14 @@ keywords: [FAQ, frequently asked questions, help, login issues, password reset, 
 
 Access & Accounts:
 - I forgot my password. What do I do?
-  - **Students:** Use the self-service password reset at [ngs.4sch.com](https://ngs.4sch.com). You'll need your School Code, GR Number, and Date of Birth (dd-mm-yyyy format). See the [Student Guide](/guides/student-guide#forgot-your-password) for details.
+  - **Students:** Use the self-service password reset on the mobile app or web portal at [ngs.4sch.com](https://ngs.4sch.com). You'll need your School Code, GR Number, and Date of Birth (dd-mm-yyyy format). See the [Student Guide](/guides/student-guide#forgot-your-password) for details.
   - **Teachers/Parents/Staff:** Use "Forgot Password" on the sign-in page. If SSO is enabled, reset via your identity provider or contact the school office.
 - How do students access 4SCH?
   - Students can access 4SCH via the web portal at [https://ngs.4sch.com](https://ngs.4sch.com) or through the mobile app (Android/iOS). Both provide full access to assignments, grades, timetables, and study materials.
 - What login credentials do students need?
   - Students need three pieces of information provided by the school: **School Code** (unique identifier for your school), **GR Number** (General Roll Number - student registration number), and **Password** (initial password from school). These same credentials are used for both web portal and mobile app login.
 - What information do students need to reset their password?
-  - Students need three pieces of information: **School Code** (provided by school), **GR Number** (General Roll Number on student ID), and **Date of Birth** in dd-mm-yyyy format (e.g., 15-08-2010). This self-service feature is available on the web portal.
+  - Students need three pieces of information: **School Code** (provided by school), **GR Number** (General Roll Number on student ID), and **Date of Birth** in dd-mm-yyyy format (e.g., 15-08-2010). This self-service feature is available on both the mobile app and web portal.
 - Can multiple guardians access one student?
   - Yes. Link multiple guardians to a Student Profile from Admin Console → Students → Guardians.
 

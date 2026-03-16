@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline Exam Workflows - 4SCH Interactive Diagrams</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f7fa;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 40px;
+            padding: 10px;
+            background: #ecf0f1;
+            border-left: 4px solid #3498db;
+        }
+        .diagram-container {
+            margin: 30px 0;
+            padding: 20px;
+            background: #fafafa;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+            border-bottom: 2px solid #ecf0f1;
+        }
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            background: #ecf0f1;
+            border: none;
+            border-radius: 8px 8px 0 0;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        .tab:hover {
+            background: #d5dbdf;
+        }
+        .tab.active {
+            background: #3498db;
+            color: white;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .note {
+            background: #fff9e6;
+            border-left: 4px solid #f39c12;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .note-title {
+            font-weight: bold;
+            color: #d68910;
+            margin-bottom: 5px;
+        }
+        .info {
+            background: #e8f4fd;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .info-title {
+            font-weight: bold;
+            color: #2980b9;
+            margin-bottom: 5px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        .back-link:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Offline Exam Workflows - Interactive Diagrams</h1>
+        <p>Visual representations of traditional exam management processes in the 4SCH School Management System.</p>
+
+        <div class="tabs">
+            <button class="tab active" onclick="showTab('admin')">👔 Admin Workflow</button>
+            <button class="tab" onclick="showTab('teacher')">👨‍🏫 Teacher Workflow</button>
+            <button class="tab" onclick="showTab('student')">👨‍🎓 Student Workflow</button>
+            <button class="tab" onclick="showTab('calculation')">📐 Calculation Logic</button>
+        </div>
+
+        <!-- Admin Workflow -->
+        <div id="admin" class="tab-content active">
+            <h2>Administrator: Creating & Managing Offline Exams</h2>
+            <div class="diagram-container">
+                <div class="mermaid">
+graph TD
+    Start([Admin Starts]) --> CreateExam[Navigate to<br/>Exams → Offline Exams]
+    CreateExam --> FillForm[Fill Exam Details:<br/>• Exam Name<br/>• Class<br/>• Session Year<br/>• Start Date<br/>• End Date<br/>• Publish: No]
+    
+    FillForm --> SubmitExam[Submit Exam]
+    SubmitExam --> ExamCreated{Exam Created<br/>Successfully?}
+    
+    ExamCreated -->|No| FixErrors[Fix Validation<br/>Errors]
+    FixErrors --> FillForm
+    
+    ExamCreated -->|Yes| CreateTimetable[Create Timetable]
+    CreateTimetable --> AddSubject[Add Subject:<br/>• Subject Name<br/>• Date<br/>• Start Time<br/>• End Time<br/>• Total Marks<br/>• Passing Marks]
+    
+    AddSubject --> SaveSubject[Save Subject to<br/>Timetable]
+    SaveSubject --> MoreSubjects{More Subjects<br/>to Add?}
+    
+    MoreSubjects -->|Yes| AddSubject
+    MoreSubjects -->|No| TimetableComplete[Timetable Complete]
+    
+    TimetableComplete --> ConductExams[Exams Conducted<br/>Offline in School]
+    ConductExams --> TeacherEval[Teachers Evaluate<br/>Answer Papers]
+    
+    TeacherEval --> MonitorMarks[Monitor Mark Entry:<br/>Check Progress by Subject]
+    MonitorMarks --> AllEntered{All Subjects<br/>Have Marks?}
+    
+    AllEntered -->|No| RemindTeachers[Send Reminders<br/>to Teachers]
+    RemindTeachers --> MonitorMarks
+    
+    AllEntered -->|Yes| ReviewResults[Review Results:<br/>• Check for Anomalies<br/>• Verify Calculations<br/>• Sample Validation]
+    
+    ReviewResults --> IssuesFound{Issues<br/>Found?}
+    IssuesFound -->|Yes| ContactTeacher[Contact Teacher<br/>for Correction]
+    ContactTeacher --> ReviewResults
+    
+    IssuesFound -->|No| PublishReady[Ready to Publish]
+    PublishReady --> PublishResults[Click Publish Results]
+    PublishResults --> ConfirmPublish[Confirm Publication]
+    
+    ConfirmPublish --> ResultsLive[Results Visible to<br/>Students & Parents]
+    ResultsLive --> HandleQueries[Handle Result<br/>Queries]
+    
+    HandleQueries --> NeedCorrection{Correction<br/>Needed?}
+    NeedCorrection -->|Yes| Unpublish[Unpublish Results]
+    Unpublish --> EditMarks[Teachers Edit Marks]
+    EditMarks --> ReviewResults
+    
+    NeedCorrection -->|No| ExportResults[Export Results<br/>for Records]
+    ExportResults --> End([Complete])
+    
+    style Start fill:#e8f5e9
+    style End fill:#e8f5e9
+    style ExamCreated fill:#fff3e0
+    style AllEntered fill:#fff3e0
+    style IssuesFound fill:#fff3e0
+    style NeedCorrection fill:#fff3e0
+    style ResultsLive fill:#f3e5f5
+                </div>
+            </div>
+
+            <div class="note">
+                <div class="note-title">💡 Key Points for Administrators:</div>
+                <ul>
+                    <li>Create exam structure before building timetable</li>
+                    <li>Set "Publish: No" initially - publish only after verification</li>
+                    <li>Allow 2-3 weeks between exam start and end dates</li>
+                    <li>Monitor mark entry progress actively</li>
+                    <li>Review results thoroughly before publishing</li>
+                    <li>Can unpublish to make corrections if needed</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Teacher Workflow -->
+        <div id="teacher" class="tab-content">
+            <h2>Teacher: Mark Entry & Management</h2>
+            <div class="diagram-container">
+                <div class="mermaid">
+graph TD
+    Start([Teacher Starts]) --> ViewTimetable[View Exam Timetable:<br/>Check Dates & Times]
+    ViewTimetable --> PrepareExam[Prepare Question Paper]
+    PrepareExam --> ConductExam[Conduct Exam<br/>on Scheduled Date]
+    
+    ConductExam --> CollectPapers[Collect Answer Sheets]
+    CollectPapers --> EvaluatePapers[Evaluate Papers<br/>Using Marking Scheme]
+    
+    EvaluatePapers --> CalculateMarks[Calculate Total Marks<br/>for Each Student]
+    CalculateMarks --> RecordMarks[Record in Physical<br/>Mark Sheet Optional]
+    
+    RecordMarks --> LoginSystem[Login to 4SCH]
+    LoginSystem --> NavigateEntry[Navigate to:<br/>Exams → Mark Entry]
+    
+    NavigateEntry --> SelectExam[Select Exam<br/>from Dropdown]
+    SelectExam --> SelectSubject[Select Your Subject]
+    
+    SelectSubject --> StudentList[Student List<br/>Appears]
+    StudentList --> EnterMarks[Enter Marks for<br/>Each Student]
+    
+    EnterMarks --> EnterOne[Click Obtained Marks Field]
+    EnterOne --> TypeMarks[Type Marks Number]
+    TypeMarks --> ValidateMarks{Marks<br/>Valid?}
+    
+    ValidateMarks -->|Exceeds Total| ShowError[Error: Cannot Exceed<br/>Total Marks]
+    ShowError --> TypeMarks
+    
+    ValidateMarks -->|Valid| AutoCalc[System Auto-Calculates:<br/>• Percentage<br/>• Pass/Fail<br/>• Grade]
+    
+    AutoCalc --> TabNext[Press Tab to<br/>Next Student]
+    TabNext --> MoreStudents{More Students<br/>to Enter?}
+    
+    MoreStudents -->|Yes| EnterOne
+    MoreStudents -->|No| AddComments[Add Comments<br/>for Special Cases]
+    
+    AddComments --> ReviewEntries[Review All Entries]
+    ReviewEntries --> DoubleCheck{All Entries<br/>Correct?}
+    
+    DoubleCheck -->|No| CorrectErrors[Correct Wrong<br/>Entries]
+    CorrectErrors --> ReviewEntries
+    
+    DoubleCheck -->|Yes| SaveMarks[Click Save Marks]
+    SaveMarks --> Confirmation[Success: Marks Saved<br/>for Subject]
+    
+    Confirmation --> InformAdmin[Inform Admin<br/>Marks Complete]
+    InformAdmin --> WaitPublish[Wait for Admin<br/>to Publish Results]
+    
+    WaitPublish --> ResultsPublished{Results<br/>Published?}
+    ResultsPublished -->|Yes| HandleQueries[Handle Student<br/>Queries]
+    
+    HandleQueries --> NeedEdit{Correction<br/>Needed?}
+    NeedEdit -->|Yes| RequestUnpublish[Request Admin<br/>to Unpublish]
+    RequestUnpublish --> EditMarks[Edit Marks in System]
+    EditMarks --> SaveMarks
+    
+    NeedEdit -->|No| End([Complete])
+    ResultsPublished -->|No| WaitPublish
+    
+    style Start fill:#e8f5e9
+    style End fill:#e8f5e9
+    style ValidateMarks fill:#fff3e0
+    style DoubleCheck fill:#fff3e0
+    style NeedEdit fill:#fff3e0
+    style Confirmation fill:#c8e6c9
+    style ShowError fill:#ffcdd2
+                </div>
+            </div>
+
+            <div class="note">
+                <div class="note-title">⚠️ Important for Teachers:</div>
+                <ul>
+                    <li>Evaluate papers within 3-5 days while still fresh</li>
+                    <li>Enter marks within 1 week of evaluation</li>
+                    <li>Use Tab key for faster navigation between students</li>
+                    <li>System validates: marks cannot exceed total marks</li>
+                    <li>Add comments for absences or special cases</li>
+                    <li>Double-check entries before saving</li>
+                    <li>Save frequently - after every 10-15 students</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Student Workflow -->
+        <div id="student" class="tab-content">
+            <h2>Student: Viewing Timetable & Results</h2>
+            <div class="diagram-container">
+                <div class="mermaid">
+graph TD
+    Start([Student Starts]) --> AccessApp[Open 4SCH App<br/>or Web Portal]
+    AccessApp --> Login[Login with<br/>Credentials]
+    Login --> Dashboard[Navigate to<br/>Dashboard]
+    
+    Dashboard --> Phase{What to<br/>Check?}
+    
+    Phase -->|Before Exams| ViewTimetable[Go to Exams →<br/>Exam Timetable]
+    ViewTimetable --> SeeTimetable[View Subjects with:<br/>• Date<br/>• Start Time<br/>• End Time<br/>• Total Marks<br/>• Passing Marks]
+    
+    SeeTimetable --> PlanStudy[Plan Study Schedule<br/>Based on Dates]
+    PlanStudy --> PrepareExams[Prepare for Exams]
+    PrepareExams --> TakeExams[Take Exams on<br/>Scheduled Dates]
+    
+    TakeExams --> WaitResults[Wait for Results<br/>to be Published]
+    
+    Phase -->|After Exams| CheckResults[Go to Exams →<br/>Exam Results]
+    
+    WaitResults --> CheckPublish{Results<br/>Published?}
+    CheckPublish -->|No| WaitMore[Wait for<br/>Notification]
+    WaitMore --> CheckPublish
+    
+    CheckPublish -->|Yes| CheckResults
+    CheckResults --> ViewList[View List of<br/>Published Exams]
+    
+    ViewList --> SelectExam[Select Exam<br/>to View]
+    SelectExam --> ViewOverall[View Overall Result:<br/>• Total Marks<br/>• Obtained Marks<br/>• Percentage<br/>• Grade<br/>• Pass/Fail Status]
+    
+    ViewOverall --> ViewSubjects[View Subject-wise<br/>Breakdown]
+    ViewSubjects --> SubjectDetails[For Each Subject:<br/>• Subject Name<br/>• Total Marks<br/>• Passing Marks<br/>• Obtained Marks<br/>• Percentage<br/>• Pass/Fail<br/>• Grade<br/>• Teacher Comments]
+    
+    SubjectDetails --> AnalyzePerf[Analyze Performance:<br/>• Strong Subjects<br/>• Weak Subjects<br/>• Areas to Improve]
+    
+    AnalyzePerf --> CheckStatus{Overall<br/>Status?}
+    
+    CheckStatus -->|Pass| Celebrate[Celebrate Success!<br/>Plan to Maintain]
+    CheckStatus -->|Fail| IdentifyWeak[Identify Failed<br/>Subjects]
+    
+    IdentifyWeak --> PlanImprovement[Create Improvement<br/>Plan]
+    PlanImprovement --> SeekHelp[Seek Teacher Help<br/>for Weak Areas]
+    
+    Celebrate --> ShareParents[Share Results<br/>with Parents]
+    SeekHelp --> ShareParents
+    
+    ShareParents --> QueryMarks{Question<br/>About Marks?}
+    QueryMarks -->|Yes| ContactTeacher[Contact Subject<br/>Teacher]
+    ContactTeacher --> RequestReview[Request Mark<br/>Verification]
+    
+    QueryMarks -->|No| PrepareNext[Prepare for<br/>Next Exam]
+    RequestReview --> PrepareNext
+    PrepareNext --> End([Complete])
+    
+    style Start fill:#e8f5e9
+    style End fill:#e8f5e9
+    style CheckPublish fill:#fff3e0
+    style CheckStatus fill:#fff3e0
+    style QueryMarks fill:#fff3e0
+    style Celebrate fill:#c8e6c9
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="info-title">💡 Tips for Students:</div>
+                <ul>
+                    <li>Check timetable 2-3 weeks before exams start</li>
+                    <li>Create a study schedule based on exam dates</li>
+                    <li>Note passing marks - aim to exceed them</li>
+                    <li>Results appear only after admin publishes</li>
+                    <li>You'll receive notification when results are ready</li>
+                    <li>Subject-wise breakdown helps identify weak areas</li>
+                    <li>Contact teacher if you have questions about marks</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Calculation Logic -->
+        <div id="calculation" class="tab-content">
+            <h2>Result Calculation Logic</h2>
+            <div class="diagram-container">
+                <div class="mermaid">
+graph TD
+    Start([Marks Entered<br/>for All Subjects]) --> ProcessStudent[For Each Student]
+    ProcessStudent --> GetSubjects[Get All Subjects<br/>in Exam]
+    
+    GetSubjects --> LoopSubject[For Each Subject]
+    LoopSubject --> GetMarks[Get:<br/>• Total Marks<br/>• Passing Marks<br/>• Obtained Marks]
+    
+    GetMarks --> CalcSubjPct[Calculate Subject %:<br/>Obtained / Total × 100]
+    CalcSubjPct --> CheckPass{Obtained ≥<br/>Passing?}
+    
+    CheckPass -->|Yes| MarkPass[Subject Status:<br/>PASS]
+    CheckPass -->|No| MarkFail[Subject Status:<br/>FAIL]
+    
+    MarkPass --> AssignGrade[Assign Grade Based<br/>on Percentage]
+    MarkFail --> AssignGrade
+    
+    AssignGrade --> NextSubject{More<br/>Subjects?}
+    NextSubject -->|Yes| LoopSubject
+    NextSubject -->|No| CalcOverall[Calculate Overall Result]
+    
+    CalcOverall --> SumMarks[Sum All:<br/>• Total Possible Marks<br/>• Total Obtained Marks]
+    SumMarks --> CalcOverallPct[Overall % =<br/>Total Obtained / Total Possible × 100]
+    
+    CalcOverallPct --> AssignOverallGrade[Assign Overall Grade<br/>Based on Percentage]
+    AssignOverallGrade --> CheckAllPass{All Subjects<br/>Passed?}
+    
+    CheckAllPass -->|Yes| OverallPass[Overall Status:<br/>PASS]
+    CheckAllPass -->|No| OverallFail[Overall Status:<br/>FAIL]
+    
+    OverallPass --> SaveResult[Save Complete Result:<br/>• Subject-wise Details<br/>• Overall Summary<br/>• Grades<br/>• Status]
+    OverallFail --> SaveResult
+    
+    SaveResult --> NextStudent{More<br/>Students?}
+    NextStudent -->|Yes| ProcessStudent
+    NextStudent -->|No| Complete[All Results<br/>Calculated]
+    
+    Complete --> ReadyPublish[Ready for<br/>Admin to Publish]
+    ReadyPublish --> End([Complete])
+    
+    style Start fill:#e8f5e9
+    style End fill:#e8f5e9
+    style CheckPass fill:#fff3e0
+    style CheckAllPass fill:#fff3e0
+    style OverallPass fill:#c8e6c9
+    style OverallFail fill:#ffcdd2
+                </div>
+            </div>
+
+            <h2>Grade Assignment Examples</h2>
+            <div class="diagram-container">
+                <div class="mermaid">
+graph LR
+    subgraph "Example 1: All Subjects Passed"
+        E1[Student: John Doe] --> S1[Math: 75/100 = 75% = B = Pass]
+        E1 --> S2[English: 65/80 = 81% = A = Pass]
+        E1 --> S3[Science: 80/100 = 80% = A = Pass]
+        E1 --> S4[Social: 55/80 = 69% = C = Pass]
+        
+        S1 --> R1[Total: 275/360]
+        S2 --> R1
+        S3 --> R1
+        S4 --> R1
+        
+        R1 --> F1[Percentage: 76.39%<br/>Grade: B<br/>Status: PASS ✓]
+    end
+    
+    subgraph "Example 2: Failed in One Subject"
+        E2[Student: Jane Smith] --> S5[Math: 28/100 = 28% = F = Fail ✗]
+        E2 --> S6[English: 70/80 = 88% = A = Pass]
+        E2 --> S7[Science: 85/100 = 85% = A = Pass]
+        E2 --> S8[Social: 60/80 = 75% = B = Pass]
+        
+        S5 --> R2[Total: 243/360]
+        S6 --> R2
+        S7 --> R2
+        S8 --> R2
+        
+        R2 --> F2[Percentage: 67.5%<br/>Grade: C<br/>Status: FAIL ✗<br/>Failed in: Math]
+    end
+    
+    style F1 fill:#c8e6c9
+    style F2 fill:#ffcdd2
+    style S5 fill:#ffcdd2
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="info-title">📐 Calculation Rules:</div>
+                <ul>
+                    <li><strong>Subject Pass:</strong> Obtained marks ≥ Passing marks</li>
+                    <li><strong>Subject Percentage:</strong> (Obtained / Total) × 100</li>
+                    <li><strong>Overall Pass:</strong> Must pass in ALL subjects</li>
+                    <li><strong>Overall Percentage:</strong> Sum of all obtained / Sum of all total × 100</li>
+                    <li><strong>Grade Assignment:</strong> Based on percentage ranges (school-specific)</li>
+                    <li><strong>Typical Grades:</strong> A+ (90-100%), A (80-89%), B (70-79%), C (60-69%), D (50-59%), E (35-49%), F (0-34%)</li>
+                </ul>
+            </div>
+
+            <div class="note">
+                <div class="note-title">⚠️ Important Notes:</div>
+                <ul>
+                    <li>Even if overall percentage is high, failing ANY subject = Overall FAIL</li>
+                    <li>Grades are auto-calculated - teachers don't assign manually</li>
+                    <li>Passing marks can vary by subject (usually 35-40% of total)</li>
+                    <li>Some schools use different grading scales - check with admin</li>
+                </ul>
+            </div>
+        </div>
+
+        <a href="../guides/offline-exams" class="back-link">← Back to Offline Exams Guide</a>
+    </div>
+
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            }
+        });
+
+        function showTab(tabName) {
+            // Hide all tab contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+            
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
