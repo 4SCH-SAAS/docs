@@ -215,11 +215,15 @@ From the Online Exams list, you can see:
    - Percentage
    - Submission timestamp
 
-#### Downloading Reports
+#### Reports and Export
 
-Export exam results for record-keeping or analysis:
+4SCH provides:
+- **Results list** (per student: score, percentage, submission time)
+- **Online exam report** (summary analytics, depending on school settings)
+
+To export results for record-keeping:
 - Click **Export** to download CSV/Excel
-- Contains all student scores and statistics
+- Contains student scores and basic statistics
 
 ### Managing Exams
 
