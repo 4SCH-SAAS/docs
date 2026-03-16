@@ -841,6 +841,62 @@ Don't wait until the last minute! Submit assignments at least a day before the d
 
 ---
 
+## <span className="heading-icon"><MessagingIcon size={18} /></span> Student Diary (Behavior & Performance Notes) {#student-diary}
+
+Your teachers use the Student Diary to track your behavior and performance—both positive achievements and areas for improvement. You and your parents can view all diary notes written about you.
+
+### Viewing Your Diary Notes
+
+**Step 1: Go to Student Diary**
+1. Open the app or website
+2. Navigate to **Diary** or **Student Diary** from the menu
+
+**Step 2: View Your Notes**
+You'll see a list of all diary notes with:
+- **Date** — When the note was written
+- **Category** — Type of note (e.g., "Excellent Behavior", "Late to Class")
+- **Title** — Brief summary
+- **Teacher** — Who wrote the note
+- **Subject** — If related to a specific subject
+
+**Positive vs Negative:**
+- ✅ **Positive notes** — Achievements, good behavior, participation
+- ⚠️ **Negative notes** — Discipline issues, warnings, areas to improve
+
+**Step 3: View Full Details**
+- Tap/click on any note to see the full message and context
+
+### Filtering Your Diary
+
+Use filters to find specific notes:
+- **By Category** — e.g., show only "Excellent Performance" notes
+- **By Date Range** — Last week, this month, etc.
+- **By Subject** — See notes related to specific subjects
+
+### Understanding Diary Categories
+
+Your teachers create categories to organize notes. Common categories include:
+
+**Positive:**
+- Outstanding Performance
+- Excellent Participation
+- Homework Excellence
+- Helping Classmates
+- Leadership
+
+**Negative:**
+- Late to Class
+- Incomplete Homework
+- Disruptive Behavior
+- Needs Improvement
+
+:::tip What to do with diary notes
+- **Positive notes:** Share with your parents! They're proud of your achievements
+- **Negative notes:** Talk to your teacher or parent about how to improve. Don't ignore them—use them as learning opportunities.
+:::
+
+---
+
 ## <span className="heading-icon"><GradesIcon size={18} /></span> Checking Your Grades {#checking-your-grades}
 
 See how you're performing in all your subjects.

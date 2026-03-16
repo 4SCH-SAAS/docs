@@ -477,6 +477,26 @@ Define what each user role can access:
 
 1. Go to **Settings → Roles & Permissions**
 
+### Student Diary Management
+
+The **Student Diary** feature enables teachers to track student behavior and performance. As an admin, you control:
+
+**Permissions:**
+- `student-diary-create` — Allow teachers to create diary notes and categories
+- `student-diary-edit` — Allow teachers to edit diary categories
+- `student-diary-delete` — Allow teachers to delete diary notes/categories
+
+**Key Admin Functions:**
+- **Restore deleted diary notes** — If a teacher accidentally deletes a note, you can restore it from trash
+- **Manage categories school-wide** — Review and organize diary categories created by teachers
+- **View all diary notes** — Monitor how teachers are using the diary feature
+
+:::tip Best Practice
+Encourage teachers to balance positive and negative diary entries. Diary should be used for **recognition** as much as for **discipline**.
+:::
+
+---
+
 ### Modules & Feature Access (Missing Menus) {#modules-feature-access}
 
 If a user cannot see a menu (or receives a "feature not available" style error), it is usually due to one of these:
