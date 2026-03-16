@@ -139,12 +139,20 @@ Assignments help you track student progress between major exams. Here's how to c
    - **Instructions:** Write clear instructions for students
    - **Due Date:** When should they submit?
    - **Total Points:** e.g., 20 marks, 100 points
-   - **Submission Type:** File upload, text entry, or both
+   - **Submission Type:** File upload and/or URL submission (students can upload files, paste a link, or both)
 
 3. **Optional Settings:**
-   - **Attach files:** Add worNGNeets, rubrics, or reference materials
-   - **Late submission:** Allow or block late submissions
-   - **Group assignment:** Let students work in groups
+   - **Attach files:** Add worksheets, rubrics, or reference materials
+   - **Resubmission:** Allow resubmission (only applies if you later *reject* a submission)
+   - **Extra Days for Resubmission:** Optional grace period students get after rejection
+
+:::note How resubmission works in 4SCH
+A student can only resubmit if:
+- you set **Resubmission = enabled** on the assignment, and
+- you **Reject** their submission.
+
+If they were already accepted, they cannot resubmit.
+:::
 
 4. Click **Create Assignment**
 
@@ -158,10 +166,14 @@ Assignments help you track student progress between major exams. Here's how to c
 
 1. Go to **Assignments** → Select the assignment
 2. You'll see a list of students with their submission status:
-   - ✅ **Submitted** — Student has turned in work
-   - ⏰ **Late** — Submitted after the due date
+   - ✅ **Submitted** — Student has turned in work (awaiting review)
    - ❌ **Not Submitted** — No submission yet
-   - 📝 **Graded** — You've already graded this
+   - ✅ **Accepted** — You accepted the submission (optional points + feedback)
+   - ❌ **Rejected** — You rejected the submission (student may resubmit if allowed)
+
+:::tip About “Late”
+The backend stores the submission time; whether it is labeled **Late** is a UI feature (based on due date). Even if late submissions are shown, you can still accept/reject and grade them.
+:::
 
 3. Click on a student's name to view their submission
 

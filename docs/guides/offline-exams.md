@@ -14,7 +14,7 @@ Offline Exams in 4SCH manage traditional paper-based examinations - from schedul
 
 :::tip Quick Access
 - 📋 **<Link to="/guides/online-exams">Online Exams Guide</Link>** - For digital MCQ-based exams
-- 📊 **[Interactive Workflow Diagrams](https://docs.4sch.com/interactive-diagrams/offline-exam-workflows.html)** - Visual flowcharts for all roles
+- 📊 **[Interactive Workflow Diagrams](pathname:///interactive-diagrams/offline-exam-workflows.html)** - Visual flowcharts for all roles
 - 🚀 **<Link to="/guides/offline-exams-quick-reference">Quick Reference Guide</Link>** - Cheat sheet for fast access
 :::
 

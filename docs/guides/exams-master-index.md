@@ -54,7 +54,7 @@ Comprehensive documentation for managing all types of exams in 4SCH - from digit
 - **<Link to="/guides/online-exams-quick-reference-printable">Printable Quick Reference</Link>** - PDF-ready version for printing
 
 **Visual Resources:**
-- **[Interactive Workflow Diagrams](https://docs.4sch.com/interactive-diagrams/online-exam-workflows.html)** - Visual flowcharts
+- **[Interactive Workflow Diagrams](pathname:///interactive-diagrams/online-exam-workflows.html)** - Visual flowcharts
   - Teacher workflow: Exam creation process
   - Student workflow: Taking exams
   - Admin workflow: System management
@@ -75,7 +75,7 @@ Comprehensive documentation for managing all types of exams in 4SCH - from digit
 - **<Link to="/guides/offline-exams-quick-reference">Offline Exams Quick Reference</Link>** - Fast-access guide
 
 **Visual Resources:**
-- **[Interactive Workflow Diagrams](https://docs.4sch.com/interactive-diagrams/offline-exam-workflows.html)** - Visual flowcharts
+- **[Interactive Workflow Diagrams](pathname:///interactive-diagrams/offline-exam-workflows.html)** - Visual flowcharts
   - Admin workflow: Exam and timetable creation
   - Teacher workflow: Mark entry process
   - Student workflow: Viewing results
