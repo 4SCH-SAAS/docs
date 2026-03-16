@@ -1,1 +1,494 @@
-Tool call argument 'initial_content' pruned from message history.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive workflow diagrams for school administrator initial setup in 4SCH School Management System">
+    <meta name="keywords" content="school setup, admin configuration, academic sessions, class management, 4SCH">
+    <title>Admin School Setup - 4SCH Interactive Diagrams</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #e0e0e0;
+            flex-wrap: wrap;
+        }
+        .tab {
+            padding: 12px 24px;
+            background: #f8f9fa;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            color: #555;
+            border-radius: 4px 4px 0 0;
+            transition: all 0.3s ease;
+        }
+        .tab:hover {
+            background: #e9ecef;
+            color: #2c3e50;
+        }
+        .tab.active {
+            background: #3498db;
+            color: white;
+        }
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.3s ease-in;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .mermaid {
+            margin: 20px 0;
+            background: white;
+            padding: 20px;
+            border-radius: 4px;
+        }
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .note strong {
+            color: #856404;
+        }
+        .tip {
+            background: #d1ecf1;
+            border-left: 4px solid #17a2b8;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .tip strong {
+            color: #0c5460;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+        .back-link:hover {
+            background: #2980b9;
+        }
+        /* Screen reader only content */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+        /* Focus styles for keyboard navigation */
+        .tab:focus {
+            outline: 3px solid #3498db;
+            outline-offset: 2px;
+        }
+        .back-link:focus {
+            outline: 3px solid #3498db;
+            outline-offset: 2px;
+        }
+        /* Skip to content link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #3498db;
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+        @media print {
+            .tabs, .back-link, .skip-link {
+                display: none;
+            }
+            .tab-content {
+                display: block !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <main class="container" id="main-content" role="main">
+        <h1>⚙️ Admin School Setup - Interactive Diagrams</h1>
+        <p>Visual representations of initial school setup workflows for administrators in the 4SCH School Management System.</p>
+        <div class="sr-only" role="status" aria-live="polite" id="tab-announcement"></div>
+
+        <nav class="tabs" role="tablist" aria-label="Setup workflow views">
+            <button class="tab active" role="tab" aria-selected="true" aria-controls="initial" id="tab-initial" onclick="showTab(event, 'initial')">🎯 Initial Setup</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="academic" id="tab-academic" onclick="showTab(event, 'academic')">📚 Academic Structure</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="users" id="tab-users" onclick="showTab(event, 'users')">👥 User Management</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="fees" id="tab-fees" onclick="showTab(event, 'fees')">💰 Fee Structure</button>
+        </nav>
+
+        <!-- Initial Setup Workflow -->
+        <article id="initial" class="tab-content active" role="tabpanel" aria-labelledby="tab-initial" tabindex="0">
+            <h2>Initial School Setup Process</h2>
+            <div class="mermaid">
+flowchart TD
+    Start([New School Account Created]) --> Login[Admin First Login]
+    Login --> SchoolInfo[Configure School Information]
+    
+    SchoolInfo --> BasicInfo[Enter Basic Info:<br/>• School Name<br/>• Address<br/>• Contact<br/>• Logo]
+    
+    BasicInfo --> SetupSession[Create Academic Session]
+    SetupSession --> SessionDetails[Session Details:<br/>• Name: 2024/2025<br/>• Start Date<br/>• End Date<br/>• Mark as Current]
+    
+    SessionDetails --> CreateTerms[Create Terms/Semesters]
+    CreateTerms --> TermDetails[For Each Term:<br/>• Name: First Term<br/>• Start & End Dates<br/>• Mark Current Term]
+    
+    TermDetails --> CheckComplete{Basic Setup<br/>Complete?}
+    CheckComplete -->|Yes| NextPhase[Proceed to Academic Structure]
+    CheckComplete -->|No| ReviewInfo[Review Missing Information]
+    ReviewInfo --> SchoolInfo
+    
+    NextPhase --> End([Ready for Academic Setup])
+    
+    style Start fill:#e3f2fd
+    style End fill:#c8e6c9
+    style CheckComplete fill:#fff9c4
+    style NextPhase fill:#f3e5f5
+            </div>
+            
+            <div class="tip">
+                <strong>💡 First-Time Setup Checklist:</strong>
+                <ul>
+                    <li>✓ School basic information</li>
+                    <li>✓ Current academic session (e.g., 2024/2025)</li>
+                    <li>✓ Terms/semesters with dates</li>
+                    <li>✓ School logo and branding</li>
+                    <li>✓ Contact information</li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- Academic Structure Workflow -->
+        <article id="academic" class="tab-content" role="tabpanel" aria-labelledby="tab-academic" tabindex="0">
+            <h2>Academic Structure Setup</h2>
+            <div class="mermaid">
+flowchart TD
+    Start([Academic Structure Setup]) --> CreateMedium[Create Medium of Instruction]
+    CreateMedium --> MediumEx[Examples:<br/>• English<br/>• Hindi<br/>• Bilingual]
+    
+    MediumEx --> CreateStreams[Create Streams/Departments]
+    CreateStreams --> StreamEx[Examples:<br/>• Science<br/>• Arts<br/>• Commerce]
+    
+    StreamEx --> CreateShifts[Create Shifts if applicable]
+    CreateShifts --> ShiftEx[Examples:<br/>• Morning<br/>• Afternoon<br/>• Evening]
+    
+    ShiftEx --> CreateClasses[Create Classes/Standards]
+    CreateClasses --> ClassDetails[For Each Class:<br/>• Name: JSS 1, JSS 2, SS 1<br/>• Medium<br/>• Stream if applicable]
+    
+    ClassDetails --> CreateSections[Create Sections within Classes]
+    CreateSections --> SectionEx[Examples:<br/>• JSS 1 A<br/>• JSS 1 B<br/>• SS 2 Science A]
+    
+    SectionEx --> AddSubjects[Add Subjects]
+    AddSubjects --> SubjectTypes{Subject Type}
+    
+    SubjectTypes -->|Core| CoreSubjects[Core Subjects:<br/>Mathematics, English,<br/>Basic Science, etc.]
+    SubjectTypes -->|Elective| ElectiveSubjects[Elective Subjects:<br/>Computer Science,<br/>French, Arts, etc.]
+    
+    CoreSubjects --> AssignToClasses[Assign Subjects to Classes]
+    ElectiveSubjects --> AssignToClasses
+    
+    AssignToClasses --> End([Academic Structure Complete])
+    
+    style Start fill:#e3f2fd
+    style End fill:#c8e6c9
+    style SubjectTypes fill:#fff9c4
+    style AssignToClasses fill:#f3e5f5
+            </div>
+            
+            <div class="note">
+                <strong>⚠️ Important:</strong> Set up the complete academic structure before adding students. This ensures students can be properly enrolled in the correct classes and sections.
+            </div>
+            
+            <div class="tip">
+                <strong>💡 Nigerian School Structure Example:</strong>
+                <ul>
+                    <li><strong>JSS:</strong> JSS 1, JSS 2, JSS 3 (Junior Secondary)</li>
+                    <li><strong>SS:</strong> SS 1, SS 2, SS 3 (Senior Secondary)</li>
+                    <li><strong>Sections:</strong> A, B, C, D based on capacity</li>
+                    <li><strong>Streams:</strong> Science, Arts, Commercial (for SS)</li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- User Management Workflow -->
+        <article id="users" class="tab-content" role="tabpanel" aria-labelledby="tab-users" tabindex="0">
+            <h2>User Management Setup</h2>
+            <div class="mermaid">
+flowchart TD
+    Start([User Management Setup]) --> AddTeachers[Add Teachers]
+    
+    AddTeachers --> TeacherInfo[Enter Teacher Details:<br/>• Personal Info<br/>• Contact Details<br/>• Employment Info<br/>• Qualification]
+    
+    TeacherInfo --> AssignSubjects[Assign Subjects to Teacher]
+    AssignSubjects --> TeacherLogin[Create Login Credentials:<br/>• Email as Username<br/>• Generate Password]
+    
+    TeacherLogin --> MoreTeachers{More Teachers<br/>to Add?}
+    MoreTeachers -->|Yes| AddTeachers
+    MoreTeachers -->|No| AddStaff[Add Non-Teaching Staff]
+    
+    AddStaff --> StaffInfo[Enter Staff Details:<br/>• Personal Info<br/>• Contact Details<br/>• Role Selection]
+    
+    StaffInfo --> StaffRole{Staff Role}
+    StaffRole -->|Accountant| AccountantPerms[Set Permissions:<br/>✓ Fee Management<br/>✓ Payment Recording<br/>✓ Financial Reports]
+    StaffRole -->|Admission Officer| AdmissionPerms[Set Permissions:<br/>✓ Student Enrollment<br/>✓ View Records<br/>✓ Generate Reports]
+    StaffRole -->|Transport Coordinator| TransportPerms[Set Permissions:<br/>✓ Route Management<br/>✓ Driver Assignment<br/>✓ Transport Fees]
+    StaffRole -->|Librarian| LibrarianPerms[Set Permissions:<br/>✓ Book Management<br/>✓ Issue/Return<br/>✓ Library Reports]
+    
+    AccountantPerms --> CreateStaffLogin[Create Staff Login]
+    AdmissionPerms --> CreateStaffLogin
+    TransportPerms --> CreateStaffLogin
+    LibrarianPerms --> CreateStaffLogin
+    
+    CreateStaffLogin --> MoreStaff{More Staff<br/>to Add?}
+    MoreStaff -->|Yes| AddStaff
+    MoreStaff -->|No| AddStudents[Add Students]
+    
+    AddStudents --> StudentInfo[Enter Student Details:<br/>• Personal Info<br/>• Guardian Details<br/>• Admission Info<br/>• Class Assignment]
+    
+    StudentInfo --> AutoParent[System Auto-Creates<br/>Parent Account]
+    AutoParent --> ParentNotif[Parent Receives:<br/>✓ Login Credentials<br/>✓ Welcome Email<br/>✓ App Download Link]
+    
+    ParentNotif --> MoreStudents{More Students<br/>to Add?}
+    MoreStudents -->|Yes| AddStudents
+    MoreStudents -->|No| End([User Setup Complete])
+    
+    style Start fill:#e3f2fd
+    style End fill:#c8e6c9
+    style MoreTeachers fill:#fff9c4
+    style MoreStaff fill:#fff9c4
+    style MoreStudents fill:#fff9c4
+    style StaffRole fill:#fff9c4
+    style AutoParent fill:#f3e5f5
+            </div>
+            
+            <div class="tip">
+                <strong>💡 Bulk Import Option:</strong> If you have many students, use the bulk import feature with CSV templates instead of adding one by one. Go to <strong>Students → Import Students</strong>.
+            </div>
+        </article>
+
+        <!-- Fee Structure Workflow -->
+        <article id="fees" class="tab-content" role="tabpanel" aria-labelledby="tab-fees" tabindex="0">
+            <h2>Fee Structure Setup</h2>
+            <div class="mermaid">
+flowchart TD
+    Start([Fee Structure Setup]) --> CreateCategories[Create Fee Categories]
+    
+    CreateCategories --> CategoryEx[Define Categories:<br/>• Tuition Fee<br/>• Development Levy<br/>• Lab Fee<br/>• Sports Fee<br/>• Computer Fee<br/>• PTA Levy<br/>• Transport Fee]
+    
+    CategoryEx --> CreateStructure[Create Fee Structure]
+    CreateStructure --> StructureDetails[Structure Details:<br/>• Name: JSS Fee Structure<br/>• Session: 2024/2025<br/>• Term: All Terms<br/>• Classes: JSS 1, 2, 3]
+    
+    StructureDetails --> AddFeeItems[Add Fee Items to Structure]
+    AddFeeItems --> FeeItem[For Each Category:<br/>• Select Category<br/>• Enter Amount ₦<br/>• Mark Mandatory/Optional]
+    
+    FeeItem --> ReviewTotal[Review Total Amount]
+    ReviewTotal --> Correct{Amount<br/>Correct?}
+    
+    Correct -->|No| AdjustAmounts[Adjust Amounts]
+    AdjustAmounts --> AddFeeItems
+    
+    Correct -->|Yes| SaveStructure[Save Fee Structure]
+    SaveStructure --> MoreStructures{Create Structure<br/>for Other Classes?}
+    
+    MoreStructures -->|Yes| CreateStructure
+    MoreStructures -->|No| SetupGateway[Setup Payment Gateway Optional]
+    
+    SetupGateway --> ChooseGateway{Enable Online<br/>Payments?}
+    
+    ChooseGateway -->|Yes| SelectProvider[Select Provider:<br/>• Paystack<br/>• Flutterwave<br/>• Stripe]
+    SelectProvider --> EnterKeys[Enter API Keys:<br/>• Public Key<br/>• Secret Key]
+    EnterKeys --> TestConnection[Test Connection]
+    TestConnection --> TestResult{Test<br/>Successful?}
+    
+    TestResult -->|No| CheckKeys[Verify API Keys]
+    CheckKeys --> EnterKeys
+    
+    TestResult -->|Yes| EnableGateway[Enable Payment Gateway]
+    EnableGateway --> GenerateInvoices
+    
+    ChooseGateway -->|No| GenerateInvoices[Generate Initial Invoices]
+    
+    GenerateInvoices --> SelectParams[Select Parameters:<br/>• Session<br/>• Term<br/>• Classes<br/>• Fee Structures]
+    
+    SelectParams --> SetDueDate[Set Due Date]
+    SetDueDate --> Preview[Preview Sample Invoices]
+    Preview --> Generate[Generate All Invoices]
+    
+    Generate --> Notify[System Sends:<br/>✓ Parent Notifications<br/>✓ Email Alerts<br/>✓ SMS if enabled]
+    
+    Notify --> End([Fee Setup Complete])
+    
+    style Start fill:#e3f2fd
+    style End fill:#c8e6c9
+    style Correct fill:#fff9c4
+    style MoreStructures fill:#fff9c4
+    style ChooseGateway fill:#fff9c4
+    style TestResult fill:#fff9c4
+    style EnableGateway fill:#c8e6c9
+    style Notify fill:#f3e5f5
+            </div>
+            
+            <div class="tip">
+                <strong>💡 Nigerian Fee Structure Example (JSS Per Term):</strong>
+                <ul>
+                    <li>Tuition: ₦75,000</li>
+                    <li>Development Levy: ₦15,000</li>
+                    <li>Laboratory Fee: ₦8,000</li>
+                    <li>Sports Fee: ₦3,000</li>
+                    <li>Computer Fee: ₦5,000</li>
+                    <li>PTA Levy: ₦2,000</li>
+                    <li><strong>Total: ₦108,000</strong></li>
+                    <li>Transport Fee: ₦15,000 (Optional)</li>
+                </ul>
+            </div>
+            
+            <div class="note">
+                <strong>⚠️ Important:</strong> Test the payment gateway thoroughly in test mode before enabling live payments. Verify all transactions are recorded correctly in the system.
+            </div>
+        </article>
+
+        <a href="../guides/school-admin" class="back-link">← Back to Admin Guide</a>
+    </main>
+
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            }
+        });
+
+        function showTab(event, tabName) {
+            // Prevent default behavior
+            event.preventDefault();
+            
+            // Hide all tab contents and update aria-hidden
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => {
+                content.classList.remove('active');
+                content.setAttribute('aria-hidden', 'true');
+            });
+            
+            // Remove active class from all tabs and update aria-selected
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+                tab.setAttribute('aria-selected', 'false');
+            });
+            
+            // Show selected tab content
+            const selectedContent = document.getElementById(tabName);
+            selectedContent.classList.add('active');
+            selectedContent.setAttribute('aria-hidden', 'false');
+            selectedContent.focus();
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+            event.target.setAttribute('aria-selected', 'true');
+            
+            // Announce tab change to screen readers
+            const announcement = document.getElementById('tab-announcement');
+            const tabLabel = event.target.textContent.trim();
+            announcement.textContent = `${tabLabel} selected`;
+            
+            // Clear announcement after 1 second
+            setTimeout(() => {
+                announcement.textContent = '';
+            }, 1000);
+        }
+        
+        // Keyboard navigation for tabs
+        document.addEventListener('DOMContentLoaded', function() {
+            const tablist = document.querySelector('[role="tablist"]');
+            const tabs = tablist.querySelectorAll('[role="tab"]');
+            
+            tabs.forEach((tab, index) => {
+                tab.addEventListener('keydown', function(e) {
+                    let newIndex = index;
+                    
+                    // Arrow key navigation
+                    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                        e.preventDefault();
+                        newIndex = (index + 1) % tabs.length;
+                    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                        e.preventDefault();
+                        newIndex = (index - 1 + tabs.length) % tabs.length;
+                    } else if (e.key === 'Home') {
+                        e.preventDefault();
+                        newIndex = 0;
+                    } else if (e.key === 'End') {
+                        e.preventDefault();
+                        newIndex = tabs.length - 1;
+                    }
+                    
+                    if (newIndex !== index) {
+                        tabs[newIndex].focus();
+                        tabs[newIndex].click();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

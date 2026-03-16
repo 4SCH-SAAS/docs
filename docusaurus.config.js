@@ -416,7 +416,7 @@ const config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} 4SCH. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} 4SCH - Online School Manager.`,
     },
     prism: {
       additionalLanguages: ['bash', 'json']

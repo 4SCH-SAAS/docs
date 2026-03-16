@@ -1,1 +1,462 @@
-Tool call argument 'initial_content' pruned from message history.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive workflow diagrams for 4SCH School Management System - Visual guides for all user roles">
+    <meta name="keywords" content="workflow diagrams, school management, interactive guides, 4SCH, visual documentation">
+    <title>Interactive Workflow Diagrams - 4SCH Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            padding: 40px 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .intro {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .intro h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        .intro p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .feature {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+            border-left: 4px solid #3498db;
+        }
+        .feature strong {
+            display: block;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .diagram-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        .diagram-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .diagram-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+        }
+        .diagram-card:focus-within {
+            outline: 3px solid #3498db;
+            outline-offset: 2px;
+        }
+        .card-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        .card-icon {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .card-header h3 {
+            font-size: 1.3em;
+            margin-bottom: 5px;
+        }
+        .card-header .role {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .card-body p {
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+        .workflows {
+            margin-bottom: 15px;
+        }
+        .workflows strong {
+            display: block;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-size: 0.9em;
+        }
+        .workflow-list {
+            list-style: none;
+        }
+        .workflow-list li {
+            padding: 6px 0;
+            padding-left: 20px;
+            position: relative;
+            color: #555;
+            font-size: 0.9em;
+        }
+        .workflow-list li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-weight: bold;
+        }
+        .card-footer {
+            padding: 15px 20px;
+            background: #f8f9fa;
+            border-top: 1px solid #e0e0e0;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background: #3498db;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #2980b9;
+        }
+        .btn:focus {
+            outline: 3px solid #3498db;
+            outline-offset: 2px;
+        }
+        .back-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .back-link {
+            display: inline-block;
+            padding: 15px 30px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+        }
+        .back-link:focus {
+            outline: 3px solid white;
+            outline-offset: 2px;
+        }
+        /* Skip to content link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #3498db;
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            .diagram-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <div class="container">
+        <header>
+            <h1>🎯 Interactive Workflow Diagrams</h1>
+            <p>Visual guides for every role in the 4SCH School Management System</p>
+        </header>
+
+        <main id="main-content">
+            <section class="intro">
+                <h2>Welcome to Interactive Workflows</h2>
+                <p>These interactive diagrams provide step-by-step visual guides for common tasks in the 4SCH system. Each diagram is designed to help you understand processes clearly, navigate workflows efficiently, and complete tasks successfully.</p>
+                
+                <div class="features">
+                    <div class="feature">
+                        <strong>🎨 Interactive</strong>
+                        Tab-based navigation
+                    </div>
+                    <div class="feature">
+                        <strong>♿ Accessible</strong>
+                        Keyboard & screen reader friendly
+                    </div>
+                    <div class="feature">
+                        <strong>📱 Responsive</strong>
+                        Works on all devices
+                    </div>
+                    <div class="feature">
+                        <strong>🖨️ Printable</strong>
+                        Print-friendly layouts
+                    </div>
+                </div>
+            </section>
+
+            <section class="diagram-grid">
+                <!-- Offline Exams -->
+                <article class="diagram-card">
+                    <div class="card-header">
+                        <div class="card-icon">📝</div>
+                        <h3>Offline Exam Workflows</h3>
+                        <div class="role">For: Admin, Teachers, Students</div>
+                    </div>
+                    <div class="card-body">
+                        <p>Complete workflows for traditional paper-based exam management, from creation to result publication.</p>
+                        <div class="workflows">
+                            <strong>Includes 4 workflows:</strong>
+                            <ul class="workflow-list">
+                                <li>Admin exam setup workflow</li>
+                                <li>Teacher grading process</li>
+                                <li>Student result viewing</li>
+                                <li>Grade calculation logic</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="offline-exam-workflows.html" class="btn">View Workflows →</a>
+                    </div>
+                </article>
+
+                <!-- Online Exams -->
+                <article class="diagram-card">
+                    <div class="card-header">
+                        <div class="card-icon">💻</div>
+                        <h3>Online Exam Workflows</h3>
+                        <div class="role">For: Teachers, Students, Admin</div>
+                    </div>
+                    <div class="card-body">
+                        <p>Step-by-step guides for MCQ-based online examinations, including creation, taking exams, and viewing results.</p>
+                        <div class="workflows">
+                            <strong>Includes 4 workflows:</strong>
+                            <ul class="workflow-list">
+                                <li>Teacher exam creation</li>
+                                <li>Student exam-taking process</li>
+                                <li>Admin oversight & management</li>
+                                <li>Auto-grading & results</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="online-exam-workflows.html" class="btn">View Workflows →</a>
+                    </div>
+                </article>
+
+                <!-- Accountant Payment Processing -->
+                <article class="diagram-card">
+                    <div class="card-header">
+                        <div class="card-icon">💰</div>
+                        <h3>Payment Processing</h3>
+                        <div class="role">For: Accountants</div>
+                    </div>
+                    <div class="card-body">
+                        <p>Comprehensive payment processing workflows covering all payment methods and reconciliation procedures.</p>
+                        <div class="workflows">
+                            <strong>Includes 4 workflows:</strong>
+                            <ul class="workflow-list">
+                                <li>Cash payment recording</li>
+                                <li>Bank transfer processing</li>
+                                <li>Online payment verification</li>
+                                <li>Bank reconciliation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="accountant-payment-processing.html" class="btn">View Workflows →</a>
+                    </div>
+                </article>
+
+                <!-- Admin School Setup -->
+                <article class="diagram-card">
+                    <div class="card-header">
+                        <div class="card-icon">⚙️</div>
+                        <h3>School Setup & Configuration</h3>
+                        <div class="role">For: School Administrators</div>
+                    </div>
+                    <div class="card-body">
+                        <p>Initial school setup workflows from basic configuration to complete system readiness.</p>
+                        <div class="workflows">
+                            <strong>Includes 4 workflows:</strong>
+                            <ul class="workflow-list">
+                                <li>Initial school setup</li>
+                                <li>Academic structure creation</li>
+                                <li>User management setup</li>
+                                <li>Fee structure configuration</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="admin-school-setup.html" class="btn">View Workflows →</a>
+                    </div>
+                </article>
+
+                <!-- Driver Trip Management -->
+                <article class="diagram-card">
+                    <div class="card-header">
+                        <div class="card-icon">🚌</div>
+                        <h3>Trip Management</h3>
+                        <div class="role">For: School Drivers</div>
+                    </div>
+                    <div class="card-body">
+                        <p>Transportation workflows for morning pickups, afternoon drops, issue reporting, and leave requests.</p>
+                        <div class="workflows">
+                            <strong>Includes 4 workflows:</strong>
+                            <ul class="workflow-list">
+                                <li>Morning pickup trip</li>
+                                <li>Afternoon drop-off trip</li>
+                                <li>Issue reporting procedure</li>
+                                <li>Leave request process</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="driver-trip-management.html" class="btn">View Workflows →</a>
+                    </div>
+                </article>
+
+                <!-- Parent Fee Payment -->
+                <article class="diagram-card">
+                    <div class="card-header">
+                        <div class="card-icon">💳</div>
+                        <h3>Fee Payment Guide</h3>
+                        <div class="role">For: Parents/Guardians</div>
+                    </div>
+                    <div class="card-body">
+                        <p>Complete payment workflows for all payment methods including online, bank transfer, cash, and installment plans.</p>
+                        <div class="workflows">
+                            <strong>Includes 4 workflows:</strong>
+                            <ul class="workflow-list">
+                                <li>Online payment (card/mobile)</li>
+                                <li>Bank transfer payment</li>
+                                <li>Cash payment at school</li>
+                                <li>Payment plan/installments</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="parent-fee-payment.html" class="btn">View Workflows →</a>
+                    </div>
+                </article>
+
+                <!-- Student Assignment Submission -->
+                <article class="diagram-card">
+                    <div class="card-header">
+                        <div class="card-icon">📤</div>
+                        <h3>Assignment Submission</h3>
+                        <div class="role">For: Students</div>
+                    </div>
+                    <div class="card-body">
+                        <p>Student workflows for viewing, submitting, resubmitting assignments and viewing graded results.</p>
+                        <div class="workflows">
+                            <strong>Includes 4 workflows:</strong>
+                            <ul class="workflow-list">
+                                <li>View assignment details</li>
+                                <li>Submit assignment files</li>
+                                <li>Resubmit/edit submission</li>
+                                <li>View grades & feedback</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="student-assignment-submission.html" class="btn">View Workflows →</a>
+                    </div>
+                </article>
+
+                <!-- Teacher Assignment Workflow -->
+                <article class="diagram-card">
+                    <div class="card-header">
+                        <div class="card-icon">👨‍🏫</div>
+                        <h3>Assignment Management</h3>
+                        <div class="role">For: Teachers</div>
+                    </div>
+                    <div class="card-body">
+                        <p>Teacher workflows for creating assignments, reviewing submissions, grading work, and managing assignments.</p>
+                        <div class="workflows">
+                            <strong>Includes 4 workflows:</strong>
+                            <ul class="workflow-list">
+                                <li>Create new assignment</li>
+                                <li>Review student submissions</li>
+                                <li>Grade & provide feedback</li>
+                                <li>Manage existing assignments</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="teacher-assignment-workflow.html" class="btn">View Workflows →</a>
+                    </div>
+                </article>
+            </section>
+
+            <section class="intro">
+                <h2>How to Use These Diagrams</h2>
+                <p><strong>Navigate:</strong> Each diagram has multiple tabs showing different workflows. Click tabs or use arrow keys to switch views.</p>
+                <p><strong>Interact:</strong> All diagrams are fully keyboard accessible. Use Tab to navigate, Enter to activate, and arrow keys for tab navigation.</p>
+                <p><strong>Print:</strong> Use your browser's print function (Ctrl+P / Cmd+P) to print any diagram. The print layout is optimized to show all workflows.</p>
+                <p><strong>Accessibility:</strong> All diagrams include ARIA labels and screen reader support. Use a skip link to jump to main content.</p>
+            </section>
+        </main>
+
+        <div class="back-section">
+            <a href="../" class="back-link">← Back to Documentation Home</a>
+        </div>
+    </div>
+</body>
+</html>

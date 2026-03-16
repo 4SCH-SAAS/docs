@@ -1,1 +1,587 @@
-Tool call argument 'initial_content' pruned from message history.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive workflow diagrams for teacher assignment management in 4SCH School Management System">
+    <meta name="keywords" content="teacher assignments, grading workflow, assignment creation, 4SCH">
+    <title>Teacher Assignment Workflow - 4SCH Interactive Diagrams</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #e0e0e0;
+            flex-wrap: wrap;
+        }
+        .tab {
+            padding: 12px 24px;
+            background: #f8f9fa;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            color: #555;
+            border-radius: 4px 4px 0 0;
+            transition: all 0.3s ease;
+        }
+        .tab:hover {
+            background: #e9ecef;
+            color: #2c3e50;
+        }
+        .tab.active {
+            background: #3498db;
+            color: white;
+        }
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.3s ease-in;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .mermaid {
+            margin: 20px 0;
+            background: white;
+            padding: 20px;
+            border-radius: 4px;
+        }
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .note strong {
+            color: #856404;
+        }
+        .tip {
+            background: #d1ecf1;
+            border-left: 4px solid #17a2b8;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .tip strong {
+            color: #0c5460;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+        .back-link:hover {
+            background: #2980b9;
+        }
+        /* Screen reader only content */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+        /* Focus styles for keyboard navigation */
+        .tab:focus {
+            outline: 3px solid #3498db;
+            outline-offset: 2px;
+        }
+        .back-link:focus {
+            outline: 3px solid #3498db;
+            outline-offset: 2px;
+        }
+        /* Skip to content link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #3498db;
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+        @media print {
+            .tabs, .back-link, .skip-link {
+                display: none;
+            }
+            .tab-content {
+                display: block !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <main class="container" id="main-content" role="main">
+        <h1>👨‍🏫 Teacher Assignment Workflow - Interactive Diagrams</h1>
+        <p>Visual representations of assignment management workflows for teachers in the 4SCH School Management System.</p>
+        <div class="sr-only" role="status" aria-live="polite" id="tab-announcement"></div>
+
+        <nav class="tabs" role="tablist" aria-label="Assignment workflow views">
+            <button class="tab active" role="tab" aria-selected="true" aria-controls="create" id="tab-create" onclick="showTab(event, 'create')">➕ Create Assignment</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="review" id="tab-review" onclick="showTab(event, 'review')">👀 Review Submissions</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="grade" id="tab-grade" onclick="showTab(event, 'grade')">📊 Grade & Feedback</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="manage" id="tab-manage" onclick="showTab(event, 'manage')">⚙️ Manage Assignments</button>
+        </nav>
+
+        <!-- Create Assignment Workflow -->
+        <article id="create" class="tab-content active" role="tabpanel" aria-labelledby="tab-create" tabindex="0">
+            <h2>Create New Assignment Workflow</h2>
+            <div class="mermaid">
+flowchart TD
+    Start([Plan to Give Assignment]) --> Login[Login to Teacher Portal]
+    Login --> GoAssignments[Go to 'Assignments' Section]
+    GoAssignments --> ClickCreate[Click 'Create New Assignment']
+    
+    ClickCreate --> SelectSubject[Select Subject]
+    SelectSubject --> SelectClass[Select Class/Section:<br/>Can select multiple]
+    
+    SelectClass --> EnterTitle[Enter Assignment Title:<br/>e.g., 'Photosynthesis Essay']
+    EnterTitle --> EnterInstructions[Enter Instructions:<br/>• What to do<br/>• Format requirements<br/>• Grading criteria<br/>• Expected length]
+    
+    EnterInstructions --> SetPoints[Set Total Points/Marks:<br/>e.g., 50 points]
+    SetPoints --> SetDeadline[Set Due Date & Time]
+    
+    SetDeadline --> AttachFiles{Need to Attach<br/>Reference Files?}
+    
+    AttachFiles -->|Yes| UploadFiles[Upload Files:<br/>• PDF Documents<br/>• Images<br/>• Study Materials<br/>• Sample Work]
+    AttachFiles -->|No| ReviewAssignment
+    
+    UploadFiles --> ReviewAssignment[Review Assignment Details]
+    ReviewAssignment --> AllCorrect{Everything<br/>Correct?}
+    
+    AllCorrect -->|No| EditDetails[Edit Details]
+    EditDetails --> ReviewAssignment
+    
+    AllCorrect -->|Yes| PublishOption{When to<br/>Publish?}
+    
+    PublishOption -->|Now| PublishNow[Click 'Publish Now']
+    PublishOption -->|Later| SaveDraft[Save as Draft<br/>Publish Later]
+    
+    PublishNow --> AssignmentLive[✅ Assignment Published]
+    AssignmentLive --> StudentsNotified[Students Receive Notification:<br/>✓ App Notification<br/>✓ Email Alert<br/>✓ Portal Update]
+    
+    StudentsNotified --> End([Assignment Active])
+    SaveDraft --> End2([Draft Saved])
+    
+    style Start fill:#e3f2fd
+    style End fill:#c8e6c9
+    style End2 fill:#fff9c4
+    style AttachFiles fill:#fff9c4
+    style AllCorrect fill:#fff9c4
+    style PublishOption fill:#fff9c4
+    style AssignmentLive fill:#c8e6c9
+    style StudentsNotified fill:#f3e5f5
+            </div>
+            
+            <div class="tip">
+                <strong>💡 Creating Effective Assignments:</strong>
+                <ul>
+                    <li>✓ Write clear, specific instructions</li>
+                    <li>✓ Set realistic deadlines (give students enough time)</li>
+                    <li>✓ Specify format requirements (PDF, Word, handwritten, etc.)</li>
+                    <li>✓ Attach reference materials or examples</li>
+                    <li>✓ State grading criteria clearly</li>
+                </ul>
+            </div>
+            
+            <div class="note">
+                <strong>⚠️ Best Practice:</strong> Create assignments at least 3-5 days before due date to give students adequate preparation time. Avoid creating assignments with same-day deadlines.
+            </div>
+        </article>
+
+        <!-- Review Submissions Workflow -->
+        <article id="review" class="tab-content" role="tabpanel" aria-labelledby="tab-review" tabindex="0">
+            <h2>Review Student Submissions Workflow</h2>
+            <div class="mermaid">
+flowchart TD
+    Start([Receive Submission Notification]) --> Login[Login to Teacher Portal]
+    Login --> GoAssignments[Go to 'Assignments']
+    GoAssignments --> ViewList[View Assignment List]
+    
+    ViewList --> SelectAssignment[Click on Assignment]
+    SelectAssignment --> ViewSummary[View Submission Summary:<br/>📊 Total Students: 40<br/>✅ Submitted: 32<br/>⏳ Pending: 8<br/>⏰ Late: 2]
+    
+    ViewSummary --> FilterOptions{Filter<br/>Submissions?}
+    
+    FilterOptions -->|All| ViewAll[View All Submissions]
+    FilterOptions -->|Submitted Only| ViewSubmitted[View Submitted Only]
+    FilterOptions -->|Pending| ViewPending[View Pending Students]
+    FilterOptions -->|Late| ViewLate[View Late Submissions]
+    
+    ViewAll --> SelectStudent
+    ViewSubmitted --> SelectStudent
+    ViewPending --> RemindStudents[Send Reminder to Students]
+    ViewLate --> SelectStudent
+    
+    RemindStudents --> End2([Reminders Sent])
+    
+    SelectStudent[Click on Student Name]
+    SelectStudent --> ViewSubmission[View Student's Submission]
+    
+    ViewSubmission --> CheckFiles{Files<br/>Submitted?}
+    
+    CheckFiles -->|No| MarkMissing[Mark as No Submission]
+    CheckFiles -->|Yes| DownloadFiles[Download Submitted Files]
+    
+    DownloadFiles --> OpenFiles[Open & Review Files]
+    OpenFiles --> FilesReadable{Files<br/>Readable?}
+    
+    FilesReadable -->|No - Corrupted| RejectSubmission[Reject Submission]
+    RejectSubmission --> EnterRejectionReason[Enter Reason:<br/>'File corrupted, please resubmit']
+    EnterRejectionReason --> NotifyStudent[Student Notified to Resubmit]
+    NotifyStudent --> NextStudent
+    
+    FilesReadable -->|Yes| CheckQuality{Meets<br/>Requirements?}
+    
+    CheckQuality -->|No - Poor Quality| CanReject{Reject or<br/>Grade Low?}
+    CanReject -->|Reject| RejectSubmission
+    CanReject -->|Grade| ProceedGrading[Proceed to Grading]
+    
+    CheckQuality -->|Yes| ProceedGrading
+    
+    ProceedGrading --> AddToGradeList[Add to Grading Queue]
+    AddToGradeList --> NextStudent{More Students<br/>to Review?}
+    
+    NextStudent -->|Yes| SelectStudent
+    NextStudent -->|No| End([Review Complete])
+    
+    MarkMissing --> NextStudent
+    
+    style Start fill:#e3f2fd
+    style End fill:#c8e6c9
+    style End2 fill:#fff9c4
+    style FilterOptions fill:#fff9c4
+    style CheckFiles fill:#fff9c4
+    style FilesReadable fill:#fff9c4
+    style CheckQuality fill:#fff9c4
+    style CanReject fill:#fff9c4
+    style NextStudent fill:#fff9c4
+    style RejectSubmission fill:#ffcdd2
+            </div>
+            
+            <div class="tip">
+                <strong>💡 Reviewing Submissions Efficiently:</strong>
+                <ul>
+                    <li>✓ Download all submissions at once if possible</li>
+                    <li>✓ Review in batches to maintain consistency</li>
+                    <li>✓ Check submission timestamps for late work</li>
+                    <li>✓ Reject clearly unacceptable work early</li>
+                    <li>✓ Keep notes on common issues for feedback</li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- Grade & Feedback Workflow -->
+        <article id="grade" class="tab-content" role="tabpanel" aria-labelledby="tab-grade" tabindex="0">
+            <h2>Grade Assignment & Provide Feedback</h2>
+            <div class="mermaid">
+flowchart TD
+    Start([Ready to Grade Submissions]) --> OpenGradingQueue[Open Grading Queue]
+    OpenGradingQueue --> SelectSubmission[Select Student Submission]
+    
+    SelectSubmission --> ReviewWork[Review Student's Work Thoroughly]
+    ReviewWork --> UseRubric{Using<br/>Grading Rubric?}
+    
+    UseRubric -->|Yes| ApplyRubric[Apply Rubric Criteria:<br/>• Content: /20<br/>• Organization: /10<br/>• Grammar: /10<br/>• Presentation: /10]
+    UseRubric -->|No| HolisticGrade[Holistic Grading]
+    
+    ApplyRubric --> CalculateScore[Calculate Total Score]
+    HolisticGrade --> EnterScore[Enter Score/Grade]
+    
+    CalculateScore --> EnterScore
+    EnterScore --> VerifyScore{Score<br/>Correct?}
+    
+    VerifyScore -->|No| AdjustScore[Adjust Score]
+    AdjustScore --> EnterScore
+    
+    VerifyScore -->|Yes| WriteFeedback[Write Detailed Feedback]
+    
+    WriteFeedback --> FeedbackType{Feedback<br/>Focus?}
+    
+    FeedbackType -->|Excellent Work| PositiveFeedback[Positive Feedback:<br/>✅ What was done well<br/>✅ Strengths demonstrated<br/>✅ Encouragement]
+    
+    FeedbackType -->|Good with Issues| BalancedFeedback[Balanced Feedback:<br/>✅ Strengths<br/>⚠️ Areas for improvement<br/>💡 Specific suggestions]
+    
+    FeedbackType -->|Needs Improvement| ConstructiveFeedback[Constructive Feedback:<br/>❌ Specific mistakes<br/>📚 What to study<br/>💡 How to improve<br/>🎯 Next steps]
+    
+    PositiveFeedback --> AttachAnnotations
+    BalancedFeedback --> AttachAnnotations
+    ConstructiveFeedback --> AttachAnnotations
+    
+    AttachAnnotations{Annotate<br/>Document?}
+    
+    AttachAnnotations -->|Yes| MarkupDocument[Add Comments/Highlights<br/>to Student's Document]
+    AttachAnnotations -->|No| ReviewGrade
+    
+    MarkupDocument --> UploadAnnotated[Upload Annotated Version]
+    UploadAnnotated --> ReviewGrade[Review Grade & Feedback]
+    
+    ReviewGrade --> Satisfied{Satisfied with<br/>Grading?}
+    
+    Satisfied -->|No| EditGrade[Edit Grade or Feedback]
+    EditGrade --> ReviewGrade
+    
+    Satisfied -->|Yes| SubmitGrade[Click 'Submit Grade']
+    SubmitGrade --> GradeRecorded[✅ Grade Recorded in System]
+    
+    GradeRecorded --> StudentNotified[Student & Parent Notified:<br/>✓ Grade/Score<br/>✓ Feedback<br/>✓ Annotated Document if any]
+    
+    StudentNotified --> MoreToGrade{More Submissions<br/>to Grade?}
+    
+    MoreToGrade -->|Yes| SelectSubmission
+    MoreToGrade -->|No| AllGraded[All Submissions Graded]
+    
+    AllGraded --> GenerateReport[Generate Class Report:<br/>• Average Score<br/>• High/Low Scores<br/>• Submission Rate<br/>• Common Issues]
+    
+    GenerateReport --> End([Grading Complete])
+    
+    style Start fill:#e3f2fd
+    style End fill:#c8e6c9
+    style UseRubric fill:#fff9c4
+    style VerifyScore fill:#fff9c4
+    style FeedbackType fill:#fff9c4
+    style AttachAnnotations fill:#fff9c4
+    style Satisfied fill:#fff9c4
+    style MoreToGrade fill:#fff9c4
+    style GradeRecorded fill:#c8e6c9
+    style StudentNotified fill:#f3e5f5
+            </div>
+            
+            <div class="tip">
+                <strong>💡 Effective Feedback Practices:</strong>
+                <ul>
+                    <li>✓ Be specific - "Good grammar" vs "Excellent use of complex sentences"</li>
+                    <li>✓ Balance positive and constructive comments</li>
+                    <li>✓ Provide actionable suggestions for improvement</li>
+                    <li>✓ Reference specific parts of their work</li>
+                    <li>✓ Be encouraging even when work needs improvement</li>
+                </ul>
+            </div>
+            
+            <div class="note">
+                <strong>⚠️ Grading Consistency:</strong> Grade all submissions for one assignment in the same sitting when possible. This ensures consistent application of standards and fair grading across all students.
+            </div>
+        </article>
+
+        <!-- Manage Assignments Workflow -->
+        <article id="manage" class="tab-content" role="tabpanel" aria-labelledby="tab-manage" tabindex="0">
+            <h2>Manage Existing Assignments</h2>
+            <div class="mermaid">
+flowchart TD
+    Start([Need to Manage Assignment]) --> Login[Login to Teacher Portal]
+    Login --> GoAssignments[Go to 'Assignments']
+    GoAssignments --> ViewList[View All Assignments]
+    
+    ViewList --> SelectAssignment[Select Assignment to Manage]
+    SelectAssignment --> ManageAction{What to<br/>Do?}
+    
+    ManageAction -->|Edit| CheckStatus{Assignment<br/>Status?}
+    CheckStatus -->|No Submissions Yet| CanEdit[Can Edit Freely]
+    CheckStatus -->|Has Submissions| LimitedEdit[⚠️ Limited Editing<br/>Can't change major details]
+    
+    CanEdit --> EditDetails[Edit:<br/>• Title<br/>• Instructions<br/>• Due Date<br/>• Attachments<br/>• Points]
+    LimitedEdit --> EditAllowed[Can Edit:<br/>• Due Date Extension only<br/>• Add clarifications]
+    
+    EditDetails --> SaveChanges[Save Changes]
+    EditAllowed --> SaveChanges
+    SaveChanges --> NotifyUpdate[Students Notified of Changes]
+    NotifyUpdate --> End
+    
+    ManageAction -->|Extend Deadline| ExtendDate[Set New Due Date]
+    ExtendDate --> ExtendReason[Enter Reason:<br/>'Extended due to holiday'<br/>'Giving more time']
+    ExtendReason --> SaveExtension[Save Extension]
+    SaveExtension --> NotifyExtension[All Students Notified]
+    NotifyExtension --> End
+    
+    ManageAction -->|Delete Draft| ConfirmDelete{Assignment<br/>Published?}
+    ConfirmDelete -->|No - Draft| SafeDelete[Can Delete Safely]
+    SafeDelete --> DeleteAssignment[Delete Assignment]
+    DeleteAssignment --> End2([Assignment Deleted])
+    
+    ConfirmDelete -->|Yes - Published| WarningDelete[⚠️ Has Student Submissions]
+    WarningDelete --> ReallyDelete{Really<br/>Delete?}
+    ReallyDelete -->|No| End3([Deletion Cancelled])
+    ReallyDelete -->|Yes| DeleteWithData[Delete Assignment & All Data]
+    DeleteWithData --> End2
+    
+    ManageAction -->|View Statistics| ShowStats[Display Statistics:<br/>📊 Submission Rate<br/>📈 Average Score<br/>📉 Low Performers<br/>⭐ Top Performers<br/>⏰ Late Submissions]
+    ShowStats --> ExportStats{Export<br/>Report?}
+    ExportStats -->|Yes| DownloadReport[Download as PDF/Excel]
+    ExportStats -->|No| End
+    DownloadReport --> End
+    
+    ManageAction -->|Send Reminder| SelectRecipients{Send To?}
+    SelectRecipients -->|All| RemindAll[Remind All Students]
+    SelectRecipients -->|Pending Only| RemindPending[Remind Non-Submitters Only]
+    SelectRecipients -->|Specific Students| SelectSpecific[Select Specific Students]
+    
+    RemindAll --> CustomMessage
+    RemindPending --> CustomMessage
+    SelectSpecific --> CustomMessage
+    
+    CustomMessage[Add Custom Message Optional]
+    CustomMessage --> SendReminder[Send Reminder]
+    SendReminder --> ReminderSent[✅ Reminders Sent]
+    ReminderSent --> End
+    
+    ManageAction -->|Close Early| CloseConfirm{Close Before<br/>Deadline?}
+    CloseConfirm -->|No| End3
+    CloseConfirm -->|Yes| CloseNow[Close Assignment Early]
+    CloseNow --> NoMoreSubmissions[❌ No More Submissions Accepted]
+    NoMoreSubmissions --> End
+    
+    End([Management Complete])
+    
+    style Start fill:#e3f2fd
+    style End fill:#c8e6c9
+    style End2 fill:#ffcdd2
+    style End3 fill:#fff9c4
+    style ManageAction fill:#fff9c4
+    style CheckStatus fill:#fff9c4
+    style ConfirmDelete fill:#fff9c4
+    style ReallyDelete fill:#fff9c4
+    style ExportStats fill:#fff9c4
+    style SelectRecipients fill:#fff9c4
+    style CloseConfirm fill:#fff9c4
+    style NotifyUpdate fill:#f3e5f5
+    style ReminderSent fill:#c8e6c9
+    style WarningDelete fill:#ffe0b2
+            </div>
+            
+            <div class="tip">
+                <strong>💡 Assignment Management Tips:</strong>
+                <ul>
+                    <li>✓ Check statistics regularly to monitor progress</li>
+                    <li>✓ Send reminders 1-2 days before deadline</li>
+                    <li>✓ Extend deadlines fairly if majority struggling</li>
+                    <li>✓ Avoid major edits after students start submitting</li>
+                    <li>✓ Archive completed assignments for future reference</li>
+                </ul>
+            </div>
+            
+            <div class="note">
+                <strong>⚠️ Deleting Published Assignments:</strong> Be very careful when deleting published assignments with student submissions. All student work and grades will be permanently lost. Consider archiving instead.
+            </div>
+        </article>
+
+        <a href="../guides/teachers" class="back-link">← Back to Teacher Guide</a>
+    </main>
+
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            }
+        });
+
+        function showTab(event, tabName) {
+            event.preventDefault();
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => {
+                content.classList.remove('active');
+                content.setAttribute('aria-hidden', 'true');
+            });
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+                tab.setAttribute('aria-selected', 'false');
+            });
+            const selectedContent = document.getElementById(tabName);
+            selectedContent.classList.add('active');
+            selectedContent.setAttribute('aria-hidden', 'false');
+            selectedContent.focus();
+            event.target.classList.add('active');
+            event.target.setAttribute('aria-selected', 'true');
+            const announcement = document.getElementById('tab-announcement');
+            const tabLabel = event.target.textContent.trim();
+            announcement.textContent = `${tabLabel} selected`;
+            setTimeout(() => {
+                announcement.textContent = '';
+            }, 1000);
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const tablist = document.querySelector('[role="tablist"]');
+            const tabs = tablist.querySelectorAll('[role="tab"]');
+            tabs.forEach((tab, index) => {
+                tab.addEventListener('keydown', function(e) {
+                    let newIndex = index;
+                    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                        e.preventDefault();
+                        newIndex = (index + 1) % tabs.length;
+                    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                        e.preventDefault();
+                        newIndex = (index - 1 + tabs.length) % tabs.length;
+                    } else if (e.key === 'Home') {
+                        e.preventDefault();
+                        newIndex = 0;
+                    } else if (e.key === 'End') {
+                        e.preventDefault();
+                        newIndex = tabs.length - 1;
+                    }
+                    if (newIndex !== index) {
+                        tabs[newIndex].focus();
+                        tabs[newIndex].click();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

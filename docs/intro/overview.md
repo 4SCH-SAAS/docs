@@ -162,5 +162,5 @@ It supports:
 - **Reports & insights**
 
 :::tip
-These docs focus on **how to use 4SCH** in daily school operations. For platform-level technical details, refer to the [eSchool SaaS documentation](https://wrteam-in.github.io/eSchool-SaaS-Doc/schooladmin/intro/).
+These docs focus on **how to use 4SCH** in daily school operations. For platform-level technical details, refer to the eSchool SaaS documentation.
 :::

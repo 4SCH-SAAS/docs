@@ -1,1 +1,559 @@
-Tool call argument 'initial_content' pruned from message history.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive workflow diagrams for parent fee payment process in 4SCH School Management System">
+    <meta name="keywords" content="fee payment, parent portal, online payment, school fees, 4SCH">
+    <title>Parent Fee Payment - 4SCH Interactive Diagrams</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #e0e0e0;
+            flex-wrap: wrap;
+        }
+        .tab {
+            padding: 12px 24px;
+            background: #f8f9fa;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            color: #555;
+            border-radius: 4px 4px 0 0;
+            transition: all 0.3s ease;
+        }
+        .tab:hover {
+            background: #e9ecef;
+            color: #2c3e50;
+        }
+        .tab.active {
+            background: #3498db;
+            color: white;
+        }
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.3s ease-in;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .mermaid {
+            margin: 20px 0;
+            background: white;
+            padding: 20px;
+            border-radius: 4px;
+        }
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .note strong {
+            color: #856404;
+        }
+        .tip {
+            background: #d1ecf1;
+            border-left: 4px solid #17a2b8;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .tip strong {
+            color: #0c5460;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+        .back-link:hover {
+            background: #2980b9;
+        }
+        /* Screen reader only content */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+        /* Focus styles for keyboard navigation */
+        .tab:focus {
+            outline: 3px solid #3498db;
+            outline-offset: 2px;
+        }
+        .back-link:focus {
+            outline: 3px solid #3498db;
+            outline-offset: 2px;
+        }
+        /* Skip to content link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #3498db;
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+        @media print {
+            .tabs, .back-link, .skip-link {
+                display: none;
+            }
+            .tab-content {
+                display: block !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <main class="container" id="main-content" role="main">
+        <h1>💳 Parent Fee Payment - Interactive Diagrams</h1>
+        <p>Visual representations of fee payment workflows for parents in the 4SCH School Management System.</p>
+        <div class="sr-only" role="status" aria-live="polite" id="tab-announcement"></div>
+
+        <nav class="tabs" role="tablist" aria-label="Payment method views">
+            <button class="tab active" role="tab" aria-selected="true" aria-controls="online" id="tab-online" onclick="showTab(event, 'online')">💳 Online Payment</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="transfer" id="tab-transfer" onclick="showTab(event, 'transfer')">🏦 Bank Transfer</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="cash" id="tab-cash" onclick="showTab(event, 'cash')">💵 Cash Payment</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="installment" id="tab-installment" onclick="showTab(event, 'installment')">📅 Installment Plan</button>
+        </nav>
+
+        <!-- Online Payment Workflow -->
+        <article id="online" class="tab-content active" role="tabpanel" aria-labelledby="tab-online" tabindex="0">
+            <h2>Online Payment Workflow (Card/Mobile Money)</h2>
+            <div class="mermaid">
+flowchart TD
+    Start([Receive Invoice Notification]) --> Login[Login to Parent Portal]
+    Login --> GoFees[Go to 'Fees' Section]
+    GoFees --> ViewInvoices[View Pending Invoices]
+    
+    ViewInvoices --> SelectInvoice[Click on Invoice to Pay]
+    SelectInvoice --> ReviewDetails[Review Invoice Details:<br/>• Student Name<br/>• Fee Breakdown<br/>• Amount Due<br/>• Due Date]
+    
+    ReviewDetails --> VerifyCorrect{Details<br/>Correct?}
+    VerifyCorrect -->|No| ContactSchool[Contact School Office]
+    ContactSchool --> End2([Issue Resolution Required])
+    
+    VerifyCorrect -->|Yes| ClickPayNow[Click 'Pay Now' Button]
+    ClickPayNow --> SelectMethod[Select Payment Method]
+    
+    SelectMethod --> PaymentType{Payment<br/>Method?}
+    
+    PaymentType -->|Debit/Credit Card| CardPayment[Enter Card Details:<br/>• Card Number<br/>• Expiry Date<br/>• CVV<br/>• Card Holder Name]
+    PaymentType -->|Mobile Money| MobilePayment[Select Mobile Provider:<br/>• MTN Mobile Money<br/>• Airtel Money<br/>• 9mobile, etc.]
+    PaymentType -->|Bank Account| BankPayment[Select Bank &<br/>Authorize Payment]
+    
+    CardPayment --> ReviewPayment
+    MobilePayment --> ReviewPayment
+    BankPayment --> ReviewPayment
+    
+    ReviewPayment[Review Payment Summary:<br/>• Amount: ₦113,000<br/>• Gateway Fee if any<br/>• Total to Pay]
+    
+    ReviewPayment --> ConfirmPayment[Click 'Confirm Payment']
+    ConfirmPayment --> Gateway[Payment Gateway Processes]
+    
+    Gateway --> GatewayResult{Payment<br/>Successful?}
+    
+    GatewayResult -->|Yes| Success[✅ Payment Successful]
+    Success --> ReceiptGenerated[Digital Receipt Generated]
+    ReceiptGenerated --> InvoiceUpdated[Invoice Status: PAID]
+    InvoiceUpdated --> Notifications[Notifications Sent:<br/>✓ Email Receipt<br/>✓ SMS Confirmation<br/>✓ App Notification]
+    
+    Notifications --> Download[Download/Print Receipt]
+    Download --> SaveProof[Save Proof of Payment]
+    SaveProof --> End([Payment Complete])
+    
+    GatewayResult -->|No| Failed[❌ Payment Failed]
+    Failed --> FailReason{Reason?}
+    
+    FailReason -->|Insufficient Funds| AddFunds[Add Funds to Account]
+    FailReason -->|Wrong PIN/OTP| RetryAuth[Re-enter Correct PIN/OTP]
+    FailReason -->|Network Error| RetryPayment[Wait & Retry]
+    FailReason -->|Card Declined| ContactBank[Contact Your Bank]
+    
+    AddFunds --> ClickPayNow
+    RetryAuth --> Gateway
+    RetryPayment --> ClickPayNow
+    ContactBank --> End3([Resolve Bank Issue])
+    
+    style Start fill:#e3f2fd
+    style End fill:#c8e6c9
+    style End2 fill:#ffcdd2
+    style End3 fill:#ffcdd2
+    style VerifyCorrect fill:#fff9c4
+    style PaymentType fill:#fff9c4
+    style GatewayResult fill:#fff9c4
+    style FailReason fill:#fff9c4
+    style Success fill:#c8e6c9
+    style Failed fill:#ffcdd2
+    style Notifications fill:#f3e5f5
+            </div>
+            
+            <div class="tip">
+                <strong>💡 Online Payment Tips:</strong>
+                <ul>
+                    <li>✓ Ensure you have sufficient funds before starting</li>
+                    <li>✓ Keep your OTP/PIN ready</li>
+                    <li>✓ Use a stable internet connection</li>
+                    <li>✓ Save the payment receipt immediately</li>
+                    <li>✓ Verify invoice shows "PAID" after payment</li>
+                </ul>
+            </div>
+            
+            <div class="note">
+                <strong>⚠️ Important:</strong> If payment is deducted but invoice still shows "Unpaid", don't pay again! Contact school office with your transaction reference. The issue usually resolves within 24 hours.
+            </div>
+        </article>
+
+        <!-- Bank Transfer Workflow -->
+        <article id="transfer" class="tab-content" role="tabpanel" aria-labelledby="tab-transfer" tabindex="0">
+            <h2>Bank Transfer Payment Workflow</h2>
+            <div class="mermaid">
+flowchart TD
+    Start([Receive Invoice Notification]) --> Login[Login to Parent Portal]
+    Login --> ViewInvoice[View Invoice Details]
+    ViewInvoice --> NoteDetails[Note Invoice Information:<br/>• Invoice Number<br/>• Amount<br/>• Student Name]
+    
+    NoteDetails --> GetBankDetails[Get School Bank Details:<br/>• Account Name<br/>• Account Number<br/>• Bank Name]
+    
+    GetBankDetails --> ChooseTransferMethod{Transfer<br/>Method?}
+    
+    ChooseTransferMethod -->|Mobile Banking App| MobileBanking[Open Banking App]
+    ChooseTransferMethod -->|Internet Banking| InternetBanking[Login to Internet Banking]
+    ChooseTransferMethod -->|Visit Bank| BankBranch[Visit Bank Branch]
+    
+    MobileBanking --> EnterSchoolAccount
+    InternetBanking --> EnterSchoolAccount
+    BankBranch --> FillDeposit[Fill Deposit Slip]
+    FillDeposit --> EnterSchoolAccount
+    
+    EnterSchoolAccount[Enter School Account Details:<br/>• Account Number<br/>• Bank<br/>• Amount]
+    
+    EnterSchoolAccount --> AddNarration[Add Payment Narration:<br/>'Invoice INV-2026-0234<br/>Student: Amara Okonkwo']
+    
+    AddNarration --> VerifyDetails{Details<br/>Correct?}
+    VerifyDetails -->|No| CorrectInfo[Correct Information]
+    CorrectInfo --> EnterSchoolAccount
+    
+    VerifyDetails -->|Yes| AuthorizeTransfer[Authorize Transfer<br/>PIN/Token/Signature]
+    AuthorizeTransfer --> TransferProcessed[Transfer Processed]
+    
+    TransferProcessed --> SaveEvidence[Save Evidence:<br/>✓ Bank Alert<br/>✓ Transaction Receipt<br/>✓ Reference Number]
+    
+    SaveEvidence --> NotifySchool[Notify School Office]
+    NotifySchool --> SendProof[Send Proof of Payment:<br/>• Screenshot/Photo<br/>• Transaction Reference<br/>• Invoice Number]
+    
+    SendProof --> SchoolVerifies[School Accountant Verifies]
+    SchoolVerifies --> MatchesBank{Transfer Matches<br/>Bank Statement?}
+    
+    MatchesBank -->|Yes| RecordPayment[Accountant Records Payment]
+    RecordPayment --> InvoicePaid[Invoice Marked as PAID]
+    InvoicePaid --> ReceiptIssued[Receipt Issued to Parent]
+    ReceiptIssued --> End([Payment Complete])
+    
+    MatchesBank -->|No| Investigation[Investigate Discrepancy]
+    Investigation --> Resolve{Issue<br/>Resolved?}
+    Resolve -->|Yes| RecordPayment
+    Resolve -->|No| End2([Contact Bank & School])
+    
+    style Start fill:#e3f2fd
+    style End fill:#c8e6c9
+    style End2 fill:#ffcdd2
+    style ChooseTransferMethod fill:#fff9c4
+    style VerifyDetails fill:#fff9c4
+    style MatchesBank fill:#fff9c4
+    style Resolve fill:#fff9c4
+    style SaveEvidence fill:#ffe0b2
+    style SendProof fill:#f3e5f5
+            </div>
+            
+            <div class="tip">
+                <strong>💡 Bank Transfer Best Practices:</strong>
+                <ul>
+                    <li>✓ Always include invoice number in narration/description</li>
+                    <li>✓ Include student name in transfer description</li>
+                    <li>✓ Save bank alert and screenshot immediately</li>
+                    <li>✓ Send proof to school office same day</li>
+                    <li>✓ Follow up after 24-48 hours if not reflected</li>
+                </ul>
+            </div>
+            
+            <div class="note">
+                <strong>⚠️ Important Narration Format:</strong><br/>
+                Always use: "Invoice [Number] - [Student Name]"<br/>
+                Example: "Invoice INV-2026-0234 - Amara Okonkwo"<br/>
+                This helps the accountant match your payment quickly.
+            </div>
+        </article>
+
+        <!-- Cash Payment Workflow -->
+        <article id="cash" class="tab-content" role="tabpanel" aria-labelledby="tab-cash" tabindex="0">
+            <h2>Cash Payment Workflow (At School Office)</h2>
+            <div class="mermaid">
+flowchart TD
+    Start([Receive Invoice Notification]) --> PrepCash[Prepare Cash Amount]
+    PrepCash --> VisitSchool[Visit School Office]
+    VisitSchool --> MeetAccountant[Meet School Accountant]
+    
+    MeetAccountant --> StateIntent[Inform: Paying School Fees]
+    StateIntent --> ProvideDetails[Provide:<br/>• Student Name<br/>• Class<br/>• Invoice Number if known]
+    
+    ProvideDetails --> AccountantFinds[Accountant Finds Invoice in System]
+    AccountantFinds --> ShowAmount[Accountant Shows Amount Due]
+    
+    ShowAmount --> AgreeAmount{Amount<br/>Correct?}
+    AgreeAmount -->|No| Clarify[Clarify with Accountant]
+    Clarify --> ResolveDispute{Issue<br/>Resolved?}
+    ResolveDispute -->|No| End2([Escalate to Admin])
+    ResolveDispute -->|Yes| HandOverCash
+    
+    AgreeAmount -->|Yes| HandOverCash[Hand Over Cash]
+    HandOverCash --> AccountantCounts[Accountant Counts Cash]
+    
+    AccountantCounts --> AmountCorrect{Amount<br/>Correct?}
+    AmountCorrect -->|No| TopUp[Provide Shortfall]
+    TopUp --> AccountantCounts
+    
+    AmountCorrect -->|Yes| ManualReceipt[Accountant Issues<br/>Manual Receipt from Book]
+    ManualReceipt --> RecordSystem[Accountant Records<br/>Payment in 4SCH System]
+    
+    RecordSystem --> SystemUpdates[System Updates:<br/>✓ Invoice Status: PAID<br/>✓ Digital Receipt Generated<br/>✓ Parent Notification Sent]
+    
+    SystemUpdates --> VerifyReceipt[Verify Receipt Details:<br/>• Amount<br/>• Date<br/>• Student Name<br/>• Receipt Number]
+    
+    VerifyReceipt --> SaveReceipt[Save Receipt Safely]
+    SaveReceipt --> CheckPortal[Later: Check Parent Portal]
+    CheckPortal --> ConfirmPaid[Confirm Invoice Shows PAID]
+    ConfirmPaid --> End([Payment Complete])
+    
+    style Start fill:#e3f2fd
+    style End fill:#c8e6c9
+    style End2 fill:#ffcdd2
+    style AgreeAmount fill:#fff9c4
+    style AmountCorrect fill:#fff9c4
+    style ResolveDispute fill:#fff9c4
+    style SystemUpdates fill:#f3e5f5
+    style ManualReceipt fill:#ffe0b2
+            </div>
+            
+            <div class="tip">
+                <strong>💡 Cash Payment Tips:</strong>
+                <ul>
+                    <li>✓ Prepare exact amount if possible</li>
+                    <li>✓ Visit during office hours (avoid rush times)</li>
+                    <li>✓ Keep manual receipt safe - it's your proof</li>
+                    <li>✓ Verify accountant records payment in system immediately</li>
+                    <li>✓ Check portal later to confirm "PAID" status</li>
+                </ul>
+            </div>
+            
+            <div class="note">
+                <strong>⚠️ Important:</strong> Always insist on a receipt immediately. If accountant says "I'll give it later," politely wait. Never leave without a receipt for cash payment!
+            </div>
+        </article>
+
+        <!-- Installment Plan Workflow -->
+        <article id="installment" class="tab-content" role="tabpanel" aria-labelledby="tab-installment" tabindex="0">
+            <h2>Payment Plan / Installment Workflow</h2>
+            <div class="mermaid">
+flowchart TD
+    Start([Receive Invoice - Can't Pay Full]) --> ContactSchool[Contact School Accountant/Admin]
+    ContactSchool --> RequestPlan[Request Payment Plan]
+    
+    RequestPlan --> SchoolReviews[School Reviews Request]
+    SchoolReviews --> SchoolDecision{School<br/>Approves?}
+    
+    SchoolDecision -->|No| ExplainPolicy[School Explains Policy]
+    ExplainPolicy --> End2([Find Alternative Solution])
+    
+    SchoolDecision -->|Yes| DiscussPlan[Discuss Plan Details]
+    DiscussPlan --> AgreePlan[Agree on Plan:<br/>Total: ₦113,000]
+    
+    AgreePlan --> PlanExample[Example Plan:<br/>• Installment 1: ₦50,000 by Jan 15<br/>• Installment 2: ₦63,000 by Feb 15]
+    
+    PlanExample --> SystemSetup[School Sets Up Plan in 4SCH]
+    SystemSetup --> ParentNotified[Parent Receives Plan Details]
+    
+    ParentNotified --> FirstInstallment[Pay First Installment]
+    FirstInstallment --> PayMethod1{Payment<br/>Method?}
+    
+    PayMethod1 -->|Online| OnlinePay1[Pay Online via Portal]
+    PayMethod1 -->|Transfer| TransferPay1[Bank Transfer]
+    PayMethod1 -->|Cash| CashPay1[Cash at Office]
+    
+    OnlinePay1 --> Installment1Paid
+    TransferPay1 --> Installment1Paid
+    CashPay1 --> Installment1Paid
+    
+    Installment1Paid[Installment 1 Recorded]
+    Installment1Paid --> CheckBalance[Balance Remaining: ₦63,000]
+    CheckBalance --> Reminder[Receive Reminder Before Due Date]
+    
+    Reminder --> SecondInstallment[Pay Second Installment]
+    SecondInstallment --> PayMethod2{Payment<br/>Method?}
+    
+    PayMethod2 -->|Online| OnlinePay2[Pay Online via Portal]
+    PayMethod2 -->|Transfer| TransferPay2[Bank Transfer]
+    PayMethod2 -->|Cash| CashPay2[Cash at Office]
+    
+    OnlinePay2 --> Installment2Paid
+    TransferPay2 --> Installment2Paid
+    CashPay2 --> Installment2Paid
+    
+    Installment2Paid[Installment 2 Recorded]
+    Installment2Paid --> FullyPaid[Invoice Fully Paid]
+    FullyPaid --> FinalReceipt[Final Receipt Issued]
+    FinalReceipt --> End([Payment Plan Complete])
+    
+    style Start fill:#e3f2fd
+    style End fill:#c8e6c9
+    style End2 fill:#ffcdd2
+    style SchoolDecision fill:#fff9c4
+    style PayMethod1 fill:#fff9c4
+    style PayMethod2 fill:#fff9c4
+    style SystemSetup fill:#f3e5f5
+    style FullyPaid fill:#c8e6c9
+            </div>
+            
+            <div class="tip">
+                <strong>💡 Payment Plan Tips:</strong>
+                <ul>
+                    <li>✓ Request payment plan early - don't wait until after due date</li>
+                    <li>✓ Be honest about your financial situation</li>
+                    <li>✓ Propose realistic installment amounts you can afford</li>
+                    <li>✓ Stick to agreed payment dates to maintain trust</li>
+                    <li>✓ Communicate immediately if you'll miss a payment</li>
+                </ul>
+            </div>
+            
+            <div class="note">
+                <strong>⚠️ Important:</strong> Payment plans are a privilege, not a right. Schools are more likely to approve if you have a good payment history. Always honor your commitments to maintain this benefit.
+            </div>
+        </article>
+
+        <a href="../guides/parents" class="back-link">← Back to Parent Guide</a>
+    </main>
+
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            }
+        });
+
+        function showTab(event, tabName) {
+            event.preventDefault();
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => {
+                content.classList.remove('active');
+                content.setAttribute('aria-hidden', 'true');
+            });
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+                tab.setAttribute('aria-selected', 'false');
+            });
+            const selectedContent = document.getElementById(tabName);
+            selectedContent.classList.add('active');
+            selectedContent.setAttribute('aria-hidden', 'false');
+            selectedContent.focus();
+            event.target.classList.add('active');
+            event.target.setAttribute('aria-selected', 'true');
+            const announcement = document.getElementById('tab-announcement');
+            const tabLabel = event.target.textContent.trim();
+            announcement.textContent = `${tabLabel} selected`;
+            setTimeout(() => {
+                announcement.textContent = '';
+            }, 1000);
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const tablist = document.querySelector('[role="tablist"]');
+            const tabs = tablist.querySelectorAll('[role="tab"]');
+            tabs.forEach((tab, index) => {
+                tab.addEventListener('keydown', function(e) {
+                    let newIndex = index;
+                    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                        e.preventDefault();
+                        newIndex = (index + 1) % tabs.length;
+                    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                        e.preventDefault();
+                        newIndex = (index - 1 + tabs.length) % tabs.length;
+                    } else if (e.key === 'Home') {
+                        e.preventDefault();
+                        newIndex = 0;
+                    } else if (e.key === 'End') {
+                        e.preventDefault();
+                        newIndex = tabs.length - 1;
+                    }
+                    if (newIndex !== index) {
+                        tabs[newIndex].focus();
+                        tabs[newIndex].click();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
