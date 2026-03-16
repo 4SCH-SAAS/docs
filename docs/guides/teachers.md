@@ -507,7 +507,7 @@ Once grades are published, they're visible to students and parents. Always doubl
 - **Enter grades within 1 week** of the test/exam while it's fresh in your mind
 - **Save drafts early** even if you're not done—prevents data loss
 - **Publish all subjects together** for term reports (coordinate with other teachers)
-- **Add constructive comments** for students who scored <40% or >80%—it helps parents understand
+- **Add constructive comments** for students who scored below 40% or above 80%—it helps parents understand
 :::
 
 ### Faster Entry Options
