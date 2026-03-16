@@ -14,7 +14,7 @@ Offline Exams in 4SCH manage traditional paper-based examinations - from schedul
 
 :::tip Quick Access
 - 📋 **<Link to="/guides/online-exams">Online Exams Guide</Link>** - For digital MCQ-based exams
-- 📊 **<Link to="../interactive-diagrams/offline-exam-workflows">Interactive Workflow Diagrams</Link>** - Visual flowcharts for all roles
+- 📊 **[Interactive Workflow Diagrams](https://docs.4sch.com/interactive-diagrams/offline-exam-workflows.html)** - Visual flowcharts for all roles
 - 🚀 **<Link to="/guides/offline-exams-quick-reference">Quick Reference Guide</Link>** - Cheat sheet for fast access
 :::
 
@@ -838,7 +838,7 @@ Exams are linked to session years:
 **Parents:**
 - Contact your child's class teacher
 - Email school administration
-- Check the <Link to="/guides/parents">Parent Guide</Link>
+- Check the <Link to="/guides/parent-guide">Parent Guide</Link>
 
 **Administrators:**
 - Check system logs
@@ -854,15 +854,15 @@ Exams are linked to session years:
 - <Link to="/reference/data-import-export">Data Import/Export</Link>
 
 **For Teachers:**
-- <Link to="/guides/teachers">Teacher Guide</Link>
+- <Link to="/guides/teacher-guide">Teacher Guide</Link>
 - <Link to="/guides/online-exams">Online Exams</Link>
 
 **For Students:**
-- <Link to="/guides/students">Student Guide</Link>
+- <Link to="/guides/student-guide">Student Guide</Link>
 - <Link to="/support/faq">Frequently Asked Questions</Link>
 
 **For Parents:**
-- <Link to="/guides/parents">Parent Guide</Link>
+- <Link to="/guides/parent-guide">Parent Guide</Link>
 - <Link to="/support/contact-support">Contact Support</Link>
 
 ---
