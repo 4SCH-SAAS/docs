@@ -13,7 +13,7 @@ import Link from '@docusaurus/Link';
 Online Exams in 4SCH allow teachers and administrators to create, conduct, and grade digital examinations with automatic grading for multiple-choice questions. This comprehensive guide covers all aspects of the online exam system.
 
 :::tip Quick Access
-- 📊 **[Interactive Workflow Diagrams](https://docs.4sch.com/interactive-diagrams/online-exam-workflows.html)** - Visual flowcharts for all user roles
+- 📊 **[Interactive Workflow Diagrams](pathname:///interactive-diagrams/online-exam-workflows.html)** - Visual flowcharts for all user roles
 - 📋 **<Link to="/guides/online-exams-quick-reference">Quick Reference Guide</Link>** - Cheat sheet for fast access
 :::
 
@@ -1981,7 +1981,7 @@ Technical fix:
 
 **For Teachers:**
 - <Link to="/guides/teacher-guide">Teacher Guide</Link>
-- [Assignment Submission Workflow](https://docs.4sch.com/interactive-diagrams/student-assignment-submission.html)
+- [Assignment Submission Workflow](pathname:///interactive-diagrams/student-assignment-submission.html)
 
 **For Students:**
 - <Link to="/guides/student-guide">Student Guide</Link>
