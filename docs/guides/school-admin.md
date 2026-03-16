@@ -86,6 +86,9 @@ Your dashboard provides a complete overview of your school:
 
 ## <span className="heading-icon"><AcademicIcon size={18} /></span> Academic Management {#academic-management}
 
+<!-- Anchor for "academic setup" links -->
+<a id="academic-setup"></a>
+
 ### Setting Up Academic Sessions
 
 Academic sessions represent school years (e.g., 2024-2025).
