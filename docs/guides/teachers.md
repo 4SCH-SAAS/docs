@@ -117,6 +117,19 @@ A: Update their status from "Absent" to "Late" and add a note about when they ar
 Don't mark attendance at the end of the day from memory! Mark it during or right after class when it's fresh. This ensures accuracy and sends timely notifications to parents.
 :::
 
+:::tip Attendance Pro Tips
+**Time-Saving Strategy:**
+- Use the first 5 minutes of class for settling in
+- Take attendance while students copy the day's objectives from the board
+- Mark on your phone/tablet as you walk around the class
+
+**Pattern Recognition:**
+If a student is absent 2-3 days in a row, send a quick message to the parent. Early intervention prevents prolonged absences.
+
+**For Multiple Classes:**
+Set a daily reminder at lunch to check if you've marked all morning classes. It's easier to fix errors before the day ends.
+:::
+
 ---
 
 ## <span className="heading-icon"><GradesIcon size={18} /></span> Managing Assignments {#managing-assignments}
@@ -173,8 +186,42 @@ If they were already accepted, they cannot resubmit.
    - ✅ **Accepted** — You accepted the submission (optional points + feedback)
    - ❌ **Rejected** — You rejected the submission (student may resubmit if allowed)
 
-:::tip About “Late”
+:::tip About "Late"
 The backend stores the submission time; whether it is labeled **Late** is a UI feature (based on due date). Even if late submissions are shown, you can still accept/reject and grade them.
+:::
+
+:::tip Assignment Management Best Practices
+**Setting Realistic Deadlines:**
+- **Homework:** 2-3 days for simple tasks, 5-7 days for complex ones
+- **Projects:** Minimum 2 weeks with milestone check-ins
+- **Essays:** 1-2 weeks depending on length and research required
+
+**Avoiding Overwhelm:**
+Check the school calendar before setting due dates:
+- Not during exam weeks
+- Not on Mondays (students forget over weekend)
+- Avoid clustering multiple assignments on the same day across subjects
+
+**Clear Instructions Save Time:**
+Students with clear instructions submit better work with fewer questions. Include:
+- Specific requirements (word count, format, sections needed)
+- Grading rubric or criteria upfront
+- Examples of good work (from previous years, with permission)
+- Common mistakes to avoid
+:::
+
+:::warning Preventing Plagiarism
+**Be Proactive:**
+- Require specific, personalized elements (e.g., "Include your own example from daily life")
+- Ask for rough drafts or progress updates
+- Vary assignments each term so past work isn't reused
+- Make some questions discussion-based rather than fact-based
+
+**If You Suspect Copying:**
+- Compare with student's previous work quality
+- Search key phrases online
+- Discuss with the student privately before taking action
+- Follow your school's academic integrity policy
 :::
 
 3. Click on a student's name to view their submission
@@ -204,6 +251,17 @@ Write comments to help the student improve:
 
 :::tip Grading Efficiently
 Grade all submissions for one question/section at a time rather than grading each student's entire work. This helps you stay consistent in your grading and saves time.
+
+**Feedback That Helps:**
+- Be specific: "Good use of examples in paragraph 2" vs "Good work"
+- Balance positive and constructive comments
+- Focus on 2-3 main areas for improvement
+- Use encouraging language even for weaker submissions
+
+**Time Management:**
+- Set a timer (5 minutes per submission max)
+- Grade in a quiet environment without distractions
+- Take breaks after every 10 submissions to maintain consistency
 :::
 
 ### Complete Workflow: Creating and Grading an Assignment
@@ -600,6 +658,23 @@ You can attach files to the lesson itself OR to individual topics within the les
 ✅ **Mix media types** — Combine PDFs (notes) + videos (explanations) + links (extra practice)  
 ✅ **Check file sizes** — Large videos may be slow to download; consider YouTube links instead  
 ✅ **Update regularly** — Keep materials current and remove outdated content
+
+:::tip Content Creation Strategy
+**Weekly Workflow:**
+- **Monday:** Upload week's lesson materials for all classes
+- **Mid-week:** Add supplementary videos/links based on student questions
+- **Friday:** Review what worked and plan next week's content
+
+**Quality Over Quantity:** 3 high-quality resources are better than 10 mediocre ones. Focus on materials that truly help students understand concepts.
+:::
+
+:::warning Common Pitfall
+Don't upload copyrighted materials (textbook PDFs, commercial videos) without permission. Use:
+- Your own notes and summaries
+- YouTube videos (with proper attribution)
+- Open educational resources
+- School-approved textbook resources
+:::
 
 ---
 
