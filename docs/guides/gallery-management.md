@@ -699,8 +699,8 @@ DSC_0234.jpg → science_fair_chemistry_demo.jpg
 
 - <Link to="/guides/homepage-content-management">Homepage Content Management</Link>
 - <Link to="/guides/school-admin">School Admin Guide</Link>
-- <Link to="/guides/students">Student Guide</Link>
-- <Link to="/guides/parents">Parent Guide</Link>
+- <Link to="/guides/student-guide">Student Guide</Link>
+- <Link to="/guides/parent-guide">Parent Guide</Link>
 
 ---
 

@@ -712,9 +712,9 @@ Full results list available in the Results section.
 ## Related Resources
 
 - <Link to="/guides/school-admin">School Admin Guide</Link>
-- <Link to="/guides/teachers">Teacher Guide - Class Announcements</Link>
-- <Link to="/guides/students#announcements">Student Guide - Reading Announcements</Link>
-- <Link to="/guides/parents#announcements">Parent Guide - School Updates</Link>
+- <Link to="/guides/teacher-guide">Teacher Guide - Class Announcements</Link>
+- <Link to="/guides/student-guide#announcements">Student Guide - Reading Announcements</Link>
+- <Link to="/guides/parent-guide#announcements">Parent Guide - School Updates</Link>
 
 ---
 
