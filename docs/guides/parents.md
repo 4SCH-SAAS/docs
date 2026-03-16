@@ -136,6 +136,22 @@ Stay informed about your child's academic performance.
 
 ### What You'll See
 
+**Assignments (Homework):**
+- View assignments by subject and due date
+- See whether your child has submitted an assignment
+- If enabled by the school, view teacher feedback and points after grading
+
+**Assignment Performance Report (Points-based):**
+If teachers set **points** on assignments, the app can generate a simple report per subject:
+- Total assignments (with points)
+- Submitted vs unsubmitted
+- Total points vs obtained points
+- Percentage score
+
+:::note What this report includes
+Only assignments that have **points** set are included in the assignment performance report.
+:::
+
 **Recent Test Scores:**
 - Individual test and quiz results
 - Subject-by-subject breakdown

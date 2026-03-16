@@ -236,8 +236,9 @@ Your teachers will post assignments for you to complete and submit online.
 1. Go to **Assignments** from the main menu
 2. You'll see all your assignments organized by:
    - **Pending** — Not yet submitted
-   - **Submitted** — You've already turned them in
-   - **Graded** — Teacher has graded your work
+   - **Submitted** — You’ve submitted and it’s waiting for teacher review
+   - **Accepted / Graded** — Teacher accepted it (may include points + feedback)
+   - **Rejected** — Teacher rejected it (you may be allowed to resubmit)
 
 <Screenshot
   src="/img/screens/students/assignments-list.svg"
@@ -821,14 +822,18 @@ After your teacher grades your work:
 
 **Read the feedback carefully!** Your teacher's comments help you improve next time.
 
-### What If You Miss the Deadline?
+### Resubmission and Late Submission
 
-**If you're going to be late:**
-- Message your teacher before the deadline
-- Explain why (illness, family emergency, etc.)
-- Ask if you can submit late
+**Late submission:**
+- 4SCH can still allow you to submit after the due date depending on your school/teacher settings.
+- If you will be late, message your teacher before the deadline.
 
-**Some teachers allow late submissions with a penalty** (e.g., 10% deduction per day late).
+**Resubmission (after rejection):**
+If your teacher **rejects** your submission, you may be allowed to resubmit *only if the teacher enabled resubmission* for that assignment.
+
+:::caution Deleting a submission
+In the backend, students can only delete an assignment submission while it is still in the initial **Submitted (pending review)** state. Once it is accepted or rejected, deletion is blocked.
+:::
 
 :::tip Time Management
 Don't wait until the last minute! Submit assignments at least a day before the deadline. This gives you a buffer if something goes wrong (internet issues, computer problems, etc.).
