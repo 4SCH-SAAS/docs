@@ -764,7 +764,7 @@ Review your performance to identify topics needing more study. Some systems may 
 4. If time expires, exam auto-submits
 5. Screenshot the error and contact teacher
 
-### Tips for Success
+### Tips for Success {#exam-preparation-tips}
 
 #### Before the Exam
 
@@ -820,7 +820,7 @@ A: Answer to the best of your understanding, then report to your teacher afterwa
 
 ---
 
-## For Parents
+## For Parents {#for-parents}
 
 ### Monitoring Your Child's Online Exams
 
@@ -1180,7 +1180,7 @@ A: Results are auto-calculated by the system. If you suspect an error, contact t
 
 ---
 
-#### Issue 5: Cannot Submit Exam - Button Disabled/Not Working
+#### Issue 5: Cannot Submit Exam - Button Disabled/Not Working {#issue-5-cannot-submit-exam-button-disablednot-working}
 
 **Symptoms:**
 - Submit button is grayed out

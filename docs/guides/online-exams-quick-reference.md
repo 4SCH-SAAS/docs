@@ -124,6 +124,9 @@ Quick access to essential information for online exams. Bookmark this page for f
 
 ---
 
+<!-- Anchor for parent links -->
+<a id="for-parents"></a>
+
 ## 👨‍🎓 For Students
 
 ### Taking an Exam - Quick Guide

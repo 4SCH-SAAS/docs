@@ -298,6 +298,7 @@ Look for:
 - **Full Payment:** Pay entire amount (NGN 31,500)
 - **Installment Payment:** Pay in parts (if allowed by school)
   - Example: 3 installments of NGN 10,500 each
+- **Advance Payment:** Some schools allow paying extra (advance) toward future installments or fees
   - Installment 1 due: March 10
   - Installment 2 due: March 20
   - Installment 3 due: March 31

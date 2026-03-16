@@ -51,3 +51,10 @@ Billing:
 Messaging:
 - Messages not delivered:
   - Check audience filters, throttling limits, and provider status; review bounce logs
+
+Notifications:
+- Not receiving notifications:
+  - Confirm notifications are allowed for the 4SCH app in your phone settings
+  - Check Focus/DND modes
+  - Ensure you are logged into the correct school/account
+  - See what should trigger alerts: [Notifications FAQ](/support/faq#notifications)

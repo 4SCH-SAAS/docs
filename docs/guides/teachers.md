@@ -448,27 +448,25 @@ This workflow shows you the entire process from creating an assignment to publis
 
 ## <span className="heading-icon"><GradesIcon size={18} /></span> Entering Grades for Tests & Exams {#entering-grades}
 
-For formal assessments like class tests, midterms, and final exams, you'll enter grades in the **Gradebook**.
+For formal assessments like class tests, midterms, and final exams, grades are recorded through the **Exams** workflow (especially **Offline Exams**) based on how your school is configured.
 
 :::tip Exam Management
-For detailed guidance on creating and managing exams:
+For detailed guidance:
 - **<Link to="/guides/online-exams">Online Exams</Link>** - Digital MCQ exams with auto-grading
-- **<Link to="/guides/offline-exams">Offline Exams</Link>** - Traditional paper-based exams with manual mark entry
+- **<Link to="/guides/offline-exams">Offline Exams</Link>** - Paper-based exams with manual mark entry and results publishing
 :::
 
-### Understanding Your Gradebook
+### How Grade Entry Is Organized
 
-The gradebook is organized by:
-- **Terms/Semesters** — Each grading period has its own gradebook
-- **Subjects** — You only see subjects you teach
-- **Assessments** — Tests, quizzes, exams that make up the final grade
+Most schools organize grade entry by:
+- **Session year / term / semester** (set by admin)
+- **Class section + subject**
+- **Assessment type** (e.g., CA tests, midterm, final)
 
-Your school admin sets up the assessment structure. You just enter the scores.
+### How to Enter Scores (Typical)
 
-### How to Enter Test Scores
-
-**Step 1: Open the Gradebook**
-Go to **Gradebook** or **Grades** from the main menu.
+**Step 1: Open Exams / Marks Entry**
+Go to **Exams** (or **Grades**) from the main menu, then select the relevant assessment (e.g., Offline Exam).
 
 **Step 2: Select Your Class and Subject**
 Choose the class and subject you want to enter grades for.
@@ -505,16 +503,14 @@ When you're ready to release the results:
 Once grades are published, they're visible to students and parents. Always double-check your entries before publishing! If you need to make changes after publishing, contact your admin.
 :::
 
-### Bulk Grade Entry (Time-Saver!)
+### Faster Entry Options
 
-If you have scores written on paper, here's the fastest way to enter them:
+Depending on your school setup, you may see one or more of these options:
 
-1. Open the gradebook for the assessment
-2. Click **Bulk Entry** or **Quick Entry** (if available)
-3. Type scores in sequence, pressing Tab or Enter to move to the next student
-4. Save when done
+- **Bulk entry / quick entry** screens (type scores in sequence)
+- **Spreadsheet import** for offline exam marks
 
-This is much faster than clicking on each student individually!
+If you use spreadsheets, see <Link to="/reference/data-import-export#bulk-marks-upload-offline-exams">Bulk Marks Upload</Link>.
 
 ### What If I Make a Mistake?
 

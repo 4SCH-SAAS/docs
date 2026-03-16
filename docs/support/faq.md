@@ -43,6 +43,19 @@ Messaging:
 - Who can I message?
   - Teachers can message assigned classes; Parents and Students can message recipients based on school policy.
 
+## Notifications {#notifications}
+
+- What triggers a notification?
+  - **New assignment created/updated** — Students (and linked guardians) in the target class/subject receive an alert.
+  - **Assignment accepted/rejected** — The student (and linked guardian) receive an alert after the teacher reviews the submission.
+  - **Diary note posted** — Students (and linked guardians) receive an alert. For elective subjects, only enrolled students are notified.
+  - **Attendance marked absent** — If enabled when marking attendance, absent users receive an "Absent" notification.
+  - **Admin broadcast** — Admin/staff can send bulk notifications to selected roles or class sections.
+
 Data & Privacy:
 - How do we export student data?
   - Admin Console → Reports → Exports. Full exports are permission-restricted.
+
+Access & Permissions:
+- Why can’t I see Exams/Assignments/Fees in my menu?
+  - Either the **module is disabled** for your school or your **role permissions** don’t allow access. Ask your school admin to review **Settings → Roles & Permissions**, and confirm the relevant module is enabled (e.g., Exam Management, Assignment Management, Fees Management).
