@@ -526,6 +526,95 @@ Some schools lock grades after publishing to maintain integrity.
 
 ---
 
+## <span className="heading-icon"><MessagingIcon size={18} /></span> Student Diary (Behavior Tracking) {#student-diary}
+
+The Student Diary feature helps you track and communicate student behavior—both positive (excellence, participation) and negative (discipline issues). Diary notes are shared with students and their parents/guardians.
+
+### Setting Up Diary Categories
+
+Before creating diary notes, you need to create categories (one-time setup per category).
+
+**Step 1: Create a Category**
+
+1. Go to **Student Diary** → **Categories** (or **Manage Categories**)
+2. Click **Add Category**
+3. Fill in:
+   - **Name** — e.g., "Excellent Behavior", "Late to Class", "Outstanding Performance"
+   - **Type** — Choose:
+     - **Positive** — For achievements, good behavior, participation
+     - **Negative** — For discipline issues, warnings, concerns
+4. Click **Save**
+
+**Managing Categories:**
+- **Edit** — Click edit icon to change name or type
+- **Delete** — You can only delete categories that have never been used in diary notes
+
+:::caution
+If a category is already used in diary notes, you cannot delete it. This prevents breaking historical records.
+:::
+
+---
+
+### Creating a Diary Note
+
+**Step 1: Go to Student Diary → Create Note**
+
+**Step 2: Fill in Details**
+
+- **Category** — Select from your categories (e.g., "Late to Class")
+- **Title** — Brief summary (e.g., "Late without excuse")
+- **Date** — Date of the incident/behavior
+- **Class/Section** — Select target class section
+- **Subject** — Optional (if behavior relates to a specific subject)
+- **Message** — Full description (optional, adds context)
+
+**Step 3: Select Students**
+
+You can:
+- **Select individual students** from the class list, OR
+- **Select entire class/section**
+
+**Step 4: Submit**
+
+Click **Submit**. The system will:
+- Save the diary note
+- Send **notifications** to:
+  - Selected student(s)
+  - Their linked parent(s)/guardian(s)
+
+:::tip
+For **elective subjects**, only students enrolled in that elective will be notified. For **compulsory subjects**, all students in the class/section are notified.
+:::
+
+---
+
+### Viewing & Managing Diary Notes
+
+**To view diary notes you've created:**
+1. Go to **Student Diary** → **My Diary Notes** (or **View Diary**)
+2. You'll see all notes with:
+   - Date, category, title, student(s)
+   - Positive vs negative indicator
+
+**To delete a diary note:**
+- Click **Delete** icon → Confirm
+- Only **permanently deleted** diary notes can be removed (soft-deleted notes can be restored by admin)
+
+:::note Removing individual students
+If you added multiple students to a diary note and need to remove one student from it, use the **Remove Student** option in the diary note details.
+:::
+
+---
+
+### Best Practices for Student Diary
+
+✅ **Balance positive & negative** — Don't only report problems; celebrate successes  
+✅ **Be specific** — "Excellent participation in class discussion" is better than "Good behavior"  
+✅ **Use consistently** — Regular updates help parents track patterns  
+✅ **Subject-specific notes** — Link notes to subjects when relevant (helps identify subject-specific issues)
+
+---
+
 ## <span className="heading-calls"><MessagingIcon size={18} /></span> Communicating with Parents & Students {#communicating-with-parents}
 
 Good communication with parents makes your job easier. 4SCH helps you reach parents instantly.

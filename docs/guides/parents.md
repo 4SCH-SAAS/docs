@@ -124,6 +124,78 @@ Schools often have minimum attendance requirements:
 
 ---
 
+## <span className="heading-icon"><MessagingIcon size={18} /></span> Student Diary (Behavior Tracking) {#student-diary}
+
+The Student Diary shows teacher notes about your child's behavior and performance—both positive achievements and areas needing improvement.
+
+### Viewing Your Child's Diary
+
+**Step 1: Select Your Child**
+If you have multiple children, choose which child's diary to view.
+
+**Step 2: Go to Diary**
+Navigate to **Student Diary** or **Diary** from the menu.
+
+**Step 3: View Diary Notes**
+You'll see all notes with:
+- **Date** — When the note was written
+- **Category** — Type (Positive or Negative)
+- **Title** — Brief summary
+- **Teacher** — Who wrote it
+- **Subject** — If related to a specific subject
+- **Full Message** — Detailed description
+
+### Understanding the Categories
+
+Teachers organize notes by category:
+
+**Positive (✅):**
+- Outstanding Performance
+- Excellent Participation
+- Helping Others
+- Leadership
+
+**Negative (⚠️):**
+- Late to Class
+- Incomplete Homework
+- Disruptive Behavior
+- Needs Improvement
+
+### Filtering & Tracking Patterns
+
+Use filters to:
+- View only **positive** or **negative** notes
+- Filter by **subject** (e.g., see only Mathematics notes)
+- Filter by **date range** (e.g., this month's notes)
+
+:::tip Tracking trends
+Regular diary notes help you spot patterns:
+- Does your child struggle in a specific subject?
+- Are there recurring behavior issues (e.g., late to class)?
+- What subjects/areas are they excelling in?
+
+Use this information to have productive conversations with your child and their teachers.
+:::
+
+### What to Do with Diary Notes
+
+**For Positive Notes:**
+- Celebrate with your child!
+- Reinforce the good behavior/performance
+- Share achievements with family
+
+**For Negative Notes:**
+- Talk to your child calmly (don't punish before understanding)
+- Ask: "What happened? How can we improve?"
+- Contact the teacher if you need more context
+- Work together on a plan to address the issue
+
+:::caution Important
+Diary notes are meant to help improve your child's learning and behavior—not to shame or punish. Use them constructively.
+:::
+
+---
+
 ## <span className="heading-icon"><GradesIcon size={18} /></span> Viewing Grades & Results {#viewing-grades}
 
 Stay informed about your child's academic performance.
