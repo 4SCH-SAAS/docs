@@ -841,6 +841,42 @@ Don't wait until the last minute! Submit assignments at least a day before the d
 
 ---
 
+## <span className="heading-icon"><GradesIcon size={18} /></span> Accessing Lessons & Study Materials {#lessons-study-materials}
+
+Your teachers organize course content into **Lessons** and **Topics**, with study materials (PDFs, videos, links) you can access anytime.
+
+### Viewing Lessons
+
+1. Go to **Lessons** or **Study Materials** from the menu
+2. Select a **Subject**
+3. You'll see all lessons for that subject
+
+Each lesson shows:
+- Lesson name and description
+- Topics within the lesson
+- Attached files (if any)
+
+### Viewing Topics & Study Materials
+
+1. Click on a lesson to expand it
+2. You'll see all topics under that lesson
+3. Each topic may have:
+   - **PDFs** — Notes, worksheets, practice problems
+   - **Videos** — Uploaded videos or YouTube links
+   - **Links** — Websites, simulations, extra resources
+
+### Downloading/Viewing Materials
+
+- **PDFs and files** — Tap/click to download or open
+- **Videos** — Tap/click to watch
+- **Links** — Tap/click to open in browser
+
+:::tip Study effectively
+Download materials when you have Wi-Fi, then review them offline later. Videos and PDFs are great for exam review!
+:::
+
+---
+
 ## <span className="heading-icon"><GradesIcon size={18} /></span> Checking Your Grades {#checking-your-grades}
 
 See how you're performing in all your subjects.

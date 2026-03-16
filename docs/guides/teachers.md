@@ -526,6 +526,74 @@ Some schools lock grades after publishing to maintain integrity.
 
 ---
 
+## <span className="heading-icon"><GradesIcon size={18} /></span> Lessons & Topics (Study Materials) {#lessons-topics}
+
+Organize your curriculum into **Lessons** and **Topics**, and upload study materials (files, videos, links) for students to access.
+
+### Creating a Lesson
+
+A **Lesson** represents a major curriculum unit (e.g., "Introduction to Algebra", "Photosynthesis").
+
+1. Go to **Lessons** → **Create Lesson**
+2. Fill in:
+   - **Name** — Lesson title (e.g., "Chapter 3: Cell Division")
+   - **Description** — Overview of what students will learn
+   - **Subject** — Select the subject
+   - **Class/Sections** — Choose one or more class sections
+3. **(Optional) Attach files** — Add PDFs, worksheets, or other resources
+4. Click **Submit**
+
+:::tip
+You can attach files to the lesson itself OR to individual topics within the lesson. Most teachers prefer attaching materials at the topic level for better organization.
+:::
+
+---
+
+### Adding Topics to a Lesson
+
+**Topics** are subtopics or units within a lesson (e.g., "Mitosis", "Meiosis" under "Cell Division").
+
+1. Open the lesson you created
+2. Click **Add Topic**
+3. Fill in:
+   - **Name** — Topic title
+   - **Description** — What this topic covers
+4. **Add Study Materials** — Choose type:
+   - **File Upload** — Upload PDFs, Word docs, images (max size per system settings)
+   - **Video Upload** — Upload video files
+   - **YouTube Link** — Paste YouTube URL
+   - **Other Link** — Paste any web link
+5. For videos/links, add a **thumbnail image**
+6. Click **Submit**
+
+**You can add multiple study materials per topic** (e.g., one PDF + two YouTube videos).
+
+---
+
+### Managing Lessons & Topics
+
+**Editing:**
+- Click **Edit** icon → Update name/description/files → Save
+
+**Deleting:**
+- Click **Delete** icon → Confirm
+- Deleting a lesson deletes all its topics and study materials
+
+**File Management:**
+- You can update file names or replace files
+- Deleted files are removed from student access immediately
+
+---
+
+### Best Practices
+
+✅ **Organize logically** — Use lessons for chapters/units, topics for specific concepts  
+✅ **Mix media types** — Combine PDFs (notes) + videos (explanations) + links (extra practice)  
+✅ **Check file sizes** — Large videos may be slow to download; consider YouTube links instead  
+✅ **Update regularly** — Keep materials current and remove outdated content
+
+---
+
 ## <span className="heading-calls"><MessagingIcon size={18} /></span> Communicating with Parents & Students {#communicating-with-parents}
 
 Good communication with parents makes your job easier. 4SCH helps you reach parents instantly.

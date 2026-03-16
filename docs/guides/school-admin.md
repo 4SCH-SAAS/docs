@@ -477,6 +477,25 @@ Define what each user role can access:
 
 1. Go to **Settings → Roles & Permissions**
 
+### Lessons & Topics Management
+
+**Permissions:**
+- `lesson-create` — Allow teachers to create lessons
+- `lesson-edit` — Allow teachers to edit lessons
+- `lesson-delete` — Allow teachers to delete lessons
+- `topic-create` — Allow teachers to create topics under lessons
+- `topic-edit` — Allow teachers to edit topics
+- `topic-delete` — Allow teachers to delete topics
+
+**System Setting:**
+- `file_upload_size_limit` — Maximum file size for study materials (MB)
+
+:::tip
+Teachers can upload files, videos, YouTube links, and other links as study materials. Monitor the file upload size limit to balance quality vs storage/bandwidth.
+:::
+
+---
+
 ### Modules & Feature Access (Missing Menus) {#modules-feature-access}
 
 If a user cannot see a menu (or receives a "feature not available" style error), it is usually due to one of these:
