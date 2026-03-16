@@ -194,6 +194,14 @@ Use this information to have productive conversations with your child and their 
 Diary notes are meant to help improve your child's learning and behavior—not to shame or punish. Use them constructively.
 :::
 
+:::tip Best Practice: Responding to Diary Notes
+- **Check diary weekly**—don't wait for month-end to discover issues
+- **Acknowledge positive notes**—text/call your child to congratulate them
+- **Address negatives early**—small issues are easier to fix before they become patterns
+- **Follow up with teachers**—if you see 3+ negative notes in same subject, schedule a meeting
+- **Balance consequences with encouragement**—combine discipline with support and praise
+:::
+
 ---
 
 ## <span className="heading-icon"><GradesIcon size={18} /></span> Viewing Grades & Results {#viewing-grades}

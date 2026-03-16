@@ -935,6 +935,13 @@ At the end of term:
 3. Click to save as PDF
 4. Print it if your parents need to sign it
 
+:::tip Best Practice: Track Your Progress
+- **Download your report card immediately**—don't wait until the last day
+- **Review it with your parents**—ask questions about subjects you struggled in
+- **Set goals for next term** based on your results
+- **Keep a folder** of all your report cards to see your improvement over time
+:::
+
 ### Downloading an Exam Result PDF (if enabled)
 
 For a specific offline exam, some schools provide a separate **Result PDF**:

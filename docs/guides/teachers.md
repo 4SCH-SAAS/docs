@@ -503,6 +503,13 @@ When you're ready to release the results:
 Once grades are published, they're visible to students and parents. Always double-check your entries before publishing! If you need to make changes after publishing, contact your admin.
 :::
 
+:::tip Best Practice: Grade Entry Timing
+- **Enter grades within 1 week** of the test/exam while it's fresh in your mind
+- **Save drafts early** even if you're not done—prevents data loss
+- **Publish all subjects together** for term reports (coordinate with other teachers)
+- **Add constructive comments** for students who scored <40% or >80%—it helps parents understand
+:::
+
 ### Faster Entry Options
 
 Depending on your school setup, you may see one or more of these options:
