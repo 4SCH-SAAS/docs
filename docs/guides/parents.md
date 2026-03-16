@@ -216,6 +216,14 @@ At the end of each term:
 
 Some schools require a printed report card to be signed and returned.
 
+### Downloading an Exam Result PDF (if enabled)
+
+For a specific offline exam, some schools provide a separate **Result PDF**:
+1. Select your child
+2. Go to **Exams** → **Results**
+3. Select the exam
+4. Tap/Click **Download Result PDF** (or Share)
+
 ---
 
 ## <span className="heading-icon"><FinanceIcon size={18} /></span> Paying School Fees {#paying-school-fees}

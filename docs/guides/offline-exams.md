@@ -291,7 +291,11 @@ Unpublishing temporarily hides results from students/parents. Use this feature c
 ✅ **Double-Check Marks** - Review before publishing results  
 ✅ **Communicate Delays** - Inform if result publication is delayed  
 ✅ **Backup Data** - Export results regularly  
-✅ **Archive Old Exams** - Keep historical records organized  
+✅ **Archive Old Exams** - Keep historical records organized
+
+:::tip Bulk marks upload
+If your school enters marks using spreadsheets, see <Link to="/reference/data-import-export#bulk-marks-upload-offline-exams">Bulk Marks Upload</Link>.
+:::  
 
 ---
 
@@ -369,6 +373,13 @@ If you made an error or need to update:
 2. Modify the marks for specific students
 3. Click **Save** again
 
+:::caution Mark entry restrictions
+- If the exam is **published**, teachers cannot update marks until the admin **unpublishes** the result.
+- Some schools restrict mark entry to the exam date window (between the exam start and end dates).
+
+If you cannot edit marks, contact your school admin.
+:::
+
 **Note:** You can edit marks anytime before results are published.
 
 ---
@@ -434,6 +445,17 @@ Use the timetable to create a study schedule. Prioritize subjects with earlier e
 ### Viewing Exam Results
 
 After the school publishes results, you can view them.
+
+#### Downloading Result PDF (if enabled)
+
+Some schools enable a downloadable **Result PDF** for sharing or printing.
+
+- **Student:** Exams → Exam Results → Select exam → Download/Share Result PDF
+- **Parent:** Select child → Exams → Results → Select exam → Download/Share Result PDF
+
+:::note Report Card vs Result PDF
+A **Report Card PDF** is usually term-based (all subjects + remarks). A **Result PDF** is usually exam-specific.
+:::
 
 #### On Mobile App
 

@@ -899,6 +899,13 @@ At the end of term:
 3. Click to save as PDF
 4. Print it if your parents need to sign it
 
+### Downloading an Exam Result PDF (if enabled)
+
+For a specific offline exam, some schools provide a separate **Result PDF**:
+1. Go to **Exams** → **Exam Results**
+2. Select the exam
+3. Tap/Click **Download Result PDF** (or Share)
+
 ### What to Do If You're Not Happy with Your Grades
 
 **Don't panic! Here's what to do:**
