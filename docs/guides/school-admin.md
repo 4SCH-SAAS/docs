@@ -477,22 +477,21 @@ Define what each user role can access:
 
 1. Go to **Settings → Roles & Permissions**
 
-### Student Diary Management
-
-The **Student Diary** feature enables teachers to track student behavior and performance. As an admin, you control:
+### Lessons & Topics Management
 
 **Permissions:**
-- `student-diary-create` — Allow teachers to create diary notes and categories
-- `student-diary-edit` — Allow teachers to edit diary categories
-- `student-diary-delete` — Allow teachers to delete diary notes/categories
+- `lesson-create` — Allow teachers to create lessons
+- `lesson-edit` — Allow teachers to edit lessons
+- `lesson-delete` — Allow teachers to delete lessons
+- `topic-create` — Allow teachers to create topics under lessons
+- `topic-edit` — Allow teachers to edit topics
+- `topic-delete` — Allow teachers to delete topics
 
-**Key Admin Functions:**
-- **Restore deleted diary notes** — If a teacher accidentally deletes a note, you can restore it from trash
-- **Manage categories school-wide** — Review and organize diary categories created by teachers
-- **View all diary notes** — Monitor how teachers are using the diary feature
+**System Setting:**
+- `file_upload_size_limit` — Maximum file size for study materials (MB)
 
-:::tip Best Practice
-Encourage teachers to balance positive and negative diary entries. Diary should be used for **recognition** as much as for **discipline**.
+:::tip
+Teachers can upload files, videos, YouTube links, and other links as study materials. Monitor the file upload size limit to balance quality vs storage/bandwidth.
 :::
 
 ---

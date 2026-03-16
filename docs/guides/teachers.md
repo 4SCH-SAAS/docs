@@ -526,92 +526,71 @@ Some schools lock grades after publishing to maintain integrity.
 
 ---
 
-## <span className="heading-icon"><MessagingIcon size={18} /></span> Student Diary (Behavior Tracking) {#student-diary}
+## <span className="heading-icon"><GradesIcon size={18} /></span> Lessons & Topics (Study Materials) {#lessons-topics}
 
-The Student Diary feature helps you track and communicate student behavior—both positive (excellence, participation) and negative (discipline issues). Diary notes are shared with students and their parents/guardians.
+Organize your curriculum into **Lessons** and **Topics**, and upload study materials (files, videos, links) for students to access.
 
-### Setting Up Diary Categories
+### Creating a Lesson
 
-Before creating diary notes, you need to create categories (one-time setup per category).
+A **Lesson** represents a major curriculum unit (e.g., "Introduction to Algebra", "Photosynthesis").
 
-**Step 1: Create a Category**
-
-1. Go to **Student Diary** → **Categories** (or **Manage Categories**)
-2. Click **Add Category**
-3. Fill in:
-   - **Name** — e.g., "Excellent Behavior", "Late to Class", "Outstanding Performance"
-   - **Type** — Choose:
-     - **Positive** — For achievements, good behavior, participation
-     - **Negative** — For discipline issues, warnings, concerns
-4. Click **Save**
-
-**Managing Categories:**
-- **Edit** — Click edit icon to change name or type
-- **Delete** — You can only delete categories that have never been used in diary notes
-
-:::caution
-If a category is already used in diary notes, you cannot delete it. This prevents breaking historical records.
-:::
-
----
-
-### Creating a Diary Note
-
-**Step 1: Go to Student Diary → Create Note**
-
-**Step 2: Fill in Details**
-
-- **Category** — Select from your categories (e.g., "Late to Class")
-- **Title** — Brief summary (e.g., "Late without excuse")
-- **Date** — Date of the incident/behavior
-- **Class/Section** — Select target class section
-- **Subject** — Optional (if behavior relates to a specific subject)
-- **Message** — Full description (optional, adds context)
-
-**Step 3: Select Students**
-
-You can:
-- **Select individual students** from the class list, OR
-- **Select entire class/section**
-
-**Step 4: Submit**
-
-Click **Submit**. The system will:
-- Save the diary note
-- Send **notifications** to:
-  - Selected student(s)
-  - Their linked parent(s)/guardian(s)
+1. Go to **Lessons** → **Create Lesson**
+2. Fill in:
+   - **Name** — Lesson title (e.g., "Chapter 3: Cell Division")
+   - **Description** — Overview of what students will learn
+   - **Subject** — Select the subject
+   - **Class/Sections** — Choose one or more class sections
+3. **(Optional) Attach files** — Add PDFs, worksheets, or other resources
+4. Click **Submit**
 
 :::tip
-For **elective subjects**, only students enrolled in that elective will be notified. For **compulsory subjects**, all students in the class/section are notified.
+You can attach files to the lesson itself OR to individual topics within the lesson. Most teachers prefer attaching materials at the topic level for better organization.
 :::
 
 ---
 
-### Viewing & Managing Diary Notes
+### Adding Topics to a Lesson
 
-**To view diary notes you've created:**
-1. Go to **Student Diary** → **My Diary Notes** (or **View Diary**)
-2. You'll see all notes with:
-   - Date, category, title, student(s)
-   - Positive vs negative indicator
+**Topics** are subtopics or units within a lesson (e.g., "Mitosis", "Meiosis" under "Cell Division").
 
-**To delete a diary note:**
+1. Open the lesson you created
+2. Click **Add Topic**
+3. Fill in:
+   - **Name** — Topic title
+   - **Description** — What this topic covers
+4. **Add Study Materials** — Choose type:
+   - **File Upload** — Upload PDFs, Word docs, images (max size per system settings)
+   - **Video Upload** — Upload video files
+   - **YouTube Link** — Paste YouTube URL
+   - **Other Link** — Paste any web link
+5. For videos/links, add a **thumbnail image**
+6. Click **Submit**
+
+**You can add multiple study materials per topic** (e.g., one PDF + two YouTube videos).
+
+---
+
+### Managing Lessons & Topics
+
+**Editing:**
+- Click **Edit** icon → Update name/description/files → Save
+
+**Deleting:**
 - Click **Delete** icon → Confirm
-- Only **permanently deleted** diary notes can be removed (soft-deleted notes can be restored by admin)
+- Deleting a lesson deletes all its topics and study materials
 
-:::note Removing individual students
-If you added multiple students to a diary note and need to remove one student from it, use the **Remove Student** option in the diary note details.
-:::
+**File Management:**
+- You can update file names or replace files
+- Deleted files are removed from student access immediately
 
 ---
 
-### Best Practices for Student Diary
+### Best Practices
 
-✅ **Balance positive & negative** — Don't only report problems; celebrate successes  
-✅ **Be specific** — "Excellent participation in class discussion" is better than "Good behavior"  
-✅ **Use consistently** — Regular updates help parents track patterns  
-✅ **Subject-specific notes** — Link notes to subjects when relevant (helps identify subject-specific issues)
+✅ **Organize logically** — Use lessons for chapters/units, topics for specific concepts  
+✅ **Mix media types** — Combine PDFs (notes) + videos (explanations) + links (extra practice)  
+✅ **Check file sizes** — Large videos may be slow to download; consider YouTube links instead  
+✅ **Update regularly** — Keep materials current and remove outdated content
 
 ---
 

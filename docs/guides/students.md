@@ -841,58 +841,38 @@ Don't wait until the last minute! Submit assignments at least a day before the d
 
 ---
 
-## <span className="heading-icon"><MessagingIcon size={18} /></span> Student Diary (Behavior & Performance Notes) {#student-diary}
+## <span className="heading-icon"><GradesIcon size={18} /></span> Accessing Lessons & Study Materials {#lessons-study-materials}
 
-Your teachers use the Student Diary to track your behavior and performance—both positive achievements and areas for improvement. You and your parents can view all diary notes written about you.
+Your teachers organize course content into **Lessons** and **Topics**, with study materials (PDFs, videos, links) you can access anytime.
 
-### Viewing Your Diary Notes
+### Viewing Lessons
 
-**Step 1: Go to Student Diary**
-1. Open the app or website
-2. Navigate to **Diary** or **Student Diary** from the menu
+1. Go to **Lessons** or **Study Materials** from the menu
+2. Select a **Subject**
+3. You'll see all lessons for that subject
 
-**Step 2: View Your Notes**
-You'll see a list of all diary notes with:
-- **Date** — When the note was written
-- **Category** — Type of note (e.g., "Excellent Behavior", "Late to Class")
-- **Title** — Brief summary
-- **Teacher** — Who wrote the note
-- **Subject** — If related to a specific subject
+Each lesson shows:
+- Lesson name and description
+- Topics within the lesson
+- Attached files (if any)
 
-**Positive vs Negative:**
-- ✅ **Positive notes** — Achievements, good behavior, participation
-- ⚠️ **Negative notes** — Discipline issues, warnings, areas to improve
+### Viewing Topics & Study Materials
 
-**Step 3: View Full Details**
-- Tap/click on any note to see the full message and context
+1. Click on a lesson to expand it
+2. You'll see all topics under that lesson
+3. Each topic may have:
+   - **PDFs** — Notes, worksheets, practice problems
+   - **Videos** — Uploaded videos or YouTube links
+   - **Links** — Websites, simulations, extra resources
 
-### Filtering Your Diary
+### Downloading/Viewing Materials
 
-Use filters to find specific notes:
-- **By Category** — e.g., show only "Excellent Performance" notes
-- **By Date Range** — Last week, this month, etc.
-- **By Subject** — See notes related to specific subjects
+- **PDFs and files** — Tap/click to download or open
+- **Videos** — Tap/click to watch
+- **Links** — Tap/click to open in browser
 
-### Understanding Diary Categories
-
-Your teachers create categories to organize notes. Common categories include:
-
-**Positive:**
-- Outstanding Performance
-- Excellent Participation
-- Homework Excellence
-- Helping Classmates
-- Leadership
-
-**Negative:**
-- Late to Class
-- Incomplete Homework
-- Disruptive Behavior
-- Needs Improvement
-
-:::tip What to do with diary notes
-- **Positive notes:** Share with your parents! They're proud of your achievements
-- **Negative notes:** Talk to your teacher or parent about how to improve. Don't ignore them—use them as learning opportunities.
+:::tip Study effectively
+Download materials when you have Wi-Fi, then review them offline later. Videos and PDFs are great for exam review!
 :::
 
 ---
