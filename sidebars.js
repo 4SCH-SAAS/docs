@@ -61,14 +61,6 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: '📊 Reports & Analytics',
-          collapsed: false,
-          items: [
-            'guides/attendance-reports',
-          ],
-        },
-        {
-          type: 'category',
           label: '📝 Exams & Assessments',
           collapsed: false,
           items: [
