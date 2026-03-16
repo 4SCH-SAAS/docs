@@ -517,7 +517,7 @@ Depending on your school setup, you may see one or more of these options:
 - **Bulk entry / quick entry** screens (type scores in sequence)
 - **Spreadsheet import** for offline exam marks
 
-If you use spreadsheets, see <Link to="/reference/data-import-export#bulk-marks-upload-offline-exams">Bulk Marks Upload</Link>.
+If you use spreadsheets, see the [Bulk Marks Upload guide](/reference/data-import-export#bulk-marks-upload-offline-exams).
 
 ### What If I Make a Mistake?
 
