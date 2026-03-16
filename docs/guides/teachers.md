@@ -601,6 +601,65 @@ You can attach files to the lesson itself OR to individual topics within the les
 
 ---
 
+## <span className="heading-icon"><UsersIcon size={18} /></span> Leave Management {#leave-management}
+
+Apply for leave (sick days, personal time, etc.) directly through the system.
+
+### Applying for Leave
+
+**Step 1: Go to Leave**
+Navigate to **Leave** or **Apply Leave** from the menu.
+
+**Step 2: Fill in Details**
+- **From Date** — Start date of leave
+- **To Date** — End date of leave
+- **Reason** — Why you need leave (required)
+- **Leave Type** — Select full day or half day for each date
+- **Attach Files** — Optional (medical certificate, supporting documents)
+  - Allowed: JPG, JPEG, PNG, PDF, DOC, DOCX
+  - Max size per system settings
+
+**Step 3: Submit**
+Your request goes to the administrator for approval.
+
+:::tip Best Practice: Leave Requests
+- **Submit early** — Apply at least 2-3 days in advance when possible
+- **Be specific** — "Medical appointment" is better than just "Personal"
+- **Attach documentation** — For sick leave, attach medical certificates
+- **Check your balance** — View "My Leaves" to see remaining leave days
+- **Emergency leave** — If urgent, call the school office first, then submit in the app
+:::
+
+---
+
+### Checking Leave Status
+
+**To view your leave history:**
+1. Go to **My Leaves**
+2. You'll see all requests with status:
+   - ⏳ **Pending** — Awaiting approval
+   - ✅ **Approved** — Leave confirmed
+   - ❌ **Rejected** — Leave denied (view reason)
+
+**Filter by:**
+- Month
+- Status (pending/approved/rejected)
+- Session year
+
+**Your Leave Balance:**
+The system shows:
+- Total leave days allowed (per session year)
+- Leave days used
+- Leave days remaining
+
+:::caution Important
+- You can only **delete pending leave** (not approved/rejected)
+- Public holidays are automatically excluded from leave day counts
+- Half-day leave counts as 0.5 days
+:::
+
+---
+
 ## <span className="heading-calls"><MessagingIcon size={18} /></span> Communicating with Parents & Students {#communicating-with-parents}
 
 Good communication with parents makes your job easier. 4SCH helps you reach parents instantly.
