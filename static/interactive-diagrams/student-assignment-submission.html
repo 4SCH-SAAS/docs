@@ -1,1 +1,542 @@
-Tool call argument 'initial_content' pruned from message history.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive workflow diagrams for student assignment submission in 4SCH School Management System">
+    <meta name="keywords" content="student assignments, homework submission, assignment workflow, 4SCH">
+    <title>Student Assignment Submission - 4SCH Interactive Diagrams</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #e0e0e0;
+            flex-wrap: wrap;
+        }
+        .tab {
+            padding: 12px 24px;
+            background: #f8f9fa;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            color: #555;
+            border-radius: 4px 4px 0 0;
+            transition: all 0.3s ease;
+        }
+        .tab:hover {
+            background: #e9ecef;
+            color: #2c3e50;
+        }
+        .tab.active {
+            background: #3498db;
+            color: white;
+        }
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.3s ease-in;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .mermaid {
+            margin: 20px 0;
+            background: white;
+            padding: 20px;
+            border-radius: 4px;
+        }
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .note strong {
+            color: #856404;
+        }
+        .tip {
+            background: #d1ecf1;
+            border-left: 4px solid #17a2b8;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .tip strong {
+            color: #0c5460;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+        .back-link:hover {
+            background: #2980b9;
+        }
+        /* Screen reader only content */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+        /* Focus styles for keyboard navigation */
+        .tab:focus {
+            outline: 3px solid #3498db;
+            outline-offset: 2px;
+        }
+        .back-link:focus {
+            outline: 3px solid #3498db;
+            outline-offset: 2px;
+        }
+        /* Skip to content link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #3498db;
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+        @media print {
+            .tabs, .back-link, .skip-link {
+                display: none;
+            }
+            .tab-content {
+                display: block !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <main class="container" id="main-content" role="main">
+        <h1>📝 Student Assignment Submission - Interactive Diagrams</h1>
+        <p>Visual representations of assignment submission workflows for students in the 4SCH School Management System.</p>
+        <div class="sr-only" role="status" aria-live="polite" id="tab-announcement"></div>
+
+        <nav class="tabs" role="tablist" aria-label="Assignment workflow views">
+            <button class="tab active" role="tab" aria-selected="true" aria-controls="view" id="tab-view" onclick="showTab(event, 'view')">👀 View Assignment</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="submit" id="tab-submit" onclick="showTab(event, 'submit')">📤 Submit Assignment</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="resubmit" id="tab-resubmit" onclick="showTab(event, 'resubmit')">🔄 Resubmit</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="results" id="tab-results" onclick="showTab(event, 'results')">✅ View Results</button>
+        </nav>
+
+        <!-- View Assignment Workflow -->
+        <article id="view" class="tab-content active" role="tabpanel" aria-labelledby="tab-view" tabindex="0">
+            <h2>View Assignment Workflow</h2>
+            <div class="mermaid">
+flowchart TD
+    Start([Receive Assignment Notification]) --> Login[Login to Student Portal/App]
+    Login --> GoAssignments[Go to 'Assignments' Section]
+    GoAssignments --> ViewList[View Assignment List]
+    
+    ViewList --> FilterOption{Want to<br/>Filter?}
+    FilterOption -->|Yes| ApplyFilter[Apply Filter:<br/>• By Subject<br/>• By Status: Pending/Submitted<br/>• By Date]
+    FilterOption -->|No| SelectAssignment
+    
+    ApplyFilter --> SelectAssignment[Click on Assignment]
+    SelectAssignment --> ViewDetails[View Assignment Details]
+    
+    ViewDetails --> ReadInfo[Read Information:<br/>📚 Subject<br/>📅 Due Date<br/>📄 Instructions<br/>📎 Attached Files<br/>⏰ Points/Marks<br/>✅ Submission Status]
+    
+    ReadInfo --> HasAttachments{Teacher Attached<br/>Files?}
+    
+    HasAttachments -->|Yes| DownloadFiles[Download Attached Files:<br/>• PDF Documents<br/>• Images<br/>• Instructions]
+    HasAttachments -->|No| ReadInstructions
+    
+    DownloadFiles --> ReadInstructions[Read Instructions Carefully]
+    ReadInstructions --> UnderstandTask{Understand<br/>What to Do?}
+    
+    UnderstandTask -->|No| AskTeacher[Ask Teacher for Clarification<br/>via Chat/Message]
+    UnderstandTask -->|Yes| PlanWork[Plan Your Work]
+    
+    AskTeacher --> WaitResponse[Wait for Teacher Response]
+    WaitResponse --> PlanWork
+    
+    PlanWork --> CheckDeadline[Note Deadline]
+    CheckDeadline --> StartWorking[Start Working on Assignment]
+    StartWorking --> End([Ready to Submit When Done])
+    
+    style Start fill:#e3f2fd
+    style End fill:#c8e6c9
+    style FilterOption fill:#fff9c4
+    style HasAttachments fill:#fff9c4
+    style UnderstandTask fill:#fff9c4
+    style ReadInfo fill:#f3e5f5
+            </div>
+            
+            <div class="tip">
+                <strong>💡 Tips for Viewing Assignments:</strong>
+                <ul>
+                    <li>✓ Check assignments daily - don't wait for notifications</li>
+                    <li>✓ Download all attachments before starting work</li>
+                    <li>✓ Read instructions at least twice to understand fully</li>
+                    <li>✓ Note the deadline in your calendar/planner</li>
+                    <li>✓ Ask questions early if anything is unclear</li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- Submit Assignment Workflow -->
+        <article id="submit" class="tab-content" role="tabpanel" aria-labelledby="tab-submit" tabindex="0">
+            <h2>Submit Assignment Workflow</h2>
+            <div class="mermaid">
+flowchart TD
+    Start([Assignment Completed]) --> OpenApp[Open Student Portal/App]
+    OpenApp --> GoAssignments[Go to 'Assignments']
+    GoAssignments --> FindAssignment[Find the Assignment]
+    
+    FindAssignment --> ClickSubmit[Click 'Submit Assignment']
+    ClickSubmit --> CheckDeadline{Before<br/>Deadline?}
+    
+    CheckDeadline -->|No - After Deadline| LateWarning[⚠️ Late Submission Warning]
+    LateWarning --> CanStillSubmit{Can Still<br/>Submit?}
+    CanStillSubmit -->|No| End2([Assignment Closed])
+    CanStillSubmit -->|Yes| Penalties[Note: May Have Penalties]
+    Penalties --> PrepareFiles
+    
+    CheckDeadline -->|Yes - On Time| PrepareFiles[Prepare Your Files]
+    
+    PrepareFiles --> FileType{File<br/>Type?}
+    
+    FileType -->|Document| CheckDoc[Verify Document:<br/>• PDF or Word<br/>• Readable<br/>• Complete]
+    FileType -->|Image| CheckImage[Verify Image:<br/>• Clear & Readable<br/>• Correct Orientation<br/>• Good Quality]
+    FileType -->|Other| CheckOther[Verify File Type Allowed]
+    
+    CheckDoc --> UploadFile
+    CheckImage --> UploadFile
+    CheckOther --> UploadFile
+    
+    UploadFile[Click 'Upload File']
+    UploadFile --> SelectFile[Select File from Device]
+    SelectFile --> Uploading[File Uploading...]
+    
+    Uploading --> UploadSuccess{Upload<br/>Successful?}
+    
+    UploadSuccess -->|No| CheckSize{File Too<br/>Large?}
+    CheckSize -->|Yes| CompressFile[Compress/Reduce File Size]
+    CompressFile --> UploadFile
+    CheckSize -->|No| CheckConnection[Check Internet Connection]
+    CheckConnection --> RetryUpload[Retry Upload]
+    RetryUpload --> UploadFile
+    
+    UploadSuccess -->|Yes| FileUploaded[✅ File Uploaded]
+    FileUploaded --> MoreFiles{Upload More<br/>Files?}
+    
+    MoreFiles -->|Yes| UploadFile
+    MoreFiles -->|No| AddMessage[Add Message Optional:<br/>• Notes to Teacher<br/>• Challenges Faced<br/>• Questions]
+    
+    AddMessage --> ReviewSubmission[Review Your Submission:<br/>✓ Correct Files<br/>✓ All Pages Included<br/>✓ Readable Quality]
+    
+    ReviewSubmission --> Satisfied{Everything<br/>Correct?}
+    Satisfied -->|No| RemoveFile[Remove Wrong Files]
+    RemoveFile --> UploadFile
+    
+    Satisfied -->|Yes| ConfirmSubmit[Click 'Confirm Submission']
+    ConfirmSubmit --> FinalConfirm[Final Confirmation Dialog]
+    
+    FinalConfirm --> UserConfirms{Really<br/>Submit?}
+    UserConfirms -->|No| ReviewSubmission
+    UserConfirms -->|Yes| SubmitNow[Submit Assignment]
+    
+    SubmitNow --> SuccessMessage[✅ Success!<br/>Assignment Submitted]
+    SuccessMessage --> StatusChanged[Status Changed to:<br/>'Submitted - Pending Review']
+    
+    StatusChanged --> TeacherNotified[Teacher Receives Notification]
+    TeacherNotified --> SaveConfirm[Save Confirmation/Screenshot]
+    SaveConfirm --> End([Submission Complete])
+    
+    style Start fill:#e3f2fd
+    style End fill:#c8e6c9
+    style End2 fill:#ffcdd2
+    style CheckDeadline fill:#fff9c4
+    style CanStillSubmit fill:#fff9c4
+    style FileType fill:#fff9c4
+    style UploadSuccess fill:#fff9c4
+    style CheckSize fill:#fff9c4
+    style MoreFiles fill:#fff9c4
+    style Satisfied fill:#fff9c4
+    style UserConfirms fill:#fff9c4
+    style SuccessMessage fill:#c8e6c9
+    style LateWarning fill:#ffe0b2
+            </div>
+            
+            <div class="tip">
+                <strong>💡 Submission Best Practices:</strong>
+                <ul>
+                    <li>✓ Submit well before deadline (don't wait until last minute)</li>
+                    <li>✓ Check file quality before uploading</li>
+                    <li>✓ Ensure all pages/sections are included</li>
+                    <li>✓ Use PDF for better compatibility</li>
+                    <li>✓ Save confirmation after successful submission</li>
+                </ul>
+            </div>
+            
+            <div class="note">
+                <strong>⚠️ File Size Limits:</strong> Most systems have file size limits (usually 5-10MB per file). If your file is too large, compress it or split into multiple files.
+            </div>
+        </article>
+
+        <!-- Resubmit Assignment Workflow -->
+        <article id="resubmit" class="tab-content" role="tabpanel" aria-labelledby="tab-resubmit" tabindex="0">
+            <h2>Resubmit/Edit Assignment Workflow</h2>
+            <div class="mermaid">
+flowchart TD
+    Start([Need to Change Submission]) --> CheckStatus{Assignment<br/>Status?}
+    
+    CheckStatus -->|Submitted - Not Graded| CanEdit[Can Edit/Resubmit]
+    CheckStatus -->|Already Graded| AlreadyGraded[❌ Cannot Resubmit<br/>Already Graded]
+    CheckStatus -->|Rejected by Teacher| Rejected[Teacher Rejected<br/>& Requested Resubmission]
+    
+    AlreadyGraded --> ContactTeacher[Contact Teacher<br/>if Critical Error]
+    ContactTeacher --> End2([Teacher's Discretion])
+    
+    Rejected --> ReadFeedback[Read Teacher's Feedback<br/>& Rejection Reason]
+    ReadFeedback --> CanEdit
+    
+    CanEdit --> OpenApp[Open Student Portal/App]
+    OpenApp --> GoAssignments[Go to 'Assignments']
+    GoAssignments --> FindAssignment[Find the Assignment]
+    
+    FindAssignment --> ViewSubmission[View Current Submission]
+    ViewSubmission --> ClickUndo[Click 'Undo Submission']
+    
+    ClickUndo --> ConfirmUndo{Confirm<br/>Undo?}
+    ConfirmUndo -->|No| End3([Keep Current Submission])
+    ConfirmUndo -->|Yes| UndoSubmission[Undo Submission]
+    
+    UndoSubmission --> StatusReverted[Status Back to:<br/>'Not Submitted']
+    StatusReverted --> RemoveOldFiles[Remove Old Files]
+    
+    RemoveOldFiles --> MakeChanges[Make Necessary Changes:<br/>• Fix Errors<br/>• Add Missing Content<br/>• Improve Quality<br/>• Address Feedback]
+    
+    MakeChanges --> PrepareNew[Prepare Corrected Files]
+    PrepareNew --> UploadNew[Upload New Files]
+    
+    UploadNew --> ReviewNew[Review New Submission]
+    ReviewNew --> SubmitAgain[Submit Again]
+    
+    SubmitAgain --> NewSuccess[✅ Resubmission Successful]
+    NewSuccess --> TeacherNotified[Teacher Notified of Resubmission]
+    TeacherNotified --> End([Resubmission Complete])
+    
+    style Start fill:#e3f2fd
+    style End fill:#c8e6c9
+    style End2 fill:#ffcdd2
+    style End3 fill:#fff9c4
+    style CheckStatus fill:#fff9c4
+    style ConfirmUndo fill:#fff9c4
+    style AlreadyGraded fill:#ffcdd2
+    style Rejected fill:#ffe0b2
+    style NewSuccess fill:#c8e6c9
+            </div>
+            
+            <div class="tip">
+                <strong>💡 When to Resubmit:</strong>
+                <ul>
+                    <li>✓ Noticed an error immediately after submission</li>
+                    <li>✓ Uploaded wrong file</li>
+                    <li>✓ Missing pages or content</li>
+                    <li>✓ Teacher rejected and requested improvements</li>
+                    <li>✓ File was corrupted or unreadable</li>
+                </ul>
+            </div>
+            
+            <div class="note">
+                <strong>⚠️ Important:</strong> You can only undo/resubmit if the teacher hasn't graded yet. Once graded, the submission is final. Always double-check before submitting!
+            </div>
+        </article>
+
+        <!-- View Results Workflow -->
+        <article id="results" class="tab-content" role="tabpanel" aria-labelledby="tab-results" tabindex="0">
+            <h2>View Assignment Results/Grades Workflow</h2>
+            <div class="mermaid">
+flowchart TD
+    Start([Receive Grading Notification]) --> Login[Login to Student Portal/App]
+    Login --> GoAssignments[Go to 'Assignments']
+    GoAssignments --> ViewList[View Assignment List]
+    
+    ViewList --> FilterGraded[Filter by Status: 'Graded']
+    FilterGraded --> SelectAssignment[Click on Graded Assignment]
+    
+    SelectAssignment --> ViewGrade[View Your Grade/Score]
+    ViewGrade --> ShowDetails[Assignment Details Shown:<br/>📊 Your Score: 45/50<br/>📈 Class Average<br/>📝 Teacher Feedback<br/>✅ Status: Graded]
+    
+    ShowDetails --> ReadFeedback[Read Teacher's Feedback]
+    ReadFeedback --> FeedbackType{Feedback<br/>Type?}
+    
+    FeedbackType -->|Positive| GoodWork[✅ Well Done!<br/>Understand What You Did Right]
+    FeedbackType -->|Constructive| AreasImprove[📝 Areas to Improve<br/>Note Teacher's Suggestions]
+    FeedbackType -->|Critical| NeedWork[⚠️ Needs Improvement<br/>Identify Mistakes]
+    
+    GoodWork --> ViewCorrections
+    AreasImprove --> ViewCorrections
+    NeedWork --> ViewCorrections
+    
+    ViewCorrections[View Corrections if Available]
+    ViewCorrections --> DownloadGraded[Download Graded Assignment<br/>with Teacher Comments]
+    
+    DownloadGraded --> CompareOriginal[Compare with Original Submission]
+    CompareOriginal --> LearnMistakes[Learn from Mistakes]
+    
+    LearnMistakes --> Questions{Have<br/>Questions?}
+    
+    Questions -->|Yes| AskTeacher[Message Teacher for Clarification]
+    AskTeacher --> TeacherResponds[Teacher Responds]
+    TeacherResponds --> Understand
+    
+    Questions -->|No| Understand[Understand Feedback]
+    
+    Understand --> ApplyLearning[Apply Learning to Future Assignments]
+    ApplyLearning --> SaveRecord[Save Graded Assignment<br/>for Future Reference]
+    SaveRecord --> End([Learning Complete])
+    
+    style Start fill:#e3f2fd
+    style End fill:#c8e6c9
+    style FeedbackType fill:#fff9c4
+    style Questions fill:#fff9c4
+    style GoodWork fill:#c8e6c9
+    style AreasImprove fill:#fff9c4
+    style NeedWork fill:#ffe0b2
+    style ShowDetails fill:#f3e5f5
+            </div>
+            
+            <div class="tip">
+                <strong>💡 Learning from Feedback:</strong>
+                <ul>
+                    <li>✓ Read all feedback carefully - don't just look at the score</li>
+                    <li>✓ Identify patterns in mistakes across assignments</li>
+                    <li>✓ Ask teacher to explain if feedback is unclear</li>
+                    <li>✓ Apply lessons learned to future work</li>
+                    <li>✓ Keep graded assignments for exam preparation</li>
+                </ul>
+            </div>
+            
+            <div class="note">
+                <strong>⚠️ If You Disagree with Grade:</strong> Respectfully ask your teacher to review the grading. Provide specific reasons why you think there may be an error. Teachers are human and can make mistakes too!
+            </div>
+        </article>
+
+        <a href="../guides/students" class="back-link">← Back to Student Guide</a>
+    </main>
+
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            }
+        });
+
+        function showTab(event, tabName) {
+            event.preventDefault();
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => {
+                content.classList.remove('active');
+                content.setAttribute('aria-hidden', 'true');
+            });
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+                tab.setAttribute('aria-selected', 'false');
+            });
+            const selectedContent = document.getElementById(tabName);
+            selectedContent.classList.add('active');
+            selectedContent.setAttribute('aria-hidden', 'false');
+            selectedContent.focus();
+            event.target.classList.add('active');
+            event.target.setAttribute('aria-selected', 'true');
+            const announcement = document.getElementById('tab-announcement');
+            const tabLabel = event.target.textContent.trim();
+            announcement.textContent = `${tabLabel} selected`;
+            setTimeout(() => {
+                announcement.textContent = '';
+            }, 1000);
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const tablist = document.querySelector('[role="tablist"]');
+            const tabs = tablist.querySelectorAll('[role="tab"]');
+            tabs.forEach((tab, index) => {
+                tab.addEventListener('keydown', function(e) {
+                    let newIndex = index;
+                    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                        e.preventDefault();
+                        newIndex = (index + 1) % tabs.length;
+                    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                        e.preventDefault();
+                        newIndex = (index - 1 + tabs.length) % tabs.length;
+                    } else if (e.key === 'Home') {
+                        e.preventDefault();
+                        newIndex = 0;
+                    } else if (e.key === 'End') {
+                        e.preventDefault();
+                        newIndex = tabs.length - 1;
+                    }
+                    if (newIndex !== index) {
+                        tabs[newIndex].focus();
+                        tabs[newIndex].click();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

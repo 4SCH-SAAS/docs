@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive workflow diagrams for offline exam processes in 4SCH School Management System">
+    <meta name="keywords" content="offline exams, school management, workflow diagrams, 4SCH">
     <title>Offline Exam Workflows - 4SCH Interactive Diagrams</title>
     <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
     <style>
@@ -104,22 +106,67 @@
         .back-link:hover {
             background: #2980b9;
         }
+        /* Screen reader only content */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+        /* Focus styles for keyboard navigation */
+        .tab:focus {
+            outline: 3px solid #3498db;
+            outline-offset: 2px;
+        }
+        .back-link:focus {
+            outline: 3px solid #3498db;
+            outline-offset: 2px;
+        }
+        /* Skip to content link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #3498db;
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+        @media print {
+            .tabs, .back-link, .skip-link {
+                display: none;
+            }
+            .tab-content {
+                display: block !important;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <main class="container" id="main-content" role="main">
         <h1>📊 Offline Exam Workflows - Interactive Diagrams</h1>
         <p>Visual representations of traditional exam management processes in the 4SCH School Management System.</p>
+        <div class="sr-only" role="status" aria-live="polite" id="tab-announcement"></div>
 
-        <div class="tabs">
-            <button class="tab active" onclick="showTab('admin')">👔 Admin Workflow</button>
-            <button class="tab" onclick="showTab('teacher')">👨‍🏫 Teacher Workflow</button>
-            <button class="tab" onclick="showTab('student')">👨‍🎓 Student Workflow</button>
-            <button class="tab" onclick="showTab('calculation')">📐 Calculation Logic</button>
-        </div>
+        <nav class="tabs" role="tablist" aria-label="Exam workflow views">
+            <button class="tab active" role="tab" aria-selected="true" aria-controls="admin" id="tab-admin" onclick="showTab(event, 'admin')">👔 Admin Workflow</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="teacher" id="tab-teacher" onclick="showTab(event, 'teacher')">👨‍🏫 Teacher Workflow</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="student" id="tab-student" onclick="showTab(event, 'student')">👨‍🎓 Student Workflow</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="calculation" id="tab-calculation" onclick="showTab(event, 'calculation')">📐 Calculation Logic</button>
+        </nav>
 
         <!-- Admin Workflow -->
-        <div id="admin" class="tab-content active">
+        <article id="admin" class="tab-content active" role="tabpanel" aria-labelledby="tab-admin" tabindex="0">
             <h2>Administrator: Creating & Managing Offline Exams</h2>
             <div class="diagram-container">
                 <div class="mermaid">
@@ -196,7 +243,7 @@ graph TD
         </div>
 
         <!-- Teacher Workflow -->
-        <div id="teacher" class="tab-content">
+        <article id="teacher" class="tab-content" role="tabpanel" aria-labelledby="tab-teacher" tabindex="0">
             <h2>Teacher: Mark Entry & Management</h2>
             <div class="diagram-container">
                 <div class="mermaid">
@@ -283,7 +330,7 @@ graph TD
         </div>
 
         <!-- Student Workflow -->
-        <div id="student" class="tab-content">
+        <article id="student" class="tab-content" role="tabpanel" aria-labelledby="tab-student" tabindex="0">
             <h2>Student: Viewing Timetable & Results</h2>
             <div class="diagram-container">
                 <div class="mermaid">
@@ -363,7 +410,7 @@ graph TD
         </div>
 
         <!-- Calculation Logic -->
-        <div id="calculation" class="tab-content">
+        <article id="calculation" class="tab-content" role="tabpanel" aria-labelledby="tab-calculation" tabindex="0">
             <h2>Result Calculation Logic</h2>
             <div class="diagram-container">
                 <div class="mermaid">
@@ -477,7 +524,7 @@ graph LR
         </div>
 
         <a href="../guides/offline-exams" class="back-link">← Back to Offline Exams Guide</a>
-    </div>
+    </main>
 
     <script>
         mermaid.initialize({ 
@@ -490,21 +537,76 @@ graph LR
             }
         });
 
-        function showTab(tabName) {
-            // Hide all tab contents
-            const contents = document.querySelectorAll('.tab-content');
-            contents.forEach(content => content.classList.remove('active'));
+        function showTab(event, tabName) {
+            // Prevent default behavior
+            event.preventDefault();
             
-            // Remove active class from all tabs
+            // Hide all tab contents and update aria-hidden
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => {
+                content.classList.remove('active');
+                content.setAttribute('aria-hidden', 'true');
+            });
+            
+            // Remove active class from all tabs and update aria-selected
             const tabs = document.querySelectorAll('.tab');
-            tabs.forEach(tab => tab.classList.remove('active'));
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+                tab.setAttribute('aria-selected', 'false');
+            });
             
             // Show selected tab content
-            document.getElementById(tabName).classList.add('active');
+            const selectedContent = document.getElementById(tabName);
+            selectedContent.classList.add('active');
+            selectedContent.setAttribute('aria-hidden', 'false');
+            selectedContent.focus();
             
             // Add active class to clicked tab
             event.target.classList.add('active');
+            event.target.setAttribute('aria-selected', 'true');
+            
+            // Announce tab change to screen readers
+            const announcement = document.getElementById('tab-announcement');
+            const tabLabel = event.target.textContent.trim();
+            announcement.textContent = `${tabLabel} selected`;
+            
+            // Clear announcement after 1 second
+            setTimeout(() => {
+                announcement.textContent = '';
+            }, 1000);
         }
+        
+        // Keyboard navigation for tabs
+        document.addEventListener('DOMContentLoaded', function() {
+            const tablist = document.querySelector('[role="tablist"]');
+            const tabs = tablist.querySelectorAll('[role="tab"]');
+            
+            tabs.forEach((tab, index) => {
+                tab.addEventListener('keydown', function(e) {
+                    let newIndex = index;
+                    
+                    // Arrow key navigation
+                    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                        e.preventDefault();
+                        newIndex = (index + 1) % tabs.length;
+                    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                        e.preventDefault();
+                        newIndex = (index - 1 + tabs.length) % tabs.length;
+                    } else if (e.key === 'Home') {
+                        e.preventDefault();
+                        newIndex = 0;
+                    } else if (e.key === 'End') {
+                        e.preventDefault();
+                        newIndex = tabs.length - 1;
+                    }
+                    
+                    if (newIndex !== index) {
+                        tabs[newIndex].focus();
+                        tabs[newIndex].click();
+                    }
+                });
+            });
+        });
     </script>
 </body>
 </html>

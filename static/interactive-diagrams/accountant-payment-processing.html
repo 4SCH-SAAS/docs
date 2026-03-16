@@ -1,1 +1,465 @@
-Tool call argument 'initial_content' pruned from message history.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive workflow diagrams for accountant payment processing in 4SCH School Management System">
+    <meta name="keywords" content="payment processing, fee management, accountant workflow, school finance, 4SCH">
+    <title>Accountant Payment Processing - 4SCH Interactive Diagrams</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #e0e0e0;
+            flex-wrap: wrap;
+        }
+        .tab {
+            padding: 12px 24px;
+            background: #f8f9fa;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            color: #555;
+            border-radius: 4px 4px 0 0;
+            transition: all 0.3s ease;
+        }
+        .tab:hover {
+            background: #e9ecef;
+            color: #2c3e50;
+        }
+        .tab.active {
+            background: #3498db;
+            color: white;
+        }
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.3s ease-in;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .mermaid {
+            margin: 20px 0;
+            background: white;
+            padding: 20px;
+            border-radius: 4px;
+        }
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .note strong {
+            color: #856404;
+        }
+        .tip {
+            background: #d1ecf1;
+            border-left: 4px solid #17a2b8;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .tip strong {
+            color: #0c5460;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+        .back-link:hover {
+            background: #2980b9;
+        }
+        /* Screen reader only content */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+        /* Focus styles for keyboard navigation */
+        .tab:focus {
+            outline: 3px solid #3498db;
+            outline-offset: 2px;
+        }
+        .back-link:focus {
+            outline: 3px solid #3498db;
+            outline-offset: 2px;
+        }
+        /* Skip to content link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #3498db;
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+        @media print {
+            .tabs, .back-link, .skip-link {
+                display: none;
+            }
+            .tab-content {
+                display: block !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <main class="container" id="main-content" role="main">
+        <h1>💰 Accountant Payment Processing - Interactive Diagrams</h1>
+        <p>Visual representations of payment processing workflows for accountants in the 4SCH School Management System.</p>
+        <div class="sr-only" role="status" aria-live="polite" id="tab-announcement"></div>
+
+        <nav class="tabs" role="tablist" aria-label="Payment workflow views">
+            <button class="tab active" role="tab" aria-selected="true" aria-controls="cash" id="tab-cash" onclick="showTab(event, 'cash')">💵 Cash Payment</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="transfer" id="tab-transfer" onclick="showTab(event, 'transfer')">🏦 Bank Transfer</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="online" id="tab-online" onclick="showTab(event, 'online')">💳 Online Payment</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="reconciliation" id="tab-reconciliation" onclick="showTab(event, 'reconciliation')">📊 Reconciliation</button>
+        </nav>
+
+        <!-- Cash Payment Workflow -->
+        <article id="cash" class="tab-content active" role="tabpanel" aria-labelledby="tab-cash" tabindex="0">
+            <h2>Cash Payment Processing Workflow</h2>
+            <div class="mermaid">
+flowchart TD
+    Start([Parent Arrives with Cash]) --> CountCash[Accountant Counts Cash]
+    CountCash --> VerifyAmount{Amount<br/>Correct?}
+    
+    VerifyAmount -->|No| RequestCorrect[Request Correct Amount]
+    RequestCorrect --> CountCash
+    
+    VerifyAmount -->|Yes| IssueManual[Issue Manual Receipt from Receipt Book]
+    IssueManual --> RecordSystem[Record Payment in 4SCH System]
+    
+    RecordSystem --> EnterDetails[Enter Payment Details:<br/>• Amount<br/>• Date<br/>• Method: Cash<br/>• Receipt Number<br/>• Received By]
+    
+    EnterDetails --> SystemUpdate[System Updates:<br/>✓ Invoice Status<br/>✓ Digital Receipt Generated<br/>✓ Financial Reports Updated<br/>✓ Parent Notification Sent]
+    
+    SystemUpdate --> SecureCash[Store Cash Securely in Safe]
+    SecureCash --> UpdateLog[Update Cash Log Book]
+    UpdateLog --> End([Payment Recorded])
+    
+    style Start fill:#e3f2fd
+    style End fill:#c8e6c9
+    style VerifyAmount fill:#fff9c4
+    style SystemUpdate fill:#f3e5f5
+    style SecureCash fill:#ffe0b2
+            </div>
+            
+            <div class="tip">
+                <strong>💡 Best Practice:</strong> Always count cash carefully before recording payment. Issue manual receipt first, then record digitally immediately - don't batch at end of day.
+            </div>
+            
+            <div class="note">
+                <strong>⚠️ Security Note:</strong> Store cash securely in the safe until bank deposit. Never leave cash unsecured, even temporarily.
+            </div>
+        </article>
+
+        <!-- Bank Transfer Workflow -->
+        <article id="transfer" class="tab-content" role="tabpanel" aria-labelledby="tab-transfer" tabindex="0">
+            <h2>Bank Transfer Payment Processing</h2>
+            <div class="mermaid">
+flowchart TD
+    Start([Receive Bank Alert/Statement]) --> VerifyTransfer[Verify Bank Transfer Details]
+    VerifyTransfer --> CheckDetails{Details<br/>Match?}
+    
+    CheckDetails -->|No| ContactParent[Contact Parent for Clarification]
+    ContactParent --> Resolve{Issue<br/>Resolved?}
+    Resolve -->|No| MarkPending[Mark as Pending Investigation]
+    Resolve -->|Yes| SearchStudent
+    
+    CheckDetails -->|Yes| SearchStudent[Search for Student in 4SCH]
+    SearchStudent --> SelectInvoice[Select Correct Invoice]
+    
+    SelectInvoice --> RecordPayment[Record Payment in System]
+    RecordPayment --> EnterDetails[Enter Payment Details:<br/>• Amount from Bank<br/>• Bank Transfer Date<br/>• Method: Bank Transfer<br/>• Bank Reference Number<br/>• Bank Name<br/>• Notes]
+    
+    EnterDetails --> SystemUpdate[System Updates:<br/>✓ Invoice Status Updated<br/>✓ Digital Receipt Generated<br/>✓ Parent Notified<br/>✓ Reports Updated]
+    
+    SystemUpdate --> FileReference[File Bank Statement<br/>with Reference Number]
+    FileReference --> End([Payment Recorded])
+    
+    MarkPending --> End2([Follow-up Required])
+    
+    style Start fill:#e3f2fd
+    style End fill:#c8e6c9
+    style End2 fill:#ffcdd2
+    style CheckDetails fill:#fff9c4
+    style SystemUpdate fill:#f3e5f5
+            </div>
+            
+            <div class="tip">
+                <strong>💡 Verification Checklist:</strong>
+                <ul>
+                    <li>✓ Cross-check amount with bank statement</li>
+                    <li>✓ Verify sender's name matches parent/guardian</li>
+                    <li>✓ Note bank reference for reconciliation</li>
+                    <li>✓ Confirm date on bank statement</li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- Online Payment Workflow -->
+        <article id="online" class="tab-content" role="tabpanel" aria-labelledby="tab-online" tabindex="0">
+            <h2>Online Payment Processing (Card/Mobile Money)</h2>
+            <div class="mermaid">
+flowchart TD
+    Start([Parent Makes Online Payment]) --> Gateway[Payment Gateway Processes]
+    Gateway --> Success{Payment<br/>Successful?}
+    
+    Success -->|Yes| AutoRecord[System Auto-Records Payment]
+    AutoRecord --> UpdateStatus[Invoice Status: Paid]
+    UpdateStatus --> SendReceipt[Digital Receipt Sent to Parent]
+    SendReceipt --> AccountantVerify[Accountant Verifies Next Day]
+    
+    Success -->|No| Failed[Payment Failed]
+    Failed --> ParentNotified[Parent Notified of Failure]
+    ParentNotified --> RetryOption[Parent Can Retry Payment]
+    
+    AccountantVerify --> CheckGateway[Check Payment Gateway Dashboard]
+    CheckGateway --> Reconcile{Payment in<br/>Gateway &<br/>4SCH?}
+    
+    Reconcile -->|Yes| MarkVerified[Mark as Verified]
+    Reconcile -->|No - Missing in 4SCH| ManualRecord[Manually Record Payment]
+    
+    ManualRecord --> EnterDetails[Enter Payment Details:<br/>• Amount<br/>• Gateway Reference<br/>• Method: Card/Mobile Money<br/>• Date]
+    
+    EnterDetails --> Complete[Payment Verified]
+    MarkVerified --> Complete
+    Complete --> End([Daily Reconciliation Complete])
+    
+    RetryOption --> End2([Awaiting Parent Action])
+    
+    style Start fill:#e3f2fd
+    style End fill:#c8e6c9
+    style End2 fill:#fff9c4
+    style Success fill:#fff9c4
+    style AutoRecord fill:#f3e5f5
+    style Failed fill:#ffcdd2
+            </div>
+            
+            <div class="tip">
+                <strong>💡 Accountant's Role:</strong> Most online payments are automatic, but you must verify daily that all gateway payments are recorded in 4SCH and resolve any discrepancies.
+            </div>
+            
+            <div class="note">
+                <strong>⚠️ Important:</strong> Reconcile payment gateway statements daily. Failed transactions should be monitored to assist parents who may think payment succeeded.
+            </div>
+        </article>
+
+        <!-- Bank Reconciliation Workflow -->
+        <article id="reconciliation" class="tab-content" role="tabpanel" aria-labelledby="tab-reconciliation" tabindex="0">
+            <h2>Bank Reconciliation Workflow</h2>
+            <div class="mermaid">
+flowchart TD
+    Start([Start Monthly Reconciliation]) --> GetStatement[Obtain Bank Statement]
+    GetStatement --> Get4SCH[Generate 4SCH Payment Report<br/>for Same Period]
+    
+    Get4SCH --> MatchDeposits[Match Each Deposit<br/>with 4SCH Records]
+    
+    MatchDeposits --> Compare{All<br/>Items<br/>Match?}
+    
+    Compare -->|Yes| Balanced[Reconciliation Balanced]
+    Balanced --> SignOff[Sign Off Reconciliation]
+    SignOff --> FileDocuments[File Documents]
+    FileDocuments --> End([Reconciliation Complete])
+    
+    Compare -->|No| Investigate[Investigate Discrepancies]
+    
+    Investigate --> InBank{Item in Bank<br/>but not 4SCH?}
+    InBank -->|Yes| RecordMissing[Record Missing Payment]
+    RecordMissing --> UpdateSystem[Update 4SCH System]
+    
+    InBank -->|No| In4SCH{Item in 4SCH<br/>but not Bank?}
+    In4SCH -->|Yes| CheckDate[Check if Deposited Yet]
+    CheckDate --> NotDeposited{Not<br/>Deposited?}
+    NotDeposited -->|Yes| PrepareDeposit[Prepare Bank Deposit]
+    NotDeposited -->|No| CheckError[Check for Recording Error]
+    
+    In4SCH -->|No| AmountDiff{Amount<br/>Difference?}
+    AmountDiff -->|Yes| VerifyCorrect[Verify Correct Amount]
+    VerifyCorrect --> MakeAdjustment[Make Necessary Adjustment]
+    
+    UpdateSystem --> Recheck[Recheck Reconciliation]
+    PrepareDeposit --> Recheck
+    CheckError --> Recheck
+    MakeAdjustment --> Recheck
+    
+    Recheck --> Compare
+    
+    style Start fill:#e3f2fd
+    style End fill:#c8e6c9
+    style Compare fill:#fff9c4
+    style Balanced fill:#c8e6c9
+    style InBank fill:#fff9c4
+    style In4SCH fill:#fff9c4
+    style AmountDiff fill:#fff9c4
+            </div>
+            
+            <div class="tip">
+                <strong>💡 Reconciliation Best Practices:</strong>
+                <ul>
+                    <li>✓ Reconcile at least monthly (weekly is better)</li>
+                    <li>✓ Keep deposit slips organized chronologically</li>
+                    <li>✓ Use clear payment references for easier matching</li>
+                    <li>✓ Resolve discrepancies immediately - don't let them pile up</li>
+                    <li>✓ Document all adjustments with explanations</li>
+                </ul>
+            </div>
+            
+            <div class="note">
+                <strong>⚠️ Common Discrepancies:</strong>
+                <ul>
+                    <li><strong>Deposit in bank but not in 4SCH:</strong> Forgot to record payment</li>
+                    <li><strong>Payment in 4SCH but not in bank:</strong> Cash not deposited yet</li>
+                    <li><strong>Amount differences:</strong> Recording error or incorrect deposit</li>
+                    <li><strong>Timing differences:</strong> Payment recorded but deposited next month</li>
+                </ul>
+            </div>
+        </article>
+
+        <a href="../guides/accountant" class="back-link">← Back to Accountant Guide</a>
+    </main>
+
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            }
+        });
+
+        function showTab(event, tabName) {
+            // Prevent default behavior
+            event.preventDefault();
+            
+            // Hide all tab contents and update aria-hidden
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => {
+                content.classList.remove('active');
+                content.setAttribute('aria-hidden', 'true');
+            });
+            
+            // Remove active class from all tabs and update aria-selected
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+                tab.setAttribute('aria-selected', 'false');
+            });
+            
+            // Show selected tab content
+            const selectedContent = document.getElementById(tabName);
+            selectedContent.classList.add('active');
+            selectedContent.setAttribute('aria-hidden', 'false');
+            selectedContent.focus();
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+            event.target.setAttribute('aria-selected', 'true');
+            
+            // Announce tab change to screen readers
+            const announcement = document.getElementById('tab-announcement');
+            const tabLabel = event.target.textContent.trim();
+            announcement.textContent = `${tabLabel} selected`;
+            
+            // Clear announcement after 1 second
+            setTimeout(() => {
+                announcement.textContent = '';
+            }, 1000);
+        }
+        
+        // Keyboard navigation for tabs
+        document.addEventListener('DOMContentLoaded', function() {
+            const tablist = document.querySelector('[role="tablist"]');
+            const tabs = tablist.querySelectorAll('[role="tab"]');
+            
+            tabs.forEach((tab, index) => {
+                tab.addEventListener('keydown', function(e) {
+                    let newIndex = index;
+                    
+                    // Arrow key navigation
+                    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                        e.preventDefault();
+                        newIndex = (index + 1) % tabs.length;
+                    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                        e.preventDefault();
+                        newIndex = (index - 1 + tabs.length) % tabs.length;
+                    } else if (e.key === 'Home') {
+                        e.preventDefault();
+                        newIndex = 0;
+                    } else if (e.key === 'End') {
+                        e.preventDefault();
+                        newIndex = tabs.length - 1;
+                    }
+                    
+                    if (newIndex !== index) {
+                        tabs[newIndex].focus();
+                        tabs[newIndex].click();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

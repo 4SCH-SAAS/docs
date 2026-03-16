@@ -631,6 +631,9 @@ For questions about this changelog or documentation:
 
 ## References
 
+- [Docusaurus Documentation](https://docusaurus.io)
+- [Keep a Changelog](https://keepachangelog.com)
+
 ### Source Documents
 Located in project root:
 - `revodev_1_Recommended_Documentation_Structure.txt`
@@ -640,8 +643,6 @@ Located in project root:
 
 ### Standards
 - [Documentation Maintenance Guide](./DOCUMENTATION_MAINTENANCE_GUIDE.md)
-- [Docusaurus Documentation](https://docusaurus.io)
-- [Keep a Changelog](https://keepachangelog.com)
 
 ---
 
