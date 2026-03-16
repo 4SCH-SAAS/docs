@@ -116,15 +116,16 @@ The question bank is a central repository for all online exam questions.
 2. Fill in details:
 
 ![Create question form](/img/screens/online-exams/create-question-form.svg)
-   - **Class** - Target class level
-   - **Subject** - Related subject
-   - **Question** - Type your question (supports math equations)
-   - **Image** - Upload image if needed (optional)
-   - **Options** - Add 2-6 answer options
-   - **Correct Answer(s)** - Mark one or more correct options
-   - **Marks** - Point value for the question
-   - **Difficulty** - Easy, Medium, or Hard
-   - **Note** - Additional hints (optional)
+
+- **Class** - Target class level
+- **Subject** - Related subject
+- **Question** - Type your question (supports math equations)
+- **Image** - Upload image if needed (optional)
+- **Options** - Add 2-6 answer options
+- **Correct Answer(s)** - Mark one or more correct options
+- **Marks** - Point value for the question
+- **Difficulty** - Easy, Medium, or Hard
+- **Note** - Additional hints (optional)
 
 3. Click **Submit**
 

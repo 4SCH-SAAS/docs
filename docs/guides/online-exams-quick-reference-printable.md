@@ -355,7 +355,7 @@ Use this space to record exam keys:
 
 ## Printing Instructions
 
-### For Best Results:
+### For Best Results
 
 1. **Print Settings:**
    - Paper: A4 or Letter
@@ -374,7 +374,7 @@ Use this space to record exam keys:
    - Keep at computer stations
    - Include in student orientation packets
 
-### Print Specific Sections:
+### Print Specific Sections
 
 - **Pages 1-2:** For Administrators
 - **Pages 3:** For Teachers
