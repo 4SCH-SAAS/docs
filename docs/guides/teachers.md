@@ -17,6 +17,7 @@ import DashboardIcon from '@site/src/components/icons/Dashboard';
 import AttendanceIcon from '@site/src/components/icons/Attendance';
 import MessagingIcon from '@site/src/components/icons/Messaging';
 import StaffIcon from '@site/src/components/icons/Staff';
+import FinanceIcon from '@site/src/components/icons/Finance';
 
 # Teacher Guide
 
@@ -657,6 +658,50 @@ The system shows:
 - You can only **delete pending leave** (not approved/rejected)
 - Public holidays are automatically excluded from leave day counts
 - Half-day leave counts as 0.5 days
+:::
+
+---
+
+## <span className="heading-icon"><FinanceIcon size={18} /></span> Viewing Your Payslip {#payslip}
+
+Access your salary information and download payslips directly from the app.
+
+### Viewing Payroll History
+
+1. Go to **Payroll** or **My Salary** from the menu
+2. You'll see your payroll history:
+   - Month/Year
+   - Basic salary
+   - Allowances
+   - Deductions
+   - Net salary
+3. Filter by:
+   - **Year**
+   - **Session Year**
+
+### Downloading Your Payslip
+
+**Step 1: Select a Month**
+From your payroll history, tap/click on the month you want.
+
+**Step 2: Download PDF**
+Click **Download Payslip** or **View Payslip**.
+
+**Your payslip includes:**
+- School name and logo
+- Your name and staff ID
+- Month and year
+- Basic salary
+- Allowances (Housing, Transport, etc.)
+- Deductions (Tax, Pension, Transportation, etc.)
+- Leave days taken (full/half)
+- Net salary (total pay after allowances and deductions)
+
+**Step 3: Save or Print**
+Save the PDF to your device or print it for your records.
+
+:::tip
+Payslips are usually available by the end of each month. If you don't see a payslip for the current month, it means payroll hasn't been generated yet—contact your admin.
 :::
 
 ---
