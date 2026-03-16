@@ -56,6 +56,42 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Feature Guides',
+      collapsed: false,
+      items: [
+        {
+          type: 'category',
+          label: '📊 Reports & Analytics',
+          collapsed: false,
+          items: [
+            'guides/attendance-reports',
+          ],
+        },
+        {
+          type: 'category',
+          label: '📝 Exams & Assessments',
+          collapsed: false,
+          items: [
+            'guides/exams-master-index',
+            'guides/online-exams',
+            'guides/offline-exams',
+            'guides/online-exams-quick-reference',
+            'guides/offline-exams-quick-reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: '🎨 Content Management',
+          collapsed: false,
+          items: [
+            'guides/homepage-content-management',
+            'guides/gallery-management',
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
       label: 'Reference',
       collapsed: false,
       items: [
