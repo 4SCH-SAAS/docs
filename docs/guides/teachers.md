@@ -16,6 +16,7 @@ import GradesIcon from '@site/src/components/icons/Grades';
 import DashboardIcon from '@site/src/components/icons/Dashboard';
 import AttendanceIcon from '@site/src/components/icons/Attendance';
 import MessagingIcon from '@site/src/components/icons/Messaging';
+import StaffIcon from '@site/src/components/icons/Staff';
 
 # Teacher Guide
 
