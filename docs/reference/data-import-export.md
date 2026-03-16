@@ -26,6 +26,45 @@ import ReportsIcon from '@site/src/components/icons/Reports';
 - Templates downloadable from each import page
 - Validation preview before applying changes
 
+### Bulk Marks Upload (Offline Exams)
+
+Schools can upload offline exam marks in bulk using an Excel/CSV template.
+
+**Where you’ll find it (typical):** Exams → Offline Exams → Select Exam → Mark Entry / Bulk Upload
+
+#### Template Columns
+
+The exported “dummy” file includes these columns:
+
+- `exam_marks_id` (optional)
+- `student_id` (required)
+- `student_name` (for reference)
+- `total_marks` (required)
+- `obtained_marks` (required)
+
+#### How updates vs new uploads work
+
+- **First-time upload (new marks):** leave `exam_marks_id` empty.
+- **Updating existing marks:** download the latest dummy file and keep the `exam_marks_id` values, then re-upload.
+
+If you try to upload new rows (empty `exam_marks_id`) for a student who already has marks for that exam + subject, the system returns an error like:
+
+> "Marks already exist. Please download the latest Dummy file to update marks."
+
+#### Validation rules
+
+- `student_id` must be numeric
+- `total_marks` must be numeric
+- `obtained_marks` must be numeric
+
+The system also calculates:
+- pass/fail based on the timetable’s **passing marks**
+- grade based on the configured grade ranges
+
+:::note Grades required
+If grade ranges are not configured, bulk upload may fail with a "Grades data does not exist" type error.
+:::
+
 :::note Screenshot
 Bulk data import
 

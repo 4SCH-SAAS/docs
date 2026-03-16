@@ -291,7 +291,11 @@ Unpublishing temporarily hides results from students/parents. Use this feature c
 ✅ **Double-Check Marks** - Review before publishing results  
 ✅ **Communicate Delays** - Inform if result publication is delayed  
 ✅ **Backup Data** - Export results regularly  
-✅ **Archive Old Exams** - Keep historical records organized  
+✅ **Archive Old Exams** - Keep historical records organized
+
+:::tip Bulk marks upload
+If your school enters marks using spreadsheets, see <Link to="/reference/data-import-export#bulk-marks-upload-offline-exams">Bulk Marks Upload</Link>.
+:::  
 
 ---
 
