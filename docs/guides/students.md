@@ -218,6 +218,34 @@ When exams are coming:
 
 :::tip Study Smart
 Print your exam timetable and stick it on your wall at home. This helps you plan your study time properly.
+
+**Create a Study Schedule:**
+- Work backward from exam dates
+- Allocate more time to difficult subjects
+- Include breaks (30 min study, 10 min break)
+- Study hardest subjects when you're most alert (morning for most students)
+
+**Use 4SCH Study Materials:**
+- Download PDFs and videos your teachers upload
+- Watch video lessons multiple times if needed
+- Make notes from study materials
+- Practice with any worksheets provided
+:::
+
+:::warning Exam Preparation Mistakes to Avoid
+**Don't:**
+- ❌ Cram everything the night before
+- ❌ Skip sleep to study (you need rest for your brain to work!)
+- ❌ Study only from your notes without practicing questions
+- ❌ Ignore subjects you find difficult
+- ❌ Forget to eat properly during exam period
+
+**Do:**
+- ✅ Start preparing at least 2 weeks before exams
+- ✅ Practice past questions
+- ✅ Study with friends (explain concepts to each other)
+- ✅ Take regular breaks
+- ✅ Stay healthy - exercise, eat well, sleep 7-8 hours
 :::
 
 ---
@@ -837,6 +865,47 @@ In the backend, students can only delete an assignment submission while it is st
 
 :::tip Time Management
 Don't wait until the last minute! Submit assignments at least a day before the deadline. This gives you a buffer if something goes wrong (internet issues, computer problems, etc.).
+
+**Smart Assignment Strategy:**
+- **Same Day:** Read the assignment as soon as it's posted
+- **Day 1-2:** Gather materials, do research, start rough draft
+- **Day 3-4:** Complete the work
+- **Day 5:** Review, edit, and submit
+- **Never:** Submit on the due date morning (too risky!)
+
+**What If You're Stuck:**
+1. Reread the instructions carefully
+2. Check study materials teacher provided
+3. Ask a classmate who might understand
+4. Message your teacher through 4SCH (don't be afraid to ask!)
+5. Ask your parents for help
+
+**Managing Multiple Assignments:**
+- Create a checklist of all assignments
+- Do the hardest one first when you have energy
+- Break large projects into smaller tasks
+- Set mini-deadlines for yourself
+:::
+
+:::caution Common Assignment Mistakes
+**File Submission Errors:**
+- Wrong file attached (always double-check!)
+- File too large (compress if needed)
+- Wrong format (check if teacher wants PDF, Word, etc.)
+- Corrupted file (open it before submitting to verify)
+
+**Content Errors:**
+- Not following instructions (read them 3 times!)
+- Missing questions or sections
+- Forgot to put your name on the document
+- Copied from internet (teachers can detect this!)
+
+**Take 5 Minutes to Check:**
+✅ Is this the right file?
+✅ Did I answer everything?
+✅ Is my name on it?
+✅ Is it before the deadline?
+✅ Did I save a backup copy?
 :::
 
 ---
