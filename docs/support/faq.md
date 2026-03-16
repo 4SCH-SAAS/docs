@@ -43,7 +43,8 @@ Messaging:
 - Who can I message?
   - Teachers can message assigned classes; Parents and Students can message recipients based on school policy.
 
-Notifications:
+## Notifications {#notifications}
+
 - What triggers a notification?
   - **New assignment created/updated** — Students (and linked guardians) in the target class/subject receive an alert.
   - **Assignment accepted/rejected** — The student (and linked guardian) receive an alert after the teacher reviews the submission.
@@ -54,3 +55,7 @@ Notifications:
 Data & Privacy:
 - How do we export student data?
   - Admin Console → Reports → Exports. Full exports are permission-restricted.
+
+Access & Permissions:
+- Why can’t I see Exams/Assignments/Fees in my menu?
+  - Either the **module is disabled** for your school or your **role permissions** don’t allow access. Ask your school admin to review **Settings → Roles & Permissions**, and confirm the relevant module is enabled (e.g., Exam Management, Assignment Management, Fees Management).

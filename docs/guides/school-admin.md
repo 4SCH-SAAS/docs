@@ -464,13 +464,36 @@ Update your school's information:
 Define what each user role can access:
 
 1. Go to **Settings → Roles & Permissions**
+
+### Modules & Feature Access (Missing Menus) {#modules-feature-access}
+
+If a user cannot see a menu (or receives a "feature not available" style error), it is usually due to one of these:
+
+1. **Module is disabled for the school** (feature not enabled)
+2. **Permission is not granted** for the user role
+
+Common module names used by the system include:
+
+- **Exam Management**
+- **Assignment Management**
+- **Attendance Management**
+- **Fees Management**
+- **Timetable Management**
+- **Announcement Management**
+- **Lesson Management**
+- **Staff Leave Management**
+- **Expense Management**
+
+If a teacher/parent/student reports a missing feature:
+- Confirm the **role permissions** first
+- Then verify the **module/feature is enabled** for your school plan/settings
+- If you still can’t enable it, contact support to activate the module for your school
+
+:::tip Quick check
+If the feature is visible for admins but not for teachers, it is usually a **role permission** issue.
+:::
 2. Select a role (e.g., Teacher, Accountant)
-3. Enable/disable permissions:
-   - View students
-   - Edit students
-   - View fees
-   - Collect fees
-   - Generate reports
+3. Enable/disable the permissions you want (for example: View students, Edit students, View fees, Collect fees, Generate reports)
 4. Click **Save**
 
 ### Notification Settings
