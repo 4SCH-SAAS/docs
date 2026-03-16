@@ -13,7 +13,7 @@ import Link from '@docusaurus/Link';
 Online Exams in 4SCH allow teachers and administrators to create, conduct, and grade digital examinations with automatic grading for multiple-choice questions. This comprehensive guide covers all aspects of the online exam system.
 
 :::tip Quick Access
-- 📊 **<Link to="../interactive-diagrams/online-exam-workflows">Interactive Workflow Diagrams</Link>** - Visual flowcharts for all user roles
+- 📊 **[Interactive Workflow Diagrams](https://docs.4sch.com/interactive-diagrams/online-exam-workflows.html)** - Visual flowcharts for all user roles
 - 📋 **<Link to="/guides/online-exams-quick-reference">Quick Reference Guide</Link>** - Cheat sheet for fast access
 :::
 
@@ -67,11 +67,11 @@ Before creating online exams, ensure:
 1. Go to **Exams** → **Online Exams** from the main menu
 2. Click **Create Online Exam** button
 
-![Admin creating an online exam - Navigation](/img/screens/online-exams/admin-create-exam-nav.svg)
+![Admin creating an online exam - Navigation](pathname:///img/screens/online-exams/admin-create-exam-nav.svg)
 
 **Step 2: Fill Exam Details**
 
-![Exam creation form](/img/screens/online-exams/exam-creation-form.svg)
+![Exam creation form](pathname:///img/screens/online-exams/exam-creation-form.svg)
 
 Required Information:
 - **Exam Title** - Descriptive name (e.g., "Mathematics Mid-Term")
@@ -110,12 +110,12 @@ The question bank is a central repository for all online exam questions.
 
 **Navigate:** Exams → Online Exam Questions
 
-![Question bank interface](/img/screens/online-exams/question-bank-interface.svg)
+![Question bank interface](pathname:///img/screens/online-exams/question-bank-interface.svg)
 
 1. Click **Create Question**
 2. Fill in details:
 
-![Create question form](/img/screens/online-exams/create-question-form.svg)
+![Create question form](pathname:///img/screens/online-exams/create-question-form.svg)
 
 - **Class** - Target class level
 - **Subject** - Related subject
@@ -537,7 +537,7 @@ Before clicking "Start Exam", review:
 
 ### Step-by-Step: Taking an Exam
 
-![Student exam list view](/img/screens/online-exams/student-exam-list.svg)
+![Student exam list view](pathname:///img/screens/online-exams/student-exam-list.svg)
 
 #### Phase 1: Starting the Exam
 
@@ -546,7 +546,7 @@ Before clicking "Start Exam", review:
    - Find the exam in "Ongoing" status
    - Tap/Click on the exam
 
-![Exam details before starting](/img/screens/online-exams/student-exam-details.svg)
+![Exam details before starting](pathname:///img/screens/online-exams/student-exam-details.svg)
 
 2. **Read Instructions**
    - Duration
@@ -559,7 +559,7 @@ Before clicking "Start Exam", review:
    - Enter the 6-digit exam key provided by your teacher
    - Tap **Submit**
 
-![Exam key entry screen](/img/screens/online-exams/student-exam-key-entry.svg)
+![Exam key entry screen](pathname:///img/screens/online-exams/student-exam-key-entry.svg)
 
 :::caution Get the Exam Key First
 Ask your teacher for the exam key before starting. You cannot proceed without it.
@@ -572,7 +572,7 @@ Ask your teacher for the exam key before starting. You cannot proceed without it
 
 #### Phase 2: Answering Questions
 
-![Single answer question interface](/img/screens/online-exams/student-question-single.svg)
+![Single answer question interface](pathname:///img/screens/online-exams/student-question-single.svg)
 
 **Question Display:**
 - Question number (e.g., "Question 1 of 20")
@@ -588,7 +588,7 @@ Ask your teacher for the exam key before starting. You cannot proceed without it
 - Only one option can be selected
 - Change your answer by selecting a different option
 
-![Multiple answer question interface](/img/screens/online-exams/student-question-multiple.svg)
+![Multiple answer question interface](pathname:///img/screens/online-exams/student-question-multiple.svg)
 
 **Multiple Answer Questions:**
 - Tap/Click checkboxes ☑ for all correct answers
@@ -613,7 +613,7 @@ Ask your teacher for the exam key before starting. You cannot proceed without it
 
 #### Phase 4: Time Management
 
-![Timer and navigation interface](/img/screens/online-exams/student-timer-navigation.svg)
+![Timer and navigation interface](pathname:///img/screens/online-exams/student-timer-navigation.svg)
 
 **Timer Display:**
 - Shows remaining time (e.g., "25:30" = 25 minutes, 30 seconds)
@@ -641,14 +641,14 @@ When time runs out, the exam submits automatically with whatever you've answered
 2. Confirm submission (this action is final)
 3. Wait for confirmation message
 
-![Submit exam confirmation](/img/screens/online-exams/student-submit-confirmation.svg)
+![Submit exam confirmation](pathname:///img/screens/online-exams/student-submit-confirmation.svg)
 
 **After Submission:**
 - Your answers are saved
 - You cannot re-take the exam
 - Results may be visible immediately or after teacher review
 
-![Exam results display](/img/screens/online-exams/student-results-display.svg)
+![Exam results display](pathname:///img/screens/online-exams/student-results-display.svg)
 
 ### Viewing Your Results
 
@@ -877,7 +877,7 @@ After your child completes an exam:
    - Percentage score
    - Submission date
 
-![Parent viewing child's exam results](/img/screens/online-exams/parent-results-view.svg)
+![Parent viewing child's exam results](pathname:///img/screens/online-exams/parent-results-view.svg)
 
 ### Supporting Your Child
 
@@ -1969,7 +1969,7 @@ Technical fix:
 **Parents:**
 - Contact your child's teacher
 - Email school administration
-- Check the <Link to="/guides/parents">Parent Guide</Link>
+- Check the <Link to="/guides/parent-guide">Parent Guide</Link>
 
 ---
 
@@ -1980,15 +1980,15 @@ Technical fix:
 - <Link to="/reference/roles-permissions">Roles & Permissions</Link>
 
 **For Teachers:**
-- <Link to="/guides/teachers">Teacher Guide</Link>
-- <Link to="/guides/assignments">Assignment Management</Link>
+- <Link to="/guides/teacher-guide">Teacher Guide</Link>
+- [Assignment Submission Workflow](https://docs.4sch.com/interactive-diagrams/student-assignment-submission.html)
 
 **For Students:**
-- <Link to="/guides/students">Student Guide</Link>
+- <Link to="/guides/student-guide">Student Guide</Link>
 - <Link to="/support/faq">Frequently Asked Questions</Link>
 
 **For Parents:**
-- <Link to="/guides/parents">Parent Guide</Link>
+- <Link to="/guides/parent-guide">Parent Guide</Link>
 - <Link to="/support/contact-support">Contact Support</Link>
 
 ---

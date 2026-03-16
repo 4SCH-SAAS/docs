@@ -498,7 +498,7 @@ Grade ranges may vary by school. Check with your school administration.
 ### Parent Issues
 **First Contact:** Class Teacher  
 **Next:** Principal's Office  
-**Resources:** <Link to="/guides/parents">Parent Guide</Link>
+**Resources:** <Link to="/guides/parent-guide">Parent Guide</Link>
 
 ### Technical Issues
 **Email:** support@4sch.com  

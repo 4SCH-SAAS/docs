@@ -54,7 +54,7 @@ Comprehensive documentation for managing all types of exams in 4SCH - from digit
 - **<Link to="/guides/online-exams-quick-reference-printable">Printable Quick Reference</Link>** - PDF-ready version for printing
 
 **Visual Resources:**
-- **<Link to="../interactive-diagrams/online-exam-workflows">Interactive Workflow Diagrams</Link>** - Visual flowcharts
+- **[Interactive Workflow Diagrams](https://docs.4sch.com/interactive-diagrams/online-exam-workflows.html)** - Visual flowcharts
   - Teacher workflow: Exam creation process
   - Student workflow: Taking exams
   - Admin workflow: System management
@@ -75,7 +75,7 @@ Comprehensive documentation for managing all types of exams in 4SCH - from digit
 - **<Link to="/guides/offline-exams-quick-reference">Offline Exams Quick Reference</Link>** - Fast-access guide
 
 **Visual Resources:**
-- **<Link to="../interactive-diagrams/offline-exam-workflows">Interactive Workflow Diagrams</Link>** - Visual flowcharts
+- **[Interactive Workflow Diagrams](https://docs.4sch.com/interactive-diagrams/offline-exam-workflows.html)** - Visual flowcharts
   - Admin workflow: Exam and timetable creation
   - Teacher workflow: Mark entry process
   - Student workflow: Viewing results
@@ -173,34 +173,34 @@ Comprehensive documentation for managing all types of exams in 4SCH - from digit
 ## 🎬 Video Tutorials
 
 ### Online Exams
-1. **<Link to="/video-tutorials/scripts/03-feature-deep-dives/09-online-exams-overview">Online Exams Overview</Link>** (8-10 min)
+1. **[Online Exams Overview](https://github.com/4SCH-SAAS/docs/blob/main/video-tutorials/scripts/03-feature-deep-dives/09-online-exams-overview.md)** (8-10 min)
    - What are online exams
    - Complete workflow
    - Benefits for all users
 
-2. **<Link to="/video-tutorials/scripts/03-feature-deep-dives/10-online-exams-teacher-guide">Teacher's Guide to Online Exams</Link>** (12-15 min)
+2. **[Teacher's Guide to Online Exams](https://github.com/4SCH-SAAS/docs/blob/main/video-tutorials/scripts/03-feature-deep-dives/10-online-exams-teacher-guide.md)** (12-15 min)
    - Creating question banks
    - Building exams
    - Managing results
 
-3. **<Link to="/video-tutorials/scripts/03-feature-deep-dives/11-online-exams-student-guide">Student's Guide to Online Exams</Link>** (10-12 min)
+3. **[Student's Guide to Online Exams](https://github.com/4SCH-SAAS/docs/blob/main/video-tutorials/scripts/03-feature-deep-dives/11-online-exams-student-guide.md)** (10-12 min)
    - Taking exams
    - Understanding results
    - Best practices
 
 ### Offline Exams
-1. **<Link to="/video-tutorials/scripts/03-feature-deep-dives/12-offline-exams-overview">Offline Exams Overview</Link>** (10-12 min)
+1. **[Offline Exams Overview](https://github.com/4SCH-SAAS/docs/blob/main/video-tutorials/scripts/03-feature-deep-dives/12-offline-exams-overview.md)** (10-12 min)
    - Traditional exam management
    - Complete workflow
    - System benefits
 
-2. **<Link to="/video-tutorials/scripts/03-feature-deep-dives/13-offline-exams-admin-teacher-guide">Admin & Teacher Guide</Link>** (14-16 min)
+2. **[Admin & Teacher Guide](https://github.com/4SCH-SAAS/docs/blob/main/video-tutorials/scripts/03-feature-deep-dives/13-offline-exams-admin-teacher-guide.md)** (14-16 min)
    - Creating exams and timetables
    - Entering marks
    - Publishing results
 
 ### Comparison & Strategy
-3. **<Link to="/video-tutorials/scripts/03-feature-deep-dives/14-exam-system-comparison">Online vs Offline: When to Use Which</Link>** (6-8 min)
+3. **[Online vs Offline: When to Use Which](https://github.com/4SCH-SAAS/docs/blob/main/video-tutorials/scripts/03-feature-deep-dives/14-exam-system-comparison.md)** (6-8 min)
    - Comparison of both systems
    - Use case scenarios
    - Hybrid approach strategy
@@ -266,7 +266,7 @@ Comprehensive documentation for managing all types of exams in 4SCH - from digit
 - **Mid-Term/Finals:** Offline exams for comprehensive assessment
 - **Both:** Use strategically throughout the academic year
 
-**Learn More:** <Link to="/video-tutorials/scripts/03-feature-deep-dives/14-exam-system-comparison">Watch Comparison Video</Link>
+**Learn More:** [Read: Online vs Offline Exam Comparison](https://github.com/4SCH-SAAS/docs/blob/main/video-tutorials/scripts/03-feature-deep-dives/14-exam-system-comparison.md)
 
 ---
 
@@ -287,8 +287,8 @@ Comprehensive documentation for managing all types of exams in 4SCH - from digit
 ## 📖 Related Documentation
 
 ### Core Guides
-- <Link to="/guides/teachers">Teacher Guide</Link> - Overall teacher documentation
-- <Link to="/guides/students">Student Guide</Link> - Overall student documentation
+- <Link to="/guides/teacher-guide">Teacher Guide</Link> - Overall teacher documentation
+- <Link to="/guides/student-guide">Student Guide</Link> - Overall student documentation
 - <Link to="/guides/school-admin">School Admin Guide</Link> - Overall admin documentation
 
 ### Supporting Topics
@@ -335,7 +335,7 @@ Comprehensive documentation for managing all types of exams in 4SCH - from digit
 **Start Here:**
 1. Read <Link to="/guides/online-exams#overview">Online Exams Overview</Link>
 2. Read <Link to="/guides/offline-exams#overview">Offline Exams Overview</Link>
-3. Watch <Link to="/video-tutorials/scripts/03-feature-deep-dives/14-exam-system-comparison">Comparison Video</Link>
+3. Read: [Online vs Offline Exam Comparison](https://github.com/4SCH-SAAS/docs/blob/main/video-tutorials/scripts/03-feature-deep-dives/14-exam-system-comparison.md)
 4. Choose exam type for your needs
 5. Follow role-specific guide
 

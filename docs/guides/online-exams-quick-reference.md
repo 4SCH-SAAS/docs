@@ -403,7 +403,7 @@ Percentage = (40 / 50) × 100 = 80%
 ## 🔗 Related Resources
 
 - <Link to="/guides/online-exams">📚 Complete Online Exams Guide</Link>
-- <Link to="../interactive-diagrams/online-exam-workflows">📊 Interactive Workflow Diagrams</Link>
+- [📊 Interactive Workflow Diagrams](https://docs.4sch.com/interactive-diagrams/online-exam-workflows.html)
 - <Link to="/support/troubleshooting">🔧 Full Troubleshooting Guide</Link>
 - <Link to="/support/faq">❓ Frequently Asked Questions</Link>
 
@@ -431,4 +431,4 @@ Percentage = (40 / 50) × 100 = 80%
 
 ---
 
-**🚀 Ready to get started? Jump to the <Link to="/guides/online-exams">Complete Guide</Link> or explore <Link to="../interactive-diagrams/online-exam-workflows">Interactive Workflows</Link>!**
+**🚀 Ready to get started? Jump to the <Link to="/guides/online-exams">Complete Guide</Link> or explore [Interactive Workflows](https://docs.4sch.com/interactive-diagrams/online-exam-workflows.html)!**
