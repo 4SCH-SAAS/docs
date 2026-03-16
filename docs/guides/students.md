@@ -225,11 +225,11 @@ Print your exam timetable and stick it on your wall at home. This helps you plan
 - Include breaks (30 min study, 10 min break)
 - Study hardest subjects when you're most alert (morning for most students)
 
-**Use 4SCH Study Materials:**
-- Download PDFs and videos your teachers upload
-- Watch video lessons multiple times if needed
-- Make notes from study materials
-- Practice with any worksheets provided
+**Utilize Digital Study Resources:**
+- Download course materials when available for offline review
+- Review video lessons multiple times to reinforce understanding
+- Take comprehensive notes from provided materials
+- Complete all practice exercises and worksheets
 :::
 
 :::warning Exam Preparation Mistakes to Avoid
@@ -873,12 +873,12 @@ Don't wait until the last minute! Submit assignments at least a day before the d
 - **Day 5:** Review, edit, and submit
 - **Never:** Submit on the due date morning (too risky!)
 
-**What If You're Stuck:**
-1. Reread the instructions carefully
-2. Check study materials teacher provided
-3. Ask a classmate who might understand
-4. Message your teacher through 4SCH (don't be afraid to ask!)
-5. Ask your parents for help
+**When Encountering Difficulties:**
+1. Review assignment instructions thoroughly
+2. Consult provided reference materials and resources
+3. Collaborate with classmates for clarification
+4. Contact your teacher through appropriate channels
+5. Seek assistance from parents or guardians when needed
 
 **Managing Multiple Assignments:**
 - Create a checklist of all assignments
@@ -1218,11 +1218,11 @@ This keeps everything organized and easy to find when studying!
 
 ### Staying Organized
 
-**Use 4SCH to:**
-- Set reminders for assignment deadlines
-- Track which assignments you've completed
-- Monitor your grade progress
-- Keep all school documents in one place
+**Organizational Strategies:**
+- Maintain a calendar with assignment deadlines and exam dates
+- Track completion status of all assignments
+- Monitor academic progress regularly
+- Maintain organized digital and physical files
 
 **Create a routine:**
 - Check 4SCH at the same time every day
@@ -1230,7 +1230,7 @@ This keeps everything organized and easy to find when studying!
 - Respond to teacher messages promptly
 
 :::tip Success Strategy
-Successful students check 4SCH daily, submit assignments on time, and communicate with teachers when they need help. Make 4SCH part of your daily routine!
+Successful students maintain consistent engagement with their coursework, submit assignments punctually, and communicate proactively with teachers when assistance is needed.
 :::
 
 ---
