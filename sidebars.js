@@ -61,9 +61,10 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: '👥 Staff & Academic Management',
+          label: '⚙️ Administration & Management',
           collapsed: false,
           items: [
+            'guides/admin-dashboard-analytics',
             'guides/teacher-subject-assignment',
           ],
         },

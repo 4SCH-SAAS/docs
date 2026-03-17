@@ -62,25 +62,17 @@ Change your default password immediately after first login. Go to **Profile → 
 
 ### Understanding the Admin Dashboard
 
-Your dashboard provides a complete overview of your school:
+Your dashboard provides a complete overview of your school's key metrics and recent activity at a glance.
 
-**Key Metrics:**
-- **Total Students** - Current enrollment count
-- **Total Teachers** - Active teaching staff
-- **Attendance Today** - Real-time attendance percentage
-- **Fees Collected** - Financial summary for current session
+**Key Features:**
+- Student and teacher statistics
+- Fee collection status (fully paid, partially paid, unpaid)
+- Upcoming holidays and recent announcements
+- Quick actions and shortcuts
 
-**Quick Actions:**
-- Add new students or staff
-- Generate reports
-- View pending approvals
-- Access settings
-
-**Recent Activity:**
-- Latest admissions
-- Fee payments received
-- Announcements posted
-- System updates
+:::tip Detailed Dashboard Guide
+For a comprehensive guide on using the dashboard, understanding all metrics, filtering data, and exporting reports, see the [Admin Dashboard & Analytics Guide](admin-dashboard-analytics.md).
+:::
 
 ---
 
