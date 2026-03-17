@@ -22,6 +22,13 @@
 
 ## ✅ Recently Completed
 
+### Teacher-Subject Assignment (Completed: 2026-03-17)
+- Complete guide for assigning teachers to class-section-subject combinations
+- Understanding SubjectTeacher model and assignment hierarchy
+- Multiple assignment methods and workflows
+- Common scenarios, troubleshooting, and best practices
+- **File:** `docs/guides/teacher-subject-assignment.md`
+
 ### Expense Management (Completed: 2026-03-17)
 - Complete expense tracking and categorization system
 - Expense category management (CRUD operations)
@@ -203,17 +210,23 @@ When creating or updating documentation:
 
 ---
 
-### 5. Staff/Teacher Subject Assignment
-**Status:** Mentioned but workflow not detailed  
-**Backend:** Admin assigns teachers to subjects/classes  
-**Affected Roles:** Admin  
-**What's Needed:**
-- How to assign teachers to classes and subjects
-- Managing elective vs compulsory subject teachers
-- Bulk assignment options
-- Handling teacher changes mid-year
+### 5. Staff/Teacher Subject Assignment ✅ COMPLETED
+**Status:** ✅ Complete comprehensive guide created  
+**Backend:** SubjectTeacher model linking teachers to class-section-subject combinations  
+**Affected Roles:** Admin (assign), Teachers (view assignments)  
+**Completed:**
+- ✅ Understanding the assignment structure and hierarchy
+- ✅ Step-by-step subject assignment to classes (core and elective)
+- ✅ Multiple methods for assigning teachers to subjects
+- ✅ Verification and reporting of teacher assignments
+- ✅ Managing and editing assignments (including mid-year changes)
+- ✅ Common scenarios (subject specialists, class teachers, team teaching, electives)
+- ✅ Permissions and access control details
+- ✅ Best practices for planning and documentation
+- ✅ Comprehensive troubleshooting guide
+- ✅ Semester-based school considerations
 
-**Effort:** ~2 hours | **Value:** Medium
+**File:** `docs/guides/teacher-subject-assignment.md` | **Effort:** 2 hours | **Value:** High
 
 ---
 

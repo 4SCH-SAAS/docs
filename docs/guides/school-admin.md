@@ -149,7 +149,7 @@ Subjects are the courses taught in your school.
 1. Go to **Academics → Class Subjects**
 2. Select a class and section
 3. Choose subjects from the list
-4. Assign teachers to each subject
+4. Assign teachers to each subject (see [Teacher-Subject Assignment Guide](teacher-subject-assignment.md))
 5. Click **Save**
 
 ### Creating Timetables
@@ -258,6 +258,7 @@ Ensure email addresses and admission numbers are unique. Duplicates will cause i
      - Designation (e.g., Senior Teacher, HOD)
 3. **Assign Subjects**:
    - Select classes and subjects they teach
+   - See the [Teacher-Subject Assignment Guide](teacher-subject-assignment.md) for detailed workflows
 4. **Set Login Credentials**:
    - Email (used for login)
    - Generate password
