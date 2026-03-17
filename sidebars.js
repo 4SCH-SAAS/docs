@@ -61,6 +61,14 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: '💰 Financial Management',
+          collapsed: false,
+          items: [
+            'guides/expense-management',
+          ],
+        },
+        {
+          type: 'category',
           label: '📊 Reports & Analytics',
           collapsed: false,
           items: [
