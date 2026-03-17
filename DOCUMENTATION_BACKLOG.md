@@ -22,6 +22,12 @@
 
 ## ✅ Recently Completed
 
+### Roles & Permissions Deep Dive (Completed: 2026-03-17)
+- Comprehensive RBAC guide with all 100+ permissions documented
+- Default roles, custom role creation, permission management
+- Security best practices and permission matrix
+- **File:** `docs/reference/roles-permissions.md`
+
 ### Data Import/Export (Completed: 2026-03-17)
 - Comprehensive import/export guide for students, staff, teachers, and exam marks
 - Template structure, validation, and multi-sheet Excel support
@@ -282,15 +288,21 @@ When creating or updating documentation:
 
 ---
 
-### 9. Role & Permissions Deep Dive
-**Status:** Basic overview in school-admin, needs detailed permission matrix  
-**What's Needed:**
-- Complete permission list with descriptions
-- Default permissions per role
-- Custom role creation workflow
-- Security best practices (least privilege)
+### 9. Role & Permissions Deep Dive ✅ COMPLETED
+**Status:** ✅ Complete comprehensive guide created  
+**Backend:** Uses Spatie Laravel Permission package with role-based access control  
+**Completed:**
+- ✅ Complete overview of roles vs permissions
+- ✅ All 7 default roles documented (School Admin, Teacher, Guardian, Student, Driver, Helper, custom)
+- ✅ Complete permission list (100+ permissions organized by module)
+- ✅ Custom role creation workflow with examples
+- ✅ Managing roles and permissions (assign, edit, delete)
+- ✅ Security best practices (least privilege, MFA, password policies, audits)
+- ✅ Permission matrix by role
+- ✅ Troubleshooting guide (5+ scenarios)
+- ✅ Related feature cross-references
 
-**Effort:** ~2-3 hours | **Value:** Medium
+**File:** `docs/reference/roles-permissions.md` | **Effort:** 2.5 hours | **Value:** High
 
 ---
 
