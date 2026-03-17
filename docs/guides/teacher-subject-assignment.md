@@ -202,7 +202,7 @@ Some installations allow direct management:
 2. Click the **eye icon** or **View Details** for a class
 3. You'll see a list of all subjects for that class
 4. For each subject, assign teachers by:
-   - Clicking **Assign Teacher** 
+   - Clicking **Assign Teacher**
    - Selecting the teacher from dropdown
    - Selecting which section(s) they teach
    - Clicking **Save**
