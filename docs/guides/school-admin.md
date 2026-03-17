@@ -433,10 +433,14 @@ Generate comprehensive fee reports:
 - Collection rate
 
 **Income vs Expense:**
-- Track school revenue
-- Monitor expenses
-- View profit/loss
-- Monthly comparisons
+- Track school revenue through fee collection
+- Monitor operational expenses (see [Expense Management](expense-management.md))
+- View profit/loss trends
+- Monthly financial comparisons
+
+:::tip
+For detailed expense tracking and categorization, use the dedicated [Expense Management](expense-management.md) feature. This allows you to record utilities, supplies, maintenance, and other operational costs with proper categorization and reporting.
+:::
 
 ### Staff Reports
 

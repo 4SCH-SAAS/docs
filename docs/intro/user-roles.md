@@ -110,7 +110,7 @@ Different people in your school need access to different features. 4SCH organize
 - Process fee payments (cash, online, cheque)
 - Generate invoices and receipts
 - Track fee collection and defaulters
-- Manage expenses and income
+- Manage expenses (record and categorize operational costs) and income (fee collection)
 - Generate financial reports
 - Reconcile payment gateway transactions
 - Monitor payment deadlines

@@ -1,6 +1,6 @@
 # Documentation Backlog for Future Sessions
 
-**Last Updated:** 2026-03-16
+**Last Updated:** 2026-03-17
 
 ## ✅ Recently Completed
 
@@ -22,6 +22,27 @@
 
 ## ✅ Recently Completed
 
+### Expense Management (Completed: 2026-03-17)
+- Complete expense tracking and categorization system
+- Expense category management (CRUD operations)
+- Session year-based expense recording with analytics
+- Salary expense integration from payroll
+- **File:** `docs/guides/expense-management.md`
+
+### Session Year & Academic Calendar (Completed: 2026-03-17)
+- Complete session planning and management guide
+- Term/semester configuration for all systems
+- Academic calendar templates and best practices
+- Student promotion workflows
+- **File:** `docs/guides/session-year-calendar.md`
+
+### Professional Tone Refinements (Completed: 2026-03-17)
+- Enhanced Teacher Guide with 7 comprehensive tip boxes
+- Enhanced Student Guide with 4 comprehensive tip boxes
+- Removed promotional language across all guides
+- Platform-agnostic educational best practices
+- **Files:** `docs/guides/teachers.md`, `docs/guides/students.md`
+
 ### Homepage Content & Gallery Management (Completed: 2026-03-16)
 - Complete homepage sliders/announcements guide
 - Comprehensive gallery management documentation
@@ -37,6 +58,78 @@
 - 9 interactive diagrams with full WCAG 2.1 AA accessibility
 - 36 individual workflows across 8 user roles
 - **Location:** `static/interactive-diagrams/`
+
+---
+
+## 📋 Documentation Guidelines
+
+### Git Workflow & Branching Strategy
+**IMPORTANT: Never commit documentation changes directly to the main branch.**
+
+**Required Workflow:**
+1. ✅ **Always create a feature branch** before making any documentation changes
+   - Branch naming: `docs/feature-name` (e.g., `docs/expense-management-feature`)
+2. ✅ **Make all changes on the feature branch**
+   - Create new documentation files
+   - Modify existing documentation
+   - Update sidebars, navigation, and cross-references
+3. ✅ **Commit changes with clear, descriptive messages**
+   - Use conventional commit format: `docs: Add expense management guide`
+   - Include scope when relevant: `docs(guides): Enhance accountant workflows`
+4. ✅ **Push branch to remote and create a Pull Request (PR)**
+   - Title: Clear description of what was added/changed
+   - Description: Summary of changes, files affected, testing done
+5. ✅ **Review and merge PR to main**
+   - Self-review or request review if working in a team
+   - Ensure all checks pass (build, link validation, linting)
+   - Merge only after approval
+
+**Example Workflow:**
+```bash
+# Create feature branch
+git checkout -b docs/new-feature-guide
+
+# Make changes, then commit
+git add .
+git commit -m "docs: Add comprehensive new feature guide"
+
+# Push and create PR
+git push -u origin docs/new-feature-guide
+# Then create PR via GitHub/GitLab UI
+```
+
+❌ **Do NOT:**
+- Commit directly to main branch
+- Push changes without creating a PR
+- Merge without review/validation
+
+### Source of Truth
+**The PHP_CODE/ directory contains the actual application logic and is the source of truth for all documentation.**
+
+When creating or updating documentation:
+1. ✅ Always examine the PHP_CODE directory first to understand actual implementation
+2. ✅ Review models, controllers, repositories, and views for accurate feature details
+3. ✅ Verify API endpoints, validation rules, and business logic
+4. ✅ Check database migrations for field requirements and relationships
+5. ✅ Test features locally when possible to confirm behavior
+6. ❌ Do not assume features exist without checking the codebase
+7. ❌ Do not document features based solely on UI labels or assumptions
+
+**Key Code Locations:**
+- **Models:** `PHP_CODE/app/Models/` - Database structure and relationships
+- **Controllers:** `PHP_CODE/app/Http/Controllers/` - Business logic and workflows
+- **Repositories:** `PHP_CODE/app/Repositories/` - Data access patterns
+- **Views:** `PHP_CODE/resources/views/` - UI structure and form fields
+- **Routes:** `PHP_CODE/routes/web.php` and `PHP_CODE/routes/api.php` - Available endpoints
+- **Migrations:** `PHP_CODE/database/migrations/` - Database schema
+
+### When Improving Existing Documentation
+**If documentation already exists and can be improved, do so.** Don't create duplicate guides - enhance what's already there with:
+- More detailed workflows
+- Additional examples and use cases
+- Troubleshooting sections
+- Best practices and tips
+- Missing role-based perspectives
 
 ---
 
@@ -90,17 +183,23 @@
 
 ---
 
-### 4. Expense Management
-**Status:** Feature exists in backend (`getExpenses`, `createExpense`, etc.) but ZERO documentation  
-**Backend:** Staff submit expenses, admin approves/rejects  
-**Affected Roles:** Staff (submit), Admin (approve), Accountant (track)  
-**What's Needed:**
-- Staff: How to submit expense requests (amount, category, receipts)
-- Admin: How to approve/reject expenses
-- Accountant: Viewing expense reports
-- Best practices: Receipt requirements, approval timing
+### 4. Expense Management ✅ COMPLETED
+**Status:** ✅ Complete comprehensive guide created  
+**Backend:** Expense tracking with categories, session year filtering, analytics  
+**Affected Roles:** Admin (full access), Accountant (record/manage), Staff (view only if granted)  
+**Completed:**
+- ✅ Expense category creation and management (CRUD operations)
+- ✅ Expense recording with detailed fields (category, amount, date, reference, description)
+- ✅ Session year-based expense tracking
+- ✅ Filtering and search capabilities (by category, month, session year)
+- ✅ Expense analytics and trend graphs
+- ✅ Salary expense handling (auto-generated from payroll)
+- ✅ Export functionality and reporting
+- ✅ Permissions and access control documentation
+- ✅ Best practices for expense recording and financial management
+- ✅ Troubleshooting guide and workflow examples
 
-**Effort:** ~3-4 hours | **Value:** Medium-High
+**File:** `docs/guides/expense-management.md` | **Effort:** 3.5 hours | **Value:** Medium-High
 
 ---
 

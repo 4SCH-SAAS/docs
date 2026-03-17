@@ -896,5 +896,52 @@ Critical tasks at term end to close books properly.
 - <Link to="/guides/non-teaching-staff-guide">Non-Teaching Staff Guide</Link> — General support tasks
 - <Link to="/support/faq">Frequently Asked Questions</Link>
 
+---
+
+## Expense Management
+
+As an accountant, you're responsible for tracking all school operational expenses beyond just fee collection.
+
+### Recording School Expenses
+
+**Access Expense Management:**
+1. Go to **Finance → Expenses**
+2. Record expenses for:
+   - Utilities (electricity, water, internet)
+   - Office supplies and stationery
+   - Building maintenance and repairs
+   - Equipment purchases
+   - Miscellaneous operational costs
+
+**Best Practices:**
+- Record expenses promptly (within a week)
+- Always include invoice/reference numbers
+- Use descriptive titles for easy tracking
+- Categorize expenses properly
+- Attach or file supporting documents
+
+:::tip
+For comprehensive expense management workflows, see the [Expense Management Guide](expense-management.md) which covers category setup, recording procedures, reporting, and analytics.
+:::
+
+### Financial Reporting
+
+**Monthly Tasks:**
+1. Generate fee collection reports
+2. Record all operational expenses
+3. Review expense trends and totals
+4. Compare actual vs budgeted amounts
+5. Prepare summary for administration
+6. Identify any unusual spending patterns
+
+**Year-End Tasks:**
+1. Export full year financial data
+2. Reconcile all income and expenses
+3. Generate annual financial statements
+4. Support budget planning for next session
+5. Archive financial records
+
+---
+
 Your role is vital to the school's operations. Accurate financial management enables the school to plan, grow, and serve students better. Keep up the excellent work! 💰📊
 
