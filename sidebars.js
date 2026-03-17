@@ -61,6 +61,14 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: '📚 Academic Management',
+          collapsed: false,
+          items: [
+            'guides/session-year-calendar',
+          ],
+        },
+        {
+          type: 'category',
           label: '📊 Reports & Analytics',
           collapsed: false,
           items: [
