@@ -65,6 +65,7 @@ const sidebars = {
           collapsed: false,
           items: [
             'guides/admin-dashboard-analytics',
+            'guides/session-year-calendar-setup',
             'guides/teacher-subject-assignment',
           ],
         },

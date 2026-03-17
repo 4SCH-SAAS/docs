@@ -22,6 +22,11 @@
 
 ## ✅ Recently Completed
 
+### Session Year & Academic Calendar Setup (Completed: 2026-03-17)
+- Complete guide for session year creation, semesters, and transitions
+- Impact on all modules, archiving, and best practices
+- **File:** `docs/guides/session-year-calendar-setup.md`
+
 ### Documentation Enhancements - Quick Wins Bundle (Completed: 2026-03-17)
 - Glossary of 50+ terms, Keyboard Shortcuts guide
 - Cross-linking improvements and search optimization
@@ -61,12 +66,13 @@
 - Salary expense integration from payroll
 - **File:** `docs/guides/expense-management.md`
 
-### Session Year & Academic Calendar (Completed: 2026-03-17)
-- Complete session planning and management guide
-- Term/semester configuration for all systems
-- Academic calendar templates and best practices
-- Student promotion workflows
-- **File:** `docs/guides/session-year-calendar.md`
+### Session Year & Academic Calendar Setup (Completed: 2026-03-17)
+- Complete session year creation and management guide
+- Term/semester configuration workflows
+- Session year transition and archiving
+- Impact on fees, exams, and student promotion
+- Best practices and troubleshooting
+- **File:** `docs/guides/session-year-calendar-setup.md`
 
 ### Professional Tone Refinements (Completed: 2026-03-17)
 - Enhanced Teacher Guide with 7 comprehensive tip boxes
@@ -326,16 +332,20 @@ When creating or updating documentation:
 
 ---
 
-### 10. Session Year & Academic Calendar Setup
-**Status:** Mentioned but not step-by-step  
-**What's Needed:**
-- Creating new session year
-- Setting term/semester dates
-- Copying configuration from previous year
-- Archiving old session years
-- Impact on fees, exams, results
+### 10. Session Year & Academic Calendar Setup ✅ COMPLETED
+**Status:** ✅ Complete comprehensive guide created  
+**Backend:** SessionYear and Semester models with fee installments support  
+**Completed:**
+- ✅ Creating new session years with all configuration options
+- ✅ Setting up semesters/terms with date validation
+- ✅ Copying configuration from previous year (manual workflow)
+- ✅ Archiving and accessing old session years
+- ✅ Impact on fees, exams, results, attendance, and student enrollment
+- ✅ Default session management
+- ✅ Best practices for planning and transition
+- ✅ Troubleshooting guide (6+ scenarios)
 
-**Effort:** ~2 hours | **Value:** High
+**File:** `docs/guides/session-year-calendar-setup.md` | **Effort:** 2 hours | **Value:** High
 
 ---
 
