@@ -93,12 +93,12 @@ Your dashboard provides a complete overview of your school:
 
 Academic sessions represent school years (e.g., 2024-2025).
 
-**To create a new session:**
+**Quick Setup:**
 
 1. Go to **Academics → Session Years**
 2. Click **Add New Session**
 3. Fill in:
-   - **Session Name**: e.g., "2024-2025"
+   - **Session Name**: e.g., "2024/2025"
    - **Start Date**: First day of school
    - **End Date**: Last day of school
    - **Default Session**: Check if this is the current active session
@@ -106,6 +106,17 @@ Academic sessions represent school years (e.g., 2024-2025).
 
 :::caution Important
 Only one session can be marked as "default" (active). This is the session students and teachers see.
+:::
+
+:::tip Complete Session Management Guide
+For comprehensive guidance on session planning, term setup, calendar management, and year-end transitions, see the <Link to="/guides/session-year-calendar">Session Year & Academic Calendar Setup Guide</Link>.
+
+**Topics covered:**
+- Session planning best practices
+- Term/semester configuration
+- Academic calendar creation
+- Student promotion workflows
+- Session transitions and archiving
 :::
 
 ### Creating Classes and Sections
