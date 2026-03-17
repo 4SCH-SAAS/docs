@@ -241,7 +241,7 @@ Depending on your system configuration, the dashboard may display:
 - Spot patterns (e.g., attendance drops on Fridays)
 
 **Action Items:**
-- Classes with <75% attendance: Investigate reasons, send reminders
+- Classes with &lt;75% attendance: Investigate reasons, send reminders
 - Consistently low attendance: Meet with class teacher, contact parents
 
 ---
