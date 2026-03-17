@@ -22,6 +22,13 @@
 
 ## ✅ Recently Completed
 
+### Data Import/Export (Completed: 2026-03-17)
+- Comprehensive import/export guide for students, staff, teachers, and exam marks
+- Template structure, validation, and multi-sheet Excel support
+- Data quality guidelines and common error solutions
+- Security best practices and permissions
+- **File:** `docs/reference/data-import-export.md`
+
 ### Teacher-Subject Assignment (Completed: 2026-03-17)
 - Complete guide for assigning teachers to class-section-subject combinations
 - Understanding SubjectTeacher model and assignment hierarchy
@@ -256,15 +263,22 @@ When creating or updating documentation:
 
 ---
 
-### 8. Data Import/Export (Beyond Bulk Marks)
-**Status:** Bulk marks documented; student/staff import only mentioned  
-**What's Needed:**
-- Student bulk import (CSV format, required fields, validation)
-- Staff bulk import
-- Export options (students, fees, attendance, results)
-- Error handling during import
+### 8. Data Import/Export (Beyond Bulk Marks) ✅ COMPLETED
+**Status:** ✅ Complete comprehensive guide created  
+**Backend:** Uses Laravel Excel with Import/Export classes for Students, Staff, Teachers, and Marks  
+**Completed:**
+- ✅ Student bulk import with guardian linking and custom form fields
+- ✅ Staff/Teacher bulk import workflows
+- ✅ Exam marks bulk upload with update capabilities
+- ✅ All export options (students, staff, marks, reports)
+- ✅ Template structure and multi-sheet explanation
+- ✅ Data quality tips and validation rules
+- ✅ Common errors with solutions (10+ scenarios)
+- ✅ Security and privacy best practices
+- ✅ Before/during/after import checklists
+- ✅ Permissions documentation
 
-**Effort:** ~3 hours | **Value:** Medium-High
+**File:** `docs/reference/data-import-export.md` | **Effort:** 3 hours | **Value:** Medium-High
 
 ---
 
