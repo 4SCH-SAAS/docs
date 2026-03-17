@@ -226,9 +226,9 @@ Depending on your system configuration, the dashboard may display:
 - Attendance percentage by class or class-section
 - Trends over time (daily, weekly, monthly)
 - Color-coded bars:
-  - Green: >90% attendance
+  - Green: &gt;90% attendance
   - Yellow: 75-90% attendance
-  - Red: <75% attendance
+  - Red: &lt;75% attendance
 
 **Filters Available:**
 - Select specific class
