@@ -2,6 +2,8 @@
 id: teacher-subject-assignment
 title: Teacher-Subject Assignment Guide
 sidebar_label: Teacher-Subject Assignment
+description: Comprehensive guide for assigning teachers to classes and subjects, including core subjects, elective subjects, and class teacher designation.
+keywords: [teacher assignment, subject assignment, class teacher, assign teachers, teacher allocation, subject teachers, class assignment, elective subjects, core subjects, timetable]
 ---
 
 # Teacher-Subject Assignment Guide

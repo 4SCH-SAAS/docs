@@ -2,6 +2,8 @@
 id: expense-management
 title: Expense Management Guide
 sidebar_label: Expense Management
+description: Complete guide for managing school expenses including categories, recording expenses, tracking, and financial reporting.
+keywords: [expense management, school expenses, expense tracking, expense categories, financial management, budget tracking, operational costs, expense reports, accounting, finance]
 ---
 
 # Expense Management Guide
