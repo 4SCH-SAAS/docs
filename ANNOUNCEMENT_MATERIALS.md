@@ -74,7 +74,7 @@ We heard you! The new 4SCH Teacher Guide is here, designed specifically for your
 ✅ Time-saving tips and best practices
 
 📖 Read Your Guide:
-https://docs.4sch.com/guides/teachers
+https://docs.4sch.com/guides/teacher-guide
 
 💡 Highlights:
 
@@ -118,7 +118,7 @@ Staying involved in your child's education just got easier! We've created a comp
 ✅ Track multiple children in one account
 
 📖 Read Your Guide:
-https://docs.4sch.com/guides/parents
+https://docs.4sch.com/guides/parent-guide
 
 💡 Popular Topics:
 
@@ -165,7 +165,7 @@ Check out your new 4SCH Student Guide - everything you need to stay organized an
 ✅ Tips for staying organized
 
 📖 Read Your Guide:
-https://docs.4sch.com/guides/students
+https://docs.4sch.com/guides/student-guide
 
 💡 Cool Features:
 

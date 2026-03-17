@@ -213,7 +213,7 @@ title: Teacher Guide
 **Use correct link format:**
 ```markdown
 ❌ [Teacher Guide](/guides/teachers.md)
-❌ [Teacher Guide](../guides/teachers)
+❌ [Teacher Guide](../guides/teacher-guide)
 ✅ [Teacher Guide](/guides/teacher-guide)  # Use 'id' from frontmatter
 ```
 
