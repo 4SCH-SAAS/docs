@@ -849,9 +849,10 @@ Check your school's specific policy.
 
 ## Related Resources
 
-- <Link to="/guides/teachers#marking-attendance">Teacher Guide: Marking Attendance</Link>
-- <Link to="/guides/school-admin#reports-analytics">Admin Guide: Reports & Analytics</Link>
+- <Link to="/guides/teachers">Teacher Guide</Link>
+- <Link to="/guides/school-admin">Admin Guide</Link>
 - <Link to="/guides/parents">Parent Guide</Link>
+- <Link to="/guides/students">Student Guide</Link>
 - <Link to="/support/troubleshooting">Troubleshooting Guide</Link>
 
 ---
