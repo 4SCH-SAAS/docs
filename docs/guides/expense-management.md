@@ -4,8 +4,6 @@ title: Expense Management Guide
 sidebar_label: Expense Management
 ---
 
-import { Academic, Finance } from '@site/src/components/icons';
-
 # Expense Management Guide
 
 **Roles:** School Admin, Accountant, Staff (view own expenses)
@@ -36,7 +34,7 @@ The Expense Management system consists of two main components:
 
 ---
 
-## <span className="heading-icon"><Finance size={18} /></span> Managing Expense Categories {#expense-categories}
+## 💰 Managing Expense Categories {#expense-categories}
 
 Before recording expenses, you should create expense categories to organize your expenses logically.
 
@@ -93,7 +91,7 @@ You cannot permanently delete a category that has expense records. You must firs
 
 ---
 
-## <span className="heading-icon"><Finance size={18} /></span> Recording Expenses {#recording-expenses}
+## 📝 Recording Expenses {#recording-expenses}
 
 ### Creating an Expense Record
 
@@ -150,7 +148,7 @@ You need `expense-delete` permission to delete expense records.
 
 ---
 
-## <span className="heading-icon"><Finance size={18} /></span> Viewing & Filtering Expenses {#viewing-expenses}
+## 🔍 Viewing & Filtering Expenses {#viewing-expenses}
 
 ### Expense List View
 
@@ -189,7 +187,7 @@ Use the filters at the top of the expense list to narrow down results:
 
 ---
 
-## <span className="heading-icon"><Finance size={18} /></span> Expense Analytics & Reports {#analytics}
+## 📊 Expense Analytics & Reports {#analytics}
 
 ### Expense Summary Footer
 
@@ -233,7 +231,7 @@ Use the expense trend graph to identify peak spending months and plan your budge
 
 ---
 
-## <span className="heading-icon"><Finance size={18} /></span> Permissions & Access Control {#permissions}
+## 🔐 Permissions & Access Control {#permissions}
 
 ### Required Permissions
 
