@@ -236,7 +236,7 @@ Customize email notification templates:
 1. Click **Edit** on a template
 2. Modify:
    - **Subject Line** - Email subject
-   - **Body** - Email content (supports variables like {student_name}, {class}, {date})
+   - **Body** - Email content (supports variables like `{student_name}`, `{class}`, `{date}`)
 3. Use provided variables to personalize emails
 4. Click **Save**
 
