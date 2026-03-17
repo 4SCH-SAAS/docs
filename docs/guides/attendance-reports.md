@@ -98,7 +98,7 @@ Class Average Attendance: 87.3%
 Top Performers (95%+): 18 students
 Good Attendance (85-94%): 12 students
 At Risk (75-84%): 3 students
-Critical (<75%): 2 students
+Critical (Below 75%): 2 students
 
 Students Needing Attention:
 1. Ibrahim Hassan - 72% (18/25 days absent)
@@ -231,7 +231,7 @@ SS 2A: 92% (Best)
 SS 2B: 87%
 SS 2C: 85% (Needs attention)
 
-Students with <80% attendance in this subject:
+Students with below 80% attendance in this subject:
 1. Kemi Balogun - 75% (often absent during Maths period)
 2. Chidi Okoro - 78%
 ```
@@ -405,7 +405,7 @@ Attendance % = (Total Present Days ÷ Total School Days) × 100
 
 **Why it matters:**
 - Strong correlation between attendance and academic performance
-- Students with <85% attendance typically struggle with exams
+- Students with below 85% attendance typically struggle with exams
 - Early warning sign for intervention
 
 ---
@@ -543,7 +543,7 @@ School attendance dropped from 92% to 82% in one week
 - Monitoring: Weekly check-ins
 - Consequences: May affect exam eligibility
 
-**Level 4: Red (<80% attendance)**
+**Level 4: Red (Below 80% attendance)**
 - Action: Immediate intervention required
 - Meeting: Student, parent, teacher, counselor
 - Assessment: Identify root causes
@@ -758,10 +758,10 @@ A: Usually no. Most schools lock historical data to prevent tampering. Mark accu
 **Q: How do absences affect academic standing?**
 
 A: Most schools have policies like:
-- <85% attendance: Warning
-- <80% attendance: Academic probation
-- <75% attendance: May not sit for exams
-- <70% attendance: May repeat class
+- Below 85% attendance: Warning
+- Below 80% attendance: Academic probation
+- Below 75% attendance: May not sit for exams
+- Below 70% attendance: May repeat class
 
 Check your school's specific policy.
 
