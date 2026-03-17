@@ -849,10 +849,10 @@ Check your school's specific policy.
 
 ## Related Resources
 
-- <Link to="/guides/teachers">Teacher Guide</Link>
+- <Link to="/guides/teacher-guide">Teacher Guide</Link>
 - <Link to="/guides/school-admin">Admin Guide</Link>
-- <Link to="/guides/parents">Parent Guide</Link>
-- <Link to="/guides/students">Student Guide</Link>
+- <Link to="/guides/parent-guide">Parent Guide</Link>
+- <Link to="/guides/student-guide">Student Guide</Link>
 - <Link to="/support/troubleshooting">Troubleshooting Guide</Link>
 
 ---
