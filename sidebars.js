@@ -61,6 +61,14 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: '👥 Staff & Academic Management',
+          collapsed: false,
+          items: [
+            'guides/teacher-subject-assignment',
+          ],
+        },
+        {
+          type: 'category',
           label: '💰 Financial Management',
           collapsed: false,
           items: [
