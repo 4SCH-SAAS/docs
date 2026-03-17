@@ -22,6 +22,11 @@
 
 ## ✅ Recently Completed
 
+### Documentation Enhancements - Quick Wins Bundle (Completed: 2026-03-17)
+- Glossary of 50+ terms, Keyboard Shortcuts guide
+- Cross-linking improvements and search optimization
+- **Files:** `docs/reference/glossary.md`, `docs/reference/keyboard-shortcuts.md`
+
 ### Admin Dashboard & Analytics (Completed: 2026-03-17)
 - Comprehensive guide for using the admin dashboard
 - All KPIs, metrics, and widgets explained

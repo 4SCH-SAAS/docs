@@ -105,6 +105,8 @@ const sidebars = {
       items: [
         'reference/roles-permissions',
         'reference/data-import-export',
+        'reference/glossary',
+        'reference/keyboard-shortcuts',
         'reference/integrations',
       ],
     },

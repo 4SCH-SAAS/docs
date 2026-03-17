@@ -2,6 +2,8 @@
 id: admin-dashboard-analytics
 title: Admin Dashboard & Analytics Guide
 sidebar_label: Admin Dashboard & Analytics
+description: Complete guide to using the admin dashboard, understanding KPIs, analytics, metrics, and data-driven decision making for school management.
+keywords: [admin dashboard, analytics, KPIs, metrics, school statistics, dashboard widgets, data visualization, attendance analytics, fee collection stats, reports, school insights]
 ---
 
 # Admin Dashboard & Analytics Guide
@@ -130,7 +132,7 @@ A healthy school typically maintains 75-85% fee collection rate by mid-session. 
 
 **License Expiry:**
 - Days remaining until your current subscription expires
-- **Warning threshold:** Typically shows alert when ≤ 7 days remain
+- **Warning threshold:** Typically shows alert when 7 days or fewer remain
 - **Displayed as:** Days count or progress bar
 
 **Example:**
@@ -567,7 +569,7 @@ For best mobile experience, use a tablet (iPad, Android tablet) or access dashbo
 The dashboard may display alerts for:
 
 **License/Subscription:**
-- 🔴 **Critical:** License expires in ≤3 days
+- 🔴 **Critical:** License expires in 3 days or fewer
 - 🟡 **Warning:** License expires in 4-7 days
 - 🟢 **Info:** License expires in 8-30 days
 
