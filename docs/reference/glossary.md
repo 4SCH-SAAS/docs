@@ -116,6 +116,16 @@ A copy of the school's database and files created for disaster recovery. Regular
 
 </div>
 
+### API (Application Programming Interface)
+A set of protocols that allows the school system to communicate with external services like payment gateways, SMS providers, or email services.
+
+---
+
+## B
+
+### Backup
+A copy of the school's database and files created for disaster recovery. Regular backups protect against data loss from hardware failure, accidental deletion, or other disasters. Essential for data safety and business continuity.
+
 ---
 
 ## C
@@ -216,6 +226,9 @@ A transportation staff member who operates school vehicles and manages student p
 
 </div>
 
+### Driver
+A transportation staff member who operates school vehicles and manages student pickups and dropoffs along assigned routes.
+
 ---
 
 ## E
@@ -291,6 +304,9 @@ A custom field added to student or staff registration forms to collect school-sp
 </p>
 
 </div>
+
+### Form Field
+A custom field added to student or staff registration forms to collect school-specific information beyond the default fields (e.g., blood type, parent occupation, special needs).
 
 ---
 
@@ -443,6 +459,13 @@ An alert sent to users about events, updates, or important information. Can be d
 
 </p>
 </div>
+
+---
+
+## N
+
+### Notification
+An alert sent to users about events, updates, or important information. Can be delivered via push notification (mobile), email, SMS, or in-app alerts. See [Notification Settings](../guides/notification-settings-management.md).
 
 ---
 
@@ -735,6 +758,20 @@ An automatic notification sent from an external service (like a payment gateway)
 
 </p>
 </div>
+
+---
+
+## V
+
+### Vehicle
+A school bus or transport vehicle used for student transportation. Vehicles are assigned to routes and have designated drivers.
+
+---
+
+## W
+
+### Webhook
+An automatic notification sent from an external service (like a payment gateway) to the school system to confirm events like successful payments. Essential for real-time payment confirmation.
 
 ---
 
