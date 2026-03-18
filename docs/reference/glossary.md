@@ -41,7 +41,7 @@ A set of protocols that allows the school system to communicate with external se
 ## B
 
 ### Backup
-A copy of the school's database and files created for disaster recovery. Regular backups protect against data loss from hardware failure, accidental deletion, or other disasters. See [Backup Guide](../guides/backup-data-export.md).
+A copy of the school's database and files created for disaster recovery. Regular backups protect against data loss from hardware failure, accidental deletion, or other disasters. Essential for data safety and business continuity.
 
 ---
 

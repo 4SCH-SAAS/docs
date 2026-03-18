@@ -8,7 +8,9 @@
     "build": "docusaurus build",
     "serve": "docusaurus serve",
     "clean": "docusaurus clear && docusaurus build --no-minify",
-    "lint": "markdownlint-cli2 \"README.md\" \"docs/**/*.md\" \"docs/**/*.mdx\""
+    "lint": "markdownlint-cli2 \"README.md\" \"docs/**/*.md\" \"docs/**/*.mdx\"",
+    "check-links": "npm run build",
+    "precommit": "npm run lint && npm run check-links"
   },
   "engines": {
     "node": ">=18.17"

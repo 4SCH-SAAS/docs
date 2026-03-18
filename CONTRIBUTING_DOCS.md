@@ -10,11 +10,12 @@ This guide helps you avoid common pitfalls when contributing to the 4SCH documen
 
 1. [Before You Start](#before-you-start)
 2. [Common Build Failures & Solutions](#common-build-failures--solutions)
-3. [Docusaurus-Specific Guidelines](#docusaurus-specific-guidelines)
-4. [Markdownlint Rules](#markdownlint-rules)
-5. [Content Guidelines](#content-guidelines)
-6. [Testing Your Changes](#testing-your-changes)
-7. [PR Checklist](#pr-checklist)
+3. [Link Patterns & Best Practices](#link-patterns--best-practices)
+4. [Docusaurus-Specific Guidelines](#docusaurus-specific-guidelines)
+5. [Markdownlint Rules](#markdownlint-rules)
+6. [Content Guidelines](#content-guidelines)
+7. [Testing Your Changes](#testing-your-changes)
+8. [PR Checklist](#pr-checklist)
 
 ---
 
@@ -320,6 +321,187 @@ import DashboardIcon from '@site/src/components/icons/Dashboard';
 - Copy imports from similar existing files
 - Check `src/components/icons/` for available icons before using
 - Use generic icons (GradesIcon, DashboardIcon) if specific icon doesn't exist
+
+---
+
+## Link Patterns & Best Practices
+
+### Overview
+
+Our documentation enforces **strict link validation**. Broken links will cause build failures.
+
+**Configuration:**
+```javascript
+// docusaurus.config.js
+onBrokenLinks: 'throw',        // ❌ Build fails on broken file links
+onBrokenAnchors: 'throw',      // ❌ Build fails on broken anchor links
+```
+
+### 1. Internal Links (React/JSX)
+
+Use for `.md` file frontmatter, `.mdx` content, and `.js` configuration files:
+
+```jsx
+import Link from '@docusaurus/Link';
+
+// ✅ CORRECT - Link to document by ID
+<Link to="/guides/teacher-guide">Teacher Guide</Link>
+
+// ✅ CORRECT - Link to specific section
+<Link to="/guides/teacher-guide#marking-attendance">Attendance</Link>
+
+// ❌ WRONG - Using filename instead of document ID
+<Link to="/guides/teachers">Teacher Guide</Link>
+```
+
+### 2. Internal Links (Markdown)
+
+Use for standard markdown content:
+
+```markdown
+<!-- ✅ CORRECT - Relative links -->
+[Teacher Guide](../guides/teachers.md)
+[Attendance](teacher-guide.md#marking-attendance)
+
+<!-- ✅ CORRECT - Absolute links using document ID -->
+[Teacher Guide](/guides/teacher-guide)
+[Attendance](/guides/teacher-guide#marking-attendance)
+
+<!-- ❌ WRONG - Broken anchor -->
+[Wrong Section](/guides/teacher-guide#wrong-section)
+```
+
+### 3. Document IDs vs Filenames
+
+**Critical:** Always use document IDs in links, not filenames.
+
+```yaml
+# File: docs/guides/teachers.md
+---
+id: teacher-guide
+title: Teacher Guide
+---
+```
+
+```markdown
+<!-- ✅ CORRECT -->
+[Teacher Guide](/guides/teacher-guide)
+
+<!-- ❌ WRONG -->
+[Teacher Guide](/guides/teachers)
+```
+
+**How to find the document ID:**
+1. Open the `.md` file
+2. Check the `id:` field in frontmatter
+3. Use that ID in links: `/guides/{id}`
+
+### 4. Anchor Link Format
+
+Docusaurus auto-generates anchors from headings:
+
+**Rules:**
+- Convert to lowercase
+- Replace spaces with hyphens
+- Keep existing hyphens
+- Strip emojis (but keep the hyphen if emoji is at start)
+- Remove special characters except hyphens
+
+**Examples:**
+
+| Heading | Anchor |
+|---------|--------|
+| `## User Management` | `#user-management` |
+| `## Academic Setup` | `#academic-setup` |
+| `## Issue 1: Cannot Create Exam - Permission Denied` | `#issue-1-cannot-create-exam---permission-denied` |
+| `## 👨‍👩‍👧‍👦 For Parents` | `#-for-parents` |
+| `## FAQ: Common Questions` | `#faq-common-questions` |
+
+**Testing anchors:**
+```powershell
+# Start dev server
+pnpm start
+
+# Navigate to page in browser
+# Right-click heading → Inspect
+# Check the id attribute: <h2 id="actual-anchor">
+```
+
+### 5. Common Link Mistakes
+
+#### ❌ Wrong: Using old anchor format
+```markdown
+[Section](#for-parents)
+<!-- Should be #-for-parents if heading has emoji at start -->
+```
+
+#### ❌ Wrong: Linking to non-existent section
+```markdown
+[Setup](/guides/school-admin#academic-setup)
+<!-- Actual heading is "Academic Management" → #academic-management -->
+```
+
+#### ❌ Wrong: Using filename instead of ID
+```markdown
+[Guide](/guides/student-guide)
+<!-- File is students.md with id: student-guide, so this is actually correct! -->
+<!-- But linking to /guides/students would be WRONG -->
+```
+
+### 6. Link Validation Workflow
+
+**Before committing:**
+```powershell
+# Validate all links
+npm run check-links
+
+# Or run full build
+pnpm build
+```
+
+**Error example:**
+```
+Error: Broken anchor on source page path = /guides/exams-master-index:
+   -> linking to /guides/online-exams#issue-1-cannot-create-exam-permission-denied
+   (resolved as: /guides/online-exams#issue-1-cannot-create-exam-permission-denied)
+```
+
+**Fix:**
+1. Open `docs/guides/online-exams.md`
+2. Find heading: `### Issue 1: Cannot Create Exam - Permission Denied`
+3. Correct anchor: `#issue-1-cannot-create-exam---permission-denied` (note the triple hyphen)
+
+### 7. Quick Reference
+
+```markdown
+# Internal page links
+[Link Text](/guides/document-id)
+[Link Text](/guides/document-id#anchor-name)
+
+# Relative markdown links  
+[Link Text](../guides/filename.md)
+[Link Text](./sibling-file.md#anchor-name)
+
+# External links
+[Google](https://google.com)
+
+# Images
+![Alt text](/img/screens/screenshot.svg)
+
+# JSX Links (in .mdx or frontmatter)
+<Link to="/guides/document-id">Text</Link>
+```
+
+### 8. Pre-Commit Checklist
+
+Before every commit, verify:
+
+- [ ] All links use correct document IDs (not filenames)
+- [ ] All anchor links match actual heading text (converted to kebab-case)
+- [ ] Run `npm run check-links` and it passes
+- [ ] No broken link warnings in build output
+
+**See also:** [.github/PRE_COMMIT_GUIDE.md](../.github/PRE_COMMIT_GUIDE.md) for detailed pre-commit instructions.
 
 ---
 
@@ -731,5 +913,5 @@ git config core.autocrlf input
 
 ---
 
-*Last updated: 2026-03-16*
+*Last updated: 2026-03-18*
 *Maintained by: 4SCH Documentation Team*

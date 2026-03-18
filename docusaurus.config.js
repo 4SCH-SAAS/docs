@@ -10,6 +10,7 @@ const config = {
   organizationName: '4SCH-SAAS',
   projectName: 'docs',
   onBrokenLinks: 'throw',
+  onBrokenAnchors: 'throw',
   headTags: [
     {
       tagName: 'meta',
