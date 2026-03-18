@@ -1,0 +1,153 @@
+/* Glossary Grid Styles */
+.glossary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.glossary-grid > p {
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin: 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.glossary-grid > p:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.glossary-grid > p > strong {
+  display: block;
+  color: var(--ifm-color-primary);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* Category Tags */
+.glossary-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.glossary-tag-academic {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.glossary-tag-technical {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.glossary-tag-administrative {
+  background: #fff3e0;
+  color: #f57c00;
+}
+
+.glossary-tag-financial {
+  background: #e8f5e9;
+  color: #388e3c;
+}
+
+[data-theme='dark'] .glossary-tag-academic {
+  background: #0d47a1;
+  color: #90caf9;
+}
+
+[data-theme='dark'] .glossary-tag-technical {
+  background: #4a148c;
+  color: #ce93d8;
+}
+
+[data-theme='dark'] .glossary-tag-administrative {
+  background: #e65100;
+  color: #ffcc80;
+}
+
+[data-theme='dark'] .glossary-tag-financial {
+  background: #1b5e20;
+  color: #a5d6a7;
+}
+
+/* Filter Bar */
+.glossary-filter-bar {
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.glossary-filter-bar strong {
+  color: var(--ifm-font-color-base);
+  font-size: 0.95rem;
+}
+
+.glossary-filter-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.glossary-filter-btn {
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--ifm-font-color-base);
+  font-weight: 500;
+}
+
+.glossary-filter-btn:hover {
+  background: var(--ifm-color-emphasis-200);
+  border-color: var(--ifm-color-primary);
+}
+
+.glossary-filter-btn.active {
+  background: var(--ifm-color-primary);
+  color: white;
+  border-color: var(--ifm-color-primary);
+}
+
+@media (max-width: 768px) {
+  .glossary-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .glossary-filter-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .glossary-filter-buttons {
+    width: 100%;
+  }
+  
+  .glossary-filter-btn {
+    flex: 1;
+    min-width: 80px;
+    text-align: center;
+  }
+}
