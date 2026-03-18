@@ -241,12 +241,12 @@ Customize email notification templates:
 4. Click **Save**
 
 **Available Variables (examples):**
-- `{school_name}` - Your school name
-- `{student_name}` - Student's full name
-- `{parent_name}` - Parent's name
-- `{class}` - Student's class
-- `{date}` - Current date or event date
-- `{amount}` - Fee amount (for fee notifications)
+- `\{school_name\}` - Your school name
+- `\{student_name\}` - Student's full name
+- `\{parent_name\}` - Parent's name
+- `\{class\}` - Student's class
+- `\{date\}` - Current date or event date
+- `\{amount\}` - Fee amount (for fee notifications)
 
 ---
 

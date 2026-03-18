@@ -22,6 +22,12 @@
 
 ## ✅ Recently Completed
 
+### Integration Guides - SMS, Payment, Email (Completed: 2026-03-17)
+- Comprehensive third-party integration guides
+- Payment gateways, SMS providers, Email services
+- Step-by-step setup and troubleshooting
+- **File:** `docs/reference/integrations.md`
+
 ### Notification Settings & Management (Completed: 2026-03-17)
 - Complete guide for notification configuration and user preferences
 - FCM, Email, SMS setup; bulk notifications and troubleshooting
