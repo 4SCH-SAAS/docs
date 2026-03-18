@@ -165,8 +165,8 @@ Comprehensive documentation for managing all types of exams in 4SCH - from digit
 - Understanding grades
 
 **Quick References:**
-- <Link to="/guides/online-exams-quick-reference#for-parents">Online Exams - Parent Quick Guide</Link>
-- <Link to="/guides/offline-exams-quick-reference#for-parents">Offline Exams - Parent Quick Guide</Link>
+- <Link to="/guides/online-exams-quick-reference#-for-parents">Online Exams - Parent Quick Guide</Link>
+- <Link to="/guides/offline-exams-quick-reference#-for-parents">Offline Exams - Parent Quick Guide</Link>
 
 ---
 
@@ -221,27 +221,24 @@ Comprehensive documentation for managing all types of exams in 4SCH - from digit
 - <Link to="/guides/online-exams#issue-5-cannot-submit-exam-button-disablednot-working">Cannot Submit Exam</Link>
 
 **For Teachers/Admins:**
-- <Link to="/guides/online-exams#issue-1-cannot-create-exam-permission-denied">Permission Issues</Link>
+- <Link to="/guides/online-exams#issue-1-cannot-create-exam---permission-denied">Permission Issues</Link>
 - <Link to="/guides/online-exams#issue-2-questions-not-appearing-in-question-selection">Missing Questions</Link>
-- <Link to="/guides/online-exams#issue-3-students-cannot-start-exam-already-attempted-error">Already Attempted Error</Link>
+- <Link to="/guides/online-exams#issue-3-students-cannot-start-exam---already-attempted-error">Already Attempted Error</Link>
 - <Link to="/guides/online-exams#issue-4-results-not-calculating-correctly">Calculation Errors</Link>
 
 ### Offline Exams Issues
 
 **For Students:**
-- <Link to="/guides/offline-exams#problem-cannot-see-timetable">Cannot See Timetable</Link>
+- <Link to="/guides/offline-exams#problem-cannot-see-exam-timetable">Cannot See Timetable</Link>
 - <Link to="/guides/offline-exams#problem-results-not-showing">Results Not Showing</Link>
-- <Link to="/guides/offline-exams#problem-wrong-marks-displayed">Wrong Marks</Link>
 
 **For Teachers:**
-- <Link to="/guides/offline-exams#problem-cant-enter-marks">Cannot Enter Marks</Link>
-- <Link to="/guides/offline-exams#problem-marks-wont-save">Marks Won't Save</Link>
-- <Link to="/guides/offline-exams#problem-student-not-in-list">Student Missing</Link>
+- <Link to="/guides/offline-exams#problem-cannot-enter-marks">Cannot Enter Marks</Link>
+- <Link to="/guides/offline-exams#problem-marks-not-saving">Marks Won't Save</Link>
 
 **For Administrators:**
-- <Link to="/guides/offline-exams#problem-cant-publish-results">Cannot Publish Results</Link>
-- <Link to="/guides/offline-exams#problem-timetable-conflicts">Timetable Conflicts</Link>
-- <Link to="/guides/offline-exams#problem-grades-not-calculating">Grade Calculation Issues</Link>
+- <Link to="/guides/offline-exams#problem-cannot-publish-results">Cannot Publish Results</Link>
+- <Link to="/guides/offline-exams#problem-grade-not-calculating">Grade Calculation Issues</Link>
 
 ---
 

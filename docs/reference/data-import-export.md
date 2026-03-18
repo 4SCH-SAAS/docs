@@ -629,7 +629,7 @@ Form Field Values sheet shows: "Science Stream", "Arts Stream", "Commercial Stre
 ## Related Features
 
 - **[Teacher-Subject Assignment](../guides/teacher-subject-assignment.md)** - Assign teachers to subjects after import
-- **[School Admin Guide](../guides/school-admin.md#student-management)** - Managing students and staff
+- **[School Admin Guide](../guides/school-admin.md#user-management)** - Managing students and staff
 - **[Offline Exams Guide](../guides/offline-exams.md)** - Complete offline exam workflow including marks upload
 - **[Attendance Reports](../guides/attendance-reports.md)** - Exporting attendance data
 

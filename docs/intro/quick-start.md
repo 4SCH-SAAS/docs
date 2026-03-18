@@ -11,7 +11,7 @@ keywords: [4SCH setup, school setup guide, configure school system, add students
 import Link from '@docusaurus/Link';
 
 - Jump to detailed guides:
-  - <Link to="/guides/school-admin#academic-setup">Admin — Academic setup</Link>
+  - <Link to="/guides/school-admin#academic-management">Admin — Academic setup</Link>
   - <Link to="/guides/school-admin#fee-management">Admin — Fees & finance</Link>
   - <Link to="/guides/teacher-guide#teacher-dashboard">Teacher — Dashboard</Link>
 

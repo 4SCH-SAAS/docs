@@ -67,7 +67,7 @@ jobs:
         env:
           SHARP_IGNORE_GLOBAL_LIBVIPS: 1
 
-      - name: Build site
+      - name: Build site (validates internal links and anchors)
         run: pnpm build
 
       - name: Check links in built HTML

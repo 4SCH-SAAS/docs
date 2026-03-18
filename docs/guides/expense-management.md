@@ -510,9 +510,9 @@ A: No, salary expenses are auto-generated from the Payroll module and appear wit
 ## Related Features
 
 - **[Accountant Guide](accountant.md)** - Full guide for accountants including fee collection and financial reporting
-- **[Payroll Management](school-admin.md#staff-management)** - Managing staff salaries (which auto-generate expense records)
+- **[Payroll Management](school-admin.md#user-management)** - Managing staff salaries (which auto-generate expense records)
 - **[Reports & Analytics](school-admin.md#reports-analytics)** - Generating comprehensive financial reports
-- **[Session Year Setup](school-admin.md#academic-structure)** - Configuring session years (required for expense tracking)
+- **[Session Year Setup](school-admin.md#academic-management)** - Configuring session years (required for expense tracking)
 
 ---
 

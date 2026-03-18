@@ -543,7 +543,7 @@ Installment 3: ₦30,000 - Due: January 15, 2026
 4. This creates new enrollment records
 
 :::tip
-See the [School Admin Guide](school-admin.md#student-management) for detailed student promotion workflows.
+See the [School Admin Guide](school-admin.md#user-management) for detailed student promotion workflows.
 :::
 
 ---

@@ -15,9 +15,9 @@ import UsersIcon from '@site/src/components/icons/Users';
 
 <CardGrid
   cards={[
-    { to: '#supported-integration-types', title: 'Types', description: 'Payments, Email/SMS, SSO, LMS', icon: <UsersIcon /> },
-    { to: '#configuration-flow', title: 'Flow', description: 'Keys, validation, webhooks', icon: <MessagingIcon /> },
-    { to: '#payment-gateway-configuration', title: 'Payments', description: 'Gateways and webhooks', icon: <FinanceIcon /> },
+    { to: '#payment-gateways', title: 'Payment Gateways', description: 'Paystack, Flutterwave, Stripe', icon: <FinanceIcon /> },
+    { to: '#sms-gateways', title: 'SMS Providers', description: 'Termii, Twilio, Msg91', icon: <MessagingIcon /> },
+    { to: '#email-providers', title: 'Email Services', description: 'SendGrid, Mailgun, SES', icon: <UsersIcon /> },
   ]}
 />
 
@@ -532,8 +532,8 @@ Authenticate your domain (not just single sender) to improve deliverability and 
 ## 🔗 Related Features
 
 - **[Notification Settings](../guides/notification-settings-management.md)** - Configuring FCM, SMTP, SMS
-- **[Fee Management](../guides/expense-management.md#fees)** - Online fee payment workflows
-- **[School Admin Guide](../guides/school-admin.md#settings)** - System settings and configuration
+- **[Fee Management](../guides/school-admin.md#fee-management)** - Online fee payment workflows
+- **[School Admin Guide](../guides/school-admin.md#system-settings)** - System settings and configuration
 
 ---
 
