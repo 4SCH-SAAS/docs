@@ -171,7 +171,7 @@ A teacher designated as the primary teacher for a specific class section. Typica
 <p>
 <span className="glossary-tag glossary-tag-academic">📚 Academic</span><br/>
 <strong>Compulsory Subject</strong><br/>
-See <a href="#core-subject">Core Subject</a>.
+See <a href="#c">Core Subject</a>.
 </p>
 
 <p>
@@ -409,7 +409,7 @@ An approved absence for staff or teachers (sick leave, casual leave, annual leav
 <p>
 <span className="glossary-tag glossary-tag-administrative">📋 Admin</span><br/>
 <strong>Lesson</strong><br/>
-A unit of teaching content within a [Topic](#topic). Can include videos, documents, descriptions, and study materials.
+A unit of teaching content within a [Topic](#t). Can include videos, documents, descriptions, and study materials.
 
 </p>
 <p>
@@ -435,7 +435,7 @@ The communication system allowing teachers, parents, students, and staff to send
 <p>
 <span className="glossary-tag glossary-tag-administrative">📋 Admin</span><br/>
 <strong>Marks</strong><br/>
-See [Exam Marks](#exam-marks).
+See [Exam Marks](#e).
 
 </p>
 <p>
@@ -496,7 +496,7 @@ A digital exam conducted through the system where students answer questions on a
 <p>
 <span className="glossary-tag glossary-tag-administrative">📋 Admin</span><br/>
 <strong>Parent</strong><br/>
-See [Guardian](#guardian).
+See [Guardian](#g).
 
 </p>
 <p>
@@ -526,7 +526,7 @@ The system for calculating and recording staff salaries, deductions, and payment
 <p>
 <span className="glossary-tag glossary-tag-administrative">📋 Admin</span><br/>
 <strong>Permission</strong><br/>
-A specific capability or action a user is allowed to perform (e.g., `student-create`, `attendance-list`). See [Role](#role).
+A specific capability or action a user is allowed to perform (e.g., `student-create`, `attendance-list`). See [Role](#r).
 
 </p>
 <p>
@@ -584,7 +584,7 @@ A defined path for school buses with specific pickup points and schedules. Drive
 <p>
 <span className="glossary-tag glossary-tag-administrative">📋 Admin</span><br/>
 <strong>Section</strong><br/>
-See [Class Section](#class-section).
+See [Class Section](#c).
 
 </p>
 <p>
@@ -626,7 +626,7 @@ The protocol used for sending emails. SMTP server settings must be configured fo
 <p>
 <span className="glossary-tag glossary-tag-administrative">📋 Admin</span><br/>
 <strong>Staff</strong><br/>
-Non-teaching employees of the school (e.g., office staff, accountant, admin). Distinguished from [Teacher](#teacher).
+Non-teaching employees of the school (e.g., office staff, accountant, admin). Distinguished from [Teacher](#t).
 
 </p>
 <p>
@@ -650,7 +650,7 @@ A communication feature where teachers post observations, notes, or messages abo
 <p>
 <span className="glossary-tag glossary-tag-administrative">📋 Admin</span><br/>
 <strong>Student Promotion</strong><br/>
-See [Promote Student](#promote-student).
+See [Promote Student](#p).
 
 </p>
 <p>
@@ -662,7 +662,7 @@ Educational content (PDFs, videos, links) attached to lessons or topics for stud
 <p>
 <span className="glossary-tag glossary-tag-administrative">📋 Admin</span><br/>
 <strong>Subject</strong><br/>
-A course of study (e.g., Mathematics, English, Physics). Can be [Core Subject](#core-subject) or [Elective Subject](#elective-subject).
+A course of study (e.g., Mathematics, English, Physics). Can be [Core Subject](#c) or [Elective Subject](#e).
 
 </p>
 <p>
