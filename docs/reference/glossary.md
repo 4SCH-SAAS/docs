@@ -17,32 +17,88 @@ Quick reference guide to terminology used throughout the school management syste
 Use the alphabetical sections below or press `Ctrl+F` / `Cmd+F` to search for specific terms.
 :::
 
+<div className="glossary-filter-bar">
+  <strong>Filter by Category:</strong>
+  <div className="glossary-filter-buttons">
+    <button className="glossary-filter-btn active" data-filter="all">📚 All</button>
+    <button className="glossary-filter-btn" data-filter="academic">📚 Academic</button>
+    <button className="glossary-filter-btn" data-filter="administrative">📋 Administrative</button>
+    <button className="glossary-filter-btn" data-filter="technical">🔧 Technical</button>
+    <button className="glossary-filter-btn" data-filter="financial">💰 Financial</button>
+  </div>
+</div>
+
+<script>{`
+if (typeof window !== 'undefined') {
+  window.addEventListener('load', function() {
+    const filterBtns = document.querySelectorAll('.glossary-filter-btn');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        const filter = this.getAttribute('data-filter');
+        const cards = document.querySelectorAll('.glossary-grid p');
+        cards.forEach(card => {
+          if (filter === 'all') {
+            card.style.display = 'block';
+          } else {
+            const tag = card.querySelector('.glossary-tag-' + filter);
+            card.style.display = tag ? 'block' : 'none';
+          }
+        });
+      });
+    });
+  });
+}
+`}</script>
+
 ---
 
 ## A
 
 <div className="glossary-grid">
 
-**Academic Structure**  
+<p>
+<span className="glossary-tag glossary-tag-academic">📚 Academic</span><br/>
+<strong>Academic Structure</strong><br/>
 The organizational framework of classes, sections, subjects, and streams that define how students are grouped and taught.
+</p>
 
-**Academic Year**  
-See [Session Year](#session-year).
+<p>
+<span className="glossary-tag glossary-tag-academic">📚 Academic</span><br/>
+<strong>Academic Year</strong><br/>
+See <a href="#session-year">Session Year</a>.
+</p>
 
-**Admission**  
+<p>
+<span className="glossary-tag glossary-tag-administrative">📋 Admin</span><br/>
+<strong>Admission</strong><br/>
 The process of accepting a new student into the school. Includes application review, approval, and enrollment.
+</p>
 
-**Announcement**  
+<p>
+<span className="glossary-tag glossary-tag-administrative">📋 Admin</span><br/>
+<strong>Announcement</strong><br/>
 A message or notice posted to inform students, parents, teachers, or staff about important information, events, or updates.
+</p>
 
-**Assignment**  
+<p>
+<span className="glossary-tag glossary-tag-academic">📚 Academic</span><br/>
+<strong>Assignment</strong><br/>
 Academic work assigned by a teacher to students, which may include homework, projects, or other tasks. Students submit completed work through the system.
+</p>
 
-**Attendance**  
+<p>
+<span className="glossary-tag glossary-tag-academic">📚 Academic</span><br/>
+<strong>Attendance</strong><br/>
 The record of whether a student or staff member was present, absent, or on leave on a given day. Can be marked daily or per period.
+</p>
 
-**API (Application Programming Interface)**  
+<p>
+<span className="glossary-tag glossary-tag-technical">🔧 Technical</span><br/>
+<strong>API (Application Programming Interface)</strong><br/>
 A set of protocols that allows the school system to communicate with external services like payment gateways, SMS providers, or email services.
+</p>
 
 </div>
 
