@@ -100,19 +100,19 @@ Notice the warning if fees exceed reasonable amounts - a helpful validation to p
 
 **[VISUAL]**
 - Settings > Payment Gateways screen
-- Available payment methods displayed (Stripe, Flutterwave, Manual Transfer, Check, Cash)
-- Click to configure Stripe
+- Available payment methods displayed (Paystack, Flutterwave, Remita, Manual Transfer, Cash)
+- Click to configure Paystack
 - API keys entry form with security indicators
 - Test mode vs Live mode toggle
-- Currency selection (Nigerian Naira, USD, etc.)
+- Currency selection (Nigerian Naira is default)
 - Save and verify connection
 
 **[VOICEOVER]:**  
 "4SCH supports multiple payment methods to maximize collection options. Let's configure payment gateways so parents can pay conveniently.
 
-Navigate to Settings, then Payment Gateways. You'll see available options: Stripe and Flutterwave for online payments, plus options for manual transfers, checks, and cash payments.
+Navigate to Settings, then Payment Gateways. You'll see available options: Paystack and Flutterwave for online payments (popular in Nigeria), Remita for bank transfers, plus options for manual bank transfers and cash payments.
 
-For online payments, select Stripe or Flutterwave and enter your API credentials - you'll get these from your merchant account. Toggle between Test Mode for safe testing and Live Mode when ready for real transactions.
+For online payments, select Paystack or Flutterwave and enter your API credentials - you'll get these from your merchant account. Toggle between Test Mode for safe testing and Live Mode when ready for real transactions.
 
 Select your school's currency - typically Nigerian Naira for Nigerian schools. Verify the connection with the test button. The system will confirm successful setup.
 

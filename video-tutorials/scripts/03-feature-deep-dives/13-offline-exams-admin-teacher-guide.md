@@ -288,7 +288,7 @@ Computer Science: March 24, 10 AM - 12 PM, 50 marks, passing 18"
 
 "Let me enter marks for the first student."
 
-**Student 1: Roll No. 101, John Doe**
+**Student 1: Roll No. 101, Chukwudi Okafor**
 
 "Click in the 'Obtained Marks' field. Type **75**."
 
@@ -303,12 +303,12 @@ Computer Science: March 24, 10 AM - 12 PM, 50 marks, passing 18"
 
 "Press **Tab** to move to the next student. This is much faster than clicking."
 
-**Student 2: Roll No. 102, Jane Smith**
+**Student 2: Roll No. 102, Amina Bello**
 
 "Type **42**. Tab to next.
 - 42/100 = 42% = Pass = Grade E"
 
-**Student 3: Roll No. 103, Mike Johnson**
+**Student 3: Roll No. 103, Emeka Nwosu**
 
 "Type **28**. Tab to next.
 - 28/100 = 28% = Fail (below 35)
@@ -368,7 +368,7 @@ Computer Science: March 24, 10 AM - 12 PM, 50 marks, passing 18"
 
 **[Screen: Edit specific student]**
 
-"Find the student whose marks need correction. Let's say Jane Smith's marks should be 45, not 42."
+"Find the student whose marks need correction. Let's say Amina Bello's marks should be 45, not 42."
 
 **[Screen: Click on the field, change value]**
 

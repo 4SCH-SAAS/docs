@@ -97,11 +97,11 @@ Payment gateways typically support multiple payment methods: credit cards, debit
 **Voiceover Script:**
 "First, you need to choose your payment provider. From your admin dashboard, navigate to Settings and select 'Payment Gateway Configuration.'
 
-Your system likely supports multiple payment providers. The most common include Stripe, PayPal, and Square. Each has different fee structures and features.
+Your system likely supports multiple payment providers. For Nigerian schools, the most common include Paystack, Flutterwave, and Remita. Each has different fee structures and features.
 
-Stripe is popular for its developer-friendly approach and competitive fees, typically 2.9% plus 30 cents per transaction. PayPal offers a familiar interface that many users already have accounts with. Square emphasizes simplicity and offers similar fee structures to Stripe.
+Paystack is very popular in Nigeria for its simple integration and competitive fees, typically 1.5% + ₦100 per transaction (capped at ₦2,000). Flutterwave offers similar features with support for multiple African countries. Remita specializes in bank-to-bank transfers and is trusted by many government institutions.
 
-When choosing a provider, consider several factors: transaction fees, settlement time—how long before funds appear in your bank account—and which payment methods they support. Stripe and Square settle funds within 1-2 business days, while PayPal typically settles within 1-3 days.
+When choosing a provider, consider several factors: transaction fees, settlement time—how long before funds appear in your bank account—and which payment methods they support. Paystack and Flutterwave settle funds within 1-2 business days, while Remita typically settles within 24 hours for bank transfers.
 
 Also consider features like recurring billing for monthly payments, automated refunds, detailed reporting, and multi-currency support if you serve international families.
 
@@ -113,7 +113,7 @@ Most importantly, check whether your school has already established a relationsh
 - Highlight fee structures with numbers
 - Show real provider logos and branding
 - Zoom in on key differences
-- Include example scenarios (e.g., "For a $1000 payment, Stripe charges...")
+- Include example scenarios (e.g., "For a ₦500,000 payment, Paystack charges...")
 
 ---
 
@@ -131,11 +131,11 @@ Most importantly, check whether your school has already established a relationsh
 **Voiceover Script:**
 "Once you've chosen your provider, you need to obtain credentials—essentially API keys that allow your school system to communicate securely with the payment processor.
 
-Here's the process for Stripe, though others are similar. Log into your Stripe merchant account. Navigate to the API Keys section. You'll see two types of keys: publishable and secret. The publishable key is used by your website or app to initiate payments. The secret key is sensitive and never shared—it authenticates requests to Stripe's servers.
+Here's the process for Paystack, though others are similar. Log into your Paystack merchant account. Navigate to the Settings section, then API Keys & Webhooks. You'll see two types of keys: public and secret. The public key is used by your website or app to initiate payments. The secret key is sensitive and never shared—it authenticates requests to Paystack's servers.
 
-Copy both keys. Return to your school management system's payment configuration page. Paste the publishable key into the appropriate field and the secret key into the secret field.
+Copy both keys. Return to your school management system's payment configuration page. Paste the public key into the appropriate field and the secret key into the secret field.
 
-For PayPal, you'll obtain a Client ID and Client Secret instead. The process is similar: retrieve credentials from your PayPal developer account, then enter them into your school system.
+For Flutterwave, you'll obtain a Public Key and Secret Key as well. The process is similar: retrieve credentials from your Flutterwave dashboard, then enter them into your school system.
 
 Important security note: never share these credentials with anyone, and don't commit them to public code repositories. If you accidentally expose a secret key, immediately regenerate it in your payment provider's dashboard. These keys are the gateway to processing payments on your behalf."
 
@@ -173,7 +173,7 @@ Next, specify the amount. For fixed payments like annual activity fees, enter a 
 
 Set the frequency. Is this a one-time payment or recurring? If recurring, is it monthly, quarterly, or annually? Specify the due date. The system can automatically send reminders as the due date approaches.
 
-You can also configure late fees if applicable. If tuition is due on the 15th and not received by the 20th, automatically add a $25 late fee. This is optional but helps encourage timely payment.
+You can also configure late fees if applicable. If tuition is due on the 15th and not received by the 20th, automatically add a ₦5,000 late fee. This is optional but helps encourage timely payment.
 
 Specify which payment methods are available for this payment type. You might allow all payment methods for tuition but restrict activity fees to card-only payments.
 

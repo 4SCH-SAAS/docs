@@ -217,7 +217,7 @@ The system automatically calculates results based on entered marks.
 #### Example Calculation
 
 ```
-Student: John Doe
+Student: Chukwudi Okafor
 Class: 10-A
 
 Subject         Total  Passing  Obtained  Pass/Fail

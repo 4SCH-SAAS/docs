@@ -44,7 +44,7 @@ Quick action buttons give one-tap access to timetable, exam results, messages, a
 **[VOICEOVER]:**  
 "If you have multiple children in the school, all appear in one account. Tap the profile icon at top-left to see your children list. Select any child to view their information.
 
-Each child has their own dashboard, attendance, fees, and messages. Switch between children anytime. Notifications show which child they're about - 'John was absent today', 'Sarah submitted assignment'.
+Each child has their own dashboard, attendance, fees, and messages. Switch between children anytime. Notifications show which child they're about - 'Chukwudi was absent today', 'Amina submitted assignment'.
 
 The app remembers your last viewed child for convenience."
 
@@ -94,7 +94,7 @@ Study Materials section contains resources shared by teachers - notes, presentat
 
 View installment schedule with due dates. Overdue amounts appear in red with late fee penalties if applicable.
 
-Tap 'Pay Now'. Select payment method: debit card, bank transfer, or mobile money. The app uses secure payment gateways - Paystack, Flutterwave, or Stripe.
+Tap 'Pay Now'. Select payment method: debit card, bank transfer, USSD, or mobile money. The app uses secure payment gateways - Paystack, Flutterwave, or Remita.
 
 Enter payment details and confirm. You receive instant confirmation with a digital receipt. Download or email receipts for your records. The school's finance office sees the payment immediately - no manual verification delays."
 

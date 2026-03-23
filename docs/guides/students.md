@@ -660,14 +660,14 @@ Check 4SCH to confirm:
 - Check if you actually did what was asked
 - If you still think it's wrong, message teacher politely:
   ```
-  "Dear Mrs. Johnson,
+  "Dear Mrs. Adeyemi,
 
   Thank you for grading my assignment. I wanted to respectfully
   ask about Question 3. I believe √49 = 7, and I have that in
   my work. Could you please review?
 
   Thank you.
-  John"
+  Chukwudi"
   ```
 
 #### Common Problems & Solutions

@@ -85,17 +85,17 @@ Import multiple students at once with guardian information and custom form field
 
 **Example Row:**
 ```
-first_name: John
-last_name: Doe
+first_name: Chukwudi
+last_name: Okafor
 mobile: 0812345678
 gender: male
 dob: 15-01-2010
 admission_date: 01-09-2025
-current_address: 123 Main St, Lagos
-permanent_address: 123 Main St, Lagos
+current_address: 15 Allen Avenue, Ikeja, Lagos
+permanent_address: 15 Allen Avenue, Ikeja, Lagos
 guardian_email: parent@example.com
-guardian_first_name: Jane
-guardian_last_name: Doe
+guardian_first_name: Ngozi
+guardian_last_name: Okafor
 guardian_gender: female
 guardian_mobile: 0809876543
 ```
@@ -157,10 +157,10 @@ Import multiple staff members with employment details.
 
 **Example Row:**
 ```
-first_name: Michael
+first_name: Oluwaseun
 last_name: Okonkwo
 mobile: 0801234567
-email: michael.okonkwo@school.com
+email: oluwaseun.okonkwo@school.com
 dob: 20-05-1985
 salary: 75000
 joining_date: 01-09-2024

@@ -364,7 +364,7 @@ Overall Percentage = (Total Obtained / Total Possible) × 100
 
 ### Example Calculation
 
-**Student: John Doe**
+**Student: Chukwudi Okafor**
 ```
 Mathematics: 75/100 = 75%
 English: 65/80 = 81.25%

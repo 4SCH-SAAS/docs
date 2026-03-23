@@ -44,7 +44,7 @@ If traffic delays you, the app tracks actual arrival times and automatically not
 **[VOICEOVER]:**  
 "Before starting your route, review all alerts and special instructions in the Trip Details section. Are any students absent today? The app shows if a student is sick or not coming.
 
-Special instructions appear for specific students: 'John's mother will pick him instead today', 'Sarah needs to go to clinic after school', 'Ahmed has swimming class - dropoff at sports complex'.
+Special instructions appear for specific students: 'Chukwudi's mother will pick him instead today', 'Amina needs to go to clinic after school', 'Ibrahim has swimming class - dropoff at sports complex'.
 
 Safety alerts flag important information: Medical conditions, allergies, behavioral notes, or emergency contacts. Read these carefully - they ensure you handle each student appropriately.
 
@@ -94,7 +94,7 @@ Once all students are dropped off at a stop, mark the stop complete. By end of d
 
 For important updates, use broadcast messages to all affected parents: 'Due to heavy traffic, all dropoffs will be 20 minutes late. Students are safe.'
 
-The school office can also message you with updates: 'Student John is absent today, don't pick him up', or 'Please proceed directly to clinic with student Sarah after school.'
+The school office can also message you with updates: 'Student Chukwudi is absent today, don't pick him up', or 'Please proceed directly to clinic with student Amina after school.'
 
 All messages are logged with timestamps. This creates transparency and protects everyone - if disputes arise, you have documentation of all communications."
 

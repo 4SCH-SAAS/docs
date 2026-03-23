@@ -274,8 +274,8 @@ Advanced data transformation can happen automatically: capitalize names, convert
   - Retention policy: Exports older than 90 days are automatically deleted
   - GDPR compliance: Personal data handling in accordance with regulations
 - Example audit log entry:
-  - "2025-02-16 14:30 - Admin: Sarah Johnson - Exported Students - 450 records - Format: Excel"
-  - "2025-02-16 14:35 - Admin: Sarah Johnson - Imported Attendance - 12,450 records - Status: Success"
+  - "2025-02-16 14:30 - Admin: Ngozi Adeleke - Exported Students - 450 records - Format: Excel"
+  - "2025-02-16 14:35 - Admin: Ngozi Adeleke - Imported Attendance - 12,450 records - Status: Success"
 - Best practices list:
   - ✓ Always validate data before importing
   - ✓ Keep backups of exported data
