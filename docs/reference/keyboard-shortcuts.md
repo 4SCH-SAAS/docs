@@ -1094,7 +1094,6 @@ Week 6+: Ongoing support and optimization
 - **[Teacher Quick Reference](./teacher-quick-reference.md)** - Printable teacher guide
 - **[Admin Quick Reference](./admin-quick-reference.md)** - Printable admin guide
 - **[Parent Quick Reference](./parent-quick-reference.md)** - Printable parent guide
-- **[Student Quick Reference](./student-quick-reference.md)** - Printable student guide
 
 ---
 
@@ -1139,4 +1138,3 @@ Some features may support custom shortcuts depending on your system configuratio
 :::success Shortcut Mastery
 The most successful users don't learn all shortcuts at once. They master one section per week and build a powerful arsenal of keyboard skills over time. Start with the "Level 1: Essential Basics" and progress at your own pace!
 :::
-
