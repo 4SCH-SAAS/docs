@@ -88,6 +88,72 @@ This will be published to the root of the built site so GitHub Pages knows the c
 4) Verify
 - After the next successful Action run, visit `https://docs.4sch.com`.
 
+## Documentation Navigation
+
+### 📖 Getting Started
+- [Overview](docs/intro/overview.md) - System overview and key features
+- [Quick Start Guide](docs/intro/quick-start.md) - Get up and running in minutes
+- [User Roles & Permissions](docs/intro/user-roles.md) - Understand your role and access levels
+
+### 🎯 Guides by Role
+- [School Administrators](docs/guides/school-admin.md)
+- [Teachers](docs/guides/teachers.md)
+- [Parents](docs/guides/parents.md)
+- [Students](docs/guides/students.md)
+- [Accountants](docs/guides/accountant.md)
+- [Drivers](docs/guides/driver.md)
+- [Non-Teaching Staff](docs/guides/non-teaching-staff.md)
+
+### 📚 Reference Materials
+**Quick Reference Cards (Printable)**
+- [Admin Quick Reference](docs/reference/admin-quick-reference.md)
+- [Teacher Quick Reference](docs/reference/teacher-quick-reference.md)
+- [Parent Quick Reference](docs/reference/parent-quick-reference.md)
+- [Student Quick Reference](docs/reference/student-quick-reference.md)
+
+**Comprehensive References**
+- [Keyboard Shortcuts & Power User Guide](docs/reference/keyboard-shortcuts.md) - Enhanced with role-specific shortcuts, power user tips, mobile gestures, and printable cheat sheets
+- [Glossary](docs/reference/glossary.md) - Complete terminology guide
+- [Roles & Permissions Matrix](docs/reference/roles-permissions.md)
+- [Data Import/Export](docs/reference/data-import-export.md)
+- [Integrations](docs/reference/integrations.md)
+
+### 🎬 Video Tutorials
+
+**Introduction Series**
+- [System Overview](video-tutorials/scripts/01-introduction/01-system-overview.md)
+- [User Roles Explained](video-tutorials/scripts/01-introduction/02-user-roles-explained.md)
+- [Quick Start Guide](video-tutorials/scripts/01-introduction/03-quick-start-guide.md)
+
+**Role-Based Training**
+- [School Admin Guide](video-tutorials/scripts/02-role-based/01-school-admin-guide.md)
+- [Teacher Guide](video-tutorials/scripts/02-role-based/02-teacher-guide.md)
+- [Parent Guide](video-tutorials/scripts/02-role-based/03-parent-guide.md)
+- [Student Guide](video-tutorials/scripts/02-role-based/04-student-guide.md)
+- [Accountant Guide](video-tutorials/scripts/02-role-based/05-accountant-guide.md)
+- [Driver Guide](video-tutorials/scripts/02-role-based/06-driver-guide.md)
+- [Non-Teaching Staff Guide](video-tutorials/scripts/02-role-based/07-non-teaching-staff-guide.md)
+
+**Feature Deep Dives**
+- [Fee Management & Payment Processing](video-tutorials/scripts/03-feature-deep-dives/01-fee-management-payment-processing.md)
+- [Attendance Tracking](video-tutorials/scripts/03-feature-deep-dives/02-attendance-tracking.md)
+- [Assignment Workflow](video-tutorials/scripts/03-feature-deep-dives/03-assignment-workflow.md)
+- [Communication & Messaging](video-tutorials/scripts/03-feature-deep-dives/04-communication-messaging.md)
+- [Reports & Analytics](video-tutorials/scripts/03-feature-deep-dives/05-reports-analytics.md)
+- [Transportation Management](video-tutorials/scripts/03-feature-deep-dives/06-transportation-management.md)
+- [Data Import/Export](video-tutorials/scripts/03-feature-deep-dives/07-data-import-export.md)
+- [System Configuration](video-tutorials/scripts/03-feature-deep-dives/08-system-configuration.md)
+- [Online Exams Overview](video-tutorials/scripts/03-feature-deep-dives/09-online-exams-overview.md)
+- [Online Exams - Teacher Guide](video-tutorials/scripts/03-feature-deep-dives/10-online-exams-teacher-guide.md)
+- [Online Exams - Student Guide](video-tutorials/scripts/03-feature-deep-dives/11-online-exams-student-guide.md)
+
+### 🆘 Support & Troubleshooting
+- [Enhanced Troubleshooting Guide](docs/support/troubleshooting.md) - Comprehensive solutions for online exams, offline exams, and common issues with step-by-step instructions and video references
+- [FAQ](docs/support/faq.md)
+- [Contact Support](docs/support/contact-support.md)
+
+---
+
 ## Troubleshooting
 - 404s on custom domain
   - Ensure `baseUrl: '/'` in `docusaurus.config.js` when using the custom domain.

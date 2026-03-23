@@ -1091,7 +1091,9 @@ Week 6+: Ongoing support and optimization
 - **[Gradebook Operations](../guides/teachers.md#grading)** - Complete grading reference
 - **[Online Exams Guide](../guides/exams-master-index.md)** - Exam administration workflows
 - **[Getting Started](../intro/getting-started.md)** - First-time user guide
-- **[Quick Reference Cards](../reference/)** - All quick reference guides
+- **[Teacher Quick Reference](./teacher-quick-reference.md)** - Printable teacher guide
+- **[Admin Quick Reference](./admin-quick-reference.md)** - Printable admin guide
+- **[Parent Quick Reference](./parent-quick-reference.md)** - Printable parent guide
 
 ---
 
