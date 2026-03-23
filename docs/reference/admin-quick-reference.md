@@ -372,7 +372,7 @@ Solution:
 - **Portal**: support.4sch.com/tickets
 - **Video Tutorials**: Help menu → Video Tutorials
 
-### 📋 When Contacting Support, Have Ready:
+### 📋 When Contacting Support, Have Ready
 
 - [ ] Your school name & admin email
 - [ ] Exact error message (screenshot)
@@ -506,7 +506,7 @@ Generate Performance Report
 
 ---
 
-## PRINT THIS - KEEP AT DESK!
+## PRINT THIS - KEEP AT DESK
 
 **Last Updated**: 2024
 **Version**: 1.0

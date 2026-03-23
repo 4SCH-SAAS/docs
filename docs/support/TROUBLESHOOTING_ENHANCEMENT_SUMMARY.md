@@ -288,13 +288,13 @@ Troubleshooting.md (1,680+ lines)
 
 ## How Users Should Use This Guide
 
-### For Quick Help:
+### For Quick Help
 1. Look up error code in **Error Codes Reference Table**
 2. Jump to relevant issue section
 3. Try **Quick Fix** (2-5 minutes)
 4. If not resolved, try **Advanced Solutions A-E**
 
-### For Detailed Help:
+### For Detailed Help
 1. Go to **PART 11: Quick Reference by Module**
 2. Find your module (Exams, Payments, etc.)
 3. Click on your specific issue
@@ -302,14 +302,14 @@ Troubleshooting.md (1,680+ lines)
 5. Follow **Diagnostic Flowchart**
 6. Try solutions in order
 
-### For Role-Based Help:
+### For Role-Based Help
 1. Go to **PART 9: Role-Specific Troubleshooting**
 2. Find your role (Student, Parent, Teacher, Admin)
 3. See your most common issues
 4. See your typical workflow
 5. Get role-specific tips
 
-### Before Contacting Support:
+### Before Contacting Support
 1. Complete **PART 10: Master Checklist**
 2. Gather information from "Info to Provide" section
 3. Contact support with all relevant details
@@ -329,7 +329,7 @@ The following are referenced but detailed elsewhere:
 
 ## Maintenance Notes
 
-### To Update This Document:
+### To Update This Document
 
 1. **New Error Code:** Add to Error Codes Reference Table
 2. **New Issue:** Create new Issue section following template:
@@ -342,7 +342,7 @@ The following are referenced but detailed elsewhere:
    - Video reference
 3. **Update Issue Count:** Update in PART 12 when adding new issues
 
-### For Nigerian Context Updates:
+### For Nigerian Context Updates
 
 1. **Bank Changes:** Update bank contact numbers in Issue 4.1 Solution A
 2. **Payment Providers:** Add new providers alongside Flutterwave
