@@ -309,7 +309,7 @@ Use a clear, recognizable sender ID like your school name. Avoid generic names. 
 3. Enter:
    - **Account SID**
    - **Auth Token**
-   - **From Number** (your Twilio phone number with country code, e.g., +1234567890)
+   - **From Number** (your Twilio phone number with country code, e.g., +234XXXXXXXXXX)
 4. Click **Save**
 
 **Step 4: Test**

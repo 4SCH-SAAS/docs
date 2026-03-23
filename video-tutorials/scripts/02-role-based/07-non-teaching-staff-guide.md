@@ -46,7 +46,7 @@ This role-based access ensures everyone has the tools they need while maintainin
 **[VOICEOVER]:**  
 "The left sidebar menu organizes features by function. Hover over menu items to see descriptions of each section. Click to expand and see subsections.
 
-Use the search bar for quick access. Search 'John Doe' to find student records, 'inventory' to access supplies, or 'maintenance' for facility requests. Results appear instantly.
+Use the search bar for quick access. Search 'Chukwudi Okafor' to find student records, 'inventory' to access supplies, or 'maintenance' for facility requests. Results appear instantly.
 
 The Help section (usually bottom of menu or top-right) provides documentation, FAQs, and video tutorials. Search the help database for your specific question - most common issues have documented solutions.
 

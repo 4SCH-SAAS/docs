@@ -107,9 +107,9 @@ Set up escalation reminders for severely overdue accounts - 30 days overdue trig
 ### [10:30-12:00] Online Payment Processing
 **[VISUAL]** Payment gateway integration and processing
 **[VOICEOVER]:**  
-"Parents pay fees through multiple channels configured in your system. Online payment through the parent app links to payment gateways - Paystack, Flutterwave, or Stripe depending on your school's setup.
+"Parents pay fees through multiple channels configured in your system. Online payment through the parent app links to payment gateways - Paystack, Flutterwave, or Remita depending on your school's setup.
 
-Parents select 'Pay Now' in the app, choose which fee to pay, and select payment method: debit card, bank transfer, or mobile money. Payment gateways handle security with PCI-DSS compliance.
+Parents select 'Pay Now' in the app, choose which fee to pay, and select payment method: debit card, bank transfer, USSD, or mobile money. Payment gateways handle security with PCI-DSS compliance.
 
 The payment processes instantly. Parents receive confirmation with transaction ID and receipt. Your 4SCH system simultaneously receives payment notification, records the transaction, and updates student fee balance automatically.
 

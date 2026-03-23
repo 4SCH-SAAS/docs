@@ -154,32 +154,104 @@ Class | Subject | Question | Option A | Option B | Option C | Option D | Correct
 
 ### Assigning Questions to Exams
 
-#### Method 1: Select from Question Bank
+When adding questions to an exam, you have two assignment methods:
 
+#### Select Question Assign Type
+
+Before assigning questions, choose your preferred method:
+
+**📋 Manual Assignment** - Select specific questions individually
+- Full control over which questions appear
+- Set individual marks for each question
+- Best for carefully curated exams
+- You choose exactly which questions students see
+
+**🎲 Random Assignment** - System auto-selects questions
+- Questions chosen randomly from question bank
+- Equal marks distributed automatically
+- Best for anti-cheating measures
+- Creates unique exam variations
+
+:::info Assignment Type Selection
+The assignment type selector appears at the top when you click **Add Questions** on an exam. Choose **Manual** or **Random** before proceeding.
+:::
+
+---
+
+#### Method 1: Manual Assignment (Select from Question Bank)
+
+**Use When:** You want to hand-pick specific questions for the exam.
+
+**Steps:**
 1. Open the exam → Click **Add Questions**
-2. Browse available questions filtered by:
-   - Class
-   - Subject
-   - Difficulty level
-3. Select questions you want to include
-4. Set marks for each question
-5. Click **Assign Questions**
+2. Select **Manual** assignment type (radio button)
+3. The question bank appears, filtered by:
+   - Class (matching exam's class)
+   - Subject (matching exam's subject)
+   - Difficulty level (use filter dropdown)
+4. Browse and select questions by clicking checkboxes
+5. For each selected question, enter marks in the input field
+6. Click **Assign Questions**
 
-#### Method 2: Assign Random Questions
+**Key Features:**
+- ✅ Choose exact questions you want
+- ✅ Set different marks for different questions
+- ✅ Can assign same question with different marks
+- ✅ View question details before assigning
 
-Automatically select questions by criteria:
+:::tip Individual Marks
+With manual assignment, you can assign different marks to different questions. For example: hard questions get 5 marks, easy questions get 2 marks.
+:::
 
-1. Open exam → Click **Add Questions** → **Random Assignment**
-2. Set parameters:
-   - **Total Questions** - Number of questions to add
-   - **Total Marks** - Overall marks (divided equally)
-   - **Difficulty Level** - All, Easy, Medium, or Hard
-3. Click **Generate**
+---
 
-The system will randomly select questions matching your criteria.
+#### Method 2: Random Assignment (Auto-Select Questions)
+
+**Use When:** You want the system to randomly select questions from the question bank.
+
+**Steps:**
+1. Open exam → Click **Add Questions**
+2. Select **Random** assignment type (radio button)
+3. Set parameters in the form:
+   - **Total Questions** - How many questions to randomly select (e.g., 20)
+   - **Total Marks** - Overall exam marks (e.g., 40)
+   - **Difficulty Level** - Filter by: All, Easy, Medium, or Hard
+4. Click **Submit**
+
+**How It Works:**
+- System searches question bank for questions matching:
+  - Exam's class
+  - Exam's subject  
+  - Selected difficulty level (if not "All")
+- Randomly selects the specified number of questions
+- Divides total marks equally among all questions
+- Assigns questions automatically
+
+**Example:**
+```
+Total Questions: 20
+Total Marks: 40
+Difficulty: All Levels
+
+Result: 20 randomly selected questions, each worth 2 marks (40 ÷ 20 = 2)
+```
+
+:::warning Equal Marks Distribution
+Total marks must be evenly divisible by the number of questions. If you enter 40 marks for 21 questions, the system will show an error because 40 ÷ 21 = 1.9 (not a whole number).
+:::
+
+:::caution Insufficient Questions
+If your question bank doesn't have enough questions matching your criteria, the system will display: "Not enough questions available for the selected criteria." Create more questions or adjust your parameters.
+:::
+
+**Benefits of Random Assignment:**
+- 🎲 **Anti-Cheating** - Each exam attempt can have different questions
+- ⚡ **Time-Saving** - No need to manually select questions
+- 📊 **Balanced Difficulty** - Can filter by difficulty level
+- 🔄 **Reusable** - Assign different question sets to different sections
 
 :::tip Smart Question Selection
-Random assignment helps create unique exams and prevents question memorization across multiple exam attempts or sections.
+Random assignment is perfect for creating multiple exam variations for different class sections or preventing students from sharing questions between exam sessions.
 :::
 
 ### Monitoring Online Exams
@@ -373,20 +445,28 @@ Students must select ALL correct options to receive marks. Selecting some but no
 
 #### Using Random Assignment
 
-Create varied exams quickly:
+Create varied exams quickly using the random question assignment feature:
 
-1. Open exam → **Add Questions** → **Random**
-2. Configure:
-   - **Number of Questions** - How many to add
-   - **Total Marks** - Will be distributed evenly
-   - **Difficulty Filter** - All/Easy/Medium/Hard
-3. Click **Generate**
+**Process:**
+1. Open exam → Click **Add Questions**
+2. Select **Random** assignment type (radio button at top)
+3. Configure parameters:
+   - **Total Questions** - How many to randomly select
+   - **Total Marks** - Will be distributed evenly across all questions
+   - **Difficulty Level** - Choose: All, Easy, Medium, or Hard
+4. Click **Submit**
 
 **Example Configuration:**
 - Total Questions: 20
 - Total Marks: 40
 - Difficulty: All Levels
-- Result: 20 random questions, 2 marks each
+- **Result:** 20 random questions, 2 marks each (40 ÷ 20 = 2)
+
+**Important Notes:**
+- Total marks MUST divide evenly by number of questions
+- System checks if enough questions exist in the question bank
+- Questions are randomly selected each time
+- All selected questions get equal marks
 
 ### Managing Your Exams
 

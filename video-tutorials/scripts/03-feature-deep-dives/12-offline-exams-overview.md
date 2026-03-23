@@ -207,7 +207,7 @@ Overall:
 
 **[Screen: Example calculation]**
 
-"Example: John scored 75 in Math (100), 65 in English (80), 80 in Science (100), and 55 in Social (80).
+"Example: Chukwudi scored 75 in Math (100), 65 in English (80), 80 in Science (100), and 55 in Social (80).
 Total: 275 out of 360 = 76.39% = Grade A = Pass"
 
 #### Publication Control
