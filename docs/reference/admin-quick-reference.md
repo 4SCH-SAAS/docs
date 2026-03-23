@@ -32,9 +32,9 @@ keywords: [school admin, quick reference, cheat sheet, daily tasks, troubleshoot
 | **Failed Payments** | Dashboard → Finance | Contact parents about failed online payments |
 
 **Key Metrics by Status:**
-- 🟢 **Green** (>80%): Acceptable
+- **Green** (&gt;80%): Acceptable
 - 🟡 **Yellow** (60-80%): Monitor
-- 🔴 **Red** (<60%): Immediate action needed
+- **Red** (&lt;60%): Immediate action needed
 
 ---
 

@@ -9,7 +9,7 @@ keywords: [troubleshooting, fix errors, login problems, payment failed, exam iss
 # Comprehensive Troubleshooting Guide
 
 :::info Quick Help
-**Need immediate help?** Check the [Before Contacting Support](#before-contacting-support) checklist first. Most issues can be resolved in minutes!
+**Need immediate help?** Check the [Before Contacting Support](#part-10-before-contacting-support---master-checklist) checklist first. Most issues can be resolved in minutes!
 :::
 
 ---
@@ -36,7 +36,7 @@ keywords: [troubleshooting, fix errors, login problems, payment failed, exam iss
 | **E302** | Gradebook locked | Attendance & Grades | Medium | Assessment finalized; request admin unlock |
 | **E401** | Transportation route not available | Transportation | Medium | Enroll in available route; check enrollment deadline |
 | **E402** | Vehicle GPS offline | Transportation | High | Driver connectivity issue; contact school |
-| **E501** | Gallery image upload failed | Gallery | Low | Check file size (<10MB); use JPEG/PNG |
+| **E501** | Gallery image upload failed | Gallery | Low | Check file size (&lt;10MB); use JPEG/PNG |
 | **E502** | Gallery sync error | Gallery | Low | Clear cache; restart app |
 | **E601** | Dashboard data not loading | Dashboard | Medium | Clear cache; check internet; reload |
 
@@ -766,7 +766,7 @@ START: Payment failed?
   - Receipt amount shown
   - Bank transaction ID
 
-**Solution D: Need Receipt for Old Payment (>60 days)**
+**Solution D: Need Receipt for Old Payment (&gt;60 days)**
 - Go to **Dashboard → Fees → Invoices**
 - Look for **"Transaction History"** or **"Paid Invoices"**
 - Tap paid invoice from the date you need
@@ -1582,7 +1582,7 @@ When contacting support, have this information ready:
 - ❌ Don't click suspicious links claiming to reset your account
 - ❌ Don't try to bypass school security features
 - ❌ Don't delete app data while issue is ongoing (may lose evidence)
-- ❌ Don't attempt exams on very slow internet (<0.5 Mbps)
+- ❌ Don't attempt exams on very slow internet (&lt;0.5 Mbps)
 - ❌ Don't ignore "Pending" payment status (takes action to resolve)
 
 ---
