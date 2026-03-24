@@ -4,12 +4,12 @@
 ---
 
 ## 📖 TABLE OF CONTENTS
-1. [Daily Tasks](#daily-tasks)
-2. [Taking Online Exams](#taking-online-exams)
-3. [Checking Results](#checking-results)
-4. [Contacting Teachers](#contacting-teachers)
-5. [Common Questions](#common-questions)
-6. [Troubleshooting](#troubleshooting)
+1. [Daily Tasks](#-daily-tasks)
+2. [Taking Online Exams](#-taking-online-exams)
+3. [Viewing Results & Report Cards](#-viewing-results--report-cards)
+4. [Contacting Teachers](#-contacting-teachers)
+5. [Common Questions](#-common-questions)
+6. [Troubleshooting](#-troubleshooting-tips)
 
 ---
 
@@ -131,11 +131,11 @@
 
 ### Example Message
 > Good morning Sir,
-> 
+>
 > I have a question about the Mathematics assignment due on Friday. Can you explain question 5 again? I don't understand how to calculate the percentage.
-> 
+>
 > Thank you, Sir.
-> 
+>
 > Chukwudi Okafor
 > JSS 2 Green
 
@@ -152,7 +152,7 @@
 
 ## ❓ COMMON QUESTIONS
 
-### Q: I Forgot My Password!
+### Q: I Forgot My Password
 **What to do:**
 1. Go to the **"Login"** page
 2. Click **"Forgot Password?"**
@@ -170,7 +170,7 @@
 
 ---
 
-### Q: My Assignment Won't Upload!
+### Q: My Assignment Won't Upload
 **Try this:**
 1. ✓ Check your internet connection (move closer to WiFi)
 2. ✓ Try a different browser (Chrome, Firefox, Edge)
@@ -187,7 +187,7 @@
 
 ---
 
-### Q: The Exam Timer Issues!
+### Q: The Exam Timer Issues
 **My timer disappeared:**
 - Don't panic! Refresh the page (F5)
 - The timer still counts down, just not visible
@@ -315,7 +315,7 @@
 ## 🎓 REMEMBER
 
 > **Your education is your future!**
-> 
+>
 > - Read instructions carefully
 > - Ask questions if confused
 > - Do your own work
