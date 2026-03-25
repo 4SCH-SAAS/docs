@@ -1088,7 +1088,7 @@ Week 6+: Ongoing support and optimization
 - **[Admin Dashboard Guide](../guides/admin-dashboard-analytics.md)** - Learn dashboard navigation and analytics
 - **[Data Import/Export](data-import-export.md)** - Bulk data workflows and file formats
 - **[Attendance Reports](../guides/attendance-reports.md)** - Understanding attendance data
-- **[Gradebook Operations](../guides/teachers.md#grading)** - Complete grading reference
+- **[Gradebook Operations](../guides/teachers.md#entering-grades)** - Complete grading reference
 - **[Online Exams Guide](../guides/exams-master-index.md)** - Exam administration workflows
 - **[Getting Started](../intro/getting-started.md)** - First-time user guide
 - **[Teacher Quick Reference](./teacher-quick-reference.md)** - Printable teacher guide
