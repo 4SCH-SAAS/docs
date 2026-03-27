@@ -744,14 +744,14 @@ The system **DOES NOT** send:
 
 ### Making Payments
 
-#### During Active or Grace Period:
+#### During Active or Grace Period
 1. Navigate to subscription/billing section
 2. View outstanding bills
 3. Select payment method (online gateway or manual)
 4. Complete payment
 5. Access continues uninterrupted
 
-#### After Access Termination:
+#### After Access Termination
 1. Contact Super Admin via email/phone
 2. Make payment as directed
 3. Super Admin activates new subscription
@@ -776,9 +776,9 @@ The system **DOES NOT** send:
 
 ### Best Practices for School Admins
 
-#### Avoid Service Interruption:
+#### Avoid Service Interruption
 
-1. **Monitor Regularly**: 
+1. **Monitor Regularly**:
    - Login to dashboard at least twice weekly
    - Check for expiry warnings
    - Note your subscription end date
@@ -803,7 +803,7 @@ The system **DOES NOT** send:
    - Note payment history
    - Document renewal dates
 
-#### Emergency Contacts:
+#### Emergency Contacts
 
 If you lose access unexpectedly:
 - Super Admin Email: [Your Super Admin Email]
@@ -823,7 +823,7 @@ Plan your renewals carefully to avoid disruption to your school operations!
 ### Understanding the 3-Day Grace Period
 
 **Why Only 3 Days?**
-The grace period is designed for payment processing time, not as an extension of your subscription. 
+The grace period is designed for payment processing time, not as an extension of your subscription.
 
 **What It's For**:
 - ✅ Processing online payments
@@ -841,22 +841,22 @@ The grace period is designed for payment processing time, not as an extension of
 
 ### Frequently Asked Questions
 
-**Q: Will I lose my data if I don't renew immediately?**  
+**Q: Will I lose my data if I don't renew immediately?**
 A: No. Your data is preserved indefinitely. Only access is blocked.
 
-**Q: Can I restore access after termination?**  
+**Q: Can I restore access after termination?**
 A: Yes. Contact Super Admin or make payment to restore access immediately.
 
-**Q: How will I know when my subscription is expiring?**  
+**Q: How will I know when my subscription is expiring?**
 A: A warning appears on your dashboard 14 days before expiry. No emails are sent automatically.
 
-**Q: What happens to students during access termination?**  
+**Q: What happens to students during access termination?**
 A: Students cannot login to the app. Teachers cannot enter grades. All users are blocked.
 
-**Q: Is there a way to get email reminders?**  
+**Q: Is there a way to get email reminders?**
 A: Currently, the system doesn't send automated email reminders. Check your dashboard regularly.
 
-**Q: Can I export my data before canceling?**  
+**Q: Can I export my data before canceling?**
 A: Yes. Use the data export features before your subscription ends.
 
 :::info For Complete Details

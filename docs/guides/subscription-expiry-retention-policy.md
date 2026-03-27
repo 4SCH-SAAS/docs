@@ -83,7 +83,7 @@ if ($license_expire <= ($settings['current_plan_expiry_warning_days'] ?? 7) && $
    - System generates `subscription_bill` record
    - Calculates bill amount based on package
    - Sets `due_date` = `end_date + additional_billing_days` (3 days)
-   
+
 2. **Grace Period Activation**
    - School enters 3-day grace period
    - `extra_billing_status` = 1 (within grace period)
@@ -302,12 +302,12 @@ $schedule->command('transport:expiry-reminder')->daily();    # ✅ Exists
 **Where**: School Admin Dashboard (home page)
 **When**: 14 days or less until expiry
 **Type**: Visual banner/alert on dashboard
-**Content**: 
+**Content**:
 - Days remaining until expiry
 - Upcoming plan information (if auto-renewal enabled)
 - Payment prompt
 
-**Limitation**: 
+**Limitation**:
 - Requires School Admin to **actively login** to see warning
 - No proactive outreach to administrators
 - Easy to miss if admin doesn't check dashboard regularly
@@ -393,7 +393,7 @@ Only **Super Admin** can delete schools. Two-step process:
 $schedule->command('subscriptionBill:cron')->daily();
 ```
 
-**Purpose**: 
+**Purpose**:
 - Generate bills for expired subscriptions
 - Terminate subscriptions after grace period
 - Handle auto-renewal if configured
@@ -541,7 +541,7 @@ Based on the analysis, here are recommended enhancements:
 
 #### 1. "Cron job not running"
 **Symptoms**: Bills not generated, subscriptions not terminating
-**Solution**: 
+**Solution**:
 ```bash
 # Verify cron is configured
 crontab -l
@@ -665,8 +665,8 @@ name ('additional_billing_days', 'current_plan_expiry_warning_days'), data
 
 - [School Management Guide](school-admin.md)
 - [System Settings Configuration](../reference/admin-quick-reference.md)
-- [Payment Gateway Setup](../guides/fee-management.md)
-- [Database Backup Procedures](../support/troubleshooting.md)
+- [Expense Management](expense-management.md)
+- [Troubleshooting Guide](../support/troubleshooting.md)
 
 ---
 
@@ -678,7 +678,7 @@ name ('additional_billing_days', 'current_plan_expiry_warning_days'), data
 
 ---
 
-**Document Status**: ✅ Complete and Accurate  
-**Last Reviewed**: March 27, 2026  
-**Configuration Based On**: 4SCH v3.x (PHP Laravel Backend)  
+**Document Status**: ✅ Complete and Accurate
+**Last Reviewed**: March 27, 2026
+**Configuration Based On**: 4SCH v3.x (PHP Laravel Backend)
 **Settings**: Additional Billing Days = 3, Warning Days = 14
