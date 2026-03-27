@@ -23,6 +23,11 @@ const sidebars = {
           collapsed: false,
           items: [
             'guides/school-admin',
+            {
+              type: 'link',
+              label: '💳 Subscription & Account Management',
+              href: '/guides/school-admin#subscription--account-management',
+            },
           ],
         },
         {
