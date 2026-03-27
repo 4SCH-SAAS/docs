@@ -59,13 +59,10 @@ Bill Status: Not generated
 - If auto-renewal is enabled, shows upcoming plan details
 - Visual alert to encourage payment before expiry
 
-**Code Reference** (`DashboardController.php`, line 136):
-```php
-if ($license_expire <= ($settings['current_plan_expiry_warning_days'] ?? 7) && $subscription) {
-    // Display warning banner with expiry information
-    // Shows upcoming plan if auto-renewal is enabled
-}
-```
+**How It Works**:
+- The system automatically checks your subscription status when you login
+- If expiry is within 14 days (or less), a warning banner appears on your dashboard
+- The banner shows how many days remain and payment options
 
 **Important Notes**:
 - ⚠️ **NO automatic email notifications** are sent during this period
@@ -89,16 +86,10 @@ if ($license_expire <= ($settings['current_plan_expiry_warning_days'] ?? 7) && $
    - `extra_billing_status` = 1 (within grace period)
    - All features remain accessible
 
-**Database Changes**:
-```sql
--- New record created
-INSERT INTO subscription_bills (
-    subscription_id,
-    amount,
-    due_date = end_date + 3 days,
-    created_at = end_date + 1 day
-)
-```
+**What Happens Automatically**:
+- The system creates a bill for your subscription renewal
+- Payment due date is set to 3 days after expiry
+- Bill appears in your admin dashboard
 
 **User Experience**:
 - ✅ School continues operating normally
@@ -106,11 +97,10 @@ INSERT INTO subscription_bills (
 - ✅ All features accessible
 - 📊 Dashboard may show payment due notice
 
-**Cron Job Configuration**:
-```bash
-# Must be configured on server (runs daily at midnight)
-cd /your-project-path/ && php artisan schedule:run >> /dev/null 2>&1
-```
+**Server Automation**:
+- The system automatically runs daily checks at midnight
+- No manual intervention needed from users
+- Super Admin ensures server is properly configured
 
 ---
 
@@ -123,14 +113,10 @@ cd /your-project-path/ && php artisan schedule:run >> /dev/null 2>&1
 - Bill shows: **"Unpaid"** (before due_date)
 - After due_date passes: **"Over Due"**
 
-**System Behavior**:
-```php
-// Subscription.php - getExtraBillingStatusAttribute()
-$extra_day = end_date + additional_billing_days; // +3 days
-if (today <= $extra_day) {
-    extra_billing_status = 1; // Still within grace
-}
-```
+**How the System Calculates Grace Period**:
+- Your subscription end date + 3 days = grace period deadline
+- During these 3 days, the system considers you "still active"
+- After day 3, grace period expires and access is terminated
 
 **School Access**:
 - ✅ Full system access maintained
@@ -148,70 +134,40 @@ if (today <= $extra_day) {
 ### Phase 5: Grace Period Expiry (Day 4 - After Additional Billing Days)
 **Status**: ❌ Access Terminated
 
-**Automated Actions** (Daily Cron Job):
+**What the System Does Automatically** (at midnight on Day 4):
 
-#### 1. Identify Overdue Bills
-```php
-// SubscriptionBillCron.php - Line 62
-$subscriptionBill = SubscriptionBill::whereHas('transaction', function($q) {
-    $q->whereNot('payment_status',"succeed");
-})->where('due_date','<',$today_date)->get();
-```
+The system performs these actions without any manual intervention:
 
-#### 2. Terminate Current Subscription
-```php
-// Sets end_date to yesterday
-Subscription::where('school_id', $bill->school_id)
-    ->where('start_date','<=', $today_date)
-    ->where('end_date','>=', $today_date)
-    ->update(['end_date' => Carbon::yesterday()->format('Y-m-d')]);
-```
+1. **Identifies Unpaid Subscriptions**
+   - Checks all bills past their due date
+   - Finds subscriptions where payment hasn't been received
 
-#### 3. Delete Future Plans
-```php
-// Remove any upcoming scheduled subscriptions
-Subscription::where('school_id', $bill->school_id)
-    ->where('start_date','>', $today_date)
-    ->delete();
+2. **Terminates Current Subscription**
+   - Changes your subscription end date to yesterday
+   - This effectively ends your active subscription immediately
 
-AddonSubscription::where('school_id', $bill->school_id)
-    ->where('start_date','>', $today_date)
-    ->delete();
-```
+3. **Removes Future Plans**
+   - Deletes any upcoming subscription renewals you may have scheduled
+   - Removes any addon services scheduled to start
 
-#### 4. Disable Auto-Renewal
-```php
-// Prevent automatic renewal attempts
-SchoolSetting::updateOrCreate([
-    'school_id' => $bill->school_id,
-    'name' => 'auto_renewal_plan'
-], ['data' => 0]);
-```
+4. **Disables Auto-Renewal**
+   - Turns off automatic renewal to prevent future charges
+   - You'll need to manually renew when ready
 
-#### 5. Clear Feature Cache
-```php
-// Remove cached features for the school
-$cache->removeSchoolCache(
-    config('constants.CACHE.SCHOOL.FEATURES'),
-    $bill->school_id
-);
-```
+5. **Updates System Access**
+   - Removes access to premium features
+   - Updates your school's active feature list
 
 **User Access Impact**:
 - ❌ Students/Teachers: **BLOCKED from login**
 - ❌ School Admin: **May be blocked** (if school status changed)
 - 🚫 Login attempt shows: *"Your account has been deactivated. Please contact admin."*
 
-**Middleware Protection** (`CheckSchoolStatus.php`):
-```php
-if (Auth::user()->hasRole('Student') || Auth::user()->hasRole('Teacher')) {
-    if ($user->school->status == 0 || $user->status == 0) {
-        // Reject login with deactivation message
-        return redirect()->route('login')
-            ->with('error', 'Your account has been deactivated');
-    }
-}
-```
+**How Access Control Works**:
+- The system checks your school's subscription status at every login
+- If subscription is expired (past grace period), login is rejected
+- Users see a clear message explaining their account is deactivated
+- They are instructed to contact the school administrator
 
 ---
 
@@ -244,27 +200,16 @@ if (Auth::user()->hasRole('Student') || Auth::user()->hasRole('Teacher')) {
 
 The 4SCH system includes a robust notification infrastructure:
 
-#### FCM (Firebase Cloud Messaging) Push Notifications
-- **Target**: Mobile apps (Student/Teacher/Parent apps)
-- **Method**: `send_notification()` helper function
-- **Delivery**: Queued job via `SendFcmNotification`
-- **Platforms**: Android/iOS mobile apps + Web notifications
-
-**Example Usage** (from `TransportationExpiryReminder.php`):
-```php
-send_notification(
-    [$userId],                    // Recipients
-    $title,                       // Notification title
-    $body,                        // Notification message
-    'Transportation',             // Type/Category
-    ['user_id' => $userId]       // Custom data
-);
-```
+#### Push Notifications
+- **Available For**: Mobile apps (Student/Teacher/Parent apps)
+- **Platforms**: Android, iOS, and web browsers
+- **Current Use**: Transportation expiry reminders work perfectly
+- **Example**: Drivers receive notifications 7 days before their plan expires
 
 #### Email Notifications
-- **Infrastructure**: Laravel Mail system configured
-- **Templates**: Blade-based email templates available
-- **Configuration**: SMTP settings in System Settings
+- **System Capability**: Email system is fully configured and working
+- **Current Use**: Various system notifications are sent via email
+- **Configuration**: Super Admin manages email settings
 
 ---
 
@@ -335,13 +280,10 @@ Only **Super Admin** can delete schools. Two-step process:
 
 **Process**:
 1. Navigate to: **Schools → Select School → Delete**
-2. System performs:
-   ```php
-   // SchoolController@destroy
-   - Set school status = 0 (inactive)
-   - Soft delete school record (add deleted_at timestamp)
-   - Soft delete admin user account
-   ```
+2. System performs these actions:
+   - Sets school status to inactive
+   - Marks school record as deleted (but keeps it in database)
+   - Deactivates the school admin user account
 
 **Result**:
 - School moved to trash
@@ -356,13 +298,10 @@ Only **Super Admin** can delete schools. Two-step process:
 
 **Process**:
 1. Navigate to: **Schools → Trash → Permanently Delete**
-2. System performs:
-   ```php
-   // SchoolController@trash
-   - DROP DATABASE `school_[database_name]`  // ⚠️ Complete database deletion
-   - Delete all uploaded files from storage
-   - Force delete admin user (permanent)
-   ```
+2. System performs these **IRREVERSIBLE** actions:
+   - Completely removes the school's database from the server
+   - Deletes all uploaded files from storage (photos, documents, etc.)
+   - Permanently removes the admin user account
 
 **Result**:
 - ❌ School database: **DESTROYED**
@@ -387,36 +326,26 @@ Only **Super Admin** can delete schools. Two-step process:
 
 ### Active Scheduled Tasks
 
-#### 1. Subscription Bill Cron (Daily - Midnight)
-```php
-// Kernel.php, line 24
-$schedule->command('subscriptionBill:cron')->daily();
-```
+#### 1. Subscription Bill Generation & Management (Daily - Midnight)
 
 **Purpose**:
 - Generate bills for expired subscriptions
 - Terminate subscriptions after grace period
 - Handle auto-renewal if configured
 
-**Runs**: Every day at 00:00 (midnight)
+**Runs**: Every day at midnight (00:00)
 
-#### 2. Delete Notifications (Monthly)
-```php
-// Kernel.php, line 25
-$schedule->command('notifications:delete')->monthly();
-```
+#### 2. Clean Up Old Notifications (Monthly)
 
-**Purpose**: Clean up old notifications from database
+**Purpose**: Removes old notifications to keep the system efficient
+**Runs**: Once per month
 
-#### 3. Transportation Expiry Reminder (Daily)
-```php
-// Kernel.php, line 26
-$schedule->command('transport:expiry-reminder')->daily();
-```
+#### 3. Transportation Expiry Reminders (Daily)
 
-**Purpose**: Send push notifications 7 days before transport plan expiry
+**Purpose**: Sends push notifications to drivers 7 days before their transportation plan expires
+**Runs**: Every day
 
-**Note**: Similar reminder does NOT exist for subscriptions
+**Important Note**: A similar reminder system does NOT exist for school subscriptions (this is the gap we identified)
 
 ---
 
@@ -567,8 +496,8 @@ php artisan subscriptionBill:cron
 **Solution**:
 - Verify `current_plan_expiry_warning_days` setting
 - Check subscription end_date calculation
-- Review DashboardController logic
-- Clear cache: `php artisan cache:clear`
+- Review dashboard warning settings
+- Clear your browser cache or ask Super Admin to clear system cache
 
 #### 4. "Cannot restore deleted school"
 **Symptoms**: Accidentally deleted school
@@ -603,47 +532,6 @@ php artisan subscriptionBill:cron
 
 ---
 
-## Technical Reference
-
-### Key Files
-
-| File | Purpose |
-|------|---------|
-| `app/Console/Commands/SubscriptionBillCron.php` | Daily cron for bill generation and termination |
-| `app/Console/Kernel.php` | Scheduled tasks configuration |
-| `app/Models/Subscription.php` | Subscription model with status logic |
-| `app/Http/Middleware/CheckSchoolStatus.php` | Access control middleware |
-| `app/Http/Controllers/DashboardController.php` | Warning display logic |
-| `app/Http/Controllers/SchoolController.php` | School deletion logic |
-| `app/Helpers/notification_helper.php` | Push notification functions |
-
-### Database Tables
-
-| Table | Purpose |
-|-------|---------|
-| `subscriptions` | Main subscription records |
-| `subscription_bills` | Generated bills for expired subscriptions |
-| `schools` | School information and status |
-| `system_settings` | Platform-wide configuration |
-| `school_settings` | Per-school settings (auto-renewal, etc.) |
-
-### Key Database Fields
-
-```sql
--- subscriptions table
-id, package_id, school_id, start_date, end_date, billing_cycle, package_type
-
--- subscription_bills table
-id, subscription_id, amount, due_date, created_at
-
--- schools table
-id, name, status, database_name, deleted_at
-
--- system_settings table
-name ('additional_billing_days', 'current_plan_expiry_warning_days'), data
-```
-
----
 
 ## Glossary
 
