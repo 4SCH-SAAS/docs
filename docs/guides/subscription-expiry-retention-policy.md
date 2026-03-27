@@ -226,13 +226,11 @@ Despite having the notification infrastructure, the system **DOES NOT** currentl
 5. ❌ Notifications when access is terminated
 
 **Evidence**:
-```bash
-# Scheduled cron jobs (Kernel.php, line 24-26)
-$schedule->command('subscriptionBill:cron')->daily();        # ✅ Exists
-$schedule->command('notifications:delete')->monthly();       # ✅ Exists
-$schedule->command('transport:expiry-reminder')->daily();    # ✅ Exists
-# ❌ NO subscription:expiry-reminder command exists
-```
+The system has these scheduled tasks configured:
+- Daily subscription bill generation ✅ Exists
+- Monthly notification cleanup ✅ Exists  
+- Daily transportation expiry reminders ✅ Exists
+- ❌ NO subscription expiry reminder task exists
 
 **Comparison with Transportation Module**:
 - Transportation module: ✅ Sends reminders 7 days before expiry
@@ -406,9 +404,9 @@ Based on the analysis, here are recommended enhancements:
 
 #### 1. Implement Subscription Expiry Reminder System
 
-**Create New Command**: `SubscriptionExpiryReminder.php`
+**What's Needed**: A new automated reminder system similar to transportation reminders
 
-**Proposed Schedule**:
+**Proposed Notification Schedule**:
 - 30 days before expiry: First email notification
 - 14 days before expiry: Second email + push notification
 - 7 days before expiry: Third email + push notification
