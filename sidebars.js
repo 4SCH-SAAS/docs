@@ -48,6 +48,16 @@ const sidebars = {
               label: '⚙️ System Settings',
               href: '/guides/school-admin#system-settings',
             },
+            {
+              type: 'link',
+              label: '🚌 Transportation Management',
+              href: '/guides/school-admin#transportation-management',
+            },
+            {
+              type: 'link',
+              label: '📢 Communication & Announcements',
+              href: '/guides/school-admin#communication--announcements',
+            },
           ],
         },
         {
@@ -75,6 +85,16 @@ const sidebars = {
               type: 'link',
               label: '💬 Communicating with Parents',
               href: '/guides/teachers#communicating-with-parents',
+            },
+            {
+              type: 'link',
+              label: '📊 Viewing Class Reports',
+              href: '/guides/teachers#class-reports',
+            },
+            {
+              type: 'link',
+              label: '📅 Leave Management',
+              href: '/guides/teachers#leave-management',
             },
           ],
         },
@@ -104,6 +124,11 @@ const sidebars = {
               label: '💬 Messaging Teachers',
               href: '/guides/parents#messaging-teachers',
             },
+            {
+              type: 'link',
+              label: '📓 Student Diary',
+              href: '/guides/parents#student-diary',
+            },
             'guides/students',
             {
               type: 'link',
@@ -119,6 +144,16 @@ const sidebars = {
               type: 'link',
               label: '📅 Viewing Your Timetable',
               href: '/guides/students#viewing-your-timetable',
+            },
+            {
+              type: 'link',
+              label: '📚 Study Materials & Resources',
+              href: '/guides/students#lessons-study-materials',
+            },
+            {
+              type: 'link',
+              label: '📊 Your Attendance Record',
+              href: '/guides/students#attendance',
             },
           ],
         },
@@ -144,6 +179,16 @@ const sidebars = {
               label: '📊 Financial Reports',
               href: '/guides/accountant#financial-reports',
             },
+            {
+              type: 'link',
+              label: '🧾 Invoice Management',
+              href: '/guides/accountant#invoice-management',
+            },
+            {
+              type: 'link',
+              label: '💵 Managing Outstanding Fees',
+              href: '/guides/accountant#managing-outstanding-fees',
+            },
             'guides/driver',
             {
               type: 'link',
@@ -154,6 +199,16 @@ const sidebars = {
               type: 'link',
               label: '👥 Student Management',
               href: '/guides/driver#student-management',
+            },
+            {
+              type: 'link',
+              label: '✅ Attendance & Schedules',
+              href: '/guides/driver#attendance--schedules',
+            },
+            {
+              type: 'link',
+              label: '📊 Trip Reports & History',
+              href: '/guides/driver#trip-reports--history',
             },
           ],
         },
