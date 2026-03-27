@@ -278,9 +278,25 @@ const config = {
       '@docusaurus/plugin-client-redirects',
       {
         createRedirects(existingPath) {
+          // Existing changelog redirect
           if (existingPath.includes('/changelog')) {
             return [existingPath.replace('/changelog', '/blog')];
           }
+          
+          // Fix guide naming mismatches (navbar uses -guide suffix, files don't)
+          const guideRedirects = {
+            '/guides/teachers': ['/guides/teacher-guide'],
+            '/guides/parents': ['/guides/parent-guide'],
+            '/guides/students': ['/guides/student-guide'],
+            '/guides/non-teaching-staff': ['/guides/non-teaching-staff-guide'],
+            '/guides/accountant': ['/guides/accountant-guide'],
+            '/guides/driver': ['/guides/driver-guide'],
+          };
+          
+          if (guideRedirects[existingPath]) {
+            return guideRedirects[existingPath];
+          }
+          
           return undefined;
         },
       },
