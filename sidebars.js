@@ -68,6 +68,7 @@ const sidebars = {
             'guides/session-year-calendar-setup',
             'guides/teacher-subject-assignment',
             'guides/notification-settings-management',
+            'guides/subscription-expiry-retention-policy',
           ],
         },
         {

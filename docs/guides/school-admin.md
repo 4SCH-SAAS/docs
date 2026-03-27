@@ -678,6 +678,193 @@ Share school photos and videos:
 
 ---
 
+## Subscription & Account Management
+
+### Understanding Your Subscription Status
+
+Your school's subscription determines access to the 4SCH system. It's critical to monitor your subscription status to avoid service interruptions.
+
+#### Checking Subscription Status
+
+**Dashboard Warning**: A warning banner appears on your admin dashboard when you have **14 days or less** until subscription expiry.
+
+**Subscription Details**:
+1. Login to your admin account
+2. Check the dashboard for expiry warnings
+3. View subscription end date and days remaining
+
+:::warning Important
+The system does NOT send email or push notifications about subscription expiry. You must login regularly to check your dashboard for warnings.
+:::
+
+### Subscription Timeline & What to Expect
+
+#### Active Period
+- **Status**: ✅ Full access to all features
+- **Action**: None required (system operates normally)
+
+#### Warning Period (14 Days Before Expiry)
+- **Status**: ⚠️ Warning displayed on dashboard
+- **What You'll See**: Banner showing days remaining
+- **Access**: Full access continues
+- **Action**: Plan for renewal payment
+
+#### Expiry Day & Grace Period (3 Days)
+- **What Happens**: Subscription expires but you get a 3-day grace period
+- **Access**: ✅ System remains fully accessible during grace period
+- **Billing**: System automatically generates a bill
+- **Payment Deadline**: End date + 3 days
+- **Action**: Make payment immediately to avoid disruption
+
+:::tip Grace Period
+You have **3 days** after expiry to make payment while maintaining full access. This grace period is to accommodate payment processing time.
+:::
+
+#### After Grace Period (Day 4+)
+- **What Happens**: System access is automatically terminated
+- **Access**: ❌ All users (teachers, students, parents) are blocked from logging in
+- **Data**: Your data is **safe and preserved** - nothing is deleted
+- **Restoration**: Contact Super Admin or make payment to restore access immediately
+
+### Critical Information About Notifications
+
+**⚠️ Current System Limitation:**
+
+The system **DOES NOT** send:
+- ❌ Email notifications before expiry
+- ❌ Push notifications to your mobile device
+- ❌ SMS alerts about upcoming expiry
+- ❌ Automated reminders during grace period
+
+**✅ What You Get:**
+- Dashboard visual warning (14 days before expiry)
+- Manual communication from Super Admin (if they reach out)
+
+**Best Practice**: Login to your admin dashboard at least **twice per week** to check for subscription warnings.
+
+### Making Payments
+
+#### During Active or Grace Period:
+1. Navigate to subscription/billing section
+2. View outstanding bills
+3. Select payment method (online gateway or manual)
+4. Complete payment
+5. Access continues uninterrupted
+
+#### After Access Termination:
+1. Contact Super Admin via email/phone
+2. Make payment as directed
+3. Super Admin activates new subscription
+4. Access is restored immediately
+5. All your data remains intact
+
+### Data Safety & Retention
+
+**Good News**: Your school data is **NEVER automatically deleted**, even if:
+- Subscription expires
+- Grace period passes
+- You don't renew for months or years
+
+**Your Data Includes**:
+- All student and teacher records
+- Complete exam and grade history
+- Fee payment records
+- Attendance data
+- All uploaded files and documents
+
+**Data Preservation**: Your dedicated school database remains intact indefinitely until you request deletion or Super Admin performs manual cleanup.
+
+### Best Practices for School Admins
+
+#### Avoid Service Interruption:
+
+1. **Monitor Regularly**: 
+   - Login to dashboard at least twice weekly
+   - Check for expiry warnings
+   - Note your subscription end date
+
+2. **Plan Ahead**:
+   - Renew **before** the expiry date (don't rely on grace period)
+   - Prepare payment 1-2 weeks in advance
+   - Keep payment methods updated
+
+3. **Enable Auto-Renewal** (if available):
+   - Ensures continuous service
+   - Automatic payment processing
+   - No manual intervention needed
+
+4. **Communicate**:
+   - Save Super Admin contact information
+   - Inform finance team about upcoming renewals
+   - Coordinate payment processing in advance
+
+5. **Document**:
+   - Keep records of subscription periods
+   - Note payment history
+   - Document renewal dates
+
+#### Emergency Contacts:
+
+If you lose access unexpectedly:
+- Super Admin Email: [Your Super Admin Email]
+- Support Phone: [Support Number]
+- Emergency Contact: [Emergency Contact]
+
+:::danger Critical Warning
+After expiry + 3 days grace period, **ALL USERS** will be locked out:
+- Teachers cannot enter grades
+- Students cannot access assignments
+- Parents cannot view reports
+- You cannot access any school data
+
+Plan your renewals carefully to avoid disruption to your school operations!
+:::
+
+### Understanding the 3-Day Grace Period
+
+**Why Only 3 Days?**
+The grace period is designed for payment processing time, not as an extension of your subscription. 
+
+**What It's For**:
+- ✅ Processing online payments
+- ✅ Bank transfer confirmation
+- ✅ Payment gateway delays
+- ✅ Weekend/holiday consideration
+
+**What It's NOT For**:
+- ❌ Free extended trial
+- ❌ Delaying payment decisions
+- ❌ Budget approval time
+- ❌ Negotiating new terms
+
+**Recommended Action**: Always renew **before** your expiry date. Don't plan to use the grace period.
+
+### Frequently Asked Questions
+
+**Q: Will I lose my data if I don't renew immediately?**  
+A: No. Your data is preserved indefinitely. Only access is blocked.
+
+**Q: Can I restore access after termination?**  
+A: Yes. Contact Super Admin or make payment to restore access immediately.
+
+**Q: How will I know when my subscription is expiring?**  
+A: A warning appears on your dashboard 14 days before expiry. No emails are sent automatically.
+
+**Q: What happens to students during access termination?**  
+A: Students cannot login to the app. Teachers cannot enter grades. All users are blocked.
+
+**Q: Is there a way to get email reminders?**  
+A: Currently, the system doesn't send automated email reminders. Check your dashboard regularly.
+
+**Q: Can I export my data before canceling?**  
+A: Yes. Use the data export features before your subscription ends.
+
+:::info For Complete Details
+See the comprehensive <Link to="/guides/subscription-expiry-retention-policy">Subscription Expiry & Retention Policy Guide</Link> for technical details, timelines, and Super Admin procedures.
+:::
+
+---
+
 ## Tips for School Administrators
 
 ### Daily Tasks Checklist
