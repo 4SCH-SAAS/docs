@@ -781,7 +781,7 @@ Payslips are usually available by the end of each month. If you don't see a pays
 
 ---
 
-## <span className="heading-calls"><MessagingIcon size={18} /></span> Communicating with Parents & Students {#communicating-with-parents}
+## <span className="heading-icon"><MessagingIcon size={18} /></span> Communicating with Parents & Students {#communicating-with-parents}
 
 Good communication with parents makes your job easier. 4SCH helps you reach parents instantly.
 
