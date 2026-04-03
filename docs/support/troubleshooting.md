@@ -9,7 +9,7 @@ keywords: [troubleshooting, fix errors, login problems, payment failed, exam iss
 # Comprehensive Troubleshooting Guide
 
 :::info Quick Help
-**Need immediate help?** Check the [Before Contacting Support](#part-10-before-contacting-support---master-checklist) checklist first. Most issues can be resolved in minutes!
+**Need immediate help?** Check the [Before Contacting Support](#before-contacting-support) checklist first. Most issues can be resolved in minutes!
 :::
 
 ---

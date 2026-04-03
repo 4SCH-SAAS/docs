@@ -10,7 +10,7 @@ keywords: [FAQ, frequently asked questions, help, login issues, password reset, 
 
 Access & Accounts:
 - I forgot my password. What do I do?
-  - **Students:** Use the self-service password reset on the mobile app or web portal at [ngs.4sch.com](https://ngs.4sch.com). You'll need your School Code, GR Number, and Date of Birth (dd-mm-yyyy format). See the [Student Guide](/guides/student-guide#forgot-your-password) for details.
+  - **Students:** Use the self-service password reset on the mobile app or web portal at [ngs.4sch.com](https://ngs.4sch.com). You'll need your School Code, GR Number, and Date of Birth (dd-mm-yyyy format). See the Student Guide for details.
   - **Teachers/Parents/Staff:** Use "Forgot Password" on the sign-in page. If SSO is enabled, reset via your identity provider or contact the school office.
 - How do students access 4SCH?
   - Students can access 4SCH via the web portal at [https://ngs.4sch.com](https://ngs.4sch.com) or through the mobile app (Android/iOS). Both provide full access to assignments, grades, timetables, and study materials.
