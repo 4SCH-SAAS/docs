@@ -4,12 +4,12 @@
 ---
 
 ## 📖 TABLE OF CONTENTS
-1. [Daily Tasks](#daily-tasks)
-2. [Taking Online Exams](#taking-online-exams)
-3. [Viewing Results & Report Cards](#viewing-results--report-cards)
-4. [Contacting Teachers](#contacting-teachers)
-5. [Common Questions](#common-questions)
-6. [Troubleshooting](#troubleshooting-tips)
+1. [Daily Tasks](#-daily-tasks)
+2. [Taking Online Exams](#-taking-online-exams)
+3. [Viewing Results & Report Cards](#-viewing-results--report-cards)
+4. [Contacting Teachers](#-contacting-teachers)
+5. [Common Questions](#-common-questions)
+6. [Troubleshooting](#-troubleshooting-tips)
 
 ---
 
