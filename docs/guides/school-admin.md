@@ -144,6 +144,30 @@ Subjects are the courses taught in your school.
 4. Assign teachers to each subject (see [Teacher-Subject Assignment Guide](teacher-subject-assignment.md))
 5. Click **Save**
 
+#### Syllabus Pattern Management
+
+:::tip New in v1.9.2
+Organize and structure curriculum content with pattern-based syllabus organization for better academic planning.
+:::
+
+**Creating Syllabus Patterns:**
+
+1. Go to **Academics → Syllabus** or **Subjects → Syllabus Management**
+2. Click **Add Syllabus**
+3. Configure:
+   - **Class**: Select the class
+   - **Subject**: Choose the subject
+   - **Title**: Enter syllabus title (auto-populated as "Class - Subject")
+   - **Status**: Set as Active or Inactive
+4. Click **Submit**
+
+**Benefits:**
+- Standardize curriculum structure across classes
+- Link lessons and topics to specific syllabus patterns
+- Track syllabus completion progress
+- Generate syllabus-based reports
+- Ensure consistency in curriculum delivery
+
 ### Creating Timetables
 
 **To create a class timetable:**
@@ -194,6 +218,39 @@ If you encounter conflicts, review teacher assignments or adjust time slots.
    - **Passing Marks**
    - **Venue/Room**
 4. Click **Publish Timetable**
+
+#### Offline Exam Marks with Draft and Publish
+
+:::tip New in v1.9.2
+Offline exam marks now support **Draft and Publish** workflow for better control over marks release and enhanced security for online exams.
+:::
+
+**Using Draft and Publish for Offline Exam Marks:**
+
+1. Go to **Exams → Upload Marks**
+2. Select class, exam, and subject
+3. Choose **Status**:
+   - **Draft**: Save marks without making them visible to students/parents
+   - **Published**: Make marks visible to students and parents
+4. Enter marks for each student
+5. Click **Submit**
+
+**Benefits of Draft Status:**
+- Review and verify marks before publication
+- Collaborative marking with multiple teachers
+- Correct errors before students see results
+- Control timing of results release
+- Maintain academic integrity
+
+**Security Enhancements:**
+- Online exams now include screen recording and screenshot protection
+- Fee payment screens include screenshot protection
+- Enhanced data security during sensitive operations
+
+For detailed exam workflows, see:
+- [Online Exams Guide](/guides/online-exams)
+- [Offline Exams Guide](/guides/offline-exams)
+- [Exams Master Index](/guides/exams-master-index)
 
 ---
 
@@ -417,6 +474,14 @@ Generate comprehensive fee reports:
    - Students needing attention
 4. Generate report cards
 
+:::tip Enhanced in v1.9.2
+Reports feature improved UI/UX with:
+- Clearer data presentation and better navigation
+- Session year filtering (view historical data without changing active session)
+- Enhanced student and teacher report interfaces
+- Improved route vehicle reports with better filtering options
+:::
+
 ### Financial Reports
 
 **Fee Collection Summary:**
@@ -453,7 +518,7 @@ For detailed expense tracking and categorization, use the dedicated [Expense Man
 
 ## <span className="heading-icon"><SecurityIcon size={18} /></span> System Settings {#system-settings}
 
-### School Profile
+### School Profile & General Settings {#general-settings}
 
 Update your school's information:
 
@@ -467,6 +532,36 @@ Update your school's information:
    - **Website**
    - **School Code**
 3. Click **Save**
+
+#### Custom Fields in General Settings
+
+:::tip New in v1.9.1
+School custom fields have been restored and relocated to **General Settings** for better organization and easier access.
+:::
+
+**Setting Up Custom Fields:**
+
+1. Go to **Settings → General Settings**
+2. Scroll to **Custom Fields** section
+3. Click **Add Custom Field**
+4. Configure:
+   - **Field Name**: Give your field a descriptive name
+   - **Field Type**: Text, Number, Date, Dropdown, etc.
+   - **Required**: Make field mandatory or optional
+   - **Visibility**: Control who can see this field
+5. Click **Save**
+
+**Use Cases:**
+- School registration number
+- Affiliation details
+- Custom school identifiers
+- Regional or district-specific information
+- Accreditation data
+
+**Managing Custom Field Data:**
+- Values are captured during school setup and can be edited anytime
+- Custom fields appear in relevant reports and exports
+- Use for compliance and reporting requirements
 
 ### Role & Permissions
 
@@ -595,6 +690,10 @@ Configure system notifications:
 
 ## Transportation Management
 
+:::tip New in v1.9.2
+Enhanced with comprehensive student and teacher transportation attendance reporting for better route tracking and compliance monitoring.
+:::
+
 ### Setting Up Routes
 
 1. Go to **Transportation → Routes**
@@ -612,6 +711,41 @@ Configure system notifications:
 2. Set fees per route
 3. Link to student fee structure
 4. Generate transport invoices
+
+### Transportation Attendance Reports
+
+:::tip New in v1.9.2
+Comprehensive transportation attendance reporting for students and teachers with route tracking capabilities.
+:::
+
+**Viewing Student Transportation Reports:**
+
+1. Go to **Reports → Student Reports**
+2. Select the **Transportation** tab
+3. View attendance statistics:
+   - Daily pickup/drop-off attendance
+   - Route-wise attendance summary
+   - Late pickups and absences
+   - Monthly transportation usage patterns
+4. Filter by:
+   - Date range
+   - Route/Vehicle
+   - Individual student
+5. Export reports for compliance and billing
+
+**Viewing Teacher/Driver Transportation Reports:**
+
+1. Go to **Reports → Teacher Reports** or **Staff Reports**
+2. Select the **Transportation** tab
+3. Monitor:
+   - Route attendance tracking
+   - Driver/helper attendance logs
+   - Trip completion status
+   - Route monitoring data
+4. Use for:
+   - Staff attendance verification
+   - Route efficiency analysis
+   - Compliance documentation
 
 ### Live Tracking
 
@@ -665,7 +799,34 @@ Share school photos and videos:
 
 ## Leave Management
 
-### Approving Staff Leave
+### Managing Staff Leave {#staff-leave-management}
+
+:::tip New in v1.9.1
+School Administrators can now manually create and manage leave entries for staff members, in addition to approving staff-initiated requests.
+:::
+
+#### Creating Leave for Staff Members
+
+As an administrator, you can create leave entries on behalf of staff:
+
+1. Go to **Staff → Leave Management** or **Leave → Manage Leave**
+2. Click **Add Leave**
+3. Fill in the details:
+   - **Staff Member**: Select the staff member
+   - **Leave Type**: Choose from Sick, Casual, Earned, or other configured types
+   - **From Date**: Starting date of leave
+   - **To Date**: Ending date of leave
+   - **Reason**: Enter the reason for leave
+   - **Status**: Set as Approved, Pending, or Rejected
+4. Click **Submit**
+
+**Use Cases:**
+- Recording retroactive leave entries
+- Managing leave for staff who cannot access the system
+- Administrative leave assignments
+- Bulk leave management during holidays or events
+
+#### Approving Staff Leave Requests
 
 1. Go to **Staff → Leave Requests**
 2. View pending requests
@@ -675,6 +836,13 @@ Share school photos and videos:
    - Reason
    - Leave balance
 4. **Approve** or **Reject** with comments
+
+#### Viewing Leave History
+
+- Navigate to **Staff → Leave Management** to view all leave records
+- Filter by staff member, date range, or leave type
+- Export leave reports for HR purposes
+- Monitor leave balances and patterns
 
 ---
 
