@@ -390,7 +390,7 @@ const config = {
           type: 'docsVersionDropdown',
           position: 'right',
         },
-        {href: 'https://www.4sch.com', label: 'Register School', position: 'right'},
+        {href: 'https://www.4sch.com/?openRegister=true', label: 'Register School', position: 'right'},
         {href: 'https://ng.4sch.com', label: '4SCH Home', position: 'right'},
       ],
     },
