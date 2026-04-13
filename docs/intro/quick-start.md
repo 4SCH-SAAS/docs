@@ -15,7 +15,7 @@ import Link from '@docusaurus/Link';
   - <Link to="/guides/school-admin#fee-management">Admin — Fees & finance</Link>
   - <Link to="/guides/teacher-guide#teacher-dashboard">Teacher — Dashboard</Link>
 
-This guide sets up a school in under an hour.
+This guide sets up a school in under an hour after all necessary school data are gathered.
 
 Prerequisites:
 - Your 4SCH tenant URL and Admin account

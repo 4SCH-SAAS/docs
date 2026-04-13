@@ -226,11 +226,11 @@ This protects student privacy and prevents accidental changes to important schoo
 
 Finance Officers manage all financial transactions, fee collections, and generate financial reports. They can view payment histories, create invoices, and reconcile accounts - but cannot modify student or teacher data.
 
-Librarians manage library resources, check-outs, and inventory. They track which students have borrowed materials and can generate library reports."
+Admission Officers manage enrolment of new students ensuring that all necessary records and image of new students are captures in the system.
 
 **[ON-SCREEN TEXT]**
 - "Finance Officer - Financial Management"
-- "Librarian - Resource Management"
+- "Admission Officer - Admission Management"
 
 ---
 
