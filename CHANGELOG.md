@@ -8,6 +8,56 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+---
+
+## [1.9.2] - 2026-04-13
+
+### Added
+- **Syllabus Pattern Management**: New feature to organize and structure curriculum content with pattern-based syllabus organization
+- **Transportation Attendance Reporting**: Comprehensive student and teacher transportation attendance reports for route tracking and compliance
+  - Student transportation report tab with attendance statistics
+  - Teacher transportation report tab with route monitoring capabilities
+
+### Improved
+- **Session Year Data Filtering**: Enhanced panel filtering by session year without changing the default active session, allowing historical data review
+- **Demo School Access Restrictions**: Strengthened security controls and access limitations for demonstration environments
+- **Security Enhancements**:
+  - Screen recording and screenshot protection for online exams
+  - Screenshot protection for fee payment screens
+  - Enhanced data security during sensitive operations
+- **UI/UX Enhancements**:
+  - Improved Class Subjects interface with better detail view and formatting
+  - Enhanced Student Reports with clearer data presentation
+  - Enhanced Teacher Reports with improved navigation
+  - Updated Route Vehicle Reports with better filtering options
+  - Improved Assignment Submission modal with enhanced user experience
+  - Streamlined Promote Students interface for easier bulk operations
+- **Offline Exam Marks Management**: Added draft and publish workflow options for offline exam marks entry
+  - Draft status allows teachers to save work in progress
+  - Published status makes marks visible to students and parents
+  - Better control over marks release timing
+- **General Performance and Stability**: Multiple backend optimizations and bug fixes
+
+---
+
+## [1.9.1] - 2026-03-12
+
+### Added
+- **Staff Leave Management**: School Administrators can now manually create and manage leave entries for staff members
+  - Create leave requests on behalf of staff
+  - Full leave tracking and management capabilities
+  - Integration with staff attendance system
+- **School Custom Fields in General Settings**: Restored and relocated missing custom fields functionality
+  - Custom fields now available in "General Settings" section of School Admin dashboard
+  - Enhanced data capturing capabilities for school-specific information
+  - Better organization and accessibility
+
+### Technical
+- Added Reverb WebSocket server configuration for real-time features
+- Updated environment configuration with broadcasting settings
+
+---
+
 ### Fixed
 - Corrected student login credentials documentation across all files
   - Login requires: School Code, GR Number (General Roll Number), and Password

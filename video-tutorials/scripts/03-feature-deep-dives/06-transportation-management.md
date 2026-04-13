@@ -222,7 +222,25 @@ The beauty of digital payments is no cash handling, automatic reminders, and com
 
 ---
 
-## [07:15-08:45] Trip Reports & Incident Management (90 sec)
+## [07:15-08:45] Trip Reports & Attendance Tracking (90 sec)
+
+**[NEW in v1.9.2: Transportation Attendance Reports]**
+
+"Version 1.9.2 introduces comprehensive transportation attendance reports for both students and teachers."
+
+**[VISUAL]**
+- Student Transportation Reports showing:
+  - Daily pickup/drop-off attendance
+  - Route-wise attendance summaries
+  - Late pickups and absences
+  - Monthly transportation usage patterns
+- Teacher/Driver Reports showing:
+  - Route attendance tracking
+  - Driver and helper attendance logs
+  - Trip completion status
+  - Compliance monitoring data
+
+"Access these reports from **Reports → Student Reports → Transportation Tab** or **Reports → Teacher Reports → Transportation Tab**. Filter by date range, route, or individual student for detailed insights."
 
 **[VISUAL]**
 - Daily trip reports showing:

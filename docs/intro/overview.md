@@ -9,6 +9,7 @@ keywords: [4SCH documentation, school management system Nigeria, teacher guide, 
 
 import Link from '@docusaurus/Link';
 import CardGrid from '@site/src/components/CardGrid';
+import ComplianceBadges from '@site/src/components/ComplianceBadges';
 
 import DashboardIcon from '@site/src/components/icons/Dashboard';
 import AcademicIcon from '@site/src/components/icons/Academic';
@@ -160,7 +161,17 @@ It supports:
 - **Fee management & online payments**
 - **Messaging & announcements**
 - **Reports & insights**
+- **Online and Offline Exams**
+- **Payroll Management**
+- **Transportation Magment**
+- **School Website Management (addon)**
 
-:::tip
-These docs focus on **how to use 4SCH** in daily school operations. For platform-level technical details, refer to the eSchool SaaS documentation.
-:::
+---
+
+<ComplianceBadges />
+
+---
+
+## Get Started Today
+
+Ready to streamline your school operations? Explore our **[Quick Start Guide](/intro/quick-start)** to get up and running.

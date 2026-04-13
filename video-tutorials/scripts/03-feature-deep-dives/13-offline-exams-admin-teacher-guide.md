@@ -268,6 +268,10 @@ Computer Science: March 24, 10 AM - 12 PM, 50 marks, passing 18"
 
 "Go to **Exams**, then **Mark Entry** or **Offline Exams**, select your exam, and click **Enter Marks**."
 
+**[NEW in v1.9.2]**
+
+"Notice you now have a **Status** dropdown with two options: **Draft** and **Published**. This gives you better control over when marks become visible to students and parents. Select **Draft** while entering marks so you can review everything before making it visible."
+
 **[Screen: Select subject dropdown]**
 
 "First, select your subject from the dropdown. Let's choose 'Mathematics'."
@@ -351,7 +355,11 @@ Computer Science: March 24, 10 AM - 12 PM, 50 marks, passing 18"
 
 **[Screen: Confirmation message]**
 
-"Success message: 'Marks saved successfully for Mathematics - 30 students.' Done!"
+"Success message: 'Marks saved as Draft for Mathematics - 30 students.' Your marks are saved but not yet visible to students or parents."
+
+**[NEW in v1.9.2: Publishing Marks]**
+
+"Once you've reviewed and verified all marks, you can publish them. Go back to **Mark Entry**, change the **Status** from **Draft** to **Published**, and click **Save**. Now students and parents can see the marks. This workflow prevents errors from reaching students and gives you control over release timing."
 
 ---
 

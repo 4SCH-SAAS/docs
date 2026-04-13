@@ -47,7 +47,9 @@ Use the search bar at the top to quickly find any feature."
 
 Upload your school logo - this appears on report cards and parent communications. Enter your school name, address, contact numbers, email, and website. Set your school code for official documentation.
 
-Add your school motto and principal's information. These details automatically populate on certificates and official documents. Click Save when complete."
+Add your school motto and principal's information. **New in version 1.9.1**: You can now add custom fields in General Settings to capture school-specific information like registration numbers, affiliation details, or any other data unique to your institution.
+
+These details automatically populate on certificates and official documents. Click Save when complete."
 
 **[CHAPTER END MARKER]**
 
@@ -84,7 +86,9 @@ Enter the subject name - Mathematics, English, Physics, etc. Select the subject 
 
 Assign subjects to specific classes. For instance, Mathematics might be assigned to all classes, while Advanced Chemistry only to Class 11 and 12 Science sections.
 
-Set subject codes for report cards - MATH101, ENG201, etc. Add the maximum marks if standardized across all exams."
+Set subject codes for report cards - MATH101, ENG201, etc. Add the maximum marks if standardized across all exams.
+
+**New in version 1.9.2**: You can now create syllabus patterns to organize your curriculum structure. Go to Syllabus Management, select the class and subject, and the system creates a structured pattern. This helps standardize curriculum delivery and track completion progress across all sections."
 
 ### [08:00-09:00] Subject-Teacher Assignment
 **[VISUAL]** Assigning teachers to subjects
@@ -149,6 +153,8 @@ Fill in personal details and select their role. Each role comes with predefined 
 
 Customize permissions if needed from the Permissions tab. Create login credentials and save.
 
+**New in version 1.9.1**: As a school admin, you can now manually create and manage leave entries for all staff members. Go to Staff → Leave Management → Add Leave, select the staff member, choose the leave type, set dates, and approve immediately. This is perfect for recording retroactive leave or managing leave for staff who can't access the system themselves.
+
 Parents are created automatically when you add students. To manage them, go to Parents → All Parents. Here you can edit contact information or reset forgotten passwords."
 
 **[CHAPTER END MARKER]**
@@ -208,6 +214,8 @@ Enable the gateway and save. Parents can now pay fees directly from the parent a
 
 Filter by class, section, and date range. View attendance percentages, absent students, and trends over time. Export as PDF or Excel for presentations or records.
 
+**New in version 1.9.2**: Enhanced UI/UX improvements make reports clearer and easier to navigate. You can now filter data by session year without changing your default active session - perfect for year-over-year comparisons and historical analysis. Transportation attendance reports are now available for both students and teachers, showing pickup and drop-off patterns, route-wise attendance, and compliance monitoring.
+
 Fee collection reports show total collected vs pending by class, payment method breakdown, and defaulter lists. Academic reports display exam results, subject-wise performance, and student rankings.
 
 All reports can be scheduled to generate automatically and email to you weekly or monthly."
@@ -225,6 +233,8 @@ Monthly, generate financial reports, review academic performance trends, backup 
 **[VISUAL]** Security settings overview
 **[VOICEOVER]:**  
 "Protect your school data with these best practices. Use strong passwords and change them quarterly. Enable two-factor authentication from Settings → Security.
+
+**New in version 1.9.2**: Enhanced security features now protect online exams with screen recording and screenshot prevention. Fee payment screens also have screenshot protection to safeguard financial data. Demo school access has been restricted with additional security controls.
 
 Assign role-based permissions carefully - teachers shouldn't access fee records, accountants shouldn't edit academic data. Review user activity logs monthly to spot unusual access.
 
