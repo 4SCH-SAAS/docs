@@ -161,10 +161,10 @@ It supports:
 - **Fee management & online payments**
 - **Messaging & announcements**
 - **Reports & insights**
-
-:::tip
-These docs focus on **how to use 4SCH** in daily school operations. For platform-level technical details, refer to the eSchool SaaS documentation.
-:::
+- **Online and Offline Exams**
+- **Payroll Management**
+- **Transportation Magment**
+- **School Website Management (addon)**
 
 ---
 
@@ -174,4 +174,4 @@ These docs focus on **how to use 4SCH** in daily school operations. For platform
 
 ## Get Started Today
 
-Ready to streamline your school operations? **[Contact our sales team](#)** via live chat or explore our **[Quick Start Guide](/intro/quick-start)** to get up and running.
+Ready to streamline your school operations? Explore our **[Quick Start Guide](/intro/quick-start)** to get up and running.
