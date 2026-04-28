@@ -483,9 +483,9 @@ Download the Google Analytics app to monitor on the go:
 
 Your documentation analytics are working well if:
 
-✅ **High engagement time** (>2 minutes average)  
-✅ **Deep scroll rates** (>50% reach 75% depth)  
-✅ **Low bounce rate** (<40% for guides)  
+✅ **High engagement time** (more than 2 minutes average)  
+✅ **Deep scroll rates** (more than 50% reach 75% depth)  
+✅ **Low bounce rate** (less than 40% for guides)  
 ✅ **Active code copying** (indicates useful examples)  
 ✅ **Low support contact rate** (self-service working)  
 ✅ **Increasing return visits** (valuable resource)

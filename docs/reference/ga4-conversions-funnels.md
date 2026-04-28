@@ -57,7 +57,7 @@ These events are automatically tracked and ready to mark as conversions:
 ### 5. Self-Service Success
 **Event**: Custom event `self_service_success`
 
-**What it means**: User spent >2min, scrolled >75%, no support contact  
+**What it means**: User spent more than 2min, scrolled more than 75%, no support contact  
 **Goal**: 80%+ self-service rate  
 **Action if low**: Improve content clarity
 
@@ -139,7 +139,7 @@ Funnels help you understand the user journey and identify drop-off points.
 **Steps:**
 1. **Landing** → Land on any page
 2. **Discover** → View getting-started or quick-start
-3. **Engage** → Scroll >50%
+3. **Engage** → Scroll more than 50%
 4. **Action** → code_copy OR file_download
 5. **Success** → Return visit within 7 days
 
@@ -195,7 +195,7 @@ Funnels help you understand the user journey and identify drop-off points.
 1. **Problem** → View troubleshooting/FAQ
 2. **Search** → Open search OR expand FAQ
 3. **Explore** → View 2+ related pages
-4. **Resolution** → Engage >2min, no support contact
+4. **Resolution** → Engage more than 2min, no support contact
 5. **Validation** → Return within 7 days (successful solution)
 
 **Setup:**
@@ -215,7 +215,7 @@ Funnels help you understand the user journey and identify drop-off points.
 
 **Steps:**
 1. **Learn** → View guide with code examples
-2. **Review** → Scroll to code section (>50%)
+2. **Review** → Scroll to code section (more than 50%)
 3. **Copy** → Copy code snippet
 4. **Research** → View related reference docs
 5. **Return** → Come back for more (successful implementation)
@@ -236,7 +236,7 @@ Funnels help you understand the user journey and identify drop-off points.
 **Steps:**
 1. **Discover** → Land on page with video
 2. **Start** → Play video
-3. **Engage** → Watch >50%
+3. **Engage** → Watch more than 50%
 4. **Complete** → Watch to end
 5. **Apply** → Visit related guide/reference
 
