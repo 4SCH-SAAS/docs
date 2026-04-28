@@ -376,7 +376,7 @@ gtag('event', 'doc_referral_conversion', {
 
 ## 🎯 Optimization Strategies
 
-### If Guide Completion is Low (<60%)
+### If Guide Completion is Low (Less than 60%)
 
 **Diagnose:**
 - Check scroll depth drop-off point
@@ -390,7 +390,7 @@ gtag('event', 'doc_referral_conversion', {
 4. Improve formatting
 5. Remove unnecessary content
 
-### If Code Copy Rate is Low (<30%)
+### If Code Copy Rate is Low (Less than 30%)
 
 **Diagnose:**
 - Are examples visible?
@@ -404,7 +404,7 @@ gtag('event', 'doc_referral_conversion', {
 4. Provide working examples
 5. Explain code context better
 
-### If Self-Service Rate is Low (<80%)
+### If Self-Service Rate is Low (Less than 80%)
 
 **Diagnose:**
 - High support contact rate

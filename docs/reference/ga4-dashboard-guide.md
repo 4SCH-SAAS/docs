@@ -385,13 +385,13 @@ Learn how to create powerful dashboards and reports to understand how users inte
 
 ## 🚀 Action Items from Analytics
 
-### If bounce rate is high (>70%)
+### If bounce rate is high (Greater than 70%)
 - ❗ Review page content quality
 - ❗ Improve page load speed
 - ❗ Add better internal links
 - ❗ Check for broken links
 
-### If scroll depth is low (<50%)
+### If scroll depth is low (Less than 50%)
 - ❗ Content too long or complex
 - ❗ Add table of contents
 - ❗ Break into smaller sections
