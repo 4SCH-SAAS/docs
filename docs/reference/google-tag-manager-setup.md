@@ -209,7 +209,7 @@ module.exports.plugins.push(function(context, options) {
 
 1. **Trigger Type**: Click - All Elements
 2. **This trigger fires on**: Some Clicks
-3. **Condition**: 
+3. **Condition**:
    - Click Element matches CSS selector `.DocSearch` OR
    - Click Element matches CSS selector `[class*="search"]`
 4. **Save** as "Click - Search"

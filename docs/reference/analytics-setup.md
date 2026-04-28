@@ -207,14 +207,14 @@ console.log('gtag function:', typeof window.gtag);
 ### Common Issues
 
 **Issue**: Events not appearing in GA4  
-**Solution**: 
+**Solution**:
 - Check browser console for errors
 - Verify gtag script loaded successfully
 - Wait 24-48 hours for data to appear in non-realtime reports
 - Check Realtime reports for immediate verification
 
 **Issue**: Duplicate events  
-**Solution**: 
+**Solution**:
 - Ensure GA4 is only initialized once
 - Check for multiple gtag script tags
 - Verify no browser extensions are interfering

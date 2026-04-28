@@ -219,7 +219,7 @@ Learn how to create powerful dashboards and reports to understand how users inte
 **Setup:**
 1. **Explore** → **Free form**
 2. **Dimensions**: Page path
-3. **Metrics**: 
+3. **Metrics**:
    - Views (high)
    - Average engagement time (low)
    - Scroll depth 100% (low)
