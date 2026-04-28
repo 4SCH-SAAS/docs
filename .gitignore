@@ -5,4 +5,7 @@ build/
 .php_code/
 .docusaurus/
 .env
+video-tutorials/raw-footage/
+video-tutorials/final-videos/
+video-tutorials/production-assets/
 PHP_CODE/

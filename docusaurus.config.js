@@ -12,6 +12,249 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenAnchors: 'throw',
   headTags: [
+    // Google Analytics
+    {
+      tagName: 'script',
+      attributes: {
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-9DY20V8FQD',
+        async: 'async',
+      },
+    },
+    {
+      tagName: 'script',
+      attributes: {},
+      innerHTML: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        // Configure GA4 with enhanced measurement
+        gtag('config', 'G-9DY20V8FQD', {
+          'send_page_view': true,
+          'anonymize_ip': true,
+          'cookie_flags': 'SameSite=None;Secure',
+          'custom_map': {
+            'dimension1': 'user_role',
+            'dimension2': 'documentation_section',
+            'dimension3': 'guide_type'
+          }
+        });
+        
+        // Track documentation-specific events
+        document.addEventListener('DOMContentLoaded', function() {
+          // Track guide section views
+          const pathParts = window.location.pathname.split('/');
+          if (pathParts.includes('guides')) {
+            gtag('event', 'guide_view', {
+              'guide_type': pathParts[pathParts.indexOf('guides') + 1] || 'unknown',
+              'page_path': window.location.pathname
+            });
+          }
+          
+          // Track search usage
+          document.addEventListener('click', function(e) {
+            if (e.target.closest('.DocSearch') || e.target.closest('[class*="search"]')) {
+              gtag('event', 'search_open', {
+                'event_category': 'engagement',
+                'event_label': 'documentation_search'
+              });
+            }
+          });
+          
+          // Track external link clicks
+          document.addEventListener('click', function(e) {
+            const link = e.target.closest('a');
+            if (link && link.hostname !== window.location.hostname) {
+              gtag('event', 'click', {
+                'event_category': 'outbound',
+                'event_label': link.href,
+                'transport_type': 'beacon'
+              });
+            }
+          });
+          
+          // Track code snippet copies
+          document.addEventListener('click', function(e) {
+            if (e.target.closest('button[class*="copy"]') || e.target.closest('.copyButton')) {
+              gtag('event', 'code_copy', {
+                'event_category': 'engagement',
+                'event_label': 'code_snippet_copied'
+              });
+            }
+          });
+          
+          // Track download clicks
+          document.addEventListener('click', function(e) {
+            const link = e.target.closest('a');
+            if (link && (link.href.includes('/download') || link.download)) {
+              gtag('event', 'file_download', {
+                'event_category': 'downloads',
+                'event_label': link.href,
+                'file_name': link.download || link.href.split('/').pop()
+              });
+            }
+          });
+          
+          // Track video interactions
+          document.addEventListener('play', function(e) {
+            if (e.target.tagName === 'VIDEO') {
+              gtag('event', 'video_start', {
+                'event_category': 'video',
+                'event_label': e.target.src || e.target.currentSrc || 'embedded_video',
+                'video_title': e.target.title || 'untitled'
+              });
+            }
+          }, true);
+          
+          document.addEventListener('pause', function(e) {
+            if (e.target.tagName === 'VIDEO') {
+              const percentWatched = Math.round((e.target.currentTime / e.target.duration) * 100);
+              gtag('event', 'video_pause', {
+                'event_category': 'video',
+                'event_label': e.target.src || e.target.currentSrc,
+                'value': percentWatched
+              });
+            }
+          }, true);
+          
+          document.addEventListener('ended', function(e) {
+            if (e.target.tagName === 'VIDEO') {
+              gtag('event', 'video_complete', {
+                'event_category': 'video',
+                'event_label': e.target.src || e.target.currentSrc,
+                'video_title': e.target.title || 'untitled'
+              });
+            }
+          }, true);
+          
+          // Track form interactions
+          document.addEventListener('submit', function(e) {
+            const form = e.target;
+            if (form.tagName === 'FORM') {
+              gtag('event', 'form_submit', {
+                'event_category': 'forms',
+                'event_label': form.id || form.name || 'unnamed_form',
+                'form_destination': form.action || window.location.href
+              });
+            }
+          });
+          
+          // Track contact support interactions
+          document.addEventListener('click', function(e) {
+            const link = e.target.closest('a');
+            if (link && (link.href.includes('contact') || link.href.includes('support'))) {
+              gtag('event', 'contact_support', {
+                'event_category': 'support',
+                'event_label': link.href,
+                'page_location': window.location.pathname
+              });
+            }
+          });
+          
+          // Track scroll depth (25%, 50%, 75%, 100%)
+          let scrollDepths = {25: false, 50: false, 75: false, 100: false};
+          let ticking = false;
+          
+          window.addEventListener('scroll', function() {
+            if (!ticking) {
+              window.requestAnimationFrame(function() {
+                const scrollPercent = Math.round(
+                  ((window.scrollY + window.innerHeight) / document.documentElement.scrollHeight) * 100
+                );
+                
+                [25, 50, 75, 100].forEach(function(depth) {
+                  if (scrollPercent >= depth && !scrollDepths[depth]) {
+                    scrollDepths[depth] = true;
+                    gtag('event', 'scroll_depth', {
+                      'event_category': 'engagement',
+                      'event_label': depth + '%',
+                      'value': depth,
+                      'page_path': window.location.pathname
+                    });
+                  }
+                });
+                
+                ticking = false;
+              });
+              ticking = true;
+            }
+          });
+          
+          // Track time on page (after 10, 30, 60, 120 seconds)
+          const timeMarkers = [10, 30, 60, 120];
+          timeMarkers.forEach(function(seconds) {
+            setTimeout(function() {
+              gtag('event', 'time_on_page', {
+                'event_category': 'engagement',
+                'event_label': seconds + '_seconds',
+                'value': seconds,
+                'page_path': window.location.pathname
+              });
+            }, seconds * 1000);
+          });
+          
+          // Track navigation clicks (sidebar, navbar, footer)
+          document.addEventListener('click', function(e) {
+            const link = e.target.closest('a');
+            if (link && link.hostname === window.location.hostname) {
+              let navType = 'content';
+              
+              if (link.closest('nav') || link.closest('[class*="navbar"]')) {
+                navType = 'navbar';
+              } else if (link.closest('aside') || link.closest('[class*="sidebar"]')) {
+                navType = 'sidebar';
+              } else if (link.closest('footer')) {
+                navType = 'footer';
+              } else if (link.closest('[class*="toc"]') || link.closest('[class*="TableOfContents"]')) {
+                navType = 'table_of_contents';
+              }
+              
+              gtag('event', 'navigation_click', {
+                'event_category': 'navigation',
+                'event_label': navType,
+                'link_text': link.innerText.substring(0, 50),
+                'link_url': link.href
+              });
+            }
+          });
+          
+          // Track interactive diagram usage
+          document.addEventListener('click', function(e) {
+            if (e.target.closest('[class*="mermaid"]') || 
+                e.target.closest('iframe[src*="interactive-diagrams"]')) {
+              gtag('event', 'diagram_interaction', {
+                'event_category': 'engagement',
+                'event_label': 'interactive_diagram',
+                'page_path': window.location.pathname
+              });
+            }
+          });
+          
+          // Track FAQ expansions
+          document.addEventListener('click', function(e) {
+            const details = e.target.closest('details');
+            if (details) {
+              gtag('event', 'faq_expand', {
+                'event_category': 'engagement',
+                'event_label': details.querySelector('summary')?.innerText?.substring(0, 100) || 'unknown',
+                'page_path': window.location.pathname
+              });
+            }
+          });
+          
+          // Track "Back to top" clicks
+          document.addEventListener('click', function(e) {
+            const link = e.target.closest('a');
+            if (link && (link.href.includes('#top') || link.getAttribute('aria-label')?.toLowerCase().includes('back to top'))) {
+              gtag('event', 'back_to_top', {
+                'event_category': 'navigation',
+                'scroll_position': window.scrollY
+              });
+            }
+          });
+        });
+      `,
+    },
     {
       tagName: 'meta',
       attributes: {
