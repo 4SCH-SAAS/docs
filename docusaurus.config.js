@@ -16,12 +16,13 @@ const config = {
     {
       tagName: 'script',
       attributes: {
-        async: true,
         src: 'https://www.googletagmanager.com/gtag/js?id=G-9DY20V8FQD',
+        async: 'async',
       },
     },
     {
       tagName: 'script',
+      attributes: {},
       innerHTML: `
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
