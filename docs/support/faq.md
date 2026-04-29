@@ -34,6 +34,8 @@ Grades:
   - Yes. Define numeric or letter scales and map to transcripts.
 
 Continuous Assessment (CA):
+- What's the difference between Terms and Semesters?
+  - **Semesters (Academic Periods)** are for organizing subjects, lessons, and schedules (found under Academic Settings). **Terms (Exam Periods)** are for organizing exams and CA calculations (found under Exam Management). Due to the multi-tenant architecture, both are needed. Create Exam Periods that match your Academic Periods. See [Terms vs Semesters explanation](/guides/continuous-assessment#common-questions).
 - What is the CA system?
   - The Continuous Assessment system allows schools to configure progressive evaluation with weighted scoring (e.g., CA1 20% + CA2 20% + Exam 60%). See the [CA System Guide](/guides/continuous-assessment) for complete details.
 - How do I configure CA for my exam?
