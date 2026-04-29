@@ -3,6 +3,28 @@ sidebar_position: 12
 title: Continuous Assessment (CA) System
 description: Complete guide to the Continuous Assessment system in 4SCH - configure weighted scoring, manage CA types, and track student progress across terms and sessions.
 keywords: [continuous assessment, CA system, weighted scoring, term total, session cumulative, exam weightage, CA1, CA2, assessment management, progressive evaluation]
+help_keys:
+  term_exams:
+    intro: "Term Exams organize your assessments and CA calculations. Create one Term Exam for each Academic Period in your school year."
+    name: "Give it a clear name like 'Term 1 Exam' or 'First Term Exam'. For best results, use the same name as your matching Academic Period."
+    session_year: "Select the current academic session this Term Exam belongs to."
+    start_date: "When this assessment period begins. This should align with your Academic Period."
+    end_date: "When this assessment period ends. Must be after the start date."
+    school: "The school this Term Exam belongs to. Auto-filled to your school."
+    linked_exams: "Number of exams currently linked to this Term Exam. Term Exams with linked exams cannot be deleted."
+  ca_config:
+    intro: "Configure how Continuous Assessment marks are weighted for this exam. Total weightage must equal exactly 100%."
+    ca_type: "Type of continuous assessment (CA1, CA2, CA3, etc.). Each represents a separate assessment opportunity."
+    weightage: "Percentage weight (0-100) this assessment contributes to the term total. All weightages must sum to 100%."
+    exam_weightage: "Percentage weight of the final exam component. Together with CA weightages, must total exactly 100%."
+    total_validation: "The system requires all weightages (CA1 + CA2 + ... + Exam) to add up to exactly 100%. Adjust values until total shows 100%."
+  ca_marks:
+    intro: "Enter marks for each assessment type (CA1, CA2, Exam) separately. Each type contributes its weighted score to the term total."
+    ca_type_select: "Select which assessment type you're entering marks for. Submit each type separately."
+    obtained_marks: "Marks the student actually scored. Must be less than or equal to total marks."
+    total_marks: "Maximum possible marks for this assessment."
+    draft: "Save as Draft to continue editing later. Marks won't be visible to students until published."
+    publish: "Publish makes the marks visible to students and parents immediately."
 ---
 
 # Continuous Assessment (CA) System
