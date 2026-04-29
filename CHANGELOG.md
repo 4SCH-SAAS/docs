@@ -8,6 +8,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+- **Continuous Assessment (CA) System**: Complete progressive evaluation framework with weighted scoring
+  - Configure custom CA types (CA1, CA2, CA3, etc.) with flexible weightages per exam
+  - Automated weighted score calculations (e.g., CA1 20% + CA2 20% + Exam 60%)
+  - Term total computation with weighted component scores
+  - Session cumulative average tracking across all terms
+  - Dual ranking system (term position and session position)
+  - Terms management for organizing exams into academic periods
+  - Enhanced PDF report cards with complete CA breakdown
+  - Real-time validation ensuring weightages total 100%
+  - Draft and publish workflow for CA marks entry
+  - Backward compatible with existing exams (works with or without CA configuration)
+  - Comprehensive CA system documentation and guides
+
 ---
 
 ## [1.9.2] - 2026-04-13

@@ -83,6 +83,29 @@ Comprehensive documentation for managing all types of exams in 4SCH - from digit
 
 ---
 
+### Continuous Assessment (CA) System
+
+**Main Guides:**
+- **<Link to="/guides/continuous-assessment">Complete CA System Guide</Link>** - Progressive evaluation with weighted scoring
+  - For Administrators: Configuring CA types, managing terms, publishing CA-based results
+  - For Teachers: Entering CA marks (CA1, CA2, Exam), understanding weighted calculations
+  - For Students: Understanding CA scores, session cumulative, term vs session position
+  - For Parents: Monitoring CA progress, understanding the report card
+
+**Key Features:**
+- Flexible CA configuration (CA1, CA2, CA3, etc.)
+- Automated weighted calculations
+- Term and session management
+- Dual ranking system
+- Enhanced PDF reports with CA breakdown
+
+**Visual Resources:**
+- Term total calculation examples
+- Session cumulative tracking
+- Weightage configuration walkthroughs
+
+---
+
 ## 🎯 By User Role
 
 ### For School Administrators
@@ -95,6 +118,8 @@ Comprehensive documentation for managing all types of exams in 4SCH - from digit
 - Creating exam structures
 - Building question banks (online)
 - Creating timetables (offline)
+- <Link to="/guides/continuous-assessment#managing-terms">Managing academic terms</Link>
+- <Link to="/guides/continuous-assessment#configuring-ca-for-exams">Configuring CA weightages</Link>
 - Managing mark entry
 - Publishing results
 - Generating reports
@@ -115,6 +140,7 @@ Comprehensive documentation for managing all types of exams in 4SCH - from digit
 - Building question banks
 - Creating exams
 - Adding questions
+- <Link to="/guides/continuous-assessment#entering-ca-marks">Entering CA marks (CA1, CA2, Exam)</Link>
 - Entering marks
 - Viewing results
 - Analyzing performance

@@ -33,6 +33,22 @@ Grades:
 - Can we customize grade scales?
   - Yes. Define numeric or letter scales and map to transcripts.
 
+Continuous Assessment (CA):
+- What is the CA system?
+  - The Continuous Assessment system allows schools to configure progressive evaluation with weighted scoring (e.g., CA1 20% + CA2 20% + Exam 60%). See the [CA System Guide](/guides/continuous-assessment) for complete details.
+- How do I configure CA for my exam?
+  - Navigate to Exams → View Exams → Configure CAs. Add CA types with weightages ensuring the total equals 100%. See [Configuring CA](/guides/continuous-assessment#configuring-ca-for-exams).
+- Why can't I save my CA configuration?
+  - The total weightage must equal exactly 100%. Check that CA weightages + Exam weightage = 100%. The system shows real-time validation.
+- How do I enter marks for CA1, CA2, and Exam separately?
+  - Go to Exams → Submit Marks, select your exam and subject, then choose the CA type (CA1, CA2, or Exam) from the dropdown. Enter marks for each type separately. See [Entering CA Marks](/guides/continuous-assessment#entering-ca-marks).
+- What's the difference between term total and session cumulative?
+  - **Term Total** is the weighted sum of CA1 + CA2 + Exam for a single term. **Session Cumulative** is the average of all term totals across the entire academic session. See [Understanding Session Cumulative](/guides/continuous-assessment#understanding-session-cumulative).
+- Can I use CA for some exams and not others?
+  - Yes! The CA system is completely optional. Exams without CA configuration work with traditional marks entry. The system is backward compatible.
+- Where can students see their CA breakdown?
+  - Students can view CA breakdown on the web portal under Results. The mobile app shows term totals. PDF report cards display complete CA breakdown with individual component scores.
+
 Billing:
 - Which payment methods are supported?
   - Depends on configured gateway. Typically cards, bank transfer, and local options.
