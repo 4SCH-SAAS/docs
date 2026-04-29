@@ -780,15 +780,15 @@ The CA system includes automated weighted calculations, term and session managem
 - <Link to="/guides/session-year-calendar-setup">Session Year Setup</Link>
 
 **For Teachers:**
-- <Link to="/guides/teachers">Teacher Guide</Link>
+- <Link to="/guides/teacher-guide">Teacher Guide</Link>
 - <Link to="/guides/teacher-subject-assignment">Subject Assignment</Link>
 
 **For Students:**
-- <Link to="/guides/students">Student Guide</Link>
+- <Link to="/guides/student-guide">Student Guide</Link>
 - <Link to="/guides/offline-exams#for-students">Viewing Results</Link>
 
 **For Parents:**
-- <Link to="/guides/parents">Parent Guide</Link>
+- <Link to="/guides/parent-guide">Parent Guide</Link>
 - <Link to="/guides/offline-exams#for-parents">Monitoring Exams</Link>
 
 ---
