@@ -25,6 +25,15 @@ The Continuous Assessment (CA) system in 4SCH enables schools to implement progr
 
 ## Overview
 
+:::info Academic Periods vs Exam Periods
+**Important Distinction:** The 4SCH system has two types of periods due to its multi-tenant architecture:
+
+- **Academic Periods (Semesters)** - Located in individual school databases, used for organizing subjects, lessons, and timetables
+- **Exam Periods (Terms)** - Located in the main database, used for organizing exams and CA calculations
+
+For the CA system, you'll work with **Exam Periods (Terms)**. Best practice is to create Exam Periods that match your Academic Periods (e.g., if you have "Term 1" as an academic period, create "Term 1" as an exam period as well).
+:::
+
 ### What is Continuous Assessment?
 
 Continuous Assessment (CA) is a progressive evaluation method that:
@@ -148,10 +157,21 @@ The system validates as you type:
 ### Managing Terms
 
 :::tip New in v1.9.3
-Academic terms organize exams into logical periods, enabling session-wide performance tracking and cumulative averaging across multiple terms.
+Exam Periods (Terms) organize exams into logical periods, enabling session-wide performance tracking and cumulative averaging across multiple terms.
 :::
 
-Terms organize exams into logical academic periods.
+:::caution Terms vs Semesters (Academic Periods)
+Don't confuse **Exam Periods (Terms)** with **Academic Periods (Semesters)**:
+
+- **Academic Periods (Semesters)**: Found under Academic Settings → Manage Semesters. Used for organizing subjects, lessons, and class schedules. Stored in individual school databases.
+- **Exam Periods (Terms)**: Found under Exam Management → Manage Terms. Used for the CA system and organizing exams. Stored in the main database.
+
+**Why separate?** This is due to 4SCH's multi-tenant architecture where each school has its own database for academic data, but exam/CA data is centralized.
+
+**Best Practice:** Create Exam Periods that match your Academic Periods. If you have "Term 1" in Academic Periods, create "Term 1" in Exam Periods as well.
+:::
+
+Exam Periods (Terms) organize exams into logical academic periods for the CA system.
 
 #### Creating Terms
 
@@ -165,7 +185,7 @@ Terms organize exams into logical academic periods.
 
 #### Viewing Terms
 
-**Navigate:** Terms → View Terms
+**Navigate:** Exam & Performance → Offline Exam → Manage Terms
 
 **Features:**
 - DataTables listing with search and pagination
@@ -174,8 +194,11 @@ Terms organize exams into logical academic periods.
 - Filter by session year
 
 :::warning Cannot Delete Terms with Exams
-If a term has linked exams, you must first unlink or delete the exams before deleting the term.
+If an exam period has linked exams, you must first unlink or delete the exams before deleting the exam period.
 :::
+
+:::tip Synchronizing with Academic Periods
+When viewing your Exam Periods, ensure they align with your Academic Periods (Semesters). If you have "Term 1, Term 2, Term 3" in Academic Periods, create matching "Term 1, Term 2, Term 3" in Exam Periods.
 
 ### Configuring CA for Exams
 
@@ -597,6 +620,46 @@ The CA system includes automated weighted calculations, term and session managem
 - Traditional marks entry still available
 - PDF reports adapt based on CA configuration
 - No breaking changes to existing data
+
+---
+
+## Common Questions
+
+### Q: What's the difference between Terms and Semesters?
+
+**A:** This is a common point of confusion due to the multi-tenant architecture:
+
+**Semesters (Academic Periods):**
+- Location: Academic Settings → Manage Semesters
+- Purpose: Organizing subjects, lessons, class schedules
+- Database: Individual school databases
+- Used by: Teachers for lesson planning, subject assignment
+
+**Terms (Exam Periods):**
+- Location: Exam & Performance → Offline Exam → Manage Terms
+- Purpose: Organizing exams and CA calculations
+- Database: Main system database
+- Used by: Admins for exam configuration, CA results
+
+**Why separate?** The multi-tenant architecture requires school-specific data (subjects, lessons) to be in school databases, while exam/CA data is centralized for system-wide calculations.
+
+**What to do?** Create Exam Periods that mirror your Academic Periods. Use the same names to avoid confusion.
+
+### Q: Can I just use one or the other?
+
+**A:** No. Both are required:
+- Academic Periods (Semesters) are needed for subjects and lessons
+- Exam Periods (Terms) are needed for the CA system
+- Keep them synchronized with matching names and dates
+
+### Q: My school uses "Terms" not "Semesters"
+
+**A:** That's fine! The "Semesters" label is just a default. You can:
+- Name your Academic Periods: "Term 1", "Term 2", "Term 3"
+- Name your Exam Periods: "Term 1", "Term 2", "Term 3"
+- The system works regardless of the naming you choose
+
+The labels "Semesters" and "Terms" in the UI are just defaults - use whatever terminology your school prefers.
 
 ---
 
