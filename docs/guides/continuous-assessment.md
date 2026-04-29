@@ -25,13 +25,14 @@ The Continuous Assessment (CA) system in 4SCH enables schools to implement progr
 
 ## Overview
 
-:::info Academic Periods vs Exam Periods
-**Important Distinction:** The 4SCH system has two types of periods due to its multi-tenant architecture:
+:::info Understanding Academic Periods and Term Exams
+4SCH uses two complementary concepts to organize your school year:
 
-- **Academic Periods (Semesters)** - Located in individual school databases, used for organizing subjects, lessons, and timetables
-- **Exam Periods (Terms)** - Located in the main database, used for organizing exams and CA calculations
+- **Academic Periods (Semesters)** - Used for organizing subjects, lessons, and timetables. Many schools rename "Semester" to "Term" when they have more than two academic periods (e.g., Term 1, Term 2, Term 3).
 
-For the CA system, you'll work with **Exam Periods (Terms)**. Best practice is to create Exam Periods that match your Academic Periods (e.g., if you have "Term 1" as an academic period, create "Term 1" as an exam period as well).
+- **Term Exams (Exam Periods)** - Used for organizing exams and calculating Continuous Assessment (CA) results. Each Term Exam represents a major assessment period with its own CA configuration.
+
+**For the CA system, you'll work with Term Exams.** Best practice: create a Term Exam for each Academic Period in your school year (e.g., if you have three academic periods, create three Term Exams with matching names).
 :::
 
 ### What is Continuous Assessment?
@@ -98,18 +99,33 @@ Before setting up CA:
 
 ### Quick Setup (5 Minutes)
 
-#### Step 1: Create a Term
+#### Step 1: Create Your First Term Exam
 
-**Navigate:** Terms → Create Term
+To get started, you'll need to create a Term Exam in your school's portal.
 
-**Required Information:**
-- **Term Name** - e.g., "Term 1", "Mid-Term"
-- **Session Year** - Current academic session
-- **School** - Your school
-- **Start Date** - Term beginning date
-- **End Date** - Term ending date
+**Where to find it:** Look in the sidebar under **Exam & Performance → Offline Exam → Manage Term Exams**
 
-**Click Submit** to create the term.
+:::info Finding the Menu
+Open the sidebar menu and follow this path:
+
+- **Exam & Performance**
+  - **Offline Exam**
+    - **Manage Exam** (existing)
+    - **Manage Term Exams** ← New in v1.9.3
+:::
+
+**What you'll need to provide:**
+
+- **Term Exam Name** - Give it a clear name like "Term 1 Exam" or "First Term Exam". For best results, use the same name as your matching Academic Period.
+- **Session Year** - Select the current academic session.
+- **Start Date** - When the assessment period begins.
+- **End Date** - When the assessment period ends.
+
+**Click Submit** to save your Term Exam.
+
+:::tip Naming Best Practice
+If your school uses "Term 1, Term 2, Term 3" for Academic Periods, name your Term Exams the same way. This makes it easier for teachers, students, and parents to understand which assessment relates to which teaching period.
+:::
 
 #### Step 2: Link Exam to Term
 
@@ -154,24 +170,29 @@ The system validates as you type:
 
 ## For School Administrators
 
-### Managing Terms
+### Managing Term Exams
 
 :::tip New in v1.9.3
-Exam Periods (Terms) organize exams into logical periods, enabling session-wide performance tracking and cumulative averaging across multiple terms.
+Term Exams organize your school's exams into logical assessment periods. Each Term Exam has its own CA configuration and contributes to the session cumulative average, helping you track student performance throughout the academic year.
 :::
 
-:::caution Terms vs Semesters (Academic Periods)
-Don't confuse **Exam Periods (Terms)** with **Academic Periods (Semesters)**:
+:::note Term Exams vs Academic Periods
+You may have noticed two similar concepts in 4SCH. Here's how they work together:
 
-- **Academic Periods (Semesters)**: Found under Academic Settings → Manage Semesters. Used for organizing subjects, lessons, and class schedules. Stored in individual school databases.
-- **Exam Periods (Terms)**: Found under Exam Management → Manage Terms. Used for the CA system and organizing exams. Stored in the main database.
+- **Academic Periods (Semesters)** - These are your school's teaching periods. They organize subjects, lessons, and timetables. If your school uses "Term 1, Term 2, Term 3," you can rename Semesters to match.
 
-**Why separate?** This is due to 4SCH's multi-tenant architecture where each school has its own database for academic data, but exam/CA data is centralized.
+- **Term Exams** - These are your assessment periods. Each Term Exam represents a major examination phase (with CA1, CA2, and Final Exam) that contributes to the academic period's overall result.
 
-**Best Practice:** Create Exam Periods that match your Academic Periods. If you have "Term 1" in Academic Periods, create "Term 1" in Exam Periods as well.
+**How to use them together:**
+
+1. Create your **Academic Periods** in Academic Settings (one per teaching period)
+2. Create matching **Term Exams** in Exam Management (one per assessment period)
+3. Use the same names for clarity (e.g., "Term 1" academic period → "Term 1" exam)
+
+This separation gives you flexibility: you can have multiple Term Exams within a single Academic Period if needed, or align them one-to-one for traditional reporting.
 :::
 
-Exam Periods (Terms) organize exams into logical academic periods for the CA system.
+Term Exams organize your assessments throughout the academic year, enabling progressive evaluation through the CA system.
 
 #### Creating Terms
 
@@ -183,22 +204,34 @@ Exam Periods (Terms) organize exams into logical academic periods for the CA sys
 - Link all exams in a term to the same term record
 - Set realistic date ranges
 
-#### Viewing Terms
+#### Viewing Your Term Exams
 
-**Navigate:** Exam & Performance → Offline Exam → Manage Terms
+**Where to find it:** Sidebar → **Exam & Performance → Offline Exam → Manage Term Exams**
 
-**Features:**
-- DataTables listing with search and pagination
-- View exam count per term
-- Edit or delete terms
-- Filter by session year
+**What you can do here:**
 
-:::warning Cannot Delete Terms with Exams
-If an exam period has linked exams, you must first unlink or delete the exams before deleting the exam period.
+- See all your Term Exams in a searchable list
+- Check how many exams are linked to each Term Exam
+- Edit a Term Exam's details (name, dates)
+- Delete Term Exams you no longer need
+- Filter by session year to focus on the current academic year
+
+:::warning Before Deleting a Term Exam
+You cannot delete a Term Exam that has exams linked to it. To remove a Term Exam:
+
+1. First, reassign or delete any exams linked to it
+2. Then return to **Manage Term Exams** and delete the Term Exam
+
+This protects your historical data and prevents accidental deletion.
 :::
 
-:::tip Synchronizing with Academic Periods
-When viewing your Exam Periods, ensure they align with your Academic Periods (Semesters). If you have "Term 1, Term 2, Term 3" in Academic Periods, create matching "Term 1, Term 2, Term 3" in Exam Periods.
+:::tip Keeping Things Aligned
+Your Term Exams work best when they match your Academic Periods. Take a moment to compare your two lists:
+
+- **Academic Periods**: Term 1, Term 2, Term 3
+- **Term Exams**: Term 1 Exam, Term 2 Exam, Term 3 Exam
+
+When the names align, teachers, students, and parents can easily understand how exams relate to teaching periods.
 
 ### Configuring CA for Exams
 
@@ -625,41 +658,56 @@ The CA system includes automated weighted calculations, term and session managem
 
 ## Common Questions
 
-### Q: What's the difference between Terms and Semesters?
+### Q: What's the difference between Academic Periods and Term Exams?
 
-**A:** This is a common point of confusion due to the multi-tenant architecture:
+**A:** Great question! These two concepts work together but serve different purposes:
 
-**Semesters (Academic Periods):**
-- Location: Academic Settings → Manage Semesters
-- Purpose: Organizing subjects, lessons, class schedules
-- Database: Individual school databases
-- Used by: Teachers for lesson planning, subject assignment
+**Academic Periods (also called Semesters)**
 
-**Terms (Exam Periods):**
-- Location: Exam & Performance → Offline Exam → Manage Terms
-- Purpose: Organizing exams and CA calculations
-- Database: Main system database
-- Used by: Admins for exam configuration, CA results
+- **Where to find them:** Academic Settings → Manage Semesters
+- **What they're for:** Organizing your subjects, lessons, and class schedules
+- **Who uses them:** Teachers planning their lessons and subject assignments
+- **Naming:** Many schools rename "Semester" to "Term" (e.g., Term 1, Term 2, Term 3)
 
-**Why separate?** The multi-tenant architecture requires school-specific data (subjects, lessons) to be in school databases, while exam/CA data is centralized for system-wide calculations.
+**Term Exams (Exam Periods)**
 
-**What to do?** Create Exam Periods that mirror your Academic Periods. Use the same names to avoid confusion.
+- **Where to find them:** Exam & Performance → Offline Exam → Manage Term Exams
+- **What they're for:** Organizing exams and calculating CA (Continuous Assessment) results
+- **Who uses them:** School administrators setting up exams and viewing results
+- **Naming:** Use names that match your Academic Periods (e.g., "Term 1 Exam")
 
-### Q: Can I just use one or the other?
+**The relationship:** Each Term Exam typically aligns with one Academic Period. So if your school has three Academic Periods (Term 1, Term 2, Term 3), you'll create three matching Term Exams.
 
-**A:** No. Both are required:
-- Academic Periods (Semesters) are needed for subjects and lessons
-- Exam Periods (Terms) are needed for the CA system
-- Keep them synchronized with matching names and dates
+### Q: Do I need to use both?
 
-### Q: My school uses "Terms" not "Semesters"
+**A:** Yes. Both serve important roles:
 
-**A:** That's fine! The "Semesters" label is just a default. You can:
-- Name your Academic Periods: "Term 1", "Term 2", "Term 3"
-- Name your Exam Periods: "Term 1", "Term 2", "Term 3"
-- The system works regardless of the naming you choose
+- **Academic Periods** organize your teaching schedule (subjects, lessons, timetables)
+- **Term Exams** organize your assessments and CA calculations
 
-The labels "Semesters" and "Terms" in the UI are just defaults - use whatever terminology your school prefers.
+Think of it this way: Academic Periods are about *teaching*, while Term Exams are about *assessing*. You need both to run a complete academic system.
+
+**Tip:** When you create an Academic Period, immediately create a matching Term Exam with the same name. This keeps everything aligned and easy to understand.
+
+### Q: My school uses "Terms" instead of "Semesters." How does this work?
+
+**A:** No problem! The 4SCH system is flexible. Here's what to do:
+
+1. **For Academic Periods:** Rename "Semesters" to your preferred term (e.g., "Term 1," "Term 2"). The system simply organizes them as periods—the label is up to you.
+
+2. **For Term Exams:** Name them to match your Academic Periods (e.g., "Term 1 Exam," "Term 2 Exam").
+
+The system doesn't care whether you call them "Semesters," "Terms," "Quarters," or "Trimesters." Use whatever your school traditionally uses—your teachers, students, and parents will see your chosen names throughout the platform.
+
+### Q: Can I have more than one Term Exam in a single Academic Period?
+
+**A:** Yes! While most schools align them one-to-one, you have flexibility:
+
+- **One-to-one:** Most common. One Academic Period = One Term Exam (e.g., Term 1 academic period has Term 1 Exam)
+- **Multiple Term Exams per period:** Useful if you want separate Mid-Term and End-of-Term assessments
+- **Custom arrangements:** Set up Term Exams to match your school's specific assessment calendar
+
+The CA system calculates session cumulative averages across all Term Exams in a session year, regardless of how you organize them.
 
 ---
 

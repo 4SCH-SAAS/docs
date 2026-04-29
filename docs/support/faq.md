@@ -34,22 +34,22 @@ Grades:
   - Yes. Define numeric or letter scales and map to transcripts.
 
 Continuous Assessment (CA):
-- What's the difference between Terms and Semesters?
-  - **Semesters (Academic Periods)** are for organizing subjects, lessons, and schedules (found under Academic Settings). **Terms (Exam Periods)** are for organizing exams and CA calculations (found under Exam Management). Due to the multi-tenant architecture, both are needed. Create Exam Periods that match your Academic Periods. See [Terms vs Semesters explanation](/guides/continuous-assessment#common-questions).
+- What's the difference between Academic Periods and Term Exams?
+  - **Academic Periods (Semesters)** organize your teaching schedule—subjects, lessons, and timetables. Many schools rename "Semester" to "Term" (e.g., Term 1, Term 2, Term 3). **Term Exams** organize your assessments and CA calculations. You typically create one Term Exam per Academic Period, using matching names. See [the full explanation](/guides/continuous-assessment#common-questions).
 - What is the CA system?
-  - The Continuous Assessment system allows schools to configure progressive evaluation with weighted scoring (e.g., CA1 20% + CA2 20% + Exam 60%). See the [CA System Guide](/guides/continuous-assessment) for complete details.
-- How do I configure CA for my exam?
-  - Navigate to Exams → View Exams → Configure CAs. Add CA types with weightages ensuring the total equals 100%. See [Configuring CA](/guides/continuous-assessment#configuring-ca-for-exams).
+  - The Continuous Assessment system lets your school evaluate students progressively across multiple assessments. Configure custom weightages for CA1, CA2, and the final exam (e.g., 20% + 20% + 60% = 100%). The system automatically calculates term totals and session cumulative averages. See the [CA System Guide](/guides/continuous-assessment) for complete details.
+- How do I configure CA for an exam?
+  - Go to Exams → View Exams → Configure CAs. Add your CA types (CA1, CA2, etc.) with their weightages. The total must equal 100%. The system validates this in real-time. See [Configuring CA](/guides/continuous-assessment#configuring-ca-for-exams).
 - Why can't I save my CA configuration?
-  - The total weightage must equal exactly 100%. Check that CA weightages + Exam weightage = 100%. The system shows real-time validation.
-- How do I enter marks for CA1, CA2, and Exam separately?
-  - Go to Exams → Submit Marks, select your exam and subject, then choose the CA type (CA1, CA2, or Exam) from the dropdown. Enter marks for each type separately. See [Entering CA Marks](/guides/continuous-assessment#entering-ca-marks).
-- What's the difference between term total and session cumulative?
-  - **Term Total** is the weighted sum of CA1 + CA2 + Exam for a single term. **Session Cumulative** is the average of all term totals across the entire academic session. See [Understanding Session Cumulative](/guides/continuous-assessment#understanding-session-cumulative).
-- Can I use CA for some exams and not others?
-  - Yes! The CA system is completely optional. Exams without CA configuration work with traditional marks entry. The system is backward compatible.
-- Where can students see their CA breakdown?
-  - Students can view CA breakdown on the web portal under Results. The mobile app shows term totals. PDF report cards display complete CA breakdown with individual component scores.
+  - The total of all CA weightages plus the exam weightage must equal exactly 100%. For example: CA1 (20%) + CA2 (20%) + Exam (60%) = 100%. Adjust your percentages so they add up to 100% and try again.
+- How do teachers enter marks for CA1, CA2, and the Exam?
+  - Go to Exams → Submit Marks, select the exam and subject, then choose which assessment type to enter (CA1, CA2, or Exam) from the dropdown. Enter marks for each type separately. Each CA type is saved independently. See [Entering CA Marks](/guides/continuous-assessment#entering-ca-marks).
+- What's the difference between Term Total and Session Cumulative?
+  - **Term Total** is a student's weighted score for a single Term Exam (the sum of CA1 + CA2 + Exam contributions). **Session Cumulative** is the average of all Term Totals across the entire academic session, giving an overall performance measure. See [Understanding Session Cumulative](/guides/continuous-assessment#understanding-session-cumulative).
+- Can I use CA for some exams but not others?
+  - Yes! The CA system is completely optional and works alongside traditional exams. Exams without CA configuration work the way they always have. You can enable CA for exams that need progressive evaluation while keeping others simple.
+- Where can students and parents see the CA breakdown?
+  - Students and parents can view the complete CA breakdown on the web portal under Results. The mobile app currently shows term totals (CA breakdown coming soon). PDF report cards always display the full breakdown with individual CA scores, weightages, and term totals.
 
 Billing:
 - Which payment methods are supported?
