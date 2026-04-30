@@ -107,6 +107,272 @@ If John has 3 terms with totals 85%, 78%, 88%:
 
 ---
 
+## How CA Works: Complete Workflow
+
+Understanding the full CA workflow helps you set up assessments correctly. Here's how everything connects from Term Exams down to individual CA scores.
+
+### The CA Hierarchy
+
+CAs (CA1, CA2, etc.) are **not created standalone**. They are part of a layered structure:
+
+```mermaid
+graph TD
+    A[Term Exam<br/>e.g., 'First Term'] --> B[Exam 1<br/>e.g., Math Mid-Term]
+    A --> C[Exam 2<br/>e.g., English Mid-Term]
+    A --> D[Exam 3<br/>e.g., Science Mid-Term]
+    
+    B --> E[CA Configuration<br/>CA1: 20%, CA2: 20%, Exam: 60%]
+    
+    E --> F[Enter CA1 Marks]
+    E --> G[Enter CA2 Marks]
+    E --> H[Enter Exam Marks]
+    
+    F --> I[Term Total Calculated]
+    G --> I
+    H --> I
+    
+    I --> J[Session Cumulative<br/>Average of all Term Totals]
+    J --> K[Position Rankings]
+```
+
+### Key Insight: The Layered Structure
+
+Think of it like a folder system:
+
+| Level | What It Is | Example |
+|-------|-----------|---------|
+| **1. Term Exam** | The assessment period (folder) | "First Term" |
+| **2. Exam** | A specific subject's exam (file) | "Math Mid-Term" |
+| **3. CA Configuration** | How marks are weighted (settings) | CA1 (20%) + CA2 (20%) + Exam (60%) |
+| **4. CA Marks** | Actual scores entered | CA1: 18/20, CA2: 16/20, Exam: 51/60 |
+| **5. Term Total** | Calculated weighted result | 85% |
+| **6. Session Cumulative** | Average across all terms | 83.67% |
+
+---
+
+### 5-Step End-to-End Process
+
+Here's the complete walkthrough from creating a Term Exam to viewing final results.
+
+#### Step 1: Create a Term Exam
+
+**Where:** Sidebar → **Exam & Performance → Offline Exam → Manage Term Exams**
+
+**Why:** Term Exams group related exams into assessment periods (e.g., "First Term," "Mid-Year").
+
+**Action:**
+1. Click **"Create Term Exam"**
+2. Fill in:
+   - **Name**: "First Term" (match your Academic Period name)
+   - **Session Year**: Current academic year
+   - **Start Date**: When the term begins
+   - **End Date**: When the term ends
+3. Click **Submit**
+
+✅ **Result:** Your Term Exam appears in the list, ready to hold individual exams.
+
+#### Step 2: Create an Exam (linked to Term Exam)
+
+**Where:** Sidebar → **Exam & Performance → Offline Exam → Manage Exam**
+
+**Why:** Each subject needs its own exam linked to the Term Exam.
+
+**Action:**
+1. Click **"Create Exam"**
+2. Fill in:
+   - **Name**: "Mathematics Mid-Term"
+   - **Term Exam**: Select your Term Exam (e.g., "First Term") from dropdown
+   - **Class Section**: The class taking this exam
+   - **Session Year**: Current session
+   - **Exam Weightage**: Set the final exam's weight (e.g., **60%**)
+3. Click **Submit**
+
+✅ **Result:** Your exam is created and linked to the Term Exam. The exam weightage is the percentage the final exam contributes (the rest comes from CAs).
+
+:::tip Exam Weightage Tip
+If you want CA1 (20%) + CA2 (20%) + Exam (60%) = 100%, set exam weightage to **60**. The CA weightages will fill the remaining **40%**.
+:::
+
+#### Step 3: Configure CA Types for the Exam
+
+**Where:** On the Exam list, find your exam and click **"Configure CAs"** button
+
+**Why:** Define how the assessment is broken down (CA1, CA2, etc.) and their weightages.
+
+**Action:**
+1. Click **"Configure CAs"** next to your exam
+2. The CA Configuration modal opens showing:
+   - Final Exam Weightage (e.g., 60%)
+   - CA Types section (initially empty)
+3. Click **"Add CA Type"** for each CA:
+   - **CA1**: Type "CA1", Weightage = 20
+   - **CA2**: Type "CA2", Weightage = 20
+   - *(Optional)* CA3, CA4, CA5 if needed
+4. Watch the **Total Weightage** indicator:
+   - 🟢 Green when total = 100%
+   - 🔴 Red when total ≠ 100%
+5. Click **"Save Configuration"** when total = 100%
+
+✅ **Result:** Your exam now has a defined CA structure. Teachers can enter marks for each CA type separately.
+
+:::caution Important
+The system **prevents saving** if the total weightage doesn't equal exactly 100%. Adjust the values until you see the green indicator.
+:::
+
+#### Step 4: Enter Marks per CA Type
+
+**Where:** Sidebar → **Exam & Performance → Offline Exam → Submit Marks**
+
+**Who:** Subject teachers enter marks for their classes
+
+**Action (repeat for each CA type):**
+
+1. Select your **Exam** (e.g., "Mathematics Mid-Term")
+2. Select the **Subject** (e.g., "Mathematics")
+3. **Choose CA Type** from the dropdown:
+   - First time: Select **CA1** → Enter CA1 marks for all students
+   - Then: Select **CA2** → Enter CA2 marks for all students
+   - Finally: Select **Exam** → Enter Final Exam marks
+4. For each student, enter:
+   - **Total Marks**: Maximum possible (e.g., 20 for CA1)
+   - **Obtained Marks**: Student's actual score
+5. Choose:
+   - **Save as Draft** - Continue editing later (not visible to students)
+   - **Publish** - Make marks visible to students immediately
+
+✅ **Result:** Marks are recorded for each CA type independently.
+
+:::tip Submit Marks in Stages
+You don't need to submit all CA types at once. As assessments happen, submit them:
+- After CA1 quiz: Submit CA1 marks
+- After CA2 assignment: Submit CA2 marks  
+- After Final Exam: Submit Exam marks
+:::
+
+#### Step 5: Publish Results
+
+**Where:** Sidebar → **Exam & Performance → Offline Exam → Manage Exam**
+
+**Action:**
+1. Find your exam in the list
+2. Click **"Publish Results"**
+3. The system automatically calculates:
+   - **Term Total** for each student (weighted CA + Exam)
+   - **Session Cumulative Average** (across all terms)
+   - **Session Position** (class ranking)
+
+✅ **Result:** Students and parents can now view:
+- Detailed CA breakdown on web portal
+- Term totals and percentages
+- Session cumulative average
+- Position in class
+- Downloadable PDF report cards
+
+---
+
+### Complete Worked Example
+
+Let's trace one student's journey through the entire process.
+
+**Setup:**
+- **Term Exam**: "First Term" (Sept 1 - Dec 15)
+- **Exam**: "Mathematics Mid-Term"
+- **CA Configuration**: CA1 (20%) + CA2 (20%) + Exam (60%) = 100%
+
+**Student: John Doe**
+
+#### Mark Entry Phase
+
+| Assessment | Total Marks | Obtained | Percentage | Weightage | Weighted Score |
+|------------|-------------|----------|------------|-----------|----------------|
+| **CA1** (Quiz) | 20 | 18 | 90% | 20% | **18.0** |
+| **CA2** (Assignment) | 20 | 16 | 80% | 20% | **16.0** |
+| **Exam** (Final) | 60 | 51 | 85% | 60% | **51.0** |
+
+#### Calculation
+
+```
+Term Total = CA1 weighted + CA2 weighted + Exam weighted
+           = 18.0 + 16.0 + 51.0
+           = 85.0%
+```
+
+#### Session Cumulative (after 3 Term Exams)
+
+If John scores in three terms:
+- First Term: 85%
+- Second Term: 78%
+- Third Term: 88%
+
+```
+Session Cumulative = (85 + 78 + 88) / 3 = 83.67%
+```
+
+This is what appears on John's report card and determines his session position.
+
+---
+
+### Common Misconceptions
+
+#### ❌ "I need to create CA1 from a separate menu"
+
+**Reality:** CA1 (and other CAs) are configured **per Exam**, not standalone. Each exam has its own CA configuration.
+
+#### ❌ "All exams share the same CA structure"
+
+**Reality:** Each exam can have its own CA configuration. Math could be CA1 (20%) + CA2 (20%) + Exam (60%), while English could be CA1 (15%) + CA2 (25%) + Exam (60%).
+
+#### ❌ "I configure CA at the Term Exam level"
+
+**Reality:** Term Exam is just an organizing folder. CA configuration happens at the **individual Exam** level (Step 3).
+
+#### ❌ "Once configured, I can't change the weightages"
+
+**Reality:** You can edit CA configuration anytime by clicking "Configure CAs" again. Changes affect future calculations.
+
+#### ❌ "All students need marks for all CAs at the same time"
+
+**Reality:** Submit marks per CA type, per assessment date. CA1 marks today, CA2 marks next month—all stored independently.
+
+---
+
+### Quick Reference: Where to Do What
+
+| To Do This... | Go Here | Required Permission |
+|---------------|---------|---------------------|
+| Create Term Exam | Manage Term Exams | School Admin |
+| Create Exam | Manage Exam | School Admin |
+| Configure CAs | Manage Exam → Configure CAs button | School Admin |
+| Enter CA1/CA2/Exam Marks | Submit Marks | Teacher |
+| Publish Results | Manage Exam → Publish | School Admin |
+| View Term Total | Results page | All roles |
+| View Session Cumulative | Results page | All roles |
+| Download Report Card | Results page → PDF | Student/Parent |
+
+---
+
+### Workflow Summary
+
+```
+1. Term Exam created (organizes the period)
+        ↓
+2. Exam created (subject-specific assessment, linked to Term Exam)
+        ↓
+3. CA Configuration set (CA1, CA2, Exam weightages = 100%)
+        ↓
+4. Marks entered per CA type (CA1 → CA2 → Exam)
+        ↓
+5. Results published (system calculates everything)
+        ↓
+6. Students/Parents view: CA breakdown, Term Total, Session Cumulative
+```
+
+**Time investment:**
+- Initial setup: ~15 minutes per exam
+- Ongoing marks entry: ~5 minutes per CA per class
+
+---
+
 ## Getting Started
 
 ### Prerequisites
