@@ -118,7 +118,7 @@ Comprehensive documentation for managing all types of exams in 4SCH - from digit
 - Creating exam structures
 - Building question banks (online)
 - Creating timetables (offline)
-- <Link to="/guides/continuous-assessment#managing-terms">Managing academic terms</Link>
+- <Link to="/guides/continuous-assessment#managing-term-exams">Managing Term Exams</Link>
 - <Link to="/guides/continuous-assessment#configuring-ca-for-exams">Configuring CA weightages</Link>
 - Managing mark entry
 - Publishing results
