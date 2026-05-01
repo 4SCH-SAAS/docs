@@ -153,7 +153,7 @@ Organize and structure curriculum content with pattern-based syllabus organizati
 **Creating Syllabus Patterns:**
 
 1. Open the sidebar and navigate to **Academics → Class → Syllabus**
-   
+
    :::note Where to Find Syllabus
    Syllabus is grouped under the **Class** menu (within the **Academics** section).
    It appears between **Class** and **Class Subject** in the sidebar.
@@ -168,9 +168,9 @@ Organize and structure curriculum content with pattern-based syllabus organizati
 4. Click **Submit**
 
 :::tip Permissions Required
-The Syllabus management requires the `syllabus-list` permission. 
-For schools created before v1.9.2 that don't see the Syllabus menu link, 
-your administrator must run the syllabus permissions backfill migration to grant 
+The Syllabus management requires the `syllabus-list` permission.
+For schools created before v1.9.2 that don't see the Syllabus menu link,
+your administrator must run the syllabus permissions backfill migration to grant
 the required permissions to the School Admin role.
 :::
 
