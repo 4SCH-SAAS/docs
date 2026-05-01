@@ -120,17 +120,17 @@ graph TD
     A[Term Exam<br/>e.g., 'First Term'] --> B[Exam 1<br/>e.g., Math Mid-Term]
     A --> C[Exam 2<br/>e.g., English Mid-Term]
     A --> D[Exam 3<br/>e.g., Science Mid-Term]
-    
+
     B --> E[CA Configuration<br/>CA1: 20%, CA2: 20%, Exam: 60%]
-    
+
     E --> F[Enter CA1 Marks]
     E --> G[Enter CA2 Marks]
     E --> H[Enter Exam Marks]
-    
+
     F --> I[Term Total Calculated]
     G --> I
     H --> I
-    
+
     I --> J[Session Cumulative<br/>Average of all Term Totals]
     J --> K[Position Rankings]
 ```
@@ -245,7 +245,7 @@ The system **prevents saving** if the total weightage doesn't equal exactly 100%
 :::tip Submit Marks in Stages
 You don't need to submit all CA types at once. As assessments happen, submit them:
 - After CA1 quiz: Submit CA1 marks
-- After CA2 assignment: Submit CA2 marks  
+- After CA2 assignment: Submit CA2 marks
 - After Final Exam: Submit Exam marks
 :::
 
@@ -1024,6 +1024,43 @@ The CA system calculates session cumulative averages across all Term Exams in a 
 1. Ensure student has results in multiple terms
 2. Verify `session_cumulative_average` is calculated
 3. Re-publish the latest exam to trigger position calculation
+
+**Issue: Publishing exam result fails with database error**
+
+**Solution:**
+1. This typically happens with CA-enabled exams on schools updated to v1.9.3
+2. Make sure your administrator has run the latest database migrations:
+   ```bash
+   php artisan migrate
+   ```
+3. Clear application cache:
+   ```bash
+   php artisan cache:clear
+   php artisan config:clear
+   ```
+4. If the error persists, contact technical support with the error message
+
+**Issue: Configure CAs button not visible**
+
+**Solution:**
+1. Verify the exam is linked to a Term Exam
+2. Check you have `exam-create` permission
+3. Hard refresh the page (Ctrl+Shift+R) to clear cached UI
+4. The button appears in the Action menu for each exam in the list
+
+**Issue: CA configuration not loading when reopening the modal**
+
+**Solution:**
+1. Hard refresh the browser (Ctrl+Shift+R) to get the latest JavaScript
+2. Verify the exam has saved CA configuration in database
+3. If still missing, re-create the configuration
+
+**Issue: Modal too tall, can't see Save button**
+
+**Solution:**
+1. Hard refresh to get the latest CSS (compact modal styling)
+2. The modal now uses 90% screen width with internal scrolling
+3. Save/Cancel buttons should always be visible at the bottom
 
 ### For Teachers
 

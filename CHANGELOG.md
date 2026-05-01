@@ -15,12 +15,48 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - Term total computation with weighted component scores
   - Session cumulative average tracking across all terms
   - Dual ranking system (term position and session position)
-  - Terms management for organizing exams into academic periods
+  - Terms management for organizing exams into academic periods (Term Exams)
   - Enhanced PDF report cards with complete CA breakdown
   - Real-time validation ensuring weightages total 100%
   - Draft and publish workflow for CA marks entry
   - Backward compatible with existing exams (works with or without CA configuration)
   - Comprehensive CA system documentation and guides
+
+- **In-App Help Tooltip System**: Contextual help tooltips throughout the application
+  - Tooltips on form fields and key UI elements
+  - Help content auto-generated from documentation markdown frontmatter
+  - Reusable Blade component (`<x-help-tooltip />`) for developers
+  - Support for both English and French translations
+
+- **Class Subject Management Documentation**: Detailed guide for configuring Core and Elective subjects
+  - Step-by-step Core Subject (compulsory) setup
+  - Elective Subject Group configuration with "X of Y" selection
+  - Optional Syllabus linking for curriculum tracking
+
+### Fixed
+- **Term Exams (formerly "Terms") terminology**: Renamed for clarity to distinguish from Academic Periods (Semesters)
+- **CA Configuration Modal**:
+  - Modal scrolling and viewport fit on desktop
+  - Compact layout reduces vertical space by ~30%
+  - Tooltip visibility above modals (z-index fix)
+  - Existing CA configuration now reloads when reopening
+  - Save Configuration button now functional
+  - Bootstrap 4/5 syntax compatibility fixes
+- **Class Subject Save Issues**:
+  - Optional Syllabus dropdown (was incorrectly required)
+  - Single-subject elective groups now supported (1 of 1)
+  - Elective subject delete works with 2+ subjects
+  - "Duplicate Values" false positive in form validation resolved
+  - Validation field name typo (`elective_subjects` → `elective_subject_group`)
+- **Exam Result Publishing**: SQL ambiguous column error for CA-enabled exams
+- **Syllabus Permissions**: Migration to backfill permissions for schools created before v1.9.2
+- **Documentation Navigation**: Corrected Syllabus management path (Academics → Class → Syllabus)
+
+### Changed
+- **Documentation Tone**: End-user friendly language throughout CA documentation
+- **Sidebar Navigation**:
+  - Added "Manage Term Exams" link under Offline Exam menu
+  - Updated Syllabus location reference
 
 ---
 
@@ -102,21 +138,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - Login instructions for both platforms with required credentials (School Code, GR Number, Password)
   - When to use each platform (web vs mobile)
   - Updated keywords: `student web portal`, `ngs.4sch.com`, `student mobile app`, `student login`
-  
+
 - `docs/intro/user-roles.md`
   - Updated Student role section with web portal URL
   - Added "New!" callout highlighting web portal features
-  
+
 - `docs/intro/getting-started.md`
   - Added web portal access to student onboarding
   - Enhanced student capabilities list
-  
+
 - `docs/intro/overview.md`
   - Updated Student card to mention both web portal and mobile app
-  
+
 - `docs/support/faq.md`
   - Added FAQ: "How do students access 4SCH?"
-  
+
 - `docs/intro/quick-start.md`
   - Updated step 9 with web portal URL for student login
 
@@ -135,13 +171,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - Updated "Getting Help" section with password reset troubleshooting
   - Enhanced "Keeping Your Account Secure" section
   - Added internal cross-reference links
-  
+
 - `docs/support/faq.md`
   - Split password reset FAQ into student-specific vs staff/teachers
   - Added new FAQ: "What information do students need to reset their password?"
   - Added cross-reference link to Student Guide password reset section
   - Updated keywords: `student password reset`, `GR number`
-  
+
 - `docs/support/troubleshooting.md`
   - Added "Can't log in as a student" troubleshooting section
   - Added detailed "Student password reset not working" guide
@@ -588,41 +624,41 @@ sidebars.js
 Following the Revodev Guidelines (see instruction files in project root):
 
 ### 1. User-Centric Approach
-✅ Every page answers: "What do I need to do my job?"  
-✅ Role-specific content tailored to user needs  
-✅ Daily task focus, not just feature descriptions  
+✅ Every page answers: "What do I need to do my job?"
+✅ Role-specific content tailored to user needs
+✅ Daily task focus, not just feature descriptions
 
 ### 2. Practical & Actionable
-✅ Step-by-step instructions for all procedures  
-✅ Real-world examples and scenarios  
-✅ Common mistakes highlighted  
-✅ Best practices from experienced users  
+✅ Step-by-step instructions for all procedures
+✅ Real-world examples and scenarios
+✅ Common mistakes highlighted
+✅ Best practices from experienced users
 
 ### 3. African School Context
-✅ Nigerian currency (₦) in examples  
-✅ Local school structure (Primary, JSS, SSS)  
-✅ Realistic challenges addressed  
-✅ Cultural considerations included  
-✅ Mobile money payment options  
-✅ Limited internet considerations  
+✅ Nigerian currency (₦) in examples
+✅ Local school structure (Primary, JSS, SSS)
+✅ Realistic challenges addressed
+✅ Cultural considerations included
+✅ Mobile money payment options
+✅ Limited internet considerations
 
 ### 4. Simple & Clear Language
-✅ Short sentences and paragraphs  
-✅ Active voice throughout  
-✅ Jargon removed or explained  
-✅ Visual organization (tables, lists, callouts)  
+✅ Short sentences and paragraphs
+✅ Active voice throughout
+✅ Jargon removed or explained
+✅ Visual organization (tables, lists, callouts)
 
 ### 5. Workflow-Oriented
-✅ Complete processes documented  
-✅ Multi-step procedures with timelines  
-✅ End-to-end workflows  
-✅ Integration between roles shown  
+✅ Complete processes documented
+✅ Multi-step procedures with timelines
+✅ End-to-end workflows
+✅ Integration between roles shown
 
 ### 6. Maintainable
-✅ Maintenance guide created  
-✅ Standards documented  
-✅ Review process defined  
-✅ Quality checklists provided  
+✅ Maintenance guide created
+✅ Standards documented
+✅ Review process defined
+✅ Quality checklists provided
 
 ---
 
@@ -710,9 +746,9 @@ Located in project root:
 
 ---
 
-**Last Updated:** February 1, 2026  
-**Version:** 2.0.0  
-**Total Changes:** 10 new files, 7 major rewrites, 1 structure reorganization  
+**Last Updated:** February 1, 2026
+**Version:** 2.0.0
+**Total Changes:** 10 new files, 7 major rewrites, 1 structure reorganization
 **Total Content Added:** 180+ KB of comprehensive, user-focused documentation
 
 ---
