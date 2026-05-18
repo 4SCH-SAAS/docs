@@ -49,7 +49,19 @@ Continuous Assessment (CA):
 - Can I use CA for some exams but not others?
   - Yes! The CA system is completely optional and works alongside traditional exams. Exams without CA configuration work the way they always have. You can enable CA for exams that need progressive evaluation while keeping others simple.
 - Where can students and parents see the CA breakdown?
-  - Students and parents can view the complete CA breakdown on the web portal under Results. The mobile app currently shows term totals (CA breakdown coming soon). PDF report cards always display the full breakdown with individual CA scores, weightages, and term totals.
+  - Students and parents can view the complete CA breakdown on **both** the web portal and mobile apps. On the mobile app, tap **View CA Breakdown** under each subject in the result view to see individual CA scores, weightages, and a colour-coded progress bar. PDF report cards also display the full breakdown with individual CA scores, weightages, and term totals. See the [CA on Mobile Apps](/guides/continuous-assessment-mobile) guide.
+- Can teachers enter CA marks from the mobile app?
+  - Yes, starting from version 1.9.3. Open the Teacher Staff app and navigate to **Academics → Offline Exam Result**. After selecting the class, exam, and subject, an **Assessment Type** dropdown appears (when CA is configured). Choose the CA type (CA1, CA2, or Exam) and enter marks. The total marks header updates dynamically based on the selected CA type. See the [Teacher Mobile CA guide](/guides/continuous-assessment-mobile#for-teachers--entering-ca-marks).
+- Why don't I see the Assessment Type dropdown on my mobile app?
+  - The dropdown appears only if the selected exam has CA configured. Ask the school administrator to configure CA from the web platform first (**Exams → Manage Exam → Configure CA**). Also make sure your app is updated to version 1.9.3 or later.
+- How do I migrate legacy exams (without CA) to the new CA structure?
+  - Use the `exams:migrate-to-ca` Artisan command. Start with a dry run to preview changes, then execute with the `--add-ca-config` flag to add default CA configuration and proportionally adjust existing marks. See [Migrating Legacy Exams](/guides/continuous-assessment#migrating-legacy-exams-to-ca-structure) for full instructions. Note that running `migrate:school` already auto-normalizes `NULL ca_type` records as a safety measure.
+- Will I need to migrate every time a new school is added?
+  - **No.** New schools start with a clean CA-ready schema and will never have legacy `NULL ca_type` records. The `migrate:school` command auto-normalizes legacy records for existing schools and is idempotent, so it's safe to run as part of routine maintenance.
+- I published results but parents aren't getting push notifications. What's wrong?
+  - This was a known issue prior to version 1.9.3. The release fixes the guardian/parent notification lookup so that **both students and guardians** receive push notifications when results are published. If parents still don't receive notifications, verify their guardian profile is linked to the correct student and that the app has notification permissions enabled.
+- The PDF shows Term Total as 0% — how do I fix that?
+  - This was caused by stale data from earlier failed publishes (before the v1.9.3 SQL fix). Re-publish the affected exam from the web platform (**Exams → Manage Exam → Publish**). The system will recompute and store the correct values. Newly generated PDFs include on-the-fly recalculation as a safety net.
 
 Billing:
 - Which payment methods are supported?

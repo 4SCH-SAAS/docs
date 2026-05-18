@@ -256,6 +256,7 @@ const sidebars = {
             'guides/online-exams',
             'guides/offline-exams',
             'guides/continuous-assessment',
+            'guides/continuous-assessment-mobile',
             'guides/online-exams-quick-reference',
             'guides/offline-exams-quick-reference',
           ],

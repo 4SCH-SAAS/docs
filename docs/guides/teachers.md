@@ -576,8 +576,17 @@ Depending on your school setup, you may see one or more of these options:
 
 - **Bulk entry / quick entry** screens (type scores in sequence)
 - **Spreadsheet import** for offline exam marks
+- **Mobile entry** via the Teacher Staff app (Academics → Offline Exam Result)
 
 If you use spreadsheets, see the [Bulk Marks Upload guide](/reference/data-import-export#bulk-marks-upload-offline-exams).
+
+:::tip Entering Continuous Assessment (CA) Marks on Mobile
+The Teacher Staff app (version 1.9.3+) lets you enter CA marks (CA1, CA2, Exam)
+directly from your phone. When you select an exam that has CA configured, an
+**Assessment Type** dropdown appears so you can switch between CA1, CA2, and the
+final Exam. Total marks and validation adjust automatically. See the
+[CA on Mobile Apps guide](/guides/continuous-assessment-mobile) for the full workflow.
+:::
 
 ### What If I Make a Mistake?
 

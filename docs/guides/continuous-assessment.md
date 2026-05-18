@@ -1147,6 +1147,98 @@ The CA system calculates session cumulative averages across all Term Exams in a 
 
 ---
 
+## CA on Mobile Apps
+
+Starting in version 1.9.3, the Continuous Assessment system is fully supported on mobile apps.
+
+### Teacher Mobile App
+
+Teachers can enter CA marks (CA1, CA2, Exam) directly from the **Offline Exam Result** screen.
+An **Assessment Type** dropdown appears whenever the selected exam has CA configured.
+
+- Total marks update dynamically based on the selected CA type.
+- Marks validation honours CA-specific totals (for example, 20 for CA1 at 20% weightage).
+- Save Draft and Submit & Publish flows both include the CA type.
+
+### Parent & Student Mobile App
+
+Each subject in the result view now includes a **View CA Breakdown** link.
+Tap to see individual CA scores, weightages, and a colour-coded progress bar for each
+component, plus a Term Total summary row.
+
+For full details, see the dedicated [CA on Mobile Apps](./continuous-assessment-mobile.md) guide.
+
+---
+
+## Migrating Legacy Exams to CA Structure
+
+If your school has exams that were created **before** the CA system was deployed, those
+exam marks have a `NULL` `ca_type` value in the database. While the system handles these
+gracefully, you can migrate them to the new CA structure for full feature support.
+
+### Automatic Migration (Recommended)
+
+When you run the `migrate:school` Artisan command (typically after upgrading or adding a
+new school), any legacy `NULL` `ca_type` records are automatically normalized to `'Exam'`:
+
+```bash
+php artisan migrate:school
+```
+
+This is **idempotent** — safe to run multiple times. Schools without legacy records are
+skipped silently.
+
+### Manual Migration (Add CA Configuration)
+
+To add full CA configuration (CA1, CA2, Exam) to legacy exams and proportionally adjust
+the existing marks to the new totals, use the dedicated migration command:
+
+#### Preview (Dry Run)
+
+```bash
+# Preview changes for all schools
+php artisan exams:migrate-to-ca
+
+# Preview for a specific school
+php artisan exams:migrate-to-ca --school=1
+```
+
+#### Execute
+
+```bash
+# Just normalize NULL ca_type to 'Exam' (minimal, safe)
+php artisan exams:migrate-to-ca --execute --school=1
+
+# Add full CA configuration (CA1=20%, CA2=20%, Exam=60%) and adjust marks
+php artisan exams:migrate-to-ca --execute --add-ca-config --school=1
+
+# Custom weightages
+php artisan exams:migrate-to-ca --execute --add-ca-config \
+  --ca1-weightage=15 --ca2-weightage=15 --exam-weightage=70 \
+  --school=1
+
+# All schools at once
+php artisan exams:migrate-to-ca --execute --add-ca-config --all-schools
+```
+
+### What the Tool Does
+
+1. Identifies exams with `NULL` `ca_type` exam marks
+2. Optionally adds CA configuration to those exams
+3. Marks all `NULL` `ca_type` records as `'Exam'`
+4. If CA is added, proportionally adjusts marks to the new totals
+   (for example, `80/100` becomes `48/60` when the Exam component is weighted 60%)
+
+### Safety Features
+
+- **Dry-run by default** — no changes unless `--execute` is supplied
+- **Per-school processing** — won't affect other tenants
+- **Detailed reporting** — shows exactly what will change
+- **Try/catch error handling** — one failure won't stop others
+- **Backup recommended** — always back up the database before running migrations
+
+---
+
 ## Getting Help
 
 ### Having Issues with CA System?
