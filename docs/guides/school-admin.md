@@ -138,55 +138,13 @@ Subjects are the courses taught in your school.
 
 **Assigning Subjects to Classes:**
 
-1. Go to **Academics → Class → Class Subject**
-2. Click **Edit** on the class you want to configure
-3. You'll see two sections:
-   - **Core Subjects** (compulsory for all students)
-   - **Elective Subject Groups** (students choose from these)
-4. Add subjects as needed
+1. Go to **Academics → Class Subjects**
+2. Select a class and section
+3. Choose subjects from the list
+4. Assign teachers to each subject (see [Teacher-Subject Assignment Guide](teacher-subject-assignment.md))
 5. Click **Save**
 
-##### Core Subjects (Compulsory)
-
-These are subjects every student in the class must take.
-
-1. Click **Add Core Subject**
-2. Select the **Subject** from the dropdown
-3. Optionally choose a **Syllabus** to link to (for curriculum tracking)
-4. Repeat to add more core subjects
-
-##### Elective Subject Groups
-
-These let you create groups where students can choose subjects.
-
-**Example:** "Languages Group" with French, Spanish, German - students pick 2 of 3.
-
-1. Click **Add Elective Group**
-2. Add subjects to the group (one or more):
-   - Click **Add Subject** within the group
-   - Select the subject
-   - Optionally link to a syllabus
-3. Set **Total Selectable Subjects**: How many students must choose
-   - Example: 1 of 1 (compulsory single elective)
-   - Example: 2 of 3 (pick any 2 from 3 options)
-   - Example: 3 of 3 (all required)
-
-:::tip Single-Subject Elective Groups
-You CAN create elective groups with just 1 subject. This is useful for:
-- Compulsory subjects within an elective track
-- Single-option specializations
-- Future-expandable categories
-
-Set "Total Selectable" to 1 for these.
-:::
-
-:::note Syllabus is Optional
-The Syllabus dropdown is **optional** for both Core and Elective subjects.
-You can save subject assignments without linking a syllabus and add them
-later as your curriculum is configured.
-:::
-
-#### Syllabus Pattern Management
+### Syllabus Pattern Management
 
 :::tip New in v1.9.2
 Organize and structure curriculum content with pattern-based syllabus organization for better academic planning.
