@@ -1014,9 +1014,27 @@ At the end of term:
 ### Downloading an Exam Result PDF (if enabled)
 
 For a specific offline exam, some schools provide a separate **Result PDF**:
+
 1. Go to **Exams** → **Exam Results**
 2. Select the exam
 3. Tap/Click **Download Result PDF** (or Share)
+
+### Understanding Your CA Breakdown
+
+If your exam uses Continuous Assessment (CA), tap **View CA Breakdown** under
+each subject to see exactly how your grade was calculated:
+
+- **CA1, CA2, Exam** — each component shown with its weightage (for example, `CA1 (20%)`)
+- **Marks** — your obtained vs. total marks for each component
+- **Progress bar** — colour-coded by performance:
+  - Green: 75%+ (Excellent)
+  - Blue: 60% – 74% (Good)
+  - Orange: 40% – 59% (Average)
+  - Red: below 40% (Needs improvement)
+- **Term Total** — your aggregated score for the subject
+
+This helps you see where you did well and where to focus next time.
+See the [CA on Mobile Apps guide](/guides/continuous-assessment-mobile) for more.
 
 ### What to Do If You're Not Happy with Your Grades
 

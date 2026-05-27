@@ -299,10 +299,28 @@ Some schools require a printed report card to be signed and returned.
 ### Downloading an Exam Result PDF (if enabled)
 
 For a specific offline exam, some schools provide a separate **Result PDF**:
+
 1. Select your child
 2. Go to **Exams** → **Results**
 3. Select the exam
 4. Tap/Click **Download Result PDF** (or Share)
+
+### Viewing the CA Breakdown
+
+If the exam uses Continuous Assessment (CA), you'll see a **View CA Breakdown**
+link under each subject:
+
+- Tap to expand the card.
+- Each CA component (CA1, CA2, Exam) is shown with its weightage, obtained marks,
+  and a colour-coded progress bar.
+- The bottom row shows the aggregated **Term Total** for the subject.
+
+For more details, see the [CA on Mobile Apps guide](/guides/continuous-assessment-mobile).
+
+:::tip Push notifications
+Parents and guardians receive a push notification when results are published.
+Tap the notification to jump straight to the result.
+:::
 
 ---
 
