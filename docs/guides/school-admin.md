@@ -144,7 +144,7 @@ Subjects are the courses taught in your school.
 4. Assign teachers to each subject (see [Teacher-Subject Assignment Guide](teacher-subject-assignment.md))
 5. Click **Save**
 
-#### Syllabus Pattern Management
+### Syllabus Pattern Management
 
 :::tip New in v1.9.2
 Organize and structure curriculum content with pattern-based syllabus organization for better academic planning.
