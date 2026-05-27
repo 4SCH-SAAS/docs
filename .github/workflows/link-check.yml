@@ -34,10 +34,10 @@ jobs:
           node-version: 'lts/*'
 
       - name: Setup pnpm
-        run: |
-          corepack enable
-          corepack prepare pnpm@latest --activate
-          pnpm config set ignore-scripts false
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.0
+          run_install: false
 
       - name: Get pnpm store directory
         id: pnpm-store
@@ -56,18 +56,9 @@ jobs:
         run: pnpm store prune
 
       - name: Install dependencies
-        # Allow ignored builds (pnpm v10+ treats ignored build scripts as error by default)
-        # We rebuild sharp manually in the next step, so it's safe to ignore here.
-        run: pnpm install --frozen-lockfile --config.confirmModulesPurge=false
+        run: pnpm install --frozen-lockfile
         env:
           SHARP_IGNORE_GLOBAL_LIBVIPS: 1
-          # Pin to pnpm v9 to avoid v10+ build-script error behavior
-          # Or set this to silence the ignored builds error in v10+
-          PNPM_IGNORE_BUILDS_WARNING: 'true'
-
-      - name: Approve ignored build scripts
-        run: pnpm config set auto-install-peers true && (pnpm approve-builds 2>/dev/null || true)
-        continue-on-error: true
 
       - name: Rebuild sharp manually
         run: |
