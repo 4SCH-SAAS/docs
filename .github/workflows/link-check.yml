@@ -34,10 +34,10 @@ jobs:
           node-version: 'lts/*'
 
       - name: Setup pnpm
-        run: |
-          corepack enable
-          corepack prepare pnpm@latest --activate
-          pnpm config set ignore-scripts false
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.0
+          run_install: false
 
       - name: Get pnpm store directory
         id: pnpm-store

@@ -8,14 +8,98 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+(none)
+
 ---
 
-## [1.9.3] - 2026-05-18
+## [1.9.6] - 2026-05-23
+
+### Fixed
+
+- **In-App Notifications**: Notification box was empty for all users — the `send_notification()` helper only sent FCM push but never created records in `notifications`/`user_notifications` tables. Now creates DB records for the notification bell/box.
+- **Notification API 500 Error**: `getNotifications` endpoint was crashing due to incorrect argument type. Fixed.
+- **Notification Messages**: Body text was unclear ("Click here to see !!!"). Now includes exam name and clearer instructions ("Tap to view the schedule"). Title also improved.
+- **Queue Worker & Reverb Auto-Restart**: Added cron-based auto-restart for queue worker and Reverb WebSocket server. Push notifications now reliably delivered.
 
 ### Added
 
-- **Continuous Assessment (CA) System** — Complete progressive evaluation framework with weighted scoring
-  - Configure custom CA types (CA1, CA2, CA3, CA4, CA5) with flexible weightages per exam
+- **User Notification Management**: Students, parents and teachers can now manage their own notification box.
+  - Mark single notification as read
+  - Mark all notifications as read
+  - Delete a single notification (soft-delete per user)
+  - Clear all notifications (or only read ones)
+  - Unread count returned in API response for badge display
+  - Automatic cleanup: notifications older than 90 days auto-deleted daily
+- **Notification Bell Icon (Parent-Student App)**: Added bell icon next to chat icon on home screen for quick access to notifications.
+
+### Improved
+
+- **Notification Bell Discovery**: Bell icon now visible on home screen of parent/student mobile app (was only accessible via Settings menu).
+- **Notification System Architecture**: Implemented soft-delete pattern at user level so deletions don't affect other recipients of the same notification.
+
+### Schema Changes (Auto-Migrated)
+
+- `user_notifications` table gains: `read_at` (TIMESTAMP NULL), `deleted_at` (TIMESTAMP NULL, soft-delete)
+- New index on `(user_id, deleted_at)` for fast notification box queries
+- `exam_marks` table gains: UNIQUE constraint on `(exam_timetable_id, student_id, ca_type)` to prevent duplicates
+
+### New Artisan Commands
+
+- `notifications:cleanup` — Hard-delete soft-deleted notifications and old ones (>90 days). Scheduled daily.
+- `exams:rescale-marks` — Proportionally rescale `exam_marks` to current `exam_weightage` (fixes inflated totals like 120/100).
+- `exams:resync-results` — Rebuild stale `exam_results` snapshots from current `exam_marks`.
+- `exams:randomize-demo` — DEMO ONLY: randomize exam marks within a valid range for clean demo data.
+
+---
+
+## [1.9.5] - 2026-05-19
+
+### Fixed
+
+- **Critical Result Calculation SQL Error**: `ResultService::calculateTermTotal()` was failing with "Unknown column class_id". Fixed by resolving `class_section_id → class_id` properly via `ClassSection` model. This was silently breaking publish flow and notifications.
+- **Exam Result Snapshot Stale Data**: After CA configuration changes (e.g., reducing exam weightage 100 → 60), the `exam_results` table held stale totals causing mobile/PDF to show "120/100" type inflation. Now auto-resync happens on CA save, and API read flow trusts current weightage over stored values.
+- **Duplicate Exam Marks Prevention**: Mobile API used `createBulk` which could create duplicates under race conditions, causing inflated totals. Switched to `updateOrCreate` plus database UNIQUE constraint as defense-in-depth.
+- **Mark Rescaling on CA Configuration Change**: Existing 'Exam' marks now proportionally rescaled when `exam_weightage` changes (e.g., 80/100 becomes 48/60). Flag set on rescaled marks (`needs_review`) so teachers know to verify.
+- **Non-CA Legacy Exams with Updated Weightage**: Legacy exams (no CA configured) where admin reduced `exam_weightage` were skipped by rescale logic. Now correctly proportionally rescaled.
+
+### Added
+
+- **`needs_review` Flag**: New column on `exam_marks` to flag auto-adjusted marks. Teacher UI shows yellow border and "⚠ Needs Review" badge. Cleared when teacher saves.
+
+---
+
+## [1.9.4] - 2026-05-13
+
+### Fixed
+
+- **Mobile CA Race Condition**: Student list was loading with wrong/no CA type before dropdown was set. Now `getStudents()` is called only AFTER CA is selected.
+- **CA Type Filtering in Student List API**: `GET /api/teacher/student-list` now accepts `ca_type` parameter, so mobile teacher app correctly loads marks per CA type.
+- **PDF Term Total = 0% Bug**: PDF report card was showing 0% for term total. Fixed by adding always-on recalculation block.
+- **PDF Session Cumulative Recalculation**: Added recalculation for session cumulative average in PDF (was showing stale snapshot).
+- **PDF Table Overlap**: Range/Grade table no longer overlaps with results table.
+- **Web "Manage Exam Marks" UX**: Page no longer makes premature AJAX calls; only refreshes table when search clicked or user manually changes CA/Status.
+- **Cumulative Grade Calculation**: Subject grade now based on aggregated percentage across all CA types (not just the last CA record).
+
+### Added
+
+- **Mobile Teacher App — CA Marks Entry**: New "Assessment Type" dropdown on Offline Exam Result screen. Teachers can enter CA1, CA2, Exam marks separately from mobile.
+- **Mobile Parent/Student App — CA Breakdown View**: Expandable CA breakdown card per subject in result view. Shows individual CA scores, weightages, color-coded progress bars, and aggregated term total.
+- **Student-Web — CA Breakdown View**: Same expandable CA breakdown UI on student-web result page.
+- **Push Notifications for Result Publish**: Notifications now correctly sent to BOTH students AND guardians/parents (was sending only to students before).
+
+### Improved
+
+- **CA API Field Names**: Added `weightage_percentage` and `total_marks` fields to `/api/teacher/exam-ca-types` response (maintains backward compat with web's `weightage` field).
+- **Mobile-Specific CA Endpoint**: New `GET /api/teacher/exam-ca-types` exposed (was web-only before).
+
+---
+
+## [1.9.3] - 2026-04-29
+
+### Added
+
+- **Continuous Assessment (CA) System**: Complete progressive evaluation framework with weighted scoring (web platform)
+  - Configure custom CA types (CA1–CA5) with flexible weightages per exam
   - Automated weighted score calculations (e.g., CA1 20% + CA2 20% + Exam 60%)
   - Term total computation with weighted component scores
   - Session cumulative average tracking across all terms
@@ -27,95 +111,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - Backward compatible with existing exams (works with or without CA configuration)
   - Comprehensive CA system documentation and guides
 
-- **Teacher Mobile App — CA Marks Entry**
-  - New CA type selector (dropdown) on the Offline Exam Result screen
-  - Dynamic total marks display per selected CA type (e.g., 20 marks for CA1, 60 for Exam)
-  - Marks validation against CA-specific totals
-  - Save draft and publish workflows include CA type
-  - Backward compatible: traditional exams continue to work without the selector
-  - Auto-load CA configuration when an exam is selected
+### Schema Changes (Auto-Migrated)
 
-- **Student & Parent Mobile App — CA Breakdown View**
-  - Expandable CA breakdown card under each subject result
-  - Individual CA scores (CA1, CA2, Exam) with weightages
-  - Visual progress bars colored by performance:
-    - Green: ≥75% (Excellent)
-    - Blue: ≥60% (Good)
-    - Orange: ≥40% (Average)
-    - Red: <40% (Needs improvement)
-  - Aggregated term total row at the bottom
-  - Hidden automatically for non-CA exams
-
-- **Legacy Exam Migration Tool** (`exams:migrate-to-ca`)
-  - One-time Artisan command to migrate legacy exam marks to CA structure
-  - Adds default CA configuration (CA1=20%, CA2=20%, Exam=60%) to legacy exams
-  - Proportionally adjusts existing marks to the new totals
-  - Per-school or all-schools processing
-  - Dry-run mode by default for safe preview
-  - Detailed reporting of changes
-
-- **Automatic CA Normalization in School Migrations**
-  - Hooked into `migrate:school` command
-  - Automatically marks legacy `NULL ca_type` records as `'Exam'` after schema migrations
-  - Idempotent — safe to run multiple times
-  - Silently skips schools without legacy records
-  - Prevents inflated mark totals from accumulating
-
-### Fixed
-
-- **Push Notifications for Result Publish** — Notifications now correctly sent to BOTH students AND guardians/parents
-  - Previously, only students received notifications because guardians were skipped by the lookup loop
-  - Now uses a separate guardian-result mapping for accurate delivery
-
-- **PDF Report Card Improvements**
-  - Term Total now displays the correct percentage (was showing 0%)
-  - Session Cumulative Average recalculates on the fly (was showing 0% from stale data)
-  - Status, Percentage, Grade, and Term Rank now display correctly regardless of pass/fail
-  - Range/Grade reference table no longer overlaps with results table
-  - All subjects appear in the report (including legacy "Exam" component)
-
-- **CA Mark Display Corrections**
-  - Fixed inflated subject totals (e.g., 988/1100 → 78/100) caused by double-counting legacy + CA records
-  - Cumulative grade now calculated from aggregated percentage rather than the last CA record alone
-  - Example: A student with high CA marks but a weaker final exam now receives a fair cumulative grade
-    instead of an unfairly low one based on the exam component alone
-
-- **Critical SQL Error in Result Calculation**
-  - Resolved `Unknown column 'class_id'` error that was silently breaking exam result publishing
-  - Properly resolves `class_section_id` to `class_id` through the `ClassSection` model
-  - Fixed root cause that prevented `ExamResult` records from being created during publish
-
-- **Web Portal: Manage Exam Marks Page**
-  - Student marks table no longer loads prematurely on page render
-  - Selecting Exam no longer triggers an unwanted AJAX call before Subject is chosen
-  - Status filter changes now refresh the table when results are visible
-  - Programmatic CA dropdown changes (from exam selection) no longer trigger refresh
-  - Manual CA type selection properly refreshes the marks table
-
-- **Mobile App Race Condition**
-  - Student list now loads with the correct CA type from the start
-  - Previously, students loaded with wrong/no CA type before the dropdown was set
-
-### Improved
-
-- **CA API Field Naming Consistency**
-  - Added `weightage_percentage` and `total_marks` fields to the CA types API response
-  - Maintains backward compatibility with the `weightage` field used by the web
-
-- **CA Types API for Mobile**
-  - New `GET /api/teacher/exam-ca-types` endpoint exposed to mobile apps
-  - Previously, only the web route was available
-
-- **Student List API Supports CA Filtering**
-  - `GET /api/teacher/student-list` now accepts a `ca_type` query parameter
-  - Mobile teacher app uses this to load marks for the selected CA type
-  - Properly handles legacy `NULL` `ca_type` records for the `'Exam'` type
-
-### Documentation
-
-- New mobile-specific CA workflow guide
-- Migration guide for legacy exams
-- Added FAQ entries covering CA mobile workflow, migration tool, and Session Cumulative
+- New table `terms` for academic terms management
+- New table `continuous_assessments` for per-exam CA type configuration
+- Modified `exams` table: added `term_id`, `exam_weightage`
+- Modified `exam_marks` table: added `ca_type`, `total_marks`
+- Modified `exam_results` table: added `term_id`, `term_total`, `session_cumulative_average`, `session_position`
 
 ---
 
