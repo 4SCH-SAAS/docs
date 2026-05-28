@@ -175,7 +175,7 @@ Students/parents will receive a push notification automatically.
 
 ---
 
-## Print This Card!
+## Print This Card
 
 This page is designed to be printed on a single A4/Letter page. Use your
 browser's **Print** function (Ctrl/Cmd + P) and select "Fit to one page".
