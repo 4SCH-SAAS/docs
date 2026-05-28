@@ -82,6 +82,23 @@ By the end of this video, administrators and teachers will be able to:
 
 ---
 
+#### NEW: Optional CA Configuration (added in v1.9.3)
+
+**[Screen: "Configure CA" button on exam row]**
+
+**Narrator:**
+"After creating an exam, you can optionally configure **Continuous Assessment** — splitting evaluation into CA1, CA2, and a final Exam component, each with its own weightage."
+
+**[Screen: Click Configure CA → modal opens]**
+
+"Click **Configure CA** on the exam row. Add CA types like CA1 at 20%, CA2 at 20%, and Exam at 60%. The total must equal 100%."
+
+**[Screen: Saved configuration]**
+
+"This is optional — exams without CA work as a single mark, just like before. For full CA workflow details, see our dedicated [CA System video](./16-continuous-assessment-system.md)."
+
+---
+
 #### Section 2: Creating Timetable (2:30 - 5:30)
 
 **[Screen: Exam list, click on newly created exam]**
