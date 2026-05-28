@@ -199,9 +199,9 @@ Other examples:
 
 | Trigger | Title | Body |
 |---|---|---|
-| Timetable published | Exam Timetable Published | A new exam timetable has been scheduled for {exam name}. Tap to view the schedule. |
-| Results published | Results Available: {exam name} | Your results for {exam name} have been published. Tap to view your scores, grades and ranking. |
-| Assignment created | New Assignment | A new assignment for {subject} has been added. |
+| Timetable published | Exam Timetable Published | A new exam timetable has been scheduled for &lcub;exam name&rcub;. Tap to view the schedule. |
+| Results published | Results Available: &lcub;exam name&rcub; | Your results for &lcub;exam name&rcub; have been published. Tap to view your scores, grades and ranking. |
+| Assignment created | New Assignment | A new assignment for &lcub;subject&rcub; has been added. |
 | Fee invoice generated | Fee Invoice Generated | A new fee invoice is ready. Tap to view. |
 
 ---

@@ -140,7 +140,7 @@ Progress bar colours indicate performance:
 - ⌨️ **Use Tab key** to jump between mark inputs faster
 - 💾 **Save Draft frequently** — protects against connection drops
 - 📊 **Review CA breakdown** before publishing — catches typos early
-- 📱 **Mobile is faster for small classes** (<10 students)
+- 📱 **Mobile is faster for small classes** (fewer than 10 students)
 - 🖥️ **Web is faster for large classes** (bulk entry, copy-paste from spreadsheet)
 - 🔁 **Enter CAs in order** (CA1 → CA2 → Exam) but order isn't enforced
 
