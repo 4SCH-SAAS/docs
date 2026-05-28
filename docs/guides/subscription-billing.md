@@ -333,7 +333,7 @@ A: Contact support with both transaction IDs. We'll process a refund for the dup
 - [Subscription Expiry & Retention Policy](./subscription-expiry-retention-policy.md)
 - [School Administrator Guide](./school-admin.md)
 - [Notification Settings Management](./notification-settings-management.md)
-- [Payment Gateway Configuration (for super admins)](./school-admin.md#payment-gateway-configuration)
+- [Payment Gateway Setup (for super admins)](./school-admin.md#payment-gateway-setup)
 
 ---
 
