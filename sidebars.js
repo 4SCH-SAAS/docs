@@ -228,7 +228,9 @@ const sidebars = {
             'guides/session-year-calendar-setup',
             'guides/teacher-subject-assignment',
             'guides/notification-settings-management',
+            'guides/push-notifications',
             'guides/subscription-expiry-retention-policy',
+            'guides/subscription-billing',
           ],
         },
         {
@@ -257,6 +259,7 @@ const sidebars = {
             'guides/offline-exams',
             'guides/continuous-assessment',
             'guides/continuous-assessment-mobile',
+            'guides/continuous-assessment-quick-reference',
             'guides/online-exams-quick-reference',
             'guides/offline-exams-quick-reference',
           ],
