@@ -28,5 +28,12 @@
   },
   "devDependencies": {
     "markdownlint-cli2": "^0.20.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "core-js",
+      "core-js-pure",
+      "sharp"
+    ]
   }
 }
