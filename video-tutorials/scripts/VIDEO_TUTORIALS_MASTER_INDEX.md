@@ -27,16 +27,21 @@ Complete video script library for 4SCH school management system covering introdu
 
 ---
 
-### Series 2: Role-Based Guides (6-8 minutes each)
+### Series 2: Role-Based Guides (~55 minutes total)
 **Location:** `video-tutorials/scripts/02-role-based/`
 
 | # | Title | Duration | File | Target Audience |
 |---|-------|----------|------|-----------------|
-| 1 | School Admin Guide | 6-8 min | `01-school-admin-guide.md` | Administrators |
+| 1 | School Admin Guide | 6-8 min | `01-school-admin-guide.md` | School Administrators |
 | 2 | Teacher Guide | 6-8 min | `02-teacher-guide.md` | Teachers |
 | 3 | Parent Guide | 6-8 min | `03-parent-guide.md` | Parents |
+| 4 | Student Guide | 6-8 min | `04-student-guide.md` | Students |
+| 5 | Accountant Guide | 6-8 min | `05-accountant-guide.md` | Accountants, Bursars, Finance Staff |
+| 6 | Driver Guide | 5-6 min | `06-driver-guide.md` | Transportation Drivers |
+| 7 | Non-Teaching Staff Guide | 5-7 min | `07-non-teaching-staff-guide.md` | Receptionists, Librarians, Principals, Vice Principals |
+| 8 | Super Admin Guide | 12 min | `08-super-admin-guide.md` | 4SCH Super Admins (platform owners) |
 
-**Purpose:** Role-specific onboarding and feature overview
+**Purpose:** Role-specific onboarding and feature overview for every actor on the platform — from the daily school admin all the way up to the Super Admin who provisions schools.
 
 ---
 
@@ -57,6 +62,23 @@ Complete video script library for 4SCH school management system covering introdu
 **Purpose:** Comprehensive feature exploration with actionable step-by-step guidance
 
 **Subtotal:** 8 tutorials, 67-84 minutes
+
+---
+
+### Series 5: Feature-Focused Quick Scripts (~25 scripts, 5-8 min each)
+**Location:** `video-tutorials/scripts/05-feature-focused/`
+
+Short, single-task scripts for everyday operations. Highlights below — see `05-feature-focused/INDEX.md` for the full catalog.
+
+| # | Title | Duration | File | Target Audience |
+|---|-------|----------|------|-----------------|
+| … | (see folder index for the full list) | | | |
+| 17 | Paying Subscription Invoices | 5 min | `17-paying-subscription-invoices.md` | School Admins |
+| 18 | Payroll Processing | 8 min | `18-payroll-processing.md` | School Admins, Accountants |
+| 19 | Staff Attendance & Leave | 7 min | `19-staff-attendance-and-leave.md` | School Admins, Accountants, Principals |
+| 20 | Issuing Certificates | 5 min | `20-issuing-certificates.md` | School Admins, Principals, Class Teachers |
+
+**Purpose:** Single-task walkthroughs an admin or teacher can watch in the time it takes to drink a coffee, ready to apply straight to their dashboard.
 
 ---
 
@@ -104,13 +126,28 @@ Complete video script library for 4SCH school management system covering introdu
 - Communication & Messaging
 
 **Accountants/Finance Staff**
+- Accountant Guide
 - Fee Management & Payment Processing
+- Payroll Processing
+- Staff Attendance & Leave
 - Reports & Analytics (financial)
 - Data Import/Export
 
 **Transportation Coordinators/Drivers**
+- Driver Guide
 - Transportation Management
 - System Configuration (limited)
+
+**Principals & Vice Principals**
+- Non-Teaching Staff Guide
+- Staff Attendance & Leave
+- Issuing Certificates
+- Reports & Analytics
+
+**Super Admins (platform owners)**
+- Super Admin Guide
+- System Configuration
+- Choosing Your Subscription Package (to coach school admins)
 
 **IT Staff/Implementers**
 - System Configuration
@@ -135,6 +172,9 @@ Complete video script library for 4SCH school management system covering introdu
 **Operations**
 - Attendance Tracking
 - Transportation Management
+- Staff Attendance & Leave
+- Payroll Processing
+- Issuing Certificates
 - System Configuration (operational setup)
 
 **Communication & Community**
@@ -422,7 +462,12 @@ video-tutorials/
 │   ├── 02-role-based/
 │   │   ├── 01-school-admin-guide.md
 │   │   ├── 02-teacher-guide.md
-│   │   └── 03-parent-guide.md
+│   │   ├── 03-parent-guide.md
+│   │   ├── 04-student-guide.md
+│   │   ├── 05-accountant-guide.md
+│   │   ├── 06-driver-guide.md
+│   │   ├── 07-non-teaching-staff-guide.md
+│   │   └── 08-super-admin-guide.md
 │   ├── 03-feature-deep-dives/
 │   │   ├── 01-fee-management-payment-processing.md
 │   │   ├── 02-attendance-tracking.md
@@ -434,7 +479,19 @@ video-tutorials/
 │   │   ├── 08-system-configuration.md
 │   │   └── README.md
 │   ├── 04-support/
-│   │   └── (coming soon)
+│   │   ├── 01-common-issues.md
+│   │   ├── 02-faq-walkthrough.md
+│   │   └── 03-getting-help.md
+│   ├── 05-feature-focused/
+│   │   ├── 00-START-HERE.md
+│   │   ├── (single-task scripts 01–20, including:)
+│   │   ├── 17-paying-subscription-invoices.md
+│   │   ├── 18-payroll-processing.md
+│   │   ├── 19-staff-attendance-and-leave.md
+│   │   ├── 20-issuing-certificates.md
+│   │   ├── INDEX.md
+│   │   ├── QUICK-REFERENCE.md
+│   │   └── README.md
 │   └── VIDEO_TUTORIALS_MASTER_INDEX.md (this file)
 ├── metadata/
 │   ├── seo-keywords.md
@@ -502,6 +559,7 @@ video-tutorials/
 | 1.1 | TBD | Master index and production guide | Rovo Dev |
 | 1.2 | 2026-05-28 | Added CA system + subscription invoice scripts (v1.9.6) | Rovo Dev |
 | 1.3 | 2026-06-09 | **End-user refresh of 4 scripts** to reflect the latest UI behaviour — **17-paying-subscription-invoices** (clearer "what happens after I pay" story, updated subscription-extension wording, simpler troubleshooting list); **14-notification-settings** (new "Managing Your Notification Inbox" section covering the bell icon, mark-as-read & delete on individual notifications, Mark-all-read & Clear-all bulk actions, automatic tidy-up, and the new clearer message copy); **16-continuous-assessment-system** (rewrote the "older exams" section so admins can bring legacy exams into CA from the UI in a few clicks, added a tip explaining that changing a weightage now automatically rescales already-entered marks); **13-offline-exams-admin-teacher-guide** (added a short callout reassuring teachers it's safe to double-click Save, that what they save is what students see, and that the Term Exam dialog now closes by itself). | Rovo Dev |
+| 1.7 | 2026-06-09 | **Filled four high-priority documentation gaps with new codebase-verified scripts.** A gap analysis of the existing library against the `ng.4sch.com` codebase found four areas with significant code but no video coverage. New scripts created: **02-role-based/08-super-admin-guide.md** (12 min) — covers the Super Admin role end to end: provisioning schools with or without a custom subscription package, reviewing the public School Inquiry queue, managing the standard package catalog (recurring / prepaid / trial), tenant-switching to see inside any specific school for support, and the global System Settings tabs (General, Payment Configuration, Email, School Inquiry, Demo Mode, Maintenance Mode, 2FA, Email Templates) — verified against `SchoolController::store` with `assign_package`, `schoolInquiry*` methods, `WizardSettings`, `CheckSchoolStatus`, `DemoMiddleware`, `CheckForMaintenanceMode`, `CheckTwoFactorAuthenticated`, and `APISwitchDatabase`. **05-feature-focused/18-payroll-processing.md** (8 min) — full payroll cycle from one-time salary-component setup (Allowance / Deduction / Fixed / Percentage / Affected-by-Leave) through per-staff salary configuration, monthly generation, draft review with inline adjustments, finalise/lock, and payslip distribution (per-person, bulk email, ZIP); verified against `PayrollSettingController` (CRUD + restore/trash) and `PayrollController` (`index/create/store/show/slip_index/slip_list/slip/destroy`). **05-feature-focused/19-staff-attendance-and-leave.md** (7 min) — daily attendance entry with Mark-All-Present, monthly + per-staff views, leave-types setup, the staff-side leave-request form, admin-side approve/reject queue, and a clear explanation of how approved leave automatically flows into payroll via the "Affected by Leave" component flag; verified against `StaffAttendanceController` (`index/view/store/show/monthWiseIndex/monthWiseShow/yourIndex`), `LeaveMasterController`, and `LeaveController` (`leave_request/leave_request_show/leave_status_update/filter_leave`). **05-feature-focused/20-issuing-certificates.md** (5 min) — drag-and-drop template design with placeholder fields ({student_name}, {class}, {session}, {certificate_number}), QR-code verification embedding, bulk issuance for a whole class with preview-before-generate, and separate staff-certificate flow; verified against `CertificateTemplateController` (CRUD + `design/design_store/certificate/certificate_generate/staff_certificate/staff_generate_certificate`). Also fixed the long-stale **Series 2** listing — it had only ever shown 3 of the 7 existing role-based guides, even though the other 4 had been in the folder for ages; the new entries (4 Student, 5 Accountant, 6 Driver, 7 Non-Teaching Staff, plus the new 8 Super Admin) are now all listed. Added a new **Series 5** entry for the feature-focused folder, which had no top-level entry at all. Content Matrix expanded to cover Accountants, Drivers, Principals & Vice Principals, and Super Admins. Directory tree now reflects every script the folders actually contain. | Rovo Dev |
 | 1.6 | 2026-06-09 | **Added two new onboarding video scripts in Series 1 (Introduction) covering the first-time-visitor journey verified against the ng.4sch.com codebase.** Created `04-first-time-visitor-onboarding.md` (7 min) covering the two real public-facing entry paths: (A) sending a **School Inquiry** through the public form gated by the Super Admin's `school_inquiry` setting (SchoolController::schoolInquiryIndex/List/Update), and (B) being **provisioned directly by a 4SCH support contact** with a welcome email containing sign-in URL, username and temporary password — followed by the shared first-sign-in flow (temporary-password change, dashboard tour, profile and notification setup, suggested next steps). Created `05-choosing-a-subscription-package.md` (7 min) covering the two real ways a subscription is set: (A) **self-serve from the preset catalog** in Settings → Subscription (recurring vs prepaid tabs, comparing student/staff limits and modules, Subscribe button, payment via Paystack/Flutterwave/Stripe, Current Plan card), and (B) **custom package assigned by Super Admin** via SchoolController's `assign_package` flow (Current Plan banner, greyed-out catalog with explanatory message, request-changes-through-support). Both scripts also cover billing history, downloadable PDF receipts, auto-renew toggle, the warning banner before expiry and grace-period behaviour. Demo-school self-service flow was deliberately excluded per product owner. Master index Series 1 table updated to list all five intro scripts (previously listed only 01); directory tree updated. | Rovo Dev |
 | 1.5 | 2026-06-09 | **Removed all SMS documentation (codebase audit found SMS is not a feature).** A search of the `ng.4sch.com` codebase confirmed there are no SMS controllers, services, helpers, jobs, DB tables, or UI views — the real notification channels are Email (SMTP via Laravel Mail), Push (Firebase Cloud Messaging) and the In-App bell-icon inbox. Deleted the standalone `07-sms-integration.md` script entirely. Stripped SMS sections, mentions and visual cues from: **14-notification-settings** (removed "Configuring SMS with Nigerian Providers" section, glossary entries, provider notes, visual assets, post-production checks, additional resources; re-timed to 7:30 total); **08-system-configuration** (removed SMS Gateway Settings block and voiceover); **02-attendance-tracking**, **04-communication-messaging**, **02-faq-walkthrough**, **03-parent-guide**, **05-accountant-guide**, **01-timetable-builder**, **02-exam-setup**, **03-report-card-generation**, **04-fee-structure-setup**, **05-invoice-generation**, **06-online-payment-setup**, **03-feature-deep-dives/README** (incidental SMS mentions replaced with Email/Push/In-App). Updated `00-START-HERE`, `INDEX`, `QUICK-REFERENCE`, `README` to drop the SMS script and correct script counts/runtimes (now 7 scripts × 35 min in the feature-focused folder). In the written docs (docs/docs/), removed the entire "SMS Notification Configuration" and "SMS Not Delivered" sections from `notification-settings-management.md`, the entire "SMS Gateway Integration" chapter (Termii / Twilio / Msg91) from `reference/integrations.md`, and incidental SMS mentions from `intro/getting-started`, `guides/accountant`, `guides/school-admin`, `guides/subscription-expiry-retention-policy`, `guides/parents`, `guides/online-exams`, `reference/admin-quick-reference`. Kept legitimate references to **"Paystack SMS"** in `guides/parents` and `reference/parent-quick-reference` — that's the SMS Paystack/the parent's bank sends to the parent's phone as proof of payment, not a 4SCH feature. | Rovo Dev |
 | 1.4 | 2026-06-09 | **Library-wide voice & tone pass — removed backend/developer leakage from end-user scripts.** Audited every script and replaced server/database/API language with the words an admin, teacher, parent or student actually sees on screen. Key files updated: **08-system-configuration** (Health Dashboard, backups and integrations rewritten — no more SMTP ports, OAuth codes, "database optimization", or "API Response Time"); **05-payment-gateway-config**, **06-online-payment-setup**, **07-sms-integration**, **14-notification-settings**, **01-school-admin-guide** (all "API key/credentials/SMTP/Auth Token" steps reframed as "copy this access key from your provider's website and paste it into 4SCH", with a friendly padlock-style safety note instead of a developer-style warning; Gmail/Microsoft 365 setup shown as a normal Sign-in-with-Google flow); **01-bulk-student-import**, **02-attendance-tracking**, **03-attendance-correction**, **02-student-promotion**, **07-data-import-export**, **07-non-teaching-staff-guide** ("database fields/database/help database" reworded as "student fields", "attendance record", "help search box"); **README**, **INDEX**, **FAQ**, **getting-help** ("REST API access", "API documentation for developers", "database migration" reframed in plain English). Glossary in 14-notification-settings now defines **Access Key** and **Sender ID** instead of SMTP / FCM / API Key. | Rovo Dev |
