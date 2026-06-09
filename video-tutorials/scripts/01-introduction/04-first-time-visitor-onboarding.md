@@ -1,230 +1,191 @@
 # Video Script: First-Time Visitor Onboarding
 
-**Duration:** 8 minutes
-**Target Audience:** Prospective school owners; new School Admins on day one
+**Duration:** 7 minutes
+**Target Audience:** Prospective school owners; brand-new School Admins on day one
 **Learning Objectives:**
-- Understand the three real ways a new school joins 4SCH
-- Try the platform safely using a Demo School
-- Submit a School Inquiry the right way
-- Recognise the welcome email from 4SCH and complete first sign-in confidently
+- Understand the two ways a school joins 4SCH
+- Submit a School Inquiry from the public website (when enabled)
+- Recognise what happens next after submitting an inquiry
+- Open your welcome email and sign in for the first time
+- Complete the first-login password change and basic profile setup
 
 ---
 
 ## [00:00-00:20] INTRO (20 sec)
 
-**[VISUAL]** 4SCH logo with the subtitle "Your first day with 4SCH". Gentle morning-light background, animated school-building icon coming online.
+**[VISUAL]** 4SCH logo with subtitle "Onboarding Your School in 4SCH", calendar/clock icon, friendly opening animation.
 
-**[MUSIC]** Calm, welcoming background music
+**[MUSIC]** Light, welcoming, professional background music.
 
 **[VOICEOVER]:**
-"Welcome to 4SCH. Whether you're exploring the platform for the first time, looking to set up your own school, or you've just been given a brand-new admin account — this video walks you through the first few minutes of your journey, step by step."
+"Welcome to 4SCH. If you've just discovered us and you're wondering how to bring your school onto the platform, this short guide is for you. In the next few minutes we'll walk through exactly what happens from the moment you visit the website to the moment you sign in for the first time."
 
 ---
 
-## [00:20-01:00] The Three Ways to Get Started (40 sec)
+## [00:20-01:00] The Two Ways Your School Joins 4SCH (40 sec)
 
-**[VISUAL]** Three large cards side-by-side:
-- 🧪 **Try a Demo School** (instant, no commitment)
-- ✉️ **Send a School Inquiry** (you contact 4SCH)
-- 🎓 **You're already a customer** (welcome email in your inbox)
-
-Each card lights up in turn as it's mentioned.
+**[VISUAL]** Split-screen graphic showing two doors side-by-side:
+- Left door labelled **"Send a School Inquiry"** with a paper-airplane icon
+- Right door labelled **"Your support contact sets you up"** with a handshake icon
 
 **[VOICEOVER]:**
-"There are three real ways to start using 4SCH for the first time, and the right one depends on where you are right now.
+"There are two ways a school comes onto 4SCH.
 
-The first is a **Demo School** — a fully-loaded sample school you can sign into in seconds, with no payment, no commitment, and nothing to set up. It's perfect for getting a feel for the dashboard.
+The first is the **School Inquiry** path. If you've discovered 4SCH on your own, you can fill in a short form on our website to introduce your school. Our team reviews each inquiry and gets back to you.
 
-The second is a **School Inquiry** — a short form you fill in to let 4SCH know your school is interested. The 4SCH team reviews it and gets back to you to set up your real account.
+The second path is when **your 4SCH support contact sets you up directly**. This is the usual route if you've already had a conversation with us, or if your school has been recommended by a partner. You'll receive a welcome email with your sign-in details ready to go.
 
-The third is for schools that have already been provisioned by their 4SCH support contact — you'll have a **welcome email** in your inbox with your sign-in details.
-
-Let's walk through each one."
+Both paths lead to the same place: a fully provisioned 4SCH account for your school. Let's look at each one in turn."
 
 **[ON-SCREEN TEXT]**
-- "1. Demo School — try it now"
-- "2. School Inquiry — talk to us first"
-- "3. Welcome email — sign in"
+- "Two paths in, one destination"
 
 ---
 
-## [01:00-02:30] Path 1: Trying a Demo School (90 sec)
+## [01:00-02:30] Path A: Sending a School Inquiry (90 sec)
 
 **[VISUAL]**
-- Browser opens 4SCH homepage
-- Mouse moves to the **Create a Demo School** button (or similar CTA)
-- Click → a short form appears asking for:
-  - Your name
-  - Your email
-  - A school name (e.g. "Demo Academy")
-- Click **Create Demo**
-- Loading animation → success screen with a "Sign in to your demo" button
-- Click → lands on the 4SCH dashboard already populated with sample classes, sample students, sample fees, sample notifications
+- Browser open at the 4SCH public homepage
+- Cursor moves to the **Inquire about 4SCH** (or similarly named) button in the top navigation
+- The inquiry form opens
+- Highlight each field as the voiceover mentions it
+- Click **Submit**
+- Confirmation screen: "Thank you — we've received your inquiry"
 
 **[VOICEOVER]:**
-"Let's start with the demo. From the 4SCH homepage, click **Create a Demo School**. Fill in your name, your email, and pick any name for your demo school — it doesn't have to be real.
+"If your school is new to 4SCH and you'd like to start a conversation, the simplest first step is to send an inquiry from our website.
 
-Click **Create Demo** and within a few seconds you're signed in as a School Admin of a brand-new sample school. Everything's already pre-populated for you: sample classes, sample students, sample fee structures, sample notifications. Click around, click into the modules in the sidebar, send yourself a test notification, look at a sample report card — there's nothing you can break.
+On the 4SCH homepage, click **Inquire about 4SCH**. A short form opens. Fill in:
 
-The demo is a great way to:
-- See the dashboard layout
-- Try out the modules you're most interested in
-- Show the platform to other decision-makers at your school
+- Your **school name**
+- The **email address** we should reply to
+- A **phone number** so we can call you back if needed
+- A short note telling us a little about your school — how many students, what level, where you're located
 
-A few things to know about the demo:
-- Some sensitive actions are intentionally disabled (you can't, for example, charge a real card or send real SMS to real parents).
-- The demo data is shared with everyone trying the platform, so don't put any real student information into it.
-- Demo schools eventually get reset, so save anything important elsewhere.
+Click **Submit**. You'll see a confirmation message right away, and a copy of your inquiry is also sent to the email address you provided.
 
-When you're ready to use 4SCH for real, come back to the homepage and take Path 2 or contact your 4SCH support representative."
+Behind the scenes, your inquiry lands in a queue that our team reviews every day. We'll typically get back to you within one or two working days. When we reach out, we'll usually ask for a quick call to understand your school's needs, talk you through the available subscription packages, and answer any questions you have."
 
 **[ON-SCREEN TEXT]**
-- "No payment required"
-- "No commitment"
-- "Real-looking sample data"
-- "Reset periodically — don't store real info"
-
----
-
-## [02:30-04:30] Path 2: Sending a School Inquiry (120 sec)
-
-**[VISUAL]**
-- Back on the 4SCH homepage, scroll to the **Register Your School** / **Get Started** call to action
-- Click → short inquiry form appears with four fields:
-  - School Name
-  - School Email
-  - School Phone
-  - Tagline / About your school
-- Form is filled in with example: "Sunshine Academy", `admin@sunshineacademy.example`, `+234…`, "A primary and secondary school in Lagos."
-- Click **Submit Inquiry**
-- Success screen: "Thank you! The 4SCH team will be in touch within 1–2 business days."
-
-**[VOICEOVER]:**
-"If you'd like to set up a real account for your school, the next step is to send a School Inquiry. This isn't a self-serve sign-up — it's a short form that tells the 4SCH team who you are so they can provision your account properly.
-
-From the homepage, find the **Register Your School** or **Get Started** button and click it. You'll see a short form with four fields:
-
-- **School Name** — the official name of your school
-- **School Email** — the address you'd like to use as the main admin contact
-- **School Phone** — the school's main number, including the country code
-- **About your school** — a sentence or two that tells the team what type of school you are (primary, secondary, mixed) and roughly how many students you have
-
-Click **Submit Inquiry**. You'll see a confirmation screen straight away, and the 4SCH team will follow up by email — usually within one to two business days. They'll either ask a couple of clarifying questions, or send you a welcome email with the credentials for your brand-new real account.
-
-While you wait, this is a great time to try a Demo School (Path 1) so you arrive ready to hit the ground running."
-
-**[ON-SCREEN TEXT]**
-- "Form opens from the homepage"
-- "Four short fields"
-- "Response in 1–2 business days"
-- "Tip: try the demo while you wait"
+- "We'll reply within 1–2 working days"
+- "Inquiry → Conversation → Provisioning"
 
 :::tip
-The inquiry form is only visible when the 4SCH team has enabled public inquiries. If you don't see a **Register Your School** option on the homepage, your best route is to email the 4SCH support team directly.
+The inquiry form is available when 4SCH has the public inquiry option turned on. If you don't see the **Inquire about 4SCH** button on the homepage, your country or region may be using a direct provisioning model instead — just email us and we'll take it from there.
 :::
 
 ---
 
-## [04:30-06:30] Path 3: You Have a Welcome Email (120 sec)
+## [02:30-04:00] Path B: Provisioning by Your Support Contact (90 sec)
 
 **[VISUAL]**
-- Inbox view, opening an email titled "Welcome to 4SCH — Your School Is Ready"
-- Email content highlights:
-  - Sign-in URL (e.g. `https://yourschool.4sch.com`)
-  - Username (your email)
-  - Temporary password
-  - "Sign in for the first time" button
-- Click the button → 4SCH login page in a new tab
-- Enter credentials → first-login screen appears asking the new admin to set a permanent password
-- Fill in new password → land on the School Admin dashboard for the first time
-- Subtle overlay: "Take a moment to look around"
+- A welcome email landing in an inbox (notification animation)
+- The email opens — show a friendly template with the school name, sign-in link, username and a temporary password
+- Cursor clicks the sign-in link
+- The 4SCH sign-in page opens with the username pre-filled
+- The admin types the temporary password and clicks **Sign In**
 
 **[VOICEOVER]:**
-"If you've just received an email titled something like 'Welcome to 4SCH', your account is already set up and waiting for you. This email is the most important one you'll get from 4SCH, so don't delete it until you've signed in successfully.
+"If you've already spoken to a member of the 4SCH team — or if your school has been onboarded through a partner — you won't need to fill in the inquiry form. Instead, your **support contact will provision your school directly**. When that happens, here's what to expect.
 
-It contains three things you need:
+A **welcome email** arrives in your inbox. It comes from 4SCH and contains everything you need:
 
-- The **sign-in link** for your school's instance of 4SCH
-- Your **username** — usually the email address you gave the 4SCH team
-- A **temporary password** that's safe to share with you over email because you'll be asked to change it the moment you sign in
+- The exact **web address** to sign in to your school's 4SCH dashboard
+- Your **username** (usually your email address)
+- A **temporary password** — you'll be asked to change this the first time you sign in
+- A short summary of which **subscription package** has been set up for you, or a note that you'll choose one yourself on first login
 
-Click the sign-in link in the email. You'll see the familiar 4SCH login page. Enter your username and the temporary password from the email, and click **Sign in**.
+Click the sign-in link in the email. The 4SCH sign-in page opens. Type your temporary password and click **Sign In**.
 
-Because it's your first time, 4SCH immediately asks you to set a new permanent password. Choose something strong — at least eight characters, with a mix of letters, numbers, and symbols. Type it twice, click **Save**, and you're in.
-
-Welcome to your School Admin dashboard. Take a couple of minutes to look around before doing anything else:
-
-- The **sidebar on the left** is your map to every module — Students, Staff, Classes, Exams, Fees, Settings, and so on.
-- The **top bar** has your profile menu, the language switcher, and the **bell icon** where every notification lands.
-- The **dashboard cards** in the centre give you an at-a-glance summary that will start filling up as you add data.
-
-If your support contact pre-assigned a subscription package to your school, you'll see your current plan on the dashboard right away. If not, the next step is to pick one — and that's covered in the next video, **Choosing a Subscription Package**."
+If you can't find the welcome email, check your spam or junk folder — it sometimes lands there on the first delivery. If it still isn't there, reply to your support contact and they'll re-send it."
 
 **[ON-SCREEN TEXT]**
-- "Welcome email = your starting point"
-- "Sign in → Change password → Land on dashboard"
-- "Don't share your temporary password"
+- "Welcome email: sign-in link · username · temporary password"
+- "Check spam if you can't find it"
 
 ---
 
-## [06:30-07:30] Quick Wins for Your First 15 Minutes (60 sec)
+## [04:00-05:30] Your Very First Sign-In (90 sec)
 
 **[VISUAL]**
-- Checklist appearing line by line:
-  - ☐ Open the bell icon and send yourself a test notification
-  - ☐ Open **Settings → Profile** and upload your photo
-  - ☐ Open **Settings → School Settings** and check the school name, address and logo
-  - ☐ Open **Settings → Payment Configuration** and see whether a gateway is connected
-  - ☐ Find **Help** in the sidebar and bookmark the docs link
-- Each item ticks itself as it's mentioned
+- Sign-in completes
+- A modal appears: **"Set your new password"** with two fields — New password and Confirm new password
+- Admin types a strong password, clicks **Save**
+- Dashboard loads with a friendly welcome banner: "Welcome to 4SCH, [School Name]!"
+- Highlight the top-right profile menu
 
 **[VOICEOVER]:**
-"Before you start adding real students or staff, here are five quick wins for your first fifteen minutes:
+"Whichever path brought you here, your very first sign-in is the same.
 
-One — open the **bell icon** in the top bar and send yourself a test notification so you know what your alerts will look like.
+As soon as you sign in for the first time, 4SCH asks you to **change your temporary password**. Choose something strong and memorable, type it twice, and click **Save**.
 
-Two — open **Settings → Profile** and upload a photo. Small touch, but it makes the dashboard feel like yours.
+You'll then land on your **School Admin dashboard** — this is the home base for everything you'll do in 4SCH. Take a moment to look around. The left-hand menu lists the main areas: Students, Teachers, Classes, Fees, Reports, Settings, and more. You don't need to do anything in those just yet.
 
-Three — open **Settings → School Settings** and double-check your school's name, address, and logo. These show up on every report card, receipt, and printed page.
+Before we wrap up, do two quick housekeeping things from the **profile menu** in the top-right corner:
 
-Four — open **Settings → Payment Configuration**. If your support contact pre-connected your payment provider, you'll see a green **Connected** badge. If not, you can set that up later from the same page.
+1. **Update your profile** — add your full name, mobile number, and a profile picture so colleagues recognise you
+2. **Check your notification preferences** — make sure email and in-app notifications are switched on so you don't miss anything important
 
-Five — find **Help** in the sidebar (usually at the bottom) and bookmark the documentation link. That's where you'll go whenever you need a refresher on a specific feature."
+That's it — your school is now live on 4SCH."
 
 **[ON-SCREEN TEXT]**
-- "5 quick wins, ~15 minutes"
-- "Personalise → Verify → Bookmark"
+- "Step 1: Change temporary password"
+- "Step 2: Welcome to your dashboard"
+- "Step 3: Update profile · check notifications"
 
 ---
 
-## [07:30-08:00] Wrap-up & What's Next (30 sec)
+## [05:30-06:30] What to Do Next (60 sec)
 
 **[VISUAL]**
-- Recap card showing the three paths with a green tick beside whichever path the viewer just completed
-- Up-next teaser: "Next video — Choosing a Subscription Package"
-- 4SCH logo + subtle outro music
+- Animated checklist appearing one item at a time:
+  - ✅ Confirm or choose your subscription package
+  - ✅ Add your academic session and terms
+  - ✅ Import your students and staff
+  - ✅ Set up classes and subjects
+  - ✅ Invite parents and teachers
+- Each item gently fades in as it's mentioned
 
 **[VOICEOVER]:**
-"That's the full first-time-visitor journey. Whichever of the three paths brought you here — demo, inquiry, or welcome email — you're now signed in and ready for the next step.
+"With your account ready, here's a short list of what to do next — in the order most schools find easiest:
 
-The next video in this series, **Choosing a Subscription Package**, walks you through picking the right plan, what to do when 4SCH has pre-assigned a custom package to your school, and how subscription payment works. See you there."
+- **Confirm or choose your subscription package.** If a package was already assigned for you, you'll see it on the dashboard. If not, you'll pick one yourself — there's a dedicated video covering exactly how that works.
+- **Set up your academic session and terms** so the calendar reflects your school year
+- **Import your students and staff** using the bulk-import templates — quicker than typing them in one by one
+- **Set up your classes and subjects**
+- **Invite your parents and teachers** to download the mobile app or sign in to the web portal
+
+Each of those steps has its own short video in this tutorial library. Watch them in any order that suits you — there's no rush."
 
 **[ON-SCREEN TEXT]**
-- "Next: Choosing a Subscription Package"
-- "Need help? Check the Help menu in the sidebar"
+- "Suggested order — but pick whatever helps you most"
+
+---
+
+## [06:30-07:00] CLOSING & CALL-TO-ACTION (30 sec)
+
+**[VISUAL]** 4SCH logo, end card with linked-tutorial thumbnails:
+- "Watch next: Choosing Your Subscription Package"
+- "Watch next: Quick Start Guide"
+- "Read: First-Time Setup Checklist"
+
+**[VOICEOVER]:**
+"Welcome aboard. Up next, watch **Choosing Your Subscription Package** to lock in the plan that fits your school. Or, if you already have a package assigned, jump straight to the **Quick Start Guide** to find your way around the dashboard. We're glad you're here."
+
+**[ON-SCREEN TEXT]**
+- "Up next: Choosing Your Subscription Package"
+- "4sch.com · Help: support@4sch.com"
 
 ---
 
 ### SEO Metadata
 
-**Title:** First-Time Visitor Onboarding in 4SCH — Demo, Inquiry, or Welcome Email
-
-**Description:** Welcome to 4SCH! Learn the three real ways to start using the platform — try a Demo School, send a School Inquiry, or sign in with the welcome email from your support contact. Includes five quick wins for your first fifteen minutes as a School Admin.
-
-**Tags:** 4SCH onboarding, first-time setup, demo school, school inquiry, welcome email, first login, school admin, getting started, school management system, 4SCH tutorial
+**Title:** Getting Started with 4SCH — First-Time Visitor Onboarding
+**Description:** A friendly first-time-visitor walkthrough of joining 4SCH: send a School Inquiry from the homepage, or get provisioned directly by your 4SCH support contact. Covers welcome email, first sign-in, temporary password change, and the suggested next steps for new School Admins.
+**Tags:** 4SCH onboarding, school inquiry, sign up school, first time visitor, school admin first login, welcome email, 4SCH getting started, school management system Nigeria
 
 ---
 
 ## Script Version History
 
-- **v1.0** — June 2026 — Initial script creation. Covers the three real onboarding paths verified against the `ng.4sch.com` codebase (`SchoolController::createDemoSchool`, `SchoolController::registration` inquiry endpoint, and the standard welcome-email + first-login flow). Standard end-user voice; real UI labels; real notification channels only (no SMS).
+- **v1.0** - June 2026 - Initial script. Covers two real codebase-supported onboarding paths: public School Inquiry form (gated by Super Admin's school_inquiry setting) and direct provisioning by a 4SCH support contact. Excludes the demo-school self-service flow by request.
