@@ -8,72 +8,126 @@ keywords: [4SCH setup, school setup guide, configure school system, add students
 
 # Quick Start
 
-import Link from '@docusaurus/Link';
+This guide sets up a school on 4SCH in **under an hour**, assuming you've already gathered your basic school data (class list, staff list, student list, fee structure).
 
-- Jump to detailed guides:
-  - <Link to="/guides/school-admin#academic-management">Admin — Academic setup</Link>
-  - <Link to="/guides/school-admin#fee-management">Admin — Fees & finance</Link>
-  - <Link to="/guides/teacher-guide#teacher-dashboard">Teacher — Dashboard</Link>
+:::tip First time on 4SCH?
+If you don't have a 4SCH account yet, start with **[Getting Started](./getting-started.md)** — it covers the three ways to get an account (Demo School, School Inquiry, or Welcome Email from your 4SCH support contact) and walks you through your very first sign-in.
+:::
 
-This guide sets up a school in under an hour after all necessary school data are gathered.
+## Prerequisites
 
-Prerequisites:
-- Your 4SCH tenant URL and Admin account
-- Basic school structure (classes, sections, subjects)
-- Payment gateway details (optional, for billing)
-- CSVs for student/staff imports (optional)
+- Your school's **sign-in URL** (e.g. `yourschool.4sch.com`) and **School Admin** credentials
+- Your school's basic structure (classes, sections, subjects)
+- (Optional) Payment provider account details — Paystack, Flutterwave, or Stripe — for online fees
+- (Optional) CSVs of students and staff for bulk import
 
-Steps:
-1) Sign in to Admin Console
-- Go to your 4SCH tenant URL
-- Sign in with your Admin credentials
-- From the top bar, open Admin Console
+---
 
-2) Create academic session and terms
-- Admin Console → Academic Settings → Sessions
-- Add the current session (e.g., 2025–2026)
-- Add terms/semesters within the session
+## Step 0: Confirm your subscription plan
 
-3) Define classes, sections, and subjects
-- Admin Console → Academic Structure
-- Add classes (e.g., Grade 1–12)
-- Add sections (A, B, C) for each class
-- Add subjects and assign to classes
+Open **Settings → Subscriptions**:
 
-4) Add teachers and roles
-- Admin Console → Users & Permissions → Staff
-- Create teacher accounts or bulk import
-- Assign roles (Teacher, Head of Department)
-- Map teachers to subjects and classes
+- If a **Current Plan** card appears at the top, your Super Admin has already assigned a custom plan — you're good to go.
+- Otherwise, pick a package from the catalog (Recurring or Prepaid tab) and click **Subscribe**.
 
-5) Import students and link guardians
-- Admin Console → Students → Import
-- Upload the student CSV template
-- Add guardians (or import), then link to students
+See **[Getting Started](./getting-started.md)** for the full walk-through of subscription packages and first-time sign-in.
 
-6) Build timetable
-- Admin Console → Timetable
-- Create periods, rooms, and weekly schedules
-- Publish timetable to the 4SCH dashboard
+## Step 1: Confirm school identity
 
-7) Configure grading
-- Admin Console → Grades & Exams
-- Create exam types (e.g., Midterm, Final)
-- Set weightages and grade scales
-- Link assessments to subjects
+**Settings → School Settings**
 
-8) Set up fees and payment gateway (optional)
-- Admin Console → Finance → Settings
-- Define fee heads (Tuition, Lab, Transport)
-- Create fee structures and invoices
-- Connect a payment gateway for online payments
+- Check your school name, address, contact email/phone
+- Upload your school logo (it appears on every report card, receipt, and certificate)
 
-9) Invite users
-- Admin Console → Users & Permissions
-- Send invitations to teachers and guardians
-- Students log in via web portal ([https://ngs.4sch.com](https://ngs.4sch.com)) or mobile app using their credentials or SSO (if enabled)
+Then **Settings → Payment Configuration** — confirm your payment provider shows a green **Connected** badge.
 
-10) Announce and go live
-- Admin Console → Messaging → Announcements
-- Send a welcome message to all users
-- Monitor activity via Reports → Overview
+## Step 2: Create the academic session and terms
+
+**Settings → Sessions**
+
+- Add the current session (e.g. 2025–2026) and mark it active
+- Add terms within the session (First, Second, Third — or Semester 1, Semester 2)
+
+See **[Session Year & Calendar Setup](../guides/session-year-calendar-setup.md)** for details.
+
+## Step 3: Define classes, sections, and subjects
+
+**Academic → Classes** / **Academic → Sections** / **Academic → Subjects**
+
+- Add classes (e.g. JSS 1–3, SSS 1–3, or Grade 1–12)
+- Add sections (A, B, C) under each class where you have multiple streams
+- Add subjects and assign them to the relevant classes
+
+## Step 4: Add staff (teachers + non-teaching)
+
+**Staff → Staff List**
+
+- Add staff individually, or bulk-import via CSV
+- Assign roles (Teacher, Accountant, Driver, Librarian, Receptionist, Principal, etc.)
+- For teachers, map each one to the subjects and classes they teach — see **[Teacher–Subject Assignment](../guides/teacher-subject-assignment.md)**
+
+If you'll be running payroll, also set up:
+- **Payroll Settings** — your salary components (allowances and deductions)
+- **Each staff member's Salary tab** — base salary and component amounts
+- **Leave Types** — annual leave allowances per type (Staff → Leave Types)
+
+## Step 5: Add students and link parents
+
+**Students → Add Student** or **Students → Bulk Import**
+
+- Add students individually, or bulk-import via CSV (download the template first)
+- Add parents/guardians (or import) and link each one to their child or children
+
+## Step 6: Build the timetable
+
+**Timetable → Build Timetable**
+
+- Create periods, rooms, and the weekly schedule
+- Publish — every teacher, student, and parent immediately sees their relevant view
+
+## Step 7: Configure grading and exams
+
+**Exams → Setup**
+
+- Create exam types (e.g. CA1, CA2, Mid-Term, End-of-Term)
+- For Continuous Assessment, set component weightages so they total 100%. See **[Continuous Assessment](../guides/continuous-assessment.md)**
+- Set grade scales
+
+## Step 8: Set up fees (optional)
+
+**Fees → Fee Structures**
+
+- Define fee heads (Tuition, Lab, Transport, etc.)
+- Build the fee structure for each class
+- Generate invoices for the term
+
+If you connected a payment provider in Step 1, parents can pay online from their dashboard.
+
+## Step 9: Notifications and welcome
+
+**Settings → Email Settings** and **Settings → FCM Settings**
+
+- Confirm both are connected (see **[Notification Settings & Management](../guides/notification-settings-management.md)** if not)
+- Send a welcome announcement: **Communication → Announcements**
+
+## Step 10: Go live
+
+- Invite each role to sign in: teachers and parents get a welcome email automatically when you add them
+- Monitor activity from your dashboard for the first week to catch any issues early
+
+---
+
+## What to learn next
+
+Once your school is live, these guides will help you grow into the platform:
+
+- **[School Admin Guide](../guides/school-admin.md)** — the broader admin role
+- **[Accountant Guide](../guides/accountant.md)** — for the bursar / finance team
+- **[Subscription, Billing & Expiry](../guides/subscription-billing.md)** — how your school's plan renews and what happens at expiry
+- **[Notification Settings & Management](../guides/notification-settings-management.md)** — email, push, in-app notifications and templates
+- **[Continuous Assessment](../guides/continuous-assessment.md)** — CA configuration, mark entry, and reports
+- **[Teacher Guide](../guides/teachers.md)**, **[Parent Guide](../guides/parents.md)**, **[Student Guide](../guides/students.md)** — for the people you're inviting
+
+:::tip Brand-new guides coming soon
+A separate PR adds dedicated written guides for **Super Admin**, **Payroll Processing**, **Staff Attendance & Leave**, and **Issuing Certificates**. Once that PR lands, this section will be updated to link them directly. In the meantime, see the video scripts of the same names in `video-tutorials/scripts/`.
+:::
