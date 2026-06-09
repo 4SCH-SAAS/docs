@@ -12,40 +12,71 @@ import Link from '@docusaurus/Link';
 
 Whether you're new to 4SCH or helping your school transition from paper records or another system, this guide will walk you through the first steps.
 
-## New to 4SCH? Register Your School
+## New to 4SCH? Bringing Your School Onboard
 
 **4SCH** is a modern enterprise School Management System designed to elevate service delivery for schools, enabling schools to much more effectively orchestrate a very productive teaching and learning process using modern technology.
 
-### Registration Process
+There are **two ways** a school joins 4SCH:
 
-**Step 1:** Go to the website: [www.4sch.com](https://www.4sch.com)
+### Path A: Send a School Inquiry
 
-**Step 2:** Register Your School if you and your school are new to 4SCH
+If you've found 4SCH on your own and you'd like to bring your school onto the platform, the simplest first step is to send an inquiry from our website.
 
-**Step 3:** Check your email inbox (check spam folder if you didn't see an email from 4SCH). If no mail is found, you may have entered your email incorrectly—contact us.
+**Step 1:** Go to [www.4sch.com](https://www.4sch.com).
 
-**Step 4:** If you receive an email acknowledging receipt of your registration, it means we have received and are reviewing your school application. If our team requires more info from your school, you will be contacted.
+**Step 2:** Click **Inquire about 4SCH** in the top navigation.
 
-:::tip Need Help with Registration?
-Contact our support team:
+**Step 3:** Fill in the short inquiry form:
+- Your **school name**
+- The **email address** we should reply to
+- A **phone number** so we can call you back if needed
+- A short note about your school — number of students, level (primary, secondary, etc.) and location
+
+**Step 4:** Click **Submit**. You'll see a confirmation message right away, and a copy is also sent to the email address you provided.
+
+**Step 5:** Our team reviews your inquiry — usually within one or two working days — and gets in touch to discuss your school's needs and walk you through the available subscription packages.
+
+:::tip Don't see the Inquire button?
+The public inquiry form is enabled by 4SCH. If you don't see the **Inquire about 4SCH** button on the homepage, your country or region may be using a direct-provisioning model instead — just email us using the details below and we'll take it from there.
+:::
+
+### Path B: Provisioned Directly by Your 4SCH Support Contact
+
+If you've already spoken to someone on the 4SCH team — or if your school has been recommended through a partner — you don't need to fill in the inquiry form. Your **support contact will provision your school directly** and email you what you need to sign in.
+
+**What to expect in your welcome email:**
+- The exact **web address** to sign in to your school's 4SCH dashboard (e.g. `yourschool.4sch.com`)
+- Your **username** (usually your email address)
+- A **temporary password** — you'll be asked to change this the first time you sign in
+- A short summary of which **subscription package** has been set up for you, or a note that you'll choose one yourself on first login
+
+:::tip Can't find the welcome email?
+Check your spam or junk folder — it sometimes lands there on the first delivery. If it still isn't there, reply to your support contact and they'll re-send it.
+:::
+
+### Need Help?
+
+Contact our support team at any time:
 - **Email:** info@ng.4sch.com
 - **Phone/WhatsApp:** +234 704 151 8843
 - **Follow us:** @ng4sch on social media
-:::
 
 ---
 
 ## Your First Login
 
-After your school subscribes to 4SCH, you'll receive login credentials by email.
+Whichever path brought you here, your very first sign-in is the same.
 
 **Step 1: Access the System**
 1. Open your web browser (Chrome, Firefox, or Safari recommended)
-2. Go to your school's 4SCH URL (e.g., `yourschool.4sch.com`)
-3. Enter the username and password provided
-4. You'll be asked to change your password on first login
+2. Click the sign-in link in your welcome email, or go to your school's 4SCH URL (e.g. `yourschool.4sch.com`)
+3. Enter the username and **temporary password** provided
+4. Click **Sign In**
 
-**Step 2: Understand Your Dashboard**
+**Step 2: Change Your Temporary Password**
+On first sign-in 4SCH asks you to set a new password. Choose something strong and memorable, type it twice, and click **Save**.
+
+**Step 3: Understand Your Dashboard**
 
 What you see depends on your role:
 - **Administrators** see school-wide statistics, pending tasks, and quick access to settings
@@ -53,9 +84,28 @@ What you see depends on your role:
 - **Parents** see their children's recent activity, upcoming events, and fee status
 - **Students** see their timetable, assignments due, and recent grades
 
+**Step 4: A Couple of Quick Housekeeping Things**
+From the **profile menu** in the top-right corner:
+1. **Update your profile** — add your full name, mobile number, and a profile picture
+2. **Check your notification preferences** — make sure email, in-app and push notifications are switched on so you don't miss anything important
+
 :::tip First Time Using 4SCH?
-Don't worry if things look unfamiliar. Click around and explore—you can't break anything! Each section of the dashboard has help text explaining what it does.
+Don't worry if things look unfamiliar. Click around and explore — you can't break anything! Each section of the dashboard has help text explaining what it does.
 :::
+
+---
+
+## Choosing Your Subscription Package
+
+If you're a School Admin signing in for the first time, your dashboard will show one of two things:
+
+- **A "Current Plan" banner** at the top — if your 4SCH support contact already set up a custom subscription package for your school when they provisioned you, it's active and you don't need to do anything else right now. Read the [Subscription & Billing guide](../guides/subscription-billing.md) to see what's included and how to view bills and receipts.
+
+- **A prompt to choose a package** — if no package was assigned for you, go to **Settings → Subscription** in the left menu. You'll see two tabs at the top: **Recurring** (auto-renews each month or term) and **Prepaid** (pay-as-you-go for a fixed period). Compare the preset packages — each card shows the price, the student and staff limits, and the modules included — then click **Subscribe** on the one that fits your school. Complete the payment via Paystack, Flutterwave or Stripe (depending on what's configured), and your plan is active immediately.
+
+The full walkthrough — including how to view your billing history, download PDF receipts, switch on auto-renew, and what happens at expiry and during the grace period — is in the [Subscription & Billing guide](../guides/subscription-billing.md) and the **Choosing Your Subscription Package** video tutorial.
+
+---
 
 ## What to Do First (By Role)
 
