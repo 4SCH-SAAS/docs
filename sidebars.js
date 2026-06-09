@@ -163,6 +163,27 @@ const sidebars = {
           collapsed: false,
           items: [
             'guides/non-teaching-staff-guide',
+            'guides/super-admin-guide',
+            {
+              type: 'link',
+              label: '🏗️ Provisioning a New School',
+              href: '/guides/super-admin-guide#provisioning-a-new-school',
+            },
+            {
+              type: 'link',
+              label: '📨 Reviewing School Inquiries',
+              href: '/guides/super-admin-guide#reviewing-school-inquiries',
+            },
+            {
+              type: 'link',
+              label: '📦 Managing Subscription Packages',
+              href: '/guides/super-admin-guide#managing-subscription-packages',
+            },
+            {
+              type: 'link',
+              label: '🌐 Global System Settings',
+              href: '/guides/super-admin-guide#global-system-settings',
+            },
             'guides/accountant-guide',
             {
               type: 'link',
@@ -239,6 +260,61 @@ const sidebars = {
           collapsed: false,
           items: [
             'guides/expense-management',
+            'guides/payroll',
+            {
+              type: 'link',
+              label: '🛠️ Payroll Settings (Components)',
+              href: '/guides/payroll#one-time-setup-salary-components',
+            },
+            {
+              type: 'link',
+              label: '🧾 Generating Monthly Payroll',
+              href: '/guides/payroll#monthly-generating-payroll',
+            },
+            {
+              type: 'link',
+              label: '📄 Payslips',
+              href: '/guides/payroll#payslips',
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: '👥 Staff & HR',
+          collapsed: false,
+          items: [
+            'guides/staff-attendance-and-leave',
+            {
+              type: 'link',
+              label: '📅 Daily Staff Attendance',
+              href: '/guides/staff-attendance-and-leave#daily-staff-attendance',
+            },
+            {
+              type: 'link',
+              label: '🏖️ Leave Types',
+              href: '/guides/staff-attendance-and-leave#setting-up-leave-types',
+            },
+            {
+              type: 'link',
+              label: '✅ Approving Leave',
+              href: '/guides/staff-attendance-and-leave#approving-or-rejecting-leave',
+            },
+            'guides/certificates',
+            {
+              type: 'link',
+              label: '🎨 Building a Template',
+              href: '/guides/certificates#building-a-certificate-template',
+            },
+            {
+              type: 'link',
+              label: '🏆 Issuing Student Certificates',
+              href: '/guides/certificates#issuing-student-certificates',
+            },
+            {
+              type: 'link',
+              label: '👔 Issuing Staff Certificates',
+              href: '/guides/certificates#issuing-staff-certificates',
+            },
           ],
         },
         {
