@@ -67,9 +67,9 @@ See **[Session Year & Calendar Setup](../guides/session-year-calendar-setup.md)*
 - For teachers, map each one to the subjects and classes they teach — see **[Teacher–Subject Assignment](../guides/teacher-subject-assignment.md)**
 
 If you'll be running payroll, also set up:
-- **Payroll Settings** — your salary components (allowances and deductions). See **[Payroll Processing](../guides/payroll.md)**
+- **Payroll Settings** — your salary components (allowances and deductions)
 - **Each staff member's Salary tab** — base salary and component amounts
-- **Leave Types** — annual leave allowances per type. See **[Staff Attendance & Leave](../guides/staff-attendance-and-leave.md)**
+- **Leave Types** — annual leave allowances per type (Staff → Leave Types)
 
 ## Step 5: Add students and link parents
 
@@ -122,9 +122,12 @@ If you connected a payment provider in Step 1, parents can pay online from their
 Once your school is live, these guides will help you grow into the platform:
 
 - **[School Admin Guide](../guides/school-admin.md)** — the broader admin role
-- **[Super Admin Guide](../guides/super-admin.md)** — if you're a platform owner
-- **[Payroll Processing](../guides/payroll.md)** — monthly staff payroll
-- **[Staff Attendance & Leave](../guides/staff-attendance-and-leave.md)** — daily HR
-- **[Issuing Certificates](../guides/certificates.md)** — end-of-term awards, leaving certificates, employment letters
+- **[Accountant Guide](../guides/accountant.md)** — for the bursar / finance team
 - **[Subscription, Billing & Expiry](../guides/subscription-billing.md)** — how your school's plan renews and what happens at expiry
+- **[Notification Settings & Management](../guides/notification-settings-management.md)** — email, push, in-app notifications and templates
+- **[Continuous Assessment](../guides/continuous-assessment.md)** — CA configuration, mark entry, and reports
 - **[Teacher Guide](../guides/teachers.md)**, **[Parent Guide](../guides/parents.md)**, **[Student Guide](../guides/students.md)** — for the people you're inviting
+
+:::tip Brand-new guides coming soon
+A separate PR adds dedicated written guides for **Super Admin**, **Payroll Processing**, **Staff Attendance & Leave**, and **Issuing Certificates**. Once that PR lands, this section will be updated to link them directly. In the meantime, see the video scripts of the same names in `video-tutorials/scripts/`.
+:::
