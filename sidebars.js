@@ -247,6 +247,17 @@ const sidebars = {
           items: [
             'guides/admin-dashboard-analytics',
             'guides/session-year-calendar-setup',
+            'guides/holidays',
+            {
+              type: 'link',
+              label: '➕ Adding a Holiday',
+              href: '/guides/holidays#adding-a-holiday',
+            },
+            {
+              type: 'link',
+              label: '🔁 How Holidays Affect Other Modules',
+              href: '/guides/holidays#how-holidays-interact-with-other-modules',
+            },
             'guides/teacher-subject-assignment',
             'guides/notification-settings-management',
             'guides/push-notifications',
@@ -314,6 +325,40 @@ const sidebars = {
               type: 'link',
               label: '👔 Issuing Staff Certificates',
               href: '/guides/certificates#issuing-staff-certificates',
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: '📚 Teaching & Learning',
+          collapsed: false,
+          items: [
+            'guides/lessons-and-topics',
+            {
+              type: 'link',
+              label: '🎬 Creating a Lesson',
+              href: '/guides/lessons-and-topics#creating-a-lesson',
+            },
+            {
+              type: 'link',
+              label: '📎 Attachments (Files, YouTube, Links)',
+              href: '/guides/lessons-and-topics#attaching-files-and-links',
+            },
+            'guides/assignments',
+            {
+              type: 'link',
+              label: '📝 Creating an Assignment',
+              href: '/guides/assignments#creating-an-assignment',
+            },
+            {
+              type: 'link',
+              label: '✅ Reviewing Submissions',
+              href: '/guides/assignments#reviewing-submissions',
+            },
+            {
+              type: 'link',
+              label: '🔁 Allowing Resubmission',
+              href: '/guides/assignments#allowing-resubmission',
             },
           ],
         },
