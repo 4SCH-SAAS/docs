@@ -61,6 +61,17 @@ Contact our support team at any time:
 - **Phone/WhatsApp:** +234 704 151 8843
 - **Follow us:** @ng4sch on social media
 
+### 🎓 Path 3: You Have a Welcome Email Already
+
+If your school has already been provisioned by your 4SCH support contact, you'll have an email titled something like **"Welcome to 4SCH — Your School Is Ready"** in your inbox.
+
+That email contains the three things you need to sign in:
+- The **sign-in URL** for your school's instance of 4SCH (e.g. `yourschool.4sch.com`)
+- Your **username** (usually the email address you gave the 4SCH team)
+- A **temporary password** — safe to share with you over email because 4SCH asks you to change it the moment you sign in
+
+If you can't find this email, check your spam folder first, then contact 4SCH support — they can re-send it.
+
 ---
 
 ## Your First Login
@@ -112,6 +123,11 @@ The full walkthrough — including how to view your billing history, download PD
 ### If You're a School Administrator
 
 Your main job is to set up the school structure so everyone else can use the system.
+
+**Day 1: Subscription & Identity**
+1. ✅ Confirm your subscription plan in **Settings → Subscriptions** (see the "Choose Your Subscription Package" section above)
+2. ✅ Open **Settings → School Settings** and check your school name, address and logo (these appear on every report card, receipt and printed page)
+3. ✅ Open **Settings → Payment Configuration** and confirm your payment provider shows a green **Connected** badge
 
 **Week 1: Basic Setup**
 1. ✅ Create the current academic session (e.g., 2024/2025)
