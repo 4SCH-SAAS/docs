@@ -197,7 +197,7 @@ Click Submit. The system updates the student's fee balance instantly, generates 
 **[VOICEOVER]:**  
 "Enable online payments to let parents pay from the mobile app. Go to Settings → Payment Gateways.
 
-4SCH supports Paystack, Flutterwave, and Stripe. Enter your gateway credentials - API keys from your payment provider account. Set transaction charges if applicable.
+4SCH supports Paystack, Flutterwave, and Stripe. Choose your provider from the dropdown, then paste the two access keys you copied from your provider's website. Set transaction charges if applicable.
 
 Enable the gateway and save. Parents can now pay fees directly from the parent app using debit cards or bank transfers. Payments sync automatically to student accounts."
 
@@ -227,7 +227,7 @@ All reports can be scheduled to generate automatically and email to you weekly o
 
 Weekly, review fee collection status, generate reports for leadership meetings, check staff attendance, and post announcements for upcoming events.
 
-Monthly, generate financial reports, review academic performance trends, backup your database from Settings, and plan activities for the next month."
+Monthly, generate financial reports, review academic performance trends, run a manual backup from **Settings → Backup & Data** for extra peace of mind, and plan activities for the next month."
 
 ### [20:30-21:30] Security & Best Practices
 **[VISUAL]** Security settings overview
@@ -238,7 +238,7 @@ Monthly, generate financial reports, review academic performance trends, backup 
 
 Assign role-based permissions carefully - teachers shouldn't access fee records, accountants shouldn't edit academic data. Review user activity logs monthly to spot unusual access.
 
-Backup your database weekly. Go to Settings → Backup & Data. Schedule automatic backups to cloud storage. Test restoring from backup annually to ensure data integrity."
+Make sure your backups are running. Go to **Settings → Backup & Data** and confirm a daily automatic backup is switched on (it usually already is). Once a year, do a small test restore to confirm everything works the way you expect."
 
 ### [21:30-22:00] OUTRO
 **[VISUAL]** 4SCH resources screen

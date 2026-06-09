@@ -502,7 +502,7 @@ The system has 100+ permissions organized by module. Here's the complete list:
 - `fcm-setting-create`, `fcm-setting-manage` - Configure Firebase Cloud Messaging
 
 **Email Settings**
-- `email-setting-create` - Configure SMTP/email
+- `email-setting-create` - Configure email sending options
 
 **Payment Settings**
 - `payment-settings` - Configure payment gateways

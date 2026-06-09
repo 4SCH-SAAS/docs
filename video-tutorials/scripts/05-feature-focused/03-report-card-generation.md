@@ -192,13 +192,13 @@
 
 **[SCREEN RECORDING - Distribution Methods]**
 - Option 1: Email to parents with PDF attachment
-- Option 2: SMS notification with link to web portal
+- Option 2: Push notification with link to view in the app
 - Option 3: In-app notification through parent app
 - Option 4: Print physical copies
 - Option 5: Schedule delivery for future date
 
 **[VOICEOVER]:**  
-"Distribute through multiple channels. Email report cards to parents as PDFs - they can print or store digitally. Send SMS notifications linking to a secure web portal where parents view cards online. Notify through the 4SCH parent app. Or print physical copies for traditional distribution. You can even schedule delivery for a specific date to ensure all parents receive simultaneously."
+"Distribute through multiple channels. Email report cards to parents as PDFs — they can print or store digitally. Send push notifications through the 4SCH parent app linking parents directly to their child's card. Or print physical copies for traditional distribution. You can even schedule delivery for a specific date to ensure all parents receive at the same time."
 
 **[SCREEN RECORDING - Access Control & Security]**
 - Show parent can only access their child's cards
@@ -313,7 +313,7 @@ And consider adding custom metrics relevant to your school's mission. If your sc
 
 **Title:** How to Generate Professional Report Cards in 4SCH | Templates, Customization & Distribution
 
-**Description:** Master 4SCH's Report Card Generation. Create professional, customizable report cards in minutes. Include academic performance, competencies, behavior, and personalized comments. Distribute via email, SMS, or print.
+**Description:** Master 4SCH's Report Card Generation. Create professional, customizable report cards in minutes. Include academic performance, competencies, behavior, and personalized comments. Distribute via email, the parent app, or print.
 
 **Tags:** report card, student assessment, academic reporting, school management, grading, 4SCH, student progress, behavioral assessment, competency tracking
 

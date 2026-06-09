@@ -168,11 +168,11 @@ Plus, the system learns your school's patterns - preferred teacher slots, room a
 - Click "Publish Timetable"
 - Select distribution method: All Stakeholders, Parents Only, Teachers Only
 - Add custom message
-- Choose delivery: In-App, Email, SMS, WhatsApp
+- Choose delivery: In-App, Email, Push
 - Click "Distribute"
 
 **[VOICEOVER]:**  
-"Ready to share? Click 'Publish' and choose who receives the timetable - teachers, parents, and students can all get versions suited to them. Send via email, SMS, WhatsApp, or through the 4SCH app. Parents see only their child's schedule. Teachers see their assignments. Students see their classes."
+"Ready to share? Click 'Publish' and choose who receives the timetable — teachers, parents, and students can all get versions suited to them. Send via email or through the 4SCH app (in-app and push). Parents see only their child's schedule. Teachers see their assignments. Students see their classes."
 
 **[SCREEN RECORDING - Access by Stakeholders]**
 - Show parent viewing child's timetable

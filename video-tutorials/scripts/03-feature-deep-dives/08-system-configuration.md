@@ -241,22 +241,18 @@ Configure password policies - they can be lenient for parents or stricter for ad
 - Settings > Communication Configuration
 - Notification channels configuration:
   - Email notifications: Enable/Disable
-  - SMS notifications: Enable/Disable (requires SMS gateway setup)
   - In-app notifications: Always enabled
   - Push notifications (mobile app): Enable/Disable
-- Email server configuration:
-  - SMTP Server: mail.4sch.com
-  - Port: 587
-  - Username: school@4sch.com
-  - Password: (obscured)
-  - TLS/SSL toggle: Enabled
-  - Test connection button: "Send test email to admin@sunshinemodel.edu.ng"
-  - Test result: "Email sent successfully"
-- SMS Gateway integration:
-  - Provider selection: Twilio / Termii / Africastalking
-  - API Key entry (hidden for security)
-  - Sender ID: "4SCH"
-  - Test SMS sent successfully
+- Email Settings form (Settings → Email Settings):
+  - **Mail Driver**: `smtp`
+  - **Mail Host**: `smtp.gmail.com` (example for Gmail)
+  - **Mail Port**: `587`
+  - **Mail Username**: `school@example.com`
+  - **Mail Password**: (obscured — App Password for Gmail/M365)
+  - **Mail Encryption**: `tls`
+  - **Mail From Address**: `school@example.com`
+  - **Mail From Name**: `ABC School`
+  - Click **Send Test Email** → enter an address → tick confirms it works
 - Message templates customization:
   - Default notification templates shown:
     - "Student absent: Hi [Parent Name], [Student Name] was marked absent on [Date]"
@@ -272,9 +268,9 @@ Configure password policies - they can be lenient for parents or stricter for ad
 **[VOICEOVER]:**  
 "Communication settings control how your school stays connected. Enable notification channels that work for your community. Parents might use email and SMS, teachers prefer in-app messages.
 
-Configure your email server. 4SCH sends welcome emails, password resets, notification summaries - all through email. Connect to your school's SMTP server or use 4SCH's provided one.
+Set up email. 4SCH uses email to send welcome messages, password resets, and notification summaries. Go to **Settings → Email Settings** and fill in the form using the connection details from your email provider — the host, port, username, password, encryption, and the from-address parents will see. For Gmail or Microsoft 365, you'll need to generate an **App Password** rather than using your regular login password. Click **Send Test Email** to confirm it works, then **Save**.
 
-SMS is powerful for reaching parents - a message on their phone about absence or fees. Configure an SMS provider like Termii or Africastalking and 4SCH can send SMS alongside other notifications.
+For instant alerts that pop up even when the app is closed, push notifications are powered by Firebase Cloud Messaging — see the Notification Settings guide for the full Firebase setup.
 
 Customize message templates. Default messages are professional, but personalize them. Add your school name, principal's name, and contact info so recipients know it's from you. Warm tone builds relationships.
 
@@ -301,15 +297,13 @@ Configure quiet hours - stop notifications during sleep time, say 10 PM to 7 AM.
   - LMS Integration: Google Classroom (Not Connected)
   - Government Integration: NBTE portal (Not Connected)
   - Accounting Software: Sage (Not Connected)
-- Click on Zoom integration to set up:
+- Click on Zoom to set it up:
   - Setup wizard opens
-  - Step 1: Create Zoom account / Login to existing account
-  - Step 2: Authorize 4SCH to access your Zoom account
-  - Copy OAuth code from Zoom
-  - Paste in 4SCH authorization field
-  - Step 3: Test integration
+  - Step 1: Sign in to your Zoom account in the pop-up window
+  - Step 2: Click "Allow" to give 4SCH permission to create Zoom meetings for you
+  - Step 3: 4SCH sends a test meeting link — click "Test connection" and a green tick confirms it's working
   - Status changes to "Connected ✓"
-  - Now teachers can create video classes linked to Zoom meetings
+  - Now teachers can create video classes that automatically include a Zoom join link
 - Google Classroom integration:
   - Auto-create assignments in Google Classroom when created in 4SCH
   - Sync student submissions from Google Classroom to 4SCH
@@ -342,52 +336,43 @@ Not all integrations will be relevant to your school. Only set up what you'll us
 
 **[VISUAL]**
 - Settings > System Maintenance
-- System Health Dashboard showing:
-  - Overall Health: 98% (Green indicator)
-  - Database Size: 2.3 GB
-  - Storage Used: 65% of allocated
+- Health Dashboard showing:
+  - Overall Health: 98% (green indicator)
+  - Storage Used: 65% of your plan's allowance
   - Last Backup: Today at 3:00 AM (successful)
-  - API Response Time: 125ms (good)
-  - Uptime: 99.8% this month
+  - Response Speed: Fast
+  - Uptime this month: 99.8%
   - Active Users: 1,287
-- Performance metrics:
-  - Page load time: Average 1.2 seconds
-  - Database queries: Optimized
-  - File upload speed: 5 MB/s
-  - Mobile app status: All versions up-to-date
-- System notifications:
-  - "Storage at 65% - upgrade soon" (yellow warning)
-  - "Database maintenance due in 7 days" (yellow)
-  - "All systems normal" (green checkmark)
+- At-a-glance status cards:
+  - Page load time: ~1.2 seconds (Good)
+  - File upload speed: 5 MB/s (Good)
+  - Mobile apps: All versions up to date
+- Friendly system tips:
+  - "Storage at 65% — consider upgrading soon" (yellow)
+  - "Tidy-up scheduled for next Sunday at 2 AM" (info)
+  - "All systems normal" (green tick)
 - Backup management:
   - Automatic daily backups at 3:00 AM
   - Last backup: Today, 2.1 GB
-  - Backup history showing last 30 days
-  - Manual backup button: "Backup Now"
-  - Restore from backup option (with specific date selection)
-  - Backup frequency can be changed: Daily, Twice daily, Weekly
-- Database optimization:
-  - Run optimization (analyzes and compresses database)
-  - Estimated time: 15 minutes
-  - Recommended monthly
-  - Schedule optimization: Choose day/time
-- System logs:
-  - View error logs from past 7 days
-  - Warning logs and info logs
-  - Search logs by user, action, or error type
-  - Download logs for analysis
-  - Log retention policy: Keep 90 days
+  - Backup history showing the last 30 days
+  - "Backup Now" button for an on-demand snapshot
+  - "Restore from backup" option (pick the date)
+  - Choose how often backups run: Daily, Twice daily, or Weekly
+- Activity log:
+  - Filter by user, action, or date range
+  - Download a copy of the log for record-keeping
+  - 4SCH automatically keeps 90 days of activity
 
 **[VOICEOVER]:**  
-"System Maintenance keeps 4SCH running smoothly. The Health Dashboard shows at a glance if everything is working well. If you see warnings, address them proactively rather than waiting for problems.
+"System Maintenance keeps 4SCH running smoothly. The Health Dashboard shows you at a glance whether everything is working well. If you see a yellow card, follow the suggested action — don't wait for it to become a red one.
 
-Backups are critical. 4SCH automatically backs up your entire database daily. If something goes wrong, you can restore to any previous backup - losing at most one day of data. Make sure backups are happening and test a restore occasionally.
+Backups are essential. 4SCH automatically saves a complete copy of your school's data every night. If something ever goes wrong, you can restore to any of the last 30 days with one click — you'd lose at most one day of changes. We recommend doing a test restore once a year just so you know how it feels.
 
-Database optimization should run periodically - monthly is reasonable. It analyzes the database structure and compresses it for better performance. Schedule it during off-hours when students and teachers aren't using the system.
+You don't need to schedule any housekeeping yourself — 4SCH quietly tidies things up in the background during off-hours so the system stays fast for students and teachers.
 
-Monitor performance metrics. If page load times slow down, database issues might be the cause. The system alerts you to problems so you can address them.
+If pages start feeling slow, check the Health Dashboard first. 4SCH posts a friendly tip there whenever it spots something worth your attention.
 
-System logs record everything - who logged in when, what actions they took, any errors. Review logs if something suspicious happens. Download logs for detailed analysis if needed."
+The Activity log lets you see who logged in, what they did, and when. Use it if anything looks suspicious, or download a copy for your school's own records."
 
 **[ON-SCREEN TEXT]**
 - "System Health Monitoring"

@@ -129,6 +129,10 @@ You don't have to add all CA types. A simple exam could have just CA1 (40%) + Ex
 
 "When the exam has CA configured, the same Assessment Type dropdown appears. Select CA1, enter marks for each student, and tap **Submit & Publish**. It's that simple!"
 
+:::tip
+Make sure your Teacher Staff app is updated to the latest version from the Play Store or App Store — that's what gives you the CA Type dropdown and the matching student list for each CA component.
+:::
+
 ---
 
 ### PART 4: VIEWING CA RESULTS (7:30 - 10:00)
@@ -166,34 +170,23 @@ You don't have to add all CA types. A simple exam could have just CA1 (40%) + Ex
 
 ---
 
-### PART 5: MIGRATING LEGACY EXAMS (10:00 - 11:30)
+### PART 5: BRINGING OLDER EXAMS INTO THE CA SYSTEM (10:00 - 11:30)
 
-**[Screen: Terminal window]**
+**[Screen: Admin opening an older exam (created before CA was available)]**
 
 **Narrator:**
-"What about exams created before the CA system was added? 4SCH includes a one-time migration command. Run it from the server command line:"
+"What about exams you created before the Continuous Assessment system was available? You don't need to recreate them.
 
-**[Screen: Command typed out]**
+Open the older exam and click **Configure CA**, exactly the same way you would for a new exam. Add your CA components — for example, CA1 at 20%, CA2 at 20%, and Exam at 60% — make sure the totals add up to 100%, and click **Save**.
 
-```bash
-# Preview what will change (safe dry-run)
-php artisan exams:migrate-to-ca --school=1
+4SCH will keep your existing marks and slot them into the new structure. Any marks already entered are automatically adjusted to fit the new totals you've chosen, so nothing is lost and nothing looks out of range. From that moment on, the older exam behaves just like a brand-new CA-configured exam — students see the breakdown, the mobile app shows the dropdown, and the report card includes every component."
 
-# Execute when ready
-php artisan exams:migrate-to-ca --execute --add-ca-config --school=1
-```
+:::tip Getting help with a large catchup
+If you have a lot of older exams and want them updated all at once across the whole school, contact your 4SCH support representative. They have a one-click housekeeping tool on their side that can refresh everything in bulk for you.
+:::
 
-**[Screen: Migration output showing exams processed]**
-
-"The command:
-- Adds default CA configuration (CA1=20%, CA2=20%, Exam=60%)  
-- Proportionally adjusts existing marks to the new totals
-- Normalizes legacy data for full feature support
-
-After running it, your old exams gain full CA capabilities."
-
-:::tip
-You can also run `php artisan exams:rescale-marks --execute --school=1` and `php artisan exams:resync-results --execute --school=1` if marks display incorrectly after configuration changes.
+:::info Changing weightages after marks are entered
+Did you set CA1 to 20 marks, enter results, and then realise it should have been 25? No problem. Update the weightage in the CA configuration and click Save — 4SCH will automatically rescale the marks you already entered to match the new total, so nothing gets lost or looks out of range. The Term result, the student portal, the parent app, and the downloadable report card will all stay in sync with each other.
 :::
 
 ---

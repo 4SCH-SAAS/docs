@@ -437,7 +437,7 @@ To enable online fee payments:
    - Flutterwave
    - Stripe
    - RazorPay
-3. Enter your **API Keys**:
+3. Paste the **access keys you copied from your provider's website**:
    - Public Key
    - Secret Key
 4. Set **Payment Settings**:
@@ -639,7 +639,7 @@ Configure system notifications:
 1. Go to **Settings → Notifications**
 2. Set up:
    - **Email Notifications**: Announcements, fee reminders
-   - **SMS Notifications**: Attendance alerts, exam notices
+   - **Push Notifications**: Attendance alerts, exam notices, fee reminders
    - **Push Notifications**: Mobile app alerts
 3. Configure notification templates
 4. Set frequency and triggers
@@ -683,7 +683,7 @@ Configure system notifications:
      - Parents Only
      - Specific Classes
    - **Attachments** (if any)
-   - **Send Notifications**: Email/SMS/Push
+   - **Send Notifications**: Email, Push, In-App
 4. Click **Publish**
 
 ### Messaging System
@@ -914,7 +914,7 @@ You have **3 days** after expiry to make payment while maintaining full access. 
 The system **DOES NOT** send:
 - ❌ Email notifications before expiry
 - ❌ Push notifications to your mobile device
-- ❌ SMS alerts about upcoming expiry
+- ❌ Automatic alerts about upcoming subscription expiry (this is a known gap — check the expiry date shown in **Settings → Subscription**)
 - ❌ Automated reminders during grace period
 
 **✅ What You Get:**
@@ -1119,7 +1119,7 @@ Tool call argument 'replace' pruned from message history.
 ### Payment Gateway Not Working
 
 **Verify:**
-- API keys are correct
+- Access keys are entered correctly (no extra spaces)
 - Gateway is enabled in settings
 - Test mode is disabled (for live payments)
 - Firewall isn't blocking requests

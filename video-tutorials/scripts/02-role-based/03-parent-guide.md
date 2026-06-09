@@ -61,7 +61,7 @@ Tap any date to see detailed information: time marked, subject-wise attendance i
 
 Monthly and weekly summaries show trends. If attendance drops below 75%, the app alerts you to take action - contact the school or address issues with your child.
 
-Enable push notifications to receive instant alerts when your child is marked absent. Some schools also send SMS alerts."
+Enable push notifications to receive instant alerts when your child is marked absent. You'll also get an email summary if your school admin has set that up."
 
 ### [05:30-07:00] Viewing Grades & Results
 **[VISUAL]** Grades and report cards

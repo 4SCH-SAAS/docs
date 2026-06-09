@@ -8,7 +8,7 @@
 
 ## 📁 Files Delivered
 
-### Video Scripts (8 files)
+### Video Scripts (7 files — the original "07-sms-integration.md" was removed because SMS is not a feature in the 4SCH codebase)
 1. **01-class-announcements.md** (7.3 KB)
    - Duration: 5 minutes
    - Target: Teachers, School Administrators
@@ -39,11 +39,6 @@
    - Target: IT Staff, System Administrators
    - Focus: Data protection, compliance, and disaster recovery
 
-7. **07-sms-integration.md** (15 KB)
-   - Duration: 6 minutes
-   - Target: Administrators, Communication Coordinators
-   - Focus: Configuring SMS for alerts and notifications
-
 8. **08-online-exam-creation.md** (16 KB)
    - Duration: 6 minutes
    - Target: Teachers, Educators
@@ -64,9 +59,8 @@
 - ✅ User Permissions: 6 minutes
 - ✅ Payment Gateway: 6 minutes
 - ✅ Backup & Export: 6 minutes
-- ✅ SMS Integration: 6 minutes
 - ✅ Online Exam Creation: 6 minutes
-- **Total: 41 minutes**
+- **Total: 35 minutes**
 
 ### Required Elements (All Included)
 Each script contains:

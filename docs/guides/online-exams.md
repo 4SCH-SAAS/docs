@@ -1180,7 +1180,7 @@ A: Results are auto-calculated by the system. If you suspect an error, contact t
 **If Connection Cannot Be Restored:**
 
 1. **Contact Teacher Immediately**
-   - Use phone/SMS to reach teacher
+   - Phone the teacher directly using the number in your school contact list
    - Explain the situation
    - Ask for time extension or resolution
 
@@ -1248,7 +1248,7 @@ A: Results are auto-calculated by the system. If you suspect an error, contact t
 
 **If Exam Won't Resume:**
 - Screenshot the error
-- Contact teacher via phone/SMS
+- Phone the teacher directly
 - Explain what happened
 - Ask for resolution
 
@@ -1801,7 +1801,7 @@ For each question:
 ```
 Last resort:
 1. Calculate correct marks manually
-2. Update exam_results table directly
+2. Ask 4SCH support to re-publish the affected results from their side
 3. Document the correction
 4. Inform student of adjustment
 ```
@@ -1980,7 +1980,7 @@ Technical fix:
 ## Emergency Contact Procedures
 
 ### For Students
-1. **During Exam:** Contact teacher via phone/SMS immediately
+1. **During Exam:** Phone the teacher immediately
 2. **After Hours:** Email teacher with issue details
 3. **Critical Issues:** Contact school admin office
 

@@ -16,7 +16,6 @@ Welcome! You've received **8 complete, production-ready video scripts** for crea
 | 4️⃣ | **User Permissions** - Control who accesses what | 6 min | IT/Admins |
 | 5️⃣ | **Payment Gateway** - Accept online school payments | 6 min | Finance/Admins |
 | 6️⃣ | **Backup & Export** - Protect your school's data | 6 min | IT/Admins |
-| 7️⃣ | **SMS Integration** - Send text message alerts | 6 min | Admins |
 | 8️⃣ | **Online Exams** - Create and grade digital assessments | 6 min | Teachers |
 
 **Total: 41 minutes of professionally scripted content**
@@ -33,7 +32,6 @@ Welcome! You've received **8 complete, production-ready video scripts** for crea
 04-user-permissions.md ..................... 6 min script
 05-payment-gateway-config.md ............... 6 min script
 06-backup-export.md ........................ 6 min script
-07-sms-integration.md ...................... 6 min script
 08-online-exam-creation.md ................. 6 min script
 ```
 
@@ -195,7 +193,6 @@ Good starting points for learning the system.
 - User Permissions (6 min)
 - Payment Gateway (6 min)
 - Backup & Export (6 min)
-- SMS Integration (6 min)
 - Online Exams (6 min)
 
 More advanced features for experienced users.

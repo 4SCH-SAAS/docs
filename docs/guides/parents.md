@@ -100,7 +100,7 @@ One of the most important things you can monitor is whether your child is attend
 
 **Notification methods:**
 - Push notification to your phone (if app is installed)
-- SMS message
+- Push notification on the 4SCH mobile app
 - Email
 - In-app notification
 
@@ -361,7 +361,7 @@ This comprehensive workflow guides you through the entire fee payment process, f
 You'll get notified via:
 - 📱 Push notification: "New fee invoice for Amara - Term 2 fees"
 - 📧 Email: "School Fee Invoice - Due March 31, 2026"
-- 💬 SMS: "Fee reminder for Amara Okafor"
+- 🔔 Push notification: "Fee reminder for Amara Okafor"
 
 **Step 1: Access the invoice**
 1. Open 4SCH app or log in to the web portal
@@ -1015,9 +1015,9 @@ Stay informed with real-time notifications.
 2. Check which notifications you want via email
 3. Save changes
 
-**SMS Notifications:**
+**Push Notifications:**
 - Usually enabled by default to your registered phone number
-- Contact school admin if you're not receiving SMS
+- Contact school admin if you're not receiving push notifications after enabling them on your device
 
 ### Customizing Notifications
 

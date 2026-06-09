@@ -1,4 +1,4 @@
-# Quick Reference Guide - 8 Feature-Focused Video Scripts
+# Quick Reference Guide - 7 Feature-Focused Video Scripts
 
 ## 📋 Script Summary Table
 
@@ -10,10 +10,11 @@
 | 4 | `04-user-permissions.md` | User Permissions | 6 min | Admins, IT | Intermediate |
 | 5 | `05-payment-gateway-config.md` | Payment Gateway Config | 6 min | Finance, Admins | Intermediate |
 | 6 | `06-backup-export.md` | Backup & Export | 6 min | IT, Admins | Intermediate |
-| 7 | `07-sms-integration.md` | SMS Integration | 6 min | Admins, Comms | Intermediate |
 | 8 | `08-online-exam-creation.md` | Online Exam Creation | 6 min | Teachers, Educators | Intermediate |
 
-**Total Runtime: 41 minutes | Total Word Count: ~25,000 words**
+> Note: the original "SMS Integration" script (slot 7) was removed because SMS is not a feature in the 4SCH codebase.
+
+**Total Runtime: 35 minutes | Total Word Count: ~22,000 words**
 
 ---
 
@@ -187,35 +188,6 @@
 **Target Users:** School administrators, IT staff, system administrators
 
 **Production Tone:** Serious, reassuring, compliance-focused
-
----
-
-## 📱 Video 7: SMS Integration Setup (6 min)
-
-**File:** `07-sms-integration.md`
-
-**What It Covers:**
-- Choosing SMS providers
-- Obtaining API credentials
-- Creating SMS templates
-- Sending manual messages
-- Setting up automated alerts
-
-**Key Timestamps:**
-- 0:00-0:45: Opening
-- 0:45-1:45: Why SMS matters
-- 1:45-2:45: Choosing provider
-- 2:45-3:45: Configuring credentials
-- 3:45-4:45: Creating templates
-- 4:45-5:30: Sending messages
-- 5:30-5:50: Best practices
-- 5:50-6:00: Closing & CTA
-
-**SEO Keywords:** SMS integration, text messaging, school alerts, student notifications, emergency alerts, text notifications
-
-**Target Users:** School administrators, communication coordinators, IT staff
-
-**Production Tone:** Urgent but professional, emergency-aware
 
 ---
 

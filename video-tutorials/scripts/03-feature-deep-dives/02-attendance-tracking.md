@@ -34,7 +34,7 @@
 **[VOICEOVER]:**  
 "Attendance tracking is critical for schools - it affects discipline, performance reports, and fee calculations. 4SCH makes this effortless.
 
-Teachers mark attendance once per class period. The system records the time, tracks late arrivals, and instantly updates the attendance database. Parents get real-time notifications if their child is absent. Administrators see consolidated reports across all classes.
+Teachers mark attendance once per class period. The system records the time, tracks late arrivals, and updates the attendance record instantly. Parents get real-time notifications if their child is absent. Administrators see consolidated reports across all classes.
 
 Unlike paper registers that get lost or damaged, 4SCH maintains a permanent, searchable attendance history. You can answer questions like 'Was Chioma present on March 15th?' in seconds."
 
@@ -91,7 +91,7 @@ You'll see a table of students with their current status. Use bulk actions to ma
 
 The system shows the exact time attendance was marked. You can edit past entries - for instance, if a teacher forgot to mark attendance yesterday, you can add it today with the correct date. Each edit is logged for audit purposes.
 
-Save your changes, and the database updates immediately. Any previously unnotified parents now receive absence alerts."
+Save your changes — the attendance record updates immediately. Any parents who haven't yet been notified now receive absence alerts."
 
 **[ON-SCREEN TEXT]**
 - "Bulk Mark Present"
@@ -149,7 +149,7 @@ Export reports as PDF for printing and distribution, or Excel for further analys
 
 Set a late arrival time - anything after 9:30 AM might be considered late. Configure alerts for consecutive absences. If a student misses three days in a row, automatically notify parents and administrators.
 
-Choose who receives alerts: parents, guardians, both, or just administrators. You can customize the notification message. By default, when a student is marked absent, the parent receives an instant notification via the app and SMS.
+Choose who receives alerts: parents, guardians, both, or just administrators. You can customize the notification message. By default, when a student is marked absent, the parent receives an instant push notification via the 4SCH app and an email summary.
 
 These automated alerts help catch attendance issues early. Parents see patterns developing and can intervene before it becomes a serious problem."
 

@@ -48,7 +48,7 @@ This role-based access ensures everyone has the tools they need while maintainin
 
 Use the search bar for quick access. Search 'Chukwudi Okafor' to find student records, 'inventory' to access supplies, or 'maintenance' for facility requests. Results appear instantly.
 
-The Help section (usually bottom of menu or top-right) provides documentation, FAQs, and video tutorials. Search the help database for your specific question - most common issues have documented solutions.
+The Help section (usually at the bottom of the menu or in the top-right) provides documentation, FAQs, and video tutorials. Just type your question into the help search box — most common issues have a ready-made answer.
 
 Your administrator is your first contact for technical issues or permission questions. If you can't access something you need, they can grant permissions or provide training. Don't hesitate to ask - your productivity depends on proper system access."
 

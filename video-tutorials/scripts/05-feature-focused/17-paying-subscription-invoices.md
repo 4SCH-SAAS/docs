@@ -94,20 +94,23 @@ By the end of this video, school admins will be able to:
 
 ### PART 3: WHAT HAPPENS AUTOMATICALLY (3:00 - 3:45)
 
-**[Screen: Animation showing webhook + database updates]**
+**[Screen: Animation showing a tick mark appearing on the invoice + subscription card refreshing]**
 
 **Narrator:**
-"Behind the scenes, several things happen automatically:"
+"As soon as the payment goes through, 4SCH takes care of everything for you:"
 
-1. **Webhook verification** — Paystack notifies 4SCH that your payment succeeded
-2. **Bill marked as paid** — Your invoice is linked to the transaction
-3. **Subscription extended** — Your end date moves forward by your billing cycle
-4. **Features unlocked** — Any previously locked premium features become accessible immediately
-5. **Transaction logged** — A record is created in your payment history
+1. **Your invoice flips to Paid** — usually before you even finish reading the success message.
+2. **Your subscription is extended** — your new end date moves forward by your billing cycle. For example, if you're on a 30-day cycle, you get 30 more days of access.
+3. **Locked features come back** — any premium feature that was disabled when the invoice was overdue becomes available again straight away.
+4. **A receipt appears in your payment history** — ready to download whenever you need it for your records.
 
-**[Screen: Subscription overview showing new end date]**
+**[Screen: Subscription overview showing the new end date]**
 
-"Refresh your Subscriptions page and you'll see the new end date and active status."
+"Refresh the Subscriptions page if you'd like, and you'll see the new end date and an Active status badge."
+
+:::tip Reliable, even on a flaky connection
+If your internet drops between paying on Paystack and getting back to 4SCH, don't worry. The system still recognises the payment and updates your invoice and subscription automatically within a minute or two — just refresh the page.
+:::
 
 ---
 
@@ -138,11 +141,11 @@ By the end of this video, school admins will be able to:
 
 | Issue | Solution |
 |---|---|
-| **"Invalid payment amount"** | Refresh the page. The invoice amount couldn't be determined — contact support if it persists. |
-| **Paid but invoice still shows unpaid** | Wait 1–2 minutes. Webhook processing is usually instant but may take a moment. Refresh the page. |
-| **Got redirected back to history page** | Check the invoice — likely already marked paid. Refresh if needed. |
-| **Features still locked after payment** | Logout and login again. Cache may need refreshing. |
-| **No payment options visible** | School admin needs to configure payment gateways in **Settings → Payment Configuration** first. |
+| **Paid but invoice still shows unpaid** | Wait a minute and refresh the page — the status will catch up. If it still says Unpaid after a few minutes, contact your school's billing support. |
+| **Got redirected back to the history page without a success message** | Check the invoice in your history — it has likely been marked Paid already. Refresh if needed. |
+| **Features still locked after payment** | Log out and log in again. |
+| **No payment options visible** | Your school admin needs to set up a payment gateway in **Settings → Payment Configuration** first. |
+| **My subscription end date didn't move** | Refresh the Subscriptions page. If it still hasn't changed after a few minutes, contact support. |
 
 ---
 

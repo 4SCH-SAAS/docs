@@ -117,36 +117,33 @@ Most importantly, check whether your school has already established a relationsh
 
 ---
 
-### Step 2: Obtaining API Credentials (2:45 - 3:45)
+### Step 2: Getting Your Access Keys from the Provider (2:45 - 3:45)
 
 **Visual Cues:**
-- Screen recording: Show "Connect Payment Provider" button
-- Demonstrate obtaining API credentials from provider:
-  - Stripe: Show API key retrieval in Stripe dashboard
-  - PayPal: Show client ID and secret retrieval
-  - Display credential types (public key, secret key, client ID, etc.)
-- Show form in school system with credential input fields
-- Display security warning about keeping credentials private
+- Screen recording: Show "Connect Payment Provider" button in 4SCH
+- Demonstrate getting access keys from the provider's website:
+  - Paystack: Show "Settings → API Keys" page (the page is literally called that on Paystack's site)
+  - Flutterwave: Show the equivalent settings page
+- Display the two key boxes side-by-side (Public Key, Secret Key)
+- Show form in 4SCH with the matching fields
+- Display friendly safety reminder about keeping the Secret Key private
 
 **Voiceover Script:**
-"Once you've chosen your provider, you need to obtain credentials—essentially API keys that allow your school system to communicate securely with the payment processor.
+"Once you've chosen your provider, you need to connect your provider account to 4SCH using two access keys the provider gives you.
 
-Here's the process for Paystack, though others are similar. Log into your Paystack merchant account. Navigate to the Settings section, then API Keys & Webhooks. You'll see two types of keys: public and secret. The public key is used by your website or app to initiate payments. The secret key is sensitive and never shared—it authenticates requests to Paystack's servers.
+Here's the process for Paystack — Flutterwave works the same way. Log in to your Paystack merchant account on Paystack's website. Open the **Settings** menu and click **API Keys**. You'll see two keys on that page: a **Public Key** and a **Secret Key**.
 
-Copy both keys. Return to your school management system's payment configuration page. Paste the public key into the appropriate field and the secret key into the secret field.
+Copy both of them. Then come back to 4SCH, open **Settings → Payment Configuration**, and paste each key into the matching field. Click **Save** and 4SCH automatically verifies the connection — you'll see a green 'Connected' badge appear.
 
-For Flutterwave, you'll obtain a Public Key and Secret Key as well. The process is similar: retrieve credentials from your Flutterwave dashboard, then enter them into your school system.
-
-Important security note: never share these credentials with anyone, and don't commit them to public code repositories. If you accidentally expose a secret key, immediately regenerate it in your payment provider's dashboard. These keys are the gateway to processing payments on your behalf."
+A quick safety reminder about the Secret Key: treat it like a password. Never share it in an email or a chat group, and never post a screenshot of it. If you ever think it has been exposed, log back into Paystack, click **Regenerate Secret Key**, and paste the new one into 4SCH — it takes about 30 seconds."
 
 **Production Notes:**
-- Show actual provider dashboards (Stripe, PayPal)
-- Zoom in on credential locations
-- Demonstrate copy-paste process
-- Show form fields in school system
-- Display security warning prominently
-- Use red/warning color for sensitive fields
-- Include audio emphasis on security importance
+- Show real provider settings pages (with the keys blurred)
+- Zoom in on the "Copy" buttons next to each key
+- Demonstrate paste-and-save in 4SCH
+- Show the green "Connected" badge appearing
+- Use a soft "padlock" icon (not a red warning) for the safety note
+- Keep tone calm and reassuring — this should not feel intimidating
 
 ---
 
@@ -242,7 +239,7 @@ Monitor the first few days closely. Be available to answer questions if parents 
 **Voiceover Script:**
 "Best practices for payment processing:
 
-One: Security first. Keep your API credentials safe. Regularly monitor your payment processor's dashboard for suspicious activity. Enable two-factor authentication on your merchant account.
+One: Safety first. Treat your provider's Secret Key like a password — never share it. Check your provider's dashboard regularly for any payments you don't recognise, and turn on two-factor authentication on your provider account.
 
 Two: Communicate clearly. When payment issues occur—a declined card, for example—send parents a helpful message explaining next steps, not just an error message.
 

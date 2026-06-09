@@ -913,11 +913,11 @@ The CA system includes automated weighted calculations, term and session managem
 
 2. **Term Totals**
    - Sum of all weighted scores
-   - Stored in `exam_results.term_total`
+   - Shown on the term result page and the PDF report card
 
 3. **Session Cumulative**
    - Average of all term totals in a session
-   - Stored in `exam_results.session_cumulative_average`
+   - Shown on the session report and the parent app
 
 4. **Session Positions**
    - Ranking based on session cumulative
@@ -1013,54 +1013,52 @@ The CA system calculates session cumulative averages across all Term Exams in a 
 **Issue: Term total not calculating**
 
 **Solution:**
-1. Verify CA configuration exists for the exam
-2. Ensure marks are submitted for ALL CA types
-3. Check that exam has `exam_weightage` set
-4. Republish results to recalculate
+1. Open the exam and confirm CA configuration is set up
+2. Make sure marks have been entered (and saved) for **every** CA component
+3. Open the CA configuration and confirm the **Exam** component has a weightage set
+4. Re-publish the result to recalculate
 
-**Issue: Session position showing NULL**
-
-**Solution:**
-1. Ensure student has results in multiple terms
-2. Verify `session_cumulative_average` is calculated
-3. Re-publish the latest exam to trigger position calculation
-
-**Issue: Publishing exam result fails with database error**
+**Issue: Session position is blank**
 
 **Solution:**
-1. This typically happens with CA-enabled exams on schools updated to v1.9.3
-2. Make sure your administrator has run the latest database migrations:
+1. Session position only appears once the student has results in **more than one** term
+2. Re-publish the latest exam to trigger the ranking recalculation
+
+**Issue: Publishing the exam result fails with a database error**
+
+**Solution:**
+1. This typically happens with CA-enabled exams on schools that have been upgraded to v1.9.3 or later but where the database migrations have not yet been run.
+2. Ask your IT admin to run the latest database migrations on the server:
    ```bash
    php artisan migrate
    ```
-3. Clear application cache:
+3. Then clear the application cache:
    ```bash
    php artisan cache:clear
    php artisan config:clear
    ```
-4. If the error persists, contact technical support with the error message
+4. If the error persists, contact 4SCH support with a screenshot of the error message
 
-**Issue: Configure CAs button not visible**
-
-**Solution:**
-1. Verify the exam is linked to a Term Exam
-2. Check you have `exam-create` permission
-3. Hard refresh the page (Ctrl+Shift+R) to clear cached UI
-4. The button appears in the Action menu for each exam in the list
-
-**Issue: CA configuration not loading when reopening the modal**
+**Issue: "Configure CAs" button isn't showing**
 
 **Solution:**
-1. Hard refresh the browser (Ctrl+Shift+R) to get the latest JavaScript
-2. Verify the exam has saved CA configuration in database
-3. If still missing, re-create the configuration
+1. Confirm the exam is linked to a Term Exam (check the Term column in the exam list)
+2. Confirm your admin role includes the **Create Exams** permission
+3. Reload the page (Ctrl+Shift+R on a PC, ⌘+Shift+R on a Mac) to refresh the menu
+4. The button appears in the **Action** menu next to each exam
 
-**Issue: Modal too tall, can't see Save button**
+**Issue: CA configuration looks empty when I reopen it**
 
 **Solution:**
-1. Hard refresh to get the latest CSS (compact modal styling)
-2. The modal now uses 90% screen width with internal scrolling
-3. Save/Cancel buttons should always be visible at the bottom
+1. Reload the page (Ctrl+Shift+R or ⌘+Shift+R) to make sure you have the latest interface
+2. Confirm the exam actually has saved CA configuration (your IT admin can verify this in the database if needed)
+3. If it's still empty, set the configuration once more and click **Save**
+
+**Issue: The configuration window is too tall and I can't see the Save button**
+
+**Solution:**
+1. Reload the page to pick up the latest styling
+2. The window now uses 90% of your screen width and scrolls inside if needed — Save and Cancel always stay visible at the bottom
 
 ### For Teachers
 
@@ -1209,44 +1207,37 @@ For full details, see the dedicated [CA on Mobile Apps](./continuous-assessment-
 
 ## Migrating Legacy Exams to CA Structure
 
-If your school has exams that were created **before** the CA system was deployed, those
-exam marks have a `NULL` `ca_type` value in the database. While the system handles these
-gracefully, you can migrate them to the new CA structure for full feature support.
+If your school created exams **before** the CA system was available, those exams still work, but their marks aren't yet slotted into the CA structure. There are two ways to bring them across.
 
-### Automatic Migration (Recommended)
+### Option A: From the admin dashboard (one exam at a time)
 
-When you run the `migrate:school` Artisan command (typically after upgrading or adding a
-new school), any legacy `NULL` `ca_type` records are automatically normalized to `'Exam'`:
+Open the older exam from your exam list and click **Configure CA**, exactly as you would for a new exam. Add your CA components (for example CA1 at 20%, CA2 at 20%, Exam at 60%), make sure the weightages add up to 100%, and click **Save**.
 
-```bash
-php artisan migrate:school
-```
+4SCH keeps any marks already entered — it just slots them into the new structure and proportionally adjusts the figures so nothing looks out of range. For example, a mark previously stored as 80/100 becomes 48/60 when the Exam component is weighted at 60%.
 
-This is **idempotent** — safe to run multiple times. Schools without legacy records are
-skipped silently.
+### Option B: One-shot migration command (for many exams at once)
 
-### Manual Migration (Add CA Configuration)
+If you have lots of older exams, your IT admin can run a single migration command on the server to upgrade them all in one go. This is a **one-time** command — once it's done, you don't need to run it again.
 
-To add full CA configuration (CA1, CA2, Exam) to legacy exams and proportionally adjust
-the existing marks to the new totals, use the dedicated migration command:
-
-#### Preview (Dry Run)
+#### Preview (safe dry-run)
 
 ```bash
 # Preview changes for all schools
 php artisan exams:migrate-to-ca
 
-# Preview for a specific school
+# Preview for a specific school only
 php artisan exams:migrate-to-ca --school=1
 ```
+
+The preview reports exactly what *would* change without touching anything, so you can review the plan with the school admin before going ahead.
 
 #### Execute
 
 ```bash
-# Just normalize NULL ca_type to 'Exam' (minimal, safe)
+# Just normalize legacy entries so they slot under the 'Exam' component (minimal, safe)
 php artisan exams:migrate-to-ca --execute --school=1
 
-# Add full CA configuration (CA1=20%, CA2=20%, Exam=60%) and adjust marks
+# Add full CA configuration (CA1=20%, CA2=20%, Exam=60%) AND proportionally adjust marks
 php artisan exams:migrate-to-ca --execute --add-ca-config --school=1
 
 # Custom weightages
@@ -1254,17 +1245,18 @@ php artisan exams:migrate-to-ca --execute --add-ca-config \
   --ca1-weightage=15 --ca2-weightage=15 --exam-weightage=70 \
   --school=1
 
-# All schools at once
+# All schools at once (a Super Admin task)
 php artisan exams:migrate-to-ca --execute --add-ca-config --all-schools
 ```
 
-### What the Tool Does
+#### What the command does
 
-1. Identifies exams with `NULL` `ca_type` exam marks
-2. Optionally adds CA configuration to those exams
-3. Marks all `NULL` `ca_type` records as `'Exam'`
-4. If CA is added, proportionally adjusts marks to the new totals
-   (for example, `80/100` becomes `48/60` when the Exam component is weighted 60%)
+1. Identifies older exams whose marks aren't yet tagged with a CA component
+2. Optionally adds a default CA configuration (CA1, CA2, Exam) to those exams
+3. Tags every previously-untagged mark as belonging to the **Exam** component
+4. If new CA configuration was added, proportionally adjusts marks to the new totals (e.g. `80/100` becomes `48/60` when the Exam component is weighted 60%)
+
+The command is **idempotent** — safe to run more than once. Schools without legacy marks are skipped silently.
 
 ### Safety Features
 

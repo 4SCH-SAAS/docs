@@ -123,7 +123,7 @@ The corrected record now reflects the accurate attendance."
 - User clicks "Confirm"
 - Processing:
   - Progress bar: "Correcting 45 attendance records..."
-  - Message: "Updating database..."
+  - Message: "Updating attendance record…"
   - Completion: "Bulk correction complete!"
   - Summary: "45 records changed from Absent to Present on 12 Feb"
   - System automatically sends notification to teacher: "Attendance for your JSS2A class on 12 Feb has been corrected"

@@ -9,23 +9,23 @@
 
 ## Video Metadata
 
-**Title:** Master Notification Settings in 4SCH - SMS, Email & Push Notifications  
-**Description:** Learn how to configure notification preferences, set up SMS and email notifications with Nigerian providers (Termii, Africa's Talking), manage push notifications, and customize notification templates for your school. Perfect for admins wanting to keep parents, teachers, and students informed.
+**Title:** Master Notification Settings in 4SCH — Email, Push & In-App Notifications  
+**Description:** Learn how to configure notification preferences, set up email and push notifications, manage the in-app notification inbox, and customize notification templates for your school. Perfect for admins wanting to keep parents, teachers, and students informed.
 
-**Tags:** notifications, SMS notifications, email notifications, push notifications, Termii, Africa's Talking, notification preferences, notification templates, 4SCH tutorials, school communication, Nigeria, notification settings
+**Tags:** notifications, email notifications, push notifications, in-app notifications, notification preferences, notification templates, 4SCH tutorials, school communication, notification settings
 
 ---
 
 ## Script Outline
 
 1. **Introduction** (0:00 - 0:45)
-2. **Notification System Overview** (0:45 - 1:45)
-3. **User Notification Preferences** (1:45 - 2:45)
-4. **Setting Up Push Notifications** (2:45 - 3:45)
-5. **Configuring SMS with Nigerian Providers** (3:45 - 5:15)
-6. **Email Notification Configuration** (5:15 - 6:30)
-7. **Customizing Notification Templates** (6:30 - 7:30)
-8. **Best Practices & Conclusion** (7:30 - 8:00)
+2. **Notification System Overview** (0:45 - 1:30)
+3. **User Notification Preferences** (1:30 - 2:30)
+4. **Setting Up Push Notifications** (2:30 - 3:45)
+5. **Email Notification Configuration** (3:45 - 5:00)
+6. **Customizing Notification Templates** (5:00 - 6:00)
+7. **Managing Your Notification Inbox** (6:00 - 7:00)
+8. **Best Practices & Conclusion** (7:00 - 7:30)
 
 ---
 
@@ -36,7 +36,7 @@
 **[VISUAL]**
 - 4SCH logo animation
 - Title slide: "Notification Settings Management"
-- Quick montage of phone notifications, emails, and SMS appearing
+- Quick montage of push notifications, emails, and in-app bell alerts appearing
 - Transition to admin settings dashboard
 
 **[VOICEOVER]:**  
@@ -44,7 +44,7 @@
 
 Whether it's alerting parents about their child's attendance, reminding students about exam dates, or notifying teachers of urgent admin messages - notifications are your lifeline to communication.
 
-In this video, I'll show you how to set up every notification channel - push notifications on mobile apps, SMS to Nigerian numbers, email to inboxes, and in-app notifications. We'll also customize notification templates so every message represents your school professionally.
+In this video, I'll show you how to set up every notification channel that 4SCH supports — push notifications on mobile apps, email to inboxes, and the in-app notification inbox. We'll also customize notification templates so every message represents your school professionally.
 
 By the end, you'll have a complete notification system that keeps everyone connected. Let's get started."
 
@@ -55,25 +55,22 @@ By the end, you'll have a complete notification system that keeps everyone conne
 **[VISUAL]**
 - Dashboard showing Settings menu
 - Highlight Notification Settings option
-- Show four notification channels:
+- Show three notification channels:
   - Push notifications (app icon)
-  - SMS notifications (phone icon)
   - Email notifications (envelope icon)
   - In-app notifications (bell icon)
 - Animation showing messages flowing through each channel
 
 **[VOICEOVER]:**  
-"Your 4SCH notification system has four delivery channels, each serving different purposes.
+"Your 4SCH notification system has three delivery channels, each serving a different purpose.
 
-**Push Notifications** reach users on their mobile phones - even when the app is closed. These are instant and attention-grabbing, perfect for urgent alerts. They require Firebase Cloud Messaging setup, which we'll cover shortly.
+**Push Notifications** reach users on their mobile phones — even when the app is closed. These are instant and attention-grabbing, perfect for urgent alerts. They use Firebase Cloud Messaging, which we'll set up shortly.
 
-**SMS Notifications** deliver text messages directly to mobile phones. In Nigeria, we use providers like Termii and Africa's Talking. SMS works on any phone - no app needed - making it ideal for parents with basic phones.
+**Email Notifications** go to registered email addresses. They're perfect for detailed communications that users might want to keep for reference — like exam schedules or fee reminders.
 
-**Email Notifications** go to registered email addresses. They're perfect for detailed communications that users might want to keep for reference - like exam schedules or fee reminders.
+**In-App Notifications** appear in every user's bell icon when they're signed in. They're always available and require no external setup. Every notification a user receives is also saved in their bell, so they always have a history they can scroll back through — even if they missed the original push or email.
 
-**In-App Notifications** appear when users are logged in - they're always available and require no external configuration.
-
-All four channels work together. A single notification event - like 'School Closure' - can be sent via push, SMS, email, and in-app simultaneously, ensuring everyone gets the message through their preferred channel."
+All three channels work together. A single notification event — like 'School Closure' — can be sent via push, email, and in-app simultaneously, so everyone gets the message through their preferred channel."
 
 ---
 
@@ -137,93 +134,36 @@ Remember: Users must have your mobile app installed and have granted notificatio
 
 ---
 
-### Configuring SMS with Nigerian Providers (3:45 - 5:15)
+### Email Notification Configuration (3:45 - 5:00)
 
 **[VISUAL]**
 - Admin dashboard, Settings menu
-- Navigate to Settings → SMS Settings
-- Show SMS provider dropdown menu
-- Highlight three popular options:
-  - Termii (termii.com) - highlighted
-  - Africa's Talking (africaistalkingcom) - highlighted
-  - Others (Twilio, etc.)
-- Screen-by-screen setup for Termii:
-  - Login to Termii dashboard
-  - Navigate to API Settings
-  - Copy API key
-  - Return to 4SCH, paste API key
-- Show Sender ID field
-- Click "Send Test SMS"
-- Mobile phone shows SMS arriving: "Welcome to ABC School"
+- Navigate to **Settings → Email Settings**
+- Show the simple form:
+  - "Email service" dropdown (4SCH Default · Gmail · Microsoft 365 · Custom)
+  - "Send-from email" field
+  - "Display name" field
+  - "Connect / Sign in" button (for Gmail / Microsoft 365)
+- Click "Sign in with Google" — Google's sign-in window opens
+- After signing in and clicking "Allow", a green "Connected" badge appears
+- Click "Send Test Email" → browser shows email arriving in the inbox
 
 **[VOICEOVER]:**  
-"SMS is powerful in Nigeria because nearly every parent has a mobile phone. Unlike push notifications that require an app, or email that requires internet browsing, SMS works on any phone.
+"Email notifications are perfect for longer messages users may want to save — exam schedules, detailed fee statements, or assignment instructions.
 
-Let's set up SMS using Termii, a popular Nigerian provider that's affordable and reliable.
+In **Settings → Email Settings**, you have three easy options. The simplest is **'Use 4SCH's email service'** — turn it on and you're done. 4SCH sends emails on your behalf and you don't need to set anything up.
 
-First, go to Termii.com and create an account if you don't have one. It takes just a few minutes. You'll need to provide your school name and a Nigerian phone number.
+If you'd prefer emails to come from your school's own Gmail or Microsoft 365 account, pick that option from the dropdown and click **'Sign in with Google'** or **'Sign in with Microsoft'**. A familiar sign-in window opens; sign in, click **Allow**, and you'll see a green **Connected** badge appear.
 
-Once logged in, go to your Termii dashboard. Navigate to Settings or API Settings. You'll find your API key - this is your authentication credential.
+Set the **Display name** that parents see in their inbox — something like 'ABC School Communications' — and click **Send Test Email** to confirm it works.
 
-Back in 4SCH, go to Settings → SMS Settings. In the Provider dropdown, select Termii. Paste your API key in the API Key field.
+For very large schools sending thousands of emails a week, contact 4SCH support — they'll help you switch to a high-volume email service so nothing is delayed during busy reporting periods.
 
-Next, set your Sender ID - this is what appears as the sender on the SMS. For example, 'ABCSchool' or 'MySchool'. Note: Some providers require you to register your Sender ID before it becomes active. Termii does this automatically, usually within 24 hours.
-
-Now test it. Click 'Send Test SMS', enter a Nigerian number - including the country code like +234... - and click Send. Within seconds, that number receives an SMS from your school.
-
-Why SMS? Parents check SMS before email. It works without internet. It's reliable. The trade-off is cost - each SMS costs money, typically ₦1-2 per message. So use SMS for critical alerts: attendance issues, fee reminders, emergency closures. Use email for announcements.
-
-Africa's Talking is another excellent Nigerian provider. The setup is similar - you get an API key from their dashboard and configure it the same way.
-
-Whether you choose Termii, Africa's Talking, or another provider, the process is essentially identical: get credentials, paste them in 4SCH, test, then you're ready to send."
+The beauty of email is that families can keep messages for reference — perfect for the kind of information they'll need to come back to later."
 
 ---
 
-### Email Notification Configuration (5:15 - 6:30)
-
-**[VISUAL]**
-- Admin dashboard, Settings menu
-- Navigate to Settings → Email Settings
-- Show SMTP configuration form with fields:
-  - Mail Driver
-  - Mail Host
-  - Mail Port
-  - Mail Username
-  - Mail Password
-  - Mail From Address
-  - Mail From Name
-- Zoom into example with Gmail:
-  - smtp.gmail.com
-  - Port 587
-  - TLS encryption
-  - App password note
-- Click "Send Test Email"
-- Browser shows email arriving in inbox
-
-**[VOICEOVER]:**  
-"Email notifications are perfect for longer messages that users might want to save - like exam schedules, detailed fee statements, or assignment instructions.
-
-To send emails, you need SMTP configuration - essentially telling 4SCH how to connect to an email service.
-
-You have options: Use your school's email domain, Gmail, Microsoft 365, or services like SendGrid designed for bulk emails.
-
-Let's use Gmail as an example. In Settings → Email Settings:
-
-Mail Host is 'smtp.gmail.com'. Mail Port is 587 - this is the standard for Gmail. Encryption is TLS.
-
-Mail Username is your Gmail address. But here's crucial: Don't use your regular Gmail password. Instead, enable 2-Step Verification on your Google account, then generate an App Password at myaccount.google.com/apppasswords. It's a 16-character password specifically for this app. Use that.
-
-Mail From Address is the email that appears as the sender - your school email. Mail From Name is the display name - 'ABC School Communications' or similar.
-
-Once you've entered all details, click 'Send Test Email'. Enter any email address and click Send. Within seconds, it arrives in the inbox.
-
-If you're sending bulk notifications to hundreds of parents, Gmail's limit is 500 emails per day. For larger schools, consider SendGrid - it's designed for bulk sending and is very reliable.
-
-The beauty of email is delivery confirmation and archiving. Users keep important emails for reference. Perfect for notifications they need to revisit."
-
----
-
-### Customizing Notification Templates (6:30 - 7:30)
+### Customizing Notification Templates (5:00 - 6:00)
 
 **[VISUAL]**
 - Admin dashboard, navigate to Settings → Notification Templates
@@ -274,38 +214,66 @@ These customized templates make every notification feel professional and relevan
 
 ---
 
-### Best Practices & Conclusion (7:30 - 8:00)
+### Managing Your Notification Inbox (6:00 - 7:00)
+
+**[VISUAL]**
+- User logs into 4SCH
+- Click the **bell icon** (notification inbox) in the top bar
+- Inbox shows list of recent notifications with blue dots for unread items
+- Hover a row → "Mark as read" and "Delete" buttons appear
+- At the top of the inbox: "Mark all as read" and "Clear all" buttons
+- One-click demo of each action
+
+**[VOICEOVER]:**
+"Every user — admin, teacher, parent, student — has their own notification inbox in 4SCH, and you're in full control of it.
+
+Click the **bell icon** in the top bar to open it. You'll see your most recent alerts, with a small blue dot next to anything you haven't read yet.
+
+To clear a single notification, just hover over it and click **Mark as read** to dismiss the badge, or click the **delete** icon to remove it from your inbox entirely.
+
+If you're catching up after a busy week, use the buttons at the top of the inbox: **Mark all as read** clears every blue dot in one click, and **Clear all** empties your inbox so you can start fresh.
+
+You don't need to worry about your inbox getting cluttered over time — old, already-read notifications are tidied up automatically in the background.
+
+And the messages themselves are written to tell you exactly what happened and what to do next — for example, 'New term result published for Tunde — tap to view' — so you can act on them without having to hunt around for context."
+
+**[VISUAL]**
+- Close-up of a clear, action-oriented notification message
+- Bell icon badge counter going from 12 → 0 after "Mark all as read"
+
+---
+
+### Best Practices & Conclusion (7:00 - 7:30)
 
 **[VISUAL]**
 - Screen showing best practices checklist:
   ✓ Respect user preferences
-  ✓ Use SMS for urgent alerts only
-  ✓ Email for detailed communications
   ✓ Push for time-sensitive events
+  ✓ Email for detailed communications
+  ✓ In-app inbox for everything else
   ✓ Test every new template
   ✓ Monitor notification fatigue
-- Show analytics dashboard with notification metrics
-- Return to full notification system view showing all four channels active
+- Return to full notification system view showing all three channels active
 - 4SCH logo animation
 
 **[VOICEOVER]:**  
 "Before we wrap up, here are essential practices for notification success:
 
-**Respect Preferences** - Don't override user choices. If someone disabled 'General Announcements', respect that. Trust is everything.
+**Respect Preferences** — Don't override user choices. If someone disabled 'General Announcements', respect that. Trust is everything.
 
-**Choose the Right Channel** - SMS for urgent alerts like 'School Closed Today', Email for schedules and detailed info, Push for time-sensitive reminders, In-App for everything.
+**Choose the Right Channel** — Push for time-sensitive reminders like 'School Closed Today', Email for schedules and detailed information, and the In-App inbox as the searchable history of everything that was ever sent.
 
-**Test Templates** - Before sending fee reminders to 500 parents, test with your own account. Verify variables insert correctly, spelling is perfect, formatting looks right.
+**Test Templates** — Before sending fee reminders to 500 parents, test with your own account. Verify variables insert correctly, spelling is perfect, formatting looks right.
 
-**Avoid Notification Fatigue** - Sending five notifications per day exhausts users. They'll disable notifications entirely. Be strategic and intentional.
+**Avoid Notification Fatigue** — Sending five notifications per day exhausts users. They'll disable notifications entirely. Be strategic and intentional.
 
-**Monitor and Adjust** - Check which notifications get ignored. If parents aren't opening fee reminders, maybe they need different timing or wording.
+**Monitor and Adjust** — Check which notifications get ignored. If parents aren't opening fee reminders, maybe they need different timing or wording.
 
-**Secure Sensitive Data** - Never include account numbers, passwords, or private information in notifications. Use SMS/Email only for necessary communications.
+**Be Careful with Sensitive Data** — Never include account numbers, passwords, or private information in push or email notifications.
 
-Your notification system is now complete - push notifications for instant alerts, SMS reaching every parent in Nigeria, email for detailed communication, and in-app notifications for supplementary messages. Together, they create a comprehensive communication network that keeps your school community connected and informed.
+Your notification system is now complete — push notifications for instant alerts, email for detailed communication, and the in-app inbox as a searchable history. Together they create a complete communication network that keeps your school community connected and informed.
 
-Now go set up your providers, customize your templates, and start communicating with confidence!
+Now go set up your channels, customize your templates, and start communicating with confidence!
 
 Thanks for watching, and happy notifying!"
 
@@ -313,8 +281,7 @@ Thanks for watching, and happy notifying!"
 - Fade to 4SCH logo
 - End screen with links and resources:
   - "Read the full Notification Settings guide"
-  - "Termii Provider Setup (nigerian-sms.com)"
-  - "Africa's Talking Setup Documentation"
+  - "Firebase Console setup walkthrough"
   - "Watch: Sending Bulk Notifications"
   - "Subscribe for more 4SCH tutorials"
 
@@ -328,10 +295,9 @@ Thanks for watching, and happy notifying!"
 3. User Notification Preferences interface (with role-based options)
 4. Push Notifications settings form
 5. Firebase Console - Project Settings and Cloud Messaging tab
-6. SMS Settings page with Termii dropdown selected
-7. Termii dashboard - API Settings highlighted
-8. SMS test message arriving on Nigerian phone (+234 number)
-9. Email Settings (SMTP configuration form)
+6. Firebase Console — Cloud Messaging tab with Server Key visible
+7. Test push notification arriving on a sample mobile device
+9. Email Settings (simple email setup form)
 10. Gmail setup example with starred security notes
 11. Email test notification in inbox
 12. Notification Templates list
@@ -342,13 +308,13 @@ Thanks for watching, and happy notifying!"
 17. Best practices checklist
 
 **Graphics/Overlays:**
-1. Text overlays for channel descriptions (Push, SMS, Email, In-App)
+1. Text overlays for channel descriptions (Push, Email, In-App)
 2. Highlighted fields showing where to paste credentials
 3. Checkmark animations for successful test notifications
 4. Variable substitution animation (showing {student_name} → Tunde)
-5. SMS delivery confirmation on phone screen
+5. Push notification appearing on a phone screen
 6. Email envelope opening animation
-7. Icon badges for Nigerian providers (Termii, Africa's Talking)
+7. Firebase Cloud Messaging logo badge for the push-notifications section
 8. Currency symbol ₦ for Nigerian Naira amounts
 9. Step-by-step numbered indicators for multi-step processes
 
@@ -370,18 +336,16 @@ Thanks for watching, and happy notifying!"
 ## On-Screen Text/Captions
 
 **Key Terms to Define (appear as text overlay):**
-- **Push Notification** = Message that arrives on app even when closed
-- **SMS** = Text message to phone (costs per message)
-- **SMTP** = Email protocol for sending messages
-- **API Key** = Authentication credential for third-party service
-- **Template Variables** = Placeholders like {student_name} that auto-fill with real data
-- **FCM** = Firebase Cloud Messaging (Google's push service)
+- **Push Notification** = An alert that pops up on a phone even when the 4SCH app isn't open
+- **FCM Server Key / Sender ID** = Two short codes from your Firebase project that you paste into 4SCH to enable push notifications
+- **Mail Host / Port / Username / Password** = The email connection details supplied by your email provider, pasted into 4SCH's Email Settings form
+- **App Password** = A one-off password Gmail or Microsoft 365 gives you when 2-Step Verification is on, used in 4SCH's Mail Password field instead of your real account password
+- **Template Variables** = Placeholders like {student_name} that 4SCH fills in automatically with the right person's details
 
 **Provider-Specific Notes:**
-- "Termii: Nigerian provider, ₦1-2 per SMS, 24-hour Sender ID approval"
-- "Africa's Talking: Pan-African, reliable, similar pricing"
 - "Gmail: Use App Password, not regular password"
-- "SendGrid: Best for bulk emails (500+ per day)"
+- "Microsoft 365: Use App Password if 2-Step Verification is on"
+- "SendGrid / Mailgun: Best for bulk emails (500+ per day)"
 
 **Action Prompts:**
 - "Click to configure ➜"
@@ -398,12 +362,12 @@ Thanks for watching, and happy notifying!"
 - Pause 2 seconds after each successful test notification
 - Use normal speed for credential entry - don't rush technical sections
 - Slow down when explaining variables concept
-- Include brief pause when SMS arrives on phone screen (satisfying visual moment)
+- Include a brief pause when a push notification arrives on screen (satisfying visual moment)
 
 **Nigerian Context Requirements:**
-- Use Nigerian phone numbers (+234 801 234 5678 format) for SMS testing
+- Use realistic example email addresses (e.g. parent@example.com) in screen recordings
 - Show ₦ currency symbol for all fee amounts
-- Use Nigerian provider names and interfaces (Termii, Africa's Talking primary)
+- Reference Nigerian school contexts and currency (₦, JSS, SSS, etc.)
 - Reference Nigerian school contexts (JSS 1/2/3, SSS 1/2/3, Naira, holidays)
 - Show screenshots from Nigerian-context school data
 - Mention Nigerian parents/teachers with typical names (Chioma, Tunde, Ngozi, Ikechukwu)
@@ -419,15 +383,15 @@ Thanks for watching, and happy notifying!"
 
 ## Post-Production Checklist
 
-- [ ] Verify all phone numbers use Nigerian format (+234)
+- [ ] Verify example email addresses use the `example.com` domain
 - [ ] Check that all currency shows ₦ (Naira), not $ or €
 - [ ] Ensure example names are Nigerian (Chioma, Tunde, Amara, Adeyemi, etc.)
-- [ ] Confirm Termii and Africa's Talking interfaces match current versions
+- [ ] Confirm the Firebase Console interface in screenshots matches the current version
 - [ ] Remove any sensitive school data from screenshots
-- [ ] Test all links to Firebase, Termii, and Africa's Talking in description
+- [ ] Test all links (Firebase Console, Gmail App Passwords page) in the description
 - [ ] Add chapter markers at each section transition
 - [ ] Include clickable timestamps in video description
-- [ ] Verify SMS test message text is visible on phone screen
+- [ ] Verify push notification text is visible on phone screen
 - [ ] Check email preview displays correctly in both dark and light modes
 - [ ] Confirm variables display clearly in template editor
 - [ ] Ensure all credential fields are clear without sensitive data
@@ -468,19 +432,6 @@ Thanks for watching, and happy notifying!"
 
 ## Additional Resources
 
-**Nigerian SMS Providers:**
-1. **Termii** (termii.com)
-   - Pricing: ₦1-2 per SMS
-   - Support: 24/7
-   - Setup time: 5 minutes
-   - Sender ID approval: 24 hours
-
-2. **Africa's Talking** (africastalking.com)
-   - Pricing: ₦1.50-2.50 per SMS
-   - Support: Excellent
-   - Setup time: 10 minutes
-   - Sender ID approval: Instant to 24 hours
-
 **Firebase Setup:**
 - Link to Firebase Console: console.firebase.google.com
 - Time required: 15-20 minutes
@@ -494,6 +445,8 @@ Thanks for watching, and happy notifying!"
 ## Script Version History
 
 - **v1.0** - March 2025 - Initial script creation
+- **v1.1** - June 2026 - Added "Managing Your Notification Inbox" section covering the bell-icon inbox: marking individual notifications as read or deleted, bulk Mark-all-read and Clear-all actions, automatic tidying of older read items, and the new clearer, more actionable wording of notification messages
+- **v1.2** - June 2026 - Removed the SMS section entirely (SMS is not a feature in the 4SCH codebase). Re-timed the script to 7:30 total. Refreshed glossary, best-practices, and resources to focus on the real channels: Push (FCM), Email (SMTP), and In-app inbox.
 - **Last Updated:** March 2025
 - **Author:** Documentation Team
 - **Review Status:** Ready for production

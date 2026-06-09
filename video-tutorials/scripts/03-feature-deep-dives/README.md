@@ -144,7 +144,7 @@ This directory contains comprehensive video scripts for 8 in-depth feature tutor
 - Security and compliance considerations
 - Best practices for data management
 
-**SEO Focus:** Data import software, bulk student data, CSV import, Excel data transfer, database migration, data export tool
+**SEO Focus:** Data import software, bulk student data, CSV import, Excel data transfer, moving from another school system, data export tool
 
 ---
 
@@ -160,7 +160,7 @@ This directory contains comprehensive video scripts for 8 in-depth feature tutor
 - Configuring role-based permissions
 - User management (individual and bulk)
 - Setting up communication and notification channels
-- Configuring email and SMS providers
+- Configuring email and push notifications
 - Managing system integrations (Zoom, Google Classroom, etc.)
 - System health monitoring and backups
 - Security configuration and compliance
@@ -242,7 +242,7 @@ Each script includes:
 - **Communication:** Parent-teacher communication, school messaging, announcements, notifications
 - **Reports:** Analytics, data analysis, student performance, school metrics, dashboards
 - **Transportation:** Bus management, route optimization, real-time tracking, driver management
-- **Import/Export:** Data migration, bulk import, Excel integration, database management
+- **Import/Export:** Moving data into 4SCH, bulk import, Excel support, keeping records tidy
 - **Configuration:** System setup, user management, school settings, role-based access
 
 ### Video Title Format
@@ -345,7 +345,7 @@ video-tutorials/
 
 ### Documentation Links
 - Feature documentation: [Link to docs]
-- API documentation: [Link to API docs]
+- Help Centre: [Link to 4SCH Help Centre]
 - Knowledge base: [Link to KB]
 - FAQ: [Link to FAQ]
 

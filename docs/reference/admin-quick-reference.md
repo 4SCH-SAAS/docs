@@ -80,7 +80,7 @@ Add Receipt Number → Record
 ```
 Communication → Announcements → Create → 
 Title + Message → Select Audience (All/Parents/Class) → 
-Enable Notifications (Email/SMS) → Publish
+Enable Notifications (Email/Push) → Publish
 ```
 
 ### Mark Attendance (1 minute)
@@ -158,7 +158,7 @@ Preview → Download PDF → Print
 ├─ Payment Gateway Config
 ├─ Database Backup
 ├─ Data Import/Export
-├─ SMS & Email Settings
+├─ Email & FCM (Push) Settings
 └─ License & Subscription
 ```
 
@@ -218,7 +218,7 @@ Solution:
 2. Verify payment in your bank (if online)
 3. Check if payment matched to correct student
 4. Manually record if bank transfer not auto-synced
-5. Send payment confirmation via SMS
+5. Send payment confirmation by email and push
 ```
 
 **Problem**: Need to generate fee reminder notifications
@@ -229,7 +229,7 @@ Solution:
 3. Communication → Create Announcement
 4. Target: Parents of selected class
 5. Message: "Fee due by [date]. ₦[amount] pending"
-6. Send via SMS/Email
+6. Send via Email/Push
 ```
 
 **Problem**: Need to apply fee discount for needy student
@@ -332,9 +332,7 @@ Solution:
 |---------|-----------|
 | **Page Loading Slowly** | Clear browser cache (Ctrl+Shift+Del) → Try different browser → Check internet speed |
 | **Timeout During Report** | Reduce date range → Try PDF export instead of Excel → Check server status |
-| **Payment Gateway Not Working** | Settings → Payment Gateway → Test Connection → Verify API keys correct → Check firewall |
-| **SMS Not Sending** | Settings → SMS Settings → Verify balance/account active → Check phone format (11 digits for Nigeria) |
-
+| **Payment Gateway Not Working** | Settings → Payment Gateway → Test Connection → Re-paste the access keys from your provider's site → Contact 4SCH support if it still fails |
 ### 🔴 Critical Issues
 
 | Issue | Action | Contact Support With |

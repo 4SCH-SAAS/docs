@@ -129,12 +129,12 @@ Changes sync automatically when back online. Large data downloads (like full cla
 **[VOICEOVER]:**  
 "4SCH supports:
 - CSV/Excel import-export for bulk data transfer
-- Email notifications (SMTP integration)
-- SMS gateway integration for notifications
+- Email notifications (sent automatically from 4SCH or from your school's own email account)
+- Bulk push notifications to the mobile app
 - Mobile app sync with web platform
 - Calendar integration (iCal format)
 
-For custom API integrations, contact support@4sch.com about enterprise options. Enterprise plans support REST API for third-party applications."
+If your school needs a custom integration with another system you already use, get in touch with support@4sch.com — the team will talk you through what's possible on your plan."
 
 ### "Can teachers create assignments if students don't have devices?"
 **[VOICEOVER]:**  
@@ -156,7 +156,7 @@ For very large schools, administrators can assign multiple teachers or class coo
 **[ON-SCREEN TEXT]**
 - "Offline Mobile Features"
 - "CSV Import/Export"
-- "Email & SMS Integration"
+- "Email Integration"
 - "Flexible Device Requirements"
 
 ---
@@ -351,7 +351,7 @@ Enterprise customers get dedicated support and faster response times."
 - Third-party integrations
 - Offline mobile features
 - Bulk data import/export
-- API access (enterprise)
+- Custom integration support (enterprise plans)
 - Single sign-on/LDAP (enterprise)
 
 Explore the Help section to discover features your school uses."
