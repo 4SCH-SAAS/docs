@@ -1205,7 +1205,7 @@ For full details, see the dedicated [CA on Mobile Apps](./continuous-assessment-
 
 ---
 
-## Migrating Legacy Exams to the CA Structure
+## Migrating Legacy Exams to CA Structure
 
 If your school created exams **before** the CA system was available, those exams still work, but their marks aren't yet slotted into the CA structure. There are two ways to bring them across.
 
