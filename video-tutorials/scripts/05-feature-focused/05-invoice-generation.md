@@ -157,13 +157,13 @@
 
 **[SCREEN RECORDING - Send Invoices]**
 - Select invoices to send (can be filtered by class or student)
-- Choose distribution method: Email, SMS, In-App, Print
+- Choose distribution method: Email, In-App, Push, Print
 - Customize message to parents
 - Schedule delivery (send now or schedule for specific date/time)
 - Click "Send"
 
 **[VOICEOVER]:**  
-"Select which invoices to send and choose your distribution method. Email sends PDF attachments. SMS sends a link to view the invoice online. In-app sends notifications through the parent app. Print generates a batch for physical distribution. You can schedule delivery for optimal timing."
+"Select which invoices to send and choose your distribution method. Email sends PDF attachments. In-App and Push send notifications through the parent app, with a tap-to-view link to the invoice. Print generates a batch for physical distribution. You can schedule delivery for optimal timing."
 
 **[SCREEN RECORDING - Parent Views Invoice]**
 - Show parent receiving email with invoice attached
@@ -283,7 +283,7 @@
 
 **Title:** How to Generate Professional Invoices in 4SCH | Bulk Creation & Payment Tracking
 
-**Description:** Master 4SCH's Invoice Generation. Create professional invoices in bulk, customize templates, distribute via email/SMS/print, and track payments automatically in real-time.
+**Description:** Master 4SCH's Invoice Generation. Create professional invoices in bulk, customize templates, distribute via email, the parent app, or print, and track payments automatically in real-time.
 
 **Tags:** invoice generation, billing, payment tracking, school invoices, automated billing, 4SCH, finance management, bulk invoice creation
 

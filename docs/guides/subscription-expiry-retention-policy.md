@@ -221,7 +221,7 @@ Despite having the notification infrastructure, the system **DOES NOT** currentl
 
 1. ❌ Email notifications before subscription expiry
 2. ❌ Push notifications to School Admin mobile app
-3. ❌ SMS notifications about upcoming expiry
+3. ❌ Automatic alerts about upcoming expiry (no scheduled reminder is sent for school subscriptions)
 4. ❌ Email alerts when grace period is active
 5. ❌ Notifications when access is terminated
 
@@ -454,7 +454,7 @@ Based on the analysis, here are recommended enhancements:
 **During Grace Period**:
 - Daily email reminders
 - Push notifications
-- SMS alerts (if configured)
+- Push notifications on the mobile app
 - Dashboard banner with countdown
 
 #### 6. Reporting & Analytics

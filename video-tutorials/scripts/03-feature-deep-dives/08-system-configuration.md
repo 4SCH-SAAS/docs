@@ -241,7 +241,6 @@ Configure password policies - they can be lenient for parents or stricter for ad
 - Settings > Communication Configuration
 - Notification channels configuration:
   - Email notifications: Enable/Disable
-  - SMS notifications: Enable/Disable (requires SMS gateway setup)
   - In-app notifications: Always enabled
   - Push notifications (mobile app): Enable/Disable
 - Email Settings form (Settings → Email Settings):
@@ -254,12 +253,6 @@ Configure password policies - they can be lenient for parents or stricter for ad
   - **Mail From Address**: `school@example.com`
   - **Mail From Name**: `ABC School`
   - Click **Send Test Email** → enter an address → tick confirms it works
-- SMS Gateway Settings form (Settings → SMS Settings):
-  - **SMS Gateway** dropdown: Twilio · Msg91 · Termii · Africa's Talking
-  - **API Key** or **Auth Token** (paste the value copied from the provider's site)
-  - **Account SID** (only if Twilio is selected)
-  - **Sender ID** (e.g. `ABCSchool`)
-  - Click **Send Test SMS** → enter a phone number → confirmation arrives on the phone
 - Message templates customization:
   - Default notification templates shown:
     - "Student absent: Hi [Parent Name], [Student Name] was marked absent on [Date]"
@@ -277,7 +270,7 @@ Configure password policies - they can be lenient for parents or stricter for ad
 
 Set up email. 4SCH uses email to send welcome messages, password resets, and notification summaries. Go to **Settings → Email Settings** and fill in the form using the connection details from your email provider — the host, port, username, password, encryption, and the from-address parents will see. For Gmail or Microsoft 365, you'll need to generate an **App Password** rather than using your regular login password. Click **Send Test Email** to confirm it works, then **Save**.
 
-SMS is powerful for reaching parents — a message on their phone about absence or fees. In **Settings → SMS Settings**, pick a provider (Twilio, Termii, Africa's Talking, Msg91), paste the credentials from the provider's site into the matching fields (typically an **API Key** or **Auth Token**, plus an **Account SID** for Twilio), set the **Sender ID** parents will see, and click **Send Test SMS** to confirm.
+For instant alerts that pop up even when the app is closed, push notifications are powered by Firebase Cloud Messaging — see the Notification Settings guide for the full Firebase setup.
 
 Customize message templates. Default messages are professional, but personalize them. Add your school name, principal's name, and contact info so recipients know it's from you. Warm tone builds relationships.
 

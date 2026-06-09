@@ -1,8 +1,8 @@
 # Feature-Focused Video Scripts - Complete Index
 
-This directory contains 9 detailed video scripts focusing on specific 4SCH features. Each script includes comprehensive production elements, timing cues, graphics guidance, audio specifications, and SEO metadata.
+This directory contains 8 detailed video scripts focusing on specific 4SCH features. Each script includes comprehensive production elements, timing cues, graphics guidance, audio specifications, and SEO metadata.
 
-**Series Overview:** 8 comprehensive video scripts covering essential school management system features.  
+**Series Overview:** 7 comprehensive video scripts covering essential school management system features (the original "SMS Integration" script was removed because SMS is not a feature in the 4SCH codebase).  
 **Total Duration:** Approximately 36 minutes across all videos  
 **Target Audience:** Teachers, administrators, staff, parents, and IT personnel  
 **Production Format:** Screen-recorded tutorials with professional voiceover, captions, and graphics  
@@ -143,8 +143,8 @@ This directory contains 9 detailed video scripts focusing on specific 4SCH featu
 
 ---
 
-### 7. **SMS Integration Setup** (6 minutes)
-**File:** `07-sms-integration.md`
+<!-- SMS Integration entry removed — SMS is not a feature in the 4SCH codebase.
+Below were the topics; left here as a comment in case SMS is ever added.
 
 **Focus:** Configuring text messaging for alerts and notifications  
 **Key Topics:**
@@ -156,6 +156,8 @@ This directory contains 9 detailed video scripts focusing on specific 4SCH featu
 
 **Target Users:** School administrators, communication coordinators, IT staff  
 **SEO Keywords:** SMS integration, text messaging, school alerts, emergency alerts, parent notifications
+-->
+
 
 **Production Notes:**
 - Urgent but professional tone
@@ -246,7 +248,6 @@ This directory contains 9 detailed video scripts focusing on specific 4SCH featu
 4. User Permissions: "user permissions," "role management," "access control"
 5. Payment Gateway: "payment gateway," "online payments," "school fees"
 6. Backup & Export: "backup," "export data," "disaster recovery"
-7. SMS Integration: "SMS integration," "text alerts," "emergency alerts"
 8. Online Exams: "online exams," "digital testing," "assessment tools"
 
 ### Description Template
@@ -424,7 +425,6 @@ video-tutorials/
         ├── 04-user-permissions.md
         ├── 05-payment-gateway-config.md
         ├── 06-backup-export.md
-        ├── 07-sms-integration.md
         └── 08-online-exam-creation.md
 ```
 

@@ -172,7 +172,7 @@ Whether you're running term exams, mock tests, or continuous assessment, 4SCH ma
 - Run statistical analysis to check data integrity
 - Preview results before publication
 - Click "Approve & Publish"
-- Choose delivery method: In-App, Email, SMS, Parent Portal
+- Choose delivery method: In-App, Email, Push, Parent Portal
 
 **[VOICEOVER]:**  
 "Once marking is complete, review all results. The system runs statistical checks - if a class suddenly has drastically different scores than previous terms, that's flagged for verification. Once you approve, results are instantly available to students, parents, and teachers through their respective portals."

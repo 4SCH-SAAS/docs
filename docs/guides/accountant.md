@@ -227,7 +227,7 @@ When parents pay cash at the school office:
 - Updates invoice status (Paid or Partially Paid)
 - Generates digital receipt
 - Updates financial reports
-- Sends receipt to parent via email/SMS (if enabled)
+- Sends receipt to parent by email and as an in-app notification
 
 **Important:**
 - ✅ Always issue a manual receipt from your receipt book
@@ -313,7 +313,7 @@ For parents who need structured installments:
 
 **Digital Receipts:**
 - Automatically generated when payment is recorded
-- Sent to parent via email/SMS
+- Sent to parent by email and as an in-app notification
 - Parent can download from their portal anytime
 
 **Manual Receipts:**
@@ -564,7 +564,7 @@ Collecting overdue fees is a key responsibility.
 ### Follow-Up Strategy
 
 **Week 1 After Due Date:**
-- **Action:** Automated SMS/Email reminder
+- **Action:** Automated email and push reminder
 - **Message:** Friendly reminder that fees are due
 
 **Week 2:**

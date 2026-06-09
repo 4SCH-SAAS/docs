@@ -20,7 +20,7 @@ Whether you're new to 4SCH or helping your school transition from paper records 
 
 **Step 1:** Go to the website: [www.4sch.com](https://www.4sch.com)
 
-**Step 2:** Register Your School if you and your school are new to 4SCH SMS
+**Step 2:** Register Your School if you and your school are new to 4SCH
 
 **Step 3:** Check your email inbox (check spam folder if you didn't see an email from 4SCH). If no mail is found, you may have entered your email incorrectly—contact us.
 
@@ -37,7 +37,7 @@ Contact our support team:
 
 ## Your First Login
 
-After your school subscribes to 4SCH, you'll receive login credentials via email or SMS.
+After your school subscribes to 4SCH, you'll receive login credentials by email.
 
 **Step 1: Access the System**
 1. Open your web browser (Chrome, Firefox, or Safari recommended)

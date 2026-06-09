@@ -95,10 +95,10 @@
 - Enable automatic receipt generation
 - Select receipt template
 - Configure receipt content: School logo, invoice number, amount paid, date, payment method
-- Set delivery method: Email, SMS, In-app notification
+- Set delivery method: Email, In-app notification, Push
 
 **[VOICEOVER]:**  
-"Step five: Set up automatic receipts. When a parent pays, the system generates an instant receipt showing what was paid, when, and how. This receipt is delivered via email, SMS, or in-app - no manual receipt issuing needed."
+"Step five: set up automatic receipts. When a parent pays, the system generates an instant receipt showing what was paid, when, and how. The receipt is delivered by email and as an in-app notification — no manual receipt issuing needed."
 
 **[SCREEN RECORDING - Step 6: Test Payment]**
 - Show test payment configuration

@@ -96,7 +96,7 @@ All adjustments create audit trails - what was changed, by whom, when, and why. 
 
 Customize reminder messages: 'Tuition fees are due on March 15. Pay now to avoid penalties.' Include school contact information and payment instructions.
 
-You can send reminders via in-app notifications, email, or SMS (if SMS gateway is configured). Parents receive multiple notifications creating urgency and reducing overdue balances.
+You can send reminders through in-app notifications, push notifications, or email. Parents receive a clear, prompt nudge that helps reduce overdue balances.
 
 Set up escalation reminders for severely overdue accounts - 30 days overdue triggers a stricter message. This automated system reduces manual follow-up work."
 

@@ -43,7 +43,7 @@ Teachers send group messages to classes - 'Don't forget tomorrow's test' or 'Ass
 
 Parents message teachers with questions about curriculum or their child. Students ask teachers for clarification on assignments. Discussions create threaded conversations where the school community collaborates.
 
-All messages are logged, searchable, and organized by conversation. Nothing gets lost. Notifications alert recipients immediately through the app, SMS, and email - based on their preferences."
+All messages are logged, searchable, and organized by conversation. Nothing gets lost. Notifications alert recipients immediately through the app and by email — based on their preferences."
 
 **[ON-SCREEN TEXT]**
 - "Multiple Communication Channels"
@@ -75,7 +75,7 @@ All messages are logged, searchable, and organized by conversation. Nothing gets
 **[VOICEOVER]:**  
 "Announcements broadcast important information to everyone. Go to Communications and create a new announcement. Write your title and message using the rich text editor. Add images, links, and attached documents.
 
-Choose who receives it: all school users, or specific groups like parents or teachers. Set priority level. High-priority announcements show with red flags and urgent alerts. Important announcements might warrant SMS as well.
+Choose who receives it: all school users, or specific groups like parents or teachers. Set priority level. High-priority announcements show with red flags and urgent push alerts.
 
 Schedule announcements for later if you prefer. Type your message now, schedule it for tomorrow morning, and it automatically publishes and notifies everyone at that time. This is perfect for pre-planning.
 
@@ -208,7 +208,7 @@ This moderation prevents cyberbullying, protects privacy, and maintains professi
   - Toggle for group messages
   - Toggle for one-on-one messages
   - Toggle for discussion replies
-  - Notification method: In-App, Email, SMS, All
+  - Notification method: In-App, Email, Push, All
   - Quiet hours setting (e.g., no notifications 9 PM to 7 AM)
   - Critical messages always notify (overrides quiet hours)
 - Message Center/Inbox showing:
@@ -227,7 +227,7 @@ This moderation prevents cyberbullying, protects privacy, and maintains professi
 **[VOICEOVER]:**  
 "Everyone controls their own notification preferences. Go to Settings > Notifications to customize how you receive messages.
 
-Toggle each message type on or off. Want announcements but not every group message? Choose that. Select notification method: show in the app only, send emails, send SMS, or all three.
+Toggle each message type on or off. Want announcements but not every group message? Choose that. Select notification method: show in the app only, send push notifications, send emails, or any combination.
 
 Set quiet hours. Teachers might not want notifications during sleep time. Enable quiet hours, say 9 PM to 7 AM, and the app won't notify during those times - messages arrive silently and you see them when you open the app.
 

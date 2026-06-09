@@ -3,7 +3,7 @@ id: notification-settings-management
 title: Notification Settings & Management
 sidebar_label: Notification Settings
 description: Complete guide for managing notifications, configuring notification preferences, sending bulk notifications, and troubleshooting notification delivery.
-keywords: [notifications, push notifications, email notifications, SMS notifications, notification settings, notification preferences, FCM, Firebase, bulk notifications, alerts]
+keywords: [notifications, push notifications, email notifications, in-app notifications, notification settings, notification preferences, FCM, Firebase, bulk notifications, alerts]
 ---
 
 # Notification Settings & Management
@@ -16,7 +16,6 @@ Notifications keep the school community informed about important events, updates
 The system supports multiple notification channels:
 - **Push Notifications** - Pop-up alerts on the 4SCH mobile app
 - **Email Notifications** - Sent to registered email addresses
-- **SMS Notifications** - Text messages to registered mobile numbers
 - **In-App Notifications** - Listed in the bell icon when you're signed in
 :::
 
@@ -40,7 +39,6 @@ The system supports multiple notification channels:
 - **In-App** - Always available, no configuration needed
 - **Push** - Requires Firebase Cloud Messaging (FCM) setup
 - **Email** - Requires SMTP configuration (Settings → Email Settings)
-- **SMS** - Requires SMS gateway integration
 
 ---
 
@@ -243,54 +241,6 @@ Customize email notification templates:
 
 ---
 
-## 📲 SMS Notification Configuration {#sms-notifications}
-
-SMS notifications are sent as text messages to mobile phones.
-
-### SMS Gateway Setup (Admin Only)
-
-**Step 1: Choose an SMS provider**
-
-Popular options:
-- Twilio (global)
-- Msg91 (India)
-- Termii (Nigeria)
-- Africa's Talking (Africa)
-
-Sign up on your chosen provider's website if you don't already have an account.
-
-**Step 2: Get your credentials from the provider**
-
-On your provider's website, open the page they label **API Keys** (Termii, Msg91, Africa's Talking) or **Account** (Twilio). You'll need to copy two values:
-- An **API Key** or **Auth Token** — Twilio calls this the **Auth Token**, others usually call it the **API Key**
-- An **Account ID** — Twilio calls this the **Account SID**; some providers don't have one
-
-**Step 3: Enter them in 4SCH**
-
-1. Go to **Settings → SMS Settings**
-2. Select your provider from the **SMS Gateway** dropdown
-3. Fill in the fields that appear:
-   - **API Key** / **Auth Token** — paste the value from your provider
-   - **Account SID** — only shown if you picked Twilio
-   - **Sender ID** — the name (or number) parents see on their phone (e.g. `ABCSchool`)
-4. Click **Save**
-
-**Step 4: Send a test SMS**
-
-1. Click **Send Test SMS**
-2. Enter a mobile number including the country code (e.g. `+234…`)
-3. Click **Send** and check the phone
-
-:::tip Sender ID approval
-Some networks require your **Sender ID** to be approved before SMS will be delivered. Termii usually approves automatically within 24 hours; Twilio requires you to register a sender ID or buy a dedicated number. Check your provider's documentation if your test SMS doesn't arrive.
-:::
-
-:::tip SMS Costs
-SMS notifications incur costs per message. Monitor usage and budget accordingly. Consider using SMS for critical alerts only (attendance, fees) and email for general updates.
-:::
-
----
-
 ## 📣 Sending Bulk Notifications {#sending-notifications}
 
 Admins can send custom notifications to specific user groups.
@@ -321,7 +271,6 @@ Admins can send custom notifications to specific user groups.
 3. Choose delivery channels:
    - ☑ **Push Notification** (if push is set up)
    - ☑ **Email** (if email is set up)
-   - ☑ **SMS** (if an SMS provider is connected)
    - ☑ **In-App** (always available)
 
 4. Click **Send** or **Schedule**
@@ -332,7 +281,7 @@ Title: School Closure - Weather Alert
 Message: Due to heavy rain, school will be closed tomorrow (March 18). Online classes will be held as per timetable. Stay safe!
 Image: [Upload weather alert graphic]
 Send To: All Users
-Channels: Push + Email + SMS
+Channels: Push + Email + In-App
 ```
 
 :::tip Scheduling Notifications
@@ -346,20 +295,19 @@ Some systems allow scheduling notifications for future delivery. Use this to pre
 **Do:**
 - ✅ Keep messages concise and clear
 - ✅ Use descriptive titles
-- ✅ Send time-sensitive info via Push/SMS
+- ✅ Send time-sensitive info via Push
 - ✅ Use "All Users" sparingly (avoid notification fatigue)
 - ✅ Proofread before sending (can't be recalled)
 
 **Don't:**
 - ❌ Send marketing/promotional content
-- ❌ Overuse SMS (costs money)
 - ❌ Send non-urgent messages late at night
 - ❌ Include sensitive personal info (use secure channels)
 
 **Frequency Guidelines:**
 - **Daily:** Announcements, reminders (in-app/email)
 - **Weekly:** Newsletters, updates (email)
-- **As-needed:** Urgent alerts (push/SMS)
+- **As-needed:** Urgent alerts (push)
 - **Avoid:** Multiple messages per hour
 
 ---
@@ -462,35 +410,6 @@ Track sent notifications and delivery status.
 
 ---
 
-### SMS Notifications Not Delivered
-
-**Problem:** SMS messages not received
-
-**Solutions:**
-
-1. **SMS gateway not configured**
-   - Go to **Settings → SMS Settings**
-   - Confirm your **API Key** / **Auth Token**, **Sender ID** (and **Account SID** if using Twilio) are filled in
-   - Click **Send Test SMS** to confirm
-
-2. **Invalid mobile number**
-   - Check mobile number format (must include country code)
-   - Example: +234 812 345 6789 (Nigeria)
-
-3. **Insufficient SMS balance**
-   - Check SMS gateway account balance
-   - Top up credits
-
-4. **Sender ID not approved**
-   - Some countries require sender ID registration
-   - Contact SMS provider to register sender ID
-
-5. **Network issues**
-   - User's network may be down
-   - Try resending after some time
-
----
-
 ### In-App Notifications Not Showing
 
 **Problem:** Notifications not visible in the bell icon
@@ -544,7 +463,7 @@ Track notification effectiveness.
 - Time to open (how quickly users read)
 
 **Channel Performance:**
-- Push vs Email vs SMS effectiveness
+- Push vs Email effectiveness
 - Best time to send (morning vs evening)
 
 ### Optimizing Notifications
@@ -553,7 +472,6 @@ Track notification effectiveness.
 1. **Low open rates?** → Improve titles, send at better times
 2. **High unsubscribe?** → Reduce frequency, improve relevance
 3. **Email bounces?** → Clean email list, verify addresses
-4. **SMS failures?** → Validate mobile numbers, check format
 
 ---
 
@@ -576,7 +494,6 @@ Track notification effectiveness.
 **Allow users to:**
 - Disable specific notification types
 - Unsubscribe from emails (include unsubscribe link)
-- Opt-out of SMS (provide STOP keyword)
 
 **Don't:**
 - Force users to receive all notifications
@@ -599,7 +516,6 @@ Track notification effectiveness.
 **For Admins (Initial Setup):**
 - ✅ Configure FCM for push notifications
 - ✅ Set up SMTP for email notifications
-- ✅ Configure SMS gateway (if using SMS)
 - ✅ Test all notification channels
 - ✅ Customize email templates
 - ✅ Document notification policies

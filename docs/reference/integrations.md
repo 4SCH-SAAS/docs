@@ -2,8 +2,8 @@
 id: integrations
 title: Integrations
 sidebar_position: 3
-description: Integrate 4SCH with payment gateways, SMS providers, SSO, and LMS. Configure online payments, notifications, and third-party services for Nigerian schools.
-keywords: [payment gateway integration, SMS integration, SSO setup, payment processing Nigeria, Paystack integration, Flutterwave, online payments, API integration]
+description: Integrate 4SCH with payment gateways, email providers, and SSO. Configure online payments, transactional and bulk email, and third-party services for Nigerian schools.
+keywords: [payment gateway integration, email integration, SSO setup, payment processing Nigeria, Paystack integration, Flutterwave, online payments, API integration]
 ---
 
 import CardGrid from '@site/src/components/CardGrid';
@@ -16,7 +16,6 @@ import UsersIcon from '@site/src/components/icons/Users';
 <CardGrid
   cards={[
     { to: '#payment-gateways', title: 'Payment Gateways', description: 'Paystack, Flutterwave, Stripe', icon: <FinanceIcon /> },
-    { to: '#sms-gateways', title: 'SMS Providers', description: 'Termii, Twilio, Msg91', icon: <MessagingIcon /> },
     { to: '#email-providers', title: 'Email Services', description: 'SendGrid, Mailgun, SES', icon: <UsersIcon /> },
   ]}
 />
@@ -26,7 +25,6 @@ import UsersIcon from '@site/src/components/icons/Users';
 
 Third-party integrations extend your school management system with powerful capabilities:
 - **Payment Gateways** - Accept online fee payments
-- **SMS Providers** - Send text message notifications
 - **Email Services** - Deliver email notifications at scale
 - **SSO Providers** - Enable single sign-on (Google, Microsoft)
 
@@ -227,142 +225,6 @@ For detailed Paystack API docs, visit: [paystack.com/docs](https://paystack.com/
 
 ---
 
-## 📱 SMS Gateway Integration {#sms-gateways}
-
-Send text message notifications for attendance alerts, fee reminders, and important announcements.
-
-### Supported SMS Providers
-
-**Nigeria:**
-- **Termii** (Recommended)
-- **Africa's Talking**
-
-**India:**
-- **Msg91**
-- **TextLocal**
-
-**Global:**
-- **Twilio**
-- **Nexmo (Vonage)**
-
----
-
-### Termii Integration (Nigeria) {#termii}
-
-**Step 1: Create Termii Account**
-1. Go to [termii.com](https://termii.com)
-2. Sign up for business account
-3. Complete verification
-4. Navigate to **API Settings**
-
-**Step 2: Get API Credentials**
-1. Copy your **API Key**
-2. Note your **Sender ID** (e.g., "YourSchool")
-3. Fund your account (buy SMS credits)
-
-**Step 3: Register Sender ID**
-1. Go to **Sender ID** section
-2. Submit your school name as sender ID
-3. Wait for approval (usually 24-48 hours)
-
-**Step 4: Configure in School System**
-1. Go to **Settings → SMS Settings**
-2. Select **Termii** from provider dropdown
-3. Enter:
-   - **API Key**
-   - **Sender ID** (approved sender ID)
-4. Click **Save**
-
-**Step 5: Test SMS**
-1. Click **Send Test SMS**
-2. Enter a Nigerian mobile number (format: 2348012345678)
-3. Click **Send**
-4. Verify SMS received
-
-**Termii Pricing:**
-- ₦2.50 - ₦4.00 per SMS (varies by volume)
-- Bulk discounts available
-- No monthly fees
-
-:::tip Sender ID Approval
-Use a clear, recognizable sender ID like your school name. Avoid generic names. This improves delivery rates and trust.
-:::
-
----
-
-### Twilio Integration (Global) {#twilio}
-
-**Step 1: Create Twilio Account**
-1. Go to [twilio.com](https://twilio.com)
-2. Sign up (free trial includes credits)
-3. Verify your phone number
-4. Go to **Console Dashboard**
-
-**Step 2: Get Credentials**
-1. Copy **Account SID**
-2. Copy **Auth Token**
-3. Get a **Twilio Phone Number** (or use Messaging Service SID)
-
-**Step 3: Configure in School System**
-1. Go to **Settings → SMS Settings**
-2. Select **Twilio**
-3. Enter:
-   - **Account SID**
-   - **Auth Token**
-   - **From Number** (your Twilio phone number with country code, e.g., +234XXXXXXXXXX)
-4. Click **Save**
-
-**Step 4: Test**
-1. Send test SMS
-2. Check delivery in Twilio Console → **Messaging → Logs**
-
-**Twilio Pricing:**
-- $0.0075 per SMS (US)
-- Varies by destination country
-- $1/month per phone number
-
----
-
-### Msg91 Integration (India) {#msg91}
-
-**Step 1: Create Msg91 Account**
-1. Go to [msg91.com](https://msg91.com)
-2. Sign up and verify
-3. Go to **API** section
-
-**Step 2: Get API Key**
-1. Copy your **Auth Key**
-2. Note your **Sender ID**
-3. Create a **Template** (required by TRAI regulations)
-
-**Step 3: Create Message Templates**
-1. Go to **SMS → Templates**
-2. Create templates for:
-   - Attendance alert
-   - Fee reminder
-   - Exam notification
-3. Submit for DLT approval
-4. Wait for approval (24-48 hours)
-
-**Step 4: Configure in School System**
-1. Go to **Settings → SMS Settings**
-2. Select **Msg91**
-3. Enter:
-   - **Auth Key**
-   - **Sender ID**
-   - **Template IDs** (for different message types)
-4. Click **Save**
-
-**Msg91 Pricing:**
-- ₹0.15 - ₹0.25 per SMS
-- Volume discounts available
-
-:::caution India DLT Compliance
-Indian SMS regulations require all messages to use pre-approved templates. Ensure templates are approved before going live.
-:::
-
----
-
 ## 📧 Email Service Provider Integration {#email-providers}
 
 For high-volume email sending (newsletters, bulk notifications), use dedicated email services instead of regular SMTP.
@@ -501,20 +363,6 @@ Authenticate your domain (not just single sender) to improve deliverability and 
 
 ---
 
-### SMS Not Delivering
-
-**Problem:** SMS not received
-
-**Solutions:**
-1. **Check balance** - Ensure SMS provider account has sufficient credits
-2. **Verify sender ID** - Must be approved by provider
-3. **Check number format** - Include country code (e.g., +234 for Nigeria)
-4. **DLT compliance** (India) - Message must match approved template
-5. **Review logs** - Check SMS provider dashboard for failed deliveries
-6. **Network issues** - Recipient's network may be down
-
----
-
 ### Email Delivery Issues
 
 **Problem:** Emails going to spam or not delivered
@@ -531,7 +379,7 @@ Authenticate your domain (not just single sender) to improve deliverability and 
 
 ## 🔗 Related Features
 
-- **[Notification Settings](../guides/notification-settings-management.md)** - Configuring FCM, SMTP, SMS
+- **[Notification Settings](../guides/notification-settings-management.md)** - Configuring FCM (push) and SMTP (email)
 - **[Fee Management](../guides/school-admin.md#fee-management)** - Online fee payment workflows
 - **[School Admin Guide](../guides/school-admin.md#system-settings)** - System settings and configuration
 
@@ -547,15 +395,6 @@ Authenticate your domain (not just single sender) to improve deliverability and 
 - ✅ Set up webhook URL
 - ✅ Test with test cards/credentials
 - ✅ Switch to live mode after testing
-
-**SMS Gateway Setup:**
-- ✅ Create account with SMS provider
-- ✅ Register and get sender ID approved
-- ✅ Fund account with credits
-- ✅ Get API key/credentials
-- ✅ Create message templates (if required)
-- ✅ Configure in school system
-- ✅ Send test SMS
 
 **Email Service Setup:**
 - ✅ Create account with email provider

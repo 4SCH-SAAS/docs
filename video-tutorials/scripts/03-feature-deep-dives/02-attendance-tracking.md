@@ -149,7 +149,7 @@ Export reports as PDF for printing and distribution, or Excel for further analys
 
 Set a late arrival time - anything after 9:30 AM might be considered late. Configure alerts for consecutive absences. If a student misses three days in a row, automatically notify parents and administrators.
 
-Choose who receives alerts: parents, guardians, both, or just administrators. You can customize the notification message. By default, when a student is marked absent, the parent receives an instant notification via the app and SMS.
+Choose who receives alerts: parents, guardians, both, or just administrators. You can customize the notification message. By default, when a student is marked absent, the parent receives an instant push notification via the 4SCH app and an email summary.
 
 These automated alerts help catch attendance issues early. Parents see patterns developing and can intervene before it becomes a serious problem."
 

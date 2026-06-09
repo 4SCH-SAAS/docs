@@ -160,7 +160,7 @@ This directory contains comprehensive video scripts for 8 in-depth feature tutor
 - Configuring role-based permissions
 - User management (individual and bulk)
 - Setting up communication and notification channels
-- Configuring email and SMS providers
+- Configuring email and push notifications
 - Managing system integrations (Zoom, Google Classroom, etc.)
 - System health monitoring and backups
 - Security configuration and compliance

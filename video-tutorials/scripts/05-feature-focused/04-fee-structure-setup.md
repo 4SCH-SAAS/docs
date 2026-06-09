@@ -190,7 +190,7 @@
 - Show confirmation message
 
 **[VOICEOVER]:**  
-"Publish the fee structure. Set the effective date - perhaps the start of the academic year. Decide if you want to immediately notify parents through email and SMS. Once published, the system uses this structure for all invoicing."
+"Publish the fee structure. Set the effective date — perhaps the start of the academic year. Decide if you want to immediately notify parents by email and a push notification through the app. Once published, the system uses this structure for all invoicing."
 
 **[SCREEN RECORDING - Generate Invoices]**
 - Navigate to "Generate Invoices"
@@ -212,13 +212,13 @@
 
 **[SCREEN RECORDING - Distribute Invoices]**
 - Option 1: Email to parents with PDF
-- Option 2: SMS with link to digital invoice
+- Option 2: Push notification with link to digital invoice
 - Option 3: In-app notification
 - Option 4: Print physical copies
 - Show scheduling delivery for optimal timing
 
 **[VOICEOVER]:**  
-"Distribute invoices through multiple channels. Email them as PDFs, send SMS links to digital versions, notify through the parent app, or print physical copies. You can schedule distribution for a specific date - perhaps the start of the term - to ensure consistent timing."
+"Distribute invoices through multiple channels. Email them as PDFs, send push notifications through the parent app linking to the digital invoice, or print physical copies. You can schedule distribution for a specific date — perhaps the start of the term — to ensure consistent timing."
 
 **[ON-SCREEN TEXT]**
 - "Review Before Publishing"
