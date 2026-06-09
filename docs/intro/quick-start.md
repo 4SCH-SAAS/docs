@@ -30,7 +30,7 @@ Open **Settings → Subscriptions**:
 - If a **Current Plan** card appears at the top, your Super Admin has already assigned a custom plan — you're good to go.
 - Otherwise, pick a package from the catalog (Recurring or Prepaid tab) and click **Subscribe**.
 
-See **[Getting Started → Choose Your Subscription Package](./getting-started.md#choose-your-subscription-package)** for the full walk-through.
+See **[Getting Started](./getting-started.md)** for the full walk-through of subscription packages and first-time sign-in.
 
 ## Step 1: Confirm school identity
 
