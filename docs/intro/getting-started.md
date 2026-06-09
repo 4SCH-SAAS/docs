@@ -12,13 +12,33 @@ import Link from '@docusaurus/Link';
 
 Whether you're new to 4SCH or helping your school transition from paper records or another system, this guide will walk you through the first steps.
 
-## New to 4SCH? Bringing Your School Onboard
+## New to 4SCH? Three Ways to Get Started
 
 **4SCH** is a modern enterprise School Management System designed to elevate service delivery for schools, enabling schools to much more effectively orchestrate a very productive teaching and learning process using modern technology.
 
-There are **two ways** a school joins 4SCH:
+There are three real ways a new school joins 4SCH. The right one depends on where you are right now:
 
-### Path A: Send a School Inquiry
+### 🧪 Path 1: Try a Demo School (no commitment)
+
+The fastest way to see 4SCH in action — perfect when you're still evaluating the platform.
+
+**Step 1:** Visit [www.4sch.com](https://www.4sch.com).
+
+**Step 2:** Click **Create a Demo School** (or the equivalent "try the platform" call to action on the homepage).
+
+**Step 3:** Enter your name, your email, and any school name (e.g. "Demo Academy"). Click **Create Demo** and you'll be signed in to a brand-new sample school in seconds.
+
+The demo comes pre-loaded with sample classes, students, fees, and notifications, so you can explore every module without any setup work. Click around freely — the demo is intentionally protected so you can't break anything or charge real cards.
+
+:::caution Demo Schools Are Shared and Reset
+The demo data is shared across everyone trying the platform and gets reset periodically. **Don't put any real student information into a demo school.** When you're ready to use 4SCH for real, take Path 2 or 3.
+:::
+
+:::tip Speed Things Up While You Wait
+If you've just sent an inquiry (Path 2 below) and you're waiting for the 4SCH team to get back to you, take Path 1 in a separate browser tab. You'll arrive at first sign-in already knowing where everything is.
+:::
+
+### ✉️ Path 2: Send a School Inquiry
 
 If you've found 4SCH on your own and you'd like to bring your school onto the platform, the simplest first step is to send an inquiry from our website.
 
@@ -40,7 +60,7 @@ If you've found 4SCH on your own and you'd like to bring your school onto the pl
 The public inquiry form is enabled by 4SCH. If you don't see the **Inquire about 4SCH** button on the homepage, your country or region may be using a direct-provisioning model instead — just email us using the details below and we'll take it from there.
 :::
 
-### Path B: Provisioned Directly by Your 4SCH Support Contact
+### 🎓 Path 3: Provisioned Directly by Your 4SCH Support Contact
 
 If you've already spoken to someone on the 4SCH team — or if your school has been recommended through a partner — you don't need to fill in the inquiry form. Your **support contact will provision your school directly** and email you what you need to sign in.
 
@@ -60,17 +80,6 @@ Contact our support team at any time:
 - **Email:** info@ng.4sch.com
 - **Phone/WhatsApp:** +234 704 151 8843
 - **Follow us:** @ng4sch on social media
-
-### 🎓 Path 3: You Have a Welcome Email Already
-
-If your school has already been provisioned by your 4SCH support contact, you'll have an email titled something like **"Welcome to 4SCH — Your School Is Ready"** in your inbox.
-
-That email contains the three things you need to sign in:
-- The **sign-in URL** for your school's instance of 4SCH (e.g. `yourschool.4sch.com`)
-- Your **username** (usually the email address you gave the 4SCH team)
-- A **temporary password** — safe to share with you over email because 4SCH asks you to change it the moment you sign in
-
-If you can't find this email, check your spam folder first, then contact 4SCH support — they can re-send it.
 
 ---
 
