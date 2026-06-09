@@ -244,15 +244,22 @@ Configure password policies - they can be lenient for parents or stricter for ad
   - SMS notifications: Enable/Disable (requires SMS gateway setup)
   - In-app notifications: Always enabled
   - Push notifications (mobile app): Enable/Disable
-- Email setup:
-  - Choose between "Use 4SCH's email service" (recommended) or "Use my school's own email"
-  - If using your own, paste the details supplied by your IT provider into the simple form
-  - Click "Send test email" — a tick appears when it works
-- SMS provider setup:
-  - Pick a provider from the dropdown: Twilio, Termii, or Africa's Talking
-  - Paste the access key you copied from that provider's website
-  - Set the Sender ID parents see (e.g. "4SCH")
-  - Click "Send test SMS" to confirm it works
+- Email Settings form (Settings → Email Settings):
+  - **Mail Driver**: `smtp`
+  - **Mail Host**: `smtp.gmail.com` (example for Gmail)
+  - **Mail Port**: `587`
+  - **Mail Username**: `school@example.com`
+  - **Mail Password**: (obscured — App Password for Gmail/M365)
+  - **Mail Encryption**: `tls`
+  - **Mail From Address**: `school@example.com`
+  - **Mail From Name**: `ABC School`
+  - Click **Send Test Email** → enter an address → tick confirms it works
+- SMS Gateway Settings form (Settings → SMS Settings):
+  - **SMS Gateway** dropdown: Twilio · Msg91 · Termii · Africa's Talking
+  - **API Key** or **Auth Token** (paste the value copied from the provider's site)
+  - **Account SID** (only if Twilio is selected)
+  - **Sender ID** (e.g. `ABCSchool`)
+  - Click **Send Test SMS** → enter a phone number → confirmation arrives on the phone
 - Message templates customization:
   - Default notification templates shown:
     - "Student absent: Hi [Parent Name], [Student Name] was marked absent on [Date]"
@@ -268,9 +275,9 @@ Configure password policies - they can be lenient for parents or stricter for ad
 **[VOICEOVER]:**  
 "Communication settings control how your school stays connected. Enable notification channels that work for your community. Parents might use email and SMS, teachers prefer in-app messages.
 
-Set up email. 4SCH uses email to send welcome messages, password resets, and notification summaries. The simplest option is to use 4SCH's built-in email service — just enable it and you're done. If your school prefers to send from its own email address, your IT provider can give you the details to paste into the form.
+Set up email. 4SCH uses email to send welcome messages, password resets, and notification summaries. Go to **Settings → Email Settings** and fill in the form using the connection details from your email provider — the host, port, username, password, encryption, and the from-address parents will see. For Gmail or Microsoft 365, you'll need to generate an **App Password** rather than using your regular login password. Click **Send Test Email** to confirm it works, then **Save**.
 
-SMS is powerful for reaching parents — a message on their phone about absence or fees. Pick an SMS provider like Termii or Africa's Talking, sign up on their website, copy the access key they give you, and paste it into the SMS settings page in 4SCH.
+SMS is powerful for reaching parents — a message on their phone about absence or fees. In **Settings → SMS Settings**, pick a provider (Twilio, Termii, Africa's Talking, Msg91), paste the credentials from the provider's site into the matching fields (typically an **API Key** or **Auth Token**, plus an **Account SID** for Twilio), set the **Sender ID** parents will see, and click **Send Test SMS** to confirm.
 
 Customize message templates. Default messages are professional, but personalize them. Add your school name, principal's name, and contact info so recipients know it's from you. Warm tone builds relationships.
 

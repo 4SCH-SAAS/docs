@@ -1024,11 +1024,20 @@ The CA system calculates session cumulative averages across all Term Exams in a 
 1. Session position only appears once the student has results in **more than one** term
 2. Re-publish the latest exam to trigger the ranking recalculation
 
-**Issue: Publishing the exam result shows an error**
+**Issue: Publishing the exam result fails with a database error**
 
 **Solution:**
-1. Refresh the page and try again
-2. If the error continues, contact 4SCH support with a screenshot of the error — they have the tools to put it right in a few minutes
+1. This typically happens with CA-enabled exams on schools that have been upgraded to v1.9.3 or later but where the database migrations have not yet been run.
+2. Ask your IT admin to run the latest database migrations on the server:
+   ```bash
+   php artisan migrate
+   ```
+3. Then clear the application cache:
+   ```bash
+   php artisan cache:clear
+   php artisan config:clear
+   ```
+4. If the error persists, contact 4SCH support with a screenshot of the error message
 
 **Issue: "Configure CAs" button isn't showing**
 
@@ -1041,8 +1050,9 @@ The CA system calculates session cumulative averages across all Term Exams in a 
 **Issue: CA configuration looks empty when I reopen it**
 
 **Solution:**
-1. Reload the page (Ctrl+Shift+R or ⌘+Shift+R)
-2. Reopen the exam and check again — if it's still empty, set the configuration once more and click **Save**
+1. Reload the page (Ctrl+Shift+R or ⌘+Shift+R) to make sure you have the latest interface
+2. Confirm the exam actually has saved CA configuration (your IT admin can verify this in the database if needed)
+3. If it's still empty, set the configuration once more and click **Save**
 
 **Issue: The configuration window is too tall and I can't see the Save button**
 
@@ -1195,19 +1205,58 @@ For full details, see the dedicated [CA on Mobile Apps](./continuous-assessment-
 
 ---
 
-## Bringing Older Exams into the CA System
+## Migrating Legacy Exams to the CA Structure
 
-If your school created exams **before** the CA system was available, those exams still work — but you can give them the same CA breakdown as your newer exams so they show CA1, CA2 and Exam components in reports and the mobile app.
+If your school created exams **before** the CA system was available, those exams still work, but their marks aren't yet slotted into the CA structure. There are two ways to bring them across.
 
-### Doing it from the admin dashboard (one exam at a time)
+### Option A: From the admin dashboard (one exam at a time)
 
 Open the older exam from your exam list and click **Configure CA**, exactly as you would for a new exam. Add your CA components (for example CA1 at 20%, CA2 at 20%, Exam at 60%), make sure the weightages add up to 100%, and click **Save**.
 
 4SCH keeps any marks already entered — it just slots them into the new structure and proportionally adjusts the figures so nothing looks out of range. For example, a mark previously stored as 80/100 becomes 48/60 when the Exam component is weighted at 60%.
 
-### Doing it for the whole school at once
+### Option B: One-shot migration command (for many exams at once)
 
-If you have many older exams and you'd like them all upgraded in one go, contact your 4SCH support representative. They have a quick one-time tool on their side that can update everything across the school, with the weightages you choose. The work is safe and reversible — you'll get a preview of what will change before anything is touched.
+If you have lots of older exams, your IT admin can run a single migration command on the server to upgrade them all in one go. This is a **one-time** command — once it's done, you don't need to run it again.
+
+#### Preview (safe dry-run)
+
+```bash
+# Preview changes for all schools
+php artisan exams:migrate-to-ca
+
+# Preview for a specific school only
+php artisan exams:migrate-to-ca --school=1
+```
+
+The preview reports exactly what *would* change without touching anything, so you can review the plan with the school admin before going ahead.
+
+#### Execute
+
+```bash
+# Just normalize legacy entries so they slot under the 'Exam' component (minimal, safe)
+php artisan exams:migrate-to-ca --execute --school=1
+
+# Add full CA configuration (CA1=20%, CA2=20%, Exam=60%) AND proportionally adjust marks
+php artisan exams:migrate-to-ca --execute --add-ca-config --school=1
+
+# Custom weightages
+php artisan exams:migrate-to-ca --execute --add-ca-config \
+  --ca1-weightage=15 --ca2-weightage=15 --exam-weightage=70 \
+  --school=1
+
+# All schools at once (a Super Admin task)
+php artisan exams:migrate-to-ca --execute --add-ca-config --all-schools
+```
+
+#### What the command does
+
+1. Identifies older exams whose marks aren't yet tagged with a CA component
+2. Optionally adds a default CA configuration (CA1, CA2, Exam) to those exams
+3. Tags every previously-untagged mark as belonging to the **Exam** component
+4. If new CA configuration was added, proportionally adjusts marks to the new totals (e.g. `80/100` becomes `48/60` when the Exam component is weighted 60%)
+
+The command is **idempotent** — safe to run more than once. Schools without legacy marks are skipped silently.
 
 ### Safety Features
 
