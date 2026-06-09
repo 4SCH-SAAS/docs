@@ -113,7 +113,7 @@ The summary shows 2,456 students eligible for promotion. Review this list to ens
   - User clicks "Execute Promotion"
 - Promotion processing:
   - Progress bar: "Processing... 500/2456 students"
-  - Animated database icon
+  - Animated record-update icon
   - Status messages:
     - "Creating new class assignments..."
     - "Updating student records..."

@@ -121,49 +121,42 @@ Most importantly, verify the provider complies with telecom regulations. In the 
 
 ---
 
-### Step 2: Obtaining and Configuring API Credentials (2:45 - 3:45)
+### Step 2: Connecting Your Provider Account (2:45 - 3:45)
 
 **Visual Cues:**
 - Screen recording: SMS provider setup process
-- Show obtaining credentials from SMS provider:
-  - Log into Twilio/Nexmo dashboard
-  - Navigate to API credentials
-  - Copy Account SID and Auth Token (Twilio example)
-  - Show corresponding fields in school system
-- Display credential input form with fields:
-  - API Key/Account ID
-  - API Secret/Auth Token
-  - Phone number (sender ID)
-- Show security warning overlay
-- Display "Save Configuration" button
-- Show success notification
+- Show signing in to the provider's website (Twilio example):
+  - Open the Account page on Twilio's site
+  - Click "Copy" next to the Account SID
+  - Click "Copy" next to the Auth Token
+- Show the matching boxes in 4SCH being filled in
+- Display the simple form with three fields:
+  - Account ID
+  - Access Key
+  - Sender phone number or Sender ID
+- Friendly padlock icon next to the Access Key field
+- Click **Save**
+- A green "Connected" badge appears
 
 **Voiceover Script:**
-"Once you've chosen your provider, obtain your API credentials. These allow your school system to communicate securely with the SMS provider.
+"Now connect your SMS provider account to 4SCH.
 
-Using Twilio as an example: log into your Twilio account. Navigate to the Account section and find your Account SID and Auth Token. These are your credentials—treat them like passwords.
+Using Twilio as an example: open Twilio's website in a separate tab and sign in. On your Twilio Account page you'll see two pieces of information you need — an **Account ID** and an **Access Key** (Twilio calls it the 'Auth Token').
 
-Copy your Account SID. Return to your school system's SMS configuration page and paste it into the Account ID field.
+Click **Copy** next to the Account ID, switch back to 4SCH, and paste it into the matching field. Do the same with the Access Key. Treat that one like a password — never share it in an email or post a screenshot.
 
-Copy your Auth Token. Paste it into the Auth Token field. Keep this sensitive—anyone with your auth token can use your SMS account.
+Then enter the **Sender ID or phone number** that should appear on parents' phones when they receive an SMS — for example 'ABCSchool', or a dedicated number your provider has given you.
 
-You'll also need to configure your sender phone number. This is the number that appears on parents' phones when they receive messages from your school. Some providers let you use an 11-digit code or custom sender ID. Others require a dedicated phone number.
+Click **Save**. 4SCH quietly checks the connection, and a green **Connected** badge appears once it's working. If you see a red message instead, the most common cause is an extra space when copying — just paste again and re-save.
 
-After entering all credentials, click 'Save Configuration.' The system verifies your credentials by attempting a test connection to the SMS provider.
-
-If the connection succeeds, you'll see a success message. If it fails, double-check that your credentials are correct. A common mistake is including extra spaces or typos.
-
-Once your SMS provider is connected, your school is ready to send text messages."
+Once you see that green badge, your school is ready to send text messages."
 
 **Production Notes:**
-- Show actual provider dashboard (sanitized)
-- Demonstrate credential retrieval
-- Show copy-paste process clearly
-- Display form fields being filled
-- Zoom in on credential fields
-- Show security warning prominently
-- Display success/error messages
-- Include timeout handling examples
+- Show the real provider site (with keys blurred)
+- Demonstrate the copy/paste flow clearly
+- Use a soft padlock icon, not a red warning, for the safety note
+- Show the green "Connected" badge animating in
+- Keep the tone reassuring — this should feel like a simple two-minute task
 
 ---
 

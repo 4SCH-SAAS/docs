@@ -14,10 +14,10 @@ Notifications keep the school community informed about important events, updates
 
 :::info Notification Types
 The system supports multiple notification channels:
-- **Push Notifications** - Mobile app alerts (requires FCM setup)
+- **Push Notifications** - Pop-up alerts on the 4SCH mobile app
 - **Email Notifications** - Sent to registered email addresses
-- **SMS Notifications** - Text messages (requires SMS gateway)
-- **In-App Notifications** - Visible when logged into the system
+- **SMS Notifications** - Text messages to registered mobile numbers
+- **In-App Notifications** - Listed in the bell icon when you're signed in
 :::
 
 ---
@@ -39,7 +39,7 @@ The system supports multiple notification channels:
 **3. Notification Channels**
 - **In-App** - Always available, no configuration needed
 - **Push** - Requires Firebase Cloud Messaging (FCM) setup
-- **Email** - Requires SMTP configuration
+- **Email** - Sent through 4SCH's built-in email service, or from your school's own email account
 - **SMS** - Requires SMS gateway integration
 
 ---
@@ -126,39 +126,11 @@ On Android, disable battery optimization for the school app to ensure notificati
 
 ---
 
-### For Admins: Configuring FCM (Firebase Cloud Messaging)
+### For Admins: Turning Push Notifications On
 
-Push notifications require Firebase Cloud Messaging (FCM) configuration.
+Push notifications are powered by a Google service called Firebase Cloud Messaging. Most schools never need to touch the technical side of this — your 4SCH support representative will have it set up before you go live, and you can confirm it's working by sending a test notification (see [Sending Bulk Notifications](#sending-notifications) below).
 
-**Prerequisites:**
-- Google Firebase account
-- Firebase project created for your school
-
-**Step 1: Obtain FCM Credentials**
-1. Go to [Firebase Console](https://console.firebase.google.com/)
-2. Select your project (or create new)
-3. Go to **Project Settings** (gear icon)
-4. Navigate to **Cloud Messaging** tab
-5. Copy:
-   - **Server Key** (for backend)
-   - **Sender ID**
-
-**Step 2: Configure in School System**
-1. Log in as **School Admin**
-2. Go to **Settings → FCM Settings** (or **Settings → Push Notifications**)
-3. Enter:
-   - **FCM Server Key** - Paste the server key from Firebase
-   - **Sender ID** - Paste the sender ID
-4. Click **Save**
-
-**Step 3: Test Push Notifications**
-1. Send a test notification (see [Sending Bulk Notifications](#sending-notifications))
-2. Verify it appears on a mobile device with the app installed
-3. If not received, check troubleshooting section
-
-:::tip Firebase Setup Guide
-For detailed Firebase project setup, see the [Integration Guides](../reference/integrations.md) or contact support.
-:::
+If your school is self-hosting 4SCH or wants to use its own Firebase account, the step-by-step setup instructions live in the [Integration Guides](../reference/integrations.md). Once your support contact has connected your Firebase account, push notifications work automatically — there's nothing else for you to do in the admin dashboard.
 
 ---
 
@@ -166,56 +138,29 @@ For detailed Firebase project setup, see the [Integration Guides](../reference/i
 
 Email notifications are sent to users' registered email addresses.
 
-### SMTP Configuration (Admin Only)
+### Choosing How Email Is Sent (Admin Only)
 
-**Step 1: Access Email Settings**
+You have three easy options for email — pick the one that fits your school best.
+
+**Step 1: Open Email Settings**
 1. Log in as **School Admin**
-2. Go to **Settings → Email Settings** (or **Settings → SMTP Configuration**)
+2. Go to **Settings → Email Settings**
 
-**Step 2: Enter SMTP Details**
-- **Mail Driver** - Usually "SMTP"
-- **Mail Host** - SMTP server address (e.g., smtp.gmail.com, smtp.office365.com)
-- **Mail Port** - Port number (usually 587 for TLS, 465 for SSL)
-- **Mail Username** - Your email address (e.g., school@example.com)
-- **Mail Password** - Email password or app-specific password
-- **Mail Encryption** - TLS or SSL
-- **Mail From Address** - Email address shown as sender
-- **Mail From Name** - Display name (e.g., "ABC School")
+**Step 2: Choose your email option**
 
-**Step 3: Test Email**
-1. Click **Send Test Email**
-2. Enter a test email address
-3. Click **Send**
-4. Check if test email was received
-5. If successful, click **Save Configuration**
+- **Use 4SCH's built-in email service** *(recommended for most schools)* — turn it on and you're done. Messages are sent on your school's behalf.
+- **Send from your school's Gmail or Microsoft 365 account** — pick the matching option, click **Sign in with Google** or **Sign in with Microsoft**, sign in to your school's account in the pop-up window, and click **Allow**. A green **Connected** badge appears when it's working.
+- **Use a custom email provider** — your IT provider can paste the details into the form. If your school has bought a dedicated bulk-email service (e.g. SendGrid, Mailgun), your 4SCH support representative can connect it for you in a few minutes.
 
-**Common SMTP Providers:**
+**Step 3: Set the sender details**
+- **From name** — what parents see in their inbox (e.g. "ABC School")
+- **Reply-to** — the school address you'd like replies to go to (optional)
 
-**Gmail:**
-```
-Host: smtp.gmail.com
-Port: 587
-Encryption: TLS
-Note: Use App Password, not regular password
-```
+**Step 4: Send a test email**
+Click **Send Test Email**, type any address, and click **Send**. You should see the message arrive within a few seconds. If it works, click **Save**.
 
-**Microsoft 365/Outlook:**
-```
-Host: smtp.office365.com
-Port: 587
-Encryption: STARTTLS
-```
-
-**SendGrid (Recommended for bulk):**
-```
-Host: smtp.sendgrid.net
-Port: 587
-Username: apikey
-Password: Your SendGrid API Key
-```
-
-:::caution Gmail App Passwords
-If using Gmail, enable 2-Step Verification and generate an App Password at https://myaccount.google.com/apppasswords. Use the app password, not your regular Gmail password.
+:::tip Sending lots of emails?
+If your school regularly sends thousands of messages a week (e.g. termly report cards to every parent), contact 4SCH support — they'll help you switch on a high-volume email plan so nothing is delayed.
 :::
 
 ---
@@ -254,30 +199,32 @@ Customize email notification templates:
 
 SMS notifications are sent as text messages to mobile phones.
 
-### SMS Gateway Setup (Admin Only)
+### Setting Up SMS (Admin Only)
 
-**Step 1: Choose SMS Provider**
+**Step 1: Choose an SMS provider**
 Popular options:
 - Twilio (Global)
 - Msg91 (India)
 - Termii (Nigeria)
 - Africa's Talking (Africa)
-- Custom gateway
 
-**Step 2: Configure SMS Settings**
+Sign up on your chosen provider's website if you don't already have an account.
+
+**Step 2: Connect the provider to 4SCH**
 1. Go to **Settings → SMS Settings**
-2. Select your SMS provider from dropdown
-3. Enter credentials:
-   - **API Key** or **Auth Token**
-   - **Sender ID** (e.g., "ABCSchool")
-   - **Account SID** (if using Twilio)
-4. Click **Save**
+2. Select your provider from the dropdown
+3. Paste the access keys your provider gave you into the matching boxes (the field labels in 4SCH match the labels on the provider's own site)
+4. Set the **Sender ID** parents will see on their phone (e.g. "ABCSchool")
+5. Click **Save** — a green **Connected** badge appears when it's working
 
-**Step 3: Test SMS**
+**Step 3: Send a test SMS**
 1. Click **Send Test SMS**
-2. Enter a mobile number
-3. Click **Send**
-4. Verify SMS received
+2. Enter a mobile number (include the country code, e.g. +234…)
+3. Click **Send** and check the phone
+
+:::tip Need help with the access keys?
+If you're not sure where to find them on your provider's website, contact 4SCH support — they can walk you through the screens in a quick call.
+:::
 
 :::tip SMS Costs
 SMS notifications incur costs per message. Monitor usage and budget accordingly. Consider using SMS for critical alerts only (attendance, fees) and email for general updates.
@@ -313,9 +260,9 @@ Admins can send custom notifications to specific user groups.
 - **Custom** - Manually select individual users
 
 3. Choose delivery channels:
-   - ☑ **Push Notification** (if FCM configured)
-   - ☑ **Email** (if SMTP configured)
-   - ☑ **SMS** (if SMS gateway configured)
+   - ☑ **Push Notification** (if push is set up)
+   - ☑ **Email** (if email is set up)
+   - ☑ **SMS** (if an SMS provider is connected)
    - ☑ **In-App** (always available)
 
 4. Click **Send** or **Schedule**
@@ -396,10 +343,10 @@ Track sent notifications and delivery status.
 
 **Possible Causes & Solutions:**
 
-1. **FCM not configured**
-   - Go to Settings → FCM Settings
-   - Verify Server Key and Sender ID are entered correctly
-   - Test with a sample notification
+1. **Push not switched on yet**
+   - Go to **Settings → Push Notifications**
+   - Confirm the status shows **Connected** — if it doesn't, contact 4SCH support
+   - Send a test notification to confirm it's working
 
 2. **User didn't allow app permissions**
    - Ask user to check phone Settings → Apps → [School App] → Notifications
@@ -416,9 +363,8 @@ Track sent notifications and delivery status.
 5. **Outdated app version**
    - Update to latest version from App Store/Play Store
 
-6. **Firebase project misconfigured**
-   - Verify Firebase project has correct package name (Android) or bundle ID (iOS)
-   - Check FCM credentials haven't expired
+6. **Mobile app rebuilt with new branding**
+   - If your school recently switched mobile-app branding or domain, contact 4SCH support to refresh the push connection
 
 ---
 
@@ -428,31 +374,25 @@ Track sent notifications and delivery status.
 
 **Solutions:**
 
-1. **SMTP not configured**
-   - Go to Settings → Email Settings
-   - Verify all SMTP details are correct
-   - Send test email
+1. **Email not set up yet**
+   - Go to **Settings → Email Settings**
+   - Confirm the status shows **Connected**
+   - Click **Send Test Email** to confirm
 
-2. **Incorrect email credentials**
-   - Double-check username and password
-   - For Gmail, use App Password, not regular password
+2. **Sign-in to Gmail/Microsoft expired**
+   - Open Email Settings and click **Reconnect** — sign in again in the pop-up
 
 3. **Emails going to spam**
-   - Ask users to check spam/junk folder
-   - Add school email to contacts
-   - Use professional email domain (not gmail.com for sender)
+   - Ask users to check their spam/junk folder
+   - Ask them to add your school's sender address to their contacts
+   - Use a professional sender address (not a free gmail.com address)
 
-4. **Port blocked by firewall**
-   - Try different port (587, 465, or 25)
-   - Contact hosting provider about port restrictions
+4. **Wrong email address on file**
+   - Open the user's profile and check the email field for typos
 
-5. **Email address invalid**
-   - Verify user's email address is correct
-   - Check for typos
-
-6. **Daily sending limit reached**
-   - Gmail: 500 emails/day
-   - Use dedicated email service (SendGrid, Mailgun) for bulk emails
+5. **Sending lots of email all at once**
+   - Free email accounts (like Gmail) often cap at 500 messages a day
+   - Contact 4SCH support to switch to a high-volume email plan during busy periods (e.g. termly report cards)
 
 ---
 
@@ -462,10 +402,10 @@ Track sent notifications and delivery status.
 
 **Solutions:**
 
-1. **SMS gateway not configured**
-   - Go to Settings → SMS Settings
-   - Verify API credentials
-   - Send test SMS
+1. **SMS provider not connected yet**
+   - Go to **Settings → SMS Settings**
+   - Confirm the status shows **Connected**
+   - Click **Send Test SMS** to confirm
 
 2. **Invalid mobile number**
    - Check mobile number format (must include country code)
@@ -591,8 +531,8 @@ Track notification effectiveness.
 ## Summary Checklist
 
 **For Admins (Initial Setup):**
-- ✅ Configure FCM for push notifications
-- ✅ Set up SMTP for email notifications
+- ✅ Confirm push notifications are connected
+- ✅ Connect your email option for email notifications
 - ✅ Configure SMS gateway (if using SMS)
 - ✅ Test all notification channels
 - ✅ Customize email templates

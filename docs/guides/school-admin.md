@@ -437,7 +437,7 @@ To enable online fee payments:
    - Flutterwave
    - Stripe
    - RazorPay
-3. Enter your **API Keys**:
+3. Paste the **access keys you copied from your provider's website**:
    - Public Key
    - Secret Key
 4. Set **Payment Settings**:
@@ -1119,7 +1119,7 @@ Tool call argument 'replace' pruned from message history.
 ### Payment Gateway Not Working
 
 **Verify:**
-- API keys are correct
+- Access keys are entered correctly (no extra spaces)
 - Gateway is enabled in settings
 - Test mode is disabled (for live payments)
 - Firewall isn't blocking requests

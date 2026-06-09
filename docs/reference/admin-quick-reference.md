@@ -332,7 +332,7 @@ Solution:
 |---------|-----------|
 | **Page Loading Slowly** | Clear browser cache (Ctrl+Shift+Del) → Try different browser → Check internet speed |
 | **Timeout During Report** | Reduce date range → Try PDF export instead of Excel → Check server status |
-| **Payment Gateway Not Working** | Settings → Payment Gateway → Test Connection → Verify API keys correct → Check firewall |
+| **Payment Gateway Not Working** | Settings → Payment Gateway → Test Connection → Re-paste the access keys from your provider's site → Contact 4SCH support if it still fails |
 | **SMS Not Sending** | Settings → SMS Settings → Verify balance/account active → Check phone format (11 digits for Nigeria) |
 
 ### 🔴 Critical Issues

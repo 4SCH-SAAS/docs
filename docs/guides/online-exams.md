@@ -1801,7 +1801,7 @@ For each question:
 ```
 Last resort:
 1. Calculate correct marks manually
-2. Update exam_results table directly
+2. Ask 4SCH support to re-publish the affected results from their side
 3. Document the correction
 4. Inform student of adjustment
 ```

@@ -309,41 +309,25 @@ Only **Super Admin** can delete schools. Two-step process:
 
 ---
 
-## Scheduled Tasks (Cron Jobs)
+## Behind-the-Scenes Automation
 
-### Required Server Configuration
+4SCH quietly takes care of a handful of recurring tasks for you in the background. You don't need to schedule or configure any of these yourself — they run automatically on your behalf.
 
-**Critical**: Cron job must be configured on server for system to function properly.
+### What 4SCH does for you automatically
 
-**Cron Command**:
-```bash
-* * * * * cd /your-project-path/ && php artisan schedule:run >> /dev/null 2>&1
-```
+#### 1. Generating subscription invoices (every night)
 
-**Schedule**: Every minute (Laravel scheduler determines which tasks to run)
+Each night, 4SCH generates the day's subscription invoices for any school whose plan needs renewing, and applies grace-period rules for any that have just expired.
 
-### Active Scheduled Tasks
+#### 2. Tidying up old notifications (monthly)
 
-#### 1. Subscription Bill Generation & Management (Daily - Midnight)
+Once a month, 4SCH removes very old read notifications so users' inboxes never become cluttered.
 
-**Purpose**:
-- Generate bills for expired subscriptions
-- Terminate subscriptions after grace period
-- Handle auto-renewal if configured
+#### 3. Transportation expiry reminders (daily)
 
-**Runs**: Every day at midnight (00:00)
+Each day, 4SCH sends push notifications to drivers 7 days before their transportation plan expires.
 
-#### 2. Clean Up Old Notifications (Monthly)
-
-**Purpose**: Removes old notifications to keep the system efficient
-**Runs**: Once per month
-
-#### 3. Transportation Expiry Reminders (Daily)
-
-**Purpose**: Sends push notifications to drivers 7 days before their transportation plan expires
-**Runs**: Every day
-
-**Important Note**: A similar reminder system does NOT exist for school subscriptions (this is the gap we identified)
+**Note**: This kind of automatic reminder isn't yet sent for school subscriptions themselves — keep an eye on your dashboard warnings and the expiry date shown in **Settings → Subscription**.
 
 ---
 
@@ -466,43 +450,29 @@ Based on the analysis, here are recommended enhancements:
 
 ### Common Issues
 
-#### 1. "Cron job not running"
-**Symptoms**: Bills not generated, subscriptions not terminating
+#### 1. "Invoices aren't being generated overnight"
+**Symptoms**: No new subscription bills appearing, schools not being moved to grace period
+**Solution**: Contact 4SCH support — this means a behind-the-scenes job has stopped running on your platform. The team can put it right quickly.
+
+#### 2. "A school can still log in after grace period"
+**Symptoms**: Users can log in even though the school is overdue
 **Solution**:
-```bash
-# Verify cron is configured
-crontab -l
-
-# Should show:
-* * * * * cd /var/www/html/your-project && php artisan schedule:run >> /dev/null 2>&1
-
-# Test manually
-cd /var/www/html/your-project
-php artisan subscriptionBill:cron
-```
-
-#### 2. "School can still access after grace period"
-**Symptoms**: Users can login despite overdue status
-**Solution**:
-- Check `CheckSchoolStatus` middleware is applied
-- Verify school status in database
-- Check subscription end_date value
-- Review cron job execution logs
+- Refresh the page and confirm the school's status in **Schools → All Schools**
+- Confirm the **subscription end date** shown for the school
+- If the school still has access, contact 4SCH support
 
 #### 3. "Warning not showing in dashboard"
-**Symptoms**: No expiry warning despite approaching expiry
+**Symptoms**: No expiry warning even though expiry is approaching
 **Solution**:
-- Verify `current_plan_expiry_warning_days` setting
-- Check subscription end_date calculation
-- Review dashboard warning settings
-- Clear your browser cache or ask Super Admin to clear system cache
+- Confirm the warning window setting in **System Settings → Subscription**
+- Confirm the subscription end date on the affected school is correct
+- Clear your browser cache, or ask the Super Admin to clear the system cache from **Settings → System → Clear Cache**
 
-#### 4. "Cannot restore deleted school"
-**Symptoms**: Accidentally deleted school
+#### 4. "Cannot restore a deleted school"
+**Symptoms**: Accidentally deleted a school
 **Solution**:
-- If soft deleted: Use restore function in trash
-- If permanently deleted: **NO RECOVERY POSSIBLE**
-- Restore from database backup (if available)
+- **If soft-deleted (in Trash)**: open **Schools → Trash** and click **Restore**
+- **If permanently deleted**: recovery is not possible from the dashboard. Contact 4SCH support immediately with the school's name — if a recent backup is available, support may be able to help
 
 ---
 

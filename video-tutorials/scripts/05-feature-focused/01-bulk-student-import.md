@@ -13,7 +13,7 @@
 
 ## [00:00-00:20] INTRO (20 sec)
 
-**[VISUAL]** Spreadsheet rows transforming into student profiles with smooth animations, database icons, progress indicators  
+**[VISUAL]** Spreadsheet rows transforming into student profiles with smooth animations, record-update icons, progress indicators  
 **[MUSIC]** Professional, tech-focused background music
 
 **[VOICEOVER]:**  
@@ -198,9 +198,9 @@ When your data is clean and complete, save the file. You're ready to import."
 
 The system automatically detects the file format and shows you the file name and record count. 487 students ready to import.
 
-Next, the system reviews the mapping. It automatically matches your Excel columns to 4SCH database fields. If you've used the official template, the mapping is already correct. All columns show green checkmarks.
+Next, the system reviews the mapping. It automatically matches your Excel columns to the matching student fields in 4SCH. If you've used the official template, the mapping is already correct. All columns show green checkmarks.
 
-If you used a custom format, you can adjust the mapping here. Tell the system which Excel column corresponds to which database field.
+If you used a custom format, you can adjust the mapping here. Just tell 4SCH which Excel column should go into which student field — for example, mapping your "Surname" column to **Last Name**.
 
 Once the mapping is correct, proceed to validation. The system thoroughly checks all 487 records. It verifies required fields aren't blank, emails are valid, dates are in the right format, and class names match your system.
 
@@ -224,7 +224,7 @@ Validation is the system's quality gate. Bad data doesn't get through. When vali
 - Import in progress:
   - Large progress bar filling
   - Live counter: "Importing: 125/487 records"
-  - Animated database icon
+  - Animated record-update icon
   - Status messages appearing:
     - "Processing batch 1..."
     - "Creating student records..."
@@ -377,7 +377,7 @@ Quality data leads to quality operations. Take time to prepare your data well, a
 - Import template
 - Data validation
 - 4SCH import
-- Student database
+- Student records
 
 **Tags:** #BulkImport #StudentManagement #DataManagement #4SCH #Tutorial #SchoolAdmin
 

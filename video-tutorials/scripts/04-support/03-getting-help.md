@@ -71,7 +71,7 @@ Most questions are answered in 30 seconds through the help system - making it th
 - Troubleshooting guides for common issues
 - System requirements and browser compatibility
 - Glossary and terminology
-- API documentation (for developers)
+- Developer resources (only relevant if you build your own integrations)
 - Release notes and feature announcements"
 
 **[VISUAL]** Browsing Help Center, clicking on articles, watching videos

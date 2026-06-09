@@ -14,7 +14,7 @@
 
 ## [00:00-00:15] INTRO (15 sec)
 
-**[VISUAL]** Excel spreadsheet rows becoming student profiles, database icons, files being synchronized, smooth animations  
+**[VISUAL]** Excel spreadsheet rows becoming student profiles, file-sync icons, files being synchronized, smooth animations  
 **[MUSIC]** Efficient, tech-focused background music
 
 **[VOICEOVER]:**  
@@ -26,7 +26,7 @@
 
 **[VISUAL]**
 - Data flow diagram showing:
-  - External systems (Excel, Google Sheets, legacy student database)
+  - External systems (Excel, Google Sheets, the records from your old school management system)
   - 4SCH in the center
   - Arrows showing data flowing in (import) and out (export)
   - Supported data types: Students, Teachers, Classes, Fees, Attendance, Assignments, Results, Transportation
@@ -35,7 +35,7 @@
   - Adding new students at semester start (bulk import)
   - Syncing with external payroll system (teacher data)
   - Exporting for audits or reporting
-  - Syncing with government education databases
+  - Sharing data with government education portals
 - Security layer visualization (encryption, access controls, audit logs)
 
 **[VOICEOVER]:**  
@@ -222,7 +222,7 @@ Once exported, you can manipulate data in Excel, import to other systems, analyz
 - Advanced settings: Data Field Mapping
 - Shows column mapping interface:
   - Left side: Excel columns from user's file (Column A, Column B, etc.)
-  - Right side: 4SCH database fields (First Name, Last Name, Email, etc.)
+  - Right side: 4SCH student fields (First Name, Last Name, Email, etc.)
   - Drag-and-drop or dropdown to match columns
   - Example mapping shown:
     - Column A → First Name

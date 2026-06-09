@@ -492,6 +492,9 @@ video-tutorials/
 |---------|------|---------|------------|
 | 1.0 | 2025-02-27 | Complete script collection for 8 feature deep-dives | Rovo Dev |
 | 1.1 | TBD | Master index and production guide | Rovo Dev |
+| 1.2 | 2026-05-28 | Added CA system + subscription invoice scripts (v1.9.6) | Rovo Dev |
+| 1.3 | 2026-06-09 | **End-user refresh of 4 scripts** to reflect the latest UI behaviour — **17-paying-subscription-invoices** (clearer "what happens after I pay" story, updated subscription-extension wording, simpler troubleshooting list); **14-notification-settings** (new "Managing Your Notification Inbox" section covering the bell icon, mark-as-read & delete on individual notifications, Mark-all-read & Clear-all bulk actions, automatic tidy-up, and the new clearer message copy); **16-continuous-assessment-system** (rewrote the "older exams" section so admins can bring legacy exams into CA from the UI in a few clicks, added a tip explaining that changing a weightage now automatically rescales already-entered marks); **13-offline-exams-admin-teacher-guide** (added a short callout reassuring teachers it's safe to double-click Save, that what they save is what students see, and that the Term Exam dialog now closes by itself). | Rovo Dev |
+| 1.4 | 2026-06-09 | **Library-wide voice & tone pass — removed backend/developer leakage from end-user scripts.** Audited every script and replaced server/database/API language with the words an admin, teacher, parent or student actually sees on screen. Key files updated: **08-system-configuration** (Health Dashboard, backups and integrations rewritten — no more SMTP ports, OAuth codes, "database optimization", or "API Response Time"); **05-payment-gateway-config**, **06-online-payment-setup**, **07-sms-integration**, **14-notification-settings**, **01-school-admin-guide** (all "API key/credentials/SMTP/Auth Token" steps reframed as "copy this access key from your provider's website and paste it into 4SCH", with a friendly padlock-style safety note instead of a developer-style warning; Gmail/Microsoft 365 setup shown as a normal Sign-in-with-Google flow); **01-bulk-student-import**, **02-attendance-tracking**, **03-attendance-correction**, **02-student-promotion**, **07-data-import-export**, **07-non-teaching-staff-guide** ("database fields/database/help database" reworded as "student fields", "attendance record", "help search box"); **README**, **INDEX**, **FAQ**, **getting-help** ("REST API access", "API documentation for developers", "database migration" reframed in plain English). Glossary in 14-notification-settings now defines **Access Key** and **Sender ID** instead of SMTP / FCM / API Key. | Rovo Dev |
 
 ---
 
@@ -532,6 +535,6 @@ These video scripts are proprietary to 4SCH. Use is restricted to authorized pro
 
 ---
 
-**Last Updated:** 2025-02-27  
-**Next Review:** 2025-05-27  
+**Last Updated:** 2026-06-09  
+**Next Review:** 2026-09-09  
 **Status:** Ready for Production

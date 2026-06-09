@@ -237,7 +237,7 @@ The receipt includes:
 
 ### Payment succeeded but invoice still shows "Pending"
 
-**Cause:** Webhook processing may take a moment (usually 1-2 seconds, sometimes up to a minute).
+**Cause:** The confirmation from your payment provider can take a moment to come back (usually 1–2 seconds, sometimes up to a minute).
 
 **Solution:**
 

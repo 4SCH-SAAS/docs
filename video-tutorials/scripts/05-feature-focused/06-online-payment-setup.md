@@ -61,15 +61,15 @@
 "Step one: Choose your payment gateway. 4SCH integrates with multiple providers. For Nigerian schools, Paystack is popular - it handles card payments, bank transfers, and mobile money. Flutterwave is another excellent option. Let's configure Paystack."
 
 **[SCREEN RECORDING - Step 2: Connect Your Paystack Account]**
-- Login to your Paystack account (shown in separate window)
-- Navigate to Settings → API Keys
-- Copy Public Key and Secret Key
-- Return to 4SCH and paste keys
-- Click "Verify Connection"
+- Sign in to your Paystack account (shown in a separate window)
+- On Paystack's site, open **Settings → API Keys**
+- Click "Copy" next to the Public Key, then the Secret Key
+- Switch back to 4SCH and paste each one into the matching box
+- Click **Verify Connection**
 - System confirms: "Connected successfully to Paystack"
 
 **[VOICEOVER]:**  
-"Step two: Connect your Paystack account. If you don't have one, it takes minutes to create. Login to Paystack, get your API keys from settings, and paste them into 4SCH. The system verifies the connection immediately."
+"Step two: connect your Paystack account. If you don't have one yet, it only takes a few minutes to sign up on Paystack's website. Once you're in, open **Settings → API Keys**, copy the two keys Paystack gives you, and paste them into 4SCH. Click **Verify Connection** and you'll see a green confirmation straight away."
 
 **[SCREEN RECORDING - Step 3: Configure Payment Methods]**
 - Show payment method options now enabled

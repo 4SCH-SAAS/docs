@@ -25,7 +25,8 @@
 5. **Configuring SMS with Nigerian Providers** (3:45 - 5:15)
 6. **Email Notification Configuration** (5:15 - 6:30)
 7. **Customizing Notification Templates** (6:30 - 7:30)
-8. **Best Practices & Conclusion** (7:30 - 8:00)
+8. **Managing Your Notification Inbox** (7:30 - 8:30)
+9. **Best Practices & Conclusion** (8:30 - 9:00)
 
 ---
 
@@ -71,7 +72,7 @@ By the end, you'll have a complete notification system that keeps everyone conne
 
 **Email Notifications** go to registered email addresses. They're perfect for detailed communications that users might want to keep for reference - like exam schedules or fee reminders.
 
-**In-App Notifications** appear when users are logged in - they're always available and require no external configuration.
+**In-App Notifications** appear when users are logged in - they're always available and require no external configuration. Every notification a user receives is also saved in their notification bell, so they always have a history they can scroll back through - even if they missed the original push, SMS, or email.
 
 All four channels work together. A single notification event - like 'School Closure' - can be sent via push, SMS, email, and in-app simultaneously, ensuring everyone gets the message through their preferred channel."
 
@@ -148,34 +149,32 @@ Remember: Users must have your mobile app installed and have granted notificatio
   - Africa's Talking (africaistalkingcom) - highlighted
   - Others (Twilio, etc.)
 - Screen-by-screen setup for Termii:
-  - Login to Termii dashboard
-  - Navigate to API Settings
-  - Copy API key
-  - Return to 4SCH, paste API key
-- Show Sender ID field
+  - Sign in on Termii's website (termii.com)
+  - Open the **API Keys** page in your Termii account (that's what the page is called)
+  - Click "Copy" next to your access key
+  - Switch back to 4SCH and paste the key into the SMS Settings page
+- Show the Sender ID field
 - Click "Send Test SMS"
 - Mobile phone shows SMS arriving: "Welcome to ABC School"
 
 **[VOICEOVER]:**  
-"SMS is powerful in Nigeria because nearly every parent has a mobile phone. Unlike push notifications that require an app, or email that requires internet browsing, SMS works on any phone.
+"SMS is powerful in Nigeria because nearly every parent has a mobile phone. Unlike push notifications that require an app, or email that requires internet, SMS works on any phone.
 
 Let's set up SMS using Termii, a popular Nigerian provider that's affordable and reliable.
 
-First, go to Termii.com and create an account if you don't have one. It takes just a few minutes. You'll need to provide your school name and a Nigerian phone number.
+First, go to **termii.com** and create an account if you don't have one. It takes just a few minutes — you'll provide your school name and a Nigerian phone number.
 
-Once logged in, go to your Termii dashboard. Navigate to Settings or API Settings. You'll find your API key - this is your authentication credential.
+Once you're signed in to Termii, open the **API Keys** page in their menu. Click **Copy** next to your access key.
 
-Back in 4SCH, go to Settings → SMS Settings. In the Provider dropdown, select Termii. Paste your API key in the API Key field.
+Now switch back to 4SCH and go to **Settings → SMS Settings**. In the Provider dropdown, select **Termii**, then paste the key you just copied into the box.
 
-Next, set your Sender ID - this is what appears as the sender on the SMS. For example, 'ABCSchool' or 'MySchool'. Note: Some providers require you to register your Sender ID before it becomes active. Termii does this automatically, usually within 24 hours.
+Next, set your **Sender ID** — this is the name parents see on their phone when the SMS arrives. For example, 'ABCSchool' or 'MySchool'. Some providers approve your Sender ID instantly; Termii takes up to 24 hours.
 
-Now test it. Click 'Send Test SMS', enter a Nigerian number - including the country code like +234... - and click Send. Within seconds, that number receives an SMS from your school.
+Now test it. Click **Send Test SMS**, enter a Nigerian number including the country code (like +234…), and click **Send**. Within seconds that phone receives an SMS from your school.
 
-Why SMS? Parents check SMS before email. It works without internet. It's reliable. The trade-off is cost - each SMS costs money, typically ₦1-2 per message. So use SMS for critical alerts: attendance issues, fee reminders, emergency closures. Use email for announcements.
+Why SMS? Parents check SMS before email. It works without internet. It's reliable. The trade-off is cost — each SMS costs roughly ₦1–2. So use SMS for the important things: attendance issues, fee reminders, emergency closures. Use email for longer announcements.
 
-Africa's Talking is another excellent Nigerian provider. The setup is similar - you get an API key from their dashboard and configure it the same way.
-
-Whether you choose Termii, Africa's Talking, or another provider, the process is essentially identical: get credentials, paste them in 4SCH, test, then you're ready to send."
+**Africa's Talking** is another excellent provider. The setup is identical: sign up on their site, copy the access key from your account, and paste it into 4SCH the same way."
 
 ---
 
@@ -183,43 +182,28 @@ Whether you choose Termii, Africa's Talking, or another provider, the process is
 
 **[VISUAL]**
 - Admin dashboard, Settings menu
-- Navigate to Settings → Email Settings
-- Show SMTP configuration form with fields:
-  - Mail Driver
-  - Mail Host
-  - Mail Port
-  - Mail Username
-  - Mail Password
-  - Mail From Address
-  - Mail From Name
-- Zoom into example with Gmail:
-  - smtp.gmail.com
-  - Port 587
-  - TLS encryption
-  - App password note
-- Click "Send Test Email"
-- Browser shows email arriving in inbox
+- Navigate to **Settings → Email Settings**
+- Show the simple form:
+  - "Email service" dropdown (4SCH Default · Gmail · Microsoft 365 · Custom)
+  - "Send-from email" field
+  - "Display name" field
+  - "Connect / Sign in" button (for Gmail / Microsoft 365)
+- Click "Sign in with Google" — Google's sign-in window opens
+- After signing in and clicking "Allow", a green "Connected" badge appears
+- Click "Send Test Email" → browser shows email arriving in the inbox
 
 **[VOICEOVER]:**  
-"Email notifications are perfect for longer messages that users might want to save - like exam schedules, detailed fee statements, or assignment instructions.
+"Email notifications are perfect for longer messages users may want to save — exam schedules, detailed fee statements, or assignment instructions.
 
-To send emails, you need SMTP configuration - essentially telling 4SCH how to connect to an email service.
+In **Settings → Email Settings**, you have three easy options. The simplest is **'Use 4SCH's email service'** — turn it on and you're done. 4SCH sends emails on your behalf and you don't need to set anything up.
 
-You have options: Use your school's email domain, Gmail, Microsoft 365, or services like SendGrid designed for bulk emails.
+If you'd prefer emails to come from your school's own Gmail or Microsoft 365 account, pick that option from the dropdown and click **'Sign in with Google'** or **'Sign in with Microsoft'**. A familiar sign-in window opens; sign in, click **Allow**, and you'll see a green **Connected** badge appear.
 
-Let's use Gmail as an example. In Settings → Email Settings:
+Set the **Display name** that parents see in their inbox — something like 'ABC School Communications' — and click **Send Test Email** to confirm it works.
 
-Mail Host is 'smtp.gmail.com'. Mail Port is 587 - this is the standard for Gmail. Encryption is TLS.
+For very large schools sending thousands of emails a week, contact 4SCH support — they'll help you switch to a high-volume email service so nothing is delayed during busy reporting periods.
 
-Mail Username is your Gmail address. But here's crucial: Don't use your regular Gmail password. Instead, enable 2-Step Verification on your Google account, then generate an App Password at myaccount.google.com/apppasswords. It's a 16-character password specifically for this app. Use that.
-
-Mail From Address is the email that appears as the sender - your school email. Mail From Name is the display name - 'ABC School Communications' or similar.
-
-Once you've entered all details, click 'Send Test Email'. Enter any email address and click Send. Within seconds, it arrives in the inbox.
-
-If you're sending bulk notifications to hundreds of parents, Gmail's limit is 500 emails per day. For larger schools, consider SendGrid - it's designed for bulk sending and is very reliable.
-
-The beauty of email is delivery confirmation and archiving. Users keep important emails for reference. Perfect for notifications they need to revisit."
+The beauty of email is that families can keep messages for reference — perfect for the kind of information they'll need to come back to later."
 
 ---
 
@@ -274,7 +258,36 @@ These customized templates make every notification feel professional and relevan
 
 ---
 
-### Best Practices & Conclusion (7:30 - 8:00)
+### Managing Your Notification Inbox (7:30 - 8:30)
+
+**[VISUAL]**
+- User logs into 4SCH
+- Click the **bell icon** (notification inbox) in the top bar
+- Inbox shows list of recent notifications with blue dots for unread items
+- Hover a row → "Mark as read" and "Delete" buttons appear
+- At the top of the inbox: "Mark all as read" and "Clear all" buttons
+- One-click demo of each action
+
+**[VOICEOVER]:**
+"Every user — admin, teacher, parent, student — has their own notification inbox in 4SCH, and you're in full control of it.
+
+Click the **bell icon** in the top bar to open it. You'll see your most recent alerts, with a small blue dot next to anything you haven't read yet.
+
+To clear a single notification, just hover over it and click **Mark as read** to dismiss the badge, or click the **delete** icon to remove it from your inbox entirely.
+
+If you're catching up after a busy week, use the buttons at the top of the inbox: **Mark all as read** clears every blue dot in one click, and **Clear all** empties your inbox so you can start fresh.
+
+You don't need to worry about your inbox getting cluttered over time — old, already-read notifications are tidied up automatically in the background.
+
+And the messages themselves are written to tell you exactly what happened and what to do next — for example, 'New term result published for Tunde — tap to view' — so you can act on them without having to hunt around for context."
+
+**[VISUAL]**
+- Close-up of a clear, action-oriented notification message
+- Bell icon badge counter going from 12 → 0 after "Mark all as read"
+
+---
+
+### Best Practices & Conclusion (8:30 - 9:00)
 
 **[VISUAL]**
 - Screen showing best practices checklist:
@@ -331,7 +344,7 @@ Thanks for watching, and happy notifying!"
 6. SMS Settings page with Termii dropdown selected
 7. Termii dashboard - API Settings highlighted
 8. SMS test message arriving on Nigerian phone (+234 number)
-9. Email Settings (SMTP configuration form)
+9. Email Settings (simple email setup form)
 10. Gmail setup example with starred security notes
 11. Email test notification in inbox
 12. Notification Templates list
@@ -370,12 +383,11 @@ Thanks for watching, and happy notifying!"
 ## On-Screen Text/Captions
 
 **Key Terms to Define (appear as text overlay):**
-- **Push Notification** = Message that arrives on app even when closed
-- **SMS** = Text message to phone (costs per message)
-- **SMTP** = Email protocol for sending messages
-- **API Key** = Authentication credential for third-party service
-- **Template Variables** = Placeholders like {student_name} that auto-fill with real data
-- **FCM** = Firebase Cloud Messaging (Google's push service)
+- **Push Notification** = An alert that pops up on a phone even when the 4SCH app isn't open
+- **SMS** = A text message to a phone (costs your school a small fee per message)
+- **Access Key** = A long code the SMS or email provider gives you to connect their service to 4SCH — treat it like a password
+- **Sender ID** = The name parents see as the sender of your SMS (e.g. "ABCSchool")
+- **Template Variables** = Placeholders like {student_name} that 4SCH fills in automatically with the right person's details
 
 **Provider-Specific Notes:**
 - "Termii: Nigerian provider, ₦1-2 per SMS, 24-hour Sender ID approval"
@@ -494,6 +506,7 @@ Thanks for watching, and happy notifying!"
 ## Script Version History
 
 - **v1.0** - March 2025 - Initial script creation
+- **v1.1** - June 2026 - Added "Managing Your Notification Inbox" section covering the bell-icon inbox: marking individual notifications as read or deleted, bulk Mark-all-read and Clear-all actions, automatic tidying of older read items, and the new clearer, more actionable wording of notification messages
 - **Last Updated:** March 2025
 - **Author:** Documentation Team
 - **Review Status:** Ready for production

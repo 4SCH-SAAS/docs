@@ -199,7 +199,7 @@ START: Can't log in?
 2. **Verify email on file**: School admin can check in Admin Console
 3. **Wait up to 2 minutes** for email to arrive
 4. **Try again after 10 minutes** (rate limiting)
-5. **Contact school admin** to resend or check SMTP logs
+5. **Contact your school admin** to resend the email or to check whether email sending is working for everyone
 
 **Solution B: SSO (Single Sign-On) Enabled**
 - If your school uses SSO (Microsoft, Google, etc.):

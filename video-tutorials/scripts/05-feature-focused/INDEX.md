@@ -334,7 +334,7 @@ Next: [Next video in series]
 - [ ] Captions are complete and accurate (verify 100% of dialogue)
 - [ ] Privacy: Student names and identifying info are anonymized
 - [ ] Accessibility: Color contrast meets WCAG AA standards
-- [ ] Data: No sensitive information exposed (API keys, credentials, etc.)
+- [ ] Data: No sensitive information exposed (access keys, passwords, real provider account numbers, etc.)
 - [ ] Copyright: All music and graphics are licensed for use
 
 ### User Experience QA
@@ -405,7 +405,7 @@ Next: [Next video in series]
 ### Related Content Ideas
 - Beginner series (getting started with system)
 - Advanced series (power features, customization)
-- Integration tutorials (third-party tools, APIs)
+- Integration tutorials (connecting to other tools your school already uses)
 - Troubleshooting guides (common issues)
 - Best practices webinars (live Q&A based on tutorials)
 

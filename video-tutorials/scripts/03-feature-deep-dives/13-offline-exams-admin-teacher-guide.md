@@ -378,6 +378,16 @@ Computer Science: March 24, 10 AM - 12 PM, 50 marks, passing 18"
 
 "Once you've reviewed and verified all marks, you can publish them. Go back to **Mark Entry**, change the **Status** from **Draft** to **Published**, and click **Save**. Now students and parents can see the marks. This workflow prevents errors from reaching students and gives you control over release timing."
 
+**[A few helpful improvements teachers will notice]**
+
+"A few small but useful changes you'll spot while entering marks:
+
+- **Safe to click Save twice.** If your internet hesitates and you tap Save again, you won't accidentally end up with two sets of marks for the same student — 4SCH only ever keeps one clean entry per student.
+- **What you see is what your students will see.** As soon as you save, your numbers feed straight through to the admin dashboard, the student portal, the parent app, and the report card. No more 'it looks different on the report card' moments.
+- **The Term Exam dialog now closes by itself** after a successful save, so you can move straight on to the next subject without an extra click."
+
+**[Screen: Quick split-screen showing the Save → confirmation → dialog closes automatically flow]**
+
 ---
 
 #### Section 3: Editing Marks (12:30 - 13:15)
