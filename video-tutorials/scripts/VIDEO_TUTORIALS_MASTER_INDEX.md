@@ -12,14 +12,18 @@ Complete video script library for 4SCH school management system covering introdu
 
 ## Complete Script Directory
 
-### Series 1: Introduction (6 minutes)
+### Series 1: Introduction (~33 minutes)
 **Location:** `video-tutorials/scripts/01-introduction/`
 
 | # | Title | Duration | File | Target Audience |
 |---|-------|----------|------|-----------------|
 | 1 | System Overview | 6 min | `01-system-overview.md` | All users |
+| 2 | User Roles Explained | 5 min | `02-user-roles-explained.md` | All users |
+| 3 | Quick Start Guide | 7 min | `03-quick-start-guide.md` | First-time users of any role |
+| 4 | First-Time Visitor Onboarding | 8 min | `04-first-time-visitor-onboarding.md` | Prospective school owners; new School Admins on day one |
+| 5 | Choosing a Subscription Package | 7 min | `05-choosing-a-subscription-package.md` | New School Admins who have just signed in |
 
-**Purpose:** Welcome new users, explain core benefits, identify user roles
+**Purpose:** Welcome new users, explain roles, guide them through their very first day on 4SCH — from their first visit (demo, inquiry, or welcome email) through to picking a subscription plan and finding their way around the dashboard.
 
 ---
 
@@ -410,7 +414,11 @@ Complete video script library for 4SCH school management system covering introdu
 video-tutorials/
 ├── scripts/
 │   ├── 01-introduction/
-│   │   └── 01-system-overview.md
+│   │   ├── 01-system-overview.md
+│   │   ├── 02-user-roles-explained.md
+│   │   ├── 03-quick-start-guide.md
+│   │   ├── 04-first-time-visitor-onboarding.md
+│   │   └── 05-choosing-a-subscription-package.md
 │   ├── 02-role-based/
 │   │   ├── 01-school-admin-guide.md
 │   │   ├── 02-teacher-guide.md
@@ -494,6 +502,7 @@ video-tutorials/
 | 1.1 | TBD | Master index and production guide | Rovo Dev |
 | 1.2 | 2026-05-28 | Added CA system + subscription invoice scripts (v1.9.6) | Rovo Dev |
 | 1.3 | 2026-06-09 | **End-user refresh of 4 scripts** to reflect the latest UI behaviour — **17-paying-subscription-invoices** (clearer "what happens after I pay" story, updated subscription-extension wording, simpler troubleshooting list); **14-notification-settings** (new "Managing Your Notification Inbox" section covering the bell icon, mark-as-read & delete on individual notifications, Mark-all-read & Clear-all bulk actions, automatic tidy-up, and the new clearer message copy); **16-continuous-assessment-system** (rewrote the "older exams" section so admins can bring legacy exams into CA from the UI in a few clicks, added a tip explaining that changing a weightage now automatically rescales already-entered marks); **13-offline-exams-admin-teacher-guide** (added a short callout reassuring teachers it's safe to double-click Save, that what they save is what students see, and that the Term Exam dialog now closes by itself). | Rovo Dev |
+| 1.6 | 2026-06-09 | **Added the first-time-visitor onboarding pair to Series 1: Introduction.** Two new scripts cover the journey from a brand-new visitor through to a school running on a subscription plan: **04-first-time-visitor-onboarding** (~8 min) walks through the three real paths verified in the `ng.4sch.com` codebase — trying a **Demo School** (`SchoolController::createDemoSchool`), submitting a **School Inquiry** (`SchoolController::registration` / `inquiry.*` routes, gated by the `school_inquiry` setting), or signing in for the first time with the **welcome email** from your 4SCH support contact — and finishes with five quick wins for the first fifteen minutes after first sign-in. **05-choosing-a-subscription-package** (~7 min) covers the two real ways a school ends up on a plan: **self-serve from the catalog** in **Settings → Subscriptions** (`SubscriptionController::plan` for recurring, `prepaid_plan` for one-off; full pay-via-Paystack/Flutterwave/Stripe flow) or **custom plan already assigned by the Super Admin** (`SchoolController::store` with `assign_package`, plus the read-only "Current Plan" UI), followed by bills/receipts/renewal reminders. Same end-user voice standard as the rest of the library — real UI labels, real notification channels only (no SMS), and explicitly **not** documenting features that don't exist (e.g. there is no public school self-registration form; the Laravel default auth scaffolding is for single-user signup only, not schools). Also refreshed the Series 1 listing in this index — it had only ever listed `01-system-overview`, even though `02-user-roles-explained` and `03-quick-start-guide` were already in the folder. Series 1 is now correctly shown as **5 scripts ≈ 33 minutes**. Companion update to `docs/docs/intro/getting-started.md` ships in the same PR. | Rovo Dev |
 | 1.5 | 2026-06-09 | **Removed all SMS documentation (codebase audit found SMS is not a feature).** A search of the `ng.4sch.com` codebase confirmed there are no SMS controllers, services, helpers, jobs, DB tables, or UI views — the real notification channels are Email (SMTP via Laravel Mail), Push (Firebase Cloud Messaging) and the In-App bell-icon inbox. Deleted the standalone `07-sms-integration.md` script entirely. Stripped SMS sections, mentions and visual cues from: **14-notification-settings** (removed "Configuring SMS with Nigerian Providers" section, glossary entries, provider notes, visual assets, post-production checks, additional resources; re-timed to 7:30 total); **08-system-configuration** (removed SMS Gateway Settings block and voiceover); **02-attendance-tracking**, **04-communication-messaging**, **02-faq-walkthrough**, **03-parent-guide**, **05-accountant-guide**, **01-timetable-builder**, **02-exam-setup**, **03-report-card-generation**, **04-fee-structure-setup**, **05-invoice-generation**, **06-online-payment-setup**, **03-feature-deep-dives/README** (incidental SMS mentions replaced with Email/Push/In-App). Updated `00-START-HERE`, `INDEX`, `QUICK-REFERENCE`, `README` to drop the SMS script and correct script counts/runtimes (now 7 scripts × 35 min in the feature-focused folder). In the written docs (docs/docs/), removed the entire "SMS Notification Configuration" and "SMS Not Delivered" sections from `notification-settings-management.md`, the entire "SMS Gateway Integration" chapter (Termii / Twilio / Msg91) from `reference/integrations.md`, and incidental SMS mentions from `intro/getting-started`, `guides/accountant`, `guides/school-admin`, `guides/subscription-expiry-retention-policy`, `guides/parents`, `guides/online-exams`, `reference/admin-quick-reference`. Kept legitimate references to **"Paystack SMS"** in `guides/parents` and `reference/parent-quick-reference` — that's the SMS Paystack/the parent's bank sends to the parent's phone as proof of payment, not a 4SCH feature. | Rovo Dev |
 | 1.4 | 2026-06-09 | **Library-wide voice & tone pass — removed backend/developer leakage from end-user scripts.** Audited every script and replaced server/database/API language with the words an admin, teacher, parent or student actually sees on screen. Key files updated: **08-system-configuration** (Health Dashboard, backups and integrations rewritten — no more SMTP ports, OAuth codes, "database optimization", or "API Response Time"); **05-payment-gateway-config**, **06-online-payment-setup**, **07-sms-integration**, **14-notification-settings**, **01-school-admin-guide** (all "API key/credentials/SMTP/Auth Token" steps reframed as "copy this access key from your provider's website and paste it into 4SCH", with a friendly padlock-style safety note instead of a developer-style warning; Gmail/Microsoft 365 setup shown as a normal Sign-in-with-Google flow); **01-bulk-student-import**, **02-attendance-tracking**, **03-attendance-correction**, **02-student-promotion**, **07-data-import-export**, **07-non-teaching-staff-guide** ("database fields/database/help database" reworded as "student fields", "attendance record", "help search box"); **README**, **INDEX**, **FAQ**, **getting-help** ("REST API access", "API documentation for developers", "database migration" reframed in plain English). Glossary in 14-notification-settings now defines **Access Key** and **Sender ID** instead of SMTP / FCM / API Key. | Rovo Dev |
 
