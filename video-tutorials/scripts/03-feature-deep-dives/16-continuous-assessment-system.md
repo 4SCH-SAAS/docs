@@ -240,3 +240,16 @@ If you have questions, check the [Continuous Assessment Guide](/guides/continuou
 - [CA on Mobile Apps](/guides/continuous-assessment-mobile)
 - [Video 13: Offline Exams Admin & Teacher Guide](./13-offline-exams-admin-teacher-guide.md)
 - [Video 03 (Feature Focused): Report Card Generation](../05-feature-focused/03-report-card-generation.md)
+
+---
+
+## What's New (v1.9.3 — June 2026)
+
+When recording or refreshing this video, include a brief scene showing the **Reports → Student Reports → Exam Report** tab for a CA-enabled exam. Highlight:
+
+- Each subject now appears as **one row** with **Max Marks = 100** (or your configured total).
+- The **Obtained** column shows the **weighted aggregate** of CA1 + CA2 + Exam — not three separate per-component rows.
+- The **Grade** column shows the matching letter from the school's grade configuration.
+- This works automatically for existing CA-shaped exams — no need to re-publish results.
+
+Suggested 20–30-second insert near the end of the "How Reports Display CA Marks" beat. See the [CA in Reports section of the written guide](/guides/continuous-assessment#ca-in-reports) for the exact wording.

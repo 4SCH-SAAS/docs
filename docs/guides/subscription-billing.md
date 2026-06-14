@@ -14,6 +14,13 @@ after payment.
 
 > **Audience:** School administrators responsible for the school's 4SCH subscription.
 
+:::tip Recent improvements (June 2026)
+- A new dismissible **"Renew / Pay in advance"** card now appears at the top of your dashboard whenever you have an active prepaid plan — pay early even if your renewal is still weeks away. Click the **×** to hide it for this billing cycle if you don't want the reminder; it returns automatically for the next cycle.
+- The dashboard's expiry-warning **"Click here to pay"** button now works for **Paystack, Flutterwave, and Stripe** (previously it only worked for Stripe — Paystack and Flutterwave users saw a button that did nothing).
+- Prepaid renewals now correctly **add days to your end date** instead of resetting it. If you paid your last cycle and your plan was good through 27 June, the next payment extends to 2 July (not "today + 5 days").
+- **Subscriptions → History** now shows all your bills correctly, with the right due date for each cycle.
+:::
+
 ---
 
 ## How Billing Works

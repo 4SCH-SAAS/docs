@@ -170,7 +170,21 @@ If your internet drops between paying on Paystack and getting back to 4SCH, don'
 ## Related Resources
 
 - [School Admin Guide — Subscription Management](/guides/school-admin)
+- [Subscription Billing](/guides/subscription-billing)
 - [Subscription Expiry & Retention Policy](/guides/subscription-expiry-retention-policy)
 - [Video 05: Payment Gateway Config](./05-payment-gateway-config.md)
 - [Video 06: Online Payment Setup](./06-online-payment-setup.md)
 - [Video 05 (Deep Dive): Reports & Analytics](../03-feature-deep-dives/05-reports-analytics.md)
+
+---
+
+## What's New (v1.9.3 — June 2026)
+
+Re-record / re-cut to mention these dashboard-level improvements:
+
+1. **Permanent "Renew / Pay in advance" CTA** — a dismissible card at the top of the School Admin dashboard whenever an active prepaid plan exists. Click the **×** to hide until next cycle. Add a short scene showing the card + the click → Paystack flow.
+2. **"Click here to pay" expiry banner now works for Paystack and Flutterwave** (was Stripe-only). Mention this explicitly so existing schools who experienced the broken button know it's fixed.
+3. **Renewal correctly chains end-dates forward.** When demonstrating a successful payment, point out that the new end-date is `previous end + cycle days` (not "today + cycle days") — paying early no longer loses you days.
+4. **Subscriptions → History** page now lists all bills cleanly with the right due-date per cycle — the date-format crash that previously left it empty is fixed.
+
+Suggested 60–90 second insert near the existing "Pay an Invoice" beat. See the [Recent improvements callout in the Subscription Billing guide](/guides/subscription-billing) for the exact wording.

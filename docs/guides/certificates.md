@@ -24,6 +24,13 @@ The full Certificates flow in 4SCH is:
 2. **Issue certificates** to one or many students (or staff)
 3. **Distribute** as PDFs — download, email, or bulk-download as ZIP
 
+:::tip Recent improvements (June 2026)
+- Templates you created in **previous session years stay visible** in your templates list — they no longer disappear when a new session year starts.
+- **Edits to a template persist correctly** — the design canvas changes you save will be there next time you open the template.
+- On the **Issue Certificate** page, picking an exam now **auto-selects the matching class**, so the student list refreshes without you having to manually re-pick the class.
+- The legacy one-step "Issue Certificate" page works alongside the newer two-step Assign → Print flow — you can use whichever you prefer.
+:::
+
 ---
 
 ## Building a Certificate Template

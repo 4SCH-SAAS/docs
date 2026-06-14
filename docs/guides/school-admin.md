@@ -56,6 +56,10 @@ When you first access the admin panel:
 2. Enter your **Admin Email** and **Password**
 3. Click **Login**
 
+:::note Verifying your email
+Before your very first sign-in, 4SCH sends a one-time **Verify Email** message to your admin address. Click the link in that email and you'll land on a friendly success page with a brief countdown — you're then automatically signed in and taken to your dashboard. The link still works if you've closed your browser since the email arrived. If you can't find the message, check your Spam / Junk folder.
+:::
+
 :::tip Security Best Practice
 Change your default password immediately after first login. Go to **Profile → Change Password**.
 :::
