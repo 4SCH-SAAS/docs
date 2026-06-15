@@ -12,6 +12,53 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [1.9.3 stabilisation pass] - 2026-06-14
+
+This entry documents the post-merge stabilisation work that followed the 1.9.3 vendor platform update on `ng.4sch.com`. The vendor merge itself (Phases 1–5 of `update/1.9.3-merge`) covered hundreds of internal file changes; the items below are the **end-user-visible improvements** that were either part of the vendor update or layered on top during the live-stabilisation period.
+
+### Added
+
+- **End-user release notes:** new [`v1.9.3 End-User Changes`](./reference/v1-9-3-end-user-changes) reference page summarising every user-visible improvement.
+- **"Renew / Pay in advance" dashboard CTA:** dismissible card at the top of every School Admin's dashboard whenever an active prepaid plan exists. Click `×` to hide for current cycle; reappears next cycle.
+- **CA-aware Student Exam Report:** Reports → Student Reports → Exam Report tab now shows CA-enabled exams as one row per subject with `Max=100`, weighted obtained marks, and grade letter. Works automatically with existing CA-shaped marks (no re-config / re-publish required).
+- **Branded verify-email success page:** first-time sign-in now lands on a friendly success page with a brief countdown and auto-login (replaces the older silent redirect).
+
+### Fixed
+
+- **Subscription renewal chaining:** prepaid renewals now correctly extend `end_date` from the previous cycle's end (was resetting to "today + cycle days"). Each "Click to Pay" no longer creates a duplicate subscription row.
+- **"Click here to pay" expiry banner:** now works for Paystack and Flutterwave (was Stripe-only).
+- **Subscriptions → History:** previously empty because of a date-format accessor crash on the `SubscriptionBill` model. Now renders all bills with correct due-date per cycle.
+- **Certificate Templates:**
+  - Templates from previous session years no longer silently disappear from the list (soft session-year filter with fallback).
+  - Design canvas changes persist on save (model `$fillable` was stale).
+  - Picking an exam on the Issue Certificate page now auto-selects the matching class.
+  - Legacy one-step `user_id` certificate generation still works alongside the new two-step `ids`-based flow.
+- **Users → Status page:** no longer crashes on first load when no role filter is set; default view now shows all non-Guardian users.
+- **Email verification:** verify link now works even when the browser session has expired or the user is on a different device. Tenant DB sync (the `email_verified_at` update on the school's own DB) now bypasses Eloquent global scopes so it actually writes the column.
+- **Sidebar dropdowns:** competing handlers (vendor's `sidebar-handler.js` vs our inline `SidebarManager`) were causing dropdowns to flash open then snap shut. Vendor's handler disabled; inline manager kept (it also auto-closes sibling dropdowns).
+- **Lost CA + Terms routes:** restored `terms.index` + Continuous Assessment routes that were dropped during the 1.9.3 routes merge.
+
+### Updated (guides)
+
+- [Continuous Assessment](./guides/continuous-assessment) — added "CA in Reports" section.
+- [Certificates](./guides/certificates) — recent improvements callout.
+- [Subscription Billing](./guides/subscription-billing) — recent improvements callout.
+- [School Admin](./guides/school-admin) — verify-email-link note in First Login.
+
+### Updated (video scripts)
+
+- `01-introduction/04-first-time-visitor-onboarding` — verify-success page + auto-login (v1.1).
+- `03-feature-deep-dives/16-continuous-assessment-system` — cue for new CA-aware Reports scene.
+- `05-feature-focused/17-paying-subscription-invoices` — cues for renewal-CTA, multi-gateway banner link, chained renewals, History fix.
+- `05-feature-focused/20-issuing-certificates` — cues for session-year filter softening, design persistence, dropdown auto-sync (v1.1).
+- `VIDEO_TUTORIALS_MASTER_INDEX` — v1.8 entry documenting this stabilisation pass.
+
+### Background
+
+Full per-commit detail of the `ng.4sch.com/update/1.9.3-merge` branch is captured in the codebase repo's `SUBSCRIPTION_PAYMENT_AUDIT_2026-06-13.md`. This CHANGELOG entry focuses on what end users actually see.
+
+---
+
 ## [1.9.6] - 2026-05-23
 
 ### Fixed

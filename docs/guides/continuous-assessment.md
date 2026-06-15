@@ -999,6 +999,34 @@ The CA system calculates session cumulative averages across all Term Exams in a 
 
 ---
 
+## CA in Reports
+
+The **Reports → Student Reports → Exam Report** tab now shows your Continuous Assessment-enabled exams the way teachers expect:
+
+- **One row per subject** (instead of three separate rows for CA1, CA2, and Exam).
+- The **Max Marks** column displays the full term total (typically **100**).
+- The **Obtained** column shows the **weighted aggregate** across CA1, CA2, and the End-of-Term Exam — calculated automatically using your configured weightages (for example, 20 + 20 + 60).
+- A **Grade letter** (A1, B2, etc.) is computed from the percentage using your school's grade bands.
+
+### What this means in practice
+
+If a student scored:
+- CA1: 16 out of 20
+- CA2: 15 out of 20
+- Exam: 45 out of 60
+
+The Student Exam Report now shows a **single row** for that subject with **76 / 100** and the matching grade — rather than three confusing rows that didn't reflect overall performance.
+
+### No setup required
+
+This works **automatically** for any exam whose marks were entered through the CA Mark Entry screen. You do not need to "re-publish" results or re-configure anything. If you upgraded from an older school year that didn't have a saved CA configuration, the system also works from the marks themselves — it reads the per-component weightages directly from the way teachers entered the marks.
+
+### What about other reports?
+
+The single-student **Exam Report tab** is fully CA-aware today. The downloadable **Yearly Result PDF**, **Subject-wise Result PDF**, and **Rank-wise Result PDF** generators currently still use the older per-component data layout — they remain on the roadmap for a future update. Use the on-screen Exam Report tab for the most accurate per-student CA picture.
+
+---
+
 ## Troubleshooting
 
 ### For Administrators

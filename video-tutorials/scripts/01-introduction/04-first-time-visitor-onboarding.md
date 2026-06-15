@@ -117,6 +117,8 @@ If you can't find the welcome email, check your spam or junk folder — it somet
 **[VOICEOVER]:**
 "Whichever path brought you here, your very first sign-in is the same.
 
+If a verify-email link is in your inbox (the standard welcome flow as of v1.9.3), click it first. You'll briefly see a branded **'Email Verified Successfully'** page with a short countdown, then 4SCH automatically signs you in and takes you to your dashboard. The link still works if you've closed your browser since the email arrived, on any device.
+
 As soon as you sign in for the first time, 4SCH asks you to **change your temporary password**. Choose something strong and memorable, type it twice, and click **Save**.
 
 You'll then land on your **School Admin dashboard** — this is the home base for everything you'll do in 4SCH. Take a moment to look around. The left-hand menu lists the main areas: Students, Teachers, Classes, Fees, Reports, Settings, and more. You don't need to do anything in those just yet.
@@ -189,3 +191,4 @@ Each of those steps has its own short video in this tutorial library. Watch them
 ## Script Version History
 
 - **v1.0** - June 2026 - Initial script. Covers two real codebase-supported onboarding paths: public School Inquiry form (gated by Super Admin's school_inquiry setting) and direct provisioning by a 4SCH support contact. Excludes the demo-school self-service flow by request.
+- **v1.1** - June 2026 - Updated First Sign-In section to mention the new v1.9.3 branded "Email Verified Successfully" page with countdown + auto-login. The verify link now works even when the browser session has expired or the user is on a different device.
